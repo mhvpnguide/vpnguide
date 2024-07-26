@@ -1,10 +1,11 @@
-import Banner from "@/components/Banner";
+// import Banner from "@/components/Banner";
 import Image from "next/image";
 
 const HomePage = ()=> {
   return (
     <main className="text-red-600 ">
-      <Banner/>
+      hellow
+      {/* <Banner/> */}
     </main>
   );
 }
