@@ -4,6 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, NavbarMenuToggle
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import { ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale } from "./Icons.jsx";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -137,13 +138,17 @@ export default function App() {
       "link": "",
       "subnav": [
         {
-          "name": "How we make money",
+          "name": "About Us",
           "link": "Link1"
         },
         {
           "name": "How we test and review",
           "link": "Link2"
         },
+        {
+          "name": "How we make money",
+          "link": "Link3"
+        }
       ]
     }
   ];
@@ -196,15 +201,19 @@ export default function App() {
                 }}
               >
                 {
-                  item.subnav.slice(0, 6).map((subitem, subidx) => (
+                  item.subnav.slice(0, 5).map((subitem, subidx) => (
                     <DropdownItem
                       // key="autoscaling"
                       // description="ACME scales apps to meet user demand, automagically, based on load."
+                      className={`${subidx == 4 ? 'bg-grey text-white':''}`}
                       startContent={subidx == 5 ? null : icons.flash}
                     >
                       {
-                        subidx == 5 ?
-                          <button>click more</button> :
+                        subidx == 4 ?
+                          <button className="font-bold flex justify-center items-center gap-3">
+                            click more
+                            <FaArrowRight className="" />
+                          </button> :
                           subitem.name
                       }
 
