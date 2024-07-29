@@ -60,3 +60,19 @@ nav header {
     transition: 1s;
   }
 }
+
+
+.tick-list-item {
+  list-style-type: '✓';
+}
+
+.tick-list-item::marker {
+  color: #3b82f6; /* Tailwind's blue-500 color */
+  font-weight: bold;
+}
+
+
+/* ratting */
+.customRating>div>svg{
+  @apply tablet:h-14 tablet:w-14 laptop:h-20 laptop:w-20
+}
