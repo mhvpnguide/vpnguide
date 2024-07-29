@@ -15,7 +15,7 @@ const config: Config = {
         'tablet': {'min': '426px'},
         'laptop': {'min': '769px'},
         'laptopl': {'min': '1200px'},
-        '4k': {'min': '1441px'},
+        '4k': {'min': '1600px'},
       },
       colors:{
         grey: "#474852",
