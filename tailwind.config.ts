@@ -1,0 +1,30 @@
+import type { Config } from "tailwindcss";
+import {nextui} from "@nextui-org/react";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/button.js",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: { 
+      screens:{
+        'tablet': {'min':'426px'},
+        'laptop': {'min':'769px'},
+        'laptopl': {'min':'1200px'},
+        '4k': {'min':'1600px'},
+      },
+      colors:{
+        grey: "#474852",
+        bluelink: "#1E2694",
+        purple: "#5D66EB",
+      },
+    },
+  },
+  darkMode: "class",
+  plugins: [nextui()]
+};
+export default config;

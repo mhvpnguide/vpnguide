@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  @apply justify-start !important;
+}
+
+nav header {
+  @apply justify-between gap-10;
+}
+
+.main-bg {
+  background-image: radial-gradient(circle 500px at 30% 400px, #fad6cd 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 65% 570px, #b8c6fc 4%, rgba(219, 227, 253, 0.5) 57.5%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 25% 3600px, #fbb8a7 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 65% 4000px, #b8c6fc 4%, rgba(219, 227, 253, 0.5) 57.5%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 350px at 70% 4700px, #fad6cd 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* nav header ul{
+  @apply  justify-between gap-10 bg-red-300;
+} */
+
+
+.shadow-custom {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.active\:shadow-custom-active:active {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@layer components{
+  .home_heading{
+    @apply text-base md:text-xl font-semibold text-blue-700;
+  }
+  .home_subheading{
+    @apply text-3xl md:text-4xl tablet:text-3xl font-bold text-center laptop:text-start;
+  }
+  .home_headContent{
+    @apply text-start text-base font-medium text-grey tablet:text-center laptop:text-start;
+  }
+  .home_button{
+    @apply bg-purple px-4 py-2 text-lg w-full md:w-fit text-white font-semibold rounded-xl tablet:mt-2;
+  }
+  .hovereff:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(178, 179, 245, 0.69) 0px 15px 13px 0px, rgba(178, 179, 245, 0.19) 0px 1px 3px 0px inset;
+    text-decoration: none;
+    background: radial-gradient(circle, transparent 2%, white 2%) center center / 10000% white;
+    transition: 1s;
+  }
+  .hoverBtn:hover{
+    background-color: #1e2694;
+    transition: 1s;
+  }
+}
