@@ -76,3 +76,19 @@ nav header {
 .customRating>div>svg{
   @apply tablet:h-14 tablet:w-14 laptop:h-20 laptop:w-20
 }
+
+/* top card */
+
+.customsize{
+  @apply text-sm ;
+}
+.customsize>h2>button div:nth-child(2)>span{
+  @apply text-sm font-semibold;
+}
+
+.customAccr p{
+  @apply my-3;
+}
+.customAccr a{
+  @apply text-blue-600;
+}
