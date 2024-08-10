@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
-import Table from "@/components/Table";
+import Table1 from "@/components/Table1";
 
 const cookiesDataTable1 = [
   {
@@ -143,7 +143,7 @@ const CookiesPolicy = () => {
               Cookies Set by Us
             </h2>
             <div className="overflow-x-auto">
-              <Table
+              <Table1
                 heading1="Cookie Name"
                 heading2="Description"
                 heading3="Duration"
@@ -168,7 +168,7 @@ const CookiesPolicy = () => {
               our services.
             </p>
             <div className="overflow-x-auto">
-              <Table
+              <Table1
                 heading1="Third Party"
                 heading2="Description"
                 heading3=""
@@ -186,7 +186,7 @@ const CookiesPolicy = () => {
               displayed when you browse the internet.
             </p>
             <div className="overflow-x-auto">
-              <Table
+              <Table1
                 heading1="Third Party"
                 heading2="Description"
                 heading3=""
@@ -202,7 +202,7 @@ const CookiesPolicy = () => {
               them interfering with your use of our Website.
             </p>
             <div className="overflow-x-auto">
-              <Table
+              <Table1
                 heading1="Third Party"
                 heading2="Description"
                 heading3=""
