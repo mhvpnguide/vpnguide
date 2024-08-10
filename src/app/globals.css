@@ -194,3 +194,33 @@ nav>header>ul>ul{
 .speed h1{
   @apply my-4 text-2xl font-bold;
 }
+
+/* guides */
+
+.guides h2{
+  @apply mt-10 mb-6 text-2xl font-bold;
+}
+.guides h3{
+  @apply mt-10 mb-3 text-xl font-bold;
+}
+.guides p{
+  @apply mb-4 text-lg;
+}
+.guides h4{
+  @apply mt-10 mb-2 text-lg font-semibold;
+}
+
+
+/* vpn-explained */
+.vpn-explained h2{
+  @apply mt-10 mb-6 text-2xl font-bold;
+}
+.vpn-explained h3{
+  @apply mt-10 mb-3 text-xl font-bold;
+}
+.vpn-explained p{
+  @apply mb-4 text-lg;
+}
+.vpn-explained h4{
+  @apply mt-10 mb-2 text-lg font-semibold;
+}
