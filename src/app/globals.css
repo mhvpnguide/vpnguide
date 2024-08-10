@@ -24,6 +24,10 @@ nav>header>ul>ul{
   @apply laptop:justify-center !important;
 }
 
+.button-drop:hover{
+  background-color: none !important;
+}
+
 .main-bg {
   background-image: radial-gradient(circle 500px at 30% 400px, #fad6cd 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 65% 570px, #b8c6fc 4%, rgba(219, 227, 253, 0.5) 57.5%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 25% 3600px, #fbb8a7 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 65% 4000px, #b8c6fc 4%, rgba(219, 227, 253, 0.5) 57.5%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 350px at 70% 4700px, #fad6cd 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -64,6 +68,49 @@ nav>header>ul>ul{
   .hoverBtn:hover{
     background-color: #1e2694;
     transition: 1s;
+  }
+  .btn-readMore{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1;
+    color: #232434;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c7c4c3;
+    outline-color: #fa9075;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-position: center;
+  }
+  .ContactForm{
+    background-color: #f9f9f9;
+    box-shadow: 0 0.78px 3.901px 0 rgba(28, 32, 87, 0.5), 0 3.121px 15.604px 0 rgba(28, 32, 87, 0.2);
+    border-radius: 5px;
+    padding:24px 12px
+  }
+  .contact-Inp
+  {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  }
+  .contact-btn{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1;
+    color: white;
+    background-color: #5d66eb;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    -webkit-transition: 800ms;
+    transition: 800ms;
   }
 }
 
