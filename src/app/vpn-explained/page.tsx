@@ -67,7 +67,7 @@ const vpnExplained = () => {
 
   return (
     <section className="">
-      <TopCard />
+      <TopCard title="What Is a VPN (Virtual Private Network)?"/>
       <section className="px-3">
         <p className="text-xl font-semibold pb-2">Our Verdict</p>
         <p className="text-lg">
