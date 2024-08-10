@@ -13,6 +13,7 @@ import { FaChrome } from "react-icons/fa";
 import { SiAmazonfiretv, SiAppletv, SiIos, SiMacos, SiMicrosoftedge, SiRoku } from "react-icons/si";
 import { MdOutlineRouter } from "react-icons/md";
 import { BsNintendoSwitch } from "react-icons/bs";
+import CustomBreadcrumb from "@/components/Breadcrumb";
 
 interface DeviceOS {
   heading: string;
@@ -67,7 +68,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <section >
-      {/* <TopCard title={`${blog.attributes.vpn_name} review`} /> */}
+      <div>
+        <CustomBreadcrumb/>
+      </div>
+      <TopCard title={`${blog.attributes.vpn_name} review`} />
       <section className="flex gap-12 max-w-screen laptop:justify-center">
 
         {/* content */}

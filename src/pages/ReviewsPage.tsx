@@ -10,9 +10,10 @@ import { SiMacos } from "react-icons/si";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import config from '../../config.js'
 import { cache } from "react";
+import CustomBreadcrumb from "@/components/Breadcrumb";
 
 const fetchBlogs = async () => {
-  
+
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.API_TOKEN}`
@@ -31,6 +32,10 @@ const ReviewsPage = async () => {
 
   return (
     <div className="bg-gray-100">
+
+      <div className="about-upper-part pt-5 pb-10 flex ">
+        <CustomBreadcrumb />
+      </div>
 
       {/* top */}
       <div className="px-3 flex items-center flex-col pt-14 pb-10 mb-3 bg-red-100 ">
