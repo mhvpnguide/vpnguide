@@ -194,3 +194,28 @@ nav>header>ul>ul{
 .speed h1{
   @apply my-4 text-2xl font-bold;
 }
+
+
+
+/* guides */
+
+.guides h2{
+  @apply mt-10 mb-6 text-2xl font-bold;
+}
+.guides h3{
+  @apply mt-10 mb-3 text-xl font-bold;
+}
+.guides h4{
+  @apply mt-10 mb-2 text-lg font-semibold;
+}
+.guides p{
+  @apply mb-4 text-lg;
+}
+.guides ul{
+  list-style-type: disc;
+  padding-left: 20px;;
+}
+
+.guides a{
+  color: blue;
+}
