@@ -51,13 +51,9 @@ const Footer = () => {
       {/* bottom part of footer */}
       <div className="flex px-3 tablet:px-10 4k:mx-[660px] flex-col mt-14 ">
         <div className="flex flex-wrap pb-4 gap-2">
-          <Link href="#" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
-          <Link href="#" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
-          <Link href="#" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
-          <Link href="#" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
-          <Link href="#" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
-          <Link href="#" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
-          <Link href="#" className="text-sm hover:text-blue-700">Privacy Policy</Link>
+          <Link href="/privacy-policy" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
+          <Link href="/cookie-policy" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Cookie Policy</Link>
+          <Link href="/terms-conditions" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Terms of Use</Link>
         </div>
         <p className="text-sm mb-4">Top10VPN.com is operated by PrivacyCo Ltd. | © 2016-2024. All rights reserved.</p>
       </div>

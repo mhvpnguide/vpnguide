@@ -15,7 +15,17 @@ nav {
 }
 
 nav header {
-  @apply justify-between gap-10;
+  @apply justify-between gap-10 max-w-full !important;
+}
+nav>header>ul{
+  @apply w-full justify-between !important;
+}
+nav>header>ul>ul{
+  @apply laptop:justify-center !important;
+}
+
+.button-drop:hover{
+  background-color: none !important;
 }
 
 .main-bg {
@@ -58,5 +68,48 @@ nav header {
   .hoverBtn:hover{
     background-color: #1e2694;
     transition: 1s;
+  }
+  .btn-readMore{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1;
+    color: #232434;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c7c4c3;
+    outline-color: #fa9075;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-position: center;
+  }
+  .ContactForm{
+    background-color: #f9f9f9;
+    box-shadow: 0 0.78px 3.901px 0 rgba(28, 32, 87, 0.5), 0 3.121px 15.604px 0 rgba(28, 32, 87, 0.2);
+    border-radius: 5px;
+    padding:24px 12px
+  }
+  .contact-Inp
+  {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  }
+  .contact-btn{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1;
+    color: white;
+    background-color: #5d66eb;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    -webkit-transition: 800ms;
+    transition: 800ms;
   }
 }
