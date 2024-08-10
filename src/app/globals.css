@@ -15,7 +15,13 @@ nav {
 }
 
 nav header {
-  @apply justify-between gap-10;
+  @apply justify-between gap-10 max-w-full !important;
+}
+nav>header>ul{
+  @apply w-full justify-between !important;
+}
+nav>header>ul>ul{
+  @apply laptop:justify-center !important;
 }
 
 .main-bg {
@@ -63,16 +69,81 @@ nav header {
 
 
 .tick-list-item {
-  list-style-type: '✓';
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5em; /* Adjust this value for more or less spacing */
 }
 
-.tick-list-item::marker {
+.tick-list-item::before {
+  content: '✓';
   color: #3b82f6; /* Tailwind's blue-500 color */
   font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+.cross-list-item {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5em; /* Adjust this value for more or less spacing */
+}
+
+.cross-list-item::before {
+  content: 'x';
+  color: #640000; /* Tailwind's blue-500 color */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 
 /* ratting */
 .customRating>div>svg{
   @apply tablet:h-14 tablet:w-14 laptop:h-20 laptop:w-20
+}
+
+/* top card */
+
+.customsize{
+  @apply text-sm ;
+}
+.customsize>h2>button div:nth-child(2)>span{
+  @apply text-sm font-semibold;
+}
+
+.customAccr p{
+  @apply my-3;
+}
+.customAccr a{
+  @apply text-blue-600;
+}
+
+.customProgress>div{
+  @apply bg-gray-400;
+}
+.r-9>div>div{
+  @apply bg-warning-500;
+}
+.r-8>div>div{
+  @apply bg-warning-300;
+}
+.r-5>div>div{
+  @apply bg-success-300;
+}
+.r-1>div>div{
+  @apply bg-primary-300;
+}
+
+
+.beforeImage p{
+  @apply my-2
+}
+
+
+.streaming p,
+.speed p{
+  @apply mb-4 text-xl;
+}
+.streaming h1,
+.speed h1{
+  @apply my-4 text-2xl font-bold;
 }
