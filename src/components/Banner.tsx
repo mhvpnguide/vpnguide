@@ -11,7 +11,7 @@ const Banner = () => {
                 VPN Advice You Can Trust
             </div>
             <div className="text-lg tablet:text-base laptop:text-lg font-medium text-grey text-center mb-2 tablet:pt-5">
-                Take control of your internet privacy and security with our <Link href="#" className='text-bluelink hover:underline'>unbiased VPN reviews</Link> and independent advice.
+                Take control of your internet privacy and security with our <Link href="/reviews" className='text-bluelink hover:underline'>unbiased VPN reviews</Link> and independent advice.
             </div>
             <div className='w-[280px] h-[280px] relative'>
                 <Image src="/2808108_18383.png" alt="VPN Banner" fill className="mt-4 tablet:mt-6 laptop:mt-8" />

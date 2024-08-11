@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="flex flex-wrap pb-4 gap-2">
           <Link href="/privacy-policy" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Privacy Policy</Link>
           <Link href="/cookie-policy" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Cookie Policy</Link>
-          <Link href="/terms-conditions" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Terms of Use</Link>
+          <Link href="/terms-conditions" className="text-sm hover:text-blue-700 pr-2">Terms of Use</Link>
         </div>
         <p className="text-sm mb-4">Top10VPN.com is operated by PrivacyCo Ltd. | © 2016-2024. All rights reserved.</p>
       </div>

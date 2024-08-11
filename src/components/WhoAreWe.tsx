@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "./Crads";
+import Link from "next/link";
 
 const WhoAreWe = () => {
   return (
@@ -15,9 +16,11 @@ const WhoAreWe = () => {
             decisions about the VPNs you use for a more private, secure, and
             open internet experience.
           </div>
-          <button className="hidden laptop:flex home_button hoverBtn">
-            Discover Our Mission
-          </button>
+          <Link href="/about">
+            <button className="hidden laptop:flex home_button hoverBtn">
+              Discover Our Mission
+            </button>
+          </Link>
         </div>
 
         <div className=" flex laptop:flex w-full laptop:w-1/2 justify-center items-center">
@@ -40,7 +43,11 @@ const WhoAreWe = () => {
             decisions about the VPNs you use for a more private, secure, and
             open internet experience.
           </div>
-          <button className="home_button hoverBtn">Discover Our Mission</button>
+          <Link href="/about">
+            <button className="home_button hoverBtn">
+              Discover Our Mission
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -73,62 +80,67 @@ const WhoAreWe = () => {
               easy-to-understand ratings, we help you quickly find the VPN that
               best fits your needs.
             </div>
-            <button className="home_button hoverBtn">
-              See All VPN Reviews
+            <Link href="/reviews">
+              <button className="home_button hoverBtn">
+                See All VPN Reviews
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
+        <div className="order-2 tablet-order-1 flex items-center justify-center p-4 tablet:w-full">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
+            <Card
+              title="VPN Features & Troubleshooting"
+              imageSrc="/2808108_18383.png"
+              link="home"
+            />
+            <Card
+              title="VPN Features & Troubleshooting"
+              imageSrc="/2808108_18383.png"
+              link="about"
+            />
+            <Card
+              title="VPN Features & Troubleshooting"
+              imageSrc="/2808108_18383.png"
+              link="title"
+            />
+            <Card
+              title="VPN Features & Troubleshooting"
+              imageSrc="/2808108_18383.png"
+              link="example"
+            />
+          </div>
+        </div>
+
+        {/* text for mobile */}
+        <div className="order-3 tablet-order-2 flex laptop:hidden laptopl:hidden 4k:hidden flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
+          <div className="hidden home_subheading ">
+            We Stand for Internet Privacy, Security & Freedom
+          </div>
+          <div className=" home_headContent">
+            Not sure where to start? Our experts have put together a set of
+            simple, informative guides to help improve your online privacy,
+            security, and freedom.
+          </div>
+          <Link href="/guides"><button className="home_button hoverBtn">See all guides</button></Link>
+        </div>
+
+        <div className="order-1 tablet:order-3 flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
+          <div className="home_heading ">GUIDES & RESOURCES</div>
+          <div className=" laptop:flex home_subheading ">Learn about VPNs</div>
+          <div className="hidden laptop:flex home_headContent">
+            Not sure where to start? Our experts have put together a set of
+            simple, informative guides to help improve your online privacy,
+            security, and freedom.
+          </div>
+          <Link href="/guides">
+            <button className="hidden laptop:flex home_button hoverBtn">
+              See All Guides
             </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
-        <div className="flex items-center justify-center p-4 tablet:w-full">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
-            <Card
-              title="VPN Features & Troubleshooting"
-              imageSrc="/2808108_18383.png"
-              link="home"
-            />
-            <Card
-              title="VPN Features & Troubleshooting"
-              imageSrc="/2808108_18383.png"
-              link="about"
-            />
-            <Card
-              title="VPN Features & Troubleshooting"
-              imageSrc="/2808108_18383.png"
-              link="title"
-            />
-            <Card
-              title="VPN Features & Troubleshooting"
-              imageSrc="/2808108_18383.png"
-              link="example"
-            />
-          </div>
-        </div>
-
-        {/* text for mobile */}
-        <div className="flex laptop:hidden laptopl:hidden 4k:hidden flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
-          <div className="hidden home_subheading ">
-            We Stand for Internet Privacy, Security & Freedom
-          </div>
-          <div className=" home_headContent">
-            Not sure where to start? Our experts have put together a set of
-            simple, informative guides to help improve your online privacy,
-            security, and freedom.
-          </div>
-          <button className="home_button hoverBtn">Discover Our Mission</button>
-        </div>
-        <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
-          <div className="home_heading ">GUIDES & RESOURCES</div>
-          <div className=" laptop:flex home_subheading ">Learn about VPNs</div>
-          <div className="hidden laptop:flex home_headContent">
-            Not sure where to start? Our experts have put together a set of
-            simple, informative guides to help improve your online privacy,
-            security, and freedom.
-          </div>
-          <button className="hidden laptop:flex home_button hoverBtn">
-            See All Guides
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -141,9 +153,11 @@ const WhoAreWe = () => {
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <button className="hidden laptop:flex home_button hoverBtn">
-            See All Guides
-          </button>
+          <Link href="/guides">
+            <button className="hidden laptop:flex home_button hoverBtn">
+              See All Guides
+            </button>
+          </Link>
         </div>
 
         <div className="flex items-center justify-center p-4 tablet:w-full">
@@ -173,15 +187,14 @@ const WhoAreWe = () => {
 
         {/* text for mobile */}
         <div className="flex laptop:hidden laptopl:hidden 4k:hidden flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
-          <div className="hidden home_subheading ">
-            We Stand for Internet Privacy, Security & Freedom
-          </div>
           <div className=" home_headContent">
             Not sure where to start? Our experts have put together a set of
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <button className="home_button hoverBtn">Discover Our Mission</button>
+          <Link href="/guides">
+            <button className="home_button hoverBtn">See All Guides</button>
+          </Link>
         </div>
       </section>
     </>
