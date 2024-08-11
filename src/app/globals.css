@@ -219,3 +219,18 @@ nav>header>ul>ul{
 .guides a{
   color: blue;
 }
+
+
+/* vpn-explained */
+.vpn-explained h2{
+  @apply mt-10 mb-6 text-2xl font-bold;
+}
+.vpn-explained h3{
+  @apply mt-10 mb-3 text-xl font-bold;
+}
+.vpn-explained p{
+  @apply mb-4 text-lg;
+}
+.vpn-explained h4{
+  @apply mt-10 mb-2 text-lg font-semibold;
+}

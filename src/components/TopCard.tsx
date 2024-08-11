@@ -1,7 +1,7 @@
 'use client'
 import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
 import Link from "next/link";
-import CustomBreadcrumb from "./Breadcrumb";
+import CustomBreadcrumb from "@/components/Breadcrumb";
 
 const TopCard = ({title}:{title: string}) => {
     const defaultContent =
