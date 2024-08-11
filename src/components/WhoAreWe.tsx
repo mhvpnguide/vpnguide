@@ -3,6 +3,7 @@ import Card from "./Crads";
 import { Tooltip } from "@nextui-org/react";
 import { fetchBlogs } from "@/pages/ReviewsPage";
 import ReviewCard from "./ReviewCard";
+import Link from "next/link";
 
 const WhoAreWe = async () => {
   const blogs = await fetchBlogs();
@@ -20,9 +21,11 @@ const WhoAreWe = async () => {
             decisions about the VPNs you use for a more private, secure, and
             open internet experience.
           </div>
-          <button className="hidden laptop:flex home_button hoverBtn">
-            Discover Our Mission
-          </button>
+          <Link href="/about">
+            <button className="hidden laptop:flex home_button hoverBtn">
+              Discover Our Mission
+            </button>
+          </Link>
         </div>
 
         <div className=" flex laptop:flex w-full laptop:w-1/2 justify-center items-center">
@@ -45,7 +48,11 @@ const WhoAreWe = async () => {
             decisions about the VPNs you use for a more private, secure, and
             open internet experience.
           </div>
-          <button className="home_button hoverBtn">Discover Our Mission</button>
+          <Link href="/about">
+            <button className="home_button hoverBtn">
+              Discover Our Mission
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -78,9 +85,53 @@ const WhoAreWe = async () => {
               easy-to-understand ratings, we help you quickly find the VPN that
               best fits your needs.
             </div>
-            <button className="home_button hoverBtn">
-              See All VPN Reviews
-            </button>
+            <Link href="/reviews">
+              <button className="home_button hoverBtn">
+                See All VPN Reviews
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="py-10 px-5">
+          <div className="text-center">
+            <h1 className="font-bold text-3xl mb-4">Top VPN Services for 2024</h1>
+            <p className="">The best VPNs for online privacy and security-tested and reviewed by our experts. By clicking on the product name in the list below, you can easily get updated prices, technical specs, and additonal info about each product.</p>
+            <div className="flex justify-end pr-5">
+              {/* hellow */}
+              <Tooltip
+                content={
+                  <p className="">
+                    It is important to us that you will find the perfect VPN service for your needs - that is the aim and purpose of this site. We aim to be 100% transparent about our reviewing process (more about that in the 'How we review' section on this site). We earn money via commissions from the VPN companies featured on this site, which we receive when you click our links and make purchases. This impacts the ranking, score and order in which the services we work with (and their products) are presented. VPN listings on this page DO NOT imply endorsement. We do not feature all of the available VPN services, only those we have reviewed. We strive to keep this site constantly updated, but cannot guarantee the accuracy of the information at all times.
+                  </p>
+                }
+                placement="bottom"
+                classNames={{
+                  base: [
+                    // arrow color
+                    "text-right pr-5",
+                  ],
+                  content: [
+                    "text-sm text-gray-600 w-1/2 text-justify",
+                  ],
+                }}
+              >
+                <span className="text-xs font-semibold text-gray-600 underline">
+                  ADEVRTISER DISCLOSURE
+                </span>
+              </Tooltip>
+            </div>
+          </div>
+          <div className="mt-5 ">
+            {
+              blogs ?
+                <ReviewCard blogs={blogs.slice(0, 4)} />
+                :
+                "waiting"
+
+            }
           </div>
         </div>
       </section>
@@ -128,7 +179,7 @@ const WhoAreWe = async () => {
       </section>
 
       <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
-        <div className="flex items-center justify-center p-4 tablet:w-full">
+        <div className="order-2 tablet-order-1 flex items-center justify-center p-4 tablet:w-full">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
               title="VPN Features & Troubleshooting"
@@ -154,7 +205,7 @@ const WhoAreWe = async () => {
         </div>
 
         {/* text for mobile */}
-        <div className="flex laptop:hidden laptopl:hidden 4k:hidden flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
+        <div className="order-3 tablet-order-2 flex laptop:hidden laptopl:hidden 4k:hidden flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
           <div className="hidden home_subheading ">
             We Stand for Internet Privacy, Security & Freedom
           </div>
@@ -163,9 +214,10 @@ const WhoAreWe = async () => {
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <button className="home_button hoverBtn">Discover Our Mission</button>
+          <Link href="/guides"><button className="home_button hoverBtn">See all guides</button></Link>
         </div>
-        <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
+
+        <div className="order-1 tablet:order-3 flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
           <div className="home_heading ">GUIDES & RESOURCES</div>
           <div className=" laptop:flex home_subheading ">Learn about VPNs</div>
           <div className="hidden laptop:flex home_headContent">
@@ -173,9 +225,11 @@ const WhoAreWe = async () => {
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <button className="hidden laptop:flex home_button hoverBtn">
-            See All Guides
-          </button>
+          <Link href="/guides">
+            <button className="hidden laptop:flex home_button hoverBtn">
+              See All Guides
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -188,9 +242,11 @@ const WhoAreWe = async () => {
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <button className="hidden laptop:flex home_button hoverBtn">
-            See All Guides
-          </button>
+          <Link href="/guides">
+            <button className="hidden laptop:flex home_button hoverBtn">
+              See All Guides
+            </button>
+          </Link>
         </div>
 
         <div className="flex items-center justify-center p-4 tablet:w-full">
@@ -220,15 +276,14 @@ const WhoAreWe = async () => {
 
         {/* text for mobile */}
         <div className="flex laptop:hidden laptopl:hidden 4k:hidden flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
-          <div className="hidden home_subheading ">
-            We Stand for Internet Privacy, Security & Freedom
-          </div>
           <div className=" home_headContent">
             Not sure where to start? Our experts have put together a set of
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <button className="home_button hoverBtn">Discover Our Mission</button>
+          <Link href="/guides">
+            <button className="home_button hoverBtn">See All Guides</button>
+          </Link>
         </div>
       </section>
     </>

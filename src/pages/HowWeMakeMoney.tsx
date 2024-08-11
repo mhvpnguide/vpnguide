@@ -2,17 +2,21 @@ import Link from "next/link";
 import Image from "next/image";
 import Image1 from "next/image";
 import { RxCross1 } from "react-icons/rx";
+import TopCard from "@/components/TopCard";
 
 import Breadcrumb from "../components/Breadcrumb";
 const HowWeMakeMoney = () => {
   return (
-    <section className="laptop:flex laptop:justify-center laptop:items-center">
+    <section className="laptop:flex flex-col laptop:justify-center laptop:items-center">
+      <div className="w-full">
+        <TopCard title="How we Make Money" />
+      </div>
       <div className="px-3 laptop:w-3/4 ">
-        <div className="pt-3 pb-7">
+        {/* <div className="pt-3 pb-7">
           <Breadcrumb />
-        </div>
+        </div> */}
         <div className="flex flex-col justify-center items-center  laptop:flex tablet:flex ">
-          <h1 className="text-4xl font-bold mb-10 w-full">How we Make Money</h1>
+          {/* <h1 className="text-4xl font-bold mb-10 w-full">How we Make Money</h1> */}
           <div className="w-[280px] h-[280px] relative mt-5 mb-10">
             <Image
               src="/2808108_18383.png"
