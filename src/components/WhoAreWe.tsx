@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Card from "./Crads";
+import { Tooltip } from "@nextui-org/react";
+import { fetchBlogs } from "@/pages/ReviewsPage";
+import ReviewCard from "./ReviewCard";
 import Link from "next/link";
 
-const WhoAreWe = () => {
+const WhoAreWe = async () => {
+  const blogs = await fetchBlogs();
+
   return (
     <>
       <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
@@ -85,6 +90,90 @@ const WhoAreWe = () => {
                 See All VPN Reviews
               </button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="py-10 px-5">
+          <div className="text-center">
+            <h1 className="font-bold text-3xl mb-4">Top VPN Services for 2024</h1>
+            <p className="">The best VPNs for online privacy and security-tested and reviewed by our experts. By clicking on the product name in the list below, you can easily get updated prices, technical specs, and additonal info about each product.</p>
+            <div className="flex justify-end pr-5">
+              {/* hellow */}
+              <Tooltip
+                content={
+                  <p className="">
+                    It is important to us that you will find the perfect VPN service for your needs - that is the aim and purpose of this site. We aim to be 100% transparent about our reviewing process (more about that in the 'How we review' section on this site). We earn money via commissions from the VPN companies featured on this site, which we receive when you click our links and make purchases. This impacts the ranking, score and order in which the services we work with (and their products) are presented. VPN listings on this page DO NOT imply endorsement. We do not feature all of the available VPN services, only those we have reviewed. We strive to keep this site constantly updated, but cannot guarantee the accuracy of the information at all times.
+                  </p>
+                }
+                placement="bottom"
+                classNames={{
+                  base: [
+                    // arrow color
+                    "text-right pr-5",
+                  ],
+                  content: [
+                    "text-sm text-gray-600 w-1/2 text-justify",
+                  ],
+                }}
+              >
+                <span className="text-xs font-semibold text-gray-600 underline">
+                  ADEVRTISER DISCLOSURE
+                </span>
+              </Tooltip>
+            </div>
+          </div>
+          <div className="mt-5 ">
+            {
+              blogs ?
+                <ReviewCard blogs={blogs.slice(0, 4)} />
+                :
+                "waiting"
+
+            }
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="py-10 px-5">
+          <div className="text-center">
+            <h1 className="font-bold text-3xl mb-4">Top VPN Services for 2024</h1>
+            <p className="">The best VPNs for online privacy and security-tested and reviewed by our experts. By clicking on the product name in the list below, you can easily get updated prices, technical specs, and additonal info about each product.</p>
+            <div className="flex justify-end pr-5">
+              {/* hellow */}
+              <Tooltip
+                content={
+                  <p className="">
+                    It is important to us that you will find the perfect VPN service for your needs - that is the aim and purpose of this site. We aim to be 100% transparent about our reviewing process (more about that in the 'How we review' section on this site). We earn money via commissions from the VPN companies featured on this site, which we receive when you click our links and make purchases. This impacts the ranking, score and order in which the services we work with (and their products) are presented. VPN listings on this page DO NOT imply endorsement. We do not feature all of the available VPN services, only those we have reviewed. We strive to keep this site constantly updated, but cannot guarantee the accuracy of the information at all times.
+                  </p>
+                }
+                placement="bottom"
+                classNames={{
+                  base: [
+                    // arrow color
+                    "text-right pr-5",
+                  ],
+                  content: [
+                    "text-sm text-gray-600 w-1/2 text-justify",
+                  ],
+                }}
+              >
+                <span className="text-xs font-semibold text-gray-600 underline">
+                  ADEVRTISER DISCLOSURE
+                </span>
+              </Tooltip>
+            </div>
+          </div>
+          <div className="mt-5 ">
+            {
+              blogs ?
+                <ReviewCard blogs={blogs.slice(0, 4)} />
+                :
+                "waiting"
+
+            }
           </div>
         </div>
       </section>
