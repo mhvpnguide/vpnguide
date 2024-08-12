@@ -27,7 +27,7 @@ const ContactForm = () => {
 
   return (
     <section>
-      <h2 className="mb-6 font-bold text-3xl">Contact</h2>
+      {/* <h2 className="mb-6 font-bold text-3xl">Contact</h2> */}
       <div className="block">
         <div className="ContactForm">
           <form id="contact-form" className="jsx-882709793" onSubmit={handleSubmit}>
