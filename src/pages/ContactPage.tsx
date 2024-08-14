@@ -3,10 +3,14 @@ import { MdOutlinePhone } from "react-icons/md";
 import { SlEnvolope } from "react-icons/sl";
 import { MdOutlineLocationOn } from "react-icons/md";
 import Link from "next/link";
+import TopCard from "@/components/TopCard";
 
 const ContactPage = () => {
   return (
     <section className="about-main   laptop:px-5 px-3 laptop:w-full">
+      <div className="w-full">
+        <TopCard title="Contact Us" />
+      </div>
       <div className="mt-24 flex flex-col gap-8 laptop:flex laptop:flex-row laptop:justify-center laptop:items-center laptop:px-20">
         <div className="laptop:w-1/2">
           <ContactForm />

@@ -39,12 +39,9 @@ const Footer = () => {
          {/* right */}
         <div className="flex flex-col order-2 tablet:order-3 tablet:w-[25%] laptop:w-[20%]">
           <div className="text-lg tablet:text-base font-bold mb-6">About</div>
-          <Link href="about" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">About Us</Link>
-          <Link href="#" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">Press</Link>
-          <Link href="#" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">Our VPN Experts</Link>
-          <Link href="#" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">Our Review Process</Link>
-          <Link href="#" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">How We Make Money</Link>
-          <Link href="#" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">Research Grant</Link>
+          <Link href="/about" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">About Us</Link>
+          <Link href="/about/how-we-review-vpn" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">Our Review Process</Link>
+          <Link href="/about/how-we-make-money" className="text-base tablet:text-sm mb-4 tablet:mb-2 hover:text-blue-700">How We Make Money</Link>
         </div>
       </div>
 
