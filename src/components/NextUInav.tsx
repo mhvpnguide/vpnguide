@@ -128,7 +128,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
         </Link>
 
         <NavbarContent className="hidden laptop:flex gap-3">
-          {navdata.map((item, idx) => (
+          {navdata.map((item:NavItem, idx:number) => (
             <Dropdown key={idx}>
               <NavbarItem>
                 <DropdownTrigger>
@@ -150,7 +150,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                   base: "gap-5",
                 }}
               >
-                {item.subnav.map((subitem, subidx) => (
+                {item.subnav.map((subitem:SubnavItem, subidx:number) => (
                   <DropdownItem
                   key={idx}
                     // key="autoscaling"
@@ -191,13 +191,13 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
           {/* mobile view */}
       <NavbarMenu>
         <Accordion>
-          {navdata.map((itm, idx) => (
+          {navdata.map((itm:NavItem, idx:number) => (
             <AccordionItem
               key={idx}
               aria-label={itm.mainHeading}
               title={itm.mainHeading}
             >
-              {itm.subnav.map((subitm, subidx) => (
+              {itm.subnav.map((subitm:SubnavItem, subidx:number) => (
                 <div key={idx}>
                   {subidx == 4 ?  <Link href={subitm.link}><button>see more</button></Link> : <Link href={subitm.link}>{subitm.name}</Link>}
                 </div>

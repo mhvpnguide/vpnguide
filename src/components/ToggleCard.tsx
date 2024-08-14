@@ -27,7 +27,7 @@ const ToggleCard: React.FC<ProsListProps> = ({ pros, cons }) => {
                 active == "pros" ?
                     <ul className="bg-white p-1 space-y-2">
                         {
-                            pros.map((itm, idx) => (
+                            pros.map((itm:Pro, idx:number) => (
                                 <li className="tick-list-item ml-3" key={idx}>{itm.value}</li>
                             ))
                         }
@@ -36,7 +36,7 @@ const ToggleCard: React.FC<ProsListProps> = ({ pros, cons }) => {
                     :
                     <ul className="bg-white p-1 space-y-2">
                         {
-                            cons.map((itm, idx) => (
+                            cons.map((itm:Pro, idx:number) => (
                                 <li className="cross-list-item ml-3" key={idx}>{itm.value}</li>
                             ))
                         }

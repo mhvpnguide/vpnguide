@@ -3,8 +3,14 @@ import TopCard from "@/components/TopCard";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Image from "next/image";
 
+type ContentItem = {
+  heading: string;
+  content: string; // Using string to allow HTML content as a string
+};
+type ContentArray = ContentItem[];
+
 const vpnExplained = () => {
-  const content1 = [
+  const content1:ContentArray  = [
     {
       heading: "What is a VPN?",
       content: `
@@ -100,7 +106,7 @@ const vpnExplained = () => {
           </p>
 
           <Accordion>
-            {content1.map((itm, idx) => (
+            {content1.map((itm:ContentItem, idx:number) => (
               <AccordionItem
                 key={idx}
                 aria-label={itm.heading}

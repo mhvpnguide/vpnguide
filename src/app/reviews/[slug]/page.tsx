@@ -15,6 +15,33 @@ import { MdOutlineRouter } from "react-icons/md";
 import { BsNintendoSwitch } from "react-icons/bs";
 import CustomBreadcrumb from "@/components/Breadcrumb";
 
+
+type SpeedTableItem = {
+  id: number;
+  server_location: string;
+  download_speed: string;
+  upload_speed: string;
+  ping: string;
+  distance: string;
+};
+type PriceChart = {
+  id: number;
+  validity: string;
+  price: string;
+  save: string;
+  total_bill: string;
+};
+type TorrentingTest = {
+  id: number;
+  torrenting_attribute: string;
+  value: string;
+};
+type Continent = {
+  id: number;
+  name: string;
+  count: string;
+};
+
 interface DeviceOS {
   heading: string;
   before_table_text: string;
@@ -266,7 +293,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
 
                   {
-                    blog.attributes.speed.speed_table.map((itm, idx) => (
+                    blog.attributes.speed.speed_table.map((itm: SpeedTableItem, idx: number) => (
                         <div className="flex flex-col" key={idx}>
                           <div className="font-bold py-3 px-3 min-w-fit text-center whitespace-nowrap bg-slate-50">{itm.server_location}</div>
                           <div className="py-3 px-6 text-center">{itm.download_speed}</div>
@@ -307,7 +334,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <p className="mx-3 mt-5 text-lg">{blog.attributes.price_value.before_table_text}</p>
             <div className="m-3 rounded-md flex flex-col gap-3">
               {
-                blog.attributes.price_value.price_chart.map((itm, idx) => (
+                blog.attributes.price_value.price_chart.map((itm: PriceChart, idx: number) => (
                   <div className="bg-slate-50 w-full p-3 shadow-[0px_0px_7px_-3px_#1a202c]" key={idx}>
                     <div className="flex justify-between mb-2 ">
                       <div className="text-lg font-bold">{itm.validity}</div>
@@ -350,7 +377,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 <div className="w-1/2 py-3 px-2">Result</div>
               </div>
               {
-                blog.attributes.torrenting.torrenting_test.map((itm, idx) => (
+                blog.attributes.torrenting.torrenting_test.map((itm: TorrentingTest, idx: number) => (
                   <div className={`flex border-b-1 border-gray-200}`} key={idx}>
                     <div className="w-1/2 py-3 px-2 font-semibold">{itm.torrenting_attribute}</div>
                     <div className="w-1/2 py-3 px-2">{itm.value}</div>
@@ -393,7 +420,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 <div className="w-1/2 py-3 px-2"> 	Countries with Servers</div>
               </div>
               {
-                blog.attributes.server_locations.continent.map((itm, idx) => (
+                blog.attributes.server_locations.continent.map((itm: Continent, idx: number) => (
                   <div className={`flex border-b-1 border-gray-200}`} key={idx}>
                     <div className="w-1/2 py-3 px-2 font-semibold">{itm.name}</div>
                     <div className="w-1/2 py-3 px-2">{itm.count}</div>

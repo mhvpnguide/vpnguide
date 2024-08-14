@@ -4,7 +4,13 @@ import Table1 from "@/components/Table1";
 import Image from "next/image";
 import TopCard from "@/components/TopCard";
 
-const guidesData = [
+interface GuidesData{
+  name: string,
+  image: string,
+  link: string
+}
+
+const guidesData :GuidesData[]  = [
   {
     name: "How to hide your ip address",
     image: "https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp",
@@ -35,7 +41,7 @@ const Guides = () => {
       <TopCard title="VPN Guides & Resources"/>
       <div className="flex flex-col laptop:flex-row laptop:flex-wrap gap-2 laptop:gap-3 pl-[1%] laptop:w-3/4 laptop:mx-auto mt-10">
         {
-          guidesData.map((itm, idx) => (
+          guidesData.map((itm:GuidesData, idx:number) => (
             <Link href={`guides/${itm.link}`} className="laptop:w-[49%] flex h-fit gap-5" key={idx}>
               <div className="w-[50%] aspect-square relative">
                 <Image

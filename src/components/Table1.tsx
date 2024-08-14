@@ -31,7 +31,7 @@ const Table: React.FC<TableProps> = ({
           </tr>
         </thead>
         <tbody>
-          {cookies.map((cookie, index) => (
+          {cookies.map((cookie:CardProps, index:number) => (
             <tr key={index} className="hover:bg-[#f8f8f8]">
               <td className="p-4 border-gray-300">{cookie.name}</td>
               <td className="p-4 border-gray-300">

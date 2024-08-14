@@ -56,14 +56,14 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
 
                   {/* review card */}
                   {
-                    blogs.map((blog, idx) => (
+                    blogs.map((blog:Blog, idx:number) => (
                       <div className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white" key={idx}>
 
                         {/* top banner */}
                         <div className="bg-red-500 w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md">
                           <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
                           {
-                            blog.attributes.top_banner.map((subitm, subidx) => (
+                            blog.attributes.top_banner.map((subitm:BannerItem, subidx:number) => (
                               <>
                                 <div className={`bg-yellow-500  w-fit px-3 py-1 h-full ${subidx == 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length == subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
                                 {
@@ -99,7 +99,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
                           <div className="laptop:w-[40%]">
                             <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                               {
-                                blog.attributes.features.map((subitm, subidx) => (
+                                blog.attributes.features.map((subitm:Feature, subidx:number) => (
                                   <li className="tick-list-item" key={subidx}>{subitm.value}</li>
                                 ))
                               }
