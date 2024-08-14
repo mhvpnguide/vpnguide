@@ -1,4 +1,4 @@
-import ReviewsPage from "@/pages/ReviewsPage";
+import ReviewsPage from "../../pages/ReviewsPage";
 
 const reviews = () => {
     return (

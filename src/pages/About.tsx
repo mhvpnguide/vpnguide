@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "../components/ContactForm";
 import { MdOutlinePhone } from "react-icons/md";
 import { SlEnvolope } from "react-icons/sl";
 import { MdOutlineLocationOn } from "react-icons/md";
 import CustomBreadcrumb from "../components/Breadcrumb";
-import TopCard from "@/components/TopCard";
+import TopCard from "../components/TopCard";
 
 const AboutUS = () => {
   return (

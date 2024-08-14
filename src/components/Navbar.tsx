@@ -13,6 +13,8 @@ const fetchNames = async () => {
     },
     cache: "no-store"as RequestCache,
   }
+  console.log(config.api);
+  
   const request = await fetch(`${config.api}/api/reviews?fields[0]=vpn_name&fields[1]=slug`, reqOptions);
   const response = await request.json();
 

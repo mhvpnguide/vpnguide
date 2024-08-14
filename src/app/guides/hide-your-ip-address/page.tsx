@@ -1,4 +1,4 @@
-import TopCard from "@/components/TopCard";
+import TopCard from "../../../components/TopCard";
 
 const Page = () => {
   return (

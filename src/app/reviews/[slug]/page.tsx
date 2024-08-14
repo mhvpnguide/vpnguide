@@ -1,9 +1,9 @@
-import TopCard from "@/components/TopCard";
+import TopCard from "../../../components/TopCard";
 import config from '../../../../config';
-import CustomProgress from "@/components/CustomProgressBar";
-import ToggleCard from "@/components/ToggleCard";
+import CustomProgress from "../../../components/CustomProgressBar";
+import ToggleCard from "../../../components/ToggleCard";
 import Image from "next/image";
-import CustomTable from "@/components/Table";
+import CustomTable from "../../../components/Table";
 import Link from "next/link";
 import { FcGlobe, FcLinux } from "react-icons/fc";
 import { FaChromecast, FaCity, FaFirefoxBrowser, FaPlaystation, FaWindows, FaXbox } from "react-icons/fa6";
@@ -13,7 +13,7 @@ import { FaChrome } from "react-icons/fa";
 import { SiAmazonfiretv, SiAppletv, SiIos, SiMacos, SiMicrosoftedge, SiRoku } from "react-icons/si";
 import { MdOutlineRouter } from "react-icons/md";
 import { BsNintendoSwitch } from "react-icons/bs";
-import CustomBreadcrumb from "@/components/Breadcrumb";
+import CustomBreadcrumb from "../../../components/Breadcrumb";
 
 
 type SpeedTableItem = {

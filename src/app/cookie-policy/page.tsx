@@ -1,4 +1,4 @@
-import CookiesPolicy from "@/pages/Cookies";
+import CookiesPolicy from "../../pages/Cookies";
 
 const cookiespolicy = ()=>{
     return(

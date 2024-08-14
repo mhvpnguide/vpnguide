@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
-import Table1 from "@/components/Table1";
+import Table1 from "../components/Table1";
 
 const cookiesDataTable1 = [
   {

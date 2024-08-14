@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
-import Table from "@/components/Table";
+import Table from "../components/Table";
 
 const Term_Condition = () => {
   return (

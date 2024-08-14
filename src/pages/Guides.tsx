@@ -1,8 +1,6 @@
 import Link from "next/link";
-import Breadcrumb from "../components/Breadcrumb";
-import Table1 from "@/components/Table1";
 import Image from "next/image";
-import TopCard from "@/components/TopCard";
+import TopCard from "../components/TopCard";
 
 interface GuidesData{
   name: string,

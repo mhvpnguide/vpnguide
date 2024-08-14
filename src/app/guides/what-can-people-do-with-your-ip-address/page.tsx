@@ -1,4 +1,4 @@
-import TopCard from "@/components/TopCard";
+import TopCard from "../../../components/TopCard";
 import Image from "next/image";
 
 const Page = () => {

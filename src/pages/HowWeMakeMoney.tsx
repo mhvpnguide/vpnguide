@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Image1 from "next/image";
 import { RxCross1 } from "react-icons/rx";
-import TopCard from "@/components/TopCard";
+import TopCard from "../components/TopCard";
 
 import Breadcrumb from "../components/Breadcrumb";
 const HowWeMakeMoney = () => {

@@ -1,4 +1,4 @@
-import { SearchIcon } from "@/components/SearchIcon";
+import { SearchIcon } from "../components/SearchIcon";
 import { Input } from "@nextui-org/react";
 import Image from "next/image";
 import CustomCircularProgress from "@/components/CustomCircularRatting";
@@ -8,8 +8,8 @@ import { FaLinux, FaWindows } from "react-icons/fa";
 import { MdRouter } from "react-icons/md";
 import { SiMacos } from "react-icons/si";
 import config from "../../config.js"
-import CustomBreadcrumb from "@/components/Breadcrumb";
-import ReviewCard from "@/components/ReviewCard";
+import CustomBreadcrumb from "../components/Breadcrumb";
+import ReviewCard from "../components/ReviewCard";
 
 
 export const fetchBlogs = async () => {
@@ -21,7 +21,7 @@ export const fetchBlogs = async () => {
     cache: "no-store"as RequestCache,
 
   }
-  const request = await fetch(`${config.api}/api/reviews?fields[0]=vpn_name&fields[1]=ratting&fields[2]=slug&fields[3]=offer&fields[4]=details&populate[features]=*&populate[logo]=*&populate[compnay_link]=*&populate[top_banner]=*`, reqOptions);
+  const request = await fetch(`${config.api}/api/reviews?fields[0]=vpn_name&fields[1]=ratting&fields[2]=slug&fields[3]=offer&fields[4]=details&populate[features]=*&populate[logo]=*&populate[company_link]=*&populate[top_banner]=*`, reqOptions);
   const response = await request.json();
 
   

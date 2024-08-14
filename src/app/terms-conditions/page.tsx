@@ -1,4 +1,4 @@
-import Term_Condition from "@/pages/Term_Condition";
+import Term_Condition from "../../pages/Term_Condition";
 
 const termCondition = ()=>{
     return(

@@ -1,4 +1,4 @@
-import HowWeMakeMoney from "@/pages/HowWeMakeMoney";
+import HowWeMakeMoney from "../../../pages/HowWeMakeMoney";
 
 const howWeMakeMoney = ()=>{
     return(

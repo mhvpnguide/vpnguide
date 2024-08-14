@@ -19,7 +19,7 @@ interface Blog {
     offer: string;
     features: Feature[];
     ratting: number;
-    compnay_link: CompanyLink;
+    company_link: CompanyLink;
   }
   interface BannerItem {
     value: string;
@@ -51,6 +51,7 @@ interface BlogsProps {
   }
 
 const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
+  
     return(
         <section className="px-3 tablet:px-5 flex flex-col gap-7">
 
@@ -137,7 +138,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
 
                             <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
                               <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg">Visit website</Link>
-                              <Link href={`${blog.attributes.compnay_link.value}`} className="underline text-gray-500">{blog.attributes.compnay_link.name}</Link>
+                              <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                             </div>
                           </div>
                         </div>

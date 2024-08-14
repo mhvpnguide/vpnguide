@@ -1,5 +1,5 @@
-import CookiesPolicy from "@/pages/Cookies";
-import Guides from "@/pages/Guides";
+import CookiesPolicy from "../../pages/Cookies";
+import Guides from "../../pages/Guides";
 
 const guides = ()=>{
     return(

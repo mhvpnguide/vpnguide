@@ -1,5 +1,5 @@
 "use client";
-import TopCard from "@/components/TopCard";
+import TopCard from "../../components/TopCard";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Image from "next/image";
 

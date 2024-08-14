@@ -1,9 +1,9 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "../components/ContactForm";
 import { MdOutlinePhone } from "react-icons/md";
 import { SlEnvolope } from "react-icons/sl";
 import { MdOutlineLocationOn } from "react-icons/md";
 import Link from "next/link";
-import TopCard from "@/components/TopCard";
+import TopCard from "../components/TopCard";
 
 const ContactPage = () => {
   return (
