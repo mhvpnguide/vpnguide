@@ -1,4 +1,4 @@
-import { CircularProgress, CircularProgressProps } from '@nextui-org/react';
+import { CircularProgress, CircularProgressProps } from "@nextui-org/react";
 
 interface CustomCircularProgressProps extends CircularProgressProps {
   valueLabel?: string;

@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import { useState } from "react";
 
 // Define the type for individual pro items
@@ -20,11 +20,11 @@ const ToggleCard: React.FC<ProsListProps> = ({ pros, cons }) => {
     return (
         <div className="bg-rose-50 p-[2px]">
             <div className="flex ">
-                <div className={`cursor-pointer w-1/2 text-center text-green-600 ${active == 'pros' ? 'bg-white' : ''}`} onClick={() => setActive('pros')}>Pros</div>
-                <div className={`cursor-pointer w-1/2 text-center text-red-600 ${active == 'cons' ? 'bg-white' : ''}`} onClick={() => setActive('cons')}>Cons</div>
+                <div className={`cursor-pointer w-1/2 text-center text-green-600 ${active == "pros" ? "bg-white" : ""}`} onClick={() => setActive("pros")}>Pros</div>
+                <div className={`cursor-pointer w-1/2 text-center text-red-600 ${active == "cons" ? "bg-white" : ""}`} onClick={() => setActive("cons")}>Cons</div>
             </div>
             {
-                active == 'pros' ?
+                active == "pros" ?
                     <ul className="bg-white p-1 space-y-2">
                         {
                             pros.map((itm, idx) => (

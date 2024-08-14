@@ -8,7 +8,7 @@ import { MdRouter } from "react-icons/md";
 import CustomCircularProgress from "./CustomCircularRatting";
 
 interface Blog {
-    id: number; // Assuming there's an id for each blog
+    id: number; // Assuming there"s an id for each blog
     attributes: BlogAttributes;
   }
   interface BlogAttributes {
@@ -65,7 +65,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
                           {
                             blog.attributes.top_banner.map((subitm, subidx) => (
                               <>
-                                <div className={`bg-yellow-500  w-fit px-3 py-1 h-full ${subidx == 0 ? 'rounded-tl-md' : ''} ${blog.attributes.top_banner.length == subidx + 1 ? 'rounded-br-md' : ''}`}>{subitm.value}</div>
+                                <div className={`bg-yellow-500  w-fit px-3 py-1 h-full ${subidx == 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length == subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
                                 {
                                   blog.attributes.top_banner.length == subidx + 1 ?
                                     null
@@ -84,7 +84,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
 
                             <div className=" flex justify-center tablet:justify-center  mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
                               <Link href={`/reviews/${blog.attributes.slug}`} className="relative aspect-square w-3/4 tablet:w-1/2">
-                                <Image src={`${config.api}${blog.attributes.logo.data.attributes.url}`} fill alt='express' />
+                                <Image src={`${config.api}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
                               </Link >
                             </div>
 
@@ -122,12 +122,12 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
                               <CustomCircularProgress
                                 size="lg"
                                 value={blog.attributes.ratting}
-                                color={`${blog.attributes.ratting >= 9.5 ? 'warning' : 'primary'}`}
+                                color={`${blog.attributes.ratting >= 9.5 ? "warning" : "primary"}`}
                                 showValueLabel={true}
                                 valueLabel={`${blog.attributes.ratting}`} // Pass the value without the percentage sign
                                 className="customRating"
                               />
-                              <p className={`text-xs laptop:text-sm  font-bold ${blog.attributes.ratting >= 9.5 ? 'text-[#c4841d]' : 'text-[#004493]'}`}>
+                              <p className={`text-xs laptop:text-sm  font-bold ${blog.attributes.ratting >= 9.5 ? "text-[#c4841d]" : "text-[#004493]"}`}>
                                 {
                                   blog.attributes.ratting >= 9.5 ? "OUTSTANDING!" : "SUPERB!"
                                 }

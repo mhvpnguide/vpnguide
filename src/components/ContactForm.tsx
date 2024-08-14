@@ -1,6 +1,6 @@
 "use client"; 
 
-import React from 'react';
+import React from "react";
 
 const ContactForm = () => {
 
@@ -13,10 +13,10 @@ const ContactForm = () => {
         },
         body: JSON.stringify({
             access_key: "e6105e47-2456-4121-8a40-c0245efffbcd",
-            name: (e.currentTarget.elements.namedItem('name') as HTMLInputElement).value,
-            email: (e.currentTarget.elements.namedItem('email') as HTMLInputElement).value,
-            message: (e.currentTarget.elements.namedItem('message') as HTMLTextAreaElement).value,
-            subject: (e.currentTarget.elements.namedItem('subject') as HTMLInputElement).value,
+            name: (e.currentTarget.elements.namedItem("name") as HTMLInputElement).value,
+            email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement).value,
+            message: (e.currentTarget.elements.namedItem("message") as HTMLTextAreaElement).value,
+            subject: (e.currentTarget.elements.namedItem("subject") as HTMLInputElement).value,
         }),
     });
     const result = await response.json();

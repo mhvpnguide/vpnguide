@@ -3,7 +3,7 @@ import React from "react";
 import {Breadcrumbs, BreadcrumbItem} from "@nextui-org/react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation"
 
  const CustomBreadcrumb=()=> {
   const pathname = usePathname()

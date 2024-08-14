@@ -11,7 +11,7 @@ const fetchNames = async () => {
     headers: {
       Authorization: `Bearer ${process.env.API_TOKEN}`
     },
-    cache: 'no-store'as RequestCache,
+    cache: "no-store"as RequestCache,
   }
   const request = await fetch(`${config.api}/api/reviews?fields[0]=vpn_name&fields[1]=slug`, reqOptions);
   const response = await request.json();
