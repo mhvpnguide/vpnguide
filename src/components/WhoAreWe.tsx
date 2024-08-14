@@ -6,7 +6,7 @@ import ReviewCard from "./ReviewCard";
 import Link from "next/link";
 
 const WhoAreWe = async () => {
-  const blogs = await fetchBlogs();
+  // const blogs = await fetchBlogs();
 
   return (
     <>
@@ -94,13 +94,12 @@ const WhoAreWe = async () => {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="py-10 px-5">
           <div className="text-center">
             <h1 className="font-bold text-3xl mb-4">Top VPN Services for 2024</h1>
             <p className="">The best VPNs for online privacy and security-tested and reviewed by our experts. By clicking on the product name in the list below, you can easily get updated prices, technical specs, and additonal info about each product.</p>
             <div className="flex justify-end pr-5">
-              {/* hellow */}
               <Tooltip
                 content={
                   <p className="">
@@ -110,7 +109,6 @@ const WhoAreWe = async () => {
                 placement="bottom"
                 classNames={{
                   base: [
-                    // arrow color
                     "text-right pr-5",
                   ],
                   content: [
@@ -134,7 +132,7 @@ const WhoAreWe = async () => {
             }
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
         <div className="order-2 tablet-order-1 flex items-center justify-center p-4 tablet:w-full">
