@@ -17,7 +17,7 @@ const ContactPage = () => {
         </div>
         <div className="laptop:w-1/2">
           <h3 className="font-bold text-xl mb-8">
-            Don't like filling out forms?Here are other ways to connect with us:
+            Don&apos;t like filling out forms?Here are other ways to connect with us:
           </h3>
           <ul className="mb-8">
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">

@@ -408,7 +408,7 @@ const Page = () => {
           guarantees, allowing you to test the service before committing.
         </p>
         <p>
-          It's essential to balance cost with the features offered to ensure you
+          It&apos;s essential to balance cost with the features offered to ensure you
           get the best value for your money. A budget-friendly VPN can provide
           robust security and privacy without compromising on performance.
         </p>
@@ -616,7 +616,7 @@ const Page = () => {
           A VPN, or Virtual Private Network, is crucial for enhancing your
           online privacy and security by encrypting data and masking your IP
           address. It enables you to bypass website blocks, making it a valuable
-          tool in today's digital landscape.
+          tool in today&apos;s digital landscape.
         </p>
         <h3>How does a VPN enhance online privacy?</h3>
         <p>
@@ -649,7 +649,7 @@ const Page = () => {
         </p>
         <h3>Are VPNs Legal in India?</h3>
         <p>
-          Yes, VPNs are legal in India. While the use of VPNs is permitted, it's
+          Yes, VPNs are legal in India. While the use of VPNs is permitted, it&apos;s
           important to note that the Indian government has implemented certain
           regulations and guidelines concerning internet usage and data privacy.
           Users should ensure they are not engaging in any illegal activities

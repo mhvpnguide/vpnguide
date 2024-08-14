@@ -36,7 +36,7 @@ const Guides = () => {
       <div className="flex flex-col laptop:flex-row laptop:flex-wrap gap-2 laptop:gap-3 pl-[1%] laptop:w-3/4 laptop:mx-auto mt-10">
         {
           guidesData.map((itm, idx) => (
-            <Link href={`guides/${itm.link}`} className="laptop:w-[49%] flex h-fit gap-5">
+            <Link href={`guides/${itm.link}`} className="laptop:w-[49%] flex h-fit gap-5" key={idx}>
               <div className="w-[50%] aspect-square relative">
                 <Image
                   src={itm.image}

@@ -222,7 +222,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               {
                 blog.attributes.stream.streaming_platform.map((itm: StreamingPlatform, idx: number) => (
                   <div className={`flex border-b-1 border-gray-200 ${itm.value ? 'bg-green-50' : 'bg-red-50'
-                    }`}>
+                    }`} key={idx}>
                     <div className="w-1/2 py-3 px-2">{itm.streamingPlatform}</div>
                     <div className="w-1/2 py-3 px-2">{itm.value ? "Yes" : "No"}</div>
                   </div>
@@ -267,7 +267,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
                   {
                     blog.attributes.speed.speed_table.map((itm, idx) => (
-                        <div className="flex flex-col">
+                        <div className="flex flex-col" key={idx}>
                           <div className="font-bold py-3 px-3 min-w-fit text-center whitespace-nowrap bg-slate-50">{itm.server_location}</div>
                           <div className="py-3 px-6 text-center">{itm.download_speed}</div>
                           <div className="py-3 px-6 text-center bg-slate-50">{itm.upload_speed}</div>
@@ -308,7 +308,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="m-3 rounded-md flex flex-col gap-3">
               {
                 blog.attributes.price_value.price_chart.map((itm, idx) => (
-                  <div className="bg-slate-50 w-full p-3 shadow-[0px_0px_7px_-3px_#1a202c]">
+                  <div className="bg-slate-50 w-full p-3 shadow-[0px_0px_7px_-3px_#1a202c]" key={idx}>
                     <div className="flex justify-between mb-2 ">
                       <div className="text-lg font-bold">{itm.validity}</div>
                       {itm.save && <div className="bg-red-500 px-3 rounded-full text-white font-semibold">{itm.save}%</div>}
@@ -351,7 +351,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
               {
                 blog.attributes.torrenting.torrenting_test.map((itm, idx) => (
-                  <div className={`flex border-b-1 border-gray-200}`}>
+                  <div className={`flex border-b-1 border-gray-200}`} key={idx}>
                     <div className="w-1/2 py-3 px-2 font-semibold">{itm.torrenting_attribute}</div>
                     <div className="w-1/2 py-3 px-2">{itm.value}</div>
                   </div>
@@ -394,7 +394,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
               {
                 blog.attributes.server_locations.continent.map((itm, idx) => (
-                  <div className={`flex border-b-1 border-gray-200}`}>
+                  <div className={`flex border-b-1 border-gray-200}`} key={idx}>
                     <div className="w-1/2 py-3 px-2 font-semibold">{itm.name}</div>
                     <div className="w-1/2 py-3 px-2">{itm.count}</div>
                   </div>
@@ -423,7 +423,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="">
               {
                 blog.attributes.device_os.individual.map((itm: DeviceOS, idx:number) => (
-                  <div className="mx-3">
+                  <div className="mx-3" key={idx}>
                     <h1 className="font-bold text-2xl mt-8 mb-6">{itm.heading}</h1>
                     <div className="streaming mb-10" dangerouslySetInnerHTML={{ __html: itm.before_table_text }}></div>
                     <div className="flex flex-wrap space-y-3 pl-4">
@@ -547,7 +547,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               {
                 blog.attributes.customer_support.support.map((itm: Support, idx: number) => (
                   <div className={`flex border-b-1 border-gray-200 ${itm.availability ? 'bg-green-50' : 'bg-red-50'
-                    }`}>
+                    }`} key={idx}>
                     <div className="w-1/2 py-3 px-2">{itm.type}</div>
                     <div className="w-1/2 py-3 px-2">{itm.availability ? "Yes" : "No"}</div>
                   </div>

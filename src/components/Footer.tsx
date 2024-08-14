@@ -13,7 +13,7 @@ const Footer = () => {
         {/* left */}
         <div className="order-1 mb-14 tablet:w-[40%] laptop:w-[50%]">
           <Image src="https://www.top10vpn.com/static/images/logo.svg" alt="company name" height={150} width={150} />
-          <p className="pt-5 text-lg laptopl:w-[80%]">We've been testing and reviewing VPN services since 2016. We also publish VPN research and advice to help protect your internet privacy and security.</p>
+          <p className="pt-5 text-lg laptopl:w-[80%]">We&apos;ve been testing and reviewing VPN services since 2016. We also publish VPN research and advice to help protect your internet privacy and security.</p>
         </div>
         {/* middle */}
         <div className="order-3 tablet:order-2 tablet:w-[35%] laptop:w-[30%] tablet:mx-10" >

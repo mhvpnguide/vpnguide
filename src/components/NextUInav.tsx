@@ -129,7 +129,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
         <NavbarContent className="hidden laptop:flex gap-3">
           {navdata.map((item, idx) => (
-            <Dropdown>
+            <Dropdown key={idx}>
               <NavbarItem>
                 <DropdownTrigger>
                   <Button
@@ -152,6 +152,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
               >
                 {item.subnav.map((subitem, subidx) => (
                   <DropdownItem
+                  key={idx}
                     // key="autoscaling"
                     // description="ACME scales apps to meet user demand, automagically, based on load."
                     className={`${subidx == 4 ? "border-1 border-grey" : ""}`}
@@ -197,7 +198,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
               title={itm.mainHeading}
             >
               {itm.subnav.map((subitm, subidx) => (
-                <div>
+                <div key={idx}>
                   {subidx == 4 ?  <Link href={subitm.link}><button>see more</button></Link> : <Link href={subitm.link}>{subitm.name}</Link>}
                 </div>
               ))}

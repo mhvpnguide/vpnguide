@@ -405,7 +405,7 @@ const Page = () => {
         <p>
           A VPN, or Virtual Private Network, is a secure way to connect to the
           internet that encrypts your data and routes it through a remote
-          server, keeping your online activities private and safe. So if you're
+          server, keeping your online activities private and safe. So if you&apos;re
           looking to protect your privacy online, a VPN is a smart choice!
         </p>
         <h3>How does a VPN enhance online security?</h3>
@@ -418,12 +418,12 @@ const Page = () => {
         <p>
           Absolutely, a VPN can help you access geo-restricted content by
           changing your IP address and routing your internet traffic through
-          servers in different countries. This way, you can enjoy content that's
+          servers in different countries. This way, you can enjoy content that&apos;s
           otherwise blocked in your location.
         </p>
         <h3>Is using a VPN legal?</h3>
         <p>
-          Yes, using a VPN is generally legal in most places, but it's wise to
+          Yes, using a VPN is generally legal in most places, but it&apos;s wise to
           check the specific regulations in your country to stay compliant.
         </p>
         <h3>How do I choose the right VPN service?</h3>

@@ -187,7 +187,7 @@ const Page = () => {
         <p>
           VPN connections can drop for various reasons, such as unstable
           internet, software conflicts, or server failures. When this happens,
-          the kill switch disconnects your device's internet connection,
+          the kill switch disconnects your device&apos;s internet connection,
           preventing any unencrypted data from being transmitted.
         </p>
         <p>

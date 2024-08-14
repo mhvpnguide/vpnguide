@@ -57,7 +57,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
                   {/* review card */}
                   {
                     blogs.map((blog, idx) => (
-                      <div className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white">
+                      <div className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white" key={idx}>
 
                         {/* top banner */}
                         <div className="bg-red-500 w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md">
@@ -100,7 +100,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
                             <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                               {
                                 blog.attributes.features.map((subitm, subidx) => (
-                                  <li className="tick-list-item">{subitm.value}</li>
+                                  <li className="tick-list-item" key={subidx}>{subitm.value}</li>
                                 ))
                               }
                             </ul>

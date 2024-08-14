@@ -56,7 +56,7 @@ const Page = () => {
         <p>
           VPNs provide a secure internet connection by encrypting your data. A
           remote access VPN allows remote workers to securely connect to their
-          company's network from their personal devices. This is particularly
+          company&apos;s network from their personal devices. This is particularly
           beneficial for remote workers and travelers who often rely on public
           Wi-Fi networks. With a VPN, you can browse the internet securely, even
           on untrusted networks, reducing the risk of cyber threats.
@@ -151,7 +151,7 @@ const Page = () => {
           secure way to manage this data, preventing unauthorized access and
           data breaches. It also enables secure remote access for employees
           working from different locations. By using a VPN, employees can gain
-          access to the company's secure network remotely, ensuring encrypted
+          access to the company&apos;s secure network remotely, ensuring encrypted
           and safe data transfer.
         </p>
         <h4>Privacy Enthusiasts</h4>
@@ -180,7 +180,7 @@ const Page = () => {
         <p>
           Remote workers rely on secure internet connections to access company
           resources and communicate with colleagues. A remote access VPN allows
-          remote workers to securely connect to their company's network from
+          remote workers to securely connect to their company&apos;s network from
           their personal devices. A VPN ensures that their data remains
           protected, even when using public Wi-Fi networks. It also enables
           secure access to company servers and applications from remote
