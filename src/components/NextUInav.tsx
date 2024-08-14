@@ -45,7 +45,6 @@ interface NavbarProps {
 
 const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  console.log(navdata[1]);
 
   const icons = {
     chevron: (
