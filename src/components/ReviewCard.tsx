@@ -85,7 +85,7 @@ const ReviewCard: React.FC<BlogsProps>=({blogs})=>{
 
                             <div className=" flex justify-center tablet:justify-center  mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
                               <Link href={`/reviews/${blog.attributes.slug}`} className="relative aspect-square w-3/4 tablet:w-1/2">
-                                <Image src={`${config.api}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
+                                <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
                               </Link >
                             </div>
 

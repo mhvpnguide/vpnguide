@@ -1,3 +1,4 @@
+"use client"
 import { SearchIcon } from "../components/SearchIcon";
 import { Input } from "@nextui-org/react";
 import Image from "next/image";
@@ -10,27 +11,47 @@ import { SiMacos } from "react-icons/si";
 import config from "../../config.js"
 import CustomBreadcrumb from "../components/Breadcrumb";
 import ReviewCard from "../components/ReviewCard";
+import { useEffect, useState } from "react";
 
 
 export const fetchBlogs = async () => {
 
   const reqOptions = {
     headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
     },
-    cache: "no-store"as RequestCache,
+    cache: "no-store" as RequestCache,
 
   }
-  const request = await fetch(`${config.api}/api/reviews?fields[0]=vpn_name&fields[1]=ratting&fields[2]=slug&fields[3]=offer&fields[4]=details&populate[features]=*&populate[logo]=*&populate[company_link]=*&populate[top_banner]=*`, reqOptions);
+  const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=ratting&fields[2]=slug&fields[3]=offer&fields[4]=details&populate[features]=*&populate[logo]=*&populate[company_link]=*&populate[top_banner]=*`, reqOptions);
   const response = await request.json();
 
-  
+
   return response.data;
 }
 
 
-const ReviewsPage = async () => {
-   const blogs = await fetchBlogs();
+const ReviewsPage = () => {
+  //  const blogs = await fetchBlogs();
+  const [blogs, setBlogs] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAndSetBlogs = async () => {
+      try {
+        const data = await fetchBlogs();
+        console.log(data);
+
+        setBlogs(data);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAndSetBlogs();
+  }, []);
 
   return (
     <div className="bg-gray-100">
@@ -61,10 +82,10 @@ const ReviewsPage = async () => {
 
       {/* review section */}
       {
-        blogs ?
-          <ReviewCard blogs={blogs}/>
-          :
+        loading ?
           "waiting"
+          :
+          <ReviewCard blogs={blogs} />
 
       }
 

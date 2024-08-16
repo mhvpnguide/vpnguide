@@ -1,46 +1,56 @@
-// "use client";
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import config from "../../config.js";
 import NextUiNavbar from "./NextUInav";
 
+const fetchNames = async () => {
+  const reqOptions = {
+    headers: {
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+    },
+    cache: "no-store" as RequestCache,
+  }
 
+  const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=slug`, reqOptions);
+  const response = await request.json();
 
-// const fetchNames = async () => {
-
-//   const reqOptions = {
-//     headers: {
-//       Authorization: `Bearer ${process.env.API_TOKEN}`
-//     },
-//     cache: "no-store"as RequestCache,
-//   }
-//   console.log(config.api);
-  
-//   const request = await fetch(`${config.api}/api/reviews?fields[0]=vpn_name&fields[1]=slug`, reqOptions);
-//   const response = await request.json();
-
-//   return response.data;
-// }
+  return response.data;
+}
 
 
 // Build subnav from API data
-// const buildSubnavFromApi = async () => {
+const buildSubnavFromApi = async () => {
+
+  const apiData = await fetchNames();
+
   
-//   const apiData = await fetchNames();
 
-//   // Convert API data into subnav items
-//   const subnavFromApi = apiData.map((item: { attributes: { vpn_name: string; slug: string } }) => ({
-//     name: item.attributes.vpn_name,
-//     link: `/reviews/${item.attributes.slug}`, // Customize the link format as needed
-//   }))
-//   .slice(0, 4); 
-  
-//   return subnavFromApi;
-// };
+  // Convert API data into subnav items
+  const subnavFromApi = apiData.map((item: { attributes: { vpn_name: string; slug: string } }) => ({
+    name: item.attributes.vpn_name,
+    link: `/reviews/${item.attributes.slug}`, // Customize the link format as needed
+  }))
+    .slice(0, 4);
+
+  return subnavFromApi;
+};
 
 
-const NavbarComp = async () => {
-  // const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  // const rev = await buildSubnavFromApi();
+const NavbarComp = () => {
+  const [rev, setRev] = useState<{ name: string; link: string }[]>([]);
+
+  useEffect(() => {
+    console.log("useEffect triggered");
+    const fetchAndSetData = async () => {
+      const subnav = await buildSubnavFromApi();
+      setRev(subnav);
+      // const rev = await fetchNames();
+    };
+
+    fetchAndSetData();
+  },[]);
+
+
 
 
   interface SubnavItem {
@@ -55,12 +65,12 @@ const NavbarComp = async () => {
   }
 
   const navdata: NavItem[] = [
-    // {
-    //   mainHeading: "VPN REVIEWS",
-    //   subnav: [
-    //     ...rev,
-    //   ],
-    // },
+    {
+      mainHeading: "VPN REVIEWS",
+      subnav: [
+        ...rev,
+      ],
+    },
     {
       mainHeading: "WHAT IS A VPN",
       subnav: [
