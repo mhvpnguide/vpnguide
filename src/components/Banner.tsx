@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <section className="flex flex-col items-center justify-center pt-12 pb-8 mx-[16px] laptopl:py-28 laptopl:mx-32">
             <div className="text-[34px] tablet:text-4xl laptop:text-5xl font-semibold mb-7 text-black text-center">
-                VPn Advice You Can Trust
+                VPN Advice You Can Trust
             </div>
             <div className="text-lg tablet:text-base laptop:text-lg font-medium text-grey text-center mb-2 tablet:pt-5">
                 Take control of your internet privacy and security with our <Link href="/reviews" className="text-bluelink hover:underline">unbiased VPN reviews</Link> and independent advice.
