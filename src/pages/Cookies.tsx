@@ -92,7 +92,7 @@ const CookiesPolicy = () => {
               href="#"
               className="text-bluelink font-semibold hover:underline"
             >
-              www.top10vpn.com
+              www.vpnguide.in
             </Link>{" "}
             (the “Website”). This Cookie Policy is designed to provide You with
             information about how We use cookies on our Website. By continuing

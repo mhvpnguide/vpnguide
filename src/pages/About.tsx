@@ -16,10 +16,10 @@ const AboutUS = () => {
       <div className="w-3/4 ">
         <div className="flex flex-col justify-center items-center">
           <p className="text-left text-lg mb-4 text-grey font-medium">
-            Top10VPN is an independent VPN review website founded by{" "}
-            <Link href="#" className="text-bluelink hover:underline">
+            vpnguide is an independent VPN review website founded by{" "}
+            
               Antonio Argiolas
-            </Link>{" "}
+           
             in 2016. He launched it to improve the VPN industry, after realizing
             the market was flooded with hundreds of unsafe applications and
             review websites that weren’t adequately testing them.
@@ -48,7 +48,7 @@ const AboutUS = () => {
                 What Do We Do?
               </h1>
               <p className="text-left text-lg mb-4 text-grey font-medium">
-                Top10VPN.com was established to fight for a{" "}
+                vpnguide.in was established to fight for a{" "}
                 <b className="className=" ml-2>
                   better VPN industry and a freer internet.
                 </b>
@@ -153,7 +153,7 @@ const AboutUS = () => {
                 recommendations they can trust.
               </p>
               <p className="text-left text-lg mb-4 text-grey font-medium">
-                Top10VPN was created to provide transparent, expert, and
+                vpnguide was created to provide transparent, expert, and
                 data-driven VPN recommendations that are unaffected by financial
                 incentives.
               </p>
@@ -188,7 +188,7 @@ const AboutUS = () => {
                 Unlike most VPN review websites, we conduct our own original
                 testing and research to evaluate a VPN’s performance. Every
                 recommendation you see is the result of a{" "}
-                <Link href="#" className="text-bluelink hover:underline">
+                <Link href="/about/how-we-review-vpn" className="text-bluelink hover:underline">
                   rigorous testing process
                 </Link>
                 consisting of <b>hours of use at the hands of our experts.</b>
@@ -202,7 +202,7 @@ const AboutUS = () => {
               <p className="text-left text-lg mb-4 text-grey font-medium">
                 In the interest of total impartiality, we also purchase our own
                 subscriptions to every VPN we test. We{" "}
-                <Link href="#" className="text-bluelink hover:underline">
+                <Link href="/about/how-we-make-money" className="text-bluelink hover:underline">
                   don’t accept payment
                 </Link>{" "}
                 to conduct a VPN review or provide positive coverage, and VPN
@@ -257,7 +257,7 @@ const AboutUS = () => {
               </li>
               <li className="flex text-lg mb-6 gap-3 justify-start items-center">
                 <SlEnvolope className="text-xl" />
-                <span>hello@top10vpn.com</span>
+                <span>hello@vpnguide.in</span>
               </li>
               <li className="flex text-lg mb-6 gap-3 justify-start items-center">
                 <MdOutlineLocationOn className="text-5xl laptop:text-2xl" />
@@ -271,7 +271,7 @@ const AboutUS = () => {
                 <b>Company Information</b>
               </p>
               <div>
-                Top10VPN is part of{" "}
+                vpnguide is part of{" "}
                 <Link href="#" className="text-bluelink hover:underline">
                   PrivacyCo Ltd.
                 </Link>

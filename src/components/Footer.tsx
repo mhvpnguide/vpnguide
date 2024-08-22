@@ -21,7 +21,7 @@ const Footer = () => {
           <Link href="mailto:biswajti.basanti@gmail.com" className="text-sm hover:text-blue-700">
             <HiOutlineMail className="inline text-xl"/>
             <span className="pl-1 ">
-              hello@top10vpn.com
+              hello@vpnguide.com
             </span>
           </Link>
           <div className="flex flex-row gap-2 tablet:gap-4 mt-4">
@@ -52,7 +52,7 @@ const Footer = () => {
           <Link href="/cookie-policy" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Cookie Policy</Link>
           <Link href="/terms-conditions" className="text-sm hover:text-blue-700 pr-2">Terms of Use</Link>
         </div>
-        <p className="text-sm mb-4">Top10VPN.com is operated by PrivacyCo Ltd. | © 2016-2024. All rights reserved.</p>
+        <p className="text-sm mb-4">vpnguide.in is made by <Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing </Link>. | © 2016-2024. All rights reserved.</p>
       </div>
     </footer>
   );

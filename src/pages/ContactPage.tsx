@@ -26,7 +26,7 @@ const ContactPage = () => {
             </li>
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <SlEnvolope className="text-xl" />
-              <span>hello@top10vpn.com</span>
+              <span>hello@vpnguide.com</span>
             </li>
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <MdOutlineLocationOn className="text-5xl laptop:text-2xl" />
@@ -40,7 +40,7 @@ const ContactPage = () => {
               <b>Company Information</b>
             </p>
             <div>
-              Top10VPN is part of{" "}
+              Vpnguide is part of{" "}
               <Link href="#" className="text-bluelink hover:underline">
                 PrivacyCo Ltd.
               </Link>
