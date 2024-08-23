@@ -216,9 +216,9 @@ const WhoAreWe = () => {
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <Link href="/guides">
+          <Link href="/vpn-explained">
             <button className="hidden laptop:flex home_button hoverBtn">
-              See All Guides
+              Read about VPNs
             </button>
           </Link>
         </div>
