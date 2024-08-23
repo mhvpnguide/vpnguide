@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
               You can read our{" "}
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="/cookie-policy" className="text-bluelink hover:underline">
                 {" "}
                 cookie policy{" "}
               </Link>{" "}
@@ -201,9 +201,9 @@ const PrivacyPolicy = () => {
               and we will get back to you within two working days.
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
-              PrivacyCo<br></br>Fourth Floor<br></br>33 Great Sutton Street<br></br>London EC1V 0DX<br />United Kingdom
+              Velocity Click<br></br>Kolkata<br></br>West Bengal<br></br>India
             </p>
-            <p className="text-justify text-lg mb-4  font-medium">This policy was updated on: 6 March 2024</p>
+            <p className="text-justify text-lg mb-4  font-medium">This policy was updated on: 6 Feb 2024</p>
           </div>
         </div>
       </div>
