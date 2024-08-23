@@ -13,7 +13,7 @@ const Footer = () => {
         {/* left */}
         <div className="order-1 mb-14 tablet:w-[40%] laptop:w-[50%]">
           <Image src="https://www.top10vpn.com/static/images/logo.svg" alt="company name" height={150} width={150} />
-          <p className="pt-5 text-lg laptopl:w-[80%]">We&apos;ve been testing and reviewing VPN services since 2016. We also publish VPN research and advice to help protect your internet privacy and security.</p>
+          <p className="pt-5 text-lg laptopl:w-[80%]">We have spent hundreds of hours researching, testing and reviewing VPN services. See our recommendations and protect your online privacy.</p>
         </div>
         {/* middle */}
         <div className="order-3 tablet:order-2 tablet:w-[35%] laptop:w-[30%] tablet:mx-10" >
@@ -52,7 +52,11 @@ const Footer = () => {
           <Link href="/cookie-policy" className="border-r h-fit border-black text-sm hover:text-blue-700 pr-2">Cookie Policy</Link>
           <Link href="/terms-conditions" className="text-sm hover:text-blue-700 pr-2">Terms of Use</Link>
         </div>
-        <p className="text-sm mb-4">vpnguide.in is made by <Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing </Link>. | © 2016-2024. All rights reserved.</p>
+        <p className="text-sm mb-4">
+          vpnguide.in is operated by <Link href="https://velocityclick.in/" className="italic hover:text-blue-700">Velocity Click </Link>.
+        <p className="text-sm mb-4"> 
+          vpnguide.in is made by <Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing </Link>.| 
+          © 2016-2024. All rights reserved.</p>
       </div>
     </footer>
   );
