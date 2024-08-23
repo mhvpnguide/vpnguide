@@ -22,7 +22,7 @@ const ContactPage = () => {
           <ul className="mb-8">
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <MdOutlinePhone className="text-xl" />
-              <span>+44(0)2034680724</span>
+              <span>+91 6291925441</span>
             </li>
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <SlEnvolope className="text-xl" />
@@ -31,7 +31,7 @@ const ContactPage = () => {
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <MdOutlineLocationOn className="text-5xl laptop:text-2xl" />
               <span>
-                Fourth Floor 33 Great Sutton Street London EC1V 0DX UK
+                Kolkata, West Bengal, India
               </span>
             </li>
           </ul>
@@ -41,11 +41,9 @@ const ContactPage = () => {
             </p>
             <div>
               Vpnguide is part of{" "}
-              <Link href="#" className="text-bluelink hover:underline">
-                PrivacyCo Ltd.
+              <Link href="velocityclick.in/" className="text-bluelink hover:underline">
+                  Velocity Click.
               </Link>
-              , registered in England & Wales with Company No. 09435976 and VAT
-              Registration No. 211062276.
             </div>
           </div>
         </div>
