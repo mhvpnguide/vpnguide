@@ -133,7 +133,7 @@ const WhoAreWe = () => {
         <div className="py-10 px-5">
           <div className="text-center">
             <h1 className="font-bold text-3xl mb-4">Top VPN Services for 2024</h1>
-            <p className="">The best VPNs for online privacy and security-tested and reviewed by our experts. By clicking on the product name in the list below, you can easily get updated prices, technical specs, and additonal info about each product.</p>
+            <p className="">The best VPNs for online privacy and security-tested and reviewed by our experts.<br></br> By clicking on the product name in the list below, you can easily get updated prices, technical specs, and additonal info about each product.</p>
             <div className="flex justify-end pr-5">
               <Tooltip
                 content={
@@ -173,24 +173,24 @@ const WhoAreWe = () => {
         <div className="order-2 tablet-order-1 flex items-center justify-center p-4 tablet:w-full">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
-              title="VPN Features & Troubleshooting"
+              title="What is a VPN Service"
               imageSrc="/2808108_18383.png"
-              link="home"
+              link="/vpn-explained/what-is-a-vpn-service"
             />
             <Card
-              title="VPN Features & Troubleshooting"
+              title="How does a VPN worked"
               imageSrc="/2808108_18383.png"
-              link="about"
+              link="/vpn-explained/how-does-a-vpn-work"
             />
             <Card
-              title="VPN Features & Troubleshooting"
+              title="What is a VPN used for"
               imageSrc="/2808108_18383.png"
-              link="title"
+              link="/vpn-explained/what-is-vpn-used-for"
             />
             <Card
-              title="VPN Features & Troubleshooting"
+              title="Are VPN really worth it"
               imageSrc="/2808108_18383.png"
-              link="example"
+              link="/vpn-explained/are-vpn-really-worth-it"
             />
           </div>
         </div>
@@ -205,7 +205,7 @@ const WhoAreWe = () => {
             simple, informative guides to help improve your online privacy,
             security, and freedom.
           </div>
-          <Link href="/guides"><button className="home_button hoverBtn">See all guides</button></Link>
+          <Link href="/vpn-explained/"><button className="home_button hoverBtn">Read about VPN</button></Link>
         </div>
 
         <div className="order-1 tablet:order-3 flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
@@ -243,24 +243,24 @@ const WhoAreWe = () => {
         <div className="flex items-center justify-center p-4 tablet:w-full">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
-              title="VPN Features & Troubleshooting"
+              title="How to check your Ip Address"
               imageSrc="/2808108_18383.png"
-              link="home"
+              link="/guides/check-ip-address"
             />
             <Card
-              title="VPN Features & Troubleshooting"
+              title="How to hide your Ip Address"
               imageSrc="/2808108_18383.png"
-              link="about"
+              link="/guides/hide-your-ip-address"
             />
             <Card
-              title="VPN Features & Troubleshooting"
+              title="How to check if your VPN is working"
               imageSrc="/2808108_18383.png"
-              link="title"
+              link="/guides/is-my-vpn-working"
             />
             <Card
-              title="VPN Features & Troubleshooting"
+              title="What can someone do with your Ip Address"
               imageSrc="/2808108_18383.png"
-              link="example"
+              link="/guides/what-can-people-do-with-your-ip-address"
             />
           </div>
         </div>
