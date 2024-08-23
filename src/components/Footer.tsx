@@ -57,7 +57,7 @@ const Footer = () => {
           vpnguide.in is made by <Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing </Link>.
         </p>
       </div>
-      <h6 className="pb-5 text-center">{copyrightSign} {currentYear} Vpn Guide. All rights reserved</h6>
+      <h6 className="text-center mb-4">© 2016-2024. Vpn Guide. All rights reserved</h6>
     </footer>
   );
 }
