@@ -89,7 +89,7 @@ const CookiesPolicy = () => {
           <p className="text-justify text-lg mb-4  font-medium">
             Welcome to{" "}
             <Link
-              href="#"
+              href="https://vpnguide.in/"
               className="text-bluelink font-semibold hover:underline"
             >
               www.vpnguide.in
@@ -102,7 +102,13 @@ const CookiesPolicy = () => {
           <p className="text-justify text-lg mb-4  font-medium">
             We do not collect or store any Personally Identifiable Information
             (PII). All data collected by our Website is psuedoanonymized. Read
-            our Privacy Policy for more information.
+            our " "}
+            <Link
+              href="/privacy-policy"
+              className="text-bluelink font-semibold hover:underline"
+            >
+              Privacy Policy
+            </Link>{" "} for more information.
           </p>
           <div className="px-3 pt-6">
             <h2 className="text-left font-bold text-2xl mb-5">
@@ -228,7 +234,7 @@ const CookiesPolicy = () => {
             <p className="text-justify text-lg mb-4  font-medium">
               The Internet Advertising Bureau (IAB), a trade association for
               online and mobile advertising, has{" "}
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="https://www.iabuk.com/content-hub/11416" className="text-bluelink hover:underline">
                 published guides{" "}
               </Link>
               to help you understand how affiliate marketing works.
@@ -259,15 +265,15 @@ const CookiesPolicy = () => {
               cookies through your browser:
             </p>
             <div className="text-justify text-lg mb-4  font-medium">
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="https://www.youronlinechoices.com/" className="text-bluelink hover:underline">
                 Your Online Choices
               </Link>
               <br />
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="https://www.aboutads.info/choices/" className="text-bluelink hover:underline">
                 The Self-Regulatory Program for Online Behavioral Advertising
               </Link>
               <br />
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="https://www.networkadvertising.org/choices/#completed" className="text-bluelink hover:underline">
                 Network Advertising Initiative Consumer Opt-Out
               </Link>
               <br />
