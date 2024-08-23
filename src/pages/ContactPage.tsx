@@ -41,7 +41,7 @@ const ContactPage = () => {
             </p>
             <div>
               Vpnguide is part of{" "}
-              <Link href="velocityclick.in/" className="text-bluelink hover:underline">
+              <Link href="https://velocityclick.in/" className="text-bluelink hover:underline">
                   Velocity Click.
               </Link>
             </div>
