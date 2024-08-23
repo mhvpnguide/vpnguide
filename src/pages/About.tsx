@@ -270,7 +270,7 @@ const AboutUS = () => {
               </p>
               <div>
                 vpnguide is part of{" "}
-                <Link href="velocityclick.in/" className="text-bluelink hover:underline">
+                <Link href="https://velocityclick.in/" className="text-bluelink hover:underline">
                   Velocity Click.
                 </Link>
                 
