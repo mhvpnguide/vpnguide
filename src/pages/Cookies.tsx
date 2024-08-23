@@ -247,7 +247,7 @@ const CookiesPolicy = () => {
             <p className="text-justify text-lg mb-4  font-medium">
               You can control and/or delete cookies as you wish – for details,
               see{" "}
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="https://www.aboutcookies.org" className="text-bluelink hover:underline">
                 {" "}
                 www.aboutcookies.org
               </Link>
