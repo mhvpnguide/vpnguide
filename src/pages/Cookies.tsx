@@ -102,7 +102,7 @@ const CookiesPolicy = () => {
           <p className="text-justify text-lg mb-4  font-medium">
             We do not collect or store any Personally Identifiable Information
             (PII). All data collected by our Website is psuedoanonymized. Read
-            our " "}
+            our {" "}
             <Link
               href="/privacy-policy"
               className="text-bluelink font-semibold hover:underline"
