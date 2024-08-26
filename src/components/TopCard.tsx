@@ -16,7 +16,7 @@ const TopCard = ({ title }: { title: string }) => {
 
         <div className="pt-2 pb-14 px-3 laptop:pl-[20%] mb-10">
           <p className="text-sm mb-5">
-            Top10VPN is editorially independent. We may{" "}
+            Vpnguide is editorially independent. We may{" "}
             <Link href="/about/how-we-make-money/">earn commissions</Link> if
             you buy a VPN via our links.
           </p>

@@ -14,10 +14,10 @@ const PrivacyPolicy = () => {
       <div className="px-3 pt-5 pb-10 tablet:flex tablet:justify-center tablet:items-center">
         <div className="tablet:w-2/3">
           <p className="text-left text-lg mb-4  font-medium">
-            Welcome to Top10VPN’s Privacy Policy.
+            Welcome to vpnguide’s Privacy Policy.
           </p>
           <p className="text-left text-lg mb-4  font-medium">
-            Please read this Privacy Policy carefully. If you use Top10VPN (“our
+            Please read this Privacy Policy carefully. If you use vpnguide (“our
             Site”), you will be regarded as having read and accepted this
             Privacy Policy.
           </p>
@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
             </h2>
             <p className="text-justify text-lg mb-4  font-medium">
               We do not ask you or anyone else to give us any personal
-              information in order to use Top10VPN. We do not collect or store
+              information in order to use vpnguide. We do not collect or store
               any Personally Identifiable Information (PII).
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
@@ -113,13 +113,13 @@ const PrivacyPolicy = () => {
               Cookies and similar technologies
             </h2>
             <p className="text-justify text-lg mb-4  font-medium">
-              Like most websites, Top10VPN puts small files (known as ‘cookies’)
+              Like most websites, vpnguide puts small files (known as ‘cookies’)
               onto your computer to collect information about how you browse our
               Site.
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
               You can read our{" "}
-              <Link href="#" className="text-bluelink hover:underline">
+              <Link href="/cookie-policy" className="text-bluelink hover:underline">
                 {" "}
                 cookie policy{" "}
               </Link>{" "}
@@ -151,7 +151,7 @@ const PrivacyPolicy = () => {
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
               Information collected through web beacons and buttons is collected
-              directly by third parties, and Top10VPN does not participate in
+              directly by third parties, and vpnguide does not participate in
               that data transmission. Information collected by a third party in
               this manner is subject to that third party’s own data collection,
               use, and disclosure policies.
@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
               Links to Other Websites
             </h2>
             <p className="text-justify text-lg mb-4  font-medium">
-              Top10VPN contains links to other websites.
+              vpnguide contains links to other websites.
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
               This privacy policy only applies to this website, and doesn’t
@@ -176,7 +176,7 @@ const PrivacyPolicy = () => {
             <p className="text-justify text-lg mb-4  font-medium">
               We may, from time to time, update this Privacy Policy to reflect
               any changes to our privacy practices in accordance with changes to
-              legislation, best practice or enhancements to Top10VPN.
+              legislation, best practice or enhancements to vpnguide.
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
               We will let you know what these changes are by posting them to
@@ -193,17 +193,17 @@ const PrivacyPolicy = () => {
               How to Contact Us
             </h2>
             <p className="text-justify text-lg mb-4  font-medium">
-              Top10VPN.com is owned and operated by PrivacyCo. If you have any
+              vpnguide.com is owned and operated by PrivacyCo. If you have any
               questions about our cookies or this policy, please contact us at{" "}
               <Link href="#" className="text-bluelink hover:underline">
-                hello@top10vpn.com
+                hello@vpnguide.com
               </Link>{" "}
               and we will get back to you within two working days.
             </p>
             <p className="text-justify text-lg mb-4  font-medium">
-              PrivacyCo<br></br>Fourth Floor<br></br>33 Great Sutton Street<br></br>London EC1V 0DX<br />United Kingdom
+              Velocity Click<br></br>Kolkata<br></br>West Bengal<br></br>India
             </p>
-            <p className="text-justify text-lg mb-4  font-medium">This policy was updated on: 6 March 2024</p>
+            <p className="text-justify text-lg mb-4  font-medium">This policy was updated on: 6 Feb 2024</p>
           </div>
         </div>
       </div>

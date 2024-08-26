@@ -29,7 +29,7 @@ const HowWeMakeMoney = () => {
           <div className="tablet:flex tablet:justify-center tablet:items-center">
             <div className="tablet:w-2/3">
               <p className="text-left text-lg mb-4  font-medium">
-                We built Top10VPN around our core principles of impartiality,
+                We built vpnguide around our core principles of impartiality,
                 honesty and transparency. Your trust is of the utmost importance
                 to us, which is why we’ll always be straight-up about how we
                 test and review VPNs. in 2016. He launched it to improve the VPN
@@ -39,11 +39,11 @@ const HowWeMakeMoney = () => {
               </p>
               <p className="text-left text-lg mb-4  font-medium">
                 Every VPN on our website has gone through our rigorous and{" "}
-                <Link href="#" className="text-bluelink hover:underline">
-                  in-depth review VPN process. This means you can buy or
-                  download with confidence, knowing that our VPN reviews
+                <Link href="/about/how-we-review-vpn" className="text-bluelink hover:underline">
+                  in-depth review VPN process.
                 </Link>
-                are based on our own testing results and experience.
+                This means you can buy or download with confidence, knowing that our 
+                VPN reviewsare based on our own testing results and experience.
               </p>
               <p className="text-left text-lg mb-4  font-medium">
                 On this page, and throughout our website, we want to be entirely
@@ -52,10 +52,7 @@ const HowWeMakeMoney = () => {
               </p>
               <p className="text-left text-lg mb-4  font-medium">
                 We don’t accept payment to provide positive reviews, and
-                providers will never have any input in how we choose{" "}
-                <Link href="#" className="text-bluelink hover:underline">
-                  the best VPN services.
-                </Link>
+                providers will never have any input in how we choose
                 are based on our own testing results and experience.
               </p>
             </div>

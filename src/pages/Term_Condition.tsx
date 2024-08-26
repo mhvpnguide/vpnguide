@@ -17,31 +17,29 @@ const Term_Condition = () => {
         <div className="px-3 pt-6 tablet:w-2/3">
           <h2 className="text-left font-bold text-2xl mb-5">Introduction</h2>
           <p className="text-justify text-[16px] mb-4  ">
-            These terms of use set out the rules for using www.top10vpn.com and
+            These terms of use set out the rules for using www.vpnguide.in and
             any services delivered by it (the “Website”).
           </p>
           <p className="text-justify text-[16px] mb-4  ">
             WHO WE ARE AND HOW TO CONTACT US
           </p>
           <p className="text-justify text-[16px] mb-4  ">
-            www.top10vpn.com is owned and operated by{" "}
+            www.vpnguide.in is owned and operated by{" "}
             <Link
-              href="#"
+              href="https://velocityclick.in/"
               className="text-bluelink font-semibold hover:underline"
             >
-              PrivacyCo
+              Velocity Click
             </Link>{" "}
-            (“we”, “our” or “us”). We are registered in England and Wales under
-            company number 09435976 and have our registered office at Fourth
-            Floor, 33 Great Sutton Street, London, United Kingdom, EC1V 0DX.
+            (“we”, “our” or “us”). We are registered in Kolkata, West Bengal, India.
           </p>
           <p className="text-justify text-[16px] mb-4  ">
             To contact us, please email{" "}
             <Link
-              href="#"
+              href="mailto:hello@vpnguide.in"
               className="text-bluelink font-semibold hover:underline"
             >
-              hello@top10vpn.com.
+              hello@vpnguide.in.
             </Link>{" "}
           </p>
           <p className="text-justify text-[16px] mb-4  ">
@@ -50,7 +48,7 @@ const Term_Condition = () => {
           <p className="text-justify text-[16px] mb-4  ">
             Our{" "}
             <Link
-              href="#"
+              href="/privacy-policy"
               className="text-bluelink font-semibold hover:underline"
             >
               Privacy Policy{" "}
@@ -63,7 +61,7 @@ const Term_Condition = () => {
           <p className="text-justify text-[16px] mb-4  ">
             Our{" "}
             <Link
-              href="#"
+              href="/cookie-policy"
               className="text-bluelink font-semibold hover:underline"
             >
               Cookie Policy
@@ -141,7 +139,7 @@ const Term_Condition = () => {
             <li>
               <p className="text-justify text-[16px] mb-4 ">
                 <span className="font-bold">Advertising disclaimer:</span>
-                Top10VPN.com is an advertising-supported comparison and review
+                vpnguide.in is an advertising-supported comparison and review
                 site. To keep this a free resource, we use links that provide us
                 with compensation for referring you to partner VPN services any
                 may be compensated for featuring certain providers. The ordering
@@ -311,12 +309,12 @@ const Term_Condition = () => {
 
           <h2 className="text-left font-semibold text-2xl mb-5 mt-10">OUR BRAND</h2>
           <p className="text-justify text-[16px] mb-4  ">
-            Top10VPN is a trading name owned by{" "}
+            vpnguide is a trading name owned by{" "}
             <Link
-              href="#"
+              href="https://velocityclick.in/"
               className="text-bluelink font-semibold hover:underline"
             >
-              PrivacyCo.
+              Velocity Click.
             </Link>
           </p>
           <p className="text-justify text-[16px] mb-4 font-bold">Last updated: 30/04/2019</p>

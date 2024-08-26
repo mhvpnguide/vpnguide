@@ -168,7 +168,7 @@ const vpnExplained = () => {
 
         <div className="relative  h-60">
           <Image
-            src="https://www.top10vpn.com/images/2021/08/Personal-VPN-Services.jpg"
+            src="https://www.vpnguide.com/images/2021/08/Personal-VPN-Services.jpg"
             fill
             alt="personal vpn"
           />

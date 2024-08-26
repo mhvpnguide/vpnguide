@@ -129,8 +129,8 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
           </NavbarBrand>
         </Link>
 
-        <NavbarContent className="hidden laptop:flex gap-3">
-          {navdata.map((item: NavItem, idx: number) => (
+        <NavbarContent className="hidden laptop:flex gap-3 w-full">
+          {navdata.map((item:NavItem, idx:number) => (
             <Dropdown key={idx}>
               <NavbarItem>
                 <DropdownTrigger>
@@ -157,18 +157,18 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                     key={idx}
                     // key="autoscaling"
                     // description="ACME scales apps to meet user demand, automagically, based on load."
-                    className={`${subidx == 4 ? "border-1 border-grey" : ""}`}
+                    className={`${subidx == 4 ? "" : ""}`}
                     startContent={subidx == 5 ? null : icons.flash}
                   >
                     {subidx == 4 ? (
-                      <Link href={subitem.link}>
-                        <button className="font-semibold flex justify-center text-[#197BEB]  items-center gap-3">
+                      <Link href={subitem.link} className="w-full">
+                        <div className="font-semibold flex justify-start text-[#197BEB]  items-center gap-3 w-full">
                           click more
                           <FaArrowRight className="" />
-                        </button>
+                        </div>
                       </Link>
                     ) : (
-                      <Link href={subitem.link}>{subitem.name}</Link>
+                      <Link href={subitem.link} className="text-inherit w-full">{subitem.name}</Link>
                     )}
                   </DropdownItem>
                 ))}
@@ -201,7 +201,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
             >
               {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
                 <div key={idx}>
-                  {subidx == 4 ? <Link href={subitm.link}><button>see more</button></Link> : <Link href={subitm.link}>{subitm.name}</Link>}
+                  {subidx == 4 ?  <Link href={subitm.link} className="mb-4"><button>see more</button></Link> : <Link href={subitm.link} className="text-inherit mb-4  w-full p-2">{subitm.name}</Link>}
                 </div>
               ))}
             </AccordionItem>
