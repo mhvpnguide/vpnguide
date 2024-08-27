@@ -149,7 +149,7 @@ const WhoAreWe = () => {
                     "text-right pr-5",
                   ],
                   content: [
-                    "text-sm text-gray-600 w-1/2 text-justify",
+                    "text-sm text-gray-600 w-1/2 text-justify bg-[#4B5563] text-white p-6",
                   ],
                 }}
               >

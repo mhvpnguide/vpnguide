@@ -26,7 +26,7 @@ const ContactPage = () => {
             </li>
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <SlEnvolope className="text-xl" />
-              <span>hello@vpnguide.com</span>
+              <span>mhvpnguide@gmail.com</span>
             </li>
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
               <MdOutlineLocationOn className="text-5xl laptop:text-2xl" />
