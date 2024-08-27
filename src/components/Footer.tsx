@@ -111,6 +111,7 @@ const Footer = () => {
           . | © 2016-2024. All rights reserved.
         </p>
       </div>
+      <h6 className="text-center mb-4">© 2016-2024. Vpn Guide. All rights reserved</h6>
     </footer>
   );
 };

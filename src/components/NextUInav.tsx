@@ -16,7 +16,6 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo.jsx";
 import {
   ChevronDown,
   Lock,
@@ -28,6 +27,7 @@ import {
 } from "./Icons.jsx";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 interface SubnavItem {
   name: string;
@@ -122,8 +122,10 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
         />
         <Link href="/" className="text-inherit">
           <NavbarBrand className="max-w-fit">
-            <AcmeLogo />
-            <p className="font-bold text-inherit">ACME</p>
+            <div>
+              <Image src="/logo.png" alt="logo" height={30} width={30}/>
+            </div>
+            <p className="font-bold text-inherit">VPNGUIDE</p>
           </NavbarBrand>
         </Link>
 
@@ -150,9 +152,9 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                   base: "gap-5",
                 }}
               >
-                {item.subnav.map((subitem:SubnavItem, subidx:number) => (
+                {item.subnav.map((subitem: SubnavItem, subidx: number) => (
                   <DropdownItem
-                  key={idx}
+                    key={idx}
                     // key="autoscaling"
                     // description="ACME scales apps to meet user demand, automagically, based on load."
                     className={`${subidx == 4 ? "" : ""}`}
@@ -188,16 +190,16 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
         </NavbarContent>
       </NavbarContent>
 
-          {/* mobile view */}
+      {/* mobile view */}
       <NavbarMenu>
         <Accordion>
-          {navdata.map((itm:NavItem, idx:number) => (
+          {navdata.map((itm: NavItem, idx: number) => (
             <AccordionItem
               key={idx}
               aria-label={itm.mainHeading}
               title={itm.mainHeading}
             >
-              {itm.subnav.map((subitm:SubnavItem, subidx:number) => (
+              {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
                 <div key={idx}>
                   {subidx == 4 ?  <Link href={subitm.link} className="mb-4"><button>see more</button></Link> : <Link href={subitm.link} className="text-inherit mb-4  w-full p-2">{subitm.name}</Link>}
                 </div>

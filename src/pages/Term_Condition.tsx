@@ -26,19 +26,17 @@ const Term_Condition = () => {
           <p className="text-justify text-[16px] mb-4  ">
             www.vpnguide.in is owned and operated by{" "}
             <Link
-              href="#"
+              href="https://velocityclick.in/"
               className="text-bluelink font-semibold hover:underline"
             >
-              PrivacyCo
+              Velocity Click
             </Link>{" "}
-            (“we”, “our” or “us”). We are registered in England and Wales under
-            company number 09435976 and have our registered office at Fourth
-            Floor, 33 Great Sutton Street, London, United Kingdom, EC1V 0DX.
+            (“we”, “our” or “us”). We are registered in Kolkata, West Bengal, India.
           </p>
           <p className="text-justify text-[16px] mb-4  ">
             To contact us, please email{" "}
             <Link
-              href="#"
+              href="mailto:hello@vpnguide.in"
               className="text-bluelink font-semibold hover:underline"
             >
               hello@vpnguide.in.
@@ -50,7 +48,7 @@ const Term_Condition = () => {
           <p className="text-justify text-[16px] mb-4  ">
             Our{" "}
             <Link
-              href="#"
+              href="/privacy-policy"
               className="text-bluelink font-semibold hover:underline"
             >
               Privacy Policy{" "}
@@ -63,7 +61,7 @@ const Term_Condition = () => {
           <p className="text-justify text-[16px] mb-4  ">
             Our{" "}
             <Link
-              href="#"
+              href="/cookie-policy"
               className="text-bluelink font-semibold hover:underline"
             >
               Cookie Policy
@@ -313,10 +311,10 @@ const Term_Condition = () => {
           <p className="text-justify text-[16px] mb-4  ">
             vpnguide is a trading name owned by{" "}
             <Link
-              href="#"
+              href="https://velocityclick.in/"
               className="text-bluelink font-semibold hover:underline"
             >
-              PrivacyCo.
+              Velocity Click.
             </Link>
           </p>
           <p className="text-justify text-[16px] mb-4 font-bold">Last updated: 30/04/2019</p>
