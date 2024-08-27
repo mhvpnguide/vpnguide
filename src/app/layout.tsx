@@ -23,6 +23,7 @@ export default function RootLayout({
       <head>
         {/* <!-- Standard favicon --> */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        
         {/* <!-- Recommended favicon size for general browser display --> */}
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -59,12 +60,13 @@ export default function RootLayout({
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
         <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-180x180-precomposed.png" />
-
+        
         {/* <!-- Android Chrome Icon --> */}
         <link rel="icon" type="image/png" sizes="36x36" href="/android-chrome-36x36.png" />
 
         {/* Windows Tiles */}
         <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff" />
 
         {/* <!-- Safari Icon --> */}
@@ -77,15 +79,19 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* <!-- SEO Meta Tags --> */}
-        <meta name="author" content="" />
+        <meta name="description"
+    content="Read our VPN recommendations and advice to protect your internet privacy and security."  
+        <meta name="author" content="Mohit Singh"> />
+        
         {/* <!-- Meta Robots --> */}
         <meta name="robots" content="index, follow" />
+        
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
-        <meta property="og:site_name" content="vpnguide" /> {/*website name */}
+        <meta property="og:site_name" content="VPN Guide" /> {/*website name */}
         <meta property="og:site" content="https://vpnguide.in/" />  {/*website link */}
-        <meta property="og:title" content="vpnguide" />  {/*title shown in the actual shared post */}
-        {/* <meta property="og:description"
-          content="Velocity Click is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions." /> */}
+        <meta property="og:title" content="Read our VPN recommendations and advice to protect your internet privacy and security" />  {/*title shown in the actual shared post */}
+        <meta property="og:description"
+          content="Our VPN experts have spent hundreds of hours researching, testing and reviewing VPN services. See our recommendations and protect your online privacy." />
         {/* <!-- description shown in the actual shared post --> */}
         <meta property="og:image" content="/logo.png" />    {/* image link, make sure it's jpg */}
         <meta property="og:url" content="https://vpnguide.in/" />  {/* where do you want your post to link to */}
@@ -97,15 +103,15 @@ export default function RootLayout({
 
         <title>vpnguide</title>
 
+        {/* Microsost Clarity */}
         <script type="text/javascript">
-          {`
-            (function(c,l,a,r,i,t,y) {
-              c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments) };
-              t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-              y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "np9je9n7qi");
-          `}
-        </script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "np9je9n7qi");
+</script>
+        
         </head>
       <body className={inter.className}>
         <NextUIProvider>
