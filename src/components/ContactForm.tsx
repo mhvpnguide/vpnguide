@@ -15,7 +15,7 @@ const ContactForm = () => {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: `${process.env.NEXT_PUBLIC_HOST}`,
+        access_key: `${process.env.NEXT_ACCESS_KEY}`,
         name: (e.currentTarget.elements.namedItem("name") as HTMLInputElement)
           .value,
         email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement)
