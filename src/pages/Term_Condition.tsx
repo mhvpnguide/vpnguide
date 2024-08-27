@@ -1,18 +1,14 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Table from "../components/Table";
+import TopCard from "@/components/TopCard";
 
 const Term_Condition = () => {
   return (
     <section className="w-full laptop:justify-center laptop:items-center">
-      <div className="px-3  w-full bg-[#faf0ed]">
-        <div className="pt-3 pb-7">
-          <Breadcrumb />
+      <div className="w-full">
+          <TopCard title="Website Terms Of Use" />
         </div>
-        <div className="w-full text-center font-bold text-3xl pb-5">
-          Website Terms Of Use
-        </div>
-      </div>
       <div className="px-3 pt-5 pb-10 tablet:flex tablet:justify-center tablet:items-center">
         <div className="px-3 pt-6 tablet:w-2/3">
           <h2 className="text-left font-bold text-2xl mb-5">Introduction</h2>
@@ -39,7 +35,7 @@ const Term_Condition = () => {
               href="mailto:hello@vpnguide.in"
               className="text-bluelink font-semibold hover:underline"
             >
-              hello@vpnguide.in.
+              mhvpnguide@gmail.com
             </Link>{" "}
           </p>
           <p className="text-justify text-[16px] mb-4  ">

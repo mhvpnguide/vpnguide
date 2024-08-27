@@ -12,10 +12,11 @@ const ContactForm = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json",
+        "Accept": "application/json",
       },
       body: JSON.stringify({
-        access_key: `${process.env.NEXT_ACCESS_KEY}`,
+        access_key: `${process.env.NEXT_PUBLIC_ACCESS_KEY}`,
+        // access_key: "d4bfeb97-c408-403e-9eea-68b728d06cf5",
         name: (e.currentTarget.elements.namedItem("name") as HTMLInputElement)
           .value,
         email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement)

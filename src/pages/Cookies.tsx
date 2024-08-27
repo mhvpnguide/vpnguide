@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import Table1 from "../components/Table1";
+import TopCard from "@/components/TopCard";
 
 const cookiesDataTable1 = [
   {
@@ -75,14 +76,9 @@ const cookiesDataTable4 = [
 const CookiesPolicy = () => {
   return (
     <section className="w-full laptop:justify-center laptop:items-center">
-      <div className="px-3  w-full bg-[#faf0ed]">
-        <div className="pt-3 pb-7">
-          <Breadcrumb />
+        <div className="w-full">
+          <TopCard title="Cookies Policy" />
         </div>
-        <div className="w-full text-center font-bold text-3xl pb-5">
-          Cookie Policy
-        </div>
-      </div>
       <div className="px-3 pt-5 pb-10 tablet:flex tablet:justify-center tablet:items-center">
         <div className="px-3 pt-6 tablet:w-2/3">
           <h2 className="text-left font-bold text-2xl mb-5">Introduction</h2>
@@ -102,13 +98,14 @@ const CookiesPolicy = () => {
           <p className="text-justify text-lg mb-4  font-medium">
             We do not collect or store any Personally Identifiable Information
             (PII). All data collected by our Website is psuedoanonymized. Read
-            our {" "}
+            our{" "}
             <Link
               href="/privacy-policy"
               className="text-bluelink font-semibold hover:underline"
             >
               Privacy Policy
-            </Link>{" "} for more information.
+            </Link>{" "}
+            for more information.
           </p>
           <div className="px-3 pt-6">
             <h2 className="text-left font-bold text-2xl mb-5">
@@ -234,7 +231,10 @@ const CookiesPolicy = () => {
             <p className="text-justify text-lg mb-4  font-medium">
               The Internet Advertising Bureau (IAB), a trade association for
               online and mobile advertising, has{" "}
-              <Link href="https://www.iabuk.com/content-hub/11416" className="text-bluelink hover:underline">
+              <Link
+                href="https://www.iabuk.com/content-hub/11416"
+                className="text-bluelink hover:underline"
+              >
                 published guides{" "}
               </Link>
               to help you understand how affiliate marketing works.
@@ -247,7 +247,10 @@ const CookiesPolicy = () => {
             <p className="text-justify text-lg mb-4  font-medium">
               You can control and/or delete cookies as you wish – for details,
               see{" "}
-              <Link href="https://www.aboutcookies.org" className="text-bluelink hover:underline">
+              <Link
+                href="https://www.aboutcookies.org"
+                className="text-bluelink hover:underline"
+              >
                 {" "}
                 www.aboutcookies.org
               </Link>
@@ -265,21 +268,31 @@ const CookiesPolicy = () => {
               cookies through your browser:
             </p>
             <div className="text-justify text-lg mb-4  font-medium">
-              <Link href="https://www.youronlinechoices.com/" className="text-bluelink hover:underline">
+              <Link
+                href="https://www.youronlinechoices.com/"
+                className="text-bluelink hover:underline"
+              >
                 Your Online Choices
               </Link>
               <br />
-              <Link href="https://www.aboutads.info/choices/" className="text-bluelink hover:underline">
+              <Link
+                href="https://www.aboutads.info/choices/"
+                className="text-bluelink hover:underline"
+              >
                 The Self-Regulatory Program for Online Behavioral Advertising
               </Link>
               <br />
-              <Link href="https://www.networkadvertising.org/choices/#completed" className="text-bluelink hover:underline">
+              <Link
+                href="https://www.networkadvertising.org/choices/#completed"
+                className="text-bluelink hover:underline"
+              >
                 Network Advertising Initiative Consumer Opt-Out
               </Link>
               <br />
               <br />
               <span>
-                This policy was updated on: <b className="font-bold">14 February 2024 </b>
+                This policy was updated on:{" "}
+                <b className="font-bold">14 February 2024 </b>
               </span>
             </div>
           </div>

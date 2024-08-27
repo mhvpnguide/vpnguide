@@ -1,16 +1,12 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
+import TopCard from "@/components/TopCard";
 const PrivacyPolicy = () => {
   return (
     <section className="w-full laptop:justify-center laptop:items-center">
-      <div className="px-3  w-full bg-[#faf0ed]">
-        <div className="pt-3 pb-7">
-          <Breadcrumb />
+      <div className="w-full">
+          <TopCard title="Privacy Policy" />
         </div>
-        <div className="w-full text-center font-bold text-3xl pb-5">
-          Privacy Policy
-        </div>
-      </div>
       <div className="px-3 pt-5 pb-10 tablet:flex tablet:justify-center tablet:items-center">
         <div className="tablet:w-2/3">
           <p className="text-left text-lg mb-4  font-medium">

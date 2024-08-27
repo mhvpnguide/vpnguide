@@ -13,7 +13,7 @@ const AboutUS = () => {
       <div className="w-full">
         <TopCard title="About Us" />
       </div>
-      <div className="w-3/4 ">
+      <div className="laptop:w-3/4 mt-10 px-4 laptop:px-0 tablet:px-0">
         <div className="flex flex-col justify-center items-center">
           <p className="text-left text-lg mb-4 text-grey font-medium">
             vpnguide is an independent VPN review website founded in
@@ -36,7 +36,7 @@ const AboutUS = () => {
         </div>
 
         {/* Second part of About Section (What Do we Do?) */}
-        <div className="flex flex-col laptop:flex-row  justify-center items-center laptop:px-20 pt-20 ">
+        <div className="flex flex-col laptop:flex-row  justify-center items-center pt-20 ">
           <div className="laptop:flex laptop:w-full laptop:gap-10 tablet:flex tablet:gap-10">
             <div className="tablet:w-2/3">
               <h1 className="text-2xl  font-bold text-start mb-10 w-full">
