@@ -40,9 +40,10 @@ const ReviewsPage = () => {
     const fetchAndSetBlogs = async () => {
       try {
         const data = await fetchBlogs();
-        console.log(data);
+        
+        const sortedBlogs = data.sort((a:any, b:any) => b.attributes.ratting - a.attributes.ratting);
 
-        setBlogs(data);
+        setBlogs(sortedBlogs);
       } catch (error) {
         console.error("Error fetching blogs:", error);
       } finally {
