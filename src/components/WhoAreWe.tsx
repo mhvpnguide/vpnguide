@@ -30,9 +30,11 @@ const WhoAreWe = () => {
     const fetchAndSetBlog = async () => {
       try {
         const data = await fetchBlog();
-        console.log(data);
+        // console.log(data);
 
-        setBlogs(data);
+        const sortedBlogs = data.sort((a:any, b:any) => b.attributes.ratting - a.attributes.ratting);
+
+        setBlogs(sortedBlogs);
       } catch (error) {
         console.error("Error fetching blog:", error);
       } finally {

@@ -11,10 +11,14 @@ const fetchNames = async () => {
     cache: "no-store" as RequestCache,
   }
 
-  const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=slug`, reqOptions);
+  const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=slug&fields[2]=ratting`, reqOptions);
   const response = await request.json();
+  
+  const sortedBlogs = response.data.sort((a:any, b:any) => b.attributes.ratting - a.attributes.ratting);
 
-  return response.data;
+  // setBlogs(sortedBlogs);
+  // return response.data;
+  return sortedBlogs;
 }
 
 
@@ -30,7 +34,7 @@ const buildSubnavFromApi = async () => {
     name: item.attributes.vpn_name,
     link: `/reviews/${item.attributes.slug}`, // Customize the link format as needed
   }))
-    .slice(0, 4);
+    .slice(0, 3);
 
   return subnavFromApi;
 };
@@ -40,7 +44,6 @@ const NavbarComp = () => {
   const [rev, setRev] = useState<{ name: string; link: string }[]>([]);
 
   useEffect(() => {
-    console.log("useEffect triggered");
     const fetchAndSetData = async () => {
       const subnav = await buildSubnavFromApi();
       setRev(subnav);
@@ -69,6 +72,10 @@ const NavbarComp = () => {
       mainHeading: "VPN REVIEWS",
       subnav: [
         ...rev,
+        {
+          name: "Click more ->",
+          link: "/reviews",
+        },
       ],
     },
     {
