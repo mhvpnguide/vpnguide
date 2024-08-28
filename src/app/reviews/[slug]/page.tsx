@@ -5,7 +5,8 @@ export const metadata: Metadata = {
   title: 'Reviews',
 };
 export default function Page({ params }: { params: { slug: string } }) {
+  const {slug} = params
   return (
-    <CompanyPage params={params}/>
+    <CompanyPage slug={slug}/>
   );
 }

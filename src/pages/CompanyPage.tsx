@@ -101,8 +101,7 @@ export const fetchvpn = async () => {
   return response.data;
 }
 
-export default function CompanyPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default function CompanyPage({ slug }:  { slug: string } ) {
   const [blog, setBlog] = useState<any>(null); // Adjust the type as needed
   const [vpn, setVpn] = useState<any>(null); // Adjust the type as needed
   const [loading, setLoading] = useState(true);

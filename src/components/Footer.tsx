@@ -16,7 +16,7 @@ const Footer = () => {
               <Image src="/logo.png" alt="logo" height={50} width={50} />
               <p className="font-bold text-inherit">VPNGUIDE</p>
             </div>
-            <p className="pt-5 text-lg laptopl:w-[80%]">We've been testing and reviewing VPN services since 2016. We also publish VPN research and advice to help protect your internet privacy and security.</p>
+            <p className="pt-5 text-lg laptopl:w-[80%]">We&apos;ve been testing and reviewing VPN services since 2016. We also publish VPN research and advice to help protect your internet privacy and security.</p>
           </div>
           {/* middle */}
           <div className="order-3 tablet:order-2 tablet:w-[35%] laptop:w-[30%] tablet:mx-10">
