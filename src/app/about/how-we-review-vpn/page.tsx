@@ -1,6 +1,10 @@
 import TopCard from "../../../components/TopCard";
 import Image from "next/image";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'About us',
+};
 const Page = () => {
     return (
         <section >

@@ -20,28 +20,27 @@ const ToggleCard: React.FC<ProsListProps> = ({ pros, cons }) => {
     return (
         <div className="bg-rose-50 p-[2px]">
             <div className="flex ">
-                <div className={`cursor-pointer w-1/2 text-center text-green-600 ${active == "pros" ? "bg-white" : ""}`} onClick={() => setActive("pros")}>Pros</div>
-                <div className={`cursor-pointer w-1/2 text-center text-red-600 ${active == "cons" ? "bg-white" : ""}`} onClick={() => setActive("cons")}>Cons</div>
+                <div className={`cursor-pointer w-1/2 text-center text-green-600 `}>Pros</div>
+                <div className={`cursor-pointer w-1/2 text-center text-red-600`}>Cons</div>
             </div>
-            {
-                active == "pros" ?
-                    <ul className="bg-white p-1 space-y-2">
-                        {
-                            pros.map((itm:Pro, idx:number) => (
-                                <li className="tick-list-item ml-3" key={idx}>{itm.value}</li>
-                            ))
-                        }
+            <div className="flex">
 
-                    </ul>
-                    :
-                    <ul className="bg-white p-1 space-y-2">
-                        {
-                            cons.map((itm:Pro, idx:number) => (
-                                <li className="cross-list-item ml-3" key={idx}>{itm.value}</li>
-                            ))
-                        }
-                    </ul>
-            }
+                <ul className="p-1 space-y-2  w-1/2">
+                    {
+                        pros.map((itm: Pro, idx: number) => (
+                            <li className="tick-list-item ml-3" key={idx}>{itm.value}</li>
+                        ))
+                    }
+
+                </ul>
+                <ul className="p-1 space-y-2 w-1/2">
+                    {
+                        cons.map((itm: Pro, idx: number) => (
+                            <li className="cross-list-item ml-3" key={idx}>{itm.value}</li>
+                        ))
+                    }
+                </ul>
+            </div>
         </div>
     );
 }

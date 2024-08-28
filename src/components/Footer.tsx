@@ -7,21 +7,16 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <hr className="border-t border-gray-300 my-8" />
-      <footer className=" flex flex-col pt-16 pb-5 max-w-full">
+      <footer className=" flex flex-col pt-16 mt-10 pb-5 max-w-full border-t border-gray-300 ">
         {/* top part of footer */}
-        <div className="flex px-3 tablet:px-10 4k:mx-[660px] flex-col tablet:flex-row">
+        <div className="flex px-3 tablet:px-10 4k:mx-[200px] flex-col tablet:flex-row">
           {/* left */}
           <div className="order-1 mb-14 tablet:w-[40%] laptop:w-[50%]">
             <div className="flex justify-start items-center gap-2 text-2xl">
               <Image src="/logo.png" alt="logo" height={50} width={50} />
               <p className="font-bold text-inherit">VPNGUIDE</p>
             </div>
-            <p className="pt-5 text-lg laptopl:w-[80%]">
-              We&apos;ve been testing and reviewing VPN services since 2016. We
-              also publish VPN research and advice to help protect your internet
-              privacy and security.
-            </p>
+            <p className="pt-5 text-lg laptopl:w-[80%]">We've been testing and reviewing VPN services since 2016. We also publish VPN research and advice to help protect your internet privacy and security.</p>
           </div>
           {/* middle */}
           <div className="order-3 tablet:order-2 tablet:w-[35%] laptop:w-[30%] tablet:mx-10">
@@ -72,7 +67,7 @@ const Footer = () => {
         </div>
 
         {/* bottom part of footer */}
-        <div className="flex px-3 tablet:px-10 4k:mx-[660px] flex-col ">
+        <div className="flex px-3 tablet:px-10 4k:mx-[200px] flex-col ">
           <div className="flex flex-wrap pb-4 gap-2">
             <Link
               href="/privacy-policy"
@@ -94,17 +89,13 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-sm mb-4">
-            vpnguide.in is made by{" "}
-            <Link
-              href="https://nbtservices.framer.website/"
-              className="italic hover:text-blue-700"
-            >
-              Next Big Thing{" "}
-            </Link>
-            . | © 2016-2024. All rights reserved.
+          vpnguide.in is operated by <Link href="https://velocityclick.in/" className="italic hover:text-blue-700">Velocity Click </Link>.
+          </p>
+          <p className="text-sm mb-4">
+            vpnguide.in is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>. | © 2016-2024. All rights reserved.
           </p>
         </div>
-        <h6 className="text-center mb-4">
+        <h6 className="text-center ">
           © 2016-2024. Vpn Guide. All rights reserved
         </h6>
       </footer>

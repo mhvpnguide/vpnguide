@@ -1,6 +1,10 @@
 import TopCard from "../../../components/TopCard";
 import Link from "next/link";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Guides',
+};
 const Page = () => {
     return (
         <section >
