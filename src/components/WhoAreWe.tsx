@@ -22,7 +22,6 @@ const fetchBlog = async () => {
 };
 
 const WhoAreWe = () => {
-  // const blogs = await fetchBlogs();
   const [blogs, setBlogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -32,7 +31,7 @@ const WhoAreWe = () => {
         const data = await fetchBlog();
         // console.log(data);
 
-        const sortedBlogs = data.sort((a:any, b:any) => b.attributes.ratting - a.attributes.ratting);
+        const sortedBlogs = data.sort((a: any, b: any) => b.attributes.ratting - a.attributes.ratting);
 
         setBlogs(sortedBlogs);
       } catch (error) {
@@ -162,11 +161,14 @@ const WhoAreWe = () => {
           <div className="mt-5 ">
             {
               blogs ?
-                <ReviewCard blogs={blogs.slice(0, 4)} />
+                <ReviewCard blogs={blogs.slice(0, 5)} />
                 :
                 "waiting"
 
             }
+          </div>
+          <div className="flex justify-center items-center">
+            <Link href="/reviews" className="home_button hoverBtn mx-auto">See all reviews</Link>
           </div>
         </div>
       </section>

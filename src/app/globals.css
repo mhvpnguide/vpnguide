@@ -186,12 +186,11 @@ nav>header>ul>ul{
 }
 
 
-.streaming p,
-.speed p{
+
+.company p{
   @apply mb-4 text-xl;
 }
-.streaming h1,
-.speed h1{
+.company h1{
   @apply my-4 text-2xl font-bold;
 }
 
@@ -199,24 +198,24 @@ nav>header>ul>ul{
 
 /* guides */
 
-.guides h2{
+.company h2{
   @apply mt-10 mb-6 text-2xl font-bold;
 }
-.guides h3{
+.company h3{
   @apply mt-10 mb-3 text-xl font-bold;
 }
-.guides h4{
+.company h4{
   @apply mt-10 mb-2 text-lg font-semibold;
 }
-.guides p{
+.company p{
   @apply mb-4 text-lg;
 }
-.guides ul{
+.company ul{
   list-style-type: disc;
   padding-left: 20px;;
 }
 
-.guides a{
+.company a{
   color: blue;
 }
 

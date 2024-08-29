@@ -90,13 +90,13 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* vpn details */}
                 <div className="flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
                   {/* <p className="text-sm font-medium pb-1">{blog.attributes.vpn_name}</p> */}
-                  <p className="text-sm font-bold pb-1 text-center">{blog.attributes.vpn_name}</p>
                   <p className="text-sm font-medium pb-1">{blog.attributes.details}</p>
                   <p className="tablet:mt-2 text-sm font-semibold text-blue-600">{blog.attributes.offer}</p>
                 </div>
               </div>
 
               <div className="laptop:w-[40%]">
+                <h1 className="text-sm font-bold text-center">{blog.attributes.vpn_name}</h1>
                 <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (

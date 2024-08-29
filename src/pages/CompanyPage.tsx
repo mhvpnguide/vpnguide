@@ -12,10 +12,11 @@ import { IoLogoAndroid } from "react-icons/io";
 import { FaChrome } from "react-icons/fa";
 import { SiAmazonfiretv, SiAppletv, SiIos, SiMacos, SiMicrosoftedge, SiRoku } from "react-icons/si";
 import { MdOutlineRouter } from "react-icons/md";
-import { BsNintendoSwitch } from "react-icons/bs";
+import { BsAndroid, BsNintendoSwitch } from "react-icons/bs";
 import CustomBreadcrumb from "../components/Breadcrumb";
 import { useEffect, useState } from "react";
 import { Tooltip } from "@nextui-org/react";
+import { IoTvOutline } from "react-icons/io5";
 
 
 type SpeedTableItem = {
@@ -101,7 +102,7 @@ export const fetchvpn = async () => {
   return response.data;
 }
 
-export default function CompanyPage({ slug }:  { slug: string } ) {
+export default function CompanyPage({ slug }: { slug: string }) {
   const [blog, setBlog] = useState<any>(null); // Adjust the type as needed
   const [vpn, setVpn] = useState<any>(null); // Adjust the type as needed
   const [loading, setLoading] = useState(true);
@@ -111,6 +112,8 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
     const fetchAndSetBlog = async () => {
       try {
         const data = await fetchBlog({ slug });
+        console.log(data);
+
         setBlog(data);
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -122,9 +125,8 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
     const fetchAndSetVpn = async () => {
       try {
         const data = await fetchvpn();
-        console.log(data);
-
-        setVpn(data);
+        const filteredData = data.filter((item: any) => item.attributes.slug !== slug);
+        setVpn(filteredData);
       } catch (error) {
         console.error("Error fetching blog:", error);
       } finally {
@@ -142,7 +144,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
         loading ?
           "loading" :
           <>
-            {/* <TopCard title={`${blog.attributes.vpn_name} review`} /> */}
+            {/* Topcard */}
             <div className="bg-blue-100">
               <div className="mb-2 tablet:pt-[40px] laptop:pl-[50px] px-3">
                 <CustomBreadcrumb />
@@ -185,7 +187,6 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
               </div>
             </div>
             <section className="flex gap-12 tablet:gap-5 tablet:px-5 max-w-screen laptop:justify-center">
-
               {/* navigation */}
               <div className="hidden laptop:flex w-fit  flex-col">
                 <nav className=" sticky top-20 flex flex-col w-60 mt-10">
@@ -321,7 +322,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                   </div>
 
                   {/* review image */}
-                  <div className="relative aspect-square w-2/4 mx-auto">
+                  <div className="relative aspect-video w-2/4 mx-auto">
                     <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.review_image.data.attributes.url}`} fill alt='express' />
                   </div>
 
@@ -370,7 +371,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                     }
                   </div>
                   {/* ->mt-10 */}
-                  <div className="streaming mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.stream.after_table_text }}>
+                  <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.stream.after_table_text }}>
                   </div>
                 </div>
 
@@ -421,7 +422,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
 
                   </div>
 
-                  <div className="speed mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.speed.after_table_text }}>
+                  <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.speed.after_table_text }}>
                   </div>
                 </div>
 
@@ -448,19 +449,19 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                   <div className="m-3 rounded-md flex flex-col gap-3">
                     {
                       blog.attributes.price_value.price_chart.map((itm: PriceChart, idx: number) => (
-                        <div className="bg-slate-50 w-full p-3 shadow-[0px_0px_7px_-3px_#1a202c]" key={idx}>
+                        <Link href={blog.attributes.company_link.value} className="bg-slate-50 w-full p-3 shadow-[0px_0px_7px_-3px_#1a202c] hover:shadow-[0px_0px_9px_-1px_#1a202c]" key={idx}>
                           <div className="flex justify-between mb-2 ">
                             <div className="text-lg font-bold">{itm.validity}</div>
                             {itm.save && <div className="bg-red-500 px-3 rounded-full text-white font-semibold">{itm.save}%</div>}
                           </div>
                           <div className="text-base font-semibold mb-4">${itm.price}/mo</div>
                           <div className="text-sl text-gray-500">{itm.total_bill}</div>
-                        </div>
+                        </Link>
                       ))
                     }
 
                   </div>
-                  <div className="speed mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.price_value.after_table_text }}>
+                  <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.price_value.after_table_text }}>
                   </div>
                 </div>
 
@@ -498,7 +499,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                       ))
                     }
                   </div>
-                  <div className="streaming mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.stream.after_table_text }}>
+                  <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.torrenting.after_table_text }}>
                   </div>
                 </div>
 
@@ -541,7 +542,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                       ))
                     }
                   </div>
-                  <div className="streaming mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.server_locations.after_table_text }}>
+                  <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.server_locations.after_table_text }}>
                   </div>
                 </div>
 
@@ -603,12 +604,13 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                             {
                               itm.Nintendo && <div className="flex items-center w-1/3"><BsNintendoSwitch className="text-2xl inline mr-3" /> Nintendo</div>
                             }
-                            {/* {
-                        itm.Smart_TV && <div className="flex items-center w-1/3"><FaChrome className="text-2xl inline mr-3"/> Smart Tv</div>
-                      }
-                      {
-                        itm.Android_TV && <div className="flex items-center w-1/3"><FaChrome className="text-2xl inline mr-3"/> Android TV</div>
-                      } */}
+                            {
+                              itm.Smart_TV && <div className="flex items-center w-1/3"><IoTvOutline className="text-2xl inline mr-3" /> Smart Tv</div>
+                            }
+
+                            {
+                              itm.Android_TV && <div className="flex items-center w-1/3"><BsAndroid className="text-2xl inline mr-3" /> Android TV</div>
+                            }
                             {
                               itm.PlayStation && <div className="flex items-center w-1/3"><FaPlaystation className="text-2xl inline mr-3" /> Playstation</div>
                             }
@@ -628,12 +630,11 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                       <FaLinux />
                       <MdRouter /> */}
                           </div>
-                          <div className="streaming mx-3 mt-10" dangerouslySetInnerHTML={{ __html: itm.after_table_text }}></div>
+                          <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: itm.after_table_text }}></div>
                         </div>
                       ))
                     }
                   </div>
-                  {/* <div className="streaming mx-3" dangerouslySetInnerHTML={{ __html: blog.attributes.ease_of_use.content }}></div> */}
                 </div>
 
                 {/* ease of use */}
@@ -655,7 +656,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                       {blog.attributes.ease_of_use.deatils_about_easeOfUse}
                     </p>
                   </div>
-                  <div className="streaming mx-3 mt-5" dangerouslySetInnerHTML={{ __html: blog.attributes.ease_of_use.content }}>
+                  <div className="company mx-3 mt-5" dangerouslySetInnerHTML={{ __html: blog.attributes.ease_of_use.content }}>
                   </div>
                 </div>
 
@@ -678,7 +679,7 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                       {blog.attributes.customer_support.details_about_customer_supprt}
                     </p>
                   </div>
-                  <p className="mx-3 mt-5 text-lg">{blog.attributes.customer_support.before_table_text}</p>
+                  <p className="mx-3 mt-5 text-lg">{blog.attributes.customer_support.before_about_table}</p>
                   <div className="m-3 rounded-md">
                     <div className="flex border-t-1 border-black font-semibold">
                       <div className="w-1/2 py-3 px-2">Customer Support</div>
@@ -694,14 +695,15 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                       ))
                     }
                   </div>
-                  <div className="streaming mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.customer_support.after_table_text }}>
+                  <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: blog.attributes.customer_support.after_table_text }}>
                   </div>
                 </div>
               </div>
 
 
               {/* vpn add */}
-              <div className="hidden laptop:flex flex-col gap-5 w-fit mt-10">
+              <div className="hidden laptop:flex flex-col gap-5 w-fit mt-16">
+                <h1 className="text-center font-semibold text-lg">All VPN</h1>
                 {
                   vpn?.map((itm: any, idx: number) => (
                     <Link href={itm.attributes.slug} key={idx} className="flex gap-3">
@@ -716,8 +718,24 @@ export default function CompanyPage({ slug }:  { slug: string } ) {
                   ))
                 }
               </div>
-
             </section>
+            <div className="hidden tablet:flex flex-col gap-8 mt-5">
+              <h1 className="text-center font-bold">Other VPNs We've Reviewed</h1>
+              <div className="flex justify-around">
+                {
+                  vpn?.slice(0, 3).map((itm:any, idx:number) => (
+                    <div className="flex flex-col items-center ">
+                      <div className="relative aspect-square w-20">
+                        <Image src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`} alt={"vpn logo"} fill />
+                      </div>
+                      <span>{itm.attributes.vpn_name} Reviews</span>
+                    </div>
+                  ))
+                }
+
+              </div>
+
+            </div>
           </>
 
       }

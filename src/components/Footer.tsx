@@ -92,7 +92,7 @@ const Footer = () => {
           vpnguide.in is operated by <Link href="https://velocityclick.in/" className="italic hover:text-blue-700">Velocity Click </Link>.
           </p>
           <p className="text-sm mb-4">
-            vpnguide.in is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>. | © 2016-2024. All rights reserved.
+            vpnguide.in is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>
           </p>
         </div>
         <h6 className="text-center ">
