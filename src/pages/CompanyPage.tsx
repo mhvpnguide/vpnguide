@@ -83,7 +83,7 @@ const fetchBlog = async ({ slug }: { slug: string }) => {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
     },
-    cache: 'no-store' as RequestCache,
+    cache: "no-store" as RequestCache,
   };
   const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews/${slug}`, reqOptions);
   const response = await request.json();
@@ -192,7 +192,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                 <nav className=" sticky top-20 flex flex-col w-60 mt-10">
                   <div className="h-fit flex flex-col  border-1 border-gray-300">
                     <div className="relative aspect-video">
-                      <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt='express' />
+                      <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
                     </div>
                     <Link href={blog.attributes.company_link.value} className="bg-blue-600 text-white px-4 py-2 w-fit mx-auto rounded-full mb-3 hover:bg-blue-700">Visit {blog.attributes.vpn_name}</Link>
                   </div>
@@ -207,7 +207,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                   <Link href="#customerSupport" className=" border-1 border-gray-300 p-2">Customer Support</Link>
                   <div className="py-5">
                     <div className="relative aspect-square">
-                      <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.review_image.data.attributes.url}`} fill alt='express' />
+                      <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.review_image.data.attributes.url}`} fill alt="express" />
                     </div>
                   </div>
 
@@ -323,7 +323,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
 
                   {/* review image */}
                   <div className="relative aspect-video w-2/4 mx-auto">
-                    <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.review_image.data.attributes.url}`} fill alt='express' />
+                    <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.review_image.data.attributes.url}`} fill alt="express" />
                   </div>
 
                   {/* key data */}
@@ -362,7 +362,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                     </div>
                     {
                       blog.attributes.stream.streaming_platform.map((itm: StreamingPlatform, idx: number) => (
-                        <div className={`flex border-b-1 border-gray-200 ${itm.value ? 'bg-green-50' : 'bg-red-50'
+                        <div className={`flex border-b-1 border-gray-200 ${itm.value ? "bg-green-50" : "bg-red-50"
                           }`} key={idx}>
                           <div className="w-1/2 py-3 px-2">{itm.streamingPlatform}</div>
                           <div className="w-1/2 py-3 px-2">{itm.value ? "Yes" : "No"}</div>
@@ -687,7 +687,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                     </div>
                     {
                       blog.attributes.customer_support.support.map((itm: Support, idx: number) => (
-                        <div className={`flex border-b-1 border-gray-200 ${itm.availability ? 'bg-green-50' : 'bg-red-50'
+                        <div className={`flex border-b-1 border-gray-200 ${itm.availability ? "bg-green-50" : "bg-red-50"
                           }`} key={idx}>
                           <div className="w-1/2 py-3 px-2">{itm.type}</div>
                           <div className="w-1/2 py-3 px-2">{itm.availability ? "Yes" : "No"}</div>
@@ -720,11 +720,11 @@ export default function CompanyPage({ slug }: { slug: string }) {
               </div>
             </section>
             <div className="hidden tablet:flex flex-col gap-8 mt-5">
-              <h1 className="text-center font-bold">Other VPNs We've Reviewed</h1>
+              <h1 className="text-center font-bold">Other VPNs We&apos;ve Reviewed</h1>
               <div className="flex justify-around">
                 {
                   vpn?.slice(0, 3).map((itm:any, idx:number) => (
-                    <div className="flex flex-col items-center ">
+                    <div className="flex flex-col items-center " key={idx}>
                       <div className="relative aspect-square w-20">
                         <Image src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`} alt={"vpn logo"} fill />
                       </div>
