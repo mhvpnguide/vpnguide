@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section >
       <TopCard title="Where To Check IP Address: Best Ways" />
-      <div className="guides px-3 mx-auto laptop:w-1/2 mt-10">
+      <div className="guides px-3 mx-auto laptop:w-3/4 mt-10">
         <p>This article will provide you with straightforward instructions to discover your public and local IP addresses on a
           range of devices, detailing various tools and methods for where to check IP.</p>
         <h2>Key Takeaways</h2>

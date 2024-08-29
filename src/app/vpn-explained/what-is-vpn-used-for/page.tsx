@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="Why Do You Need a VPN and Its Benefit: A Simple Guide" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
+      <div className="vpn-explained px-3 laptop:w-3/4 laptop:mx-auto mt-10">
         <p>
           Ever wondered <strong>why do you need a VPN and it’s benefit</strong>?
           VPN stands for Virtual Private Network, and it increases your online

@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="What Is a VPN Used For? Essential Benefits and Applications" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
+      <div className="vpn-explained px-3 laptop:w-3/4 laptop:mx-auto mt-10">
         <p>
           A Virtual Private Network (VPN) is used for enhancing your online
           privacy and security. By encrypting your internet traffic and masking

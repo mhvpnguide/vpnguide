@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="No-Log VPN Services for Ultimate Online Privacy" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
+      <div className="vpn-explained px-3 laptop:w-3/4 laptop:mx-auto mt-10">
         <p>
           A VPN, or Virtual Private Network, is a tool that encrypts your
           internet connection, ensuring privacy and security online. VPN servers
