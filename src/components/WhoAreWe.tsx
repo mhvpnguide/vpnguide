@@ -242,7 +242,7 @@ const WhoAreWe = () => {
           </Link>
         </div>
 
-        <div className="flex items-center justify-center p-4 tablet:w-full">
+        <div className="flex items-center justify-center p-4 tablet:w-full ">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
               title="How to check your Ip Address"

@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="Why Do You Need a VPN and Its Benefit: A Simple Guide" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto">
+      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
         <p>
           Ever wondered <strong>why do you need a VPN and it’s benefit</strong>?
           VPN stands for Virtual Private Network, and it increases your online
@@ -62,7 +62,7 @@ const Page = () => {
         <h2>Why You Need a VPN</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-vpn/what-is-vpn-used-for/Gimage1.webp"
             alt="AAn illustration depicting the concept of a virtual private network (VPN) in action, showcasing how it encrypts internet traffic."
             fill
             className=" "
@@ -140,7 +140,7 @@ const Page = () => {
         <h2>Key Benefits of Using a VPN</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-vpn/what-is-vpn-used-for/Gimage1.webp"
             alt="AAn illustration depicting the concept of a virtual private network (VPN) in action, showcasing how it encrypts internet traffic."
             fill
             className=" "
@@ -208,7 +208,7 @@ const Page = () => {
         <h2>Types of VPNs</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-vpn/what-is-vpn-used-for/Gimage1.webp"
             alt="AAn illustration depicting the concept of a virtual private network (VPN) in action, showcasing how it encrypts internet traffic."
             fill
             className=" "
@@ -273,7 +273,7 @@ const Page = () => {
         <h2>How VPNs Work</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-vpn/what-is-vpn-used-for/Gimage1.webp"
             alt="AAn illustration depicting the concept of a virtual private network (VPN) in action, showcasing how it encrypts internet traffic."
             fill
             className=" "
@@ -333,7 +333,7 @@ const Page = () => {
         <h2>Choosing the Right VPN Provider</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-vpn/what-is-vpn-used-for/Gimage1.webp"
             alt="AAn illustration depicting the concept of a virtual private network (VPN) in action, showcasing how it encrypts internet traffic."
             fill
             className=" "
@@ -472,7 +472,7 @@ const Page = () => {
         </p>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-vpn/what-is-vpn-used-for/Gimage1.webp"
             alt="AAn illustration depicting the concept of a virtual private network (VPN) in action, showcasing how it encrypts internet traffic."
             fill
             className=" "

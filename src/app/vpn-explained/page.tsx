@@ -2,6 +2,7 @@
 import TopCard from "../../components/TopCard";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Image from "next/image";
+import Link from "next/link";
 
 type ContentItem = {
   heading: string;
@@ -10,7 +11,7 @@ type ContentItem = {
 type ContentArray = ContentItem[];
 
 const vpnExplained = () => {
-  const content1:ContentArray  = [
+  const content1: ContentArray = [
     {
       heading: "What is a VPN?",
       content: `
@@ -75,7 +76,7 @@ const vpnExplained = () => {
       <div className="w-full">
         <TopCard title="What Is a VPN (Virtual Private Network)?" />
       </div>
-      <section className="px-3 laptop:w-1/2 flex-col justify-center">
+      <section className="px-3 laptop:w-1/2 flex-col justify-center mt-10">
         <p className="text-xl font-semibold pb-2">Our Verdict</p>
         <p className="laptop:text-lg text-[15px] mb-5">
           A <b>Virtual Private Network (VPN)</b> is a type of software that runs
@@ -106,7 +107,7 @@ const vpnExplained = () => {
           </p>
 
           <Accordion>
-            {content1.map((itm:ContentItem, idx:number) => (
+            {content1.map((itm: ContentItem, idx: number) => (
               <AccordionItem
                 key={idx}
                 aria-label={itm.heading}
@@ -136,16 +137,19 @@ const vpnExplained = () => {
           the articles below:
         </p>
 
-        <ul className="flex flex-wrap pl-5 list-disc list-inside">
-          <li className="w-1/2 md:w-full p-2">How Do VPNs Work?</li>
-          <li className="w-1/2 md:w-full p-2">What Are VPNs Used For?</li>
-          <li className="w-1/2 md:w-full p-2">Are VPNs Really Worth It?</li>
-          <li className="w-1/2 md:w-full p-2">
+        <ul className="flex flex-wrap pl-5 list-disc list-inside w-full laptop:flex-col ">
+          <Link href="/vpn-explained/what-is-a-vpn-service"><li className=" md:w-full p-2 cursor-pointer hover:text-blue-500">What is a VPN Service?</li></Link>
+          <Link href="/vpn-explained/how-does-a-vpn-work"><li className=" md:w-full p-2 cursor-pointer hover:text-blue-500">How Does a VPNs Work?</li></Link>
+          <Link href="/vpn-explained/what-is-vpn-used-for"><li className=" md:w-full p-2 cursor-pointer hover:text-blue-500">What is a VPNs Used For?</li></Link>
+          <Link href="/vpn-explained/are-vpn-really-worth-it"><li className=" md:w-full p-2 cursor-pointer hover:text-blue-500">Are VPNs Really Worth It?</li></Link>
+          <Link href="/vpn-explained/vpn-logging-policies"><li className=" md:w-full p-2 cursor-pointer hover:text-blue-500">
             What Are VPN Logging Policies?
-          </li>
+          </li></Link>
         </ul>
 
-        <p className="laptop:text-3xl pt-5 font-bold text-2xl">Types of VPN Connection</p>
+        <p className="laptop:text-3xl pt-5 font-bold text-2xl">
+          Types of VPN Connection
+        </p>
         <p className="py-3 laptop:text-xl text-[16px]">
           There are <a href="#">different types of VPN</a> depending on the type
           of connection a user requires.
@@ -168,7 +172,7 @@ const vpnExplained = () => {
 
         <div className="relative  h-60">
           <Image
-            src="https://www.vpnguide.com/images/2021/08/Personal-VPN-Services.jpg"
+            src="https://www.top10vpn.com/images/2021/08/Personal-VPN-Services.jpg"
             fill
             alt="personal vpn"
           />

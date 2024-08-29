@@ -16,18 +16,18 @@ const AboutUS = () => {
       <div className="laptop:w-3/4 mt-10 px-4 laptop:px-0 tablet:px-0">
         <div className="flex flex-col justify-center items-center">
           <p className="text-left text-lg mb-4 text-grey font-medium">
-            vpnguide is an independent VPN review website founded in
-            in 2016. He launched it to improve the VPN industry, after realizing
-            the market was flooded with hundreds of unsafe applications and
-            review websites that weren’t adequately testing them.
+            vpnguide is an independent VPN review website founded in in 2016. He
+            launched it to improve the VPN industry, after realizing the market
+            was flooded with hundreds of unsafe applications and review websites
+            that weren’t adequately testing them.
           </p>
           <p className="text-left text-lg mb-4 text-grey font-medium">
-            Since then, we’ve conducted over 5,000 hours of in-depth VPN
-            testing and shared our findings with our readers. 
+            Since then, we’ve conducted over 5,000 hours of in-depth VPN testing
+            and shared our findings with our readers.
           </p>
-          <div className="w-[280px] h-[280px] relative">
+          <div className="w-[300px] h-[300px] relative">
             <Image
-              src="/2808108_18383.png"
+              src="/Assests/About/About-us/aboutImage1.jpg"
               alt="VPN Banner"
               fill
               className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -101,7 +101,7 @@ const AboutUS = () => {
 
           <div className="w-[280px] h-[280px] relative laptop:hidden">
             <Image
-              src="/2808108_18383.png"
+              src="/Assests/About/About-us/aboutImage1.jpg"
               alt="VPN Banner"
               fill
               className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -114,7 +114,7 @@ const AboutUS = () => {
           <div className="laptop:flex laptop:gap-10 laptop:justify-center laptop:items-center">
             <div className="hidden w-[280px] h-[280px] relative laptop:flex laptop:w-1/3 laptop:justify-center laptop:items-center">
               <Image
-                src="/2808108_18383.png"
+                src="/Assests/About/About-us/aboutImage1.jpg"
                 alt="VPN Banner"
                 fill
                 className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -164,7 +164,7 @@ const AboutUS = () => {
 
           <div className="w-[280px] h-[280px] relative laptop:hidden">
             <Image
-              src="/2808108_18383.png"
+              src="/Assests/About/About-us/aboutImage1.jpg"
               alt="VPN Banner"
               fill
               className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -183,7 +183,10 @@ const AboutUS = () => {
                 Unlike most VPN review websites, we conduct our own original
                 testing and research to evaluate a VPN’s performance. Every
                 recommendation you see is the result of a{" "}
-                <Link href="/about/how-we-review-vpn" className="text-bluelink hover:underline">
+                <Link
+                  href="/about/how-we-review-vpn"
+                  className="text-bluelink hover:underline"
+                >
                   rigorous testing process
                 </Link>
                 consisting of <b>hours of use at the hands of our experts.</b>
@@ -197,7 +200,10 @@ const AboutUS = () => {
               <p className="text-left text-lg mb-4 text-grey font-medium">
                 In the interest of total impartiality, we also purchase our own
                 subscriptions to every VPN we test. We{" "}
-                <Link href="/about/how-we-make-money" className="text-bluelink hover:underline">
+                <Link
+                  href="/about/how-we-make-money"
+                  className="text-bluelink hover:underline"
+                >
                   don’t accept payment
                 </Link>{" "}
                 to conduct a VPN review or provide positive coverage, and VPN
@@ -211,14 +217,17 @@ const AboutUS = () => {
 
               <button className="px-2 py-3 font-medium w-fit btn-readMore">
                 {" "}
-                <Link href="/about/how-we-review-vpn" className="text-bluelink hover:underline">
-                Read More
-               </Link>{" "}
+                <Link
+                  href="/about/how-we-review-vpn"
+                  className="text-bluelink hover:underline"
+                >
+                  Read More
+                </Link>{" "}
               </button>
             </div>
             <div className="w-[280px] h-[280px] relative laptop:flex tablet:hidden">
               <Image
-                src="/2808108_18383.png"
+                src="/Assests/About/About-us/aboutImage1.jpg"
                 alt="VPN Banner"
                 fill
                 className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -229,7 +238,7 @@ const AboutUS = () => {
           <div className="hidden tablet:flex tablet:justify-center tablet:items-center tablet:w-full">
             <div className="w-[280px] h-[280px] relative laptop:hidden ">
               <Image
-                src="/2808108_18383.png"
+                src="/Assests/About/About-us/aboutImage1.jpg"
                 alt="VPN Banner"
                 fill
                 className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -245,8 +254,8 @@ const AboutUS = () => {
           </div>
           <div className="laptop:w-1/2">
             <h3 className="font-bold text-xl mb-8">
-              Don&apos;t like filling out forms?Here are other ways to connect with
-              us:
+              Don&apos;t like filling out forms?Here are other ways to connect
+              with us:
             </h3>
             <ul className="mb-8">
               <li className="flex text-lg mb-6 gap-3 justify-start items-center">
@@ -259,9 +268,7 @@ const AboutUS = () => {
               </li>
               <li className="flex text-lg mb-6 gap-3 justify-start items-center">
                 <MdOutlineLocationOn className="text-5xl laptop:text-2xl" />
-                <span>
-                  Kolkata, West Bengal, India
-                </span>
+                <span>Kolkata, West Bengal, India</span>
               </li>
             </ul>
             <div>
@@ -270,10 +277,12 @@ const AboutUS = () => {
               </p>
               <div>
                 vpnguide is part of{" "}
-                <Link href="https://velocityclick.in/" className="text-bluelink hover:underline">
+                <Link
+                  href="https://velocityclick.in/"
+                  className="text-bluelink hover:underline"
+                >
                   Velocity Click.
                 </Link>
-                
               </div>
             </div>
           </div>

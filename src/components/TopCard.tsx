@@ -11,7 +11,7 @@ const TopCard = ({ title }: { title: string }) => {
           <CustomBreadcrumb />
         </div>
 
-        <div className=" flex justify-center pt-1  mb-2">
+        <div className=" flex justify-center pt-1  mb-2 px-3 laptop:px-0">
           <p className="text-3xl tablet:text-4xl font-bold">{title}</p>
         </div>
         <div className="flex justify-end pb-4 pr-10">

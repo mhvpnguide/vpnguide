@@ -17,9 +17,9 @@ const HowWeMakeMoney = () => {
         </div> */}
         <div className="flex flex-col justify-center items-center  laptop:flex tablet:flex ">
           {/* <h1 className="text-4xl font-bold mb-10 w-full">How we Make Money</h1> */}
-          <div className="w-[280px] h-[280px] relative mt-5 mb-10">
+          <div className="w-[300px] h-[300px] relative mt-5 mb-10">
             <Image
-              src="/2808108_18383.png"
+              src="/Assests/About/How-we-make-money/image1.jpg"
               alt="VPN Banner"
               fill
               className="mt-4 tablet:mt-6 laptop:mt-8"

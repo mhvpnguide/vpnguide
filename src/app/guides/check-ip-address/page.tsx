@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <section >
       <TopCard title="Where To Check IP Address: Best Ways" />
-      <div className="guides px-3 mx-auto laptop:w-1/2">
+      <div className="guides px-3 mx-auto laptop:w-1/2 mt-10">
         <p>This article will provide you with straightforward instructions to discover your public and local IP addresses on a
           range of devices, detailing various tools and methods for where to check IP.</p>
         <h2>Key Takeaways</h2>
@@ -26,7 +26,7 @@ const Page = () => {
         <h2>How to Check Your Public IP Address</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/Guides/How-to-check-ip/Gimage1.webp"
             alt="An illustration depicting the concept of a virtual private network."
             fill
             className=" "
@@ -62,7 +62,7 @@ const Page = () => {
         <h2>How to Find Your Local IP Address on Different Devices</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/Guides/How-to-check-ip/Gimage1.webp"
             alt="An illustration depicting the concept of a virtual private network."
             fill
             className=" "
@@ -127,7 +127,7 @@ const Page = () => {
         <h2>Checking IP Addresses of Websites</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/Guides/How-to-check-ip/Gimage1.webp"
             alt="An illustration depicting the concept of a virtual private network."
             fill
             className=" "
@@ -149,7 +149,7 @@ const Page = () => {
         <h2>Understanding Public vs. Private IP Addresses</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/Guides/How-to-check-ip/Gimage1.webp"
             alt="An illustration depicting the concept of a virtual private network."
             fill
             className=" "
@@ -191,7 +191,7 @@ const Page = () => {
         <h2>How to Protect Your IP Address</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/Guides/How-to-check-ip/Gimage1.webp"
             alt="An illustration depicting the concept of a virtual private network."
             fill
             className=" "

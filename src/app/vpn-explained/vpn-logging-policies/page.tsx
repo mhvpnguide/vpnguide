@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="No-Log VPN Services for Ultimate Online Privacy" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto">
+      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
         <p>
           A VPN, or Virtual Private Network, is a tool that encrypts your
           internet connection, ensuring privacy and security online. VPN servers
@@ -42,7 +42,7 @@ const Page = () => {
         <h2>What are VPNs logging policies</h2>
         <div className="w-full aspect-video relative mb-10 tablet:mt-6 laptop:mt-8">
           <Image
-            src="https://www.top10vpn.com/images/2024/04/Proton-VPN-Free-Server-List-on-Android-scaled-1.webp"
+            src="/Assests/what-is-VPN/vpn-logging-policies/Gimage1.webp"
             alt="An illustration depicting the concept of a virtual private network."
             fill
             className=" "
