@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="Are VPNs Worth It? The True Cost of Using a VPN vs. Not Using One" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
+      <div className="vpn-explained px-3 laptop:w-3/4 laptop:mx-auto mt-10">
         <p>
           In today’s digital age, the question “Are VPNs worth it?” has become
           increasingly relevant for students, researchers, small business

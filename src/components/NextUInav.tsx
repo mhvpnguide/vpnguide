@@ -157,8 +157,9 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                     key={idx}
                     // key="autoscaling"
                     // description="ACME scales apps to meet user demand, automagically, based on load."
-                    className={`${subidx == 4 ? "" : ""}`}
-                    startContent={subidx == 5 ? null : icons.flash}
+                    // className={`${subidx == 4 ? "" : ""}`}
+                    className="px-4 mb-2"
+                    // startContent={subidx == 5 ? null : icons.flash}
                   >
                     {subidx == 4 ? (
                       <Link href={subitem.link} className="w-full">

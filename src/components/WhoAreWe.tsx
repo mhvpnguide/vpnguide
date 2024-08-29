@@ -66,7 +66,7 @@ const WhoAreWe = () => {
 
         <div className=" flex laptop:flex w-full laptop:w-1/2 justify-center items-center">
           <Image
-            src="/2808108_18383.png"
+            src="/Assests/Homepage/Homeimg.png"
             alt="VPN Banner"
             width={300}
             height={300}
@@ -99,7 +99,7 @@ const WhoAreWe = () => {
         <div className="flex flex-col laptop:flex-row">
           <div className="flex laptop:flex w-full laptop:w-1/2 justify-center items-center">
             <Image
-              src="/2808108_18383.png"
+               src="/Assests/Homepage/Homeimg.png"
               alt="VPN Banner"
               width={300}
               height={300}
@@ -178,22 +178,22 @@ const WhoAreWe = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
               title="What is a VPN Service"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/vpn-explained/what-is-a-vpn-service"
             />
             <Card
               title="How does a VPN worked"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/vpn-explained/how-does-a-vpn-work"
             />
             <Card
               title="What is a VPN used for"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/vpn-explained/what-is-vpn-used-for"
             />
             <Card
               title="Are VPN really worth it"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/vpn-explained/are-vpn-really-worth-it"
             />
           </div>
@@ -248,22 +248,22 @@ const WhoAreWe = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
               title="How to check your Ip Address"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/guides/check-ip-address"
             />
             <Card
               title="How to hide your Ip Address"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/guides/hide-your-ip-address"
             />
             <Card
               title="How to check if your VPN is working"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/guides/is-my-vpn-working"
             />
             <Card
               title="What can someone do with your Ip Address"
-              imageSrc="/2808108_18383.png"
+              imageSrc="/Assests/Homepage/Homeimg.png"
               link="/guides/what-can-people-do-with-your-ip-address"
             />
           </div>

@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section >
       <TopCard title="What Can a VPN IP Do: Protect Your IP Address?" />
-      <div className="guides px-3 mx-auto laptop:w-1/2">
+      <div className="guides px-3 mx-auto laptop:w-3/4">
         <h2>Protect Yourself Online by
           Knowing Your IP Address</h2>
         <p>Ever wondered what an IP address

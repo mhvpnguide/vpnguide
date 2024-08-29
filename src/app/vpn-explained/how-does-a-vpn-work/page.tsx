@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section>
       <TopCard title="How a VPN Works: Essential Guide" />
-      <div className="vpn-explained px-3 laptop:w-1/2 laptop:mx-auto mt-10">
+      <div className="vpn-explained px-3 laptop:w-3/4 laptop:mx-auto mt-10">
         <p>
           Wondering how a VPN works? A VPN, or Virtual Private Network, encrypts
           your internet connection and hides your IP address, keeping your

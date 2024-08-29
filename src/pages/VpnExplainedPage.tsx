@@ -77,7 +77,7 @@ const VpnExplainedPage = () => {
       <div className="w-full">
         <TopCard title="What Is a VPN (Virtual Private Network)?" />
       </div>
-      <section className="px-3 laptop:w-1/2 flex-col justify-center">
+      <section className="px-3 laptop:w-3/4 flex-col justify-center">
         <p className="text-xl font-semibold pb-2">Our Verdict</p>
         <p className="laptop:text-lg text-[15px] mb-5">
           A <b>Virtual Private Network (VPN)</b> is a type of software that runs
@@ -168,9 +168,9 @@ const VpnExplainedPage = () => {
         </p>
         <p className="text-3xl pt-5 font-bold">Personal VPN Services</p>
 
-        <div className="relative  h-60">
+        <div className="relative h-60 laptop:h-80">
           <Image
-            src="https://www.vpnguide.com/images/2021/08/Personal-VPN-Services.jpg"
+            src="/Assests/VPN-explained/VPNimage.jpg"
             fill
             alt="personal vpn"
           />

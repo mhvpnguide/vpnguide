@@ -9,7 +9,7 @@ const Page = () => {
     return (
         <section >
             <TopCard title="How to Check VPN Functionality to Ensure It's Actually Working" />
-            <div className="guides px-3 mx-auto laptop:w-1/2 mt-10">
+            <div className="guides px-3 mx-auto laptop:w-3/4 mt-10">
                 <p>In today’s digital age, maintaining privacy and security online has never been more critical. One of the most
                     effective tools for achieving this is a Virtual Private Network (VPN). However, simply having a VPN isn’t enough—you
                     need to ensure it’s working correctly. Using a VPN app to check the status and functionality of your VPN connection
