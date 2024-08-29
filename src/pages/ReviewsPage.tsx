@@ -1,6 +1,6 @@
 "use client"
 import { SearchIcon } from "../components/SearchIcon";
-import { Input } from "@nextui-org/react";
+import { Input, Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import CustomCircularProgress from "@/components/CustomCircularRatting";
 import Link from "next/link";
@@ -14,8 +14,8 @@ import ReviewCard from "../components/ReviewCard";
 import { useEffect, useState } from "react";
 
 
-export const fetchBlogs = async () => {
 
+export const fetchBlogs = async () => {
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
@@ -32,17 +32,18 @@ export const fetchBlogs = async () => {
 
 
 const ReviewsPage = () => {
-  //  const blogs = await fetchBlogs();
   const [blogs, setBlogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
+
+  
   useEffect(() => {
     const fetchAndSetBlogs = async () => {
       try {
         const data = await fetchBlogs();
-        
-        const sortedBlogs = data.sort((a:any, b:any) => b.attributes.ratting - a.attributes.ratting);
 
+        const sortedBlogs = data.sort((a: any, b: any) => b.attributes.ratting - a.attributes.ratting);
+        
         setBlogs(sortedBlogs);
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -52,32 +53,65 @@ const ReviewsPage = () => {
     };
 
     fetchAndSetBlogs();
-  }, []);
+  }, [blogs]);
 
   return (
     <div className="bg-gray-100">
 
-      <div className="about-upper-part pt-5 pb-10 flex ">
-        <CustomBreadcrumb />
-      </div>
+      <div className="bg-blue-100">
+        <div className="mb-2 tablet:pt-[40px] laptop:pl-[50px] px-3">
+          <CustomBreadcrumb />
+        </div>
 
-      {/* top */}
-      <div className="px-3 flex items-center flex-col pt-14 pb-10 mb-3 bg-red-100 ">
-        <p className="text-3xl font-bold pb-6">All VPN Reviews</p>
-        <p className="text-xl mb-4 text-center">Check out all our VPN reviews blow or use the filters to find the VPN best suits you needs. Of the 65 reviewed, found 35 in Spaninsh.</p>
-        <div className="w-full tablet:w-1/2 laptop:w-2/5 laptopl:w-96">
-          <Input
+        <div className="px-3 flex items-center flex-col mb-3 ">
+          <p className="text-3xl font-bold pb-6">All VPN Reviews</p>
+          <p className="text-xl mb-4 text-center">Check out all our VPN reviews blow or use the filters to find the VPN best suits you needs. Of the 65 reviewed, found 35 in Spaninsh.</p>
+          <div className="w-full tablet:w-1/2 laptop:w-2/5 laptopl:w-96">
+            <Input
+              classNames={{
+                base: "max-w-full h-12",
+                mainWrapper: "h-full",
+                input: "text-lg",
+                inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20 rounded-full px-4 py-3 bg-white",
+              }}
+              placeholder="Type to search..."
+              size="sm"
+              startContent={<SearchIcon size={18} />}
+              type="search"
+            />
+          </div>
+        </div>
+        <div className="flex justify-end pb-4 pr-10">
+          <Tooltip
+            content={
+              <p className="">
+                It is important to us that you will find the perfect VPN service
+                for your needs - that is the aim and purpose of this site. We
+                aim to be 100% transparent about our reviewing process (more
+                about that in the &apos;How we review&apos; section on this
+                site). We earn money via commissions from the VPN companies
+                featured on this site, which we receive when you click our links
+                and make purchases. This impacts the ranking, score and order in
+                which the services we work with (and their products) are
+                presented. VPN listings on this page DO NOT imply endorsement.
+                We do not feature all of the available VPN services, only those
+                we have reviewed. We strive to keep this site constantly
+                updated, but cannot guarantee the accuracy of the information at
+                all times.
+              </p>
+            }
+            placement="bottom"
             classNames={{
-              base: "max-w-full h-12",
-              mainWrapper: "h-full",
-              input: "text-lg",
-              inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20 rounded-full px-4 py-3 bg-white",
+              base: ["text-right pr-5"],
+              content: [
+                "text-sm text-gray-600 w-1/2 text-justify bg-[#4B5563] text-white p-6",
+              ],
             }}
-            placeholder="Type to search..."
-            size="sm"
-            startContent={<SearchIcon size={18} />}
-            type="search"
-          />
+          >
+            <span className="text-xs font-semibold text-gray-600 underline">
+              ADEVRTISER DISCLOSURE
+            </span>
+          </Tooltip>
         </div>
       </div>
 

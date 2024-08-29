@@ -6,12 +6,14 @@ import { SiMacos } from "react-icons/si";
 import { IoLogoAndroid } from "react-icons/io";
 import { MdRouter } from "react-icons/md";
 import CustomCircularProgress from "./CustomCircularRatting";
+import { ReactNode } from "react";
 
 interface Blog {
   id: number; // Assuming there"s an id for each blog
   attributes: BlogAttributes;
 }
 interface BlogAttributes {
+  vpn_name: ReactNode;
   slug: string;
   top_banner: BannerItem[];
   logo: Logo;
@@ -49,7 +51,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
   const lightBackgroundColors = ['bg-red-400', 'bg-blue-400', 'bg-green-400', 'bg-yellow-400', 'bg-pink-400'];
   const fontColors = ['text-white', 'text-black', 'text-gray-700', 'text-gray-900', 'text-yellow-100'];
   return (
-    <section className="px-3 tablet:px-5 flex flex-col gap-7">
+    <section className="px-3 tablet:px-5 flex flex-col gap-7 py-5">
 
       {/* review card */}
       {
@@ -88,6 +90,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* vpn details */}
                 <div className="flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
                   {/* <p className="text-sm font-medium pb-1">{blog.attributes.vpn_name}</p> */}
+                  <p className="text-sm font-bold pb-1 text-center">{blog.attributes.vpn_name}</p>
                   <p className="text-sm font-medium pb-1">{blog.attributes.details}</p>
                   <p className="tablet:mt-2 text-sm font-semibold text-blue-600">{blog.attributes.offer}</p>
                 </div>
@@ -133,7 +136,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg">Visit website</Link>
+                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg">View Review</Link>
                   <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
