@@ -4,7 +4,7 @@ import "./globals.css";
 import Footer from "../components/Footer";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "../components/Navbar";
-import Head from "next/head";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -269,6 +269,7 @@ export default function RootLayout({
           <Footer />
         </NextUIProvider>
       </body>
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
     </html>
   );
 }
