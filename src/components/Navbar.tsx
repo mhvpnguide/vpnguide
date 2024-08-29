@@ -112,7 +112,7 @@ const NavbarComp = () => {
         },
         {
           name: "How To Check Your IP Address",
-          link: "/guides/check-ip-address",
+          link: "/guides/hide-your-ip-address",
         },
         {
           name: "What can someone do with your ip address",

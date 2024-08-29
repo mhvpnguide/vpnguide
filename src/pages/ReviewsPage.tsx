@@ -142,7 +142,7 @@ const ReviewsPage = () => {
 
         <div className=" flex laptop:flex w-full laptop:w-1/2 justify-center items-center">
           <Image
-            src="/2808108_18383.png"
+            src="/Assests/Homepage/Homeimg.png"
             alt="VPN Banner"
             width={300}
             height={300}
