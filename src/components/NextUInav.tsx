@@ -161,7 +161,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                     className="px-4 mb-2"
                     // startContent={subidx == 5 ? null : icons.flash}
                   >
-                    {subidx == 4 ? (
+                    {subidx == 5 ? (
                       <Link href={subitem.link} className="w-full">
                         <div className="font-semibold flex justify-start text-[#197BEB]  items-center gap-3 w-full">
                           click more

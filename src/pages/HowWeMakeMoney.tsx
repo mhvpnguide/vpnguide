@@ -60,7 +60,7 @@ const HowWeMakeMoney = () => {
               <li className="flex justify-center items-center gap-3  font-semibold w-full text-[16px] pl-4 mb-4">
                 <div className="w-[40px] h-[40px] relative ">
                   <Image1
-                    src="/cross_red.png"
+                    src="/Assests/About/How-we-make-money/cross_red.png"
                     alt="VPN Banner"
                     fill
                     className=""
@@ -71,7 +71,7 @@ const HowWeMakeMoney = () => {
               <li className="flex justify-center items-center gap-3  font-semibold w-full text-[16px] pl-4 mb-4">
                 <div className="w-[40px] h-[40px] relative ">
                   <Image1
-                    src="/cross_red.png"
+                    src="/Assests/About/How-we-make-money/cross_red.png"
                     alt="VPN Banner"
                     fill
                     className=""
@@ -85,7 +85,7 @@ const HowWeMakeMoney = () => {
               <li className="flex justify-center items-center gap-3  font-semibold w-full text-[16px] pl-4 mb-4">
                 <div className="w-[40px] h-[40px] relative ">
                   <Image1
-                    src="/cross_red.png"
+                    src="/Assests/About/How-we-make-money/cross_red.png"
                     alt="VPN Banner"
                     fill
                     className=""
@@ -100,7 +100,7 @@ const HowWeMakeMoney = () => {
               <li className="flex justify-center items-center gap-3  font-semibold w-full text-[16px] pl-4 mb-4">
                 <div className="w-[40px] h-[40px] relative ">
                   <Image1
-                    src="/cross_red.png"
+                    src="/Assests/About/How-we-make-money/cross_red.png"
                     alt="VPN Banner"
                     fill
                     className=""

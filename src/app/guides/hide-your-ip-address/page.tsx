@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <section >
       <TopCard title="How to Hide Your VPN IP Address" />
-      <div className="guides px-3 mx-auto laptop:w-3/4">
+      <div className="company px-3 mx-auto laptop:w-3/4 mt-10">
         <h2>
           Introduction
         </h2>
