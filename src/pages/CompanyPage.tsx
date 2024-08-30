@@ -205,11 +205,11 @@ export default function CompanyPage({ slug }: { slug: string }) {
                   <Link href="#device" className=" border-1 border-gray-300 p-2">Device And OS capability</Link>
                   <Link href="#easeOfUse" className=" border-1 border-gray-300 p-2">Ease Of Use</Link>
                   <Link href="#customerSupport" className=" border-1 border-gray-300 p-2">Customer Support</Link>
-                  <div className="py-5">
+                  {/* <div className="py-5">
                     <div className="relative aspect-square">
                       <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.review_image.data.attributes.url}`} fill alt="express" />
                     </div>
-                  </div>
+                  </div> */}
 
                 </nav>
               </div>
@@ -706,7 +706,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                 <h1 className="text-center font-semibold text-lg">All VPN</h1>
                 {
                   vpn?.map((itm: any, idx: number) => (
-                    <Link href={itm.attributes.slug} key={idx} className="flex gap-3">
+                    <Link href={itm.attributes.slug} key={idx} className="flex gap-3 border border-gray-200">
                       <div className="w-[60%] aspect-square relative">
                         <Image src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`} alt={"vpn image"} fill />
                       </div>

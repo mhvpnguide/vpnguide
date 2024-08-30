@@ -31,10 +31,10 @@ const HowWeMakeMoney = () => {
               <p className="text-left text-lg mb-4  font-medium">
                 We built vpnguide around our core principles of impartiality,
                 honesty and transparency. Your trust is of the utmost importance
-                to us, which is why we’ll always be straight-up about how we
+                to us, which is why we&apos;ll always be straight-up about how we
                 test and review VPNs. in 2016. He launched it to improve the VPN
                 industry, after realizing the market was flooded with hundreds
-                of unsafe applications and review websites that weren’t
+                of unsafe applications and review websites that weren&apos;t
                 adequately testing them.
               </p>
               <p className="text-left text-lg mb-4  font-medium">
@@ -51,7 +51,7 @@ const HowWeMakeMoney = () => {
                 the site a free resource for our visitors.
               </p>
               <p className="text-left text-lg mb-4  font-medium">
-                We don’t accept payment to provide positive reviews, and
+                We don&apos;t accept payment to provide positive reviews, and
                 providers will never have any input in how we choose
                 are based on our own testing results and experience.
               </p>
@@ -128,7 +128,7 @@ const HowWeMakeMoney = () => {
             </p>
             <p className="text-left text-lg mb-4  font-medium">
               When you click on a link or a button that takes you to a
-              provider’s website, and you then purchase a VPN subscription, we
+              provider&apos;s website, and you then purchase a VPN subscription, we
               may receive compensation for having referred you to them.
             </p>
             <p className="text-left text-lg mb-4  font-medium">
@@ -157,9 +157,9 @@ const HowWeMakeMoney = () => {
               engine advertisements.
             </p>
             <p className="text-left text-lg mb-4  font-medium">
-              You may have also noticed that we haven’t reviewed every single
-              VPN product on the market. It’s our intention to cover as many as
-              possible, and we’re getting there, but unfortunately we can’t
+              You may have also noticed that we haven&apos;t reviewed every single
+              VPN product on the market. It&apos;s our intention to cover as many as
+              possible, and we&apos;re getting there, but unfortunately we can&apos;t
               promise to have total coverage.
             </p>
             <p className="text-left text-lg mb-4  font-medium">

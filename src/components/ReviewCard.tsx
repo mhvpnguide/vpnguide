@@ -56,7 +56,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
       {/* review card */}
       {
         blogs.map((blog: Blog, idx: number) => (
-          <div className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white" key={idx}>
+          <Link href={blog.attributes.company_link.value} className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024]" key={idx}>
 
             {/* top banner */}
             <div className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]}  w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
@@ -82,9 +82,10 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
               <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 laptop:w-[30%]">
 
                 <div className=" flex justify-center tablet:justify-center  mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="relative aspect-square w-3/4 tablet:w-[35%]">
+                  <div className="relative aspect-square w-3/4 tablet:w-[35%]">
+                  {/* <div href={`/reviews/${blog.attributes.slug}`} className="relative aspect-square w-3/4 tablet:w-[35%]"> */}
                     <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
-                  </Link >
+                  </div >
                 </div>
 
                 {/* vpn details */}
@@ -142,7 +143,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
               </div>
             </div>
 
-          </div>
+          </Link>
         ))
       }
 

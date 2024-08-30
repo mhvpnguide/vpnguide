@@ -126,6 +126,10 @@ const NavbarComp = () => {
           name: "How to check if your vpn is working?",
           link: "/guides/is-my-vpn-working",
         },
+        {
+          name: "Click more ->",
+          link: "/guides",
+        },
       ],
     },
     {
