@@ -30,22 +30,22 @@ const content1: ContentArray = [
     heading: "What are VPNs used for?",
     content: `
             <p>A personal VPN service serves two main functions: <b>encrypting your web traffic and hiding your IP address.</b> This allows for a number of popular use-cases, including:</p>
-            <li>Avoiding ISP surveillance and protecting your privacy online.</li>
-            <li>Unblocking geo-restricted websites and streaming services.</li>
-            <li>Bypassing local firewalls and evading government censorship.</li>
-            <li>Avoiding ISP throttling and protecting P2P file-sharing activity.</li>
-            <li>Staying secure on unprotected public WiFi networks.</li>
+            <p>Avoiding ISP surveillance and protecting your privacy online.</p>
+            <p>Unblocking geo-restricted websites and streaming services.</p>
+            <p>Bypassing local firewalls and evading government censorship.</p>
+            <p>Avoiding ISP throttling and protecting P2P file-sharing activity.</p>
+            <p>Staying secure on unprotected public WiFi networks.</p>
           `,
   },
   {
     heading: "Which devices can I use a VPN on?",
     content: `
             <p>Personal VPNs typically offer native applications and client software for:</p>
-            <li>iPhone and Android phones</li>
-            <li>Windows, macOS, and Linux computers</li>
-            <li>Chrome and Firefox web browsers</li>
-            <li>Apple TV, Google Chromecast, and Amazon Fire TV Stick devices</li>
-            <li>WiFi routers</li>
+            <p>iPhone and Android phones</p>
+            <p>Windows, macOS, and Linux computers</p>
+            <p>Chrome and Firefox web browsers</p>
+            <p>Apple TV, Google Chromecast, and Amazon Fire TV Stick devices</p>
+            <p>WiFi routers</p>
             <p>For streaming devices, including Roku, Smart TV, Xbox, or Playstation devices, you can <a href="#">install a VPN onto your WiFi router</a>. This will protect every device that’s connected to your WiFi network.</p>
             <p>It is also possible <a href="#">to set up your own VPN server at home</a> using a router, personal computer or Cloud Computing Service.</p>
             <p>While this is mostly free to do, it’s also technically difficult. You won’t be able to use it to flexibly spoof your geographic location, and it doesn’t protect your privacy from your ISP or anyone they share information with.</p>
@@ -55,14 +55,14 @@ const content1: ContentArray = [
     heading: "What are the drawbacks of using a VPN?",
     content: `
             <p>Using a VPN has limitations and disadvantages that are important to be aware of:</p>
-            <li>Most good-quality VPN services charge a monthly subscription fee.</li>
-            <li>All VPNs slow down your connection speeds to some degree.</li>
-            <li>A VPN cannot make you completely anonymous online.</li>
-            <li>Your safety depends on how trustworthy your VPN provider is.</li>
-            <li>Using a VPN is illegal in a small number of countries.</li>
-            <li>A VPN will not protect your device against most malware or cyberattacks.</li>
-            <li>Using a VPN increases bandwidth consumption.</li>
-            <li>Even the best VPN can’t unblock every website all of the time.</li>
+            <p>Most good-quality VPN services charge a monthly subscription fee.</p>
+            <p>All VPNs slow down your connection speeds to some degree.</p>
+            <p>A VPN cannot make you completely anonymous online.</p>
+            <p>Your safety depends on how trustworthy your VPN provider is.</p>
+            <p>Using a VPN is illegal in a small number of countries.</p>
+            <p>A VPN will not protect your device against most malware or cyberattacks.</p>
+            <p>Using a VPN increases bandwidth consumption.</p>
+            <p>Even the best VPN can’t unblock every website all of the time.</p>
             `,
   },
 ];
