@@ -8,7 +8,11 @@ const fetchNames = async () => {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
     },
-    cache: "no-store" as RequestCache,
+    next: {
+      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
+    },
+    cache: "force-cache" as RequestCache,
+    // cache: "no-store" as RequestCache,
   }
 
   const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=slug&fields[2]=ratting`, reqOptions);
@@ -34,7 +38,7 @@ const buildSubnavFromApi = async () => {
     name: item.attributes.vpn_name,
     link: `/reviews/${item.attributes.slug}`, // Customize the link format as needed
   }))
-    .slice(0, 3);
+    .slice(0, 5);
 
   return subnavFromApi;
 };
@@ -68,6 +72,27 @@ const NavbarComp = () => {
   }
 
   const navdata: NavItem[] = [
+    {
+      mainHeading: "BEST VPN",
+      subnav: [
+        {
+          name: "<b>Popular</b>",
+          link: "",
+        },
+        {
+          name: "Best VPN of 2024",
+          link: "",
+        },
+        {
+          name: "Best free VPN",
+          link: "",
+        },
+        {
+          name: "Best Cheap VPN",
+          link: "",
+        },
+      ],
+    },
     {
       mainHeading: "VPN REVIEWS",
       subnav: [

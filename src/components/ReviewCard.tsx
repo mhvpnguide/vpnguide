@@ -59,29 +59,35 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
           <Link href={blog.attributes.company_link.value} className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024]" key={idx}>
 
             {/* top banner */}
-            <div className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]}  w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
-              <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
-              {
-                blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
-                  <>
-                    <div className={`${lightBackgroundColors[idx % lightBackgroundColors.length]}  w-fit px-3 py-1 h-full ${subidx == 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length == subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
-                    {
-                      blog.attributes.top_banner.length == subidx + 1 ?
-                        null
-                        :
-                        <span className={`${lightBackgroundColors[idx % lightBackgroundColors.length]} py-1`}>|</span>
-                    }
-                  </>
-                ))
-              }
+            <div className="relative">
+              <div className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} absolute top-0 left-0 w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
+                <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
+                {
+                  blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
+                    <>
+                      <div className={`${lightBackgroundColors[idx % lightBackgroundColors.length]}  w-fit px-3 py-1 h-full ${subidx == 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length == subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
+                      {
+                        blog.attributes.top_banner.length == subidx + 1 ?
+                          null
+                          :
+                          <span className={`${lightBackgroundColors[idx % lightBackgroundColors.length]} py-1`}>|</span>
+                      }
+                    </>
+                  ))
+                }
 
+              </div>
+              <div className="min-h-6 ">
+                <h1 className="hidden laptop:block text-lg font-bold text-center">{blog.attributes.vpn_name}</h1>
+              </div>
             </div>
+
             <div className="flex laptop:flex-row flex-col">
 
               {/* vpn image */}
-              <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 laptop:w-[30%]">
+              <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 w-auto laptop:max-w-[30%]">
 
-                <div className=" flex justify-center tablet:justify-center  mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
+                <div className="flex justify-center tablet:justify-center  mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
                   <div className="relative aspect-square w-3/4 tablet:w-[35%]">
                   {/* <div href={`/reviews/${blog.attributes.slug}`} className="relative aspect-square w-3/4 tablet:w-[35%]"> */}
                     <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
@@ -97,7 +103,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
               </div>
 
               <div className="laptop:w-[40%]">
-                <h1 className="text-sm font-bold text-center">{blog.attributes.vpn_name}</h1>
+              <h1 className=" laptop:hidden text-base font-bold text-center">{blog.attributes.vpn_name}</h1>
                 <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (
@@ -141,6 +147,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
+              
             </div>
 
           </Link>

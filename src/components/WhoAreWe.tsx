@@ -46,7 +46,7 @@ const WhoAreWe = () => {
 
   return (
     <>
-      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
+      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
         <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
           <div className="home_heading ">WHO WE ARE</div>
           <div className="hidden laptop:flex home_subheading ">
@@ -92,7 +92,7 @@ const WhoAreWe = () => {
         </div>
       </section>
 
-      <section className="wpt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
+      <section className="wpt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
         <div className="laptop:hidden flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
           <div className="home_heading">DETAILED VPN REVIEWS</div>
         </div>
@@ -173,7 +173,7 @@ const WhoAreWe = () => {
         </div>
       </section>
 
-      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
+      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
         <div className="order-2 tablet-order-1 flex items-center justify-center p-4 tablet:w-full">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 w-full laptop:w-4/5  justify-center items-center tablet:px-20 laptop:px-0">
             <Card
@@ -228,7 +228,7 @@ const WhoAreWe = () => {
         </div>
       </section>
 
-      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-48 laptopl:px-20">
+      <section className="pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
         <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
           <div className="home_heading ">GUIDES & RESOURCES</div>
           <div className=" laptop:flex home_subheading ">Learn about VPNs</div>

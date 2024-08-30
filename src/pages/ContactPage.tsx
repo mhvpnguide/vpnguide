@@ -7,7 +7,7 @@ import TopCard from "../components/TopCard";
 
 const ContactPage = () => {
   return (
-    <section className="about-main   laptop:px-5 px-3 laptop:w-full">
+    <section className="about-main laptop:w-full">
       <div className="w-full">
         <TopCard title="Contact Us" />
       </div>

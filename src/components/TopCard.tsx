@@ -6,7 +6,7 @@ import CustomBreadcrumb from "../components/Breadcrumb";
 const TopCard = ({ title }: { title: string }) => {
   return (
     <>
-      <div className="bg-blue-100">
+      <div className="bg-gradient-to-b from-sky-200 to-white">
         <div className="mb-2 tablet:pt-[40px] laptop:pl-[50px] px-3">
           <CustomBreadcrumb />
         </div>

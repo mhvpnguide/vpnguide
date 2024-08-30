@@ -146,7 +146,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                 </DropdownTrigger>
               </NavbarItem>
               <DropdownMenu
-                aria-label="ACME features"
+                aria-label="VPN guide"
                 className="w-[340px]"
                 itemClasses={{
                   base: "gap-5",
@@ -155,11 +155,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                 {item.subnav.map((subitem: SubnavItem, subidx: number) => (
                   <DropdownItem
                     key={idx}
-                    // key="autoscaling"
-                    // description="ACME scales apps to meet user demand, automagically, based on load."
-                    // className={`${subidx == 4 ? "" : ""}`}
-                    className="px-4 mb-2"
-                    // startContent={subidx == 5 ? null : icons.flash}
+                    className={`px-4 mb-2 ${idx==0 && subidx==0 ? 'data-[hover=true]:bg-transparent':null}`}
                   >
                     {subidx == 5 ? (
                       <Link href={subitem.link} className="w-full">
@@ -169,7 +165,14 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                         </div>
                       </Link>
                     ) : (
-                      <Link href={subitem.link} className="text-inherit w-full">{subitem.name}</Link>
+                      <>
+                      {
+                        idx==0 && subidx==0 ?
+                        <p className="text-base w-full font-bold pb-1">Popular</p>
+                        :
+                        <Link href={subitem.link} className="text-inherit w-full">{subitem.name}</Link>
+                      }
+                      </>
                     )}
                   </DropdownItem>
                 ))}
