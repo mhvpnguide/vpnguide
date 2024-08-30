@@ -45,6 +45,7 @@ type Continent = {
   count: string;
 };
 interface DeviceOS {
+  Amazon_Fire_TV: any;
   heading: string;
   before_table_text: string;
   after_table_text: string;
@@ -83,7 +84,11 @@ const fetchBlog = async ({ slug }: { slug: string }) => {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
     },
-    cache: "no-store" as RequestCache,
+    next: {
+      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
+    },
+    cache: "force-cache" as RequestCache,
+    // cache: "no-store" as RequestCache,
   };
   const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews/${slug}`, reqOptions);
   const response = await request.json();
@@ -91,13 +96,18 @@ const fetchBlog = async ({ slug }: { slug: string }) => {
 };
 
 export const fetchvpn = async () => {
+
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
     },
-    cache: "no-store" as RequestCache,
+    next: {
+      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
+    },
+    cache: "force-cache" as RequestCache,
+    // cache: "no-store" as RequestCache,
   }
-  const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=offer&populate[logo]=*&fields[2]=slug`, reqOptions);
+  const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=offer&populate[logo]=*&fields[2]=slug&fields[3]=ratting`, reqOptions);
   const response = await request.json();
   return response.data;
 }
@@ -112,8 +122,6 @@ export default function CompanyPage({ slug }: { slug: string }) {
     const fetchAndSetBlog = async () => {
       try {
         const data = await fetchBlog({ slug });
-        console.log(data);
-
         setBlog(data);
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -126,7 +134,11 @@ export default function CompanyPage({ slug }: { slug: string }) {
       try {
         const data = await fetchvpn();
         const filteredData = data.filter((item: any) => item.attributes.slug !== slug);
-        setVpn(filteredData);
+        const sortedData = filteredData.sort(
+          (a: any, b: any) => b.attributes.ratting - a.attributes.ratting
+        );
+        
+        setVpn(sortedData);
       } catch (error) {
         console.error("Error fetching blog:", error);
       } finally {
@@ -599,7 +611,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                               itm.Roku && <div className="flex items-center w-1/3"><SiRoku className="text-2xl inline mr-3" /> Roku</div>
                             }
                             {
-                              itm.Amazon_Fire_Tv && <div className="flex items-center w-1/3"><SiAmazonfiretv className="text-2xl inline mr-3" /> Amazon Fire TV</div>
+                              itm.Amazon_Fire_TV && <div className="flex items-center w-1/3"><SiAmazonfiretv className="text-2xl inline mr-3" /> Amazon Fire TV</div>
                             }
                             {
                               itm.Nintendo && <div className="flex items-center w-1/3"><BsNintendoSwitch className="text-2xl inline mr-3" /> Nintendo</div>
@@ -626,9 +638,6 @@ export default function CompanyPage({ slug }: { slug: string }) {
                             {
                               itm.Firefox && <div className="flex items-center w-1/3"><FaFirefoxBrowser className="text-2xl inline mr-3" /> Firefox</div>
                             }
-                            {/* <SiMacos />
-                      <FaLinux />
-                      <MdRouter /> */}
                           </div>
                           <div className="company mx-3 mt-10" dangerouslySetInnerHTML={{ __html: itm.after_table_text }}></div>
                         </div>
@@ -706,11 +715,11 @@ export default function CompanyPage({ slug }: { slug: string }) {
                 <h1 className="text-center font-semibold text-lg">All VPN</h1>
                 {
                   vpn?.map((itm: any, idx: number) => (
-                    <Link href={itm.attributes.slug} key={idx} className="flex gap-3">
+                    <Link href={itm.attributes.slug} key={idx} className="flex gap-3 p-2 ">
                       <div className="w-[60%] aspect-square relative">
                         <Image src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`} alt={"vpn image"} fill />
                       </div>
-                      <div className="flex flex-col ">
+                      <div className="flex flex-col justify-between py-5">
                         <span className="text-sm font-bold">{itm.attributes.vpn_name}</span>
                         <span className="text-xs text-gray-400">{itm.attributes.offer}</span>
                       </div>
@@ -723,7 +732,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
               <h1 className="text-center font-bold">Other VPNs We&apos;ve Reviewed</h1>
               <div className="flex justify-around">
                 {
-                  vpn?.slice(0, 3).map((itm:any, idx:number) => (
+                  vpn?.slice(0, 3).map((itm: any, idx: number) => (
                     <div className="flex flex-col items-center " key={idx}>
                       <div className="relative aspect-square w-20">
                         <Image src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`} alt={"vpn logo"} fill />
