@@ -99,6 +99,10 @@ const NavbarComp = () => {
         },
         {
           name: "VPN Logging Policies",
+          link: "/vpn-explained/vpn-logging-policies",
+        },
+        {
+          name: "Click More",
           link: "/vpn-explained",
         },
       ],
@@ -112,7 +116,7 @@ const NavbarComp = () => {
         },
         {
           name: "How To Check Your IP Address",
-          link: "/guides/hide-your-ip-address",
+          link: "/guides/check-ip-address",
         },
         {
           name: "What can someone do with your ip address",

@@ -9,7 +9,7 @@ const Page = () => {
     return (
         <section >
             <TopCard title="VPN Unbiased Review and Testing Insights" />
-            <div className="guides px-3 mx-auto laptop:w-3/4">
+            <div className="company px-3 mx-auto laptop:w-3/4">
                 <h2>Introduction to VPNs and Their Significance</h2>
                 <p>In today&apos;s hyper-connected world, where privacy concerns are as prevalent as the devices we use, Virtual Private
                     Networks (VPNs) have emerged as essential tools. VPNs help prevent DNS leaks and IP address leaks, which are

@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section >
       <TopCard title="What Can a VPN IP Do: Protect Your IP Address?" />
-      <div className="guides px-3 mx-auto laptop:w-3/4">
+      <div className="company px-3 mx-auto laptop:w-3/4 mt-10">
         <h2>Protect Yourself Online by
           Knowing Your IP Address</h2>
         <p>Ever wondered what an IP address
@@ -36,7 +36,7 @@ const Page = () => {
         </ol>
         <ul>
           <li>
-            <p>Doesn’t change over
+            <p>Doesn&apos;t change over
               time.</p>
           </li>
           <li>
@@ -95,7 +95,7 @@ const Page = () => {
           profiles of your interests, preferences, and online activity. This is super valuable.</p>
         <h4>Personal Data Collection
         </h4>
-        <p>An IP address on its own doesn’t
+        <p>An IP address on its own doesn&apos;t
           reveal your identity but can be combined with other data to gather personal information. For example, if you
           visit certain websites or use certain services frequently, your actual IP address can be linked to other
           identifying information like email addresses or usernames.</p>
@@ -103,13 +103,13 @@ const Page = () => {
         <h4>Location Identification
         </h4>
         <p>Your public IP address can
-          reveal your general location. It won’t show your exact address but can show the city or region you’re in. This
+          reveal your general location. It won&apos;t show your exact address but can show the city or region you&apos;re in. This
           can be used for things like content tailored to your location or enforcing regional restrictions on certain
           services.</p>
         <h4>Targeted Advertising
         </h4>
         <p>Advertisers use geolocation data
-          from IP addresses to serve targeted ads. For example, if your IP address shows you’re in New York, you might see
+          from IP addresses to serve targeted ads. For example, if your IP address shows you&apos;re in New York, you might see
           ads for local businesses or events. This type of personalization aims to increase relevance and
           engagement.</p>
         <h3>Cyber Threats</h3>
@@ -127,7 +127,7 @@ const Page = () => {
         <h3>ISP Monitoring</h3>
         <h4>Data Logging</h4>
         <p>Internet Service Providers
-          (ISPs) can log your online activity using your IP address, but with a VPN, your ISP can’t see your browsing
+          (ISPs) can log your online activity using your IP address, but with a VPN, your ISP can&apos;t see your browsing
           history. They may track the websites you visit, the files you download, and the services you use. This data can
           be sold to third parties or used for targeted advertising.</p>
         <h4>Bandwidth Throttling
@@ -178,21 +178,21 @@ const Page = () => {
         </h3>
         <h4>Data Logging</h4>
         <p>VPNs prevent ISPs from
-          monitoring and logging your online activity. By encrypting your traffic, a VPN ensures your ISP can’t see the
+          monitoring and logging your online activity. By encrypting your traffic, a VPN ensures your ISP can&apos;t see the
           websites you visit or the files you download, so you have more privacy.</p>
         <h4>Throttling</h4>
         <p>By masking your usage patterns,
-          a VPN can help you avoid bandwidth throttling. ISPs won’t be able to monitor your activity, so you can have a
+          a VPN can help you avoid bandwidth throttling. ISPs won&apos;t be able to monitor your activity, so you can have a
           consistent internet speed without interruptions.</p>
         <h2>Which VPN to Choose</h2>
         <h3>Features</h3>
         <h4>Encryption</h4>
         <p>When choosing a VPN, look for
-          those with strong encryption protocols. Encryption means your data is secure and can’t be accessed by anyone
+          those with strong encryption protocols. Encryption means your data is secure and can&apos;t be accessed by anyone
           else, so you have more privacy.</p>
         <h4>No-Logs Policy</h4>
         <p>Choose a VPN provider with a
-          no-logs policy. This means they don’t log, store or share your online activity so your data is private.
+          no-logs policy. This means they don&apos;t log, store or share your online activity so your data is private.
         </p>
         <h4>Server Locations</h4>
         <p>Choose a VPN with multiple

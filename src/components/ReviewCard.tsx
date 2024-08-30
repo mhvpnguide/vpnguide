@@ -51,7 +51,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
   const lightBackgroundColors = ['bg-red-400', 'bg-blue-400', 'bg-green-400', 'bg-yellow-400', 'bg-pink-400'];
   const fontColors = ['text-white', 'text-black', 'text-gray-700', 'text-gray-900', 'text-yellow-100'];
   return (
-    <section className="px-3 tablet:px-5 flex flex-col gap-7 py-5">
+    <section className="px-3 tablet:px-5 flex flex-col gap-4 py-5">
 
       {/* review card */}
       {
