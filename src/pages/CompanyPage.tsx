@@ -178,52 +178,11 @@ export default function CompanyPage({ slug }: { slug: string }) {
         <>
           {/* Topcard */}
           <TopCard title={blog.attributes.vpn_name} />
-          {/* <div className="bg-gradient-to-b from-sky-100 to-slate-50">
-              <div className="mb-2 tablet:pt-[40px] laptop:pl-[50px] px-3">
-                <CustomBreadcrumb />
-              </div>
-
-              <div className=" flex justify-center items-center gap-14 pt-1  mb-2">
-                <p className="text-3xl tablet:text-4xl font-bold">{blog.attributes.vpn_name}</p>
-              </div>
-              <div className="pb-4 flex justify-end pr-10">
-                <Tooltip
-                  content={
-                    <p className="">
-                      It is important to us that you will find the perfect VPN service
-                      for your needs - that is the aim and purpose of this site. We
-                      aim to be 100% transparent about our reviewing process (more
-                      about that in the &apos;How we review&apos; section on this
-                      site). We earn money via commissions from the VPN companies
-                      featured on this site, which we receive when you click our links
-                      and make purchases. This impacts the ranking, score and order in
-                      which the services we work with (and their products) are
-                      presented. VPN listings on this page DO NOT imply endorsement.
-                      We do not feature all of the available VPN services, only those
-                      we have reviewed. We strive to keep this site constantly
-                      updated, but cannot guarantee the accuracy of the information at
-                      all times.
-                    </p>
-                  }
-                  placement="bottom"
-                  classNames={{
-                    base: ["text-right pr-5"],
-                    content: [
-                      "text-sm text-gray-600 w-1/2 text-justify bg-[#4B5563] text-white p-6",
-                    ],
-                  }}
-                >
-                  <span className="text-xs font-semibold text-gray-600 underline">
-                    ADEVRTISER DISCLOSURE
-                  </span>
-                </Tooltip>
-              </div>
-            </div> */}
-
+          
           <section className="flex gap-12 tablet:gap-5 tablet:px-5 max-w-screen laptop:justify-center">
             {/* navigation */}
             <div className="hidden laptop:flex w-fit  flex-col">
-              <nav className=" sticky top-20 flex flex-col w-60 mt-10">
+              <nav className=" sticky top-20 flex flex-col w-60 mt-[4.5rem]">
                 <div className="h-fit flex flex-col  border-1 border-gray-300">
                   <div className="relative aspect-video">
                     <Image
@@ -1114,7 +1073,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                       fill
                     />
                   </div>
-                  <div className="flex flex-col justify-between py-5">
+                  <div className="flex flex-col justify-between py-2">
                     <span className="text-sm font-bold">
                       {itm.attributes.vpn_name}
                     </span>
