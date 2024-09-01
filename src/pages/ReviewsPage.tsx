@@ -2,27 +2,20 @@
 import { SearchIcon } from "../components/SearchIcon";
 import { Input, Tooltip } from "@nextui-org/react";
 import Image from "next/image";
-import CustomCircularProgress from "@/components/CustomCircularRatting";
 import Link from "next/link";
-import { IoLogoAndroid } from "react-icons/io";
-import { FaLinux, FaWindows } from "react-icons/fa";
-import { MdRouter } from "react-icons/md";
-import { SiMacos } from "react-icons/si";
-import config from "../../config.js";
 import CustomBreadcrumb from "../components/Breadcrumb";
 import ReviewCard from "../components/ReviewCard";
 import { useEffect, useState } from "react";
+import { revalidatePath } from "next/cache";
+
 
 export const fetchBlogs = async () => {
+  
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
     },
-    next: {
-      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
-    },
-    cache: "force-cache" as RequestCache,
-    // cache: "no-store" as RequestCache,
+    cache: "no-store" as RequestCache,
   };
   const request = await fetch(
     `${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=ratting&fields[2]=slug&fields[3]=offer&fields[4]=details&populate[features]=*&populate[logo]=*&populate[company_link]=*&populate[top_banner]=*`,
@@ -35,6 +28,8 @@ export const fetchBlogs = async () => {
 
 const ReviewsPage = () => {
   const [blogs, setBlogs] = useState<any[]>([]);
+  const [initialBlogs, setInitialBlogs] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -47,6 +42,7 @@ const ReviewsPage = () => {
         );
 
         setBlogs(sortedBlogs);
+        setInitialBlogs(sortedBlogs);
       } catch (error) {
         console.error("Error fetching blogs:", error);
       } finally {
@@ -55,7 +51,18 @@ const ReviewsPage = () => {
     };
 
     fetchAndSetBlogs();
-  }, [blogs]);
+  }, []);
+
+  useEffect(() => {
+    if (searchQuery === "") {
+      setBlogs(initialBlogs); // Reset to initial blogs if search is empty
+    } else {
+      const filtered = initialBlogs.filter((blog:any) =>
+        blog.attributes.vpn_name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setBlogs(filtered);
+    }
+  }, [searchQuery, blogs]);
 
   return (
     <>
@@ -85,6 +92,8 @@ const ReviewsPage = () => {
                 size="sm"
                 startContent={<SearchIcon size={18} />}
                 type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
           </div>
@@ -123,7 +132,7 @@ const ReviewsPage = () => {
         </div>
 
         {/* review section */}
-        <div className="px-20">{loading ? "waiting" : <ReviewCard blogs={blogs} />}</div>
+        <div className="laptop:px-[10vw]">{loading ? "waiting" : <ReviewCard blogs={blogs} />}</div>
       </div>
       <section className="pt-12  flex flex-col laptop:flex-row justify-center items-center  laptopl:px-20">
         <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">

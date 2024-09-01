@@ -60,7 +60,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
 
             {/* top banner */}
             <div className="relative">
-              <div className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} absolute top-0 left-0 w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
+              <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} absolute top-0 left-0 w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
                 <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
                 {
                   blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
@@ -87,9 +87,8 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
               {/* vpn image */}
               <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 w-auto laptop:max-w-[30%]">
 
-                <div className="flex justify-center tablet:justify-center  mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
-                  <div className="relative aspect-square w-3/4 tablet:w-[35%]">
-                  {/* <div href={`/reviews/${blog.attributes.slug}`} className="relative aspect-square w-3/4 tablet:w-[35%]"> */}
+                <div className="flex justify-start pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
+                  <div className="relative aspect-[2/1] w-3/4 ">
                     <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
                   </div >
                 </div>
@@ -102,8 +101,8 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
               </div>
 
-              <div className="laptop:w-[40%]">
-              <h1 className=" laptop:hidden text-base font-bold text-center">{blog.attributes.vpn_name}</h1>
+              <div className="laptop:w-[40%] flex flex-col laptop:justify-between">
+                <h1 className=" laptop:hidden text-base font-bold text-center">{blog.attributes.vpn_name}</h1>
                 <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (
@@ -143,11 +142,11 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg">View Review</Link>
+                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg text-center">View Review</Link>
                   <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
-              
+
             </div>
 
           </Link>

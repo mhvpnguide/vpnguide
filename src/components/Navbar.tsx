@@ -1,45 +1,43 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import config from "../../config.js";
 import NextUiNavbar from "./NextUInav";
+
+
+interface SubnavItem {
+  // Define properties based on your actual structure
+  name: string;
+  link: string;
+}
+
+interface NavItem {
+  mainHeading: string;
+  subnav: SubnavItem[];
+}
+
+
 
 const fetchNames = async () => {
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
     },
-    next: {
-      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
-    },
-    cache: "force-cache" as RequestCache,
-    // cache: "no-store" as RequestCache,
+    cache: "no-store" as RequestCache,
   }
-
   const request = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=slug&fields[2]=ratting`, reqOptions);
   const response = await request.json();
-  
   const sortedBlogs = response.data.sort((a:any, b:any) => b.attributes.ratting - a.attributes.ratting);
-
-  // setBlogs(sortedBlogs);
-  // return response.data;
   return sortedBlogs;
 }
 
-
 // Build subnav from API data
 const buildSubnavFromApi = async () => {
-
   const apiData = await fetchNames();
-
-  
-
   // Convert API data into subnav items
   const subnavFromApi = apiData.map((item: { attributes: { vpn_name: string; slug: string } }) => ({
     name: item.attributes.vpn_name,
     link: `/reviews/${item.attributes.slug}`, // Customize the link format as needed
   }))
     .slice(0, 5);
-
   return subnavFromApi;
 };
 
@@ -58,18 +56,6 @@ const NavbarComp = () => {
   },[]);
 
 
-
-
-  interface SubnavItem {
-    // Define properties based on your actual structure
-    name: string;
-    link: string;
-  }
-
-  interface NavItem {
-    mainHeading: string;
-    subnav: SubnavItem[];
-  }
 
   const navdata: NavItem[] = [
     {
@@ -175,10 +161,6 @@ const NavbarComp = () => {
       ],
     },
   ];
-
-
-
-
 
   return (
     <NextUiNavbar navdata={navdata} />

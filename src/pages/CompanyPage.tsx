@@ -97,11 +97,7 @@ const fetchBlog = async ({ slug }: { slug: string }) => {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
     },
-    next: {
-      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
-    },
-    cache: "force-cache" as RequestCache,
-    // cache: "no-store" as RequestCache,
+    cache: "no-store" as RequestCache,
   };
   const request = await fetch(
     `${process.env.NEXT_PUBLIC_HOST}/api/reviews/${slug}`,
@@ -116,11 +112,7 @@ export const fetchvpn = async () => {
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
     },
-    next: {
-      revalidate: 180, // Revalidate after 3 minutes (180 seconds)
-    },
-    cache: "force-cache" as RequestCache,
-    // cache: "no-store" as RequestCache,
+    cache: "no-store" as RequestCache,
   };
   const request = await fetch(
     `${process.env.NEXT_PUBLIC_HOST}/api/reviews?fields[0]=vpn_name&fields[1]=offer&populate[logo]=*&fields[2]=slug&fields[3]=ratting`,
@@ -1066,7 +1058,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                   key={idx}
                   className="flex gap-3 border border-gray-400 p-2 rounded-lg"
                 >
-                  <div className="w-[60%] aspect-square relative">
+                  <div className="w-[60%] aspect-[2/1] relative">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`}
                       alt={"vpn image"}
@@ -1091,8 +1083,8 @@ export default function CompanyPage({ slug }: { slug: string }) {
             </h1>
             <div className="flex justify-around">
               {vpn?.slice(0, 3).map((itm: any, idx: number) => (
-                <div className="flex flex-col items-center " key={idx}>
-                  <div className="relative aspect-square w-20">
+                <div className="flex flex-col items-center bg-red-200" key={idx}>
+                  <div className="relative aspect-[2/1] w-24">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`}
                       alt={"vpn logo"}
