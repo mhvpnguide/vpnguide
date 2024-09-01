@@ -193,7 +193,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                 </DropdownMenu>
               </Dropdown>
             ) : (
-              <NavbarItem>
+              <NavbarItem key={idx}>
                 <Link href={item.link}>
                   <Button
                     disableRipple
@@ -214,7 +214,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
       <NavbarMenu>
         {navdata.map((itm: NavItem, idx: number) =>
           itm.subnav && itm.subnav.length > 0 ? (
-            <Accordion>
+            <Accordion key={idx}>
               <AccordionItem
                 key={idx}
                 aria-label={itm.mainHeading}
@@ -247,7 +247,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
               </AccordionItem>
             </Accordion>
           ) : (
-            <NavbarItem>
+            <NavbarItem key={idx}>
               <Link href={itm.link}>
                 <Button
                   disableRipple

@@ -215,7 +215,7 @@ const CookiesPolicy = () => {
                 heading1="Third Party"
                 heading2="Description"
                 heading3=""
-                cookies={cookiesDataTable3}
+                cookies={cookiesDataTable4}
               />
             </div>
           </div>
