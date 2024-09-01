@@ -15,7 +15,7 @@ const ContactPage = () => {
         <div className="laptop:w-1/2">
           <ContactForm />
         </div>
-        <div className="laptop:w-1/2">
+        <div className="laptop:w-1/2 px-4">
           <h3 className="font-bold text-xl mb-8">
             Don&apos;t like filling out forms?Here are other ways to connect with us:
           </h3>
@@ -29,7 +29,7 @@ const ContactPage = () => {
               <span>mhvpnguide@gmail.com</span>
             </li>
             <li className="flex text-lg mb-6 gap-3 justify-start items-center">
-              <MdOutlineLocationOn className="text-5xl laptop:text-2xl" />
+              <MdOutlineLocationOn className="text-2xl laptop:text-2xl" />
               <span>
                 Kolkata, West Bengal, India
               </span>

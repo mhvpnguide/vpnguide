@@ -68,7 +68,9 @@ const NavbarComp = () => {
 
   interface NavItem {
     mainHeading: string;
-    subnav: SubnavItem[];
+    subnav?: SubnavItem[];
+    link?: string;
+
   }
 
   const navdata: NavItem[] = [
@@ -76,7 +78,7 @@ const NavbarComp = () => {
       mainHeading: "BEST VPN",
       subnav: [
         {
-          name: "<b>Popular</b>",
+          name: "Popular",
           link: "",
         },
         {
@@ -173,6 +175,10 @@ const NavbarComp = () => {
           link: "/about/how-we-make-money",
         },
       ],
+    },
+    {
+      mainHeading: "CONTACT",
+      link:'/contact-us'
     },
   ];
 

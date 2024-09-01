@@ -123,7 +123,7 @@ const ReviewsPage = () => {
         </div>
 
         {/* review section */}
-        <div className="px-20">{loading ? "waiting" : <ReviewCard blogs={blogs} />}</div>
+        <div className="laptop:px-[10vw]">{loading ? "waiting" : <ReviewCard blogs={blogs} />}</div>
       </div>
       <section className="pt-12  flex flex-col laptop:flex-row justify-center items-center  laptopl:px-20">
         <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
