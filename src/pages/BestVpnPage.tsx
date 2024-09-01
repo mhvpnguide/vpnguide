@@ -173,7 +173,7 @@ const BestVpnPage = () => {
                                 <div className="flex flex-row justify-between tablet:flex-col w-full items-center">
                                     {/* image */}
                                     <div className="relative w-2/4 aspect-[2/1] laptop:w-3/4">
-                                        <Image src="https://mms.businesswire.com/media/20220621005546/en/1492193/23/ExpressVPN-logo.jpg" layout="fill" className="object-contain" alt="vpn image" />
+                                        <Image src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`}  layout="fill" className="object-contain" alt="vpn image" />
                                     </div>
                                     {/* ratting */}
                                     <div className="flex flex-col items-center ml-3 gap-2 w-1/4 tablet:w-full justify-center">
