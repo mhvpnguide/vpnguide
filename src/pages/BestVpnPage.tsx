@@ -129,7 +129,7 @@ const BestVpnPage = () => {
                     <ul className="mb-5 text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
-                                <li className="tick-list-item ml-3">{itm}</li>
+                                <li className="tick-list-item ml-3" key={idx}>{itm}</li>
                             ))
                         }
                     </ul>
@@ -169,7 +169,7 @@ const BestVpnPage = () => {
 
                     {
                         vpn?.map((itm: any, idx: number) => (
-                            <Link href={itm.attributes.company_link.value} className="group  tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 laptop:px-10 items-center flex-col flex gap-3 hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c]">
+                            <Link key={idx} href={itm.attributes.company_link.value} className="group  tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 laptop:px-10 items-center flex-col flex gap-3 hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c]">
                                 <div className="flex flex-row justify-between tablet:flex-col w-full items-center">
                                     {/* image */}
                                     <div className="relative w-2/4 aspect-[2/1] laptop:w-3/4">
