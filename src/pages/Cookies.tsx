@@ -46,6 +46,12 @@ const cookiesDataTable2 = [
     link: "https://tools.google.com/dlpage/gaoptout",
   },
   {
+    name: "Microsoft Clarity",
+    description:
+      "Collects statistical information about how you use our Website for the performance of our Website in web browsers.",
+    link: "https://support.google.com/accounts/answer/61416",
+  },
+  {
     name: "SpeedCurve",
     description:
       "Collects statistical information about the performance of our Website in web browsers.",
@@ -209,7 +215,7 @@ const CookiesPolicy = () => {
                 heading1="Third Party"
                 heading2="Description"
                 heading3=""
-                cookies={cookiesDataTable3}
+                cookies={cookiesDataTable4}
               />
             </div>
           </div>

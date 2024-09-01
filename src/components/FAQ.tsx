@@ -69,7 +69,7 @@ const content1: ContentArray = [
 
 const FAQ = () => {
   return (
-    <div className="flex-col laptopl:px-20">
+    <div className="flex-col laptopl:px-20 px-10">
       <div className="text-4xl font-semibold pb-10">Frequently Asked Question</div>
       <div className=" flex flex-col laptop:flex-row justify-center items-center">
         <Accordion>

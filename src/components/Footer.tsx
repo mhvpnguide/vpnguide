@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className=" flex flex-col pt-16 mt-10 pb-5 max-w-full border-t border-gray-300 ">
+      <footer className=" flex flex-col pt-16 mt-10 max-w-full border-t border-gray-300 ">
         {/* top part of footer */}
         <div className="flex px-3 tablet:px-10 4k:mx-[200px] flex-col tablet:flex-row">
           {/* left */}
@@ -30,7 +30,7 @@ const Footer = () => {
               <HiOutlineMail className="inline text-xl" />
               <span className="pl-1 ">mhvpnguide@gmail.com</span>
             </Link>
-            <div className="flex flex-row gap-2 tablet:gap-4 mt-4">
+            <div className="flex flex-row gap-3 tablet:gap-4 mt-5 mb-6 laptop:mb-0">
               <Link href="#" className="bg-black rounded-full p-2">
                 <FaXTwitter className="text-white" />
               </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
             vpnguide.in is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>
           </p>
         </div>
-        <h6 className="text-center ">
+        <h6 className="text-center">
           © 2016-2024. Vpn Guide. All rights reserved
         </h6>
       </footer>

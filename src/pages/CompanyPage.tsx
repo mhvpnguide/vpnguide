@@ -170,7 +170,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
         <>
           {/* Topcard */}
           <TopCard title={blog.attributes.vpn_name} />
-          
+
           <section className="flex gap-12 tablet:gap-5 tablet:px-5 max-w-screen laptop:justify-center">
             {/* navigation */}
             <div className="hidden laptop:flex w-fit  flex-col">
@@ -823,118 +823,118 @@ export default function CompanyPage({ slug }: { slug: string }) {
                             __html: itm.before_table_text,
                           }}
                         ></div>
-                        <div className="flex flex-wrap space-y-3 pl-4">
+                        <div className="grid grid-cols-2 gap-4 tablet:grid-cols-2 laptop:grid-cols-3 pl-4">
                           {itm.Windows && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaWindows className="text-2xl inline mr-3" />{" "}
                               Windows
                             </div>
                           )}
                           {itm.Android && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <IoLogoAndroid className="text-2xl inline mr-3" />{" "}
                               Android
                             </div>
                           )}
                           {itm.ChromeOS && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaChrome className="text-2xl inline mr-3" />{" "}
                               Chrome OS
                             </div>
                           )}
                           {itm.Mac && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <SiMacos className="text-3xl inline mr-3" /> Mac
                             </div>
                           )}
                           {itm.Linux && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FcLinux className="text-2xl inline mr-3" /> Linux
                             </div>
                           )}
                           {itm.iOS && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <SiIos className="text-2xl inline mr-3" /> iOS
                             </div>
                           )}
                           {itm.Router && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <MdOutlineRouter className="text-2xl inline mr-3" />{" "}
                               Router
                             </div>
                           )}
                           {itm.Apple_TV && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <SiAppletv className="text-3xl inline mr-3" />{" "}
                               Apple TV
                             </div>
                           )}
                           {itm.Chromecast && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaChromecast className="text-2xl inline mr-3" />{" "}
                               Chromecast
                             </div>
                           )}
                           {itm.Roku && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <SiRoku className="text-2xl inline mr-3" /> Roku
                             </div>
                           )}
                           {itm.Amazon_Fire_TV && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <SiAmazonfiretv className="text-2xl inline mr-3" />{" "}
                               Amazon Fire TV
                             </div>
                           )}
                           {itm.Nintendo && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <BsNintendoSwitch className="text-2xl inline mr-3" />{" "}
                               Nintendo
                             </div>
                           )}
                           {itm.Smart_TV && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <IoTvOutline className="text-2xl inline mr-3" />{" "}
-                              Smart Tv
+                              Smart TV
                             </div>
                           )}
-
                           {itm.Android_TV && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <BsAndroid className="text-2xl inline mr-3" />{" "}
                               Android TV
                             </div>
                           )}
                           {itm.PlayStation && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaPlaystation className="text-2xl inline mr-3" />{" "}
                               Playstation
                             </div>
                           )}
                           {itm.Xbox && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaXbox className="text-2xl inline mr-3" /> Xbox
                             </div>
                           )}
                           {itm.Chrome && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaChrome className="text-2xl inline mr-3" />{" "}
                               Chrome
                             </div>
                           )}
                           {itm.Microsoft_Edge && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <SiMicrosoftedge className="text-2xl inline mr-3" />{" "}
                               Microsoft Edge
                             </div>
                           )}
                           {itm.Firefox && (
-                            <div className="flex items-center w-1/3">
+                            <div className="flex items-center">
                               <FaFirefoxBrowser className="text-2xl inline mr-3" />{" "}
                               Firefox
                             </div>
                           )}
                         </div>
+
                         <div
                           className="company mx-3 mt-10"
                           dangerouslySetInnerHTML={{

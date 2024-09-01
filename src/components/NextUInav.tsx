@@ -36,7 +36,8 @@ interface SubnavItem {
 
 interface NavItem {
   mainHeading: string;
-  subnav: SubnavItem[];
+  subnav?: SubnavItem[];
+  link?: string;
 }
 
 interface NavbarProps {
@@ -111,7 +112,6 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
     ),
   };
 
-
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="W-full">
       <NavbarContent justify="center">
@@ -123,97 +123,147 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
         <Link href="/" className="text-inherit">
           <NavbarBrand className="max-w-fit">
             <div>
-              <Image src="/logo.png" alt="logo" height={30} width={30}/>
+              <Image src="/logo.png" alt="logo" height={30} width={30} />
             </div>
             <p className="font-bold text-inherit">VPNGUIDE</p>
           </NavbarBrand>
         </Link>
 
         <NavbarContent className="hidden laptop:flex gap-3 w-full">
-          {navdata.map((item:NavItem, idx:number) => (
-            <Dropdown key={idx}>
-              <NavbarItem>
-                <DropdownTrigger>
+          {navdata.map((item: NavItem, idx: number) =>
+            item.subnav && item.subnav.length > 0 ? (
+              <Dropdown key={idx}>
+                <NavbarItem>
+                  <DropdownTrigger>
+                    <Button
+                      disableRipple
+                      className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                      endContent={icons.chevron}
+                      radius="sm"
+                      variant="light"
+                    >
+                      {item.mainHeading}
+                    </Button>
+                  </DropdownTrigger>
+                </NavbarItem>
+                <DropdownMenu
+                  aria-label="VPN guide"
+                  className="w-[340px]"
+                  itemClasses={{
+                    base: "gap-5",
+                  }}
+                >
+                  {item.subnav?.map((subitem: SubnavItem, subidx: number) => (
+                    <DropdownItem
+                      key={idx}
+                      className={`px-4 mb-2 ${
+                        idx == 0 && subidx == 0
+                          ? "data-[hover=true]:bg-transparent"
+                          : null
+                      }`}
+                    >
+                      {subidx == 5 ? (
+                        <Link href={subitem.link} className="w-full">
+                          <div className="font-semibold flex justify-start text-[#197BEB]  items-center gap-3 w-full">
+                            click more
+                            <FaArrowRight className="" />
+                          </div>
+                        </Link>
+                      ) : (
+                        <>
+                          {idx == 0 && subidx == 0 ? (
+                            <p
+                              className="text-base w-full font-bold pb-1"
+                              dangerouslySetInnerHTML={{
+                                __html: subitem.name,
+                              }}
+                            ></p>
+                          ) : (
+                            <Link
+                              href={subitem.link}
+                              className="text-inherit w-full"
+                            >
+                              {subitem.name}
+                            </Link>
+                          )}
+                        </>
+                      )}
+                    </DropdownItem>
+                  ))}
+                </DropdownMenu>
+              </Dropdown>
+            ) : (
+              <NavbarItem key={idx}>
+                <Link href={item.link}>
                   <Button
                     disableRipple
                     className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                    endContent={icons.chevron}
                     radius="sm"
                     variant="light"
                   >
                     {item.mainHeading}
                   </Button>
-                </DropdownTrigger>
+                </Link>
               </NavbarItem>
-              <DropdownMenu
-                aria-label="VPN guide"
-                className="w-[340px]"
-                itemClasses={{
-                  base: "gap-5",
-                }}
-              >
-                {item.subnav.map((subitem: SubnavItem, subidx: number) => (
-                  <DropdownItem
-                    key={idx}
-                    className={`px-4 mb-2 ${idx==0 && subidx==0 ? 'data-[hover=true]:bg-transparent':null}`}
-                  >
-                    {subidx == 5 ? (
-                      <Link href={subitem.link} className="w-full">
-                        <div className="font-semibold flex justify-start text-[#197BEB]  items-center gap-3 w-full">
-                          click more
-                          <FaArrowRight className="" />
-                        </div>
-                      </Link>
-                    ) : (
-                      <>
-                      {
-                        idx==0 && subidx==0 ?
-                        <p className="text-base w-full font-bold pb-1">Popular</p>
-                        :
-                        <Link href={subitem.link} className="text-inherit w-full">{subitem.name}</Link>
-                      }
-                      </>
-                    )}
-                  </DropdownItem>
-                ))}
-              </DropdownMenu>
-            </Dropdown>
-          ))}
-          <NavbarItem>
-            <Link href="/contact-us">
-              <Button
-                disableRipple
-                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                radius="sm"
-                variant="light"
-              >
-                CONTACT
-              </Button>
-            </Link>
-          </NavbarItem>
+            )
+          )}
         </NavbarContent>
       </NavbarContent>
 
       {/* mobile view */}
       <NavbarMenu>
-        <Accordion>
-          {navdata.map((itm: NavItem, idx: number) => (
-            <AccordionItem
-              key={idx}
-              aria-label={itm.mainHeading}
-              title={itm.mainHeading}
-            >
-              {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
-                <div key={idx}>
-                  {subidx == 4 ?  <Link href={subitm.link} className="mb-4"><button>see more</button></Link> : <Link href={subitm.link} className="text-inherit mb-4  w-full p-2">{subitm.name}</Link>}
-                </div>
-              ))}
-            </AccordionItem>
-          ))}
-        </Accordion>
+        {navdata.map((itm: NavItem, idx: number) =>
+          itm.subnav && itm.subnav.length > 0 ? (
+            <Accordion key={idx}>
+              <AccordionItem
+                key={idx}
+                aria-label={itm.mainHeading}
+                title={itm.mainHeading}
+              >
+                {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
+                  <div key={subidx}>
+                    {subidx == 5 ? (
+                      <Link href={subitm.link} className="mb-4">
+                        <button>see more</button>
+                      </Link>
+                    ) : (
+                      <>
+                        {idx == 0 && subidx == 0 ? (
+                          <p className="text-base w-full font-bold pb-1">
+                            Popular
+                          </p>
+                        ) : (
+                          <Link
+                            href={subitm.link}
+                            className="text-inherit mb-4 w-full p-2"
+                          >
+                            {subitm.name}
+                          </Link>
+                        )}
+                      </>
+                    )}
+                  </div>
+                ))}
+              </AccordionItem>
+            </Accordion>
+          ) : (
+            <NavbarItem key={idx}>
+              <Link href={itm.link}>
+                <Button
+                  disableRipple
+                  className="p-0 px-2 bg-transparent data-[hover=true]:bg-transparent text-[16px]"
+                  radius="sm"
+                  variant="light"
+                >
+                  {itm.mainHeading}
+                </Button>
+              </Link>
+            </NavbarItem>
+          )
+        )}
       </NavbarMenu>
     </Navbar>
   );
-}
+};
 
 export default NextUiNavbar;
