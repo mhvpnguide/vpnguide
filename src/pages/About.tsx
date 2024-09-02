@@ -250,7 +250,7 @@ const AboutUS = () => {
           <div className="hidden tablet:flex tablet:justify-center tablet:items-center tablet:w-full">
             <div className="w-[280px] h-[280px] relative ">
               <Image
-                src="/Assests/About/About-us/aboutImage1.jpg"
+                src="/Assests/About/About-us/About_Us_How_We_Review.png"
                 alt="VPN Banner"
                 fill
                 className="mt-4 tablet:mt-6 laptop:mt-8"
