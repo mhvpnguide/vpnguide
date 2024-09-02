@@ -28,7 +28,7 @@ const AboutUS = () => {
           </p>
           <div className="w-[300px] h-[300px] relative">
             <Image
-              src="/Assests/About/About-us/aboutImage1.jpg"
+              src="/Assests/About/About-us/About_us.png"
               alt="VPN Banner"
               fill
               className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -45,7 +45,7 @@ const AboutUS = () => {
               </h1>
               <div className="w-[280px] h-[280px] relative laptop:hidden order-2">
                 <Image
-                  src="/Assests/About/About-us/aboutImage1.jpg"
+                  src="/Assests/About/How-we-make-money/cross_red.png"
                   alt="VPN Banner"
                   fill
                   className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -117,7 +117,7 @@ const AboutUS = () => {
           <div className="laptop:flex laptop:gap-10 laptop:justify-center laptop:items-center">
             <div className="hidden w-[280px] h-[280px] relative laptop:flex laptop:w-1/3 laptop:justify-center laptop:items-center">
               <Image
-                src="/Assests/About/About-us/aboutImage1.jpg"
+                src="/Assests/About/About-us/About_Us_Who_We_Are.png"
                 alt="VPN Banner"
                 fill
                 className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -130,7 +130,7 @@ const AboutUS = () => {
               </h1>
               <div className="w-[280px] h-[280px] relative laptop:hidden mb-6">
                 <Image
-                  src="/Assests/About/About-us/aboutImage1.jpg"
+                  src="/Assests/About/About-us/About_Us_Who_We_Are.png"
                   alt="VPN Banner"
                   fill
                   className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -183,7 +183,7 @@ const AboutUS = () => {
               </h1>
               <div className="w-[280px] h-[280px] relative tablet:hidden mb-6">
                 <Image
-                  src="/Assests/About/About-us/aboutImage1.jpg"
+                  src="/Assests/About/About-us/About_Us_How_We_Review.png"
                   alt="VPN Banner"
                   fill
                   className="mt-4 tablet:mt-6 laptop:mt-8"
@@ -239,7 +239,7 @@ const AboutUS = () => {
             </div>
             {/* <div className="w-[280px] h-[280px] relative laptop:flex tablet:hidden">
               <Image
-                src="/Assests/About/About-us/aboutImage1.jpg"
+                src="/Assests/About/About-us/About_Us_How_We_Review.png"
                 alt="VPN Banner"
                 fill
                 className="mt-4 tablet:mt-6 laptop:mt-8"
