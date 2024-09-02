@@ -81,15 +81,15 @@ const NavbarComp = () => {
         },
         {
           name: "Best VPN of 2024",
-          link: "",
+          link: "/best-vpn",
+        },
+        {
+          name: "Best VPN in India",
+          link: "/best-vpn-india",
         },
         {
           name: "Best free VPN",
-          link: "",
-        },
-        {
-          name: "Best Cheap VPN",
-          link: "",
+          link: "/best-free-vpn",
         },
       ],
     },
