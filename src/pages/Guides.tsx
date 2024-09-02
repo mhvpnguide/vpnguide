@@ -24,7 +24,7 @@ const guidesData: GuidesData[] = [
   {
     name: "what can someone do with your ip address",
     image:
-      "/Assests/Guides/Guides_4.pngp",
+      "/Assests/Guides/Guides_4.png",
     link: "what-can-people-do-with-your-ip-address",
   },
   {
