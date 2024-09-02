@@ -12,25 +12,25 @@ const guidesData: GuidesData[] = [
   {
     name: "How to hide your ip address",
     image:
-      "/Assests/Guides/Gimage1.webp",
+      "/Assests/Guides/Guides_2.png",
     link: "hide-your-ip-address",
   },
   {
     name: "How to check your ip address",
     image:
-      "/Assests/Guides/Gimage1.webp",
+      "/Assests/Guides/Guides_1.png",
     link: "check-ip-address",
   },
   {
     name: "what can someone do with your ip address",
     image:
-      "/Assests/Guides/Gimage1.webp",
+      "/Assests/Guides/Guides_4.pngp",
     link: "what-can-people-do-with-your-ip-address",
   },
   {
     name: "How to check if your vpn is working",
     image:
-      "/Assests/Guides/Gimage1.webp",
+      "/Assests/Guides/Guides_3.png",
     link: "is-my-vpn-working",
   },
 ];
