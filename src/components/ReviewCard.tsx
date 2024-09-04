@@ -139,6 +139,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <FaWindows />
                   <SiMacos />
                   <IoLogoAndroid />
+                  <AiOutlineApple />
                   <FaLinux />
                   <MdRouter />
                 </div>
