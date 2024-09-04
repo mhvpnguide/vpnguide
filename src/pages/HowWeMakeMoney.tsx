@@ -1,10 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Image1 from "next/image";
-import { RxCross1 } from "react-icons/rx";
 import TopCard from "../components/TopCard";
-
-import Breadcrumb from "../components/Breadcrumb";
 const HowWeMakeMoney = () => {
   return (
     <section className="laptop:flex flex-col laptop:justify-center laptop:items-center">
@@ -12,12 +9,8 @@ const HowWeMakeMoney = () => {
         <TopCard title="How we Make Money" />
       </div>
       <div className="px-3 laptop:w-3/4 ">
-        {/* <div className="pt-3 pb-7">
-          <Breadcrumb />
-        </div> */}
         <div className="flex flex-col justify-center items-center  laptop:flex tablet:flex ">
-          {/* <h1 className="text-4xl font-bold mb-10 w-full">How we Make Money</h1> */}
-          <div className="w-[300px] h-[300px] relative mt-5 mb-10">
+          <div className="h-[230px] tablet:h-[250px] laptop:h-[300px] aspect-video relative mt-5 mb-10">
             <Image
               src="/Assests/About/How-we-make-money/How_We_Make_Money.png"
               alt="VPN Banner"

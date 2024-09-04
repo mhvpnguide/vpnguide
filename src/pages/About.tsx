@@ -26,7 +26,7 @@ const AboutUS = () => {
             Since then, we&apos;ve conducted over 5,000 hours of in-depth VPN
             testing and shared our findings with our readers.
           </p>
-          <div className="w-[300px] h-[300px] relative">
+          <div className="h-[210px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
             <Image
               src="/Assests/About/About-us/About_us.png"
               alt="VPN Banner"
@@ -43,14 +43,6 @@ const AboutUS = () => {
               <h1 className="text-2xl order-1 font-bold text-start mb-10 tablet:mb-0 w-full">
                 What Do We Do?
               </h1>
-              <div className="w-[280px] h-[280px] relative laptop:hidden order-2">
-                <Image
-                  src="/Assests/About/How-we-make-money/cross_red.png"
-                  alt="VPN Banner"
-                  fill
-                  className="mt-4 tablet:mt-6 laptop:mt-8"
-                />
-              </div>
               <div className="order-3 mt-8">
                 <p className="text-left text-lg mb-4 text-grey font-medium">
                   vpnguide.in was established to fight for a{" "}
@@ -113,9 +105,9 @@ const AboutUS = () => {
         </div>
 
         {/* Third Part of About Section (Why VPN Services) */}
-        <div className="flex flex-col justify-center items-center laptop:px-20 pt-20 ">
+        <div className="flex flex-col justify-center items-center pt-20 ">
           <div className="laptop:flex laptop:gap-10 laptop:justify-center laptop:items-center">
-            <div className="hidden w-[280px] h-[280px] relative laptop:flex laptop:w-1/3 laptop:justify-center laptop:items-center">
+            <div className="hidden w-[280px] aspect-square relative laptop:flex laptop:w-1/3 laptop:justify-center laptop:items-center">
               <Image
                 src="/Assests/About/About-us/About_Us_Who_We_Are.png"
                 alt="VPN Banner"
@@ -175,9 +167,9 @@ const AboutUS = () => {
         </div>
 
         {/* Fourth Section of About Section (Our Review Process) */}
-        <div className="flex justify-start  pt-20 ">
-          <div className="laptop:flex laptop:gap-10 laptop:justify-center laptop:items-center">
-            <div className="flex flex-col laptop:flex laptop:flex-col laptop:w-2/3 justify-center items-center">
+        <div className="flex justify-start  pt-20 gap-5">
+          <div className="laptop:flex laptop:gap-10 laptop:items-center">
+            <div className="flex flex-col laptop:flex laptop:flex-col laptop:w-full justify-center items-center">
               <h1 className="text-2xl font-bold text-start mb-10 w-full">
                 Our Review Process
               </h1>
@@ -237,14 +229,6 @@ const AboutUS = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="w-[280px] h-[280px] relative laptop:flex tablet:hidden">
-              <Image
-                src="/Assests/About/About-us/About_Us_How_We_Review.png"
-                alt="VPN Banner"
-                fill
-                className="mt-4 tablet:mt-6 laptop:mt-8"
-              />
-            </div> */}
           </div>
 
           <div className="hidden tablet:flex tablet:justify-center tablet:items-center tablet:w-full">

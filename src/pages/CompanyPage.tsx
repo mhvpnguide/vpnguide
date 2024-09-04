@@ -1083,7 +1083,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
             </h1>
             <div className="flex justify-around">
               {vpn?.slice(0, 3).map((itm: any, idx: number) => (
-                <div className="flex flex-col items-center bg-red-200" key={idx}>
+                <div className="flex flex-col items-center" key={idx}>
                   <div className="relative aspect-[2/1] w-24">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_HOST}${itm.attributes.logo.data.attributes.url}`}

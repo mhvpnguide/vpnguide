@@ -156,18 +156,16 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                   {item.subnav?.map((subitem: SubnavItem, subidx: number) => (
                     <DropdownItem
                       key={idx}
-                      className={`px-4 mb-2 ${
+                      className={`px-4 mb-2 customNavDesign ${
                         idx == 0 && subidx == 0
                           ? "data-[hover=true]:bg-transparent"
                           : null
                       }`}
                     >
                       {subidx == 5 ? (
-                        <Link href={subitem.link} className="w-full">
-                          <div className="font-semibold flex justify-start text-[#197BEB]  items-center gap-3 w-full">
+                        <Link href={subitem.link} className="px-2 py-1 font-semibold flex justify-start text-[#197BEB]  items-center gap-3 ">
                             click more
                             <FaArrowRight className="" />
-                          </div>
                         </Link>
                       ) : (
                         <>
@@ -181,7 +179,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
                           ) : (
                             <Link
                               href={subitem.link}
-                              className="text-inherit w-full"
+                              className="px-2 py-1 text-inherit w-full"
                             >
                               {subitem.name}
                             </Link>

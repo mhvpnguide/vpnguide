@@ -69,7 +69,7 @@ const content1: ContentArray = [
 
 const FAQ = () => {
   return (
-    <div className="flex-col laptopl:px-20 px-10">
+    <div className="flex-col laptopl:px-48 px-10 my-5">
       <div className="text-4xl font-semibold pb-10">Frequently Asked Question</div>
       <div className=" flex flex-col laptop:flex-row justify-center items-center">
         <Accordion>
@@ -78,10 +78,11 @@ const FAQ = () => {
               key={idx}
               aria-label={itm.heading}
               title={itm.heading}
+              className="font-bold"
             >
               <div
                 dangerouslySetInnerHTML={{ __html: itm.content }}
-                className="customAccr bg-gray-100 p-3 rounded-lg"
+                className="customAccr bg-gray-100 p-3 rounded-lg font-normal"
               />
             </AccordionItem>
           ))}

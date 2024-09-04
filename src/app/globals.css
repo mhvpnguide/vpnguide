@@ -233,3 +233,6 @@ nav>header>ul>ul{
 .vpn-explained h4{
   @apply mt-10 mb-2 text-lg font-semibold;
 }
+.customNavDesign{
+  @apply p-0 ;
+}

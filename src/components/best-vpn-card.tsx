@@ -46,7 +46,7 @@ interface BlogsProps {
   blogs: Blog[]; // Define the type of the navdata prop
 }
 
-const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
+const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
   // this is for top banner
   const backgroundColors = ['bg-[#ef4444]', 'bg-[#3b82f6]', 'bg-[#22c55e]', 'bg-[#eab308]', 'bg-[#ec4899]'];
   const lightBackgroundColors = ['bg-[#f87171]', 'bg-[#60a5fa]', 'bg-[#4ade80]', 'bg-[#facc15]', 'bg-[#c084fc]'];
@@ -80,11 +80,10 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
       {/* review card */}
       {
         blogs.map((blog: Blog, idx: number) => (
-          <Link href={blog.attributes.company_link.value} className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024]" key={idx}>
+          <Link href={blog.attributes.company_link.value} className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx==0 ? 'border-2 border-yellow-500 rounded-[9px]':null}`} key={idx}>
 
             {/* top banner */}
-            <div className="relative">
-              <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} absolute top-0 left-0 w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
+              <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
                 <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
                 {
                   blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
@@ -101,17 +100,15 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 }
 
               </div>
-              <div className="min-h-6 ">
-                <h1 className="hidden laptop:block text-lg font-bold text-center">{blog.attributes.vpn_name}</h1>
-              </div>
-            </div>
+
+
 
             <div className="flex laptop:flex-row flex-col">
 
               {/* vpn image */}
               <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 w-auto laptop:max-w-[30%]">
 
-                <div className="flex justify-start pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
+                <div className="flex justify-center table:justify-start pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
                   <div className="relative aspect-[2/1] w-3/4 ">
                     <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
                   </div >
@@ -120,7 +117,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* vpn details */}
                 <div className="flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
                   {/* <p className="text-sm font-medium pb-1">{blog.attributes.vpn_name}</p> */}
-                  <p className="text-sm font-medium pb-1">{blog.attributes.details}</p>
+                  <p className="text-sm pb-1 font-bold">{blog.attributes.details}</p>
                   <p className="tablet:mt-2 text-sm font-semibold text-blue-600">{blog.attributes.offer}</p>
                 </div>
               </div>
@@ -130,12 +127,12 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (
-                      <li className="tick-list-item" key={subidx}>{subitm.value}</li>
+                      <li className="tick-list-item text-sm" key={subidx}>{subitm.value}</li>
                     ))
                   }
                 </ul>
 
-                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-2xl my-3">
+                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-lg my-3">
                   <FaWindows />
                   <SiMacos />
                   <IoLogoAndroid />
@@ -159,7 +156,6 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                       blog.attributes.ratting >= 6.0 ? "success" : 
                                                         "secondary"
                     }
-                    // color={`${blog.attributes.ratting >= 9.5 ? "warning" : "primary"}`}
                     showValueLabel={true}
                     valueLabel={`${blog.attributes.ratting}`} // Pass the value without the percentage sign
                     className="customRating"
@@ -177,7 +173,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 hover:bg-green-900 transition duration-500 text-white font-bold px-3 py-1 rounded-lg text-center">View Review</Link>
+                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
                   <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
@@ -192,4 +188,4 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
   )
 }
 
-export default ReviewCard;
+export default BestVpnCard;
