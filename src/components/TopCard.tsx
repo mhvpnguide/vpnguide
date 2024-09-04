@@ -2,8 +2,11 @@
 import { Accordion, AccordionItem, Avatar, Tooltip } from "@nextui-org/react";
 import Link from "next/link";
 import CustomBreadcrumb from "../components/Breadcrumb";
+import { useState } from "react";
 
 const TopCard = ({ title }: { title: string }) => {
+  const [ttOpen, setTTOpen] = useState(false);
+
   return (
     <>
       <div className="bg-gradient-to-b from-sky-200 to-white">
@@ -11,13 +14,13 @@ const TopCard = ({ title }: { title: string }) => {
           <CustomBreadcrumb />
         </div>
 
-        <div className=" flex justify-center pt-1  mb-2 px-3 laptop:px-0">
+        <div className="flex justify-center pt-1 mb-2 px-3 laptop:px-0">
           <p className="text-3xl tablet:text-4xl font-bold">{title}</p>
         </div>
         <div className="flex justify-end pb-4 pr-10">
           <Tooltip
             content={
-              <p className="">
+              <p>
                 It is important to us that you will find the perfect VPN service
                 for your needs - that is the aim and purpose of this site. We
                 aim to be 100% transparent about our reviewing process (more
@@ -33,16 +36,21 @@ const TopCard = ({ title }: { title: string }) => {
                 all times.
               </p>
             }
+            isOpen={ttOpen}
             placement="bottom"
             classNames={{
-              base: ["text-right pr-5"],
-              content: [
-                "text-sm text-gray-600 w-1/2 text-justify bg-[#4B5563] text-white p-6",
-              ],
+              base: "text-right pr-5",
+              content:
+                "text-sm text-gray-600 w-full tablet:w-1/2 text-justify bg-[#4B5563] text-white p-6",
             }}
           >
-            <span className="text-xs font-semibold text-gray-600 underline">
-              ADEVRTISER DISCLOSURE
+            <span
+              className="text-xs font-semibold text-gray-600 underline"
+              onMouseEnter={() => setTTOpen(true)}
+              onMouseLeave={() => setTTOpen(false)}
+              onClick={() => setTTOpen((prev) => !prev)}
+            >
+              ADVERTISER DISCLOSURE
             </span>
           </Tooltip>
         </div>
