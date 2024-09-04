@@ -41,6 +41,7 @@ const vpnData: VPNData =
     ]
 }
 
+
 export const fetchBlogs = async (vpnData: VPNData) => {
     // Construct filters from vpnData.bestPlan
     const filterParams = vpnData.slug?.map((plan, index) => `filters[slug][$in][${index}]=${plan}`).join('&');
@@ -89,6 +90,8 @@ const BestVpnPage = () => {
     const [blogs, setBlogs] = useState<any[]>([]);
     const [vpn, setVpn] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [ttOpen, setTTOpen] = useState(false);
+
 
     useEffect(() => {
         const fetchAndSetBlogs = async () => {
@@ -159,7 +162,7 @@ const BestVpnPage = () => {
                 <div className="flex justify-end pb-4">
                     <Tooltip
                         content={
-                            <p className="">
+                            <p>
                                 It is important to us that you will find the perfect VPN service
                                 for your needs - that is the aim and purpose of this site. We
                                 aim to be 100% transparent about our reviewing process (more
@@ -175,15 +178,20 @@ const BestVpnPage = () => {
                                 all times.
                             </p>
                         }
+                        isOpen={ttOpen}
                         placement="bottom"
                         classNames={{
-                            base: ["text-right"],
-                            content: [
-                                "text-sm text-gray-600 w-1/2 text-justify bg-[#4B5563] text-white p-6",
-                            ],
+                            base: "text-right",
+                            content: 
+                                "text-sm text-gray-600 w-full tablet:w-1/2 text-justify bg-[#4B5563] text-white p-6",
                         }}
                     >
-                        <span className="text-xs font-semibold text-gray-600 underline">
+                        <span
+                            className="text-xs font-semibold text-gray-600 underline"
+                            onMouseEnter={() => setTTOpen(true)}
+                            onMouseLeave={() => setTTOpen(false)}
+                            onClick={() => setTTOpen((prev) => !prev)}
+                        >
                             ADEVRTISER DISCLOSURE
                         </span>
                     </Tooltip>
@@ -291,9 +299,9 @@ const BestVpnPage = () => {
 
                     {
                         vpn?.map((itm: any, idx: number) => (
-                            <Link key={idx} href={itm.attributes.company_link.value} className={`group relative tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5  items-center flex-col flex gap-10 hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx==1 ? "border-yellow-600":"laptop:scale-90 scale-95"}`}>
+                            <Link key={idx} href={itm.attributes.company_link.value} className={`group relative tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5  items-center flex-col flex gap-10 hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"}`}>
 
-                                { idx==1 &&  <div className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
+                                {idx == 1 && <div className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
                                     <FaCrown className="text-xl" />
                                     <span className="font-semibold text-xs">BEST</span>
                                 </div>}
