@@ -1,11 +1,8 @@
 "use client";
-import { Accordion, AccordionItem, Avatar, Tooltip } from "@nextui-org/react";
-import Link from "next/link";
 import CustomBreadcrumb from "../components/Breadcrumb";
-import { useState } from "react";
+import TooltipComp from "./TooltipComp";
 
 const TopCard = ({ title }: { title: string }) => {
-  const [ttOpen, setTTOpen] = useState(false);
 
   return (
     <>
@@ -17,42 +14,8 @@ const TopCard = ({ title }: { title: string }) => {
         <div className="flex justify-center pt-1 mb-2 px-3 laptop:px-0">
           <p className="text-3xl tablet:text-4xl font-bold">{title}</p>
         </div>
-        <div className="flex justify-end pb-4 pr-10">
-          <Tooltip
-            content={
-              <p>
-                It is important to us that you will find the perfect VPN service
-                for your needs - that is the aim and purpose of this site. We
-                aim to be 100% transparent about our reviewing process (more
-                about that in the &apos;How we review&apos; section on this
-                site). We earn money via commissions from the VPN companies
-                featured on this site, which we receive when you click our links
-                and make purchases. This impacts the ranking, score and order in
-                which the services we work with (and their products) are
-                presented. VPN listings on this page DO NOT imply endorsement.
-                We do not feature all of the available VPN services, only those
-                we have reviewed. We strive to keep this site constantly
-                updated, but cannot guarantee the accuracy of the information at
-                all times.
-              </p>
-            }
-            isOpen={ttOpen}
-            placement="bottom"
-            classNames={{
-              base: "text-right pr-5",
-              content:
-                "text-sm text-gray-600 w-full tablet:w-1/2 text-justify bg-[#4B5563] text-white p-6",
-            }}
-          >
-            <span
-              className="text-xs font-semibold text-gray-600 underline"
-              onMouseEnter={() => setTTOpen(true)}
-              onMouseLeave={() => setTTOpen(false)}
-              onClick={() => setTTOpen((prev) => !prev)}
-            >
-              ADVERTISER DISCLOSURE
-            </span>
-          </Tooltip>
+        <div className="flex justify-end pb-4 pr-4 tablet:pr-10">
+          <TooltipComp/>
         </div>
       </div>
     </>

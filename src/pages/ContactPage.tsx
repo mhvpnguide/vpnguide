@@ -12,7 +12,7 @@ const ContactPage = () => {
         <TopCard title="Contact Us" />
       </div>
       <div className="mt-24 flex flex-col gap-8 laptop:flex laptop:flex-row laptop:justify-center laptop:items-center tablet:px-0 laptop:px-20">
-        <div className="laptop:w-1/2">
+        <div className="laptop:w-1/2 px-2">
           <ContactForm />
         </div>
         <div className="laptop:w-1/2 px-4">

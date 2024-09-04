@@ -26,7 +26,7 @@ const AboutUS = () => {
             Since then, we&apos;ve conducted over 5,000 hours of in-depth VPN
             testing and shared our findings with our readers.
           </p>
-          <div className="h-[210px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
+          <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
             <Image
               src="/Assests/About/About-us/About_us.png"
               alt="VPN Banner"

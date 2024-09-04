@@ -7,6 +7,7 @@ import CustomCircularProgress from "@/components/CustomCircularRatting";
 import BestVpnCard from "@/components/best-vpn-card";
 import { Tooltip } from "@nextui-org/react";
 import { FaCrown } from "react-icons/fa6";
+import TooltipComp from "@/components/TooltipComp";
 
 interface VPNData {
     title?: string;
@@ -160,41 +161,7 @@ const BestVpnPage = () => {
             <div className="flex justify-between w-full px-3 tablet:px-9 laptop:px-48">
                 <span className="font-semibold">Updated on: {vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
-                    <Tooltip
-                        content={
-                            <p>
-                                It is important to us that you will find the perfect VPN service
-                                for your needs - that is the aim and purpose of this site. We
-                                aim to be 100% transparent about our reviewing process (more
-                                about that in the &apos;How we review&apos; section on this
-                                site). We earn money via commissions from the VPN companies
-                                featured on this site, which we receive when you click our links
-                                and make purchases. This impacts the ranking, score and order in
-                                which the services we work with (and their products) are
-                                presented. VPN listings on this page DO NOT imply endorsement.
-                                We do not feature all of the available VPN services, only those
-                                we have reviewed. We strive to keep this site constantly
-                                updated, but cannot guarantee the accuracy of the information at
-                                all times.
-                            </p>
-                        }
-                        isOpen={ttOpen}
-                        placement="bottom"
-                        classNames={{
-                            base: "text-right",
-                            content: 
-                                "text-sm text-gray-600 w-full tablet:w-1/2 text-justify bg-[#4B5563] text-white p-6",
-                        }}
-                    >
-                        <span
-                            className="text-xs font-semibold text-gray-600 underline"
-                            onMouseEnter={() => setTTOpen(true)}
-                            onMouseLeave={() => setTTOpen(false)}
-                            onClick={() => setTTOpen((prev) => !prev)}
-                        >
-                            ADEVRTISER DISCLOSURE
-                        </span>
-                    </Tooltip>
+                    <TooltipComp/>
                 </div>
             </div>
 
