@@ -125,7 +125,7 @@ const BestVpnPage = () => {
     return (
         <section>
             {/* top section */}
-            <div className="flex tablet:px-10 laptop:px-32 py-5">
+            <div className="flex tablet:px-10 laptop:px-32 py-5 bg-[#FF0000]">
                 {/* left */}
                 <div className="content w-full tablet:w-1/2 max-h-fit ">
                     <h1 className="text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
