@@ -166,7 +166,7 @@ const BestVpnPage = () => {
             </div>
 
             {/* reviews section */}
-            <div className="laptop:px-[11vw] pt-10">{loading ? "waiting" : <BestVpnCard blogs={blogs} />}</div>
+            <div className="laptop:px-[11vw] pt-10 bg-[#0000FF]">{loading ? "waiting" : <BestVpnCard blogs={blogs} />}</div>
 
             <section className="laptop:mx-20 pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
                 <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
