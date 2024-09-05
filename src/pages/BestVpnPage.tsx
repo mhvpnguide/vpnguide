@@ -125,7 +125,7 @@ const BestVpnPage = () => {
     return (
         <section>
             {/* top section */}
-            <div className="flex tablet:px-10 laptop:px-32 py-5 bg-[#FF0000]">
+            <div className="flex tablet:px-10 laptop:px-32 py-5 bg-[#f5f5f5]">
                 {/* left */}
                 <div className="content w-full tablet:w-1/2 max-h-fit ">
                     <h1 className="text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
@@ -158,7 +158,7 @@ const BestVpnPage = () => {
             </div>
 
 
-            <div className="flex justify-between w-full px-3 tablet:px-9 laptop:px-48 bg-[#FFFF00]">
+            <div className="flex justify-between w-full px-3 tablet:px-9 laptop:px-48 bg-[#FFFFFF]">
                 <span className="font-semibold">Updated on: {vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
                     <TooltipComp/>
@@ -166,7 +166,7 @@ const BestVpnPage = () => {
             </div>
 
             {/* reviews section */}
-            <div className="laptop:px-[11vw] pt-10 bg-[#0000FF]">{loading ? "waiting" : <BestVpnCard blogs={blogs} />}</div>
+            <div className="laptop:px-[11vw] pt-10 bg-[#f5f5f5]">{loading ? "waiting" : <BestVpnCard blogs={blogs} />}</div>
 
             <section className="laptop:mx-20 pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
                 <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
