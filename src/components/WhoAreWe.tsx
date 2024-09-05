@@ -122,7 +122,7 @@ const WhoAreWe = () => {
             </div>
             <Link href="/how-we-review-vpn">
               <button className="home_button hoverBtn">
-                See All VPN Reviews
+                VPN Review Process
               </button>
             </Link>
           </div>
