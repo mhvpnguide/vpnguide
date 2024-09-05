@@ -28,7 +28,7 @@ const vpnData: VPNData =
         "Lorem ipsum dolor sit amet, consectetur",
         "Lorem ipsum dolor <b>sit amet,</b> consectetur"
     ],
-    updatedOn: '01-01-24',
+    updatedOn: '01-September-2024',
     slug: [
         "cyberghost",
         "dndlt",
@@ -158,7 +158,7 @@ const BestVpnPage = () => {
             </div>
 
 
-            <div className="flex justify-between w-full px-3 tablet:px-9 laptop:px-48">
+            <div className="flex justify-between w-full px-3 tablet:px-9 laptop:px-48 bg-[#FFFF00]">
                 <span className="font-semibold">Updated on: {vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
                     <TooltipComp/>
