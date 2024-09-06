@@ -25,7 +25,7 @@ const vpnData: VPNData =
         "Fast servers to browse <b>without,</b> interruptions",
         "Strict no-logs policies keep your data private online",
         "Connect all of your mobile devices to one account simultaneously",
-        "Lorem ipsum dolor sit amet, consectetur",
+        "Verified to work with popular platforms, apps & services",
         "<b>Free trails,</b> discount, refund policies to test them out risk free"
     ],
     updatedOn: '01-September-2024',
@@ -147,8 +147,8 @@ const BestVpnPage = () => {
                         <span className="text-black text-sm">Available on:</span>
                         <FaWindows />
                         <SiMacos />
-                        <SiIos />
                         <IoLogoAndroid />
+                        <AiOutlineApple />
                         <FaLinux />
                         <SiAmazonfiretv />
                         <MdRouter />
