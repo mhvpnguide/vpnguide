@@ -31,18 +31,25 @@ const content1: ContentArray = [
     heading: "Which device can you use VPN on",
     content: `
             <p>You can use a VPN on a wide range of devices. Most personal VPNs offer native applications and client software for: </p>
-            <p>iPhone and Android phones</p>
-            <p>Windows, macOS, and Linux computers</p>
-            <p>Chrome and Firefox web browsers</p>
-            <p>Apple TV, Google Chromecast, and Amazon Fire TV Stick</p>
-            <p>Additionally, VPNs can be installed on WiFi routers, which extends protection to all connected devices, including Roku, Smart TVs, Xbox, and PlayStation.</p>
-            <p>It is also possible to set up your own VPN server at home using a router, personal computer or Cloud Computing Service.</p>
+            <ul>
+            <li>iPhone and Android phones</li>
+            <li>Windows, macOS, and Linux computers</li>
+            <li>Chrome and Firefox web browsers</li>
+            <li>Apple TV, Google Chromecast, and Amazon Fire TV Stick</li>
+            <li>Additionally, VPNs can be installed on WiFi routers, which extends protection to all connected devices, including Roku, Smart TVs, Xbox, and PlayStation.</li>
+            <li>It is also possible to set up your own VPN server at home using a router, personal computer or Cloud Computing Service.</li>
+            </ul>
           `,
   },
   {
     heading: "Will using a VPN affect my internet speed?",
     content: `
-            <p>Using a VPN may impact your internet speed, but some services, such as CyberGhost, ExpressVPN, NordVPN, and PIA, are designed to minimize this effect and provide optimal performance.</p>
+            <p>Using a VPN may impact your internet speed, but some services, such as 
+            <a href="https://vpnguide.in/reviews/cyberghost">Cyber Ghost,</a> 
+            <a href="https://vpnguide.in/reviews/expressvpn">Express Vpn</a>
+            <a href="https://vpnguide.in/reviews/nordvpn">Nord Vpn,</a>
+            <a href="https://vpnguide.in/reviews/privateinternetaccess">PIA,</a>
+            are designed to minimize this effect and provide optimal performance.</p>
             `,
   },
   {
