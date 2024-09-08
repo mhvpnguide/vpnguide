@@ -22,7 +22,7 @@ const HowWeMakeMoney = () => {
           <div className="tablet:flex tablet:justify-center tablet:items-center">
             <div className="tablet:w-2/3">
               <p className="text-left text-lg mb-4  font-medium">
-                We built vpnguide around our core principles of impartiality,
+                We built VPNs Guide around our core principles of impartiality,
                 honesty and transparency. Your trust is of the utmost importance
                 to us, which is why we&apos;ll always be straight-up about how we
                 test and review VPNs. We launched it to improve the VPN
