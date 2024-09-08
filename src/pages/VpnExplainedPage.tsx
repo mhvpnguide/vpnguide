@@ -75,9 +75,10 @@ const content1: ContentArray = [
 
 const VpnExplainedPage = () => {
   return (
-<section className="w-full flex justify-center flex-col items-center">
+<main className="about-main laptop:px-0 laptop:w-full flex flex-col justify-center items-center ">
       <div className="w-full">
-        <TopCard title="What Is a VPN (Virtual Private Network)?" />
+        <TopCard title="What Is a VPN <br></TopCard>(Virtual Private Network)</br>
+          </TopCard>" />
       </div>
       <section className="px-3 laptop:w-3/4 flex-col justify-center">
         <p className="text-xl font-semibold pb-2">Our Verdict</p>
