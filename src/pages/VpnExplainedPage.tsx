@@ -89,7 +89,6 @@ const VpnExplainedPage = () => {
           browsing activity or intercepting your data on hostile networks.
         </p>
 
-        {/* iframe */}
         <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
             <Image
               src="public/Assests/VPN-explained/Vpn Explained.png"
@@ -145,22 +144,22 @@ const VpnExplainedPage = () => {
                         What is a VPN Service? 
                   </Link> 
           </li>
-          <li className="w-1/2 md:w-full p-2">1 {" "}
+          <li className="w-1/2 md:w-full p-2">2 {" "}
                   <Link href="/vpn-explained/how-does-a-vpn-work" className="text-bluelink hover:underline">
                         How Do VPNs Work? 
                   </Link> 
           </li>
-          <li className="w-1/2 md:w-full p-2">1 {" "}
+          <li className="w-1/2 md:w-full p-2">3 {" "}
                   <Link href="https://vpnguide.in/vpn-explained/what-is-vpn-used-for" className="text-bluelink hover:underline">
                         What Are VPNs Used For? 
                   </Link> 
           </li>
-          <li className="w-1/2 md:w-full p-2">1 {" "}
+          <li className="w-1/2 md:w-full p-2">4 {" "}
                   <Link href="https://vpnguide.in/vpn-explained/are-vpn-really-worth-it" className="text-bluelink hover:underline">
                         Are VPNs Really Worth It? 
                   </Link> 
           </li>
-          <li className="w-1/2 md:w-full p-2">1 {" "}
+          <li className="w-1/2 md:w-full p-2">5 {" "}
                   <Link href="/vpn-explained/vpn-logging-policies" className="text-bluelink hover:underline">
                         What Are VPN Logging Policies? 
                   </Link> 
