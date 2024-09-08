@@ -75,10 +75,9 @@ const content1: ContentArray = [
 
 const VpnExplainedPage = () => {
   return (
-<main className="about-main laptop:px-0 laptop:w-full flex flex-col justify-center items-center ">
+<section className="w-full flex justify-center flex-col items-center">
       <div className="w-full">
-        <TopCard title="What Is a VPN <br></TopCard>(Virtual Private Network)</br>
-          </TopCard>" />
+        <TopCard title="What Is a VPN (Virtual Private Network)" />
       </div>
       <section className="px-3 laptop:w-3/4 flex-col justify-center">
         <p className="text-xl font-semibold pb-2">Our Verdict</p>
@@ -92,7 +91,7 @@ const VpnExplainedPage = () => {
           browsing activity or intercepting your data on hostile networks.
         </p>
 
-        <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
+        <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative mx-auto">
             <Image
               src="/Assests/VPN-explained/VpnExplained.png"
               alt="VPN Banner"
