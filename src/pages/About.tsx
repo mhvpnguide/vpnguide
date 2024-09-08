@@ -190,9 +190,9 @@ const AboutUS = () => {
                     href="/about/how-we-review-vpn"
                     className="text-bluelink hover:underline"
                   >
-                    rigorous testing process
+                    rigorous testing process 
                   </Link>
-                  consisting of <b>hours of use at the hands of our experts.</b>
+                   consisting of <b>hours of use at the hands of our experts.</b>
                 </p>
                 <p className="text-left text-lg mb-4 text-grey font-medium">
                   We are independently-owned and entirely separate from any VPN
