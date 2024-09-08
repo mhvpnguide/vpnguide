@@ -96,7 +96,7 @@ const VpnExplainedPage = () => {
               src="/Assests/VPN-explained/VpnExplained.png"
               alt="VPN Banner"
               fill
-              className="mt-4 tablet:mt-6 laptop:mt-8"
+              className="mt-4 tablet:mt-6 laptop:mt-8 object-contain"
             />
           </div>
 
