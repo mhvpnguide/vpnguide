@@ -2,6 +2,8 @@
 import TopCard from "@/components/TopCard";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Image from "next/image";
+import Link from "next/link";
+
 
 type ContentItem = {
   heading: string;
@@ -91,7 +93,7 @@ const VpnExplainedPage = () => {
 
         <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
             <Image
-              src="public/Assests/VPN-explained/Vpn Explained.png"
+              src="/Assests/VPN-explained/VpnExplained.png"
               alt="VPN Banner"
               fill
               className="mt-4 tablet:mt-6 laptop:mt-8"
