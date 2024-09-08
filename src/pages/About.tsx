@@ -17,7 +17,7 @@ const AboutUS = () => {
       <div className="laptop:w-3/4 mt-10 px-4 laptop:px-0 tablet:px-5">
         <div className="flex flex-col justify-center items-center">
           <p className="text-left text-lg mb-4 text-grey font-medium">
-            vpnguide is an independent VPN review website founded in in 2016. He
+            VPNs Guide is an independent VPN review website. We
             launched it to improve the VPN industry, after realizing the market
             was flooded with hundreds of unsafe applications and review websites
             that weren&apos;t adequately testing them.
@@ -45,7 +45,7 @@ const AboutUS = () => {
               </h1>
               <div className="order-3 mt-8">
                 <p className="text-left text-lg mb-4 text-grey font-medium">
-                  vpnguide.in was established to fight for a{" "}
+                  vpns.guide was established to fight for a{" "}
                   <b className="className=" ml-2>
                     better VPN industry and a freer internet.
                   </b>
@@ -63,13 +63,13 @@ const AboutUS = () => {
                   interest.
                 </p>
                 <p className="text-left text-lg mb-4 text-grey font-medium">
-                  ecommendations and advice available in multiple languages,
+                  Rcommendations and advice available in multiple languages,
                   ensuring they are as useful as possible for readers around the
                   world.
                 </p>
                 <p className="text-left text-lg mb-4 text-grey font-medium">
-                  We also publish informational resources, investigations, and
-                  research to draw attention to internet censorship, privacy,
+                  We also publish informational resources, and Guides
+                  to draw attention to internet censorship, privacy,
                   and security issues that impact consumers today.
                 </p>
               </div>
@@ -78,7 +78,7 @@ const AboutUS = () => {
             <ul className="mt-14 laptop:justify-center laptop:items-center  laptop:w-1/3 ">
               <li className="flex justify-center items-center mb-5">
                 <b className="flex flex-col justify-center items-center gap-2 text-4xl text-[#eb603d]">
-                  62
+                  30+
                   <span className="text-lg text-[#474852] font-medium">
                     VPNs Tested
                   </span>
@@ -151,12 +151,12 @@ const AboutUS = () => {
                 recommendations they can trust.
               </p>
               <p className="text-left text-lg mb-4 text-grey font-medium">
-                vpnguide was created to provide transparent, expert, and
+                VPNs Guide was created to provide transparent, expert, and
                 data-driven VPN recommendations that are unaffected by financial
                 incentives.
               </p>
               <p className="text-left text-lg mb-4 text-grey font-medium">
-                By sharing our advice, research, and recommendations, our goal
+                By sharing our advice, and recommendations, our goal
                 is to
                 <b className="ml-2">make the VPN industry better</b>, so
                 consumers worldwide can be in more control of their lives
