@@ -77,7 +77,7 @@ const VpnExplainedPage = () => {
   return (
 <section className="w-full flex justify-center flex-col items-center">
       <div className="w-full">
-        <TopCard title="What Is a VPN (Virtual Private Network)" />
+        <TopCard title="What Is a VPN" />
       </div>
       <section className="px-3 laptop:w-3/4 flex-col justify-center">
         <p className="text-xl font-semibold pb-2">Our Verdict</p>
@@ -91,14 +91,14 @@ const VpnExplainedPage = () => {
           browsing activity or intercepting your data on hostile networks.
         </p>
 
-        <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative mx-auto">
+        <div className="h-[300px] tablet:h-[400px] laptop:h-[500px] w-full tablet:w-3/4 laptop:w-3/4 mx-auto relative">
             <Image
               src="/Assests/VPN-explained/VpnExplained.png"
-              alt="VPN Banner"
+              alt="VPN Explained"
+              className="object-contain mt-4 tablet:mt-6 laptop:mt-8"
               fill
-              className="mt-4 tablet:mt-6 laptop:mt-8 object-contain"
             />
-          </div>
+       </div>
 
         <div className="my-5 bg-blue-100 p-2">
           <p className="laptop:text-xl font-semibold pb-2 text-[19px]">
@@ -135,38 +135,39 @@ const VpnExplainedPage = () => {
           If you have a specific question about VPNs, feel free to email us or
           visit one of the following articles for a detailed answer:
         </p>
-        <p className="font-semibold my-3">
-          Have a specific question about VPNs? You can find detailed answers in
-          the articles below:
-        </p>
 
-        <ul className="flex flex-wrap pl-5 list-disc list-inside">
-          <li className="w-1/2 md:w-full p-2">1 {" "}
-                  <Link href="/vpn-explained/what-is-a-vpn-service" className="text-bluelink hover:underline">
-                        What is a VPN Service? 
-                  </Link> 
-          </li>
-          <li className="w-1/2 md:w-full p-2">2 {" "}
-                  <Link href="/vpn-explained/how-does-a-vpn-work" className="text-bluelink hover:underline">
-                        How Do VPNs Work? 
-                  </Link> 
-          </li>
-          <li className="w-1/2 md:w-full p-2">3 {" "}
-                  <Link href="https://vpnguide.in/vpn-explained/what-is-vpn-used-for" className="text-bluelink hover:underline">
-                        What Are VPNs Used For? 
-                  </Link> 
-          </li>
-          <li className="w-1/2 md:w-full p-2">4 {" "}
-                  <Link href="https://vpnguide.in/vpn-explained/are-vpn-really-worth-it" className="text-bluelink hover:underline">
-                        Are VPNs Really Worth It? 
-                  </Link> 
-          </li>
-          <li className="w-1/2 md:w-full p-2">5 {" "}
-                  <Link href="/vpn-explained/vpn-logging-policies" className="text-bluelink hover:underline">
-                        What Are VPN Logging Policies? 
-                  </Link> 
-          </li>
-        </ul>
+        <p className="font-semibold my-3">
+  Have a specific question about VPNs? You can find detailed answers in the articles below:
+</p>
+
+<ul className="flex flex-wrap gap-4 list-none p-0">
+  <li className="flex-shrink-0">
+    <Link href="/vpn-explained/what-is-a-vpn-service" className="text-bluelink hover:underline">
+      What is a VPN Service?
+    </Link>
+  </li>
+  <li className="flex-shrink-0">
+    <Link href="/vpn-explained/how-does-a-vpn-work" className="text-bluelink hover:underline">
+      How Do VPNs Work?
+    </Link>
+  </li>
+  <li className="flex-shrink-0">
+    <Link href="https://vpnguide.in/vpn-explained/what-is-vpn-used-for" className="text-bluelink hover:underline">
+      What Are VPNs Used For?
+    </Link>
+  </li>
+  <li className="flex-shrink-0">
+    <Link href="https://vpnguide.in/vpn-explained/are-vpn-really-worth-it" className="text-bluelink hover:underline">
+      Are VPNs Really Worth It?
+    </Link>
+  </li>
+  <li className="flex-shrink-0">
+    <Link href="/vpn-explained/vpn-logging-policies" className="text-bluelink hover:underline">
+      What Are VPN Logging Policies?
+    </Link>
+  </li>
+</ul>
+
 
         <p className="laptop:text-3xl pt-5 font-bold text-2xl">Types of VPN Connection</p>
         <p className="py-3 laptop:text-xl text-[16px]">
