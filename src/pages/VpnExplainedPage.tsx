@@ -90,13 +90,14 @@ const VpnExplainedPage = () => {
         </p>
 
         {/* iframe */}
-        <div className=" aspect-video">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/cAKsN4LgrDY?autoplay=1&enablejsapi=1&modestbranding=1&allowFullScreen&cc_load_policy=1&cc_lang_pref=en"
-            allowFullScreen
-            className="w-full h-full"
-          ></iframe>
-        </div>
+        <div className="h-[160px] tablet:h-[250px] laptop:h-[300px] aspect-video relative">
+            <Image
+              src="public/Assests/VPN-explained/Vpn Explained.png"
+              alt="VPN Banner"
+              fill
+              className="mt-4 tablet:mt-6 laptop:mt-8"
+            />
+          </div>
 
         <div className="my-5 bg-blue-100 p-2">
           <p className="laptop:text-xl font-semibold pb-2 text-[19px]">
@@ -139,17 +140,36 @@ const VpnExplainedPage = () => {
         </p>
 
         <ul className="flex flex-wrap pl-5 list-disc list-inside">
-          <li className="w-1/2 md:w-full p-2">How Do VPNs Work?</li>
-          <li className="w-1/2 md:w-full p-2">What Are VPNs Used For?</li>
-          <li className="w-1/2 md:w-full p-2">Are VPNs Really Worth It?</li>
-          <li className="w-1/2 md:w-full p-2">
-            What Are VPN Logging Policies?
+          <li className="w-1/2 md:w-full p-2">1 {" "}
+                  <Link href="/vpn-explained/what-is-a-vpn-service" className="text-bluelink hover:underline">
+                        What is a VPN Service? 
+                  </Link> 
+          </li>
+          <li className="w-1/2 md:w-full p-2">1 {" "}
+                  <Link href="/vpn-explained/how-does-a-vpn-work" className="text-bluelink hover:underline">
+                        How Do VPNs Work? 
+                  </Link> 
+          </li>
+          <li className="w-1/2 md:w-full p-2">1 {" "}
+                  <Link href="https://vpnguide.in/vpn-explained/what-is-vpn-used-for" className="text-bluelink hover:underline">
+                        What Are VPNs Used For? 
+                  </Link> 
+          </li>
+          <li className="w-1/2 md:w-full p-2">1 {" "}
+                  <Link href="https://vpnguide.in/vpn-explained/are-vpn-really-worth-it" className="text-bluelink hover:underline">
+                        Are VPNs Really Worth It? 
+                  </Link> 
+          </li>
+          <li className="w-1/2 md:w-full p-2">1 {" "}
+                  <Link href="/vpn-explained/vpn-logging-policies" className="text-bluelink hover:underline">
+                        What Are VPN Logging Policies? 
+                  </Link> 
           </li>
         </ul>
 
         <p className="laptop:text-3xl pt-5 font-bold text-2xl">Types of VPN Connection</p>
         <p className="py-3 laptop:text-xl text-[16px]">
-          There are <a href="#">different types of VPN</a> depending on the type
+          There are different types of VPN depending on the type
           of connection a user requires.
         </p>
         <p className="py-3 laptop:text-xl text-[16px]">
@@ -162,27 +182,22 @@ const VpnExplainedPage = () => {
           are all types of <b>business VPN.</b> They are designed for remote
           employees to gain secure access to internal resources.
         </p>
+        <p className="laptop:text-3xl pt-5 font-bold text-2xl">What Are the Benefits of a VPN Service?</p>
         <p className="py-3 laptop:text-xl text-[16px]">
-          Here is a quick overview of each type of VPN service and how they
-          differ from one another:
+          There is a large amount of false or misleading information online regarding what a VPN can and cannot do, which can make it difficult to decide whether you actually need to use one or not.
         </p>
-        <p className="text-3xl pt-5 font-bold">Personal VPN Services</p>
-
-        <div className="relative h-60 laptop:h-80">
-          <Image
-            src="/Assests/VPN-explained/VPNimage.jpg"
-            fill
-            alt="personal vpn"
-          />
-        </div>
-        <p className="text-center text-sm text-gray-500">
-          A personal VPN service hides your IP address and browsing history
-          while you browse the internet in your free time.
-        </p>
-        <p>
-          A personal VPN service provides individual users with encrypted access
-          to a remote VPN server that’s owned by the VPN provider.
-        </p>
+        <p className="py-3 laptop:text-xl text-[16px]">
+          A personal VPN has two primary benefits:
+          </p>
+        <p className="py-3 laptop:text-xl text-[16px]">
+          It hides your IP address and geographic location from the websites, services and applications you use. Without this information, it’s much harder to link your online activity to your identity, which makes it more difficult to track, profile, or block you.
+          </p>
+        <p className="py-3 laptop:text-xl text-[16px]">
+          It hides your activity from your ISP or network administrator. Encrypting your data transfers makes it almost impossible for your ISP, mobile carrier, WiFi administrator, or eavesdroppers on a public WiFi network to see which websites you’re visiting, the files you upload or download, or any personal details you enter into HTTP websites.
+          </p>
+        <p className="py-3 laptop:text-xl text-[16px]">
+          With these two basic functions, a VPN can be used for a number of different purposes related to improving your privacy, security and freedom online.
+          </p>
       </section>
     </section>
   );
