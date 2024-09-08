@@ -137,6 +137,8 @@ const VpnExplainedPage = () => {
         </p>
 
         <p className="font-semibold my-3">
+          Have a specific question about VPNs? You can find detailed answers in the articles below:
+</p>
   <ul className="flex flex-wrap pl-5 list-disc list-inside">
           <li className="w-full p-2">1 {" "}
                   <Link href="/vpn-explained/what-is-a-vpn-service" className="text-bluelink hover:underline">
