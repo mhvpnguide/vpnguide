@@ -28,6 +28,7 @@ import {
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
+import { useRouter } from "next/router.js";
 
 interface SubnavItem {
   name: string;
@@ -50,7 +51,8 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const currentPath = window.location.pathname.split('/')[1];
+  const router = useRouter();
+  const currentPath = router.pathname.split('/')[1];
   console.log(direc.includes(currentPath));
   
 
