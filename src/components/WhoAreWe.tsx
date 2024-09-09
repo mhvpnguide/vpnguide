@@ -54,9 +54,8 @@ const WhoAreWe = () => {
             We Stand for Internet Privacy, Security & Freedom
           </div>
           <div className="hidden laptop:flex home_headContent">
-            Our goal is to improve the VPN industry and help you make better
-            decisions about the VPNs you use for a more private, secure, and
-            open internet experience.
+            Our mission is to enhance the VPN industry and strengthen online security, 
+            empowering you to make informed choices about the VPNs you use for a safer, more private, and unrestricted internet experience.
           </div>
           <Link href="/about">
             <button className="hidden laptop:flex home_button hoverBtn">
@@ -81,9 +80,8 @@ const WhoAreWe = () => {
             We Stand for Internet Privacy, Security & Freedom
           </div>
           <div className=" home_headContent">
-            Our goal is to improve the VPN industry and help you make better
-            decisions about the VPNs you use for a more private, secure, and
-            open internet experience.
+            Our mission is to enhance the VPN industry and strengthen online security, 
+            empowering you to make informed choices about the VPNs you use for a safer, more private, and unrestricted internet experience.
           </div>
           <Link href="/about">
             <button className="home_button hoverBtn">
@@ -117,14 +115,14 @@ const WhoAreWe = () => {
               Honest VPN Reviews Based On Real Testing
             </div>
             <div className="home_headContent">
-              All 62 VPNs have been reviewed first-hand using our transparent
+              All VPNs have been reviewed first-hand using our transparent
               testing process and rating system. By turning complex data into
               easy-to-understand ratings, we help you quickly find the VPN that
               best fits your needs.
             </div>
-            <Link href="/reviews">
+            <Link href="/how-we-review-vpn">
               <button className="home_button hoverBtn">
-                See All VPN Reviews
+                VPN Review Process
               </button>
             </Link>
           </div>

@@ -76,9 +76,8 @@ const ReviewsPage = () => {
           <div className="px-3 flex items-center flex-col mb-3 ">
             <p className="text-3xl font-bold pb-6">All VPN Reviews</p>
             <p className="text-xl mb-4 text-center">
-              Check out all our VPN reviews blow or use the filters to find the
-              VPN best suits you needs. Of the 65 reviewed, found 35 in
-              Spaninsh.
+              Check out all our VPN reviews below or use the search bar to find the
+              VPN best suits you needs.
             </p>
             <div className="w-full tablet:w-1/2 laptop:w-2/5 laptopl:w-96">
               <Input
@@ -141,13 +140,13 @@ const ReviewsPage = () => {
             Honest VPN Reviews Based on Real Testing
           </div>
           <div className=" home_headContent">
-            All 65 VPNs have been reviewed first-hand using our transparent
-            testing process and rating system.By turning complex data into
+            All VPNs have been reviewed first-hand using our transparent
+            testing process and rating system. By turning complex data into
             easy-to-understand ratings, we help you quickly find the VPN that
             best fits your needs.
           </div>
           <Link href="/about/how-we-review-vpn">
-            <button className="home_button hoverBtn">Test VPN</button>
+            <button className="home_button hoverBtn">Review Process</button>
           </Link>
         </div>
       </section>

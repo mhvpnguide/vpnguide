@@ -28,7 +28,8 @@ const TooltipComp = () => {
             classNames={{
               base: "text-right pr-5",
               content:
-                "text-sm text-gray-600 w-full tablet:w-1/2 text-justify bg-[#4B5563] text-white p-6",
+               "text-sm w-full tablet:w-1/2 text-justify bg-[#ECFFDC] text-gray-800 p-6",
+
             }}
           >
             <button

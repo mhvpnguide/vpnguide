@@ -22,10 +22,10 @@ const HowWeMakeMoney = () => {
           <div className="tablet:flex tablet:justify-center tablet:items-center">
             <div className="tablet:w-2/3">
               <p className="text-left text-lg mb-4  font-medium">
-                We built vpnguide around our core principles of impartiality,
+                We built VPNs Guide around our core principles of impartiality,
                 honesty and transparency. Your trust is of the utmost importance
                 to us, which is why we&apos;ll always be straight-up about how we
-                test and review VPNs. in 2016. He launched it to improve the VPN
+                test and review VPNs. We launched it to improve the VPN
                 industry, after realizing the market was flooded with hundreds
                 of unsafe applications and review websites that weren&apos;t
                 adequately testing them.
@@ -45,8 +45,8 @@ const HowWeMakeMoney = () => {
               </p>
               <p className="text-left text-lg mb-4  font-medium">
                 We don&apos;t accept payment to provide positive reviews, and
-                providers will never have any input in how we choose
-                are based on our own testing results and experience.
+                providers will never have any input in how we choose the Best
+                Vpn Services. Our aim is to put you, the reader, first and foremost at all times.
               </p>
             </div>
             <ul className="tablet:w-1/3">

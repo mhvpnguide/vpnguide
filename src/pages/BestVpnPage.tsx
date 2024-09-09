@@ -23,23 +23,27 @@ const vpnData: VPNData =
 {
     title: "The Best VPNs for India",
     list: [
-        "Lorem ipsum dolor sit <b>amet,</b> consectetur",
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor sit amet, consectetur",
-        "Lorem ipsum dolor <b>sit amet,</b> consectetur"
+        "Fast servers to browse <b>without,</b> interruptions",
+        "Strict no-logs policies keep your data private online",
+        "Connect all of your mobile devices to one account simultaneously",
+        "Verified to work with popular platforms, apps & services",
+        "<b>Free trails,</b> discount, refund policies to test them out risk free"
     ],
-    updatedOn: '01-01-24',
+    updatedOn: '01-September-2024',
     slug: [
-        "cyberghost",
-        "dndlt",
         "expressvpn",
-        "hideme"
+        "cyberghost",
+        "privateinternetaccess",
+        "nordvpn",
+        "surfshark",
+        "totalvpn",
+        "ipvanish",
+        "privatevpn"
     ],
     bestPlan: [
-        "ipvanish",
-        "hidemyass",
-        "nordvpn",
+        "expressvpn",
+        "privateinternetaccess",
+        "cyberghost",
     ]
 }
 
@@ -129,7 +133,7 @@ const BestVpnPage = () => {
     return (
         <section>
             {/* top section */}
-            <div className="flex tablet:px-10 laptop:px-32 py-5">
+            <div className="flex tablet:px-10 laptop:px-32 py-5 bg-[#F9F6EE]">
                 {/* left */}
                 <div className="ml-7 content w-full tablet:w-1/2 max-h-fit ">
                     <h1 className="ml-2 text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
@@ -151,15 +155,15 @@ const BestVpnPage = () => {
             </div>
 
 
-            <div className="flex justify-between items-center w-full px-3 tablet:px-9 laptop:px-48">
-                <span><HiOutlineRefresh className="inline mr-1"/>Updated on: {vpnData.updatedOn}</span>
+            <div className="flex justify-between  items-center  w-full px-3 tablet:px-9 laptop:px-48 bg-[#FAF9F6]">
+            <span><HiOutlineRefresh className="inline mr-1"/>Updated on: {vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
                     <TooltipComp/>
                 </div>
             </div>
 
             {/* reviews section */}
-            <div className="laptop:px-[11vw] pt-10">{loading ? "waiting" : <BestVpnCard blogs={blogs} />}</div>
+            <div className="laptop:px-[11vw] pt-10 bg-[#F9F6EE]">{loading ? "waiting" : <BestVpnCard blogs={blogs} />}</div>
 
             <section className="laptop:mx-20 pt-12 pb-16  flex flex-col laptop:flex-row justify-center items-center laptop:mb-24 laptopl:px-20">
                 <div className="flex flex-col p-5 w-full laptop:w-1/2 gap-10 justify-center items-center laptop:justify-start laptop:items-start">
@@ -168,9 +172,8 @@ const BestVpnPage = () => {
                         We Stand for Internet Privacy, Security & Freedom
                     </div>
                     <div className="hidden laptop:flex home_headContent">
-                        Our goal is to improve the VPN industry and help you make better
-                        decisions about the VPNs you use for a more private, secure, and
-                        open internet experience.
+                        Our mission is to enhance the VPN industry and strengthen online security, 
+                        empowering you to make informed choices about the VPNs you use for a safer, more private, and unrestricted internet experience.
                     </div>
                     <Link href="/about">
                         <button className="hidden laptop:flex home_button hoverBtn">
@@ -195,9 +198,8 @@ const BestVpnPage = () => {
                         We Stand for Internet Privacy, Security & Freedom
                     </div>
                     <div className=" home_headContent">
-                        Our goal is to improve the VPN industry and help you make better
-                        decisions about the VPNs you use for a more private, secure, and
-                        open internet experience.
+                        Our mission is to enhance the VPN industry and strengthen online security, 
+                        empowering you to make informed choices about the VPNs you use for a safer, more private, and unrestricted internet experience.
                     </div>
                     <Link href="/about">
                         <button className="home_button hoverBtn">
@@ -231,14 +233,14 @@ const BestVpnPage = () => {
                             Honest VPN Reviews Based On Real Testing
                         </div>
                         <div className="home_headContent">
-                            All 62 VPNs have been reviewed first-hand using our transparent
+                            All VPNs have been reviewed first-hand using our transparent
                             testing process and rating system. By turning complex data into
                             easy-to-understand ratings, we help you quickly find the VPN that
                             best fits your needs.
                         </div>
-                        <Link href="/reviews">
+                        <Link href="/about/how-we-review-vpn">
                             <button className="home_button hoverBtn">
-                                See All VPN Reviews
+                                VPN Review Process
                             </button>
                         </Link>
                     </div>
