@@ -1,6 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import NextUiNavbar from "./NextUInav";
+// import NextUiNavbar from "./NextUInav";
+import dynamic from "next/dynamic";
+const NextUiNavbar = dynamic(() => import('./NextUInav'), {
+  ssr: false,
+});
 
 
 interface SubnavItem {

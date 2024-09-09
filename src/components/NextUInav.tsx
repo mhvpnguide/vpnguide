@@ -28,7 +28,7 @@ import {
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import { useRouter } from "next/router.js";
+import { usePathname } from 'next/navigation';
 
 interface SubnavItem {
   name: string;
@@ -51,10 +51,9 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const router = useRouter();
-  const currentPath = router.pathname.split('/')[1];
-  console.log(direc.includes(currentPath));
-  
+
+  const pathname = usePathname();
+  const currentPath = pathname?.split('/')[1];
 
   const icons = {
     chevron: (
@@ -138,7 +137,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
           </NavbarBrand>
         </Link>
         {
-          !direc.includes(currentPath) ?
+          !(currentPath && direc.includes(currentPath)) ?
             <NavbarContent className="hidden laptop:flex gap-3 w-full">
               {navdata.map((item: NavItem, idx: number) =>
                 item.subnav && item.subnav.length > 0 ? (
@@ -221,7 +220,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
       {/* mobile view */}
       {
-        !direc.includes(currentPath) ?
+        !(currentPath && direc.includes(currentPath)) ?
         <NavbarMenu>
           {navdata.map((itm: NavItem, idx: number) =>
             itm.subnav && itm.subnav.length > 0 ? (
