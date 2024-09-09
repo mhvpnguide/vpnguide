@@ -8,6 +8,7 @@ import BestVpnCard from "@/components/best-vpn-card";
 import { Tooltip } from "@nextui-org/react";
 import { FaCrown } from "react-icons/fa6";
 import TooltipComp from "@/components/TooltipComp";
+import { HiOutlineRefresh } from "react-icons/hi";
 
 interface VPNData {
     title?: string;
@@ -83,15 +84,18 @@ export const fetchvpn = async (vpnData: VPNData) => {
     );
 
     const response = await request.json();
+    const responseData:Array<{ attributes: { slug: string } }>  = response.data;
 
-    return response.data;
+     // Sort the response data based on the order of vpnData.bestPlan
+     const sortedData = (vpnData.bestPlan ?? []).map(plan => responseData.find(item => item.attributes.slug === plan)).filter((item): item is { attributes: { slug: string } } => item !== undefined); // Filter out undefined
+
+    return sortedData;
 };
 
 const BestVpnPage = () => {
     const [blogs, setBlogs] = useState<any[]>([]);
     const [vpn, setVpn] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
-    const [ttOpen, setTTOpen] = useState(false);
 
 
     useEffect(() => {
@@ -127,9 +131,9 @@ const BestVpnPage = () => {
             {/* top section */}
             <div className="flex tablet:px-10 laptop:px-32 py-5">
                 {/* left */}
-                <div className="content w-full tablet:w-1/2 max-h-fit ">
-                    <h1 className="text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
-                    <ul className="ml-7 mb-5 text-sm laptop:text-base">
+                <div className="ml-7 content w-full tablet:w-1/2 max-h-fit ">
+                    <h1 className="ml-2 text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
+                    <ul className=" mb-5 text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
                                 <li className="tick-list-item ml-3" key={idx} dangerouslySetInnerHTML={{
@@ -138,17 +142,6 @@ const BestVpnPage = () => {
                             ))
                         }
                     </ul>
-
-                    {/* <div className="flex gap-5 text-gray-400 pr-3 pl-6 text-lg my-3 items-center">
-                        <span className="text-black text-sm">Available on:</span>
-                        <FaWindows />
-                        <SiMacos />
-                        <SiIos />
-                        <IoLogoAndroid />
-                        <FaLinux />
-                        <SiAmazonfiretv />
-                        <MdRouter />
-                    </div> */}
                 </div>
                 {/* right */}
                 <div className="hidden w-1/2  tablet:flex items-stretch">
@@ -158,8 +151,8 @@ const BestVpnPage = () => {
             </div>
 
 
-            <div className="flex justify-between w-full px-3 tablet:px-9 laptop:px-48">
-                <span className="font-semibold">Updated on: {vpnData.updatedOn}</span>
+            <div className="flex justify-between items-center w-full px-3 tablet:px-9 laptop:px-48">
+                <span><HiOutlineRefresh className="inline mr-1"/>Updated on: {vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
                     <TooltipComp/>
                 </div>

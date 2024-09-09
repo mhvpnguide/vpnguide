@@ -52,35 +52,13 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
   const lightBackgroundColors = ['bg-[#f87171]', 'bg-[#60a5fa]', 'bg-[#4ade80]', 'bg-[#facc15]', 'bg-[#c084fc]'];
   const fontColors = ['text-[#f8fafc]', 'text-[#020617]', 'text-[#374151]', 'text-[#111827]', 'text-[#fef9c3]'];
 
-  // this is for circular progress color
-  const circularProgressColor=['primary','secondary','success','warning','danger']
-
-
-
-
-
-
-
-
-
-
-
-
-  const getColorByRating = (rating: number) => {
-    if (rating >= 9.7 && rating <= 10) return circularProgressColor[0];   // Red
-    if (rating >= 9.0 && rating < 9.7) return circularProgressColor[1];    // Orange
-    if (rating >= 8.0 && rating < 9.0) return circularProgressColor[2];    // Yellow
-    if (rating >= 6.0 && rating < 8.0) return circularProgressColor[3];    // Green
-    if (rating >= 0 && rating < 6.0) return circularProgressColor[4];      // Blue
-  };
-
   return (
     <section className="px-3 tablet:px-5 flex flex-col gap-4 py-5">
 
       {/* review card */}
       {
         blogs.map((blog: Blog, idx: number) => (
-          <Link href={blog.attributes.company_link.value} className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024]" key={idx}>
+          <Link target="_blank" href={blog.attributes.company_link.value} className="shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024]" key={idx}>
 
             {/* top banner */}
             <div className="relative">

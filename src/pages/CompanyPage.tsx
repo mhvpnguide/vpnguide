@@ -259,8 +259,7 @@ export default function CompanyPage({ slug }: { slug: string }) {
                     </span>
                     <div className="w-[30%] flex items-center gap-2">
                       {/* <CustomProgress value={blog.attributes.ratting} /> */}
-                      <div className="font-bold text-lg pl-2">9/10</div>
-                      {/* <div className="font-bold text-lg">{blog.attributes.ratting}/10</div> */}
+                      <div className="font-bold text-lg pl-2">{blog.attributes.ratting}/10</div>
                     </div>
                   </div>
                 </div>

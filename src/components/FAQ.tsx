@@ -69,10 +69,9 @@ const content1: ContentArray = [
 
 const FAQ = () => {
   return (
-    <div className="flex-col laptopl:px-48 px-10 my-5">
+    <div className="flex-col laptopl:px-96 px-5 my-5">
       <div className="text-4xl font-semibold pb-10">Frequently Asked Question</div>
-      <div className=" flex flex-col laptop:flex-row justify-center items-center">
-        <Accordion>
+        <Accordion variant="splitted">
           {content1.map((itm: ContentItem, idx: number) => (
             <AccordionItem
               key={idx}
@@ -87,7 +86,6 @@ const FAQ = () => {
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
     </div>
   );
 };

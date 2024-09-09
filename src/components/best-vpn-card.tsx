@@ -80,7 +80,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
       {/* review card */}
       {
         blogs.map((blog: Blog, idx: number) => (
-          <Link href={blog.attributes.company_link.value} className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx==0 ? 'border-2 border-yellow-500 rounded-[9px]':null}`} key={idx}>
+          <Link target="_blank" href={blog.attributes.company_link.value} className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx==0 ? 'border-2 border-yellow-500 rounded-[9px]':null}`} key={idx}>
 
             {/* top banner */}
               <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
@@ -122,7 +122,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
               </div>
 
-              <div className="laptop:w-[40%] flex flex-col laptop:justify-between">
+              <div className="laptop:w-[30%] flex flex-col laptop:justify-between">
                 <h1 className=" laptop:hidden text-base font-bold text-center">{blog.attributes.vpn_name}</h1>
                 <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                   {
@@ -132,7 +132,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   }
                 </ul>
 
-                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-lg my-3">
+                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-xl my-3">
                   <FaWindows />
                   <SiMacos />
                   <IoLogoAndroid />
@@ -142,7 +142,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
               </div>
 
               {/* bottom */}
-              <div className="flex  my-3 laptop:w-[30%] laptop:items-center">
+              <div className="flex  my-3 laptop:w-[40%] laptop:items-center">
 
                 {/* ratting */}
                 <div className="flex flex-col items-center ml-3 gap-2 w-1/2">
@@ -173,7 +173,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
+                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-lg text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
                   <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>

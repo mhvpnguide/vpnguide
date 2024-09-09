@@ -21,6 +21,11 @@ const config: Config = {
         grey: "#474852",
         bluelink: "#1E2694",
         purple: "#5D66EB",
+        warning:"#ff9800",
+        danger:"#00acc1",
+        primary:"#5ca0dd",
+        success:"#5cddb4",
+        secondary:"#5cdd60"
       },
     },
   },

@@ -9,7 +9,7 @@ const CustomCircularProgress: React.FC<CustomCircularProgressProps> = ({ value, 
   
   return (
     <div className="relative inline-flex items-center justify-center">
-      <CircularProgress value={value} {...props} showValueLabel={false} maxValue={10} minValue={1}/>
+      <CircularProgress value={value} {...props} showValueLabel={false} maxValue={10} minValue={1} />
       {props.showValueLabel && (
         <span className="absolute text-center text-xs laptop:text-base font-semibold">
           {valueLabel !== undefined ? valueLabel : value}

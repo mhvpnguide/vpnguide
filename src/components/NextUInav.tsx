@@ -45,7 +45,14 @@ interface NavbarProps {
 }
 
 const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
+
+  const direc = ["best-vpn", "famous-vpn"];
+
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const currentPath = window.location.pathname.split('/')[1];
+  console.log(direc.includes(currentPath));
+  
 
   const icons = {
     chevron: (
@@ -128,139 +135,146 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
             <p className="font-bold text-inherit">VPNGUIDE</p>
           </NavbarBrand>
         </Link>
+        {
+          !direc.includes(currentPath) ?
+            <NavbarContent className="hidden laptop:flex gap-3 w-full">
+              {navdata.map((item: NavItem, idx: number) =>
+                item.subnav && item.subnav.length > 0 ? (
+                  <Dropdown key={idx}>
+                    <NavbarItem>
+                      <DropdownTrigger>
+                        <Button
+                          disableRipple
+                          className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                          endContent={icons.chevron}
+                          radius="sm"
+                          variant="light"
+                        >
+                          {item.mainHeading}
+                        </Button>
+                      </DropdownTrigger>
+                    </NavbarItem>
+                    <DropdownMenu
+                      aria-label="VPN guide"
+                      className="w-[340px]"
+                      itemClasses={{
+                        base: "gap-5",
+                      }}
+                    >
+                      {item.subnav?.map((subitem: SubnavItem, subidx: number) => (
+                        <DropdownItem
+                          key={idx}
+                          className={`px-4 mb-2 customNavDesign ${idx == 0 && subidx == 0
+                            ? "data-[hover=true]:bg-transparent"
+                            : null
+                            }`}
+                        >
+                          {subidx == 5 ? (
+                            <Link href={subitem.link} className="px-2 py-1 font-semibold flex justify-start text-[#197BEB]  items-center gap-3 ">
+                              click more
+                              <FaArrowRight className="" />
+                            </Link>
+                          ) : (
+                            <>
+                              {idx == 0 && subidx == 0 ? (
+                                <p
+                                  className="text-base w-full font-bold pb-1"
+                                  dangerouslySetInnerHTML={{
+                                    __html: subitem.name,
+                                  }}
+                                ></p>
+                              ) : (
+                                <Link
+                                  href={subitem.link}
+                                  className="px-2 py-1 text-inherit w-full"
+                                >
+                                  {subitem.name}
+                                </Link>
+                              )}
+                            </>
+                          )}
+                        </DropdownItem>
+                      ))}
+                    </DropdownMenu>
+                  </Dropdown>
+                ) : (
+                  <NavbarItem key={idx}>
+                    <Link href={item.link}>
+                      <Button
+                        disableRipple
+                        className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                        radius="sm"
+                        variant="light"
+                      >
+                        {item.mainHeading}
+                      </Button>
+                    </Link>
+                  </NavbarItem>
+                )
+              )}
+            </NavbarContent>
+            : null
+        }
+      </NavbarContent>
 
-        <NavbarContent className="hidden laptop:flex gap-3 w-full">
-          {navdata.map((item: NavItem, idx: number) =>
-            item.subnav && item.subnav.length > 0 ? (
-              <Dropdown key={idx}>
-                <NavbarItem>
-                  <DropdownTrigger>
-                    <Button
-                      disableRipple
-                      className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                      endContent={icons.chevron}
-                      radius="sm"
-                      variant="light"
-                    >
-                      {item.mainHeading}
-                    </Button>
-                  </DropdownTrigger>
-                </NavbarItem>
-                <DropdownMenu
-                  aria-label="VPN guide"
-                  className="w-[340px]"
-                  itemClasses={{
-                    base: "gap-5",
-                  }}
+      {/* mobile view */}
+      {
+        !direc.includes(currentPath) ?
+        <NavbarMenu>
+          {navdata.map((itm: NavItem, idx: number) =>
+            itm.subnav && itm.subnav.length > 0 ? (
+              <Accordion key={idx}>
+                <AccordionItem
+                  key={idx}
+                  aria-label={itm.mainHeading}
+                  title={itm.mainHeading}
                 >
-                  {item.subnav?.map((subitem: SubnavItem, subidx: number) => (
-                    <DropdownItem
-                      key={idx}
-                      className={`px-4 mb-2 customNavDesign ${
-                        idx == 0 && subidx == 0
-                          ? "data-[hover=true]:bg-transparent"
-                          : null
-                      }`}
-                    >
+                  {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
+                    <div key={subidx}>
                       {subidx == 5 ? (
-                        <Link href={subitem.link} className="px-2 py-1 font-semibold flex justify-start text-[#197BEB]  items-center gap-3 ">
-                            click more
-                            <FaArrowRight className="" />
+                        <Link href={subitm.link} className="mb-4">
+                          <button>see more</button>
                         </Link>
                       ) : (
                         <>
                           {idx == 0 && subidx == 0 ? (
-                            <p
-                              className="text-base w-full font-bold pb-1"
-                              dangerouslySetInnerHTML={{
-                                __html: subitem.name,
-                              }}
-                            ></p>
+                            <p className="text-base w-full font-bold pb-1">
+                              Popular
+                            </p>
                           ) : (
                             <Link
-                              href={subitem.link}
-                              className="px-2 py-1 text-inherit w-full"
+                              href={subitm.link}
+                              className="text-inherit mb-4 w-full p-2"
                             >
-                              {subitem.name}
+                              {subitm.name}
                             </Link>
                           )}
                         </>
                       )}
-                    </DropdownItem>
+                    </div>
                   ))}
-                </DropdownMenu>
-              </Dropdown>
+                </AccordionItem>
+              </Accordion>
             ) : (
               <NavbarItem key={idx}>
-                <Link href={item.link}>
+                <Link href={itm.link}>
                   <Button
                     disableRipple
-                    className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                    className="p-0 px-2 bg-transparent data-[hover=true]:bg-transparent text-[16px]"
                     radius="sm"
                     variant="light"
                   >
-                    {item.mainHeading}
+                    {itm.mainHeading}
                   </Button>
                 </Link>
               </NavbarItem>
             )
           )}
-        </NavbarContent>
-      </NavbarContent>
+        </NavbarMenu>
+        :null
+      }
 
-      {/* mobile view */}
-      <NavbarMenu>
-        {navdata.map((itm: NavItem, idx: number) =>
-          itm.subnav && itm.subnav.length > 0 ? (
-            <Accordion key={idx}>
-              <AccordionItem
-                key={idx}
-                aria-label={itm.mainHeading}
-                title={itm.mainHeading}
-              >
-                {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
-                  <div key={subidx}>
-                    {subidx == 5 ? (
-                      <Link href={subitm.link} className="mb-4">
-                        <button>see more</button>
-                      </Link>
-                    ) : (
-                      <>
-                        {idx == 0 && subidx == 0 ? (
-                          <p className="text-base w-full font-bold pb-1">
-                            Popular
-                          </p>
-                        ) : (
-                          <Link
-                            href={subitm.link}
-                            className="text-inherit mb-4 w-full p-2"
-                          >
-                            {subitm.name}
-                          </Link>
-                        )}
-                      </>
-                    )}
-                  </div>
-                ))}
-              </AccordionItem>
-            </Accordion>
-          ) : (
-            <NavbarItem key={idx}>
-              <Link href={itm.link}>
-                <Button
-                  disableRipple
-                  className="p-0 px-2 bg-transparent data-[hover=true]:bg-transparent text-[16px]"
-                  radius="sm"
-                  variant="light"
-                >
-                  {itm.mainHeading}
-                </Button>
-              </Link>
-            </NavbarItem>
-          )
-        )}
-      </NavbarMenu>
-    </Navbar>
+    </Navbar >
   );
 };
 
