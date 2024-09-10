@@ -118,7 +118,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* vpn details */}
                 <div className="flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
                   {/* <p className="text-sm font-medium pb-1">{blog.attributes.vpn_name}</p> */}
-                  <p className="text-sm pb-1 font-bold">{blog.attributes.details}</p>
+                  <p className="text-[12px] pb-1 font-bold">{blog.attributes.details}</p>
                   <p className="tablet:mt-2 text-sm font-semibold text-blue-600">{blog.attributes.offer}</p>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   }
                 </ul>
 
-                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-xl my-3">
+                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-[24px] my-3">
                   <FaWindows />
                   <SiMacos />
                   <IoLogoAndroid />
@@ -149,7 +149,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* ratting */}
                 <div className="flex flex-col items-center ml-3 gap-2 w-1/2">
                   <CustomCircularProgress
-                    size="lg"
+                    size="xl"
                     value={blog.attributes.ratting}
                     color={
                       blog.attributes.ratting >= 9.7 ? "warning" :
@@ -175,8 +175,8 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-[14px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
-                  <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500 text-[6px]">{blog.attributes.company_link.name}</Link>
+                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-[32px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
+                  <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500 text-[14px]">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
 
