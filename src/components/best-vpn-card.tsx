@@ -4,6 +4,7 @@ import config from "../../config";
 import { FaLinux, FaWindows } from "react-icons/fa6";
 import { SiMacos } from "react-icons/si";
 import { IoLogoAndroid } from "react-icons/io";
+import { AiOutlineApple } from 'react-icons/ai';
 import { MdRouter } from "react-icons/md";
 import CustomCircularProgress from "./CustomCircularRatting";
 import { ReactNode } from "react";
@@ -136,6 +137,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <FaWindows />
                   <SiMacos />
                   <IoLogoAndroid />
+                  <AiOutlineApple />
                   <FaLinux />
                   <MdRouter />
                 </div>
