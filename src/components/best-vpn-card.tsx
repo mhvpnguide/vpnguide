@@ -107,7 +107,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
             <div className="flex laptop:flex-row flex-col">
 
               {/* vpn image */}
-              <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 w-auto laptop:max-w-[30%]">
+              <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 laptop:w-[30%]">
 
                 <div className="flex justify-center table:justify-start pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
                   <div className="relative aspect-[2/1] w-3/4 ">
