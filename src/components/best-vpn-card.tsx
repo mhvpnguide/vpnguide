@@ -149,7 +149,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* ratting */}
                 <div className="flex flex-col items-center ml-3 gap-2 w-1/2">
                   <CustomCircularProgress
-                    size="xl"
+                    size="lg"
                     value={blog.attributes.ratting}
                     color={
                       blog.attributes.ratting >= 9.7 ? "warning" :
