@@ -157,7 +157,7 @@ const BestVpnPage = () => {
                 {/* right */}
                 <div className="hidden w-1/2  tablet:flex items-stretch">
                     <div className=" relative w-full">
-                        <Image src="/Assests/best-vpn/India VPN.png" layout="fill" className="object-contain" alt="vpn image" /></div>
+                        <Image src="/Assests/best-vpn/new_hero_image.svg" layout="fill" className="object-contain" alt="vpn image" /></div>
                 </div>
             </div>
 
