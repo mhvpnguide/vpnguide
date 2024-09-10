@@ -24,9 +24,8 @@ const vpnData: VPNData =
     title: "The Best VPNs for India",
     list: [
         "Fast servers to browse <b>without,</b> interruptions",
-        "Strict no-logs policies keep your data private online",
-        "Connect all of your mobile devices to one account simultaneously",
-        "Verified to work with popular platforms, apps & services",
+        "Keep your online activity private & secure with a simple IP address change",
+        "Compatible with all operating systems, popular devices & services",
         "<b>Free trails,</b> discount, refund policies to test them out risk free"
     ],
     updatedOn: '01-September-2024',
@@ -41,8 +40,8 @@ const vpnData: VPNData =
         "privatevpn"
     ],
     bestPlan: [
-        "expressvpn",
         "privateinternetaccess",
+        "expressvpn",
         "cyberghost",
     ]
 }
