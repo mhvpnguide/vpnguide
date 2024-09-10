@@ -90,7 +90,7 @@ const ReviewCard: React.FC<BlogsProps> = ({ blogs }) => {
               {/* vpn image */}
               <div className="flex flex-col laptop:flex-col tablet:flex-row tablet:border-b laptop:border-none border-gray-400 laptop:w-[30%]">
 
-                <div className="flex justify-start pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
+                <div className="flex justify-center pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-1/2 laptop:w-full ">
                   <div className="relative aspect-[2/1] w-3/4 ">
                     <Image src={`${process.env.NEXT_PUBLIC_HOST}${blog.attributes.logo.data.attributes.url}`} fill alt="express" />
                   </div >

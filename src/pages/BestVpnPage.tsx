@@ -8,7 +8,7 @@ import BestVpnCard from "@/components/best-vpn-card";
 import { Tooltip } from "@nextui-org/react";
 import { FaCrown } from "react-icons/fa6";
 import TooltipComp from "@/components/TooltipComp";
-import { HiOutlineRefresh } from "react-icons/hi";
+import { SlCalender } from "react-icons/sl";
 
 interface VPNData {
     title?: string;
@@ -142,7 +142,7 @@ const BestVpnPage = () => {
             {/* top section */}
             <div className="flex tablet:px-10 laptop:px-32 py-5 bg-[#F9F6EE]">
                 {/* left */}
-                <div className="ml-7 content w-full tablet:w-1/2 max-h-fit ">
+                <div className="tablet:ml-7 content w-full tablet:w-1/2 max-h-fit ">
                     <h1 className="ml-2 text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
                     <ul className=" mb-5 text-sm laptop:text-base">
                         {
@@ -162,8 +162,8 @@ const BestVpnPage = () => {
             </div>
 
 
-            <div className="flex justify-between  items-center pt-10 w-full px-3 tablet:px-9 laptop:px-48 bg-[#FAF9F6]">
-            <span><HiOutlineRefresh className="inline mr-1"/>Updated on: {vpnData.updatedOn}</span>
+            <div className="flex justify-between  items-center w-full px-3 tablet:px-9 laptop:px-48 bg-[#FAF9F6]">
+            <span className="items-center tablet:items-start text-[14px] flex flex-col tablet:flex-row tablet:gap-2"><span><SlCalender className="inline mr-1"/>Updated on:</span>{vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
                     <TooltipComp/>
                 </div>

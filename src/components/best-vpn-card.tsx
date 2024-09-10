@@ -123,9 +123,9 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
               </div>
 
-              <div className="laptop:w-[30%] flex flex-col laptop:justify-between">
+              <div className="laptop:w-[35%] flex flex-col laptop:justify-between">
     
-                <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
+                <ul className="ml-6 space-y-2 tablet:my-4">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (
                       <li className="tick-list-item text-sm" key={subidx}>{subitm.value}</li>
@@ -133,7 +133,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   }
                 </ul>
 
-                <div className="hidden tablet:flex gap-5 text-gray-400 pr-3 pl-12 text-[24px] my-3">
+                <div className="hidden tablet:flex gap-5 text-gray-400 text-[24px] my-3 ml-6">
                   <FaWindows />
                   <SiMacos />
                   <IoLogoAndroid />
@@ -144,7 +144,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
               </div>
 
               {/* bottom */}
-              <div className="flex  my-3 laptop:w-[40%] laptop:items-center">
+              <div className="flex  my-3 laptop:w-[35%] laptop:items-center">
 
                 {/* ratting */}
                 <div className="flex flex-col items-center ml-3 gap-2 w-1/2">
