@@ -68,7 +68,14 @@ export const fetchBlogs = async (vpnData: VPNData) => {
 
     const response = await request.json();
 
-    return response.data;
+    const responseData:Array<{ attributes: { slug: string } }>  = response.data;
+
+     // Sort the response data based on the order of vpnData.bestPlan
+     const sortedData = (vpnData.slug ?? []).map(plan => responseData.find(item => item.attributes.slug === plan)).filter((item): item is { attributes: { slug: string } } => item !== undefined); // Filter out undefined
+
+    return sortedData;
+
+    // return response.data;
 };
 export const fetchvpn = async (vpnData: VPNData) => {
     // Construct filters from vpnData.bestPlan
@@ -247,9 +254,6 @@ const BestVpnPage = () => {
                 </div>
             </section>
 
-            {/* faqs */}
-            <FAQ />
-
             {/* Best Plan */}
             <div className="bg-gray-50 p-5 laptop:mx-48 tablet:mx-4 my-5">
                 <div className="flex flex-col items-center gap-3 mb-10">
@@ -314,6 +318,9 @@ const BestVpnPage = () => {
 
                 </div>
             </div>
+
+            {/* faqs */}
+            <FAQ />
         </section>
     );
 };

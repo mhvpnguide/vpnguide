@@ -173,7 +173,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-lg text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
+                  <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="bg-red-700 text-lg text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
                   <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
