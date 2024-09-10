@@ -308,7 +308,7 @@ const BestVpnPage = () => {
 
                                 {/* details */}
                                 <p className="laptop:px-5 text-center text-sm font-bold text-blue-600">{itm.attributes.offer}</p>
-                                <Link href={itm.attributes.company_link.value} className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link>
+                                <Link href={itm.attributes.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link>
                             </Link>
                         ))
                     }
