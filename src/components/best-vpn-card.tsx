@@ -123,7 +123,7 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
               </div>
 
               <div className="laptop:w-[30%] flex flex-col laptop:justify-between">
-                <h1 className=" laptop:hidden text-base font-bold text-center">{blog.attributes.vpn_name}</h1>
+    
                 <ul className="ml-6 mr-3 space-y-2 tablet:my-4">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (
@@ -173,8 +173,8 @@ const BestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 <div className="w-1/2 mr-3 flex justify-center items-center flex-col gap-2">
-                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-lg text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
-                  <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500">{blog.attributes.company_link.name}</Link>
+                  <Link href={`/reviews/${blog.attributes.slug}`} className="bg-red-700 text-[14px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-green-900">Visit Site</Link>
+                  <Link href={`${blog.attributes.company_link.value}`} className="underline text-gray-500 text-[6px]">{blog.attributes.company_link.name}</Link>
                 </div>
               </div>
 
