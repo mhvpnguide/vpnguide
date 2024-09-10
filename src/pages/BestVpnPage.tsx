@@ -24,9 +24,8 @@ const vpnData: VPNData =
     title: "The Best VPNs for India",
     list: [
         "Fast servers to browse <b>without,</b> interruptions",
-        "Strict no-logs policies keep your data private online",
-        "Connect all of your mobile devices to one account simultaneously",
-        "Verified to work with popular platforms, apps & services",
+        "Keep your online activity private & secure with a simple IP address change",
+        "Compatible with all operating systems, popular devices & services",
         "<b>Free trails,</b> discount, refund policies to test them out risk free"
     ],
     updatedOn: '01-September-2024',
@@ -41,8 +40,8 @@ const vpnData: VPNData =
         "privatevpn"
     ],
     bestPlan: [
-        "expressvpn",
         "privateinternetaccess",
+        "expressvpn",
         "cyberghost",
     ]
 }
@@ -157,7 +156,7 @@ const BestVpnPage = () => {
                 {/* right */}
                 <div className="hidden w-1/2  tablet:flex items-stretch">
                     <div className=" relative w-full">
-                        <Image src="/Assests/best-vpn/India VPN.png" layout="fill" className="object-contain" alt="vpn image" /></div>
+                        <Image src="/Assests/best-vpn/new_hero_image.svg" layout="fill" className="object-contain" alt="vpn image" /></div>
                 </div>
             </div>
 
@@ -309,7 +308,7 @@ const BestVpnPage = () => {
 
                                 {/* details */}
                                 <p className="laptop:px-5 text-center text-sm font-bold text-blue-600">{itm.attributes.offer}</p>
-                                <Link href={itm.attributes.company_link.value} className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link>
+                                <Link href={itm.attributes.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link>
                             </Link>
                         ))
                     }
