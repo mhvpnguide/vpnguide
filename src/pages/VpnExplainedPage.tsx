@@ -151,12 +151,12 @@ const VpnExplainedPage = () => {
                   </Link> 
           </li>
           <li className="w-full p-2">3 {" "}
-                  <Link href="https://vpnguide.in/vpn-explained/what-is-vpn-used-for" className="text-bluelink hover:underline">
+                  <Link href="https://vpns.guide/vpn-explained/what-is-vpn-used-for" className="text-bluelink hover:underline">
                         What Are VPNs Used For? 
                   </Link> 
           </li>
           <li className="w-full p-2">4 {" "}
-                  <Link href="https://vpnguide.in/vpn-explained/are-vpn-really-worth-it" className="text-bluelink hover:underline">
+                  <Link href="https://vpns.guide/vpn-explained/are-vpn-really-worth-it" className="text-bluelink hover:underline">
                         Are VPNs Really Worth It? 
                   </Link> 
           </li>

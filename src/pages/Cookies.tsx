@@ -91,7 +91,7 @@ const CookiesPolicy = () => {
           <p className="text-justify text-lg mb-4  font-medium">
             Welcome to{" "}
             <Link
-              href="https://vpnguide.in/"
+              href="https://vpns.guide/"
               className="text-bluelink font-semibold hover:underline"
             >
               www.vpnguide.in

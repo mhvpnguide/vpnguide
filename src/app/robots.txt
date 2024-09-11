@@ -22,4 +22,4 @@ Allow: /contact-us
 User-agent: *
 Disallow: /admin
 
-Sitemap: https://vpnguide.in/sitemap.xml
+Sitemap: https://vpns.guide/sitemap.xml

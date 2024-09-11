@@ -45,10 +45,10 @@ const content1: ContentArray = [
     heading: "Will using a VPN affect my internet speed?",
     content: `
             <p>Using a VPN may impact your internet speed, but some services, such as 
-            <a href="https://vpnguide.in/reviews/cyberghost">Cyber Ghost</a>, 
-            <a href="https://vpnguide.in/reviews/expressvpn">Express Vpn</a>,
-            <a href="https://vpnguide.in/reviews/nordvpn">Nord Vpn</a>,
-            <a href="https://vpnguide.in/reviews/privateinternetaccess">PIA</a>,
+            <a href="https://vpns.guide/reviews/cyberghost">Cyber Ghost</a>, 
+            <a href="https://vpns.guide/reviews/expressvpn">Express Vpn</a>,
+            <a href="https://vpns.guide/reviews/nordvpn">Nord Vpn</a>,
+            <a href="https://vpns.guide/reviews/privateinternetaccess">PIA</a>,
             are designed to minimize this effect and provide optimal performance.</p>
             `,
   },
