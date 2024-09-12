@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="order-1 mb-14 tablet:w-[40%] laptop:w-[50%]">
             <div className="flex justify-start items-center gap-2 text-2xl">
               <Image src="/logo.png" alt="logo" height={50} width={50} />
-              <p className="font-bold text-inherit">VPNGUIDE</p>
+              <p className="font-bold text-inherit">VPNs GUIDE</p>
             </div>
             <p className="pt-5 text-lg laptopl:w-[80%]">We have spent hundreds of hours researching, testing and reviewing VPN services. See our recommendations and protect your online privacy.</p>
           </div>
@@ -89,10 +89,10 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-sm mb-4">
-          vpnguide.in is operated by <Link href="https://velocityclick.in/" className="italic hover:text-blue-700">Velocity Click </Link>.
+          vpns.guide is operated by <Link href="https://velocityclick.in/" className="italic hover:text-blue-700">Velocity Click </Link>.
           </p>
           <p className="text-sm mb-4">
-            vpnguide.in is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>
+            vpns.guide is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>
           </p>
         </div>
         <h6 className="text-center">
