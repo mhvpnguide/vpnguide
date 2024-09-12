@@ -133,7 +133,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
             <div>
               <Image src="/logo.png" alt="logo" height={30} width={30} />
             </div>
-            <p className="font-bold text-inherit">VPNGUIDE</p>
+            <p className="font-bold text-inherit">VPNs GUIDE</p>
           </NavbarBrand>
         </Link>
         {
