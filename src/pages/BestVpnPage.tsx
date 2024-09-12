@@ -142,8 +142,8 @@ const BestVpnPage = () => {
             <div className="flex tablet:px-10 laptop:px-32 py-5 bg-[#F9F6EE]">
                 {/* left */}
                 <div className="tablet:ml-7 content w-full tablet:w-1/2 max-h-fit ">
-                    <h1 className="ml-2 text-lg laptop:text-4xl font-semibold mb-4 mt-5 text-blue-950">{vpnData.title}</h1>
-                    <ul className=" mb-5 text-sm laptop:text-base">
+                    <h1 className="ml-2 text-lg laptop:text-4xl font-semibold mb-5 mt-8 text-blue-950">{vpnData.title}</h1>
+                    <ul className=" mb-8 text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
                                 <li className="tick-list-item ml-3" key={idx} dangerouslySetInnerHTML={{
@@ -155,7 +155,7 @@ const BestVpnPage = () => {
                 </div>
                 {/* right */}
                 <div className="hidden w-1/2  tablet:flex items-stretch">
-                    <div className=" relative w-full">
+                    <div className=" relative w-full h-64">
                         <Image src="/Assests/best-vpn/new_hero_image.svg" layout="fill" className="object-contain" alt="vpn image" /></div>
                 </div>
             </div>
