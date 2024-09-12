@@ -146,7 +146,7 @@ const BestVpnPage = () => {
                     <ul className=" mb-8 text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
-                                <li className="tick-list-item ml-3" key={idx} dangerouslySetInnerHTML={{
+                                <li className="tick-list-item ml-3 mb-[12px]" key={idx} dangerouslySetInnerHTML={{
                                     __html: itm,
                                 }}></li>
                             ))
