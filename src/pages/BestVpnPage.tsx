@@ -21,7 +21,7 @@ interface VPNData {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPNs for India",
+    title: "Best VPNs of 2024",
     list: [
         "Fast servers to browse <b>without,</b> interruptions",
         "Keep your online activity private & secure with a simple IP address change",
