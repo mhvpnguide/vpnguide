@@ -47,7 +47,7 @@ interface NavbarProps {
 
 const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
-  const direc = ["best-vpn", "famous-vpn"];
+  const direc = ["best-vpn", "famous-vpn, best-vpn-for-india"];
 
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
