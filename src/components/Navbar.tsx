@@ -89,7 +89,7 @@ const NavbarComp = () => {
         },
         {
           name: "Best VPN in India",
-          link: "/best-vpn-india",
+          link: "/best-vpn-for-india",
         },
         {
           name: "Best free VPN",
