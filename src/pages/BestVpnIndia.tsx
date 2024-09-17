@@ -30,14 +30,14 @@ const vpnData: VPNData =
     ],
     updatedOn: '17-September-2024',
     slug: [
-        "surfshark",
-        "purevpn",
         "expressvpn",
-        "nordvpn"
+        "purevpn",
+        "nordvpn",
+        "surfshark"
     ],
     bestPlan: [
         "nordvpn",
-        "surfshark",
+        "purevpn",
         "expressvpn",
     ]
 }
