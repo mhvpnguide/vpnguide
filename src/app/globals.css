@@ -17,14 +17,16 @@ nav {
 nav header {
   @apply justify-between gap-10 max-w-full !important;
 }
-nav>header>ul{
+
+nav>header>ul {
   @apply w-full justify-between !important;
 }
-nav>header>ul>ul{
+
+nav>header>ul>ul {
   @apply laptop:justify-center !important;
 }
 
-.button-drop:hover{
+.button-drop:hover {
   background-color: none !important;
 }
 
@@ -45,31 +47,37 @@ nav>header>ul>ul{
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@layer components{
-  .home_heading{
+@layer components {
+  .home_heading {
     @apply text-base md:text-xl font-semibold text-blue-700;
   }
-  .home_subheading{
+
+  .home_subheading {
     @apply text-3xl md:text-4xl tablet:text-3xl font-bold text-center laptop:text-start;
   }
-  .home_headContent{
+
+  .home_headContent {
     @apply text-start text-base font-medium text-grey tablet:text-center laptop:text-start;
   }
-  .home_button{
+
+  .home_button {
     @apply bg-purple px-4 py-2 text-lg w-full md:w-fit text-white font-semibold rounded-xl tablet:mt-2;
   }
-  .hovereff:hover{
+
+  .hovereff:hover {
     transform: translateY(-5px);
     box-shadow: rgba(178, 179, 245, 0.69) 0px 15px 13px 0px, rgba(178, 179, 245, 0.19) 0px 1px 3px 0px inset;
     text-decoration: none;
     background: radial-gradient(circle, transparent 2%, white 2%) center center / 10000% white;
     transition: 1s;
   }
-  .hoverBtn:hover{
+
+  .hoverBtn:hover {
     background-color: #1e2694;
     transition: 1s;
   }
-  .btn-readMore{
+
+  .btn-readMore {
     display: inline-block;
     text-align: center;
     font-size: 1.125rem;
@@ -83,20 +91,22 @@ nav>header>ul>ul{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-position: center;
   }
-  .ContactForm{
+
+  .ContactForm {
     background-color: #f9f9f9;
     box-shadow: 0 0.78px 3.901px 0 rgba(28, 32, 87, 0.5), 0 3.121px 15.604px 0 rgba(28, 32, 87, 0.2);
     border-radius: 5px;
-    padding:24px 12px
+    padding: 24px 12px
   }
-  .contact-Inp
-  {
+
+  .contact-Inp {
     width: 100%;
     background: white;
     border-radius: 5px;
     border: 1px solid transparent;
   }
-  .contact-btn{
+
+  .contact-btn {
     display: inline-block;
     text-align: center;
     font-size: 1.125rem;
@@ -118,25 +128,30 @@ nav>header>ul>ul{
 .tick-list-item {
   list-style-type: none;
   position: relative;
-  padding-left: 1.5em; /* Adjust this value for more or less spacing */
+  padding-left: 1.5em;
+  /* Adjust this value for more or less spacing */
 }
 
 .tick-list-item::before {
   content: '✓';
-  color: #3b82f6; /* Tailwind's blue-500 color */
+  color: #3b82f6;
+  /* Tailwind's blue-500 color */
   font-weight: bold;
   position: absolute;
   left: 0;
 }
+
 .cross-list-item {
   list-style-type: none;
   position: relative;
-  padding-left: 1.5em; /* Adjust this value for more or less spacing */
+  padding-left: 1.5em;
+  /* Adjust this value for more or less spacing */
 }
 
 .cross-list-item::before {
   content: 'x';
-  color: #640000; /* Tailwind's blue-500 color */
+  color: #640000;
+  /* Tailwind's blue-500 color */
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -144,53 +159,64 @@ nav>header>ul>ul{
 
 
 /* ratting */
-.customRating>div>svg{
+.customRating>div>svg {
   @apply tablet:h-14 tablet:w-14 laptop:h-20 laptop:w-20
+}
+.manL>div>svg {
+  width: 80px !important;
+  height: 80px !important;
 }
 
 /* top card */
 
-.customsize{
-  @apply text-sm ;
+.customsize {
+  @apply text-sm;
 }
-.customsize>h2>button div:nth-child(2)>span{
+
+.customsize>h2>button div:nth-child(2)>span {
   @apply text-sm font-semibold;
 }
 
-.customAccr p{
+.customAccr p {
   @apply my-3;
 }
-.customAccr a{
+
+.customAccr a {
   @apply text-blue-600;
 }
 
-.customProgress>div{
+.customProgress>div {
   @apply bg-gray-400;
 }
-.r-9>div>div{
+
+.r-9>div>div {
   @apply bg-warning-500;
 }
-.r-8>div>div{
+
+.r-8>div>div {
   @apply bg-warning-300;
 }
-.r-5>div>div{
+
+.r-5>div>div {
   @apply bg-success-300;
 }
-.r-1>div>div{
+
+.r-1>div>div {
   @apply bg-primary-300;
 }
 
 
-.beforeImage p{
+.beforeImage p {
   @apply my-2
 }
 
 
 
-.company p{
+.company p {
   @apply mb-4 text-xl;
 }
-.company h1{
+
+.company h1 {
   @apply my-4 text-2xl font-bold;
 }
 
@@ -198,41 +224,112 @@ nav>header>ul>ul{
 
 /* guides */
 
-.company h2{
+.company h2 {
   @apply mt-10 mb-6 text-2xl font-bold;
 }
-.company h3{
+
+.company h3 {
   @apply mt-10 mb-3 text-xl font-bold;
 }
-.company h4{
+
+.company h4 {
   @apply mt-10 mb-2 text-lg font-semibold;
 }
-.company p{
+
+.company p {
   @apply mb-4 text-lg;
 }
-.company ul{
+
+.company ul {
   list-style-type: disc;
-  padding-left: 20px;;
+  padding-left: 20px;
+  ;
 }
 
-.company a{
+.company a {
   color: blue;
 }
 
 
 /* vpn-explained */
-.vpn-explained h2{
+.vpn-explained h2 {
   @apply mt-10 mb-6 text-2xl font-bold;
 }
-.vpn-explained h3{
+
+.vpn-explained h3 {
   @apply mt-10 mb-3 text-xl font-bold;
 }
-.vpn-explained p{
+
+.vpn-explained p {
   @apply mb-4 text-lg;
 }
-.vpn-explained h4{
+
+.vpn-explained h4 {
   @apply mt-10 mb-2 text-lg font-semibold;
 }
-.customNavDesign{
-  @apply p-0 ;
+
+.customNavDesign {
+  @apply p-0;
+}
+
+
+/* ---------- swiper  ----------- */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 15px !important;
+  padding-left: 29px !important;
+  padding-right: 29px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 10px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  bottom: -5px !important;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #ffffff !important;
+}
+.swiper-pagination-bullet {
+    background: #ffffff !important;
+}
+
+.swiper-button-prev{
+  left: -1px !important;
+  color: white !important;
+}
+.swiper-button-next{
+  right: -1px !important;
+  color: white !important;
+}
+    
+
+.customAccording>div>h2>button{
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  border-radius: 2px !important;
+}
+
+.customAccording>div{
+  border-radius: 0.5rem !important;
 }

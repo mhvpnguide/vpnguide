@@ -1,3 +1,4 @@
+'use client'
 import { Tooltip } from "@nextui-org/react";
 import { useState } from "react";
 
@@ -33,7 +34,7 @@ const TooltipComp = () => {
             }}
           >
             <button
-              className="text-xs font-semibold text-gray-600 underline"
+              className="text-[8px] laptop:text-xs font-semibold text-gray-600 underline"
               onMouseEnter={() => setTTOpen(true)}
               onMouseLeave={() => setTTOpen(false)}
               onClick={() => setTTOpen((prev) => !prev)}
