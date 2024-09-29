@@ -16,7 +16,7 @@ interface VPNData {
     updatedOn?: string;
     list?: string[];
     slug?: string[];
-    bestPlan?: string[];
+    bestPlan: string[];
     featuredImage: {
         link: String
     }[],
@@ -66,16 +66,10 @@ const vpnData: VPNData =
         "<b>Free trails,</b> discount, refund policies to test them out risk free"
     ],
     updatedOn: '17-September-2024',
-    slug: [
-        "expressvpn",
-        "purevpn",
-        "nordvpn",
-        "surfshark"
-    ],
     bestPlan: [
-        "nordvpn",
-        "purevpn",
         "expressvpn",
+        "openvpn",
+        "cybervpn",
     ],
     // These VPN Services have been featured on:
     featuredImage:
@@ -127,7 +121,7 @@ const vpnData: VPNData =
             "attributes": {
                 "vpn_name": "Express Vpn",
                 "ratting": 3.8,
-                "slug": "expressvpn",
+                "slug": "openvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
                 "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
                 "img": "open.png",
@@ -165,7 +159,7 @@ const vpnData: VPNData =
             "attributes": {
                 "vpn_name": "Express Vpn",
                 "ratting": 9.8,
-                "slug": "expressvpn",
+                "slug": "cybervpn",
                 "offer": "Sign up today & get 3 extra months for free.",
                 "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
                 "img": "cyber.svg",
@@ -213,20 +207,20 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "open.png",
+            "img": "cyber.svg",
             "rating": 9.6,
             "review": "A Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum ex, eligendi vitae iure omnis rem! Porro eum placeat dicta corporis sunt sit consequatur itaque.",
-            "author": "Roma Bose",
+            "author": "Soma Bose",
             "company_link": {
                 "name": "expressvpn.com",
                 "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
             },
         },
         {
-            "img": "open.png",
+            "img": "express.svg",
             "rating": 9.6,
             "review": "A Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum ex, eligendi vitae iure omnis rem! Porro eum placeat dicta corporis sunt sit consequatur itaque.",
-            "author": "Roma Bose",
+            "author": "Rima Bose",
             "company_link": {
                 "name": "expressvpn.com",
                 "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
@@ -366,7 +360,11 @@ const TestVpnPage = () => {
 
                 <div className="flex flex-col tablet:flex-row gap-7">
                     {
-                        vpnData.data?.map((itm: any, idx: number) => (
+                    vpnData.data
+                    .filter((vpn) => vpnData.bestPlan.includes(vpn.attributes.slug))
+                    .sort(
+                      (a, b) => vpnData.bestPlan.indexOf(a.attributes.slug) - vpnData.bestPlan.indexOf(b.attributes.slug)
+                    ).map((itm: any, idx: number) => (
                             <Link key={idx} href={itm.attributes.company_link.value} className={`group relative tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 items-center flex-col flex gap-10 hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"}`} >
                                 {idx == 1 && <div
                                     className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
