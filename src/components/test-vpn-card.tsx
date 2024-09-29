@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaLinux, FaWindows } from "react-icons/fa6";
 import { SiMacos } from "react-icons/si";
 import { IoLogoAndroid } from "react-icons/io";
-import { AiOutlineApple } from 'react-icons/ai';
+import { AiOutlineApple } from "react-icons/ai";
 import { MdOutlinePrivacyTip, MdRouter } from "react-icons/md";
 import CustomCircularProgress from "./CustomCircularRatting";
 import CustomProgress from "./CustomProgressBar";
@@ -63,12 +63,12 @@ interface BlogsProps {
 const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
   // this is for top banner
-  const backgroundColors = ['bg-[#ef4444]', 'bg-[#3b82f6]', 'bg-[#22c55e]', 'bg-[#eab308]', 'bg-[#ec4899]'];
-  const lightBackgroundColors = ['bg-[#f87171]', 'bg-[#60a5fa]', 'bg-[#4ade80]', 'bg-[#facc15]', 'bg-[#c084fc]'];
-  const fontColors = ['text-[#f8fafc]', 'text-[#020617]', 'text-[#374151]', 'text-[#111827]', 'text-[#fef9c3]'];
+  const backgroundColors = ["bg-[#ef4444]", "bg-[#3b82f6]", "bg-[#22c55e]", "bg-[#eab308]", "bg-[#ec4899]"];
+  const lightBackgroundColors = ["bg-[#f87171]", "bg-[#60a5fa]", "bg-[#4ade80]", "bg-[#facc15]", "bg-[#c084fc]"];
+  const fontColors = ["text-[#f8fafc]", "text-[#020617]", "text-[#374151]", "text-[#111827]", "text-[#fef9c3]"];
 
   // this is for circular progress color
-  const circularProgressColor = ['primary', 'secondary', 'success', 'warning', 'danger']
+  const circularProgressColor = ["primary", "secondary", "success", "warning", "danger"]
 
   const getColorByRating = (rating: number) => {
     if (rating >= 9.7 && rating <= 10) return circularProgressColor[0];   // Red
@@ -86,7 +86,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
       {
         blogs.map((blog: Blog, idx: number) => (
           <>
-            <div className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx == 0 ? 'border-2 border-yellow-500 rounded-[9px]' : null}`} key={idx}>
+            <div className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx == 0 ? "border-2 border-yellow-500 rounded-[9px]" : null}`} key={idx}>
 
               {/* top banner */}
               <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
@@ -264,13 +264,13 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
               </div>
 
             </div>
-            <div className={`flex justify-center px-[15px] gap-2 laptop:px-0 text-sm text-center items-center ${idx == 0 ? 'block' : 'hidden'}`}>
+            <div className={`flex justify-center px-[15px] gap-2 laptop:px-0 text-sm text-center items-center ${idx == 0 ? "block" : "hidden"}`}>
               <div>
 
                 <BsFillLightbulbFill className="inline text-green-600 text-[25px] laptop:text-[16px]" />
               </div>
               <p className="text-start">
-                Expert Advice: Protecting your information online is more important than ever. Using a VPN is not only a good idea, it's essential
+                Expert Advice: Protecting your information online is more important than ever. Using a VPN is not only a good idea, it&apos;s essential
               </p>
             </div>
           </>
