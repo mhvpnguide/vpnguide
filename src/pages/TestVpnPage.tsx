@@ -46,12 +46,12 @@ interface VPNData {
         };
     }[],
     reviews: {
-            img: String,
-            rating: number,
-            review: String,
-            author: String,
-            company_link: { name: string; value: string };
-            
+        img: String,
+        rating: number,
+        review: String,
+        author: String,
+        company_link: { name: string; value: string };
+
     }[];
 }
 
@@ -92,7 +92,7 @@ const vpnData: VPNData =
                 "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
                 "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "open.png",
+                "img": "express.svg",
                 "features": [
                     { "value": "Try for 30 days with money-back guarantee" },
                     { "value": "Ultra-fast speed with Zero lag" },
@@ -168,7 +168,7 @@ const vpnData: VPNData =
                 "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
                 "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "open.png",
+                "img": "cyber.svg",
                 "features": [
                     { "value": "Try for 30 days with money-back guarantee" },
                     { "value": "Ultra-fast speed with Zero lag" },
@@ -199,11 +199,12 @@ const vpnData: VPNData =
                 },
             }
         },
+
     ],
     reviews: [
         {
-            "img" : "open.png",
-            "rating":9.6,
+            "img": "open.png",
+            "rating": 9.6,
             "review": "A Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum ex, eligendi vitae iure omnis rem! Porro eum placeat dicta corporis sunt sit consequatur itaque.",
             "author": "Roma Bose",
             "company_link": {
@@ -212,8 +213,8 @@ const vpnData: VPNData =
             },
         },
         {
-            "img" : "open.png",
-            "rating":9.6,
+            "img": "open.png",
+            "rating": 9.6,
             "review": "A Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum ex, eligendi vitae iure omnis rem! Porro eum placeat dicta corporis sunt sit consequatur itaque.",
             "author": "Roma Bose",
             "company_link": {
@@ -222,8 +223,8 @@ const vpnData: VPNData =
             },
         },
         {
-            "img" : "open.png",
-            "rating":9.6,
+            "img": "open.png",
+            "rating": 9.6,
             "review": "A Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum ex, eligendi vitae iure omnis rem! Porro eum placeat dicta corporis sunt sit consequatur itaque.",
             "author": "Roma Bose",
             "company_link": {
@@ -232,8 +233,8 @@ const vpnData: VPNData =
             },
         },
         {
-            "img" : "open.png",
-            "rating":9.6,
+            "img": "open.png",
+            "rating": 9.6,
             "review": "A Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum ex, eligendi vitae iure omnis rem! Porro eum placeat dicta corporis sunt sit consequatur itaque.",
             "author": "Roma Bose",
             "company_link": {
@@ -355,6 +356,7 @@ const TestVpnPage = () => {
 
             </div>
 
+
             {/* Best Plan */}
             <div className="bg-gray-50 p-5 laxptop:mx-48 tablet:mx-4 my-5">
                 <div className="flex flex-col items-center gap-3 mb-10">
@@ -363,14 +365,9 @@ const TestVpnPage = () => {
                 </div>
 
                 <div className="flex flex-col tablet:flex-row gap-7">
-
                     {
                         vpnData.data?.map((itm: any, idx: number) => (
-                            <Link key={idx} href={itm.attributes.company_link.value} className={`group relative tablet:w-1/3 w-full border-2
-            bg-white rounded-md border-white p-5 items-center flex-col flex gap-10 hover:border-yellow-600
-            shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"
-                                }`}>
-
+                            <Link key={idx} href={itm.attributes.company_link.value} className={`group relative tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 items-center flex-col flex gap-10 hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"}`} >
                                 {idx == 1 && <div
                                     className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
                                     <FaCrown className="text-xl" />
@@ -414,26 +411,29 @@ const TestVpnPage = () => {
 
                                 {/* details */}
                                 <p className="laptop:px-5 text-center text-sm font-bold text-blue-600">{itm.attributes.offer}</p>
-                                <Link href={itm.attributes.company_link.value}
-                                    className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link>
+                                {/* <Link href={itm.attributes.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link> */}
+                                <button className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</button>
                             </Link>
                         ))
                     }
+
                 </div>
             </div>
+
 
             {/* card slider */}
             <div className="bg-blue-800 flex flex-col laptop:mx-40 py-5 gap-2">
                 <h1 className="text-center text-white text-[25px]">User Reviews</h1>
                 <h2 className="text-center text-slate-300 text-[15px]">(user reviews are not verified)</h2>
                 <div className="h-fit mx-12 mt-5">
-                    <CardSlider reviews={vpnData.reviews}/>
+                    <CardSlider reviews={vpnData.reviews} />
                 </div>
 
             </div>
 
             {/* faqs */}
             <FAQ />
+
 
         </section>
     );
