@@ -313,7 +313,7 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
         {/* <!-- Tracking (script) --> */}
-        <Script>
+        <Script id="custom-script">
           {`
           var clpconfig = { 
           "clroot" : "https://track.vpns.guide/",
