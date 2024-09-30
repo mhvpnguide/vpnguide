@@ -21,23 +21,24 @@ interface VPNData {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPNs for India",
+    title: "The Best VPNs for India in 2024",
     list: [
-        "Fast servers to browse <b>without,</b> interruptions",
-        "Keep your online activity private & secure with a simple IP address change",
-        "Compatible with all operating systems, popular devices & services",
-        "<b>Free trails,</b> discount, refund policies to test them out risk free"
+        "<b>Fast servers</b> for uninterrupted browsing and streaming in India",
+        "<b>Change your IP address location</b> & use the internet privately & securely",
+        "Connect <b>multiple devices</b> with a single VPN account simultaneously",
+        "<b>Free trials</b>, <b>Discounts</b> and <b>Refund Policies</b> for all VPNs risk-free"
     ],
-    updatedOn: '17-September-2024',
+    updatedOn: '30-September-2024',
     slug: [
+        "cyberghost",
+        "privateinternetaccess",
         "expressvpn",
-        "purevpn",
-        "nordvpn",
+        "surfshark",
         "surfshark"
     ],
     bestPlan: [
-        "nordvpn",
-        "purevpn",
+        "privateinternetaccess",
+        "cyberghost",
         "expressvpn",
     ]
 }
