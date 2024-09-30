@@ -311,6 +311,15 @@ export default function RootLayout({
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
+        {/* <!-- Tracking (script) --> */}
+        <script>var clpconfig = { "clroot" : "https://track.vpns.guide/",  "clcsr" : "1", };
+        </script>
+        <script src="https://track.vpns.guide/landing.js">
+        </script>
+        
+        <script>checkdirect(8,3)</script>
+        {/* <!-- Tracking (script) --> */}
+
         <NextUIProvider>
           <NavbarComp />
           {children}
