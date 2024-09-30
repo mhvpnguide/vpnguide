@@ -7,6 +7,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "../components/Navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -312,8 +313,14 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
         {/* <!-- Tracking (script) --> */}
-        <script>var clpconfig = { "clroot" : "https://track.vpns.guide/",  "clcsr" : "1", };
-        </script>
+        <Script>
+          {`
+          var clpconfig = { 
+          "clroot" : "https://track.vpns.guide/",
+          "clcsr" : "1"
+          };
+          `}
+        </Script>
         <script src="https://track.vpns.guide/landing.js">
         </script>
         
