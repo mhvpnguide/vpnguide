@@ -321,10 +321,31 @@ export default function RootLayout({
           };
           `}
         </Script>
-        <script src="https://track.vpns.guide/landing.js">
-        </script>
-        
-        <script>checkdirect(8,3)</script>
+
+
+        {/* <script src=""></script>
+        <script>checkdirect(8,3)</script> */}
+        <Script
+        src="https://track.vpns.guide/landing.js"
+        strategy="lazyOnload" // Load the script lazily on page load
+        onLoad={() => {
+          console.log("External script loaded, looking for checkdirect...");
+
+          // Use a timeout to retry calling the function in case it's not yet available
+          const checkDirectWithRetry = () => {
+            if (typeof window.checkdirect === "function") {
+              console.log("checkdirect function found, calling it with (8, 3)");
+              window.checkdirect(8, 3);
+            } else {
+              console.warn("checkdirect function not found, retrying...");
+              setTimeout(checkDirectWithRetry, 500); // Retry after 500ms
+            }
+          };
+
+          // Start the retry mechanism
+          checkDirectWithRetry();
+        }}
+      />
         {/* <!-- Tracking (script) --> */}
 
         <NextUIProvider>
