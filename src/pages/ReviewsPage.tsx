@@ -63,7 +63,7 @@ const ReviewsPage = () => {
       );
       setBlogs(filtered);
     }
-  }, [searchQuery, blogs]);
+  }, [searchQuery, initialBlogs]);
 
   return (
     <>
