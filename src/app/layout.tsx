@@ -305,7 +305,7 @@ export default function RootLayout({
             var clpconfig = { "clroot" : "https://track.vpns.guide/",  "clcsr" : "1", };
           `}
         </script>
-        <script src="https://track.vpns.guide/landing.js">
+        <script defer  src="https://track.vpns.guide/landing.js">
         </script>
         <script>checkdirect(8,3)</script>
         {/* <!-- Tracking (script) END--> */}
