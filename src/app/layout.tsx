@@ -298,6 +298,18 @@ export default function RootLayout({
           }}
         />
         {/* <!-- End Google Tag Manager --> */}
+
+        {/* <!-- Tracking (script) --> */}
+        <script>
+          {`
+            var clpconfig = { "clroot" : "https://track.vpns.guide/",  "clcsr" : "1", };
+          `}
+        </script>
+        <script src="https://track.vpns.guide/landing.js">
+        </script>
+        <script>checkdirect(8,3)</script>
+        {/* <!-- Tracking (script) END--> */}
+
       </head>
 
       <body className={inter.className}>
@@ -312,41 +324,14 @@ export default function RootLayout({
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
+
         {/* <!-- Tracking (script) --> */}
-        <Script id="custom-script">
+        <script>
           {`
-          var clpconfig = { 
-          "clroot" : "https://track.vpns.guide/",
-          "clcsr" : "1"
-          };
+            checkdirect(8,3)
           `}
-        </Script>
-
-
-        {/* <script src=""></script>
-        <script>checkdirect(8,3)</script> */}
-        <Script
-        src="https://track.vpns.guide/landing.js"
-        strategy="lazyOnload" // Load the script lazily on page load
-        onLoad={() => {
-          console.log("External script loaded, looking for checkdirect...");
-
-          // Use a timeout to retry calling the function in case it's not yet available
-          const checkDirectWithRetry = () => {
-            if (typeof window.checkdirect === "function") {
-              console.log("checkdirect function found, calling it with (8, 3)");
-              window.checkdirect(8, 3);
-            } else {
-              console.warn("checkdirect function not found, retrying...");
-              setTimeout(checkDirectWithRetry, 500); // Retry after 500ms
-            }
-          };
-
-          // Start the retry mechanism
-          checkDirectWithRetry();
-        }}
-      />
-        {/* <!-- Tracking (script) --> */}
+        </script>
+        {/* <!-- Tracking (script) END--> */}
 
         <NextUIProvider>
           <NavbarComp />

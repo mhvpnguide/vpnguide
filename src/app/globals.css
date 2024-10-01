@@ -162,6 +162,7 @@ nav>header>ul>ul {
 .customRating>div>svg {
   @apply tablet:h-14 tablet:w-14 laptop:h-20 laptop:w-20
 }
+
 .manL>div>svg {
   width: 80px !important;
   height: 80px !important;
@@ -283,16 +284,31 @@ nav>header>ul>ul {
   padding-right: 29px !important;
 }
 
+
+
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
   border-radius: 10px;
+  /* width: 307px !important; */
+  /* margin-right: 160px !important; */
 
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 769px) {
+  .swiper-slide {
+    width: 307px !important;
+    margin-right: 160px !important;
+    /* width: 270px !important;
+    margin-right: 34px !important; */
+
+  }
 }
 
 .swiper-slide img {
@@ -307,28 +323,41 @@ nav>header>ul>ul {
 
 
 .swiper-pagination-bullet-active {
-    background: #ffffff !important;
-}
-.swiper-pagination-bullet {
-    background: #ffffff !important;
+  background: #ffffff !important;
 }
 
-.swiper-button-prev{
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+}
+
+.swiper-button-prev {
   left: -1px !important;
   color: white !important;
 }
-.swiper-button-next{
+
+.swiper-button-next {
   right: -1px !important;
   color: white !important;
 }
-    
 
-.customAccording>div>h2>button{
+
+.customAccording>div>h2>button {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
   border-radius: 2px !important;
 }
 
-.customAccording>div{
+.customAccording>div {
   border-radius: 0.5rem !important;
+}
+
+@media (max-width: 426px) {
+  .customAccording>div {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .customAccording {
+    padding: 0px !important;
+  }
 }

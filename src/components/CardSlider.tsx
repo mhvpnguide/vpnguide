@@ -62,7 +62,7 @@ const CardSlider: React.FC<ReviewProps> = ({ reviews }) => {
         {
           reviews.map((itm, idx) => (
             <SwiperSlide key={idx}>
-              <SwiperCard review={itm}/>
+              <SwiperCard review={itm} />
             </SwiperSlide>
           ))
         }

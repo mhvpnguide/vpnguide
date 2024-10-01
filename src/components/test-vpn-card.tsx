@@ -2,14 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLinux, FaWindows } from "react-icons/fa6";
 import { SiMacos } from "react-icons/si";
-import { IoLogoAndroid } from "react-icons/io";
-import { AiOutlineApple } from "react-icons/ai";
-import { MdOutlinePrivacyTip, MdRouter } from "react-icons/md";
+import { IoLogoAndroid, IoMdSpeedometer } from "react-icons/io";
+import { AiOutlineApple, AiOutlineDollarCircle } from "react-icons/ai";
+import { MdLockOutline, MdOutlinePrivacyTip, MdRouter } from "react-icons/md";
 import CustomCircularProgress from "./CustomCircularRatting";
 import CustomProgress from "./CustomProgressBar";
 import RatingStars from "./CustomStar";
 import { BsFillLightbulbFill } from "react-icons/bs";
 import AccordianComponent from "./AccordianComponent";
+import { CiLock } from "react-icons/ci";
+import { PiUserCircle } from "react-icons/pi";
 
 interface Blog {
   attributes: BlogAttributes;
@@ -25,16 +27,11 @@ interface BlogAttributes {
   company_link: { name: string; value: string };
   top_banner: { value: string }[];
   category_rating: {
-    streaming: number;
-    privacy_and_logging: number;
-    server_location: number;
-    security_and_features: number;
-    customer_support: number;
-    torrenting: number;
-    speed: number;
-    bypassing_censorship: number;
-    ease_of_use: number;
-    price_and_value: number;
+    privacy: number,
+    features: number,
+    speed: number,
+    userScore: number,
+    valueForMoney: number,
   };
 }
 interface BannerItem {
@@ -80,7 +77,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
   return (
-    <section className="px-3 tablet:px-5 flex flex-col gap-4 py-5">
+    <section className="flex flex-col gap-4 laptop:py-[18px] py-[4px]">
 
       {/* review card */}
       {
@@ -109,12 +106,12 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
 
-              <div className="flex laptop:flex-row flex-col">
+              <div className="flex laptop:flex-row flex-col justify-between laptop:px-3 px-1">
 
                 {/* vpn image */}
                 <div className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[30%] laptop:justify-between">
 
-                  <div className="flex justify-between laptop:justify-center pl-3 mb-2 border-b tablet:border-none border-gray-400 tablet:w-full ">
+                  <div className="flex justify-between laptop:justify-center pl-3 border-b tablet:border-none border-gray-400 tablet:w-full ">
                     <div className="w-[55%] flex flex-col">
                       <div className="relative aspect-[2/1] ">
                         <Image src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} fill alt="express" />
@@ -144,14 +141,14 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
                   {/* vpn details */}
                   <div className="hidden laptop:flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
-                    <p className="text-[12px] pb-1 font-bold">{blog.attributes.details}</p>
+                    <p className="text-[12px] pb-1">{blog.attributes.details}</p>
                     <p className="tablet:mt-2 text-sm font-semibold text-blue-600">{blog.attributes.offer}</p>
                   </div>
                 </div>
 
-                <div className="laptop:w-[35%] flex flex-col laptop:justify-between">
+                <div className="laptop:w-fit flex flex-col laptop:justify-between">
                   <p className="laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5">{blog.attributes.offer}</p>
-                  <ul className="ml-6 space-y-2 tablet:my-4">
+                  <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0">
                     {
                       blog.attributes.features.map((subitm: Feature, subidx: number) => (
                         <li className="tick-list-item text-xs laptop:text-sm" key={subidx}>{subitm.value}</li>
@@ -159,7 +156,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                     }
                   </ul>
 
-                  <div className="hidden tablet:flex gap-5 text-gray-400 text-[24px] my-3 ml-6">
+                  <div className="hidden tablet:flex gap-5 text-gray-400 text-[24px] py-2 ml-6">
                     <FaWindows />
                     <SiMacos />
                     <IoLogoAndroid />
@@ -169,62 +166,62 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   </div>
                 </div>
 
-                <div className="hidden laptop:flex laptop:w-[15%]  flex-col gap-4 mt-4">
+                {/* progress bar */}
+                <div className="hidden laptop:flex laptop:w-[160px]  flex-col gap-[10px] my-auto">
                   <div className="flex gap-2">
-                    <MdOutlinePrivacyTip className="text-[20px]" />
+                    <MdLockOutline className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.streaming}</span></div>
+                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.privacy}</span></div>
                       <CustomProgress
-                        value={blog.attributes.category_rating.streaming}
+                        value={blog.attributes.category_rating.privacy}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <MdOutlinePrivacyTip className="text-[20px]" />
+                    <MdOutlinePrivacyTip className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.streaming}</span></div>
+                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Features</span><span>{blog.attributes.category_rating.features}</span></div>
                       <CustomProgress
-                        value={blog.attributes.category_rating.streaming}
+                        value={blog.attributes.category_rating.features}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <MdOutlinePrivacyTip className="text-[20px]" />
+                    <IoMdSpeedometer className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.streaming}</span></div>
+                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Speed</span><span>{blog.attributes.category_rating.speed}</span></div>
                       <CustomProgress
-                        value={blog.attributes.category_rating.streaming}
+                        value={blog.attributes.category_rating.speed}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <MdOutlinePrivacyTip className="text-[20px]" />
+                    <PiUserCircle className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.streaming}</span></div>
+                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>User Score</span><span>{blog.attributes.category_rating.userScore}</span></div>
                       <CustomProgress
-                        value={blog.attributes.category_rating.streaming}
+                        value={blog.attributes.category_rating.userScore}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <MdOutlinePrivacyTip className="text-[20px]" />
+                    <AiOutlineDollarCircle className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.streaming}</span></div>
+                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Value for Money</span><span>{blog.attributes.category_rating.valueForMoney}</span></div>
                       <CustomProgress
-                        value={blog.attributes.category_rating.streaming}
+                        value={blog.attributes.category_rating.valueForMoney}
                         size="sm"
                       />
                     </div>
                   </div>
-
                 </div>
 
                 {/* bottom */}
-                <div className="flex flex-col  my-3  laptop:items-center justify-evenly laptop:w-[20%]">
+                <div className="flex flex-col  my-3  laptop:items-center justify-evenly laptop:w-fit">
 
                   {/* ratting */}
                   <div className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
@@ -252,7 +249,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
 
-                  <div className=" flex justify-center items-center flex-col gap-2 px-2">
+                  <div className=" flex justify-center items-center flex-col gap-2 laptop:px-2">
                     <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="bg-[#fd5522] text-[20px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full">Visit Site {">>"}</Link>
                     <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="hidden laptop:block underline text-gray-500 text-[14px]">{blog.attributes.company_link.name}</Link>
                   </div>
