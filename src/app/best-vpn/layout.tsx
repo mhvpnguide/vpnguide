@@ -27,7 +27,7 @@ export default function bestVpnLayout({
                     }}
                 />
                 
-                <script src="https://track.vpns.guide/landing.js" async />
+                <script async src="https://track.vpns.guide/landing.js"/>
 
                 <script
                     dangerouslySetInnerHTML={{
@@ -43,7 +43,7 @@ export default function bestVpnLayout({
                 {/* <!-- Tracking (script) --> */}
         <script>
           {`
-            checkdirect(8,1)
+            checkdirect(8,3)
           `}
         </script>
         {/* <!-- Tracking (script) END--> */}
