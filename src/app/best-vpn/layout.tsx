@@ -15,7 +15,7 @@ export default function bestVpnLayout({
                     dangerouslySetInnerHTML={{
                         __html: `
                             var clpconfig = {"clroot" : "https://track.vpns.guide/", "clcsr" : "1"};
-                            checkdirect(8,1);
+                            checkdirect(8,3);
                         `,
                     }}
                 />
