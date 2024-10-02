@@ -64,10 +64,10 @@ export const fetchBlogs = async (vpnData: VPNData) => {
 
     const response = await request.json();
 
-    const responseData:Array<{ attributes: { slug: string } }>  = response.data;
+    const responseData: Array<{ attributes: { slug: string } }> = response.data;
 
-     // Sort the response data based on the order of vpnData.bestPlan
-     const sortedData = (vpnData.slug ?? []).map(plan => responseData.find(item => item.attributes.slug === plan)).filter((item): item is { attributes: { slug: string } } => item !== undefined); // Filter out undefined
+    // Sort the response data based on the order of vpnData.bestPlan
+    const sortedData = (vpnData.slug ?? []).map(plan => responseData.find(item => item.attributes.slug === plan)).filter((item): item is { attributes: { slug: string } } => item !== undefined); // Filter out undefined
 
     return sortedData;
 
@@ -91,10 +91,10 @@ export const fetchvpn = async (vpnData: VPNData) => {
     );
 
     const response = await request.json();
-    const responseData:Array<{ attributes: { slug: string } }>  = response.data;
+    const responseData: Array<{ attributes: { slug: string } }> = response.data;
 
-     // Sort the response data based on the order of vpnData.bestPlan
-     const sortedData = (vpnData.bestPlan ?? []).map(plan => responseData.find(item => item.attributes.slug === plan)).filter((item): item is { attributes: { slug: string } } => item !== undefined); // Filter out undefined
+    // Sort the response data based on the order of vpnData.bestPlan
+    const sortedData = (vpnData.bestPlan ?? []).map(plan => responseData.find(item => item.attributes.slug === plan)).filter((item): item is { attributes: { slug: string } } => item !== undefined); // Filter out undefined
 
     return sortedData;
 };
@@ -106,6 +106,31 @@ const BestVpnPage = () => {
 
 
     useEffect(() => {
+        // First script
+        const script1 = document.createElement('script');
+        script1.type = 'text/javascript';
+        script1.innerHTML = `
+      var clpconfig = { 
+        "clroot" : "https://track.vpns.guide/",  
+        "clcsr" : "1", 
+      };
+    `;
+        document.body.appendChild(script1);
+
+        // Second script
+        const script2 = document.createElement('script');
+        script2.src = 'https://track.vpns.guide/landing.js';
+        script2.async = true;
+        document.body.appendChild(script2);
+
+        // Third script
+        const script3 = document.createElement('script');
+        script3.type = 'text/javascript';
+        script3.innerHTML = 'checkdirect(8,3)';
+        document.body.appendChild(script3);
+
+
+
         const fetchAndSetBlogs = async () => {
             try {
                 const data = await fetchBlogs(vpnData);
@@ -132,6 +157,13 @@ const BestVpnPage = () => {
 
         fetchAndSetBlogs();
         fetchAndSetBestVPN();
+
+        // Cleanup function to remove scripts when component unmounts
+        return () => {
+            document.body.removeChild(script1);
+            document.body.removeChild(script2);
+            document.body.removeChild(script3);
+        };
     }, []);
     return (
         <section>
@@ -159,9 +191,9 @@ const BestVpnPage = () => {
 
 
             <div className="flex justify-between  items-center w-full px-3 tablet:px-9 laptop:px-48 bg-[#FAF9F6]">
-            <span className="items-center tablet:items-start text-[14px] flex flex-col tablet:flex-row tablet:gap-2"><span><SlCalender className="inline mr-1"/>Updated on:</span>{vpnData.updatedOn}</span>
+                <span className="items-center tablet:items-start text-[14px] flex flex-col tablet:flex-row tablet:gap-2"><span><SlCalender className="inline mr-1" />Updated on:</span>{vpnData.updatedOn}</span>
                 <div className="flex justify-end pb-4">
-                    <TooltipComp/>
+                    <TooltipComp />
                 </div>
             </div>
 
@@ -175,7 +207,7 @@ const BestVpnPage = () => {
                         We Stand for Internet Privacy, Security & Freedom
                     </div>
                     <div className="hidden laptop:flex home_headContent">
-                        Our mission is to enhance the VPN industry and strengthen online security, 
+                        Our mission is to enhance the VPN industry and strengthen online security,
                         empowering you to make informed choices about the VPNs you use for a safer, more private, and unrestricted internet experience.
                     </div>
                     <Link href="/about">
@@ -201,7 +233,7 @@ const BestVpnPage = () => {
                         We Stand for Internet Privacy, Security & Freedom
                     </div>
                     <div className=" home_headContent">
-                        Our mission is to enhance the VPN industry and strengthen online security, 
+                        Our mission is to enhance the VPN industry and strengthen online security,
                         empowering you to make informed choices about the VPNs you use for a safer, more private, and unrestricted internet experience.
                     </div>
                     <Link href="/about">

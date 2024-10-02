@@ -299,17 +299,6 @@ export default function RootLayout({
         />
         {/* <!-- End Google Tag Manager --> */}
 
-        {/* <!-- Tracking (script) --> */}
-        <script>
-          {`
-            var clpconfig = { "clroot" : "https://track.vpns.guide/",  "clcsr" : "1", };
-          `}
-        </script>
-        <script defer  src="https://track.vpns.guide/landing.js">
-        </script>
-        <script>checkdirect(8,3)</script>
-        {/* <!-- Tracking (script) END--> */}
-
       </head>
 
       <body className={inter.className}>
@@ -323,15 +312,6 @@ export default function RootLayout({
           />
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
-
-
-        {/* <!-- Tracking (script) --> */}
-        <script>
-          {`
-            checkdirect(8,3)
-          `}
-        </script>
-        {/* <!-- Tracking (script) END--> */}
 
         <NextUIProvider>
           <NavbarComp />

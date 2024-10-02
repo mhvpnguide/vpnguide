@@ -1,3 +1,4 @@
+"use client"
 import FAQ from "@/components/FAQ";
 import Image from "next/image";
 import Link from "next/link";
@@ -279,7 +280,10 @@ const vpnData: VPNData =
     ]
 }
 
+
+
 const TestVpnPage = () => {
+    
     return (
         <section className="bg-[#F9F6EE]">
             {/* top section */}
