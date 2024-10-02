@@ -19,7 +19,7 @@ export default function bestVpnLayout({
                         `,
                     }}
                 />
-                <script src="https://track.vpns.guide/landing.js" />
+                <script src="https://track.vpns.guide/landing.js" async />
                 {/* <!-- Tracking (script) END--> */}
                 
             {children}
