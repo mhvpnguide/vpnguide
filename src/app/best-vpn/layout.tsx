@@ -16,6 +16,7 @@ export default function bestVpnLayout({
                 
                 {/* <!-- Tracking (script) --> */}
                 <script
+                    id="clpconfig"
                     dangerouslySetInnerHTML={{
                         __html: `
                             var clpconfig = {
@@ -30,6 +31,7 @@ export default function bestVpnLayout({
                 <script async src="https://track.vpns.guide/landing.js"/>
 
                 <script
+                    id="checkdirect"
                     dangerouslySetInnerHTML={{
                         __html: `
                         checkdirect(8,3);
@@ -41,12 +43,15 @@ export default function bestVpnLayout({
                 {/* <!-- Tracking (script) END--> */}
 
                 {/* <!-- Tracking (script) --> */}
-        <script>
-          {`
-            checkdirect(8,3)
-          `}
-        </script>
-        {/* <!-- Tracking (script) END--> */}
+                   <Script
+                    id="checkdirect-inline"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            checkdirect(8,3);
+                        `,
+                    }}
+                  />
+               {/* <!-- Tracking (script) END--> */}
                 
             </body>
         </section>
