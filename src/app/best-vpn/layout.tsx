@@ -11,18 +11,15 @@ export default function bestVpnLayout({
             
             <body>
                 {/* <!-- Tracking (script) --> */}
-                //Configuration script
-                  <script>
-                    var clpconfig = {"clroot" : "https://track.vpns.guide/",  "clcsr" : "1",};
-                  </script>
-                
-                 //external script
-                  <script src="https://track.vpns.guide/landing.js">
-                  </script>
-
-                 //function call
-                 <script>checkdirect(8,1)
-                 </script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            var clpconfig = {"clroot" : "https://track.vpns.guide/", "clcsr" : "1"};
+                            checkdirect(8,1);
+                        `,
+                    }}
+                />
+                <script src="https://track.vpns.guide/landing.js" />
                 {/* <!-- Tracking (script) END--> */}
                 
             {children}
