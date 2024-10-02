@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function bestVpnLayout({
     children, // will be a page or nested layout
 }: {
@@ -10,6 +12,8 @@ export default function bestVpnLayout({
             </head>
             
             <body>
+                {children}
+                
                 {/* <!-- Tracking (script) --> */}
                 <script
                     dangerouslySetInnerHTML={{
@@ -44,7 +48,6 @@ export default function bestVpnLayout({
         </script>
         {/* <!-- Tracking (script) END--> */}
                 
-            {children}
             </body>
         </section>
     )
