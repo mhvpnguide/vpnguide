@@ -34,7 +34,7 @@ const vpnData: VPNData =
         "privateinternetaccess",
         "expressvpn",
         "surfshark",
-        "surfshark"
+        "purevpn"
     ],
     bestPlan: [
         "privateinternetaccess",
