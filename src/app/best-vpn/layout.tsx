@@ -14,6 +14,7 @@ export default function bestVpnLayout({
                 {children}
             </section>
 
+{/* <!-- ClickFunnel Tracking (script) --> */}
             <Script
                 id="clickmagick-cmc"
                 strategy="afterInteractive"
@@ -33,6 +34,7 @@ export default function bestVpnLayout({
                 src="//cdn.clkmc.com/cmc.js"
                 strategy="afterInteractive"
             />
+        {/* <!-- ClickFunnel Tracking (script) END--> */}
         </>
     )
 }
