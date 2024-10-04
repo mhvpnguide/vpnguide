@@ -10,53 +10,27 @@ export default function bestVpnLayout({
         <section>
             <head>
                 <title>Best VPN of 2024</title>
+
+             {/* <!-- Tracking (script) --> */}
+                <script>
+                  window.clickmagick_cmc = 
+                  {
+                    uid: '202178',
+                    hid: '3519712257',
+                    cmc_project: 'test',
+                    vid_info: 'on',
+                    utm_source: 'organic',
+                  }
+             </script>
+
+               <script src='//cdn.clkmc.com/cmc.js'>
+               </script>
+             {/* <!-- Tracking (script) END--> */} 
+
             </head>
             
             <body>
-                {children}
-                
-                {/* <!-- Tracking (script) --> */}
-                <Script
-                    id="clpconfig"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            var clpconfig = {
-                            "clroot" : "https://track.vpns.guide/",
-                            "engsec" : "30",
-                            "clcsr" : "1"
-                            };
-                        `,
-                    }}
-                />
-                
-                <Script async src="https://track.vpns.guide/landing.js" strategy="afterInteractive"/>
-
-                <Script
-                    id="checkdirect"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        checkdirect(8,3);
-                         `,
-                    }}
-                />
-                        
-                
-                {/* <!-- Tracking (script) END--> */}
-
-                {/* <!-- Tracking (script) --> */}
-                   <Script
-                    id="checkdirect-inline"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            checkdirect(8,3);
-                        `,
-                    }}
-                  />
-               {/* <!-- Tracking (script) END--> */}
-                
+                {children}  
             </body>
         </section>
     )

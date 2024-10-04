@@ -318,6 +318,49 @@ export default function RootLayout({
           {children}
           <Footer />
         </NextUIProvider>
+
+       {/* <!-- Tracking (script) --> */}
+       <Script
+                    id="clpconfig"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            var clpconfig = {
+                            "clroot" : "https://track.vpns.guide/",
+                            "engsec" : "30",
+                            "clcsr" : "1"
+                            };
+                        `,
+                    }}
+                />
+                
+                <Script async src="https://track.vpns.guide/landing.js" strategy="afterInteractive"/>
+
+                <Script
+                    id="checkdirect"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        checkdirect(8,3);
+                         `,
+                    }}
+                />
+                        
+                
+                {/* <!-- Tracking (script) END--> */}
+
+                {/* <!-- Tracking (script) --> */}
+                   <Script
+                    id="checkdirect-inline"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            checkdirect(8,3);
+                        `,
+                    }}
+                  />
+               {/* <!-- Tracking (script) END--> */}
+
       </body>
       <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
       <GoogleTagManager gtmId="GTM-TV8QXFD7" />
