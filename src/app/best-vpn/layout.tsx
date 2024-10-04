@@ -1,5 +1,6 @@
 "use client"
-import Script from "next/script";
+import Head from "next/head"
+import Script from "next/script"
 
 
 export default function bestVpnLayout({
@@ -8,16 +9,16 @@ export default function bestVpnLayout({
     children: React.ReactNode
 }) {
     return (
-        <section>
-            <head>
-                <title>Best VPN of 2024</title>
+        <>
+            <section>
+                {children}
+            </section>
 
-             {/* <!-- Tracking (script) --> */}
-             <Script
-                    id="clickmagick-cmc"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
+            <Script
+                id="clickmagick-cmc"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
                           window.clickmagick_cmc = {
                             uid: '202178',
                             hid: '3519712257',
@@ -26,19 +27,12 @@ export default function bestVpnLayout({
                             utm_source: 'organic',
                           };
                         `,
-                    }}
-                />
-                <Script
-                    src="//cdn.clkmc.com/cmc.js"
-                    strategy="afterInteractive"
-                />
-             {/* <!-- Tracking (script) END--> */} 
-
-            </head>
-            
-            <body>
-                {children}  
-            </body>
-        </section>
+                }}
+            />
+            <Script
+                src="//cdn.clkmc.com/cmc.js"
+                strategy="afterInteractive"
+            />
+        </>
     )
 }
