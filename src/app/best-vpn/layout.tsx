@@ -14,7 +14,52 @@ export default function bestVpnLayout({
                 {children}
             </section>
 
-{/* <!-- ClickFunnel Tracking (script) --> */}
+            {/* <!-- Cpa Tracking (script) --> */}
+                <Script
+                    id="clpconfig"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            var clpconfig = {
+                            "clroot" : "https://track.vpns.guide/",
+                            "clcsr" : "1"
+                            };
+                        `,
+                    }}
+                   />
+                
+                <Script 
+                    src="//track.vpns.guide/landing.js" 
+                    strategy="afterInteractive"
+                />
+                <Script
+                    id="checkdirect"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        checkdirect(8,1);
+                         `,
+                    }}
+                />
+                        
+                
+                {/* <!-- Cpa Tracking (script) END--> */}
+            
+                {/* <!-- Cpa Tracking (script) --> */}
+                   <Script
+                    id="checkdirect-inline"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            checkdirect(8,1);
+                        `,
+                    }}
+                  />
+               {/* <!-- Cpa Tracking (script) END--> */}
+
+            
+
+          {/* <!-- ClickFunnel Tracking (script) --> */}
             <Script
                 id="clickmagick-cmc"
                 strategy="afterInteractive"
