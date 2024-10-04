@@ -45,19 +45,6 @@ export default function bestVpnLayout({
                 
                 {/* <!-- Cpa Tracking (script) END--> */}
             
-                {/* <!-- Cpa Tracking (script) --> */}
-                   <Script
-                    id="checkdirect-inline"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            checkdirect(8,1);
-                        `,
-                    }}
-                  />
-               {/* <!-- Cpa Tracking (script) END--> */}
-
-            
 
           {/* <!-- ClickFunnel Tracking (script) --> */}
             <Script
