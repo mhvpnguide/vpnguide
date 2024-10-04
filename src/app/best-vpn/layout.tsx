@@ -1,3 +1,4 @@
+"use client"
 import Script from "next/script";
 
 export default function bestVpnLayout({
@@ -15,8 +16,9 @@ export default function bestVpnLayout({
                 {children}
                 
                 {/* <!-- Tracking (script) --> */}
-                <script
+                <Script
                     id="clpconfig"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
                             var clpconfig = {
@@ -28,10 +30,11 @@ export default function bestVpnLayout({
                     }}
                 />
                 
-                <script async src="https://track.vpns.guide/landing.js"/>
+                <Script async src="https://track.vpns.guide/landing.js" strategy="afterInteractive"/>
 
-                <script
+                <Script
                     id="checkdirect"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
                         checkdirect(8,3);
@@ -45,6 +48,7 @@ export default function bestVpnLayout({
                 {/* <!-- Tracking (script) --> */}
                    <Script
                     id="checkdirect-inline"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
                             checkdirect(8,3);
