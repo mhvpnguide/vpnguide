@@ -37,7 +37,7 @@ export default function bestVpnLayout({
                     strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
-                        checkdirect(8,1);
+                        setTimeout("checkdirect(8,1)",2000);
                          `,
                     }}
                 />
