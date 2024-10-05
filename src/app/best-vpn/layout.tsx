@@ -1,5 +1,3 @@
-"use client"
-import Head from "next/head"
 import Script from "next/script"
 
 
@@ -15,38 +13,34 @@ export default function bestVpnLayout({
             </section>
 
             {/* <!-- Cpa Tracking (script) --> */}
-                <Script
-                    id="clpconfig"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
+            <Script
+                id="clpconfig"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
                             var clpconfig = {
                             "clroot" : "https://track.vpns.guide/",
                             "clcsr" : "1"
                             };
                         `,
-                    }}
-                   />
-                
-                <Script 
-                    src="//track.vpns.guide/landing.js" 
-                    strategy="afterInteractive"
-                />
-                <Script
-                    id="checkdirect"
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
+                }}
+            />
+            <Script
+                src="//track.vpns.guide/landing.js"
+                strategy="afterInteractive"
+            />
+            <Script
+                id="checkdirect"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
                         setTimeout("checkdirect(8,1)",2000);
                          `,
-                    }}
-                />
-                        
-                
-                {/* <!-- Cpa Tracking (script) END--> */}
-            
+                }}
+            />
+            {/* <!-- Cpa Tracking (script) END--> */}
 
-          {/* <!-- ClickFunnel Tracking (script) --> */}
+            {/* <!-- ClickFunnel Tracking (script) --> */}
             <Script
                 id="clickmagick-cmc"
                 strategy="afterInteractive"
@@ -66,7 +60,7 @@ export default function bestVpnLayout({
                 src="//cdn.clkmc.com/cmc.js"
                 strategy="afterInteractive"
             />
-        {/* <!-- ClickFunnel Tracking (script) END--> */}
+            {/* <!-- ClickFunnel Tracking (script) END--> */}
         </>
     )
 }

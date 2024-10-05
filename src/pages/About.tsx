@@ -46,7 +46,7 @@ const AboutUS = () => {
               <div className="order-3 mt-8">
                 <p className="text-left text-lg mb-4 text-grey font-medium">
                   vpns.guide was established to fight for a{" "}
-                  <b className="className=" ml-2>
+                  <b className=" ml-2">
                     better VPN industry and a freer internet.
                   </b>
                 </p>

@@ -4,6 +4,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Privacy Policy - VPNs Guide',
   description: 'Understand our privacy policy and how we handle your personal information. Learn about data protection and your privacy rights.',
+  keywords: 'About Us, WeGamble Guru, Team, Mission',
+  authors: [{ name: 'WeGamble' }],
 };
 const privacyPolicy = ()=>{
     return(

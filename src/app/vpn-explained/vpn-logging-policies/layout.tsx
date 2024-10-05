@@ -1,6 +1,6 @@
 import Script from "next/script"
 
-export default function aboutUsLayout({
+export default function vpnLoggingPolicyLayout({
   children,
 }: {
   children: React.ReactNode

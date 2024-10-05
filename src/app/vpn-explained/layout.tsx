@@ -4,8 +4,10 @@ export default function vpnExplainedLayout({
     children: React.ReactNode
 }) {
     return (
-        <section>
-            {children}
-        </section>
+        <>
+            <section>
+                {children}
+            </section>
+        </>
     )
 }

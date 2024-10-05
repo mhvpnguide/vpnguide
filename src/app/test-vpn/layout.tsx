@@ -1,11 +1,15 @@
-export default function testVpnLayout({
-    children, // will be a page or nested layout
+import Script from "next/script"
+
+export default function testVpnLayoutreviewLayout({
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode
 }) {
-    return (
-        <section>
-            {children}
-        </section>
-    )
+  return (
+    <>
+      <section>
+        {children}
+      </section>
+    </>
+  )
 }

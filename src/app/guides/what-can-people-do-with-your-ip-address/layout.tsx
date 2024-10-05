@@ -1,6 +1,6 @@
 import Script from "next/script"
 
-export default function aboutUsLayout({
+export default function whatCanPeopleDoLayout({
   children,
 }: {
   children: React.ReactNode
