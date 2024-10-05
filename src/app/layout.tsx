@@ -212,17 +212,20 @@ export default function RootLayout({
         <link rel="browserconfig" href="/browserconfig.xml" />
         {/* <!-- The Web App Manifest --> */}
         <link rel="manifest" href="/site.webmanifest" />
+        
         {/* <!-- SEO Meta Tags --> */}
         <meta
           name="description"
           content="Read our VPN recommendations and advice to protect your internet privacy and security."
         />
         <meta name="author" content="Mohit Singh" />
+        
         {/* <!-- Meta Robots --> */}
         <meta name="robots" content="index, follow" />
+        
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
-        <meta property="og:site_name" content="VPN Guide" /> {/*website name */}
-        <meta property="og:site" content="https://vpnguide.in/" />{" "}
+        <meta property="og:site_name" content="VPNs Guide" /> {/*website name */}
+        <meta property="og:site" content="https://vpns.guide/" />{" "}
         {/*website link */}
         <meta
           property="og:title"
@@ -235,28 +238,16 @@ export default function RootLayout({
         />
         <meta name="author" content="Mohit Singh" />
         {/* <!-- description shown in the actual shared post --> */}
-        <meta property="og:site_name" content="VPN Guide" /> {/*website name */}
-        <meta property="og:site" content="https://vpnguide.in/" />{" "}
-        {/*website link */}
-        <meta
-          property="og:title"
-          content="Read our VPN recommendations and advice to protect your internet privacy and security"
-        />{" "}
-        {/*title shown in the actual shared post */}
-        <meta
-          property="og:description"
-          content="Our VPN experts have spent hundreds of hours researching, testing and reviewing VPN services. See our recommendations and protect your online privacy."
-        />
         <meta property="og:image" content="/logo.png" />{" "}
         {/* image link, make sure it's jpg */}
-        <meta property="og:url" content="https://vpnguide.in/" />{" "}
+        <meta property="og:url" content="https://vpns.guide/" />{" "}
         {/* where do you want your post to link to */}
         <meta property="og:type" content="website" />{" "}
         {/* The type of content (in this case, "website") */}
+        
         {/* canonical tag */}
-        <link rel="canonical" href="https://vpnguide.com" />
-        {/* <meta name="title" content="vpnguie" /> */}
-        {/* <title>vpnguide</title> */}
+        <link rel="canonical" href="https://vpns.guide" />
+        
         {/* Microsost Clarity */}
         <script
           dangerouslySetInnerHTML={{
@@ -269,6 +260,7 @@ export default function RootLayout({
             `,
           }}
         />
+        
         {/* <!-- Google tag (gtag.js) --> */}
         <script
           async
@@ -285,6 +277,7 @@ export default function RootLayout({
               `,
           }}
         />
+        
         {/* <!-- Google Tag Manager --> */}
         <script
           dangerouslySetInnerHTML={{
@@ -302,6 +295,7 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
+        
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
@@ -319,8 +313,10 @@ export default function RootLayout({
           <Footer />
         </NextUIProvider>
       </body>
+      
       <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
       <GoogleTagManager gtmId="GTM-TV8QXFD7" />
+      
     </html>
   );
 }
