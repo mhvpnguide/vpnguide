@@ -28,7 +28,7 @@ const vpnData: VPNData =
         "Connect <b>multiple devices</b> with a single VPN account simultaneously",
         "<b>Free trials</b>, <b>Discounts</b> and <b>Refund Policies</b> for all VPNs risk-free"
     ],
-    updatedOn: '30-September-2024',
+    updatedOn: '06-October-2024',
     slug: [
         "cyberghost",
         "privateinternetaccess",

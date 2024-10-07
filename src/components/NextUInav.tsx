@@ -50,7 +50,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
   const direc = ["best-vpn", "famous-vpn", "best-vpn-for-india","test-vpn"];
   const specialnav: NavItem[] = [
     {
-      mainHeading: "TEST VPN",
+      mainHeading: "BEST VPN",
       subnav: [
         {
           name: "Popular",
@@ -72,7 +72,32 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
     },
     {
       mainHeading: "DEVICE",
-      link:'/contact-us'
+      subnav: [
+        {
+          name: "Popular",
+          link: "",
+        },
+        {
+          name: "Best VPN for Android",
+          link: "/review",
+        },
+        {
+          name: "Best VPN for Iphone",
+          link: "/review",
+        },
+        {
+          name: "Best VPN for Windows",
+          link: "/review",
+        },
+        {
+          name: "Best VPN for Mac",
+          link: "/review",
+        },
+        {
+          name: "Best VPN for Linux",
+          link: "/review",
+        },
+      ],
     },
     {
       mainHeading: "COMPARE",

@@ -4,8 +4,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Terms and Conditions - VPNs Guide',
   description: 'Read the terms and conditions of using our services. Learn about your rights and responsibilities when using our website.',
-  keywords: 'About Us, WeGamble Guru, Team, Mission',
-  authors: [{ name: 'WeGamble' }],
+  keywords: 'VPN, Best Vpn, VPNs Guide, Private browsing, Online security, VPN services, Terms and Condition',
+  authors: [{ name: 'VPNsGuide' }],
+  viewport: 'width=device-width, initial-scale=1',
+  charset: 'UTF-8',
+  robots: 'index, follow',
+  canonical: 'https://vpns.guide/terms-conditions'
+  themeColor: '#f9f6ee',
 };
 const termCondition = ()=>{
     return(
