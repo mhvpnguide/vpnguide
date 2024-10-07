@@ -5,14 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'About us',
-  description: 'Learn more about our company, our mission, and the team behind our success.',
+  description: 'VPNsGUIDE is an independent VPN review website. We provide detailed VPN analysis and research to help protect your internet privacy and security.',
   keywords: 'VPN, Best Vpn, VPNs Guide, Private browsing, Online security, VPN services, About Us',
   authors: [{ name: 'VPNsGuide' }],
   viewport: 'width=device-width, initial-scale=1',
   charset: 'UTF-8',
   robots: 'index, follow',
-  canonical: 'https://vpns.guide/about'
-  themeColor: '#f9f6ee',
+  canonical: 'https://vpns.guide/about',
 };
 const aboutUs = () => {
     return (

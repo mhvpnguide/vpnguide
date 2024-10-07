@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   charset: 'UTF-8',
   robots: 'index, follow',
-  canonical: 'https://vpns.guide/best-vpn'
-  themeColor: '#f9f6ee',
+  canonical: 'https://vpns.guide/best-vpn',
 };
 
 const bestVpn = ()=>{

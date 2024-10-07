@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   charset: 'UTF-8',
   robots: 'index, follow',
-  canonical: 'https://vpns.guide/best-vpn-for-india'
-  themeColor: '#f9f6ee',
+  canonical: 'https://vpns.guide/best-vpn-for-india',
 };
 const bestVpn = ()=>{
     return(
