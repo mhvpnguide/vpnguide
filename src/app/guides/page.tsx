@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   keywords: 'VPN, Best Vpn, VPNs Guide, Private browsing, Online security, VPN services, How to use a VPN for streaming',
   authors: [{ name: 'VPNsGuide' }],
   viewport: 'width=device-width, initial-scale=1',
-  charset: 'UTF-8',
   robots: 'index, follow',
   canonical: 'https://vpns.guide/guides',
 };
