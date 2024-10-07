@@ -8,6 +8,7 @@ export default function bestVpnLayout({
 }) {
     return (
         <>
+            {/* canonical tag */}
             <link rel="canonical" href="https://vpns.guide/best-vpn" />
             <section>
                 {children}

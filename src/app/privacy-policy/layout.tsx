@@ -7,6 +7,8 @@ export default function privacyPageLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/privacy-policy" />
       <section>
         {children}
       </section>

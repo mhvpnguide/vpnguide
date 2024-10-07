@@ -7,6 +7,8 @@ export default function guidesPageLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/guides" />
       <section>
         {children}
       </section>

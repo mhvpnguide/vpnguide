@@ -7,6 +7,8 @@ export default function reviewLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/reviews" />
       <section>
         {children}
       </section>

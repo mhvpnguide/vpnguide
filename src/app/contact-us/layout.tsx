@@ -7,6 +7,8 @@ export default function contactPageLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/contact-us" />
       <section>
         {children}
       </section>

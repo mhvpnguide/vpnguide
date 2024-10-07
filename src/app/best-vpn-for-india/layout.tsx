@@ -7,6 +7,8 @@ export default function bestVpnForIndiaLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/best-vpn-for-india" />
       <section>
         {children}
       </section>

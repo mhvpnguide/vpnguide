@@ -7,6 +7,8 @@ export default function termsLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/terms-conditions" />
       <section>
         {children}
       </section>

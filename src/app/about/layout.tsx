@@ -7,6 +7,8 @@ export default function aboutUsLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/about" />
       <section>
         {children}
       </section>

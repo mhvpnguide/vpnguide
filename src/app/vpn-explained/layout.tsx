@@ -5,6 +5,8 @@ export default function vpnExplainedLayout({
 }) {
     return (
         <>
+        {/* canonical tag */}
+        <link rel="canonical" href="https://vpns.guide/vpn-explained" />
             <section>
                 {children}
             </section>

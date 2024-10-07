@@ -7,6 +7,8 @@ export default function cookiePageLayout({
 }) {
   return (
     <>
+    {/* canonical tag */}
+    <link rel="canonical" href="https://vpns.guide/cookie-policy" />
       <section>
         {children}
       </section>
