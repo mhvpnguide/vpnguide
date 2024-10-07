@@ -245,9 +245,6 @@ export default function RootLayout({
         <meta property="og:type" content="website" />{" "}
         {/* The type of content (in this case, "website") */}
         
-        {/* canonical tag */}
-        <link rel="canonical" href="https://vpns.guide" />
-        
         {/* Microsost Clarity */}
         <script
           dangerouslySetInnerHTML={{
