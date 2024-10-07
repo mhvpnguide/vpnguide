@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'VPNsGuide' }],
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
-  canonical: 'https://vpns.guide/vpn-explained',
 };
 
 const vpnExplained = () => {
