@@ -11,6 +11,8 @@ import TestVpnCard from "@/components/test-vpn-card";
 import { FaUnlockAlt } from "react-icons/fa";
 import RatingStars from "@/components/CustomStar";
 import CardSlider from "@/components/CardSlider";
+import { RxCrossCircled } from "react-icons/rx";
+import { MdOutlineCheckCircle } from "react-icons/md";
 
 interface VPNData {
     title?: string;
@@ -283,11 +285,11 @@ const vpnData: VPNData =
 
 
 const TestVpnPage = () => {
-    
+
     return (
         <section className="bg-[#F9F6EE]">
             {/* top section */}
-            <div className="flex laptop:flex-row flex-col px-[10px] laptop:px-[200px] laptop:py-5 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
+            <div className="flex laptop:flex-row flex-col px-[10px] laptop:px-[200px] laptop:py-2 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
                 {/* left */}
                 <div className="content w-full tablet:w-[52%] max-h-fit ">
                     <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-2">{vpnData.title}</h1>
@@ -341,6 +343,399 @@ const TestVpnPage = () => {
             {/* reviews section */}
             <div className="laptop:px-[200px] px-[10px] bg-[#F9F6EE]">
                 <TestVpnCard blogs={vpnData.data} />
+            </div>
+
+
+
+            {/* comparison section */}
+            <div className="bg-white laptop:mx-[200px] m-[10px] rounded-xl py-2 laptop:py-0 flex flex-col my-10 ">
+                <span className="text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
+                    Compare Top 3 VPN
+                </span>
+
+                {/* compare tabe */}
+                <div className="px-4 py-3">
+
+                    <div className="flex">
+                        <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">Users Review</div>
+                        <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
+                            <div className="relative aspect-[2/1] w-[50%]">
+                                <Image src={`/Assests/test-vpn/vpn/cyber.svg`} fill alt="express" />
+                            </div >
+                            <RatingStars value={10} textSize="sm"/>
+                            <span className="text-[10px] ">
+                                4921 Reviews
+                            </span>
+                        </div>
+                        <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
+                            <div className="relative aspect-[2/1] w-[50%]">
+                                <Image src={`/Assests/test-vpn/vpn/cyber.svg`} fill alt="express" />
+                            </div >
+                            <RatingStars value={10} textSize="sm"/>
+                            <span className="text-[10px] ">
+                                4921 Reviews
+                            </span>
+                        </div>
+                        <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
+                            <div className="relative aspect-[2/1] w-[50%]">
+                                <Image src={`/Assests/test-vpn/vpn/cyber.svg`} fill alt="express" />
+                            </div >
+                            <RatingStars value={10} textSize="sm"/>
+                            <span className="text-[10px] ">
+                                4921 Reviews
+                            </span>
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2">Gaming, Streaming</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2">Gaming, Streaming</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-r-0 border-[#EEF1F9] py-2">Gaming, Streaming</div>
+                    </div>
+
+                    <div className="bg-[#EEF1F9] pl-2">Performance</div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Speed</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
+                            <div className="flex flex-col">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-1">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
+                            <div className="flex flex-col">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Torrenting</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Straming</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Gaming</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-[#EEF1F9] py-2">Ease of Use</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-r-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-[#EEF1F9]  pl-2">Security</div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                            <RxCrossCircled className="text-red-500 text-2xl" />
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                            <RxCrossCircled className="text-red-500 text-2xl" />
+
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
+                            <RxCrossCircled className="text-red-500 text-2xl" />
+
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                            <RxCrossCircled className="text-red-500 text-2xl" />
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                            <RxCrossCircled className="text-red-500 text-2xl" />
+
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
+                            <RxCrossCircled className="text-red-500 text-2xl" />
+
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-3">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-3">
+                            <MdOutlineCheckCircle className="text-green-500 text-2xl" />
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-3">
+                            <MdOutlineCheckCircle className="text-green-500 text-2xl" />
+
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-3">
+                            <MdOutlineCheckCircle className="text-green-500 text-2xl" />
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                            <MdOutlineCheckCircle className="text-green-500 text-2xl" />
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                            <MdOutlineCheckCircle className="text-green-500 text-2xl" />
+                        </div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
+                            <MdOutlineCheckCircle className="text-green-500 text-2xl" />
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Military Grade Encryption</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Military Grade Encryption</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2">Military Grade Encryption</div>
+                    </div>
+
+                    <div className="bg-[#EEF1F9]  pl-2">Valure for Money</div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Military Grade Encryption</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Military Grade Encryption</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2">Military Grade Encryption</div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">83% discount + 3 Months Free</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">83% discount + 3 Months Free</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 text-blue-600">83% discount + 3 Months Free</div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">Best for</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">45 Days</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">45 Days</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-semibold">45 Days</div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-[#EEF1F9] py-2">Ease of Use</div>
+                        <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div> <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div> <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-r-0 border-[#EEF1F9] py-2">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-[10px] text-center">Very Fast (100Mbps)</span>
+                                <div className="flex flex-row gap-2">
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                    <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex">
+                        <div className="flex justify-center items-center flex-1  py-2"></div>
+                        <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-l-2 border-r-2 border-white">
+                            <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
+                        </div>
+                        <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-r-2 border-white">
+                            <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
+                        </div>
+                        <div className="flex items-center flex-1 py-2 bg-[#EEF1F9]">
+                            <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* honest vpn review */}

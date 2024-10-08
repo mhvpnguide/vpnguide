@@ -4,9 +4,10 @@ import { FaStar } from "react-icons/fa6";
 
 interface RatingStarsProps {
   value: number; // Rating value between 0 and 5 (e.g., 4.5)
+  textSize?: string;
 }
 
-const RatingStars = ({ value }: RatingStarsProps) => {
+const RatingStars = ({ value,textSize= '2xl' }: RatingStarsProps) => {
 
   const mvalue = value/2
 
@@ -15,9 +16,9 @@ const RatingStars = ({ value }: RatingStarsProps) => {
     return (
       <span key={index}>
         {mvalue >= index + 1 ? (
-          <FaStar className="text-[#FFC200] text-2xl" />
+          <FaStar className={`text-[#FFC200] text-${textSize}`} />
         ) : mvalue >= number ? (
-          <FaStarHalfAlt className="text-[#FFC200] text-2xl" />
+          <FaStarHalfAlt className={`text-[#FFC200] text-${textSize}`} />
         ) : (
           <AiOutlineStar className="text-[#FFC200] text-[27px]" />
         )}
