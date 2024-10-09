@@ -271,9 +271,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].speed.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -284,9 +284,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].speed.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -297,9 +297,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].speed.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -317,9 +317,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].torrenting.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -330,9 +330,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].torrenting.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -343,9 +343,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].torrenting.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -363,9 +363,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].streaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full"  key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -376,9 +376,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].streaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -389,9 +389,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].streaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full"key={index} />
                                 ))}
                             </div>
                         </div>
@@ -409,9 +409,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].gaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -422,9 +422,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].gaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -435,9 +435,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].gaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -455,9 +455,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].easeOfUse.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -468,9 +468,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].easeOfUse.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -481,9 +481,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].easeOfUse.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -671,9 +671,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].valueForMoney.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -684,9 +684,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].valueForMoney.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -697,9 +697,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].valueForMoney.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -765,9 +765,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].speed.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -785,9 +785,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].torrenting.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -805,9 +805,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].streaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -825,9 +825,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].gaming.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -845,9 +845,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].easeOfUse.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
@@ -962,9 +962,9 @@ const Comparison = () => {
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].valueForMoney.point <= index ?
-                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
+                                        <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
+                                        <div className="h-[18px] w-[18px] bg-green-500 rounded-full" key={index}/>
                                 ))}
                             </div>
                         </div>
