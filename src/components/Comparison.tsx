@@ -1,5 +1,6 @@
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { RxCrossCircled, RxValue } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
 import Image from 'next/image';
@@ -15,7 +16,7 @@ const compareData = [
             noRating: 2921,
         },
         BestFor: {
-            title: "Gaming, Streaming"
+            title: "Gaming, Streaming 1"
         },
         speed: {
             title: "Very Fast (10022Mbps)",
@@ -65,6 +66,9 @@ const compareData = [
             title: "great",
             point: 4
         },
+        link:{
+            vlaue:"https://vpns.guide"
+        }
     },
     {
         usersReview: {
@@ -75,7 +79,7 @@ const compareData = [
             noRating: 3921,
         },
         BestFor: {
-            title: "Gaming, Streaming"
+            title: "Gaming, Streaming 2"
         },
         speed: {
             title: "Very Fast (100Mbps)",
@@ -127,16 +131,21 @@ const compareData = [
             title: "Awsome",
             point: 4
         },
+        link:{
+            vlaue:"https://vpns.guide/best-vpn"
+        }
     },
     {
         usersReview: {
             vpnName: "CyberGhost2",
             logo: "open.png",
+            icon: "open-icon.png",
+
             ratting: 8,
             noRating: 4921,
         },
         BestFor: {
-            title: "Gaming, Streaming"
+            title: "Gaming, Streaming 3"
         },
         speed: {
             title: "Very Fast (100Mbps)",
@@ -188,10 +197,14 @@ const compareData = [
             title: "Outstanding",
             point: 4
         },
+        link:{
+            vlaue:"https://vpns.guide/best-vpn-for-india"
+        }
     },
 ]
 
 const Comparison = () => {
+    const [vpn, setVpn] = useState(0)
     console.log(compareData);
 
     return (
@@ -577,7 +590,7 @@ const Comparison = () => {
                 {/* No IP */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                    <span className='ml-6 font-semibold'>No IP / DNS Leaks</span>
+                        <span className='ml-6 font-semibold'>No IP / DNS Leaks</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -608,7 +621,7 @@ const Comparison = () => {
                 {/* ENCRYPTION */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                    <span className='ml-6 font-semibold'>Encryption</span>
+                        <span className='ml-6 font-semibold'>Encryption</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">{compareData[0].encryption?.value}</div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">{compareData[1].encryption?.value}</div>
@@ -620,7 +633,7 @@ const Comparison = () => {
                 {/* CUSTOMER SUPPORT */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                    <span className='ml-6 font-semibold'>Customer Support</span>
+                        <span className='ml-6 font-semibold'>Customer Support</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">{compareData[0].customerSupport.value}</div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">{compareData[1].customerSupport.value}</div>
@@ -630,7 +643,7 @@ const Comparison = () => {
                 {/* Discount */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                    <span className='ml-6 font-semibold'>Discount</span>
+                        <span className='ml-6 font-semibold'>Discount</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">{compareData[0].discount.value}</div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">{compareData[1].discount.value}</div>
@@ -640,7 +653,7 @@ const Comparison = () => {
                 {/* Money Back */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                    <span className='ml-6 font-semibold'>Money Back Guarantee</span>
+                        <span className='ml-6 font-semibold'>Money Back Guarantee</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[0].moneyBack.value}</div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[1].moneyBack.value}</div>
@@ -650,7 +663,7 @@ const Comparison = () => {
                 {/* value for money */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                    <span className='ml-6 font-semibold'>Ease of Use</span>
+                        <span className='ml-6 font-semibold'>Ease of Use</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
@@ -696,13 +709,13 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex items-center flex-1  py-2"></div>
                     <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-l-2 border-r-2 border-white">
-                        <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
                     </div>
                     <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-r-2 border-white">
-                        <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
                     </div>
                     <div className="flex items-center flex-1 py-2 bg-[#EEF1F9]">
-                        <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px]">Visit Site</Link>
                     </div>
                 </div>
             </div>
@@ -713,19 +726,19 @@ const Comparison = () => {
                 {/* LOGO */}
                 <div className="flex">
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">
-                        <div className="relative aspect-square w-1/3 m-2">
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" />
-                        </div >
-                        <div className="relative aspect-square w-1/3  m-2">
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" />
-                        </div >
-                        <div className="relative aspect-square w-1/3  m-2">
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" />
-                        </div >
+                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==0 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(0) }}>
+                            <Image src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" className='rounded-full'/>
+                        </div>
+                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==1 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(1) }}>
+                            <Image src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" className='rounded-full'/>
+                        </div>
+                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==2 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(2) }}>
+                            <Image src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="express" className='rounded-full'/>
+                        </div>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2">
-                        <span>{compareData[0].usersReview.vpnName} VPN</span>
-                        <RatingStars value={compareData[0].usersReview.ratting} textSize="sm" emptyTextSize="17px" />
+                        <span>{compareData[vpn].usersReview.vpnName} VPN</span>
+                        <RatingStars value={compareData[vpn].usersReview.ratting} textSize="sm" emptyTextSize="17px" />
                     </div>
                 </div>
 
@@ -736,7 +749,7 @@ const Comparison = () => {
                             Best for
                         </span>
                     </div>
-                    <div className="flex justify-center items-center flex-1 border-2 border-t-0  border-r-0 border-[#EEF1F9] py-2">{compareData[0].BestFor.title}</div>
+                    <div className="flex justify-center items-center flex-1 border-2 border-t-0  border-r-0 border-[#EEF1F9] py-2">{compareData[vpn].BestFor.title}</div>
                 </div>
 
                 <div className="bg-[#EEF1F9]">Performance</div>
@@ -748,10 +761,10 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2  border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].speed.title}</span>
+                            <span className="text-[10px] text-center">{compareData[vpn].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
-                                    compareData[0].speed.point <= index ?
+                                    compareData[vpn].speed.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
                                         :
                                         <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
@@ -768,10 +781,10 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].torrenting.title}</span>
+                            <span className="text-[10px] text-center">{compareData[vpn].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
-                                    compareData[0].torrenting.point <= index ?
+                                    compareData[vpn].torrenting.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
                                         :
                                         <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
@@ -788,10 +801,10 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].streaming.title}</span>
+                            <span className="text-[10px] text-center">{compareData[vpn].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
-                                    compareData[0].streaming.point <= index ?
+                                    compareData[vpn].streaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
                                         :
                                         <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
@@ -808,10 +821,10 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].gaming.title}</span>
+                            <span className="text-[10px] text-center">{compareData[vpn].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
-                                    compareData[0].gaming.point <= index ?
+                                    compareData[vpn].gaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
                                         :
                                         <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
@@ -828,10 +841,10 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].easeOfUse.title}</span>
+                            <span className="text-[10px] text-center">{compareData[vpn].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
-                                    compareData[0].easeOfUse.point <= index ?
+                                    compareData[vpn].easeOfUse.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
                                         :
                                         <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
@@ -850,7 +863,7 @@ const Comparison = () => {
                         <span className='ml-3 font-semibold'>Kill Switch</span></div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
-                            compareData[0].killSwitch.value ?
+                            compareData[vpn].killSwitch.value ?
                                 <MdOutlineCheckCircle className="text-green-500 text-2xl" />
                                 :
                                 <RxCrossCircled className="text-red-500 text-2xl" />
@@ -866,7 +879,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
-                            compareData[0].wifiProtections.value ?
+                            compareData[vpn].wifiProtections.value ?
                                 <MdOutlineCheckCircle className="text-green-500 text-2xl" />
                                 :
                                 <RxCrossCircled className="text-red-500 text-2xl" />
@@ -876,12 +889,12 @@ const Comparison = () => {
 
                 {/* No - Logs Policy */}
                 <div className="flex">
-                    <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
+                    <div className="flex items-center flex-1 border-2 border-l-vpn border-b-0 border-[#EEF1F9] py-5">
                         <span className='ml-3 font-semibold'>No - Logs Policy</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
-                            compareData[0].noLogs.value ?
+                            compareData[vpn].noLogs.value ?
                                 <MdOutlineCheckCircle className="text-green-500 text-2xl" />
                                 :
                                 <RxCrossCircled className="text-red-500 text-2xl" />
@@ -896,7 +909,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
-                            compareData[0].noIp.value ?
+                            compareData[vpn].noIp.value ?
                                 <MdOutlineCheckCircle className="text-green-500 text-2xl" />
                                 :
                                 <RxCrossCircled className="text-red-500 text-2xl" />
@@ -909,7 +922,7 @@ const Comparison = () => {
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-3 font-semibold'>Encryption</span>
                     </div>
-                    <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[0].encryption?.value}</div>
+                    <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[vpn].encryption?.value}</div>
                 </div>
 
                 <div className="bg-[#EEF1F9] ">Valure for Money</div>
@@ -919,7 +932,7 @@ const Comparison = () => {
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-3 font-semibold'>Customer Support</span>
                     </div>
-                    <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[0].customerSupport.value}</div>
+                    <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[vpn].customerSupport.value}</div>
                 </div>
 
                 {/* Discount */}
@@ -927,7 +940,7 @@ const Comparison = () => {
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-3 font-semibold'>Discount</span>
                     </div>
-                    <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">{compareData[0].discount.value}</div>
+                    <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">{compareData[vpn].discount.value}</div>
                 </div>
 
                 {/* Money Back */}
@@ -935,7 +948,7 @@ const Comparison = () => {
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-3 font-semibold'>Money Back Guarantee</span>
                     </div>
-                    <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[0].moneyBack.value}</div>
+                    <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[vpn].moneyBack.value}</div>
                 </div>
 
                 {/* Ease of use */}
@@ -945,10 +958,10 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].valueForMoney.title}</span>
+                            <span className="text-[10px] text-center">{compareData[vpn].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
-                                    compareData[0].valueForMoney.point <= index ?
+                                    compareData[vpn].valueForMoney.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-green-500 rounded-full"></div>
                                         :
                                         <div className="h-[18px] w-[18px] bg-green-500 rounded-full" />
@@ -961,7 +974,7 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex justify-center items-center flex-1  py-2 bg-[#EEF1F9] border-r-2 border-white"></div>
                     <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-l-2 border-white">
-                        <Link href="#" className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-2 px-3 py-1 rounded-full mt-auto w-full text-center text-[20px]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[vpn].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-2 px-3 py-1 rounded-full mt-auto w-full text-center text-[20px]">Visit Site</Link>
                     </div>
                 </div>
             </div>
