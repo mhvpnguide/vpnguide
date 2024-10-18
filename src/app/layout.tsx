@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "../components/Footer";
 import { NextUIProvider } from "@nextui-org/react";
@@ -8,8 +7,23 @@ import NavbarComp from "../components/Navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
+import {Kaisei_Tokumin, Kantumruy_Pro,Inknut_Antiqua } from '@next/font/google'
 
-const inter = Inter({ subsets: ["latin"] });
+const kantumruyPro = Kantumruy_Pro({ 
+  subsets: ["latin"],
+  weight: ["400","500","600","700"],
+  variable: '--font-kantumruyPro'
+ });
+const kaiseiTokumin = Kaisei_Tokumin({ 
+  subsets: ["latin"],
+  weight: ["400","500","700"],
+  variable: '--font-kaiseiTokumin'
+ });
+const inknutAntiqua = Inknut_Antiqua({ 
+  subsets: ["latin"],
+  weight: ["400","500","700"],
+  variable: '--font-inknutAntiqua'
+ });
 
 export const metadata: Metadata = {
   // title: "VPN Guide",
@@ -291,7 +305,7 @@ export default function RootLayout({
 
       </head>
 
-      <body className={inter.className}>
+      <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
         
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>

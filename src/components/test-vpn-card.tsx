@@ -10,8 +10,12 @@ import CustomProgress from "./CustomProgressBar";
 import RatingStars from "./CustomStar";
 import { BsFillLightbulbFill } from "react-icons/bs";
 import AccordianComponent from "./AccordianComponent";
-import { CiLock } from "react-icons/ci";
-import { PiUserCircle } from "react-icons/pi";
+import { CiDollar, CiLock, CiUser } from "react-icons/ci";
+import { PiShieldWarningThin, PiSpeedometerThin, PiUserCircle } from "react-icons/pi";
+import { GoShield } from "react-icons/go";
+import { IoShieldCheckmarkOutline, IoSpeedometerOutline } from "react-icons/io5";
+import CustomTestVpnProgressbar from "./CustomTestVpnProgressbar";
+import CustomTestCircularRatting from "./CustomTestCircularRatting";
 
 interface Blog {
   attributes: BlogAttributes;
@@ -60,9 +64,9 @@ interface BlogsProps {
 const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
   // this is for top banner
-  const backgroundColors = ["bg-[#ef4444]", "bg-[#3b82f6]", "bg-[#22c55e]", "bg-[#eab308]", "bg-[#ec4899]"];
-  const lightBackgroundColors = ["bg-[#f87171]", "bg-[#60a5fa]", "bg-[#4ade80]", "bg-[#facc15]", "bg-[#c084fc]"];
-  const fontColors = ["text-[#f8fafc]", "text-[#020617]", "text-[#374151]", "text-[#111827]", "text-[#fef9c3]"];
+  const backgroundColors = ["bg-[#E84803]", "bg-[#00A0B4]", "bg-[#22c55e]", "bg-[#eab308]", "bg-[#ec4899]"];
+  const lightBackgroundColors = ["bg-[#FF8A00]", "bg-[#00C2DA]", "bg-[#4ade80]", "bg-[#facc15]", "bg-[#c084fc]"];
+  const fontColors = ["text-[#FFF]", "text-[#020617]", "text-[#374151]", "text-[#111827]", "text-[#fef9c3]"];
 
   // this is for circular progress color
   const circularProgressColor = ["primary", "secondary", "success", "warning", "danger"]
@@ -83,10 +87,10 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
       {
         blogs.map((blog: Blog, idx: number) => (
           <>
-            <div className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx == 0 ? "border-2 border-yellow-500 rounded-[9px]" : null}`} key={idx}>
+            <div className={`shadow-[0px_0px_10px_0px_#d1d5db] rounded-md bg-white hover:shadow-[0px_0px_8px_8px_#00000024] ${idx == 0 ? "border-2 border-[#E84803] rounded-[9px]" : null}`} key={idx}>
 
               {/* top banner */}
-              <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} w-fit rounded-tl-md flex items-center text-xs laptop:text-sm rounded-br-md`}>
+              <div key={idx} className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} w-fit rounded-tl-[4px] flex items-center text-xs laptop:text-sm rounded-br-md`}>
                 <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
                 {
                   blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
@@ -141,17 +145,18 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
                   {/* vpn details */}
                   <div className="hidden laptop:flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
-                    <p className="text-[12px] pb-1">{blog.attributes.details}</p>
-                    <p className="tablet:mt-2 text-sm font-semibold text-blue-600">{blog.attributes.offer}</p>
+                    <p className="text-[12px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
+                    <p className="tablet:mt-2 text-sm font-semibold text-blue-600 font-kaiseiTokumin">{blog.attributes.offer}</p>
                   </div>
                 </div>
-
+                      
+                {/* List item */}
                 <div className="laptop:w-fit flex flex-col laptop:justify-between">
                   <p className="laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5">{blog.attributes.offer}</p>
                   <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0">
                     {
                       blog.attributes.features.map((subitm: Feature, subidx: number) => (
-                        <li className="tick-list-item text-xs laptop:text-sm" key={subidx}>{subitm.value}</li>
+                        <li className="tick-list-green-item text-xs laptop:text-sm font-kantumruyPro" key={subidx}>{subitm.value}</li>
                       ))
                     }
                   </ul>
@@ -169,50 +174,50 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {/* progress bar */}
                 <div className="hidden laptop:flex laptop:w-[160px]  flex-col gap-[10px] my-auto">
                   <div className="flex gap-2">
-                    <MdLockOutline className="text-[26px]" />
+                    <CiLock  className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.privacy}</span></div>
-                      <CustomProgress
+                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.privacy}</span></div>
+                      <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.privacy}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <MdOutlinePrivacyTip className="text-[26px]" />
+                    <PiShieldWarningThin  className="text-[25px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Features</span><span>{blog.attributes.category_rating.features}</span></div>
-                      <CustomProgress
+                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Features</span><span>{blog.attributes.category_rating.features}</span></div>
+                      <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.features}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <IoMdSpeedometer className="text-[26px]" />
+                    <PiSpeedometerThin   className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Speed</span><span>{blog.attributes.category_rating.speed}</span></div>
-                      <CustomProgress
+                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Speed</span><span>{blog.attributes.category_rating.speed}</span></div>
+                      <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.speed}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <PiUserCircle className="text-[26px]" />
+                    <CiUser className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>User Score</span><span>{blog.attributes.category_rating.userScore}</span></div>
-                      <CustomProgress
+                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>User Score</span><span>{blog.attributes.category_rating.userScore}</span></div>
+                      <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.userScore}
                         size="sm"
                       />
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <AiOutlineDollarCircle className="text-[26px]" />
+                    <CiDollar  className="text-[26px]" />
                     <div className="w-full">
-                      <div className="text-[10px] text-gray-700 flex justify-between pb-1"><span>Value for Money</span><span>{blog.attributes.category_rating.valueForMoney}</span></div>
-                      <CustomProgress
+                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Value for Money</span><span>{blog.attributes.category_rating.valueForMoney}</span></div>
+                      <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.valueForMoney}
                         size="sm"
                       />
@@ -225,7 +230,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
                   {/* ratting */}
                   <div className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
-                    <CustomCircularProgress
+                    <CustomTestCircularRatting
                       size="lg"
                       value={blog.attributes.ratting}
                       color={
@@ -243,18 +248,20 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
                   <div className="laptop:flex hidden justify-center">
-                    <RatingStars value={blog.attributes.ratting} />
+                    <RatingStars value={blog.attributes.ratting} textSize="[20px]" emptyTextSize="[23px]"/>
                   </div>
 
 
 
 
                   <div className=" flex justify-center items-center flex-col gap-2 laptop:px-2">
-                    <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="bg-[#fd5522] text-[20px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full">Visit Site {">>"}</Link>
-                    <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="hidden laptop:block underline text-gray-500 text-[14px]">{blog.attributes.company_link.name}</Link>
+                    <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="bg-[#fd5522] text-[20px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">>"}</Link>
+                    <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="hidden laptop:block underline text-gray-500 text-[10px] font-kantumruyPro">{blog.attributes.company_link.name}</Link>
                   </div>
+
+                  {/* Accordian */}
                   <div className="pt-2 laptop:hidden">
-                    <AccordianComponent blog={blog.attributes.category_rating} />
+                    <AccordianComponent blog={blog.attributes.category_rating} idx={idx}/>
                   </div>
                 </div>
 
@@ -266,7 +273,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
                 <BsFillLightbulbFill className="inline text-green-600 text-[25px] laptop:text-[16px]" />
               </div>
-              <p className="text-start">
+              <p className="text-start font-kantumruyPro font-medium">
                 Expert Advice: Protecting your information online is more important than ever. Using a VPN is not only a good idea, it&apos;s essential
               </p>
             </div>

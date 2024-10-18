@@ -11,7 +11,7 @@ html {
 }
 
 nav {
-  @apply justify-start !important;
+  @apply justify-start h-[55px] drop-shadow-md !important ;
 }
 
 nav header {
@@ -19,11 +19,11 @@ nav header {
 }
 
 nav>header>ul {
-  @apply w-full justify-between !important;
+  @apply w-full justify-between  !important;
 }
 
 nav>header>ul>ul {
-  @apply laptop:justify-center !important;
+  @apply laptop:justify-center gap-10 !important;
 }
 
 .button-drop:hover {
@@ -131,10 +131,24 @@ nav>header>ul>ul {
   padding-left: 1.5em;
   /* Adjust this value for more or less spacing */
 }
+.tick-list-green-item {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5em;
+  /* Adjust this value for more or less spacing */
+}
 
 .tick-list-item::before {
   content: '✓';
   color: #3b82f6;
+  /* Tailwind's blue-500 color */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+.tick-list-green-item::before {
+  content: '✓';
+  color: #04AA63;
   /* Tailwind's blue-500 color */
   font-weight: bold;
   position: absolute;
@@ -186,11 +200,17 @@ nav>header>ul>ul {
   @apply text-blue-600;
 }
 
+.customTestProgress>div {
+  @apply bg-[#088d7a80];
+}
+
+.customTestProgress>div>div {
+  @apply bg-[#04AA63];
+}
+.r-9>div>div {
 .customProgress>div {
   @apply bg-gray-400;
 }
-
-.r-9>div>div {
   @apply bg-warning-500;
 }
 
@@ -209,6 +229,11 @@ nav>header>ul>ul {
 
 .beforeImage p {
   @apply my-2
+}
+
+
+.testCusCir>div>div>svg>circle{
+  stroke-width: 2px;
 }
 
 
@@ -279,9 +304,9 @@ nav>header>ul>ul {
 .swiper {
   width: 100%;
   height: 100%;
-  padding-bottom: 15px !important;
-  padding-left: 29px !important;
-  padding-right: 29px !important;
+  padding-bottom: 25px !important;
+  /* padding-left: 29px !important;
+  padding-right: 29px !important; */
 }
 
 
@@ -292,7 +317,7 @@ nav>header>ul>ul {
   font-size: 18px;
   background: #fff;
   border-radius: 10px;
-  /* width: 307px !important; */
+  width: fit-content !important;
   /* margin-right: 160px !important; */
 
   /* Center slide text vertically */
@@ -301,15 +326,14 @@ nav>header>ul>ul {
   align-items: center;
 }
 
-@media (min-width: 769px) {
-  .swiper-slide {
-    width: 307px !important;
-    margin-right: 160px !important;
+/* @media (min-width: 769px) { */
+  /* .swiper-slide { */
+    /* width: 307px !important; */
+    /* margin-right: 160px !important; */
     /* width: 270px !important;
     margin-right: 34px !important; */
-
-  }
-}
+  /* } */
+/* } */
 
 .swiper-slide img {
   display: block;
@@ -332,13 +356,14 @@ nav>header>ul>ul {
 
 .swiper-button-prev {
   left: -1px !important;
-  color: white !important;
+  color: black !important;
 }
 
 .swiper-button-next {
   right: -1px !important;
-  color: white !important;
+  color: black !important;
 }
+
 
 
 .customAccording>div>h2>button {

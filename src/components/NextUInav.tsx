@@ -47,7 +47,8 @@ interface NavbarProps {
 
 const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
-  const direc = ["best-vpn", "famous-vpn", "best-vpn-for-india","test-vpn"];
+  const direc = ["best-vpn", "famous-vpn", "best-vpn-for-india"];
+  const exclude = ["test-vpn"];
   const specialnav: NavItem[] = [
     {
       mainHeading: "BEST VPN",
@@ -112,7 +113,8 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const pathname = usePathname();
-  const currentPath = pathname?.split('/')[1];
+  const currentPath = pathname?.split('/')[1] || 'home';
+
 
   const icons = {
     chevron: (
@@ -125,6 +127,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
     )
   };
 
+  if((!exclude.includes(currentPath)))
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="W-full">
       <NavbarContent justify="center">
@@ -142,7 +145,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
           </NavbarBrand>
         </Link>
         {
-          !(currentPath && direc.includes(currentPath)) ?
+          !(currentPath && direc.includes(currentPath))?
           // general navbar
             <NavbarContent className="hidden laptop:flex gap-3 w-full">
               {navdata.map((item: NavItem, idx: number) =>

@@ -50,13 +50,15 @@ const CardSlider: React.FC<ReviewProps> = ({ reviews }) => {
   return (
     <>
       <Swiper
-        slidesPerView={windowWidth < 641 ? 1 : (windowWidth < 770 ? 2 : 3)}
+      slidesPerView={'auto'}
+      centeredSlides={true}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
+        loop={true}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Navigation,Pagination]}
         className="mySwiper"
       >
         {

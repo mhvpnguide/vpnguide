@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CustomCircularProgress from "@/components/CustomCircularRatting";
 import BestVpnCard from "@/components/best-vpn-card";
-import { FaCrown } from "react-icons/fa6";
+import { FaCrown, FaIdCard, FaUserLarge } from "react-icons/fa6";
 import TooltipComp from "@/components/TooltipComp";
 import { SlCalender } from "react-icons/sl";
 import TestVpnCard from "@/components/test-vpn-card";
@@ -12,6 +12,11 @@ import { FaUnlockAlt } from "react-icons/fa";
 import RatingStars from "@/components/CustomStar";
 import CardSlider from "@/components/CardSlider";
 import Comparison from "@/components/Comparison";
+import { IoSpeedometer } from "react-icons/io5";
+import { GiReceiveMoney } from "react-icons/gi";
+import { useEffect, useState } from "react";
+import { MdOutlineCheckCircle } from "react-icons/md";
+import { RxCrossCircled } from "react-icons/rx";
 
 
 interface VPNData {
@@ -102,9 +107,9 @@ const vpnData: VPNData =
                     { "value": "Best VPN for 2024" }
                 ],
                 "category_rating": {
-                    "privacy": 9.9,
-                    "features": 9.9,
-                    "speed": 9.9,
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
                     "userScore": 9.9,
                     "valueForMoney": 9.9,
                 },
@@ -285,6 +290,18 @@ const vpnData: VPNData =
 
 
 const TestVpnPage = () => {
+    const [currentDate, setCurrentDate] = useState<string>("");
+
+    useEffect(() => {
+        const today = new Date();
+
+        const day = today.getDate();
+        const month = today.toLocaleString(undefined, { month: "long" });
+        const year = today.getFullYear();
+
+        const formattedDate = `${day}-${month}-${year}`;
+        setCurrentDate(formattedDate);
+    }, []);
 
     return (
         <section className="bg-[#F9F6EE]">
@@ -292,14 +309,14 @@ const TestVpnPage = () => {
             <div className="flex laptop:flex-row flex-col px-[10px] laptop:px-[200px] laptop:py-2 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
                 {/* left */}
                 <div className="content w-full tablet:w-[52%] max-h-fit ">
-                    <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-2">{vpnData.title}</h1>
-                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[13px] ">
+                    <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-2 font-kantumruyPro">{vpnData.title}</h1>
+                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[13px] font-kantumruyPro">
                         September 2024 - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
                     </h2>
                     <ul className=" mb-[30px] text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
-                                <li className="tick-list-item mb-[8px]" key={idx} dangerouslySetInnerHTML={{
+                                <li className="tick-list-green-item mb-[8px] font-kantumruyPro" key={idx} dangerouslySetInnerHTML={{
                                     __html: itm,
                                 }}></li>
                             ))
@@ -307,7 +324,7 @@ const TestVpnPage = () => {
                     </ul>
                     {/* featured section */}
                     <div className="hidden tablet:block">
-                        <span className="">These VPN Services have been featured on:</span>
+                        <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="flex gap-3 ml-2 mt-[10px]">
                             {
                                 vpnData.featuredImage.map((itm, idx) => (
@@ -326,13 +343,13 @@ const TestVpnPage = () => {
             </div>
 
             {/* update date section */}
-            <div className="flex laptop:px-[200px] px-[14px] justify-between  items-center py-[4px] laptop:py-[11.5px] bg-[#fcfcfc] text-xl laptop:text-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+            <div className="flex laptop:px-[200px] px-[14px] justify-between  items-center py-[4px] laptop:py-[6px] bg-[#fcfcfc] text-xl laptop:text-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                 <span className="items-start text-[10px] laptop:text-[16px] flex  tablet:gap-2">
-                    <span className="text-[14px]">
-                        <SlCalender className="inline mr-1 text-[16px]" />Updated on:
+                    <span className="text-[14px] font-kantumruyPro">
+                        <SlCalender className="inline mr-1 text-[16px] " />Updated on:
                     </span>
                     <span className="text-[13px]">
-                        {vpnData.updatedOn}
+                        {currentDate}
                     </span>
                 </span>
                 <div className="flex justify-end">
@@ -348,21 +365,20 @@ const TestVpnPage = () => {
 
 
             {/* comparison section */}
-            <Comparison/>
+            <Comparison />
 
             {/* honest vpn review */}
-            <div className="bg-white laptop:mx-[200px] m-[10px] laptop:m-0 rounded-xl laptop:rounded-none py-2 laptop:py-0">
-                <div className="flex laptop:flex-row flex-col laptop:gap-[60px]  laptop:px-10 px-[10px]">
+            <div className="bg-white laptop:mx-[200px] m-[10px] laptop:m-0 rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
 
+                <div className="flex laptop:flex-row flex-col laptop:gap-[60px]  laptop:px-10 px-[10px]">
                     <h1 className="text-center laptop:hidden font-bold text-[17px]">Honest VPN Reviews Based On Real Testing</h1>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video h-full">
-
                             <Image src="/Assests/test-vpn/honest-vpn-review.png" fill alt="logo" />
                         </div>
                     </div>
                     <div className="flex flex-col laptop:w-[60%] justify-evenly">
-                        <h1 className="hidden laptop:block font-bold text-[23px]">
+                        <h1 className="hidden laptop:block font-bold text-[23px] font-inknutAntiqua ">
                             Honest VPN Reviews Based On Real Testing
                         </h1>
                         <p className="text-[15px]">
@@ -372,30 +388,32 @@ const TestVpnPage = () => {
                     </div>
                 </div>
 
-                <div className="gap-2 laptop:gap-14 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap my-2">
+                <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap my-2">
                     <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[26px]" />Privacy & security
+                        <FaUnlockAlt className="inline text-[25px]" />Privacy & security
                     </div>
                     <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[26px]" />Speed & Performance
+                        <IoSpeedometer className="inline text-[36px]" />Speed & Performance
                     </div>
                     <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[26px]" />Value for Money
+                        <GiReceiveMoney className="inline text-[36px]" />Value for Money
                     </div>
                     <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[26px]" />User Experience
+                        <FaUserLarge className="inline text-[36px]" />User Review & Experience
                     </div>
                     <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[26px]" />Ease of Use
+                        <FaIdCard className="inline text-[25px]" />Ease of Use
                     </div>
                 </div>
 
                 <div className="flex laptop:flex-row flex-col laptop:gap-[60px] laptop:px-10 px-[10px]">
                     <div className="flex flex-col laptop:w-[60%] justify-evenly">
-                        <h1 className="font-bold text-[23px] text-center">Honest VPN Reviews Based On Real Testing</h1>
-                        <p className="text-sm">All VPNs have been reviewed personally by our experts, using our transparent testing
-                            process and rating system to bring you the most reliable and up-to-date recommendations. </p>
-                        <p className="text-sm">Our Testing Process Focuses On:</p>
+                        <h1 className="font-bold text-[23px] text-start font-inknutAntiqua">
+                            We Stand for Internet Privacy, Security & Freedom
+                        </h1>
+                        <p className="text-sm">
+                            We are a team of independent experts with many years of experience in online privacy. We purchase and test every VPN ourselves and provide you with honest, unbiased reviews. Our goal is to help you find the best VPN to keep your online experience secure and private.
+                        </p>
                     </div>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video w-full">
@@ -409,7 +427,7 @@ const TestVpnPage = () => {
 
 
             {/* Best Plan */}
-            <div className="bg-gray-50 p-5 laxptop:mx-48 tablet:mx-[200px] my-10 rounded-[25px]">
+            <div className="bg-gray-50 p-5 laxptop:mx-48 tablet:mx-[200px] my-10 rounded-[25px] shadow-md">
                 <div className="flex flex-col items-center gap-2 mb-10">
                     <h1 className="text-[30px] font-bold">Best VPN Plan</h1>
                     <p>Choose the best BPN with Great Discount</p>
@@ -460,7 +478,7 @@ const TestVpnPage = () => {
                                                 }
 
                                             </p>
-                                            <RatingStars value={itm.attributes.ratting} />
+                                            <RatingStars value={itm.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]"/>
                                             {/* <Rating initialValue={itm.attributes.ratting} /> */}
                                         </div>
                                     </div>
@@ -488,7 +506,22 @@ const TestVpnPage = () => {
             </div>
 
             {/* faqs */}
-            <FAQ />
+            <div className="py-[56px]">
+                <FAQ />
+            </div>
+
+            {/* two button */}
+            <div className="flex flex-col bg-white py-[50px] px-2 laptop:px-0">
+                <h1 className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">Are you ready to secure yourself with worldclass VPN</h1>
+                <div className="flex flex-col laptop:flex-row justify-center laptop:gap-12 gap-5">
+                    <div className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
+                        <MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device NOW</span>
+                    </div>
+                    <div className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
+                        <RxCrossCircled className="text-red-500 text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">No, I need some more time</span>
+                    </div>
+                </div>
+            </div>
 
 
         </section>

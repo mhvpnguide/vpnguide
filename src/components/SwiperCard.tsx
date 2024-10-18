@@ -16,7 +16,7 @@ interface ReviewProps {
 
 const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
   return (
-    <div className='p-2 max-w-[307px]'>
+    <div className='p-2 w-[307px]'>
       {/* top part */}
       <div className='flex items-center flex-col pb-2'>
 
@@ -34,8 +34,7 @@ const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
       </div>
       {/* bottom part */}
       <div className='flex flex-col mx-[4%]'>
-        <Link href={review.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link>
-        <Link href={review.company_link.value} className='text-[10px]'>{review.company_link.name}</Link>
+        <Link href={review.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto text-[21px]">Buy Now</Link>
       </div>
     </div>
   )

@@ -27,6 +27,11 @@ const config: Config = {
         success:"#5cddb4",
         secondary:"#5cdd60"
       },
+      fontFamily:{
+        kantumruyPro: ['var(--font-kantumruyPro)'],
+        kaiseiTokumin: ['--font-kaiseiTokumin'],
+        inknutAntiqua: ['--font-inknutAntiqua']
+      }
     },
   },
   darkMode: "class",

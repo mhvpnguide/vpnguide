@@ -8,7 +8,7 @@ interface RatingStarsProps {
   emptyTextSize?: string;
 }
 
-const RatingStars = ({ value,textSize= '2xl', emptyTextSize='27px' }: RatingStarsProps) => {
+const RatingStars = ({ value,textSize= '2xl', emptyTextSize='[27px]' }: RatingStarsProps) => {
 
   const mvalue = value/2
 
@@ -21,7 +21,7 @@ const RatingStars = ({ value,textSize= '2xl', emptyTextSize='27px' }: RatingStar
         ) : mvalue >= number ? (
           <FaStarHalfAlt className={`text-[#FFC200] text-${textSize}`} />
         ) : (
-          <AiOutlineStar className={`text-[#FFC200] text-[${emptyTextSize}]`} />
+          <AiOutlineStar className={`text-[#FFC200] text-${emptyTextSize}`} />
         )}
       </span>
     );
