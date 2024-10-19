@@ -363,6 +363,12 @@ nav>header>ul>ul {
   right: -1px !important;
   color: black !important;
 }
+@media (max-width: 425px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
 
 
 

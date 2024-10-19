@@ -81,7 +81,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
   return (
-    <section className="flex flex-col gap-4 laptop:py-[18px] py-[4px]">
+    <section className="flex flex-col gap-4 laptop:my-[18px] py-[4px]">
 
       {/* review card */}
       {
@@ -108,20 +108,19 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
               </div>
 
-
-
               <div className="flex laptop:flex-row flex-col justify-between laptop:px-3 px-1">
 
                 {/* vpn image */}
-                <div className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[30%] laptop:justify-between">
+                {/* <div className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:justify-between"> */}
+                <div className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[27%] laptop:justify-between">
 
-                  <div className="flex justify-between laptop:justify-center pl-3 border-b tablet:border-none border-gray-400 tablet:w-full ">
-                    <div className="w-[55%] flex flex-col">
+                  <div className="flex justify-between laptop:justify-center border-b tablet:border-none border-gray-400 tablet:w-full ">
+                    <div className="w-[80%] flex flex-col">
                       <div className="relative aspect-[2/1] ">
                         <Image src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} fill alt="express" />
                       </div >
                       <div className="laptop:hidden flex justify-center pb-3">
-                        <RatingStars value={blog.attributes.ratting} />
+                        <RatingStars value={blog.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]"/>
                       </div>
                     </div>
                     <div className=" laptop:hidden w-[30%] flex justify-center items-center flex-col">
@@ -144,15 +143,15 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   </div>
 
                   {/* vpn details */}
-                  <div className="hidden laptop:flex flex-col justify-center px-3 mb-3 tablet:w-1/2 laptop:w-full">
+                  <div className="hidden laptop:flex flex-col justify-center mb-3 tablet:w-1/2 laptop:w-full">
                     <p className="text-[12px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
-                    <p className="tablet:mt-2 text-sm font-semibold text-blue-600 font-kaiseiTokumin">{blog.attributes.offer}</p>
+                    <p className={`tablet:mt-2 text-sm font-semibold text-blue-600 font-kaiseiTokumin ${idx==0 ? null :'hidden'}`}>{blog.attributes.offer}</p>
                   </div>
                 </div>
                       
                 {/* List item */}
-                <div className="laptop:w-fit flex flex-col laptop:justify-between">
-                  <p className="laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5">{blog.attributes.offer}</p>
+                <div className="laptop:w-[30%] flex flex-col laptop:justify-between">
+                  <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 ${idx==0 ? null :'hidden'}`}>{blog.attributes.offer}</p>
                   <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0">
                     {
                       blog.attributes.features.map((subitm: Feature, subidx: number) => (
@@ -172,7 +171,8 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 {/* progress bar */}
-                <div className="hidden laptop:flex laptop:w-[160px]  flex-col gap-[10px] my-auto">
+                {/* <div className="hidden laptop:flex  flex-col gap-[10px] my-auto"> */}
+                <div className="hidden laptop:flex laptop:w-[15%]  flex-col gap-[10px] my-auto">
                   <div className="flex gap-2">
                     <CiLock  className="text-[26px]" />
                     <div className="w-full">
@@ -226,7 +226,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 {/* bottom */}
-                <div className="flex flex-col  my-3  laptop:items-center justify-evenly laptop:w-fit">
+                <div className="flex flex-col  my-3  laptop:items-center justify-evenly laptopl:w-[20%] laptop:w-[17%]">
 
                   {/* ratting */}
                   <div className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
@@ -248,14 +248,14 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
                   <div className="laptop:flex hidden justify-center">
-                    <RatingStars value={blog.attributes.ratting} textSize="[20px]" emptyTextSize="[23px]"/>
+                    <RatingStars value={blog.attributes.ratting} textSize="[20px] laptop:text-[12px]" emptyTextSize="[23px] laptop:text-[14px]"/>
                   </div>
 
 
 
 
                   <div className=" flex justify-center items-center flex-col gap-2 laptop:px-2">
-                    <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="bg-[#fd5522] text-[20px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">>"}</Link>
+                    <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="bg-[#fd5522] laptopl:text-[20px] laptop:text-[15px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">>"}</Link>
                     <Link target="_blank" href={`${blog.attributes.company_link.value}`} className="hidden laptop:block underline text-gray-500 text-[10px] font-kantumruyPro">{blog.attributes.company_link.name}</Link>
                   </div>
 
@@ -266,11 +266,10 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
               </div>
-
             </div>
+
             <div className={`flex justify-center px-[15px] gap-2 laptop:px-0 text-sm text-center items-center ${idx == 0 ? "block" : "hidden"}`}>
               <div>
-
                 <BsFillLightbulbFill className="inline text-green-600 text-[25px] laptop:text-[16px]" />
               </div>
               <p className="text-start font-kantumruyPro font-medium">

@@ -207,7 +207,7 @@ const Comparison = () => {
     const [vpn, setVpn] = useState(0)
 
     return (
-        <div className="bg-white laptop:mx-[200px] m-[10px] rounded-xl py-2 laptop:py-0 flex flex-col my-10 shadow-md" id='compare'>
+        <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl py-2 laptop:py-0 flex flex-col my-10 shadow-md" id='compare'>
             <span className="text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
                 Compare Top 3 VPN
             </span>

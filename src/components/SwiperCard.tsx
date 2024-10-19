@@ -16,7 +16,7 @@ interface ReviewProps {
 
 const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
   return (
-    <div className='p-2 w-[307px]'>
+    <div className='p-2 laptop:w-[307px] w-[250px]'>
       {/* top part */}
       <div className='flex items-center flex-col pb-2'>
 

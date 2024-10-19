@@ -291,6 +291,7 @@ const vpnData: VPNData =
 
 const TestVpnPage = () => {
     const [currentDate, setCurrentDate] = useState<string>("");
+    const [currentmontY, setCurrentmontY] = useState<string>("");
 
     useEffect(() => {
         const today = new Date();
@@ -300,18 +301,20 @@ const TestVpnPage = () => {
         const year = today.getFullYear();
 
         const formattedDate = `${day}-${month}-${year}`;
+        const formattedMonth = `${month} ${year}`;
         setCurrentDate(formattedDate);
+        setCurrentmontY(formattedMonth);
     }, []);
 
     return (
         <section className="bg-[#F9F6EE]">
             {/* top section */}
-            <div className="flex laptop:flex-row flex-col px-[10px] laptop:px-[200px] laptop:py-2 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
+            <div className="flex laptop:flex-row flex-col laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto laptop:py-2 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
                 {/* left */}
                 <div className="content w-full tablet:w-[52%] max-h-fit ">
                     <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-2 font-kantumruyPro">{vpnData.title}</h1>
                     <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[13px] font-kantumruyPro">
-                        September 2024 - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
+                        {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
                     </h2>
                     <ul className=" mb-[30px] text-sm laptop:text-base">
                         {
@@ -335,7 +338,7 @@ const TestVpnPage = () => {
                     </div>
                 </div>
                 {/* right */}
-                <div className="laptop:w-[48%] w-[full] flex items-center justify-center">
+                <div className="hidden laptop:w-[48%] w-[full] tablet:flex items-center justify-center">
                     <div className=" relative laptop:w-full w-[70%] aspect-video">
                         <Image src="/Assests/best-vpn/new_hero_image.svg" layout="fill" className="object-contain" alt="vpn image" />
                     </div>
@@ -343,22 +346,26 @@ const TestVpnPage = () => {
             </div>
 
             {/* update date section */}
-            <div className="flex laptop:px-[200px] px-[14px] justify-between  items-center py-[4px] laptop:py-[6px] bg-[#fcfcfc] text-xl laptop:text-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-                <span className="items-start text-[10px] laptop:text-[16px] flex  tablet:gap-2">
-                    <span className="text-[14px] font-kantumruyPro">
-                        <SlCalender className="inline mr-1 text-[16px] " />Updated on:
+            <div className="w-full bg-[#fcfcfc] shadow-sm">
+                <div className="flex justify-between laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto items-center py-[4px] laptop:py-[6px] text-xl laptop:text-xl">
+                    <span className="items-start text-[10px] laptop:text-[16px] flex  tablet:gap-2">
+                        <span className="text-[14px] font-kantumruyPro">
+                            <SlCalender className="inline mr-1 text-[16px] " />Updated on:
+                        </span>
+                        <span className="text-[13px]">
+                            {currentDate}
+                        </span>
                     </span>
-                    <span className="text-[13px]">
-                        {currentDate}
-                    </span>
-                </span>
-                <div className="flex justify-end">
-                    <TooltipComp />
+                    <div className="flex justify-end">
+                        <TooltipComp />
+                    </div>
                 </div>
+
             </div>
 
             {/* reviews section */}
-            <div className="laptop:px-[200px] px-[10px] bg-[#F9F6EE]">
+            {/* <div className="laptop:px-[200px]   bg-[#F9F6EE]"> */}
+            <div className="laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto bg-[#F9F6EE]">
                 <TestVpnCard blogs={vpnData.data} />
             </div>
 
@@ -368,7 +375,7 @@ const TestVpnPage = () => {
             <Comparison />
 
             {/* honest vpn review */}
-            <div className="bg-white laptop:mx-[200px] m-[10px] laptop:m-0 rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
+            <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
 
                 <div className="flex laptop:flex-row flex-col laptop:gap-[60px]  laptop:px-10 px-[10px]">
                     <h1 className="text-center laptop:hidden font-bold text-[17px]">Honest VPN Reviews Based On Real Testing</h1>
@@ -389,20 +396,20 @@ const TestVpnPage = () => {
                 </div>
 
                 <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap my-2">
-                    <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[25px]" />Privacy & security
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        <FaUnlockAlt className="inline text-[17px] laptop:text-[25px]" />Privacy & security
                     </div>
-                    <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <IoSpeedometer className="inline text-[36px]" />Speed & Performance
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        <IoSpeedometer className="inline text-[22px] laptop:text-[36px]" />Speed & Performance
                     </div>
-                    <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <GiReceiveMoney className="inline text-[36px]" />Value for Money
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        <GiReceiveMoney className="inline text-[22px] laptop:text-[36px]" />Value for Money
                     </div>
-                    <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUserLarge className="inline text-[36px]" />User Review & Experience
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        <FaUserLarge className="inline text-[20px] laptop:text-[36px]" />User Review & Experience
                     </div>
-                    <div className="w-[48%] flex items-center gap-2 text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaIdCard className="inline text-[25px]" />Ease of Use
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        <FaIdCard className="inline text-[17px] laptop:text-[25px]" />Ease of Use
                     </div>
                 </div>
 
@@ -422,12 +429,11 @@ const TestVpnPage = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
 
             {/* Best Plan */}
-            <div className="bg-gray-50 p-5 laxptop:mx-48 tablet:mx-[200px] my-10 rounded-[25px] shadow-md">
+            <div className="bg-gray-50 p-5 laptopl:max-w-[1060px] px-[10px] laptopl:px-0 my-10 rounded-[25px] shadow-md mx-auto">
                 <div className="flex flex-col items-center gap-2 mb-10">
                     <h1 className="text-[30px] font-bold">Best VPN Plan</h1>
                     <p>Choose the best BPN with Great Discount</p>
@@ -478,7 +484,7 @@ const TestVpnPage = () => {
                                                 }
 
                                             </p>
-                                            <RatingStars value={itm.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]"/>
+                                            <RatingStars value={itm.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
                                             {/* <Rating initialValue={itm.attributes.ratting} /> */}
                                         </div>
                                     </div>
