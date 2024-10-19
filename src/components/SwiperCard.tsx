@@ -20,7 +20,7 @@ const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
       {/* top part */}
       <div className='flex items-center flex-col pb-2'>
 
-        <div className='relative aspect-video w-full'>
+        <div className='relative  w-full aspect-[2/1]'>
           <Image src={`/Assests/test-vpn/vpn/${review.img}`} fill alt="vpn image" />
         </div>
         <RatingStars value={review.rating} />
