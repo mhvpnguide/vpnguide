@@ -9,11 +9,11 @@ import RatingStars from './CustomStar';
 const compareData = [
     {
         usersReview: {
-            vpnName: "CyberGhost1",
-            logo: "cyber.svg",
-            icon: "open-icon.png",
-            ratting: 4,
-            noRating: 2921,
+            vpnName: "Express Vpn",
+            logo: "expressvpn.png",
+            icon: "square_logo_express_vpn.png",
+            ratting: 4.9,
+            noRating: 21,
         },
         BestFor: {
             title: "Gaming, Streaming 1"
@@ -72,11 +72,11 @@ const compareData = [
     },
     {
         usersReview: {
-            vpnName: "CyberGhost2",
-            logo: "express.svg",
-            icon: "open-icon.png",
-            ratting: 6,
-            noRating: 3921,
+            vpnName: "Cyber Ghost",
+            logo: "cyberghost.png",
+            icon: "square_logo_cyberghost.png",
+            ratting: 4.8,
+            noRating: 14,
         },
         BestFor: {
             title: "Gaming, Streaming 2"
@@ -137,12 +137,12 @@ const compareData = [
     },
     {
         usersReview: {
-            vpnName: "CyberGhost2",
-            logo: "open.png",
-            icon: "open-icon.png",
+            vpnName: "Private Internet Access",
+            logo: "privateinternetaccess.png",
+            icon: "square_logo_private_internet_access.png",
 
-            ratting: 8,
-            noRating: 4921,
+            ratting: 4.6,
+            noRating: 11,
         },
         BestFor: {
             title: "Gaming, Streaming 3"

@@ -70,16 +70,18 @@ const vpnData: VPNData =
     ],
     updatedOn: '17-September-2024',
     bestPlan: [
+        "privateinternetaccess",
         "expressvpn",
-        "openvpn",
-        "cybervpn",
+        "cyberghost",
     ],
     // These VPN Services have been featured on:
     featuredImage:
         [
-            { link: "Fox_News_Channel_logo.png" },
-            { link: "Fox_News_Channel_logo.png" },
-            { link: "Fox_News_Channel_logo.png" }
+            { link: "New-York-Times.png" },
+            { link: "Fox-News.png" },
+            { link: "BBC.png" },
+            { link: "CNN.png" },
+            { link: "cnet.png" }
         ],
     data: [
         {
@@ -117,7 +119,7 @@ const vpnData: VPNData =
         },
         {
             "attributes": {
-                "vpn_name": "Express Vpn",
+                "vpn_name": "Pen Vpn",
                 "ratting": 6,
                 "slug": "openvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
@@ -132,7 +134,7 @@ const vpnData: VPNData =
                     { "value": "Easy to use app for all devices" }
                 ],
                 "company_link": {
-                    "name": "expressvpn.com",
+                    "name": "openvpn.net",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
@@ -150,11 +152,11 @@ const vpnData: VPNData =
         },
         {
             "attributes": {
-                "vpn_name": "Express Vpn",
-                "ratting": 9.8,
-                "slug": "cybervpn",
+                "vpn_name": "Cyber Ghost",
+                "ratting": 9.5,
+                "slug": "cyberghost",
                 "offer": "Sign up today & get 3 extra months for free.",
-                "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "details": "CyberGhost: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
                 "img": "cyber.svg",
                 "features": [
                     { "value": "Try for 30 days with money-back guarantee" },
@@ -165,7 +167,7 @@ const vpnData: VPNData =
                     { "value": "Easy to use app for all devices" }
                 ],
                 "company_link": {
-                    "name": "expressvpn.com",
+                    "name": "cyberghost.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
@@ -181,43 +183,291 @@ const vpnData: VPNData =
                 },
             }
         },
+        {
+            "attributes": {
+                "vpn_name": "Private Internet Access",
+                "ratting": 9.2,
+                "slug": "privateinternetaccess",
+                "offer": "Sign up today & get 3 extra months for free.",
+                "details": "PIA: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "privateinternetaccess.png",
+                "features": [
+                    { "value": "Try for 30 days with money-back guarantee" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "privateinternetaccess.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "Free For 30 Days" },
+                    { "value": "Best VPN for 2024" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Nord Vpn",
+                "ratting": 8.9,
+                "slug": "nordvpn",
+                "offer": "Sign up today & get 3 extra months for free.",
+                "details": "NordVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "nordvpn.png",
+                "features": [
+                    { "value": "Try for 30 days with money-back guarantee" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "nordvpn.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "Free For 30 Days" },
+                    { "value": "Best VPN for 2024" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "SurfShark",
+                "ratting": 8.6,
+                "slug": "surfshark",
+                "offer": "Sign up today & get 3 extra months for free.",
+                "details": "SurfShark: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "surfshark.png",
+                "features": [
+                    { "value": "Try for 30 days with money-back guarantee" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "surfshark.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "Free For 30 Days" },
+                    { "value": "Best VPN for 2024" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Total Vpn",
+                "ratting": 8.5,
+                "slug": "totalvpn",
+                "offer": "Sign up today & get 3 extra months for free.",
+                "details": "Total VPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "totalvpn.png",
+                "features": [
+                    { "value": "Try for 30 days with money-back guarantee" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "totalvpn.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "Free For 30 Days" },
+                    { "value": "Best VPN for 2024" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Ip Vanish",
+                "ratting": 8.2,
+                "slug": "ipvanish",
+                "offer": "Sign up today & get 3 extra months for free.",
+                "details": "IpVanish: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "ipvanish.png",
+                "features": [
+                    { "value": "Try for 30 days with money-back guarantee" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "ipvanish.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "Free For 30 Days" },
+                    { "value": "Best VPN for 2024" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Private Vpn",
+                "ratting": 8.0,
+                "slug": "privatevpn",
+                "offer": "Sign up today & get 3 extra months for free.",
+                "details": "PrivateVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "privatevpn.png",
+                "features": [
+                    { "value": "Try for 30 days with money-back guarantee" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "privatevpn.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "Free For 30 Days" },
+                    { "value": "Best VPN for 2024" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
 
     ],
     reviews: [
         {
-            "img": "open.png",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
+            "img": "expressvpn.png",
+            "rating": 9.8,
+            "review": "Review 1 - Express Vpn",
             "author": "Roma Bose",
             "company_link": {
                 "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "value": "https://track.vpns.guide/base2.php?cloid=1001"
             },
         },
         {
-            "img": "cyber.svg",
+            "img": "cyberghost.png",
             "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
+            "review": "Review 2 - CyberGhost",
             "author": "Soma Bose",
             "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1004"
             },
         },
         {
-            "img": "express.svg",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
+            "img": "privateinternetaccess.png",
+            "rating": 9.7,
+            "review": "Review 3 - PIA",
             "author": "Rima Bose",
             "company_link": {
-                "name": "expressvpn.com",
+                "name": "privateinternetaccess.com",
                 "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
             },
         },
         {
-            "img": "open.png",
+            "img": "nordvpn.png",
+            "rating": 9.4,
+            "review": "Review 4 - Nord Vpn",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "nordvpn.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "surfshark.png",
+            "rating": 9.3,
+            "review": "Review 5 - Surf Shark",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "surfshark.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "totalvpn.png",
+            "rating": 9.2,
+            "review": "Review 6 - Total Vpn",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "totalvpn.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "ipvanish.png",
             "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
+            "review": "Review 7 - Ip Vanish",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "ipvanish.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "privatevpn.png",
+            "rating": 9.5,
+            "review": "Review 8 - Private Vpn",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "privatevpn.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "expressvpn.png",
+            "rating": 9.6,
+            "review": "Review 9 - Express Vpn",
             "author": "Roma Bose",
             "company_link": {
                 "name": "expressvpn.com",
@@ -225,62 +475,12 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "open.png",
+            "img": "cyberghost.png",
             "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
+            "review": "Review 10 - Cyber Ghost",
             "author": "Roma Bose",
             "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "open.png",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "open.png",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "open.png",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "open.png",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "open.png",
-            "rating": 9.6,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny!",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
+                "name": "cyberghost.com",
                 "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
             },
         },
@@ -340,7 +540,7 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden laptop:w-[48%] w-[full] tablet:flex items-center justify-center">
                     <div className=" relative laptop:w-full w-[70%] aspect-video">
-                        <Image src="/Assests/best-vpn/new_hero_image.svg" layout="fill" className="object-contain" alt="vpn image" />
+                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain" alt="vpn image" />
                     </div>
                 </div>
             </div>
@@ -381,7 +581,7 @@ const TestVpnPage = () => {
                     <h1 className="text-center laptop:hidden font-bold text-[17px]">Honest VPN Reviews Based On Real Testing</h1>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video h-full">
-                            <Image src="/Assests/test-vpn/honest-vpn-review.png" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/Review.png" fill alt="logo" />
                         </div>
                     </div>
                     <div className="flex flex-col laptop:w-[60%] justify-evenly">
@@ -425,7 +625,7 @@ const TestVpnPage = () => {
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video w-full">
 
-                            <Image src="/Assests/test-vpn/honest-vpn-review.png" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/About.png" fill alt="logo" />
                         </div>
                     </div>
                 </div>

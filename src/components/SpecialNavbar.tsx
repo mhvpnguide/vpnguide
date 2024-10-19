@@ -83,14 +83,6 @@ const SpecialNavbar = () => {
                     name: "Best VPN for Linux",
                     link: "/review",
                 },
-                {
-                    name: "Best VPN for Linux",
-                    link: "/review",
-                },
-                {
-                    name: "Best VPN for Linux",
-                    link: "/review",
-                },
             ],
         },
         {
