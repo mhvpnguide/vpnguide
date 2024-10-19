@@ -75,10 +75,6 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
       mainHeading: "DEVICE",
       subnav: [
         {
-          name: "Popular",
-          link: "",
-        },
-        {
           name: "Best VPN for Android",
           link: "/review",
         },
@@ -101,11 +97,11 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
       ],
     },
     {
-      mainHeading: "COMPARE",
-      link:'/contact-us'
+      mainHeading: "About",
+      link:'/about'
     },
     {
-      mainHeading: "FAQ",
+      mainHeading: "Contact",
       link:'/contact-us'
     },
   ]
