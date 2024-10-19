@@ -72,7 +72,7 @@ const vpnData: VPNData =
     bestPlan: [
         "privateinternetaccess",
         "expressvpn",
-        "cybervpn",
+        "cyberghost",
     ],
     // These VPN Services have been featured on:
     featuredImage:
@@ -465,7 +465,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "express.png",
+            "img": "expressvpn.png",
             "rating": 9.6,
             "review": "Review 9 - Express Vpn",
             "author": "Roma Bose",
