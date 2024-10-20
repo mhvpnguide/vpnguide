@@ -86,19 +86,19 @@ const vpnData: VPNData =
     data: [
         {
             "attributes": {
-                "vpn_name": "Express Vpn",
+                "vpn_name": "Cyber Ghost",
                 "ratting": 9.8,
-                "slug": "expressvpn",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "express.svg",
+                "slug": "cyberghost",
+                "offer": "Offer: 83% discount + 4 Months Free",
+                "details": "Cyber Ghost: 256-bit encryption, fast speeds, global coverage, and 24/7 customer support. Suberb!",
+                "img": "cyber.svg",
                 "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "Free for 45 days with money-back guarantee" },
+                    { "value": "Secure, Hides your Online activity" },
+                    { "value": "Ultra-fast speed for all devices" },
+                    { "value": "Strict no-logs policy to keep you safe" },
                     { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
+                    { "value": "11690+ servers in 105 countries" }
                 ],
                 "company_link": {
                     "name": "expressvpn.com",
@@ -117,93 +117,27 @@ const vpnData: VPNData =
         },
         {
             "attributes": {
-                "vpn_name": "Pen Vpn",
-                "ratting": 6,
-                "slug": "openvpn",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "ExpressVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "open.png",
-                "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
-                ],
-                "company_link": {
-                    "name": "openvpn.net",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-                },
-                "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
-                ],
-                "category_rating": {
-                    "privacy": 9.9,
-                    "features": 9.9,
-                    "speed": 9.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
-                },
-            }
-        },
-        {
-            "attributes": {
-                "vpn_name": "Cyber Ghost",
-                "ratting": 9.5,
-                "slug": "cyberghost",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "CyberGhost: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "cyber.svg",
-                "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
-                ],
-                "company_link": {
-                    "name": "cyberghost.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-                },
-                "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
-                ],
-                "category_rating": {
-                    "privacy": 9.9,
-                    "features": 9.9,
-                    "speed": 9.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
-                },
-            }
-        },
-        {
-            "attributes": {
                 "vpn_name": "Private Internet Access",
-                "ratting": 9.2,
+                "ratting": 9.5,
                 "slug": "privateinternetaccess",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "PIA: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "offer": "Ad and Tracker Blocker for Free",
+                "details": "PIA: Fast speed, Strong encryption and no-logs policy",
                 "img": "privateinternetaccess.png",
                 "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
+                    { "value": "Suberb for Private Internet Browsing" },
+                    { "value": "Connects upto 10 devices simultaneously" },
+                    { "value": "Try it free for 30 days" },
+                    { "value": "Strict no-logs and no IP leaks" },
+                    { "value": "Connects on unlimited devices with 1 license" },
+                    { "value": "Servers in 91 countries" }
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
+                    { "value": "Cheapest VPN" },
+                    { "value": "@ $2.03/Months Only!" }
                 ],
                 "category_rating": {
                     "privacy": 3.9,
@@ -216,12 +150,12 @@ const vpnData: VPNData =
         },
         {
             "attributes": {
-                "vpn_name": "Nord Vpn",
-                "ratting": 8.9,
-                "slug": "nordvpn",
+                "vpn_name": "Express Vpn",
+                "ratting": 9.2,
+                "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
-                "details": "NordVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "nordvpn.png",
+                "details": "EXPRESS VPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "img": "expressvpn.png",
                 "features": [
                     { "value": "Try for 30 days with money-back guarantee" },
                     { "value": "Ultra-fast speed with Zero lag" },
@@ -231,12 +165,12 @@ const vpnData: VPNData =
                     { "value": "Easy to use app for all devices" }
                 ],
                 "company_link": {
-                    "name": "nordvpn.com",
+                    "name": "expressvpn.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
+                    { "value": "" },
+                    { "value": "" }
                 ],
                 "category_rating": {
                     "privacy": 3.9,
@@ -250,26 +184,55 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "SurfShark",
-                "ratting": 8.6,
+                "ratting": 8.9,
                 "slug": "surfshark",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "SurfShark: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "offer": "",
+                "details": "SurfShark: User-friendly VPN for beginners. Strong security & privacy features.",
                 "img": "surfshark.png",
                 "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
+                    { "value": "Excellent customer support" },
+                    { "value": "Good downloading speed" },
+                    { "value": "Chrome & Firefox extension" },
+                    { "value": "Free trial for 30 Days" }
                 ],
                 "company_link": {
                     "name": "surfshark.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
+                    { "value": "" },
+                    { "value": "" }
+                ],
+                "category_rating": {
+                    "privacy": 3.9,
+                    "features": 2.9,
+                    "speed": 5.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Pure Vpn",
+                "ratting": 8.6,
+                "slug": "purevpn",
+                "offer": "",
+                "details": "Pure Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
+                "img": "purevpn.png",
+                "features": [
+                    { "value": "Free for 30 Days with Money-Back Guarantee" },
+                    { "value": "Secure, Hides your online activity" },
+                    { "value": "Ultra-fast speed for all devices" },
+                    { "value": "Strict no-logs policy to keep you safe" }
+                ],
+                "company_link": {
+                    "name": "purevpn.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "top_banner": [
+                    { "value": "" },
+                    { "value": "" }
                 ],
                 "category_rating": {
                     "privacy": 3.9,
@@ -285,24 +248,22 @@ const vpnData: VPNData =
                 "vpn_name": "Total Vpn",
                 "ratting": 8.5,
                 "slug": "totalvpn",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "Total VPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "offer": "",
+                "details": "Total Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
                 "img": "totalvpn.png",
                 "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
+                    { "value": "Excellent customer support" },
+                    { "value": "Good downloading speed" },
+                    { "value": "Chrome & Firefox extension" },
+                    { "value": "Free trial for 30 Days" }
                 ],
                 "company_link": {
                     "name": "totalvpn.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
+                    { "value": "" },
+                    { "value": "" }
                 ],
                 "category_rating": {
                     "privacy": 3.9,
@@ -313,72 +274,8 @@ const vpnData: VPNData =
                 },
             }
         },
-        {
-            "attributes": {
-                "vpn_name": "Ip Vanish",
-                "ratting": 8.2,
-                "slug": "ipvanish",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "IpVanish: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "ipvanish.png",
-                "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
-                ],
-                "company_link": {
-                    "name": "ipvanish.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-                },
-                "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
-                ],
-                "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
-                },
-            }
-        },
-        {
-            "attributes": {
-                "vpn_name": "Private Vpn",
-                "ratting": 8.0,
-                "slug": "privatevpn",
-                "offer": "Sign up today & get 3 extra months for free.",
-                "details": "PrivateVPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
-                "img": "privatevpn.png",
-                "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
-                ],
-                "company_link": {
-                    "name": "privatevpn.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-                },
-                "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
-                ],
-                "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
-                },
-            }
-        },
+
+        
 
     ],
     reviews: [
