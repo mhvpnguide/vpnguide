@@ -105,8 +105,6 @@ const vpnData: VPNData =
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "Free For 30 Days" },
-                    { "value": "Best VPN for 2024" }
                 ],
                 "category_rating": {
                     "privacy": 3.9,
@@ -529,11 +527,18 @@ const TestVpnPage = () => {
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="flex gap-3 ml-2 mt-[10px]">
-                            {
-                                vpnData.featuredImage.map((itm, idx) => (
-                                    <Image src={`/Assests/test-vpn/${itm.link}`} key={idx} height={30} width={30} alt="logo" className="filter grayscale" />
-                                ))
-                            }
+                            <div className="h-[30px] relative w-[105px]">
+                                <Image src={`/Assests/test-vpn/New-York-Times.png`} alt="logo" className="filter grayscale object-contain w-full" fill />
+                            </div>
+                            <div className="h-[30px] relative w-[40px]">
+                                <Image src={`/Assests/test-vpn/BBC.png`} alt="logo" className="filter grayscale  w-full" fill />
+                            </div>
+                            <div className="h-[30px] relative w-[30px]">
+                                <Image src={`/Assests/test-vpn/cnet.png`} alt="logo" className="filter grayscale w-full" fill />
+                            </div>
+                            <div className="h-[30px] relative w-[30px]">
+                                <Image src={`/Assests/test-vpn/Fox-News.png`} alt="logo" className="filter grayscale " fill />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -578,7 +583,8 @@ const TestVpnPage = () => {
             <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
 
                 <div className="flex laptop:flex-row flex-col laptop:gap-[60px]  laptop:px-10 px-[10px]">
-                    <h1 className="text-center laptop:hidden font-bold text-[17px]">Honest VPN Reviews Based On Real Testing</h1>
+                    {/* heading for mobile view */}
+                    <h1 className="text-center laptop:hidden font-bold text-[23px] font-inknutAntiqua">Honest VPN Reviews Based On Real Testing</h1>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video h-full">
                             <Image src="/Assests/test-vpn/Review.png" fill alt="logo" />
@@ -595,7 +601,7 @@ const TestVpnPage = () => {
                     </div>
                 </div>
 
-                <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap my-2">
+                <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap laptop:my-2 my-5">
                     <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
                         <FaUnlockAlt className="inline text-[17px] laptop:text-[25px]" />Privacy & security
                     </div>
@@ -646,7 +652,7 @@ const TestVpnPage = () => {
                             .sort(
                                 (a, b) => vpnData.bestPlan.indexOf(a.attributes.slug) - vpnData.bestPlan.indexOf(b.attributes.slug)
                             ).map((itm: any, idx: number) => (
-                                <Link key={idx} href={itm.attributes.company_link.value} className={`group relative gap-4 tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 items-center flex-col flex hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"}`} >
+                                <Link key={idx} target="_blank" href={itm.attributes.company_link.value} className={`group relative gap-4 tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 items-center flex-col flex hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"}`} >
                                     {idx == 1 && <div
                                         className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
                                         <FaCrown className="text-xl" />
@@ -720,12 +726,12 @@ const TestVpnPage = () => {
             <div className="flex flex-col bg-white py-[50px] px-2 laptop:px-0">
                 <h1 className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">Are you ready to secure yourself with worldclass VPN</h1>
                 <div className="flex flex-col laptop:flex-row justify-center laptop:gap-12 gap-5">
-                    <div className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
+                    <Link href="#" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
                         <MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device NOW</span>
-                    </div>
-                    <div className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
+                    </Link>
+                    <Link href="#" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
                         <RxCrossCircled className="text-red-500 text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">No, I need some more time</span>
-                    </div>
+                    </Link>
                 </div>
             </div>
 

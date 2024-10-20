@@ -34,7 +34,7 @@ const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
       </div>
       {/* bottom part */}
       <div className='flex flex-col mx-[4%]'>
-        <Link href={review.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto text-[21px]">Buy Now</Link>
+        <Link target='_blank' href={review.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto text-[21px]">Buy Now</Link>
       </div>
     </div>
   )

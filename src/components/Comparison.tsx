@@ -721,10 +721,10 @@ const Comparison = () => {
             </div>
 
             {/* compare table for mobile */}
-            <div className="laptop:hidden px-4 py-3">
+            <div className="laptop:hidden px-4 py-3 relative">
 
                 {/* LOGO */}
-                <div className="flex">
+                <div className="flex sticky top-0 bg-white">
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==0 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(0) }}>
                             <Image src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" className='rounded-full'/>
@@ -737,7 +737,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2">
-                        <span>{compareData[vpn].usersReview.vpnName} VPN</span>
+                        <span className='text-center'>{compareData[vpn].usersReview.vpnName} VPN</span>
                         <RatingStars value={compareData[vpn].usersReview.ratting} textSize="sm" emptyTextSize="17px" />
                     </div>
                 </div>
@@ -889,7 +889,7 @@ const Comparison = () => {
 
                 {/* No - Logs Policy */}
                 <div className="flex">
-                    <div className="flex items-center flex-1 border-2 border-l-vpn border-b-0 border-[#EEF1F9] py-5">
+                    <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         <span className='ml-3 font-semibold'>No - Logs Policy</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">

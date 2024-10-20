@@ -392,3 +392,26 @@ nav>header>ul>ul {
     padding: 0px !important;
   }
 }
+
+
+
+
+/* special nav */
+.specialNav > header{
+  width: 1060px;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.specialNav>header>ul>ul {
+  @apply laptop:justify-end !important;
+}
+.specialNav>header>ul {
+  @apply laptop:flex-row flex-row-reverse !important;
+}
+.specialNav>header>ul>a{
+  @apply ml-2 laptop:ml-0 !important;
+}
+.specialNav>header>ul>button{
+  @apply mr-2 !important;
+}

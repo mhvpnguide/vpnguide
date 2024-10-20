@@ -112,7 +112,7 @@ const SpecialNavbar = () => {
     };
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="W-full" position="static">
+        <Navbar onMenuOpenChange={setIsMenuOpen} className="w-full specialNav" position="static">
             <NavbarContent justify="center">
                 {/* <NavbarContent className="hidden sm:flex gap-4" justify="center"> */}
                 <NavbarMenuToggle
@@ -121,9 +121,8 @@ const SpecialNavbar = () => {
                 />
                 <Link href="/" className="text-inherit">
                     <NavbarBrand className="max-w-fit">
-                        <div className={`${!(currentPath) ? null : "ml-[170px]"}`}>
-                            <Image src="/logo.png" alt="logo" height={30} width={30} />
-                        </div>
+                        {/* <div className={`${!(currentPath) ? null : "ml-[170px]"}`}> */}
+                        <Image src="/logo.png" alt="logo" height={30} width={30} />
                         <p className="font-bold text-inherit">VPNs GUIDE</p>
                     </NavbarBrand>
                 </Link>
@@ -198,26 +197,12 @@ const SpecialNavbar = () => {
                             >
                                 {itm.subnav.map((subitm: SubnavItem, subidx: number) => (
                                     <div key={subidx}>
-                                        {subidx == 5 ? (
-                                            <Link href={subitm.link} className="mb-4">
-                                                <button>see more</button>
-                                            </Link>
-                                        ) : (
-                                            <>
-                                                {idx == 0 && subidx == 0 ? (
-                                                    <p className="text-base w-full font-bold pb-1">
-                                                        Popular
-                                                    </p>
-                                                ) : (
-                                                    <Link
-                                                        href={subitm.link}
-                                                        className="text-inherit mb-4 w-full p-2"
-                                                    >
-                                                        {subitm.name}
-                                                    </Link>
-                                                )}
-                                            </>
-                                        )}
+                                        <Link
+                                            href={subitm.link}
+                                            className="text-inherit mb-4 w-full p-2"
+                                        >
+                                            {subitm.name}
+                                        </Link>
                                     </div>
                                 ))}
                             </AccordionItem>

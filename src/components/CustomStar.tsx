@@ -17,11 +17,11 @@ const RatingStars = ({ value,textSize= '2xl', emptyTextSize='[27px]' }: RatingSt
     return (
       <span key={index}>
         {mvalue >= index + 1 ? (
-          <FaStar className={`text-[#FFC200] laptopl:text-${textSize}`} />
+          <FaStar className={`text-[#FFC200] text-${textSize}`} />
         ) : mvalue >= number ? (
-          <FaStarHalfAlt className={`text-[#FFC200] laptopl:text-${textSize}`} />
+          <FaStarHalfAlt className={`text-[#FFC200] text-${textSize}`} />
         ) : (
-          <AiOutlineStar className={`text-[#FFC200] laptopl:text-${emptyTextSize}`} />
+          <AiOutlineStar className={`text-[#FFC200] text-${emptyTextSize}`} />
         )}
       </span>
     );
