@@ -154,7 +154,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0">
                     {
                       blog.attributes.features.map((subitm: Feature, subidx: number) => (
-                        <li className="tick-list-green-item text-[16px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}</li>
+                        <li className="tick-list-green-item text-[14px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}</li>
                       ))
                     }
                   </ul>
