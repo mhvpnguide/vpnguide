@@ -70,9 +70,9 @@ const vpnData: VPNData =
     ],
     updatedOn: '17-September-2024',
     bestPlan: [
-        "privateinternetaccess",
-        "expressvpn",
         "cyberghost",
+        "expressvpn",
+        "privateinternetaccess",
     ],
     // These VPN Services have been featured on:
     featuredImage:
@@ -91,7 +91,7 @@ const vpnData: VPNData =
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
                 "details": "Cyber Ghost: 256-bit encryption, fast speeds, global coverage, and 24/7 customer support. Suberb!",
-                "img": "cyber.svg",
+                "img": "cyberghost.png",
                 "features": [
                     { "value": "Free for 45 days with money-back guarantee" },
                     { "value": "Secure, Hides your Online activity" },
@@ -105,13 +105,15 @@ const vpnData: VPNData =
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
+                    { "value": "Best VPN of 2024" },
+                    { "value": "Free for 45 Days" }
                 ],
                 "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
+                    "privacy": 9.9,
+                    "features": 9.9,
+                    "speed": 9.9,
                     "userScore": 9.9,
-                    "valueForMoney": 9.9,
+                    "valueForMoney": 9.7,
                 },
             }
         },
@@ -140,11 +142,11 @@ const vpnData: VPNData =
                     { "value": "@ $2.03/Months Only!" }
                 ],
                 "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
+                    "privacy": 9.6,
+                    "features": 9.5,
+                    "speed": 9.7,
+                    "userScore": 9.5,
+                    "valueForMoney": 9.8,
                 },
             }
         },
@@ -169,15 +171,13 @@ const vpnData: VPNData =
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "" },
-                    { "value": "" }
                 ],
                 "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
+                    "privacy": 9.2,
+                    "features": 9.3,
+                    "speed": 9.5,
+                    "userScore": 9.2,
+                    "valueForMoney": 9.6,
                 },
             }
         },
@@ -200,15 +200,13 @@ const vpnData: VPNData =
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "" },
-                    { "value": "" }
                 ],
                 "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
+                    "privacy": 9.0,
+                    "features": 8.8,
                     "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
+                    "userScore": 8.9,
+                    "valueForMoney": 9.0,
                 },
             }
         },
@@ -231,15 +229,13 @@ const vpnData: VPNData =
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "" },
-                    { "value": "" }
                 ],
                 "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
+                    "privacy": 8.7,
+                    "features": 8.4,
+                    "speed": 8.0,
+                    "userScore": 8.5,
+                    "valueForMoney": 8.7,
                 },
             }
         },
@@ -262,15 +258,13 @@ const vpnData: VPNData =
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
                 "top_banner": [
-                    { "value": "" },
-                    { "value": "" }
                 ],
                 "category_rating": {
-                    "privacy": 3.9,
-                    "features": 2.9,
-                    "speed": 5.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
+                    "privacy": 8.5,
+                    "features": 8.6,
+                    "speed": 8.0,
+                    "userScore": 8.6,
+                    "valueForMoney": 8.4,
                 },
             }
         },
