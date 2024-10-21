@@ -274,7 +274,7 @@ const vpnData: VPNData =
     ],
     reviews: [
         {
-            "img": "expressvpn.png",
+            "img": "expressvpn1.png",
             "rating": 9.8,
             "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny! - Express Vpn",
             "author": "Roma Bose",
