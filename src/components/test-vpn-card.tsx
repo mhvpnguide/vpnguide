@@ -143,8 +143,8 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
                   {/* vpn details */}
                   <div className="hidden laptop:flex flex-col justify-center mb-3 tablet:w-1/2 laptop:w-full">
-                    <p className="text-[12px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
-                    <p className={`tablet:mt-2 text-sm font-semibold text-blue-600 font-kaiseiTokumin ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
+                    <p className="text-[14px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
+                    <p className={`tablet:mt-2 text-[16px] font-semibold text-blue-600 font-kaiseiTokumin ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0">
                     {
                       blog.attributes.features.map((subitm: Feature, subidx: number) => (
-                        <li className="tick-list-green-item text-xs laptop:text-sm font-kantumruyPro" key={subidx}>{subitm.value}</li>
+                        <li className="tick-list-green-item text-[16px] laptop:text-[14px] font-kantumruyPro" key={subidx}>{subitm.value}</li>
                       ))
                     }
                   </ul>
@@ -249,8 +249,8 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   </div>
 
                   <div className=" flex justify-center items-center flex-col gap-2 laptop:px-2">
-                    <div className="bg-[#fd5522] laptopl:text-[20px] laptop:text-[15px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">>"}</div>
-                    <div className="hidden laptop:block underline text-gray-500 text-[10px] font-kantumruyPro">{blog.attributes.company_link.name}</div>
+                    <div className="bg-[#fd5522] laptopl:text-[20px] laptop:text-[15px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">"}</div>
+                    <div className="hidden laptop:block underline text-gray-500 text-[12px] font-kantumruyPro">{blog.attributes.company_link.name}</div>
                   </div>
 
                 </div>

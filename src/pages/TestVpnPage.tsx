@@ -276,7 +276,7 @@ const vpnData: VPNData =
         {
             "img": "expressvpn.png",
             "rating": 9.8,
-            "review": "Review 1 - Express Vpn",
+            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny! - Express Vpn",
             "author": "Roma Bose",
             "company_link": {
                 "name": "expressvpn.com",
@@ -286,7 +286,7 @@ const vpnData: VPNData =
         {
             "img": "cyberghost.png",
             "rating": 9.6,
-            "review": "Review 2 - CyberGhost",
+            "review": "It's worked well for me. I've been using CyberGhost for a few years now and couldn't be happier. I've received a few cheaper deals from other suppliers but I trust CyberGhost and will stick with it. I highly recommend this product. - CyberGhost",
             "author": "Soma Bose",
             "company_link": {
                 "name": "cyberghost.com",
@@ -296,7 +296,7 @@ const vpnData: VPNData =
         {
             "img": "privateinternetaccess.png",
             "rating": 9.7,
-            "review": "Review 3 - PIA",
+            "review": "The VPN has always connected quickly with fast speeds and support was there for me for the one time I had an issue and quickly helped me resolve the matter! I highly recommend this for people looking for an affordable, reliable vpn! - PIA",
             "author": "Rima Bose",
             "company_link": {
                 "name": "privateinternetaccess.com",
@@ -304,19 +304,19 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "nordvpn.png",
-            "rating": 9.4,
-            "review": "Review 4 - Nord Vpn",
+            "img": "purevpn.png",
+            "rating": 9.3,
+            "review": "PureVPN bought ivacy VPN and my account got transfered. Unfortunatelly not all my settings were right. But I contacted their support team and everything has gotten care of. Many thank again to them. - Pure Vpn ",
             "author": "Roma Bose",
             "company_link": {
-                "name": "nordvpn.com",
+                "name": "purevpn.com",
                 "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
             },
         },
         {
             "img": "surfshark.png",
             "rating": 9.3,
-            "review": "Review 5 - Surf Shark",
+            "review": "My experience was great due to the speed and courtesy of the customer service. This company really excels at listening to their customers and resolving issues quickly. Keep it up! - Surf Shark",
             "author": "Roma Bose",
             "company_link": {
                 "name": "surfshark.com",
@@ -326,7 +326,7 @@ const vpnData: VPNData =
         {
             "img": "totalvpn.png",
             "rating": 9.2,
-            "review": "Review 6 - Total Vpn",
+            "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
             "author": "Roma Bose",
             "company_link": {
                 "name": "totalvpn.com",
@@ -334,29 +334,9 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "ipvanish.png",
-            "rating": 9.6,
-            "review": "Review 7 - Ip Vanish",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "ipvanish.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "privatevpn.png",
-            "rating": 9.5,
-            "review": "Review 8 - Private Vpn",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "privatevpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
             "img": "expressvpn.png",
             "rating": 9.6,
-            "review": "Review 9 - Express Vpn",
+            "review": "Review 7 - Express Vpn",
             "author": "Roma Bose",
             "company_link": {
                 "name": "expressvpn.com",
@@ -364,9 +344,19 @@ const vpnData: VPNData =
             },
         },
         {
+            "img": "privateinternetaccess.png",
+            "rating": 9.7,
+            "review": "Review 8 - PIA",
+            "author": "Rima Bose",
+            "company_link": {
+                "name": "privateinternetaccess.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
             "img": "cyberghost.png",
             "rating": 9.6,
-            "review": "Review 10 - Cyber Ghost",
+            "review": "Review 9 - Cyber Ghost",
             "author": "Roma Bose",
             "company_link": {
                 "name": "cyberghost.com",
@@ -589,7 +579,7 @@ const TestVpnPage = () => {
                                     {/* details */}
                                     <p className="laptop:px-5 text-center text-sm font-bold text-blue-600">{itm.attributes.offer}</p>
                                     {/* <Link href={itm.attributes.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link> */}
-                                    <button className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</button>
+                                    <button className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Try for Free</button>
                                 </Link>
                             ))
                     }
