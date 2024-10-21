@@ -484,7 +484,7 @@ const TestVpnPage = () => {
 
                 <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap laptop:my-2 my-5">
                     <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaUnlockAlt className="inline text-[17px] laptop:text-[25px]" />Privacy & security
+                        <FaUnlockAlt className="inline text-[22px] laptop:text-[36px]" />Privacy & security
                     </div>
                     <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
                         <IoSpeedometer className="inline text-[22px] laptop:text-[36px]" />Speed & Performance
@@ -496,7 +496,7 @@ const TestVpnPage = () => {
                         <FaUserLarge className="inline text-[20px] laptop:text-[36px]" />User Review & Experience
                     </div>
                     <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <FaIdCard className="inline text-[17px] laptop:text-[25px]" />Ease of Use
+                        <FaIdCard className="inline text-[22px] laptop:text-[36px]" />Ease of Use
                     </div>
                 </div>
 

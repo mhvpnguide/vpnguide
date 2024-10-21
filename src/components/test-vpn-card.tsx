@@ -170,11 +170,11 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </div>
 
                 {/* progress bar */}
-                <div className="hidden laptop:flex laptop:w-[15%]  flex-col pt-[10px] pb-[38px] justify-between">
+                <div className="hidden laptop:flex laptop:w-[15%]  flex-col pt-[14px] pb-[38px] justify-between">
                   <div className="flex gap-2">
                     <CiLock className="text-[26px]" />
                     <div className="w-full">
-                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.privacy}</span></div>
+                      <div className="font-kantumruyPro text-[14px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.privacy}</span></div>
                       <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.privacy}
                         size="sm"
@@ -184,7 +184,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <div className="flex gap-2">
                     <PiShieldWarningThin className="text-[25px]" />
                     <div className="w-full">
-                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Features</span><span>{blog.attributes.category_rating.features}</span></div>
+                      <div className="font-kantumruyPro text-[14px] text-gray-700 flex justify-between pb-1"><span>Features</span><span>{blog.attributes.category_rating.features}</span></div>
                       <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.features}
                         size="sm"
@@ -194,7 +194,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <div className={`flex gap-2 ${idx <= 2 ? null : "hidden"}`}>
                     <PiSpeedometerThin className="text-[26px]" />
                     <div className="w-full">
-                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Speed</span><span>{blog.attributes.category_rating.speed}</span></div>
+                      <div className="font-kantumruyPro text-[14px] text-gray-700 flex justify-between pb-1"><span>Speed</span><span>{blog.attributes.category_rating.speed}</span></div>
                       <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.speed}
                         size="sm"
@@ -204,7 +204,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <div className="flex gap-2">
                     <CiUser className="text-[26px]" />
                     <div className="w-full">
-                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>User Score</span><span>{blog.attributes.category_rating.userScore}</span></div>
+                      <div className="font-kantumruyPro text-[14px] text-gray-700 flex justify-between pb-1"><span>User Score</span><span>{blog.attributes.category_rating.userScore}</span></div>
                       <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.userScore}
                         size="sm"
@@ -214,7 +214,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <div className="flex gap-2">
                     <CiDollar className="text-[26px]" />
                     <div className="w-full">
-                      <div className="font-kantumruyPro text-[10px] text-gray-700 flex justify-between pb-1"><span>Value for Money</span><span>{blog.attributes.category_rating.valueForMoney}</span></div>
+                      <div className="font-kantumruyPro text-[14px] text-gray-700 flex justify-between pb-1"><span>Value for Money</span><span>{blog.attributes.category_rating.valueForMoney}</span></div>
                       <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.valueForMoney}
                         size="sm"
