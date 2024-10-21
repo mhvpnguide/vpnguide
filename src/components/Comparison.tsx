@@ -958,7 +958,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].valueForMoney.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].valueForMoney.point <= index ?

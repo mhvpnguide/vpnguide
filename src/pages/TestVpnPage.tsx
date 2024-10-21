@@ -409,16 +409,19 @@ const TestVpnPage = () => {
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="flex gap-3 ml-2 mt-[10px]">
                             <div className="h-[30px] relative w-[105px]">
-                                <Image src={`/Assests/test-vpn/New-York-Times.png`} alt="logo" className="filter grayscale object-contain w-full" fill />
+                                <Image src={`/Assests/test-vpn/New-York-Times.png`} alt="New York Times" className="filter grayscale object-contain w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[40px]">
-                                <Image src={`/Assests/test-vpn/BBC.png`} alt="logo" className="filter grayscale  w-full" fill />
+                                <Image src={`/Assests/test-vpn/BBC.png`} alt="BBC" className="filter grayscale  w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
-                                <Image src={`/Assests/test-vpn/cnet.png`} alt="logo" className="filter grayscale w-full" fill />
+                                <Image src={`/Assests/test-vpn/cnet.png`} alt="Cnet" className="filter grayscale w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
-                                <Image src={`/Assests/test-vpn/Fox-News.png`} alt="logo" className="filter grayscale " fill />
+                                <Image src={`/Assests/test-vpn/cnn.png`} alt="CNN" className="filter grayscale w-full" fill />
+                            </div>
+                            <div className="h-[30px] relative w-[30px]">
+                                <Image src={`/Assests/test-vpn/Fox-News.png`} alt="Fox News" className="filter grayscale " fill />
                             </div>
                         </div>
                     </div>
