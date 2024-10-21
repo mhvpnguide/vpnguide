@@ -174,7 +174,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <div className="flex gap-2">
                     <CiLock className="text-[26px]" />
                     <div className="w-full">
-                      <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1"><span>Streaming</span><span>{blog.attributes.category_rating.privacy}</span></div>
+                      <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1"><span>Privacy</span><span>{blog.attributes.category_rating.privacy}</span></div>
                       <CustomTestVpnProgressbar
                         value={blog.attributes.category_rating.privacy}
                         size="sm"

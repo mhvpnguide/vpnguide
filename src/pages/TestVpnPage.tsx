@@ -418,7 +418,7 @@ const TestVpnPage = () => {
                                 <Image src={`/Assests/test-vpn/cnet.png`} alt="Cnet" className="filter grayscale w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
-                                <Image src={`/Assests/test-vpn/cnn.png`} alt="CNN" className="filter grayscale w-full" fill />
+                                <Image src={`/Assests/test-vpn/CNN.png`} alt="CNN" className="filter grayscale w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
                                 <Image src={`/Assests/test-vpn/Fox-News.png`} alt="Fox News" className="filter grayscale " fill />
@@ -526,7 +526,7 @@ const TestVpnPage = () => {
             <div className="bg-gray-50 p-5 laptopl:max-w-[1060px] px-[10px] laptopl:px-0 my-10 rounded-[25px] shadow-md mx-auto">
                 <div className="flex flex-col items-center gap-2 mb-10">
                     <h1 className="text-[30px] font-bold">Best VPN Plan</h1>
-                    <p>Choose the best BPN with Great Discount</p>
+                    <p>Choose the best VPN with Great Discount</p>
                 </div>
 
                 <div className="flex flex-col tablet:flex-row gap-7">
