@@ -225,7 +225,7 @@ const Comparison = () => {
                             <Image src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="express" />
                         </div >
                         <RatingStars value={compareData[0].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
-                        <span className="text-[10px] ">
+                        <span className="text-[12px] ">
                             {compareData[0].usersReview.noRating} Reviews
                         </span>
                     </div>
@@ -234,7 +234,7 @@ const Comparison = () => {
                             <Image src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="express" />
                         </div >
                         <RatingStars value={compareData[1].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
-                        <span className="text-[10px] ">
+                        <span className="text-[12px] ">
                             {compareData[1].usersReview.noRating} Reviews
                         </span>
                     </div>
@@ -243,7 +243,7 @@ const Comparison = () => {
                             <Image src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="express" />
                         </div >
                         <RatingStars value={compareData[2].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
-                        <span className="text-[10px] ">
+                        <span className="text-[12px] ">
                             {compareData[2].usersReview.noRating} Reviews
                         </span>
                     </div>
@@ -268,7 +268,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].speed.title}</span>
+                            <span className="text-[12px] text-center">{compareData[0].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].speed.point <= index ?
@@ -294,7 +294,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[2].speed.title}</span>
+                            <span className="text-[12px] text-center">{compareData[2].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].speed.point <= index ?
@@ -314,7 +314,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].torrenting.title}</span>
+                            <span className="text-[12px] text-center">{compareData[0].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].torrenting.point <= index ?
@@ -327,7 +327,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[1].torrenting.title}</span>
+                            <span className="text-[12px] text-center">{compareData[1].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].torrenting.point <= index ?
@@ -340,7 +340,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[2].torrenting.title}</span>
+                            <span className="text-[12px] text-center">{compareData[2].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].torrenting.point <= index ?
@@ -360,7 +360,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].streaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[0].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].streaming.point <= index ?
@@ -373,7 +373,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[1].streaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[1].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].streaming.point <= index ?
@@ -386,7 +386,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[2].streaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[2].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].streaming.point <= index ?
@@ -406,7 +406,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].gaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[0].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].gaming.point <= index ?
@@ -419,7 +419,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[1].gaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[1].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].gaming.point <= index ?
@@ -432,7 +432,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[2].gaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[2].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].gaming.point <= index ?
@@ -452,7 +452,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].easeOfUse.title}</span>
+                            <span className="text-[12px] text-center">{compareData[0].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].easeOfUse.point <= index ?
@@ -465,7 +465,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[1].easeOfUse.title}</span>
+                            <span className="text-[12px] text-center">{compareData[1].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].easeOfUse.point <= index ?
@@ -478,7 +478,7 @@ const Comparison = () => {
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[2].easeOfUse.title}</span>
+                            <span className="text-[12px] text-center">{compareData[2].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].easeOfUse.point <= index ?
