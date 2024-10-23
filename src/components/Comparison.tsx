@@ -9,7 +9,7 @@ import RatingStars from './CustomStar';
 const compareData = [
     {
         usersReview: {
-            vpnName: "Express Vpn",
+            vpnName: "Express",
             logo: "expressvpn.png",
             icon: "square_logo_express_vpn.png",
             ratting: 4.9,
@@ -267,7 +267,7 @@ const Comparison = () => {
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Speed</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[0].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -280,7 +280,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[1].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -293,7 +293,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[2].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -313,7 +313,7 @@ const Comparison = () => {
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Torrenting</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[0].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -326,7 +326,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[1].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -339,7 +339,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[2].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -359,7 +359,7 @@ const Comparison = () => {
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Streaming</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[0].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -372,7 +372,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[1].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -385,7 +385,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[2].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -405,7 +405,7 @@ const Comparison = () => {
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Gaming</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[0].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -418,7 +418,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[1].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -431,7 +431,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[2].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -451,7 +451,7 @@ const Comparison = () => {
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Ease of Use</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[0].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -464,7 +464,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[1].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -477,7 +477,7 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-1">
                             <span className="text-[12px] text-center">{compareData[2].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
@@ -660,14 +660,14 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[2].moneyBack.value}</div>
                 </div>
 
-                {/* value for money */}
+                {/* Ease of use */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Ease of Use</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[0].valueForMoney.title}</span>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-[12px] text-center">{compareData[0].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].valueForMoney.point <= index ?
@@ -679,8 +679,8 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[1].valueForMoney.title}</span>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-[12px] text-center">{compareData[1].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].valueForMoney.point <= index ?
@@ -692,8 +692,8 @@ const Comparison = () => {
                         </div>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
-                        <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[2].valueForMoney.title}</span>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-[12px] text-center">{compareData[2].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].valueForMoney.point <= index ?
@@ -761,7 +761,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2  border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].speed.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].speed.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].speed.point <= index ?
@@ -781,7 +781,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].torrenting.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].torrenting.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].torrenting.point <= index ?

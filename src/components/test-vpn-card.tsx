@@ -113,7 +113,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
               <div className="flex laptop:flex-row flex-col justify-between laptop:px-3 px-1">
 
                 {/* vpn image */}
-                <Link href={`${blog.attributes.link2}`} target="_blank" className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[27%] laptop:justify-between">
+                <Link href={`${blog.attributes.link2}`} target="_blank" className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[25%] laptop:justify-between">
 
                   <div className="flex justify-between laptop:justify-center border-b tablet:border-none border-gray-400 tablet:w-full ">
                     <div className="w-[80%] flex flex-col">
@@ -151,11 +151,20 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 </Link>
 
                 {/* List item */}
-                <Link href={`${blog.attributes.link2}`} target="_blank" className="laptop:w-fit flex flex-col laptop:justify-between">
+                <Link href={`${blog.attributes.link2}`} target="_blank" className="laptop:w-[35%]  flex flex-col laptop:justify-between">
                   <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 mt-2 ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
-                  <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
+                  {/* for mobile view */}
+                  <ul className="laptop:hidden space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
                     {
                       blog.attributes.features.slice(0, 4).map((subitm: Feature, subidx: number) => (
+                        <li className="tick-list-green-item text-[14px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}</li>
+                      ))
+                    }
+                  </ul>
+                  {/* for laptop view */}
+                  <ul className="hidden laptop:block space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
+                    {
+                      blog.attributes.features.map((subitm: Feature, subidx: number) => (
                         <li className="tick-list-green-item text-[14px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}</li>
                       ))
                     }
@@ -227,7 +236,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
 
                 {/* bottom */}
-                <div className="flex flex-col laptop:items-center laptopl:w-[20%] laptop:w-[17%] laptop:pt-0 pt-3 laptop:pb-[28px] justify-between">
+                <div className="flex flex-col laptop:items-center laptop:w-[18%] laptop:pt-0 pt-3 laptop:pb-[28px] justify-between">
 
                   {/* ratting */}
                   <Link href={`${blog.attributes.link2}`} target="_blank"  className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">

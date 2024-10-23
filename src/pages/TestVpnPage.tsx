@@ -160,7 +160,7 @@ const vpnData: VPNData =
         },
         {
             "attributes": {
-                "vpn_name": "Express Vpn",
+                "vpn_name": "Express",
                 "ratting": 9.2,
                 "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
@@ -435,7 +435,7 @@ const TestVpnPage = () => {
                             <div className="h-[30px] relative w-[30px]">
                                 <Image src={`/Assests/test-vpn/cnet.png`} alt="Cnet" className="filter grayscale w-full" fill />
                             </div>
-                            <div className="h-[30px] relative w-[30px]">
+                            <div className="h-[30px] relative w-[40px]">
                                 <Image src={`/Assests/test-vpn/CNN.png`} alt="CNN" className="filter grayscale w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
@@ -448,7 +448,7 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden laptop:w-[45%] w-[full] tablet:flex items-center justify-center">
                     <div className=" relative laptop:w-full w-[70%] aspect-video">
-                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-cover" alt="vpn image" />
+                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain" alt="vpn image" />
                     </div>
                 </div>
             </div>
@@ -460,7 +460,7 @@ const TestVpnPage = () => {
                         <span className="text-[14px] font-kantumruyPro">
                             <SlCalender className="inline mr-1 text-[16px] " />Updated on:
                         </span>
-                        <span className="text-[13px]">
+                        <span className="text-[13px] pl-1">
                             {currentDate}
                         </span>
                     </span>

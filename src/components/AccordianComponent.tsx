@@ -21,13 +21,13 @@ interface BlogsProps {
 }
 
 const AccordianComponent: React.FC<BlogsProps> = ({ blog,idx }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(idx==0);
   const handleToggle = () => {
     setIsOpen(!isOpen)
   }
   return (
     <Accordion variant="splitted" className='customAccording' defaultExpandedKeys={["0"]}>
-      <AccordionItem key={idx} aria-label="Accordion 1" title={isOpen ?  "More Details": "Less Details"} onClick={handleToggle} >
+      <AccordionItem key={idx} aria-label="Accordion 1" title={isOpen ?  "Less Details": "More Details"} onClick={handleToggle} >
         <div className=" laptop:w-[15%]  flex-col gap-4 mt-4 ">
           <div className="flex items-center gap-2 border border-black px-[15px] mb-2 rounded-lg py-1">
             <MdLockOutline className="text-[20px]" />
