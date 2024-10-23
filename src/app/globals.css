@@ -318,6 +318,7 @@ nav>header>ul>ul {
   background: #fff;
   border-radius: 10px;
   width: fit-content !important;
+  height: auto !important;
   /* margin-right: 160px !important; */
 
   /* Center slide text vertically */

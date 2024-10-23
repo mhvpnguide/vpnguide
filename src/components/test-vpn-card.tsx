@@ -29,6 +29,8 @@ interface BlogAttributes {
   img: String;
   features: { value: string }[];
   company_link: { name: string; value: string };
+  link1: string;
+  link2: string;
   top_banner: { value: string }[];
   category_rating: {
     privacy: number,
@@ -95,7 +97,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 {
                   blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
                     <>
-                      <div className={`${lightBackgroundColors[idx % lightBackgroundColors.length]}  w-fit px-3 py-1 h-full ${subidx == 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length == subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
+                      <div className={`${lightBackgroundColors[idx % lightBackgroundColors.length]}  w-fit px-3 font-semibold py-1 h-full ${subidx == 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length == subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
                       {
                         blog.attributes.top_banner.length == subidx + 1 ?
                           null
@@ -108,17 +110,17 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
 
               </div>
 
-              <Link href={`${blog.attributes.company_link.value}`} target="_blank" className="flex laptop:flex-row flex-col justify-between laptop:px-3 px-1">
+              <div className="flex laptop:flex-row flex-col justify-between laptop:px-3 px-1">
 
                 {/* vpn image */}
-                <div className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[27%] laptop:justify-between">
+                <Link href={`${blog.attributes.link2}`} target="_blank" className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[27%] laptop:justify-between">
 
                   <div className="flex justify-between laptop:justify-center border-b tablet:border-none border-gray-400 tablet:w-full ">
                     <div className="w-[80%] flex flex-col">
-                      <div className="relative aspect-[2/1] ">
+                      <div className="relative aspect-[2/1] laptop:w-full w-[80%]">
                         <Image src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} fill alt="express" />
                       </div >
-                      <div className="laptop:hidden flex justify-center pb-3">
+                      <div className="laptop:hidden flex justify-start pl-4 pb-3">
                         <RatingStars value={blog.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
                       </div>
                     </div>
@@ -144,16 +146,16 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   {/* vpn details */}
                   <div className="hidden laptop:flex flex-col justify-center mb-3 tablet:w-1/2 laptop:w-full">
                     <p className="text-[14px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
-                    <p className={`tablet:mt-2 text-[16px] font-semibold text-blue-600 font-kaiseiTokumin ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
+                    <p className={`mt-2 text-[16px] font-semibold text-blue-600 font-kaiseiTokumin ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
                   </div>
-                </div>
+                </Link>
 
                 {/* List item */}
-                <div className="laptop:w-[30%] flex flex-col laptop:justify-between">
-                  <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
-                  <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0">
+                <Link href={`${blog.attributes.link2}`} target="_blank" className="laptop:w-fit flex flex-col laptop:justify-between">
+                  <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 mt-2 ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
+                  <ul className="space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
                     {
-                      blog.attributes.features.map((subitm: Feature, subidx: number) => (
+                      blog.attributes.features.slice(0, 4).map((subitm: Feature, subidx: number) => (
                         <li className="tick-list-green-item text-[14px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}</li>
                       ))
                     }
@@ -167,10 +169,10 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                     <FaLinux />
                     <MdRouter />
                   </div>
-                </div>
+                </Link>
 
                 {/* progress bar */}
-                <div className="hidden laptop:flex laptop:w-[15%]  flex-col pt-[12px] pb-[38px] justify-between">
+                <Link href={`${blog.attributes.link2}`} target="_blank" className="hidden laptop:flex laptop:w-[15%]  flex-col pt-[12px] pb-[38px] justify-between">
                   <div className="flex gap-2">
                     <CiLock className="text-[26px]" />
                     <div className="w-full">
@@ -221,13 +223,14 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                       />
                     </div>
                   </div>
-                </div>
+                </Link>
+
 
                 {/* bottom */}
                 <div className="flex flex-col laptop:items-center laptopl:w-[20%] laptop:w-[17%] laptop:pt-0 pt-3 laptop:pb-[28px] justify-between">
 
                   {/* ratting */}
-                  <div className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
+                  <Link href={`${blog.attributes.link2}`} target="_blank"  className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
                     <CustomTestCircularRatting
                       size="lg"
                       value={blog.attributes.ratting}
@@ -242,20 +245,24 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                       valueLabel={`${blog.attributes.ratting}`} // Pass the value without the percentage sign
                       className="customRating"
                     />
-                  </div>
+                  </Link>
 
-                  <div className="laptop:flex hidden justify-center">
+                  <Link href={`${blog.attributes.link2}`} target="_blank"  className="laptop:flex hidden justify-center">
                     <RatingStars value={blog.attributes.ratting} textSize="[20px]" emptyTextSize="[22px]" />
-                  </div>
+                  </Link>
 
                   <div className=" flex justify-center items-center flex-col gap-2 laptop:px-2">
-                    <div className="bg-[#fd5522] laptopl:text-[20px] laptop:text-[15px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">"}</div>
-                    <div className="hidden laptop:block underline text-gray-500 text-[12px] font-kantumruyPro">{blog.attributes.company_link.name}</div>
+                    <Link href={`${blog.attributes.link1}`} target="_blank" className="bg-[#fd5522] laptopl:text-[20px] laptop:text-[15px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site {">"}</Link>
+                    <Link href={`${blog.attributes.company_link.value}`} target="_blank" className="hidden laptop:block underline text-gray-500 text-[12px] font-kantumruyPro">{blog.attributes.company_link.name}</Link>
                   </div>
 
                 </div>
 
-              </Link >
+
+
+              </div >
+
+
               {/* Accordian */}
               <div className="py-2 laptop:hidden  px-1">
                 <AccordianComponent blog={blog.attributes.category_rating} idx={idx} />

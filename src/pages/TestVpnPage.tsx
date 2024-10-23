@@ -17,6 +17,7 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { useEffect, useState } from "react";
 import { MdOutlineCheckCircle } from "react-icons/md";
 import { RxCrossCircled } from "react-icons/rx";
+import ScrollToTopButton from "@/components/ScrollToTop";
 
 
 interface VPNData {
@@ -38,6 +39,8 @@ interface VPNData {
             img: String,
             features: { value: string }[];
             company_link: { name: string; value: string };
+            link1: string;
+            link2: string;
             top_banner: { value: string }[];
             category_rating: {
                 privacy: number,
@@ -100,10 +103,13 @@ const vpnData: VPNData =
                     { "value": "VPN kill-switch for safety" },
                     { "value": "11690+ servers in 105 countries" }
                 ],
+                
                 "company_link": {
                     "name": "expressvpn.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
@@ -137,6 +143,8 @@ const vpnData: VPNData =
                     "name": "privateinternetaccess.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "@ $2.03/Months Only!" }
@@ -170,6 +178,8 @@ const vpnData: VPNData =
                     "name": "expressvpn.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -199,6 +209,8 @@ const vpnData: VPNData =
                     "name": "surfshark.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -228,6 +240,8 @@ const vpnData: VPNData =
                     "name": "purevpn.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -257,6 +271,8 @@ const vpnData: VPNData =
                     "name": "totalvpn.com",
                     "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -269,7 +285,7 @@ const vpnData: VPNData =
             }
         },
 
-        
+
 
     ],
     reviews: [
@@ -387,11 +403,13 @@ const TestVpnPage = () => {
 
     return (
         <section className="bg-[#F9F6EE]">
+            <ScrollToTopButton/>
+
             {/* top section */}
             <div className="flex laptop:flex-row flex-col laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto laptop:py-2 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
                 {/* left */}
-                <div className="content w-full tablet:w-[52%] max-h-fit ">
-                    <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-2 font-kantumruyPro">{vpnData.title}</h1>
+                <div className="content w-full tablet:w-[55%] max-h-fit ">
+                    <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-4 font-kantumruyPro">{vpnData.title}</h1>
                     <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[13px] font-kantumruyPro">
                         {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
                     </h2>
@@ -426,10 +444,11 @@ const TestVpnPage = () => {
                         </div>
                     </div>
                 </div>
+
                 {/* right */}
-                <div className="hidden laptop:w-[48%] w-[full] tablet:flex items-center justify-center">
+                <div className="hidden laptop:w-[45%] w-[full] tablet:flex items-center justify-center">
                     <div className=" relative laptop:w-full w-[70%] aspect-video">
-                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain" alt="vpn image" />
+                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-cover" alt="vpn image" />
                     </div>
                 </div>
             </div>
@@ -503,12 +522,12 @@ const TestVpnPage = () => {
                     </div>
                 </div>
 
-                <div className="flex laptop:flex-row flex-col laptop:gap-[60px] laptop:px-10 px-[10px]">
+                <div className="flex laptop:flex-row flex-col laptop:gap-[60px] laptop:px-10 px-[10px] gap-4">
                     <div className="flex flex-col laptop:w-[60%] justify-evenly">
-                        <h1 className="font-bold text-[23px] text-start font-inknutAntiqua">
+                        <h1 className="font-bold text-[23px] laptop:text-start text-center font-inknutAntiqua">
                             We Stand for Internet Privacy, Security & Freedom
                         </h1>
-                        <p className="text-sm">
+                        <p className="text-sm hidden laptop:block">
                             We are a team of independent experts with many years of experience in online privacy. We purchase and test every VPN ourselves and provide you with honest, unbiased reviews. Our goal is to help you find the best VPN to keep your online experience secure and private.
                         </p>
                     </div>
@@ -518,6 +537,9 @@ const TestVpnPage = () => {
                             <Image src="/Assests/test-vpn/About.png" fill alt="logo" />
                         </div>
                     </div>
+                    <p className="text-sm laptop:hidden">
+                        We are a team of independent experts with many years of experience in online privacy. We purchase and test every VPN ourselves and provide you with honest, unbiased reviews. Our goal is to help you find the best VPN to keep your online experience secure and private.
+                    </p>
                 </div>
             </div>
 
@@ -582,7 +604,7 @@ const TestVpnPage = () => {
                                     {/* details */}
                                     <p className="laptop:px-5 text-center text-sm font-bold text-blue-600">{itm.attributes.offer}</p>
                                     {/* <Link href={itm.attributes.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Buy Now</Link> */}
-                                    <button className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto">Try for Free</button>
+                                    <button className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto laptop:text-[20px]">Try for Free</button>
                                 </Link>
                             ))
                     }
