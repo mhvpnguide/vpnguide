@@ -66,10 +66,10 @@ const vpnData: VPNData =
 {
     title: "The Best VPN for Windows 2024",
     list: [
-        "Fast servers to browse <b>without,</b> interruptions",
-        "Keep your online activity private & secure with a simple IP address change",
-        "Compatible with all operating systems, popular devices & services",
-        "<b>Free trails,</b> discount, refund policies to test them out risk free"
+        "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming in India",
+        "<b>Change your IP address location</b> & use the internet privately & securely",
+        "<b>Connect multiple devices</b> with a single VPN account simultaneously",
+        "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
     updatedOn: '17-September-2024',
     bestPlan: [
