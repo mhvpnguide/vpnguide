@@ -93,10 +93,10 @@ const vpnData: VPNData =
                 "ratting": 9.8,
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
-                "details": "Cyber Ghost: 256-bit encryption, fast speeds, global coverage, and 24/7 customer support. Suberb!",
+                "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
                 "img": "cyberghost.png",
                 "features": [
-                    { "value": "Free for 45 days with money-back guarantee" },
+                    { "value": "Try it Free for 45 days" },
                     { "value": "Secure, Hides your Online activity" },
                     { "value": "Ultra-fast speed for all devices" },
                     { "value": "Strict no-logs policy to keep you safe" },
@@ -105,10 +105,10 @@ const vpnData: VPNData =
                 ],
                 
                 "company_link": {
-                    "name": "expressvpn.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "name": "cyberghost.com",
+                    "value": "https://track.vpns.guide/base.php?key=c8f75004ff843dd185940d2d8c1d19e5"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base.php?c=11",
                 "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
@@ -136,7 +136,6 @@ const vpnData: VPNData =
                     { "value": "Connects upto 10 devices simultaneously" },
                     { "value": "Try it free for 30 days" },
                     { "value": "Strict no-logs and no IP leaks" },
-                    { "value": "Connects on unlimited devices with 1 license" },
                     { "value": "Servers in 91 countries" }
                 ],
                 "company_link": {
