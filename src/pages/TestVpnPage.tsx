@@ -106,10 +106,10 @@ const vpnData: VPNData =
                 
                 "company_link": {
                     "name": "cyberghost.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1002&link=tile"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1002&link=text"
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1002&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1002&link=text",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1002&link=tile",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
@@ -293,7 +293,7 @@ const vpnData: VPNData =
     ],
     reviews: [
         {
-            "img": "expressvpn3.png",
+            "img": "expressvpn.png",
             "rating": 9.8,
             "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny! - Express Vpn",
             "author": "Roma Bose",
@@ -303,7 +303,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "cyberghost3.png",
+            "img": "cyberghost.png",
             "rating": 9.6,
             "review": "It's worked well for me. I've been using CyberGhost for a few years now and couldn't be happier. I've received a few cheaper deals from other suppliers but I trust CyberGhost and will stick with it. I highly recommend this product. - CyberGhost",
             "author": "Soma Bose",
@@ -313,7 +313,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "privateinternetaccess3.png",
+            "img": "privateinternetaccess.png",
             "rating": 9.7,
             "review": "The VPN has always connected quickly with fast speeds and support was there for me for the one time I had an issue and quickly helped me resolve the matter! I highly recommend this for people looking for an affordable, reliable vpn! - PIA",
             "author": "Rima Bose",
@@ -323,7 +323,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "purevpn3.png",
+            "img": "purevpn.png",
             "rating": 9.3,
             "review": "PureVPN bought ivacy VPN and my account got transfered. Unfortunatelly not all my settings were right. But I contacted their support team and everything has gotten care of. Many thank again to them. - Pure Vpn ",
             "author": "Roma Bose",
@@ -333,7 +333,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "surfshark3.png",
+            "img": "surfshark.png",
             "rating": 9.3,
             "review": "My experience was great due to the speed and courtesy of the customer service. This company really excels at listening to their customers and resolving issues quickly. Keep it up! - Surf Shark",
             "author": "Roma Bose",
@@ -343,7 +343,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "totalvpn3.png",
+            "img": "totalvpn.png",
             "rating": 9.2,
             "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
             "author": "Roma Bose",
@@ -383,7 +383,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "expressvpn1.png",
+            "img": "expressvpn.png",
             "rating": 9.6,
             "review": "Review 10 - Express Vpn",
             "author": "Roma Bose",
@@ -393,7 +393,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "privateinternetaccess1.png",
+            "img": "privateinternetaccess.png",
             "rating": 9.7,
             "review": "Review 11 - PIA",
             "author": "Rima Bose",
@@ -403,7 +403,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "cyberghost1.png",
+            "img": "cyberghost.png",
             "rating": 9.6,
             "review": "Review 12 - Cyber Ghost",
             "author": "Roma Bose",

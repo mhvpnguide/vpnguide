@@ -283,7 +283,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
               <div>
                 <BsFillLightbulbFill className="inline text-green-600 text-[25px] laptop:text-[16px]" />
               </div>
-              <p className="text-start font-kantumruyPro font-medium">
+              <p className="text-start font-kantumruyPro font-medium text-[16px]">
                 Expert Advice: Protecting your information online is more important than ever. Using a VPN is not only a good idea, it&apos;s essential
               </p>
             </div>
