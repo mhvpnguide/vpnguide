@@ -66,15 +66,15 @@ const vpnData: VPNData =
 {
     title: "The Best VPN for Windows 2024",
     list: [
-        "<span class='semi-bold'>Ultra-Fast servers</span> for uninterrupted browsing and streaming in India",
-        "<span class='semi-bold'>Change your IP address location</span> & use the internet privately & securely",
-        "<span class='semi-bold'>Connect multiple devices</span> with a single VPN account simultaneously",
-        "<span class='semi-bold'>Free trails</span> & <b>Limited Time Discounts</b> for all VPNs"
+        "<b'>Ultra-Fast servers</b> for uninterrupted browsing and streaming in India",
+        "<b'>Change your IP address location</b> & use the internet privately & securely",
+        "<b'>Connect multiple devices</span> with a single VPN account simultaneously",
+        "<b'>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
     updatedOn: '25-October-2024',
     bestPlan: [
+        "totalvpn",
         "cyberghost",
-        "expressvpn",
         "privateinternetaccess",
     ],
     // These VPN Services have been featured on:
@@ -90,7 +90,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Cyber Ghost",
-                "ratting": 9.8,
+                "ratting": 9.89,
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
                 "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
@@ -126,7 +126,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Total Vpn",
-                "ratting": 8.5,
+                "ratting": 9.5,
                 "slug": "totalvpn",
                 "offer": "Free Antivirus Protection & Free Ad Blocker",
                 "details": "Total Vpn: Optimized specially for Streaming, Torrenting & Gaming. Fast Speed with Military Grade Security. Suberb!",
@@ -162,7 +162,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Private Internet Access",
-                "ratting": 9.5,
+                "ratting": 9.2,
                 "slug": "privateinternetaccess",
                 "offer": "One Account Unlimited Devices",
                 "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support. Great!",
@@ -194,7 +194,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Express",
-                "ratting": 9.2,
+                "ratting": 8.9,
                 "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
                 "details": "EXPRESS VPN: Well-rounded secure and private VPN for anonymous browsing& downloads with No-Logs policy to keep you safe online. Great!",
@@ -226,7 +226,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "SurfShark",
-                "ratting": 8.9,
+                "ratting": 8.6,
                 "slug": "surfshark",
                 "offer": "",
                 "details": "SurfShark: User-friendly VPN for beginners. Strong security & privacy features.",
@@ -258,7 +258,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Pure Vpn",
-                "ratting": 8.6,
+                "ratting": 8.5,
                 "slug": "purevpn",
                 "offer": "",
                 "details": "Pure Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
