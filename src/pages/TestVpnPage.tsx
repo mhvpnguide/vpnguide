@@ -173,7 +173,7 @@ const vpnData: VPNData =
                     { "value": "Try it free for 30 days" },
                     { "value": "100% Open-Source, No-Logs VPN" },
                     { "value": "Servers in 91 countries" }
-                    { "Powerful built-in Ad & Malware blocker" }
+                    { "value": "Powerful built-in Ad & Malware blocker" }
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
