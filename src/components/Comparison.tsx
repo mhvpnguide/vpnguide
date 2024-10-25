@@ -98,8 +98,8 @@ const compareData = [
             point: 5
         },
         easeOfUse: {
-            title: "Excellent",
-            point: 5
+            title: "Very Good",
+            point: 4
         },
         killSwitch: {
             value: true
