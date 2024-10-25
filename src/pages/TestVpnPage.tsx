@@ -66,12 +66,12 @@ const vpnData: VPNData =
 {
     title: "The Best VPN for Windows 2024",
     list: [
-        "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming in India",
-        "<b>Change your IP address location</b> & use the internet privately & securely",
-        "<b>Connect multiple devices</b> with a single VPN account simultaneously",
-        "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
+        "<span class='semi-bold'>Ultra-Fast servers</span> for uninterrupted browsing and streaming in India",
+        "<span class='semi-bold'>Change your IP address location</span> & use the internet privately & securely",
+        "<span class='semi-bold'>Connect multiple devices</span> with a single VPN account simultaneously",
+        "<span class='semi-bold'>Free trails</span> & <b>Limited Time Discounts</b> for all VPNs"
     ],
-    updatedOn: '17-September-2024',
+    updatedOn: '25-October-2024',
     bestPlan: [
         "cyberghost",
         "expressvpn",
@@ -125,17 +125,53 @@ const vpnData: VPNData =
         },
         {
             "attributes": {
+                "vpn_name": "Total Vpn",
+                "ratting": 8.5,
+                "slug": "totalvpn",
+                "offer": "Free Antivirus Protection & Free Ad Blocker",
+                "details": "Total Vpn: Optimized specially for Streaming, Torrenting & Gaming. Fast Speed with Military Grade Security. Suberb!",
+                "img": "totalvpn.png",
+                "features": [
+                    { "value": "Try it free for 30 Days" },
+                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Enhanced protection for Public Wi-Fi" },
+                    { "value": "Strict no-logs and no IP/DNS leaks" },
+                    { "value": "Chrome & Firefox extension" },
+                    { "value": "Easy to use app for all devices" }
+                ],
+                "company_link": {
+                    "name": "totalvpn.com",
+                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                },
+                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "top_banner": [
+                    { "value": "Cheapest VPN" },
+                    { "value": "@ $1.59/Month Only!" }
+                ],
+                "category_rating": {
+                    "privacy": 8.5,
+                    "features": 8.6,
+                    "speed": 8.0,
+                    "userScore": 8.6,
+                    "valueForMoney": 8.4,
+                },
+            }
+        },
+
+        {
+            "attributes": {
                 "vpn_name": "Private Internet Access",
                 "ratting": 9.5,
                 "slug": "privateinternetaccess",
-                "offer": "Ad and Tracker Blocker for Free",
-                "details": "PIA: Fast speed, Strong encryption and no-logs policy",
+                "offer": "One Account Unlimited Devices",
+                "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support. Great!",
                 "img": "privateinternetaccess.png",
                 "features": [
                     { "value": "Suberb for Private Internet Browsing" },
                     { "value": "Connects upto 10 devices simultaneously" },
                     { "value": "Try it free for 30 days" },
-                    { "value": "Strict no-logs and no IP leaks" },
+                    { "value": "100% Open-Source, N0-Logs VPN" },
                     { "value": "Servers in 91 countries" }
                 ],
                 "company_link": {
@@ -145,8 +181,6 @@ const vpnData: VPNData =
                 "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
                 "top_banner": [
-                    { "value": "Cheapest VPN" },
-                    { "value": "@ $2.03/Months Only!" }
                 ],
                 "category_rating": {
                     "privacy": 9.6,
@@ -163,15 +197,14 @@ const vpnData: VPNData =
                 "ratting": 9.2,
                 "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
-                "details": "EXPRESS VPN: lightning-fast, highly secure, and trusted. Enjoy best-in-class service with 24/7 support. Outstanding!",
+                "details": "EXPRESS VPN: Well-rounded secure and private VPN for anonymous browsing& downloads with No-Logs policy to keep you safe online. Great!",
                 "img": "expressvpn.png",
                 "features": [
-                    { "value": "Try for 30 days with money-back guarantee" },
-                    { "value": "Ultra-fast speed with Zero lag" },
+                    { "value": "Optimized for anonymous & secure downloads" },
                     { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "Chrome & FIrefox extensions" },
                     { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "Easy to use app for all devices" }
+                    { "value": "VPN kill-switch for safety" }
                 ],
                 "company_link": {
                     "name": "expressvpn.com",
@@ -202,6 +235,7 @@ const vpnData: VPNData =
                     { "value": "Excellent customer support" },
                     { "value": "Good downloading speed" },
                     { "value": "Chrome & Firefox extension" },
+                    { "value": "Monitor & prevents data leaks" },
                     { "value": "Free trial for 30 Days" }
                 ],
                 "company_link": {
@@ -233,6 +267,7 @@ const vpnData: VPNData =
                     { "value": "Free for 30 Days with Money-Back Guarantee" },
                     { "value": "Secure, Hides your online activity" },
                     { "value": "Ultra-fast speed for all devices" },
+                    { "value": "Chrome & Firefox extension" },
                     { "value": "Strict no-logs policy to keep you safe" }
                 ],
                 "company_link": {
@@ -252,38 +287,7 @@ const vpnData: VPNData =
                 },
             }
         },
-        {
-            "attributes": {
-                "vpn_name": "Total Vpn",
-                "ratting": 8.5,
-                "slug": "totalvpn",
-                "offer": "",
-                "details": "Total Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
-                "img": "totalvpn.png",
-                "features": [
-                    { "value": "Excellent customer support" },
-                    { "value": "Good downloading speed" },
-                    { "value": "Chrome & Firefox extension" },
-                    { "value": "Free trial for 30 Days" }
-                ],
-                "company_link": {
-                    "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-                },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "top_banner": [
-                ],
-                "category_rating": {
-                    "privacy": 8.5,
-                    "features": 8.6,
-                    "speed": 8.0,
-                    "userScore": 8.6,
-                    "valueForMoney": 8.4,
-                },
-            }
-        },
-
+        
 
 
     ],
