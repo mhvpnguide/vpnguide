@@ -66,10 +66,10 @@ const vpnData: VPNData =
 {
     title: "The Best VPN for Windows 2024",
     list: [
-        "<b'>Ultra-Fast servers</b> for uninterrupted browsing and streaming in India",
-        "<b'>Change your IP address location</b> & use the internet privately & securely",
-        "<b'>Connect multiple devices</span> with a single VPN account simultaneously",
-        "<b'>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
+        "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming in India",
+        "<b>Change your IP address location</b> & use the internet privately & securely",
+        "<b>Connect multiple devices</span> with a single VPN account simultaneously",
+        "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
     updatedOn: '25-October-2024',
     bestPlan: [
@@ -90,7 +90,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Cyber Ghost",
-                "ratting": 9.8,
+                "ratting": 9.9,
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
                 "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
@@ -443,10 +443,10 @@ const TestVpnPage = () => {
                 {/* left */}
                 <div className="content w-full tablet:w-[55%] max-h-fit ">
                     <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-4 font-kantumruyPro">{vpnData.title}</h1>
-                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[16px] font-kantumruyPro">
+                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[14px] font-kantumruyPro">
                         {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
                     </h2>
-                    <ul className=" mb-[30px] text-sm laptop:text-base">
+                    <ul className=" mb-[20px] text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
                                 <li className="tick-list-green-item mb-[14px] font-kantumruyPro" key={idx} dangerouslySetInnerHTML={{
