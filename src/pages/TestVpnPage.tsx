@@ -66,7 +66,7 @@ const vpnData: VPNData =
 {
     title: "The Best VPN for Windows 2024",
     list: [
-        "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming in India",
+        "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming",
         "<b>Change your IP address location</b> & use the internet privately & securely",
         "<b>Connect multiple devices</span> with a single VPN account simultaneously",
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
@@ -141,10 +141,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1007&link=text"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1007&link=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1007&link=tile",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "@ $1.59/Month Only!" }
@@ -177,10 +177,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1004&link=text"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&link=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1004&link=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -209,10 +209,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "expressvpn.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1001&link=text"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1001&link=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1001&link=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -241,10 +241,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "surfshark.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1005&link=text"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&link=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&link=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -273,10 +273,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "purevpn.com",
-                    "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1006&link=text"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&link=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&link=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -293,126 +293,128 @@ const vpnData: VPNData =
 
     ],
     reviews: [
+        
         {
-            "img": "expressvpn.png",
-            "rating": 9.8,
-            "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny! - Express Vpn",
-            "author": "Roma Bose",
+            "img": "totalvpn.png",
+            "rating": 9.2,
+            "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
+            "author": "Raimundas Kastravickas",
             "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1001"
+                "name": "totalvpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1007&link=review"
             },
         },
         {
             "img": "cyberghost.png",
-            "rating": 9.6,
-            "review": "It's worked well for me. I've been using CyberGhost for a few years now and couldn't be happier. I've received a few cheaper deals from other suppliers but I trust CyberGhost and will stick with it. I highly recommend this product. - CyberGhost",
-            "author": "Soma Bose",
+            "rating": 9.2,
+            "review": "Excellent features and responsive customer service make this VPN my favorite on the market. It is easy to use, very comprehensive, and quite affordable both financially and in terms of usability. To top it off, when you renew your subscription, they offer a significant discount. - Cyber Ghost",
+            "author": "Charles Ward",
             "company_link": {
                 "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1004"
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&link=review"
             },
         },
         {
             "img": "privateinternetaccess.png",
-            "rating": 9.7,
-            "review": "The VPN has always connected quickly with fast speeds and support was there for me for the one time I had an issue and quickly helped me resolve the matter! I highly recommend this for people looking for an affordable, reliable vpn! - PIA",
-            "author": "Rima Bose",
+            "rating": 9.2,
+            "review": "I especially appreciate that this VPN runs on Linux as well as Windows because I use both systems. It was easy to install and gives me yet another layer of protection against being spied upon. - PIA",
+            "author": "Warwick Gummerson",
             "company_link": {
-                "name": "privateinternetaccess.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1004&link=review"
             },
         },
         {
-            "img": "purevpn.png",
-            "rating": 9.3,
-            "review": "PureVPN bought ivacy VPN and my account got transfered. Unfortunatelly not all my settings were right. But I contacted their support team and everything has gotten care of. Many thank again to them. - Pure Vpn ",
-            "author": "Roma Bose",
+            "img": "expressvpn.png",
+            "rating": 9.2,
+            "review": "I've been using ExpressVPN for years and I love it. It's so easy to use and it works great. There is no lag or noticeable delay and it's easy to switch locations whenever you want. You can also install it on five devices, which means that I can have it on my computer, phone, and tablet and still share it with my mom. I highly recommend this VPN. - Express Vpn",
+            "author": "Monica Murray Derr",
             "company_link": {
-                "name": "purevpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "name": "expressvpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1001&link=review"
             },
         },
         {
             "img": "surfshark.png",
-            "rating": 9.3,
-            "review": "My experience was great due to the speed and courtesy of the customer service. This company really excels at listening to their customers and resolving issues quickly. Keep it up! - Surf Shark",
-            "author": "Roma Bose",
+            "rating": 9.2,
+            "review": "Every bit as good as the overpriced better known VPN's, & there is barely any decrease in speed when watching movies, if any at all. There are plenty of Country locations to choose from, allowing me to watch Netflix etc. in any zone I choose. U.S. Netflix, for example, is so much better than what Australia has to offer. - SurfShark",
+            "author": "Rick",
             "company_link": {
                 "name": "surfshark.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&link=review"
+            },
+        },
+        {
+            "img": "purevpn.png",
+            "rating": 9.2,
+            "review": "Been a loyal customer of PureVPN for what must be over 10 years now. Whenever (rarely) anything doesn’t work, support from excellent reps like Bilal always set things right. What an improvement over past VPN experiences! - Pure Vpn",
+            "author": "Vivino Nutzer",
+            "company_link": {
+                "name": "purevpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1006&link=review"
             },
         },
         {
             "img": "totalvpn.png",
             "rating": 9.2,
-            "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
-            "author": "Roma Bose",
+            "review": "At first I did not like it cause of a download problem but a technical support helped me out so I did get it downloaded and now I think it is a great privacy investment, I would like to thank the support technician who helped me out and made it so easy to install, Thank you. - Total Vpn",
+            "author": "Carm Sacco",
             "company_link": {
                 "name": "totalvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "expressvpn.png",
-            "rating": 9.6,
-            "review": "Review 7 - Express Vpn",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "privateinternetaccess.png",
-            "rating": 9.7,
-            "review": "Review 8 - PIA",
-            "author": "Rima Bose",
-            "company_link": {
-                "name": "privateinternetaccess.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "value": "https://track.vpns.guide/base2.php?cloid=1007&link=review"
             },
         },
         {
             "img": "cyberghost.png",
-            "rating": 9.6,
-            "review": "Review 9 - Cyber Ghost",
-            "author": "Roma Bose",
+            "rating": 9.2,
+            "review": "I use CyberGhost VPN since few times, it's the cheapest that I found, and today I'm quite satisfied by the service. The user xp is good on the app and on PC, cheap and efficient I think it's a good choice. - Cyber Ghost",
+            "author": "Tanguy Le Crom",
             "company_link": {
                 "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
-            },
-        },
-        {
-            "img": "expressvpn.png",
-            "rating": 9.6,
-            "review": "Review 10 - Express Vpn",
-            "author": "Roma Bose",
-            "company_link": {
-                "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&link=review"
             },
         },
         {
             "img": "privateinternetaccess.png",
-            "rating": 9.7,
-            "review": "Review 11 - PIA",
-            "author": "Rima Bose",
+            "rating": 9.2,
+            "review": "Easy to use, in general very good, all the sites I need are working. Sadly a very specific streaming keeps kicking me out and sometimes google send me to some weird captchas but, well, it is what it is... - PIA",
+            "author": "Tiago Andriotti",
             "company_link": {
-                "name": "privateinternetaccess.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1004&link=review"
             },
         },
         {
-            "img": "cyberghost.png",
-            "rating": 9.6,
-            "review": "Review 12 - Cyber Ghost",
-            "author": "Roma Bose",
+            "img": "expressvpn.png",
+            "rating": 9.2,
+            "review": "Ever since I became a subscriber I had no need to worry about cybersecurity. ExpressVpn offers the most reliable internet protection in the market. The monthly renewal is also fast and easy. - Express Vpn",
+            "author": "MKS",
             "company_link": {
-                "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+                "name": "expressvpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1001&link=review"
             },
         },
+        {
+            "img": "surfshark.png",
+            "rating": 9.2,
+            "review": "I've been using this VPN for a few days now, and my experience has been nothing but positive! The server speeds are great with very low ping, customer service is awesome, and it was super easy to setup on my router with WireGuard. - SurfShark",
+            "author": "Brian",
+            "company_link": {
+                "name": "surfshark.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&link=review"
+            },
+        },
+        {
+            "img": "purevpn.png",
+            "rating": 9.2,
+            "review": "Smart and patient user support. I needed help with setting up vpn on my tp link router and Asim helped me patiently. Their support knows how to set up routers and are very patient. I am definitely renewing their service. - Pure Vpn",
+            "author": "Ankush Gaur",
+            "company_link": {
+                "name": "purevpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1006&link=review"
+            },
+        },
+    
     ]
 }
 
@@ -666,10 +668,10 @@ const TestVpnPage = () => {
             <div className="flex flex-col bg-white py-[50px] px-2 laptop:px-0">
                 <h1 className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">Are you ready to secure yourself with worldclass VPN</h1>
                 <div className="flex flex-col laptop:flex-row justify-center laptop:gap-12 gap-5">
-                    <Link href="#" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
+                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&link=Yes" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
                         <MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device NOW</span>
                     </Link>
-                    <Link href="#" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
+                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&link=No" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
                         <RxCrossCircled className="text-red-500 text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">No, I need some more time</span>
                     </Link>
                 </div>
