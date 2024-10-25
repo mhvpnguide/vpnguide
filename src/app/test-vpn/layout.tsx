@@ -14,6 +14,34 @@ export default function testVpnLayoutreviewLayout({
         <SpecialNavbar/>
         {children}
       </section>
+      {/* <!-- Cpa Tracking (script) --> */}
+<Script
+                id="clpconfig"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                            var clpconfig = {
+                            "clroot" : "https://track.vpns.guide/",
+                            "engsec" : "45",
+                            "clcsr" : "1"
+                            };
+                        `,
+                }}
+            />
+            <Script
+                src="//track.vpns.guide/landing.js"
+                strategy="afterInteractive"
+            />
+            <Script
+                id="checkdirect"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                        setTimeout("checkdirect(8,2)",2000);
+                         `,
+                }}
+            />
+            {/* <!-- Cpa Tracking (script) END--> */}
     </>
   )
 }
