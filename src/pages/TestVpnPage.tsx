@@ -106,10 +106,10 @@ const vpnData: VPNData =
                 
                 "company_link": {
                     "name": "cyberghost.com",
-                    "value": "https://track.vpns.guide/base.php?key=c8f75004ff843dd185940d2d8c1d19e5"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1002&link=tile"
                 },
-                "link1":"https://track.vpns.guide/base.php?c=11",
-                "link2":"https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1002&link=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1002&link=text",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
