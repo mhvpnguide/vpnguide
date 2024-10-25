@@ -9,52 +9,52 @@ import RatingStars from './CustomStar';
 const compareData = [
     {
         usersReview: {
-            vpnName: "Cyber Ghost",
+            vpnName: "CyberGhost",
             logo: "cyberghost.png",
             icon: "square_logo_cyberghost.png",
             ratting: 10,
-            noRating: 21,
+            noRating: 5321,
         },
         BestFor: {
-            title: "Gaming, Streaming"
+            title: "Overall Best"
         },
         speed: {
-            title: "Very Fast (100Mbps)",
-            point: 3
+            title: "Very Fast (99Mbps)",
+            point: 5
         },
         torrenting: {
-            title: "Very Fast (100Mbps)",
-            point: 2
+            title: "Excellent",
+            point: 5
         },
         streaming: {
-            title: "Very Fast (100Mbps)",
-            point: 1
+            title: "Excellent",
+            point: 5
         },
         gaming: {
-            title: "Very Fast (100Mbps)",
+            title: "Ver Good",
             point: 4
         },
         easeOfUse: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         killSwitch: {
-            value: false
+            value: true
         },
         wifiProtections: {
-            value: false
+            value: true
         },
         noLogs: {
-            value: false
+            value: true
         },
         noIp: {
-            value: false
+            value: true
         },
         encryption: {
             value: "Military Grade Encryption"
         },
         customerSupport: {
-            value: "Outstanding 24x7 Support"
+            value: "Outstanding 24x7 Live Support"
         },
         discount: {
             value: "83% Discount + 4 Months Free"
@@ -64,7 +64,7 @@ const compareData = [
         },
         valueForMoney: {
             title: "Outstanding",
-            point: 4
+            point: 5
         },
         link:{
             vlaue:"https://vpns.guide"
