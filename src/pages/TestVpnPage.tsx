@@ -289,7 +289,7 @@ const vpnData: VPNData =
     ],
     reviews: [
         {
-            "img": "expressvpn1.png",
+            "img": "expressvpn3.png",
             "rating": 9.8,
             "review": "Flawless installation starts automatically, great speed, I couldn't be happier with Express VPN. There are lots of servers to connect to. I've even used it while vacationing in Ireland. ExpressVPN is a great product and worth every penny! - Express Vpn",
             "author": "Roma Bose",
@@ -299,7 +299,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "cyberghost1.png",
+            "img": "cyberghost3.png",
             "rating": 9.6,
             "review": "It's worked well for me. I've been using CyberGhost for a few years now and couldn't be happier. I've received a few cheaper deals from other suppliers but I trust CyberGhost and will stick with it. I highly recommend this product. - CyberGhost",
             "author": "Soma Bose",
@@ -309,7 +309,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "privateinternetaccess1.png",
+            "img": "privateinternetaccess3.png",
             "rating": 9.7,
             "review": "The VPN has always connected quickly with fast speeds and support was there for me for the one time I had an issue and quickly helped me resolve the matter! I highly recommend this for people looking for an affordable, reliable vpn! - PIA",
             "author": "Rima Bose",
@@ -319,7 +319,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "purevpn1.png",
+            "img": "purevpn3.png",
             "rating": 9.3,
             "review": "PureVPN bought ivacy VPN and my account got transfered. Unfortunatelly not all my settings were right. But I contacted their support team and everything has gotten care of. Many thank again to them. - Pure Vpn ",
             "author": "Roma Bose",
@@ -329,7 +329,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "surfshark1.png",
+            "img": "surfshark3.png",
             "rating": 9.3,
             "review": "My experience was great due to the speed and courtesy of the customer service. This company really excels at listening to their customers and resolving issues quickly. Keep it up! - Surf Shark",
             "author": "Roma Bose",
@@ -339,7 +339,7 @@ const vpnData: VPNData =
             },
         },
         {
-            "img": "totalvpn1.png",
+            "img": "totalvpn3.png",
             "rating": 9.2,
             "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
             "author": "Roma Bose",
@@ -372,6 +372,36 @@ const vpnData: VPNData =
             "img": "cyberghost.png",
             "rating": 9.6,
             "review": "Review 9 - Cyber Ghost",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "expressvpn1.png",
+            "rating": 9.6,
+            "review": "Review 10 - Express Vpn",
+            "author": "Roma Bose",
+            "company_link": {
+                "name": "expressvpn.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "privateinternetaccess1.png",
+            "rating": 9.7,
+            "review": "Review 11 - PIA",
+            "author": "Rima Bose",
+            "company_link": {
+                "name": "privateinternetaccess.com",
+                "value": "https://track.vpns.guide/base.php?c=11&key=c8f75004ff843dd185940d2d8c1d19e5"
+            },
+        },
+        {
+            "img": "cyberghost1.png",
+            "rating": 9.6,
+            "review": "Review 12 - Cyber Ghost",
             "author": "Roma Bose",
             "company_link": {
                 "name": "cyberghost.com",
