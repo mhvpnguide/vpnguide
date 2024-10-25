@@ -172,7 +172,7 @@ const vpnData: VPNData =
                     { "value": "Connects upto 10 devices simultaneously" },
                     { "value": "Try it free for 30 days" },
                     { "value": "100% Open-Source, No-Logs VPN" },
-                    { "value": "Servers in 91 countries" }
+                    { "value": "Servers in 91 countries" },
                     { "value": "Powerful built-in Ad & Malware blocker" }
                 ],
                 "company_link": {
@@ -265,7 +265,7 @@ const vpnData: VPNData =
                 "details": "Pure Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
                 "img": "purevpn.png",
                 "features": [
-                    { "value": "30 Days with Money-Back Guarantee" },
+                    { "value": "30 Days Free with Money-Back Guarantee" },
                     { "value": "Secure, Hides your online activity" },
                     { "value": "Ultra-fast speed for all devices" },
                     { "value": "Chrome & Firefox extension" },
