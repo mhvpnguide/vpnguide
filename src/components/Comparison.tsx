@@ -67,7 +67,7 @@ const compareData = [
             point: 5
         },
         link:{
-            vlaue:"https://vpns.guide"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1002&link=compare"
         }
     },
     {
@@ -132,7 +132,7 @@ const compareData = [
             point: 4
         },
         link:{
-            vlaue:"https://vpns.guide/best-vpn"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1007&link=compare"
         }
     },
     {
@@ -198,7 +198,7 @@ const compareData = [
             point: 4
         },
         link:{
-            vlaue:"https://vpns.guide/best-vpn-for-india"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1004&link=compare"
         }
     },
 ]
