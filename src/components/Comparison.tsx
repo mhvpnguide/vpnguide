@@ -660,10 +660,10 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[2].moneyBack.value}</div>
                 </div>
 
-                {/* Ease of use */}
+                {/* Value for Money */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Ease of Use</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Value for Money</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -951,10 +951,10 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[vpn].moneyBack.value}</div>
                 </div>
 
-                {/* Ease of use */}
+                {/* Value for Money */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Ease of Use</span>
+                        <span className='ml-3 font-semibold'>Value for Money</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
