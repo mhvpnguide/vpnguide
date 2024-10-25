@@ -31,7 +31,7 @@ const compareData = [
             point: 5
         },
         gaming: {
-            title: "Ver Good",
+            title: "Very Good",
             point: 4
         },
         easeOfUse: {
@@ -63,7 +63,7 @@ const compareData = [
             value: "45 Days"
         },
         valueForMoney: {
-            title: "Outstanding",
+            title: "Best Deal",
             point: 5
         },
         link:{
@@ -76,59 +76,59 @@ const compareData = [
             logo: "totalvpn.png",
             icon: "square_logo_total_vpn.png",
             ratting: 9.5,
-            noRating: 14,
+            noRating: 3914,
         },
         BestFor: {
             title: "Gaming, Streaming"
         },
         speed: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Very Fast (97Mbps)",
+            point: 5
         },
         torrenting: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         streaming: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         gaming: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         easeOfUse: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         killSwitch: {
             value: true
         },
         wifiProtections: {
-            value: false
+            value: true
 
         },
         noLogs: {
-            value: false
+            value: true
 
         },
         noIp: {
-            value: false
+            value: true
         },
         encryption: {
-            value: "Military Grade Encryption"
+            value: "AES-256 Encryption"
         },
         customerSupport: {
-            value: "Outstanding 24x7 Support"
+            value: "Great 24x7 Support"
         },
         discount: {
-            value: "Free Antivirus Protection & Free Ad Blocker"
+            value: "80% Off + Free Antivirus"
         },
         moneyBack: {
-            value: "45 Days"
+            value: "30 Days"
         },
         valueForMoney: {
-            title: "Superb",
+            title: "Moderate",
             point: 4
         },
         link:{
@@ -142,36 +142,36 @@ const compareData = [
             icon: "square_logo_private_internet_access.png",
 
             ratting: 9.5,
-            noRating: 11,
+            noRating: 4791,
         },
         BestFor: {
-            title: "Gaming, Streaming"
+            title: "Torrenting, Privacy"
         },
         speed: {
-            title: "Very Fast (100Mbps)",
+            title: "Fast (88Mbps)",
             point: 4
         },
         torrenting: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         streaming: {
-            title: "Very Fast (100Mbps)",
-            point: 3
+            title: "Very Good",
+            point: 4
         },
         gaming: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         easeOfUse: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         killSwitch: {
             value: true
         },
         wifiProtections: {
-            value: false
+            value: true
 
         },
         noLogs: {
@@ -179,7 +179,7 @@ const compareData = [
 
         },
         noIp: {
-            value: false
+            value: true
         },
         encryption: {
             value: "Military Grade Encryption"
@@ -188,10 +188,10 @@ const compareData = [
             value: "Outstanding 24x7 Support"
         },
         discount: {
-            value: "One Account Unlimited Devices"
+            value: "83% Discount + 4 Months Free"
         },
         moneyBack: {
-            value: "45 Days"
+            value: "30 Days"
         },
         valueForMoney: {
             title: "Great",
