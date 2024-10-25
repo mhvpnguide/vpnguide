@@ -9,17 +9,17 @@ import RatingStars from './CustomStar';
 const compareData = [
     {
         usersReview: {
-            vpnName: "Express",
-            logo: "expressvpn.png",
-            icon: "square_logo_express_vpn.png",
-            ratting: 4.9,
+            vpnName: "Cyber Ghost",
+            logo: "cyberghost.png",
+            icon: "square_logo_cyberghost.png",
+            ratting: 10,
             noRating: 21,
         },
         BestFor: {
-            title: "Gaming, Streaming 1"
+            title: "Gaming, Streaming"
         },
         speed: {
-            title: "Very Fast (10022Mbps)",
+            title: "Very Fast (100Mbps)",
             point: 3
         },
         torrenting: {
@@ -57,13 +57,13 @@ const compareData = [
             value: "Outstanding 24x7 Support"
         },
         discount: {
-            value: "83% Discount + 3 Months Free"
+            value: "83% Discount + 4 Months Free"
         },
         moneyBack: {
             value: "45 Days"
         },
         valueForMoney: {
-            title: "great",
+            title: "Outstanding",
             point: 4
         },
         link:{
@@ -72,14 +72,14 @@ const compareData = [
     },
     {
         usersReview: {
-            vpnName: "Cyber Ghost",
-            logo: "cyberghost.png",
-            icon: "square_logo_cyberghost.png",
-            ratting: 4.8,
+            vpnName: "Total Vpn",
+            logo: "totalvpn.png",
+            icon: "square_logo_total_vpn.png",
+            ratting: 9.5,
             noRating: 14,
         },
         BestFor: {
-            title: "Gaming, Streaming 2"
+            title: "Gaming, Streaming"
         },
         speed: {
             title: "Very Fast (100Mbps)",
@@ -122,13 +122,13 @@ const compareData = [
             value: "Outstanding 24x7 Support"
         },
         discount: {
-            value: "83% Discount + 3 Months Free"
+            value: "Free Antivirus Protection & Free Ad Blocker"
         },
         moneyBack: {
             value: "45 Days"
         },
         valueForMoney: {
-            title: "Awsome",
+            title: "Superb",
             point: 4
         },
         link:{
@@ -141,11 +141,11 @@ const compareData = [
             logo: "privateinternetaccess.png",
             icon: "square_logo_private_internet_access.png",
 
-            ratting: 4.6,
+            ratting: 9.5,
             noRating: 11,
         },
         BestFor: {
-            title: "Gaming, Streaming 3"
+            title: "Gaming, Streaming"
         },
         speed: {
             title: "Very Fast (100Mbps)",
@@ -188,13 +188,13 @@ const compareData = [
             value: "Outstanding 24x7 Support"
         },
         discount: {
-            value: "83% Discount + 3 Months Free"
+            value: "One Account Unlimited Devices"
         },
         moneyBack: {
             value: "45 Days"
         },
         valueForMoney: {
-            title: "Outstanding",
+            title: "Great",
             point: 4
         },
         link:{

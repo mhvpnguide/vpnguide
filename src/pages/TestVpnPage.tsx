@@ -90,7 +90,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Cyber Ghost",
-                "ratting": 9.89,
+                "ratting": 9.8,
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
                 "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
@@ -165,13 +165,13 @@ const vpnData: VPNData =
                 "ratting": 9.2,
                 "slug": "privateinternetaccess",
                 "offer": "One Account Unlimited Devices",
-                "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support. Great!",
+                "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support.",
                 "img": "privateinternetaccess.png",
                 "features": [
                     { "value": "Suberb for Private Internet Browsing" },
                     { "value": "Connects upto 10 devices simultaneously" },
                     { "value": "Try it free for 30 days" },
-                    { "value": "100% Open-Source, N0-Logs VPN" },
+                    { "value": "100% Open-Source, No-Logs VPN" },
                     { "value": "Servers in 91 countries" }
                 ],
                 "company_link": {
@@ -197,10 +197,10 @@ const vpnData: VPNData =
                 "ratting": 8.9,
                 "slug": "expressvpn",
                 "offer": "Sign up today & get 3 extra months for free.",
-                "details": "EXPRESS VPN: Well-rounded secure and private VPN for anonymous browsing& downloads with No-Logs policy to keep you safe online. Great!",
+                "details": "EXPRESS VPN: Well-rounded secure and private VPN for anonymous browsing & downloads with No-Logs policy to keep you safe online.",
                 "img": "expressvpn.png",
                 "features": [
-                    { "value": "Optimized for anonymous & secure downloads" },
+                    { "value": "Super for anonymous & secure downloads" },
                     { "value": "Enhanced security with no IP/DNS leaks" },
                     { "value": "Chrome & FIrefox extensions" },
                     { "value": "3000 servers in 100+ countries" },
@@ -443,7 +443,7 @@ const TestVpnPage = () => {
                 {/* left */}
                 <div className="content w-full tablet:w-[55%] max-h-fit ">
                     <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-4 font-kantumruyPro">{vpnData.title}</h1>
-                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[13px] font-kantumruyPro">
+                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[16px] font-kantumruyPro">
                         {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
                     </h2>
                     <ul className=" mb-[30px] text-sm laptop:text-base">
