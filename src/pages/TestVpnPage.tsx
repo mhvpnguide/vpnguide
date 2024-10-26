@@ -106,10 +106,10 @@ const vpnData: VPNData =
                 
                 "company_link": {
                     "name": "cyberghost.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1002&link=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1002&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1002&link=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
@@ -141,10 +141,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1007&link=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1007&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1007&link=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "@ $1.59/Month Only!" }
@@ -177,10 +177,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1004&link=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1004&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1004&link=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -209,10 +209,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "expressvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1001&link=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1001&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1001&link=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1001&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -241,10 +241,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "surfshark.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1005&link=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1005&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1005&link=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -273,10 +273,10 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "purevpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1006&link=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1006&link=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1006&link=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -301,7 +301,7 @@ const vpnData: VPNData =
             "author": "Raimundas Kastravickas",
             "company_link": {
                 "name": "totalvpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1007&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=review"
             },
         },
         {
@@ -311,7 +311,7 @@ const vpnData: VPNData =
             "author": "Charles Ward",
             "company_link": {
                 "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1002&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=review"
             },
         },
         {
@@ -321,7 +321,7 @@ const vpnData: VPNData =
             "author": "Warwick Gummerson",
             "company_link": {
                 "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1004&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=review"
             },
         },
         {
@@ -331,7 +331,7 @@ const vpnData: VPNData =
             "author": "Monica Murray Derr",
             "company_link": {
                 "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1001&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=review"
             },
         },
         {
@@ -341,7 +341,7 @@ const vpnData: VPNData =
             "author": "Rick",
             "company_link": {
                 "name": "surfshark.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1005&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review"
             },
         },
         {
@@ -351,7 +351,7 @@ const vpnData: VPNData =
             "author": "Vivino Nutzer",
             "company_link": {
                 "name": "purevpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1006&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=review"
             },
         },
         {
@@ -361,7 +361,7 @@ const vpnData: VPNData =
             "author": "Carm Sacco",
             "company_link": {
                 "name": "totalvpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1007&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=review"
             },
         },
         {
@@ -371,7 +371,7 @@ const vpnData: VPNData =
             "author": "Tanguy Le Crom",
             "company_link": {
                 "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1002&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=review"
             },
         },
         {
@@ -381,7 +381,7 @@ const vpnData: VPNData =
             "author": "Tiago Andriotti",
             "company_link": {
                 "name": "cyberghost.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1004&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=review"
             },
         },
         {
@@ -391,7 +391,7 @@ const vpnData: VPNData =
             "author": "MKS",
             "company_link": {
                 "name": "expressvpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1001&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=review"
             },
         },
         {
@@ -401,7 +401,7 @@ const vpnData: VPNData =
             "author": "Brian",
             "company_link": {
                 "name": "surfshark.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1005&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review"
             },
         },
         {
@@ -411,7 +411,7 @@ const vpnData: VPNData =
             "author": "Ankush Gaur",
             "company_link": {
                 "name": "purevpn.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1006&link=review"
+                "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=review"
             },
         },
     
@@ -668,10 +668,10 @@ const TestVpnPage = () => {
             <div className="flex flex-col bg-white py-[50px] px-2 laptop:px-0">
                 <h1 className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">Are you ready to secure yourself with worldclass VPN</h1>
                 <div className="flex flex-col laptop:flex-row justify-center laptop:gap-12 gap-5">
-                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&link=Yes" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
+                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
                         <MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device NOW</span>
                     </Link>
-                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&link=No" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
+                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=No" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
                         <RxCrossCircled className="text-red-500 text-[30px] inline" /><span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">No, I need some more time</span>
                     </Link>
                 </div>
