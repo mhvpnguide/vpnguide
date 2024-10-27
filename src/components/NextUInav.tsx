@@ -146,7 +146,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
             <NavbarContent className="hidden laptop:flex gap-3 w-full">
               {navdata.map((item: NavItem, idx: number) =>
                 item.subnav && item.subnav.length > 0 ? (
-                  <Dropdown key={idx}>
+                  <Dropdown key={idx} shouldBlockScroll={false}>
                     <NavbarItem>
                       <DropdownTrigger>
                         <Button
@@ -224,7 +224,7 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
             <NavbarContent className="hidden laptop:flex gap-3 w-full">
               {specialnav.map((item: NavItem, idx: number) =>
                 item.subnav && item.subnav.length > 0 ? (
-                  <Dropdown key={idx}>
+                  <Dropdown key={idx} shouldBlockScroll={false}>
                     <NavbarItem>
                       <DropdownTrigger>
                         <Button

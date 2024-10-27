@@ -10,6 +10,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --------------------------  NAVBAR: STARTING  --------------------------   */
+
 nav {
   @apply justify-start h-[55px] drop-shadow-md !important ;
 }
@@ -25,6 +27,8 @@ nav>header>ul {
 nav>header>ul>ul {
   @apply laptop:justify-center gap-10 !important;
 }
+/* --------------------------  NAVBAR: end  --------------------------   */
+
 
 .button-drop:hover {
   background-color: none !important;
@@ -33,10 +37,6 @@ nav>header>ul>ul {
 .main-bg {
   background-image: radial-gradient(circle 500px at 30% 400px, #fad6cd 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 65% 570px, #b8c6fc 4%, rgba(219, 227, 253, 0.5) 57.5%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 25% 3600px, #fbb8a7 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 500px at 65% 4000px, #b8c6fc 4%, rgba(219, 227, 253, 0.5) 57.5%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle 350px at 70% 4700px, #fad6cd 0%, rgba(255, 255, 255, 0) 100%);
 }
-
-/* nav header ul{
-  @apply  justify-between gap-10 bg-red-300;
-} */
 
 
 .shadow-custom {
@@ -131,11 +131,17 @@ nav>header>ul>ul {
   padding-left: 1.5em;
   /* Adjust this value for more or less spacing */
 }
+.tick-list-item b {
+  font-weight: 600; /* Or 600 for a slightly bolder look */
+}
 .tick-list-green-item {
   list-style-type: none;
   position: relative;
   padding-left: 1.5em;
   /* Adjust this value for more or less spacing */
+}
+.tick-list-green-item b {
+  font-weight: 600; /* Or 600 for a slightly bolder look */
 }
 
 .tick-list-item::before {
@@ -416,3 +422,11 @@ nav>header>ul>ul {
 .specialNav>header>ul>button{
   @apply mr-2 !important;
 }
+
+
+
+/* -------------------------    Modal: start    ------------------------ */
+.customModal > button{
+  @apply bg-white
+}
+/* -------------------------    Modal: end    ------------------------ */

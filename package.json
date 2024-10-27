@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.10.2",
     "@next/font": "^14.2.15",
     "@next/third-parties": "^14.2.13",
     "@nextui-org/accordion": "^2.0.38",
@@ -19,6 +20,7 @@
     "@nextui-org/tabs": "^2.0.35",
     "@nextui-org/theme": "^2.2.9",
     "framer-motion": "^11.3.17",
+    "js-cookie": "^3.0.5",
     "next": "^14.2.13",
     "react": "^18",
     "react-dom": "^18",
@@ -26,6 +28,7 @@
     "swiper": "^11.1.14"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20.14.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",

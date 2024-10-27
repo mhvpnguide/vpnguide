@@ -1,10 +1,16 @@
 "use client"
 import Link from 'next/link'
-import React, { useState } from 'react'
-import { RxCrossCircled, RxValue } from "react-icons/rx";
-import { MdOutlineCheckCircle } from "react-icons/md";
 import Image from 'next/image';
-import RatingStars from './CustomStar';
+import dynamic from 'next/dynamic';
+import React, { Suspense, useState } from 'react'
+
+// Lazy load icons
+const RxCrossCircled = React.lazy(() => import('react-icons/rx').then(mod => ({ default: mod.RxCrossCircled })));
+const MdOutlineCheckCircle = React.lazy(() => import('react-icons/md').then(mod => ({ default: mod.MdOutlineCheckCircle })));
+
+
+// Dynamically import the RatingStars component
+const RatingStars = dynamic(() => import('./CustomStar'), { ssr: false });
 
 const compareData = [
     {
@@ -66,8 +72,8 @@ const compareData = [
             title: "great",
             point: 4
         },
-        link:{
-            vlaue:"https://vpns.guide"
+        link: {
+            vlaue: "https://vpns.guide"
         }
     },
     {
@@ -131,8 +137,8 @@ const compareData = [
             title: "Awsome",
             point: 4
         },
-        link:{
-            vlaue:"https://vpns.guide/best-vpn"
+        link: {
+            vlaue: "https://vpns.guide/best-vpn"
         }
     },
     {
@@ -197,8 +203,8 @@ const compareData = [
             title: "Outstanding",
             point: 4
         },
-        link:{
-            vlaue:"https://vpns.guide/best-vpn-for-india"
+        link: {
+            vlaue: "https://vpns.guide/best-vpn-for-india"
         }
     },
 ]
@@ -222,7 +228,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="express" />
                         </div >
                         <RatingStars value={compareData[0].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -231,7 +237,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="express" />
                         </div >
                         <RatingStars value={compareData[1].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -240,7 +246,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-r-0 border-t-0 flex-col pb-2 sticky top-0">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="express" />
                         </div >
                         <RatingStars value={compareData[2].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -274,7 +280,7 @@ const Comparison = () => {
                                     compareData[0].speed.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] rounded-full shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] rounded-full shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -287,7 +293,7 @@ const Comparison = () => {
                                     compareData[1].speed.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -300,7 +306,7 @@ const Comparison = () => {
                                     compareData[2].speed.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -320,7 +326,7 @@ const Comparison = () => {
                                     compareData[0].torrenting.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -333,7 +339,7 @@ const Comparison = () => {
                                     compareData[1].torrenting.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -346,7 +352,7 @@ const Comparison = () => {
                                     compareData[2].torrenting.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -366,7 +372,7 @@ const Comparison = () => {
                                     compareData[0].streaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full"  key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -379,7 +385,7 @@ const Comparison = () => {
                                     compareData[1].streaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -392,7 +398,7 @@ const Comparison = () => {
                                     compareData[2].streaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full"key={index} />
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -412,7 +418,7 @@ const Comparison = () => {
                                     compareData[0].gaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -425,7 +431,7 @@ const Comparison = () => {
                                     compareData[1].gaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -438,7 +444,7 @@ const Comparison = () => {
                                     compareData[2].gaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -458,7 +464,7 @@ const Comparison = () => {
                                     compareData[0].easeOfUse.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -471,7 +477,7 @@ const Comparison = () => {
                                     compareData[1].easeOfUse.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -484,7 +490,7 @@ const Comparison = () => {
                                     compareData[2].easeOfUse.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -499,27 +505,31 @@ const Comparison = () => {
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Kill Switch</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        {
-                            compareData[0].killSwitch.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
-                                :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
-                        }
+                        <Suspense fallback={<div>Loading components...</div>}>
+                            {
+                                compareData[0].killSwitch.value ?
+                                    <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
+                                    :
+                                    <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
+                            }
+                        </Suspense>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        {
-                            compareData[1].killSwitch.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
-                                :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
-                        }
+                        <Suspense fallback={<div>Loading components...</div>}>
+                            {
+                                compareData[1].killSwitch.value ?
+                                    <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
+                                    :
+                                    <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
+                            }
+                        </Suspense>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
                         {
                             compareData[2].killSwitch.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense></Suspense>
                         }
                     </div>
 
@@ -533,25 +543,24 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[0].wifiProtections.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
-                                :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                            <Suspense fallback={<div>Loading components...</div>}><Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense></Suspense>
+                                :<Suspense fallback={<div>Loading components...</div>}><Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense></Suspense>
                         }
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[1].wifiProtections.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
                         {
                             compareData[2].wifiProtections.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                 </div>
@@ -564,25 +573,25 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[0].noLogs.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[1].noLogs.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
                         {
                             compareData[2].noLogs.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                 </div>
@@ -595,25 +604,25 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[0].noIp.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[1].noIp.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-5">
                         {
                             compareData[2].noIp.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                 </div>
@@ -673,7 +682,7 @@ const Comparison = () => {
                                     compareData[0].valueForMoney.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -686,7 +695,7 @@ const Comparison = () => {
                                     compareData[1].valueForMoney.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -699,7 +708,7 @@ const Comparison = () => {
                                     compareData[2].valueForMoney.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -726,14 +735,14 @@ const Comparison = () => {
                 {/* LOGO */}
                 <div className="flex sticky top-0 bg-white">
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">
-                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==0 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(0) }}>
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" className='rounded-full'/>
+                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 0 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(0) }}>
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" className='rounded-full' />
                         </div>
-                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==1 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(1) }}>
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" className='rounded-full'/>
+                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 1 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(1) }}>
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" className='rounded-full' />
                         </div>
-                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn==2 ? "border-red-300":"border-white"}`} onClick={() => { setVpn(2) }}>
-                            <Image src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="express" className='rounded-full'/>
+                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 2 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(2) }}>
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="express" className='rounded-full' />
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2">
@@ -767,7 +776,7 @@ const Comparison = () => {
                                     compareData[vpn].speed.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -787,7 +796,7 @@ const Comparison = () => {
                                     compareData[vpn].torrenting.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -807,7 +816,7 @@ const Comparison = () => {
                                     compareData[vpn].streaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -827,7 +836,7 @@ const Comparison = () => {
                                     compareData[vpn].gaming.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -847,7 +856,7 @@ const Comparison = () => {
                                     compareData[vpn].easeOfUse.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>
@@ -864,9 +873,9 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[vpn].killSwitch.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
 
@@ -880,9 +889,9 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[vpn].wifiProtections.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                 </div>
@@ -895,9 +904,9 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[vpn].noLogs.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                 </div>
@@ -910,9 +919,9 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
                             compareData[vpn].noIp.value ?
-                                <MdOutlineCheckCircle className="text-[#04AA63] text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-2xl" /></Suspense>
                                 :
-                                <RxCrossCircled className="text-red-500 text-2xl" />
+                                <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-2xl" /></Suspense>
                         }
                     </div>
                 </div>
@@ -964,7 +973,7 @@ const Comparison = () => {
                                     compareData[vpn].valueForMoney.point <= index ?
                                         <div className="h-[18px] w-[18px] border-2 border-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}></div>
                                         :
-                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index}/>
+                                        <div className="h-[18px] w-[18px] bg-[#04AA63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] rounded-full" key={index} />
                                 ))}
                             </div>
                         </div>

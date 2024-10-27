@@ -7,23 +7,23 @@ import NavbarComp from "../components/Navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
-import {Kaisei_Tokumin, Kantumruy_Pro,Inknut_Antiqua } from '@next/font/google'
+import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
 
-const kantumruyPro = Kantumruy_Pro({ 
+const kantumruyPro = Kantumruy_Pro({
   subsets: ["latin"],
-  weight: ["400","500","600","700"],
+  weight: ["400", "500", "600", "700"],
   variable: '--font-kantumruyPro'
- });
-const kaiseiTokumin = Kaisei_Tokumin({ 
+});
+const kaiseiTokumin = Kaisei_Tokumin({
   subsets: ["latin"],
-  weight: ["400","500","700"],
+  weight: ["400", "500", "700"],
   variable: '--font-kaiseiTokumin'
- });
-const inknutAntiqua = Inknut_Antiqua({ 
+});
+const inknutAntiqua = Inknut_Antiqua({
   subsets: ["latin"],
-  weight: ["400","500","700"],
+  weight: ["400", "500", "700"],
   variable: '--font-inknutAntiqua'
- });
+});
 
 export const metadata: Metadata = {
   // title: "VPN Guide",
@@ -226,17 +226,17 @@ export default function RootLayout({
         <link rel="browserconfig" href="/browserconfig.xml" />
         {/* <!-- The Web App Manifest --> */}
         <link rel="manifest" href="/site.webmanifest" />
-        
+
         {/* <!-- SEO Meta Tags --> */}
         <meta
           name="description"
           content="Read our VPN recommendations and advice to protect your internet privacy and security."
         />
         <meta name="author" content="Mohit Singh" />
-        
+
         {/* <!-- Meta Robots --> */}
         <meta name="robots" content="index, follow" />
-        
+
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
         <meta property="og:site_name" content="VPNs Guide" /> {/*website name */}
         <meta property="og:site" content="https://vpns.guide/" />{" "}
@@ -258,9 +258,10 @@ export default function RootLayout({
         {/* where do you want your post to link to */}
         <meta property="og:type" content="website" />{" "}
         {/* The type of content (in this case, "website") */}
-        
+
         {/* Microsost Clarity */}
-        <script
+        <Script
+        strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y) {
@@ -271,26 +272,18 @@ export default function RootLayout({
             `,
           }}
         />
-        
+
         {/* <!-- Google tag (gtag.js) --> */}
-        <script
+        <Script
+        strategy="lazyOnload"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-V3J9MTSWW4"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-TV8QXFD7');
-              `,
-          }}
-        />
-        
         {/* <!-- Google Tag Manager --> */}
-        <script
+
+
+        <Script
+        strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -301,12 +294,11 @@ export default function RootLayout({
           `,
           }}
         />
-        {/* <!-- End Google Tag Manager --> */}
 
       </head>
 
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
-        
+
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
@@ -324,10 +316,8 @@ export default function RootLayout({
           <Footer />
         </NextUIProvider>
       </body>
-      
-      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
       <GoogleTagManager gtmId="GTM-TV8QXFD7" />
-      
+
     </html>
   );
 }

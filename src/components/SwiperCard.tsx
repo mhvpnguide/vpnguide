@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import RatingStars from './CustomStar'
+const RatingStars = dynamic(() => import("@/components/CustomStar"), { ssr: false });
+
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
 
 interface ReviewProps {
   review: {
@@ -22,7 +24,7 @@ const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
       <div className='flex items-center flex-col pb-2'>
 
         <div className='relative  w-full aspect-[2/1]'>
-          <Image src={`/Assests/test-vpn/vpn/${review.img}`} fill alt="vpn image" />
+          <Image loading="lazy" src={`/Assests/test-vpn/vpn/${review.img}`} fill alt="vpn image" />
         </div>
         <RatingStars value={review.rating} />
       </div>

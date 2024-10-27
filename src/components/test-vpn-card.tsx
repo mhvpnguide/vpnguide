@@ -1,62 +1,37 @@
-import Image from "next/image";
+import React, { Suspense } from "react";
 import Link from "next/link";
-import { FaLinux, FaWindows } from "react-icons/fa6";
-import { SiMacos } from "react-icons/si";
-import { IoLogoAndroid, IoMdSpeedometer } from "react-icons/io";
-import { AiOutlineApple, AiOutlineDollarCircle } from "react-icons/ai";
-import { MdLockOutline, MdOutlinePrivacyTip, MdRouter } from "react-icons/md";
-import CustomCircularProgress from "./CustomCircularRatting";
-import CustomProgress from "./CustomProgressBar";
-import RatingStars from "./CustomStar";
-import { BsFillLightbulbFill } from "react-icons/bs";
-import AccordianComponent from "./AccordianComponent";
-import { CiDollar, CiLock, CiUser } from "react-icons/ci";
-import { PiShieldWarningThin, PiSpeedometerThin, PiUserCircle } from "react-icons/pi";
-import { GoShield } from "react-icons/go";
-import { IoShieldCheckmarkOutline, IoSpeedometerOutline } from "react-icons/io5";
-import CustomTestVpnProgressbar from "./CustomTestVpnProgressbar";
-import CustomTestCircularRatting from "./CustomTestCircularRatting";
+import Image from "next/image";
+import { BlogAttributes } from "@/pages/TestVpnPage";
+
+
+// Dynamically import the icons
+const FaLinux = React.lazy(() => import("react-icons/fa6").then((module) => ({ default: module.FaLinux })));
+const FaWindows = React.lazy(() => import("react-icons/fa6").then((module) => ({ default: module.FaWindows })));
+const SiMacos = React.lazy(() => import("react-icons/si").then((module) => ({ default: module.SiMacos })));
+const IoLogoAndroid = React.lazy(() => import("react-icons/io").then((module) => ({ default: module.IoLogoAndroid })));
+const AiOutlineApple = React.lazy(() => import("react-icons/ai").then((module) => ({ default: module.AiOutlineApple })));
+const MdRouter = React.lazy(() => import("react-icons/md").then((module) => ({ default: module.MdRouter })));
+const BsFillLightbulbFill = React.lazy(() => import("react-icons/bs").then((module) => ({ default: module.BsFillLightbulbFill })));
+const CiDollar = React.lazy(() => import("react-icons/ci").then((module) => ({ default: module.CiDollar })));
+const CiLock = React.lazy(() => import("react-icons/ci").then((module) => ({ default: module.CiLock })));
+const CiUser = React.lazy(() => import("react-icons/ci").then((module) => ({ default: module.CiUser })));
+const PiShieldWarningThin = React.lazy(() => import("react-icons/pi").then((module) => ({ default: module.PiShieldWarningThin })));
+const PiSpeedometerThin = React.lazy(() => import("react-icons/pi").then((module) => ({ default: module.PiSpeedometerThin })));
+
+// Dynamically import the components
+const CustomCircularProgress = React.lazy(() => import("./CustomCircularRatting"));
+const RatingStars = React.lazy(() => import("./CustomStar"));
+const AccordianComponent = React.lazy(() => import("./AccordianComponent"));
+const CustomTestVpnProgressbar = React.lazy(() => import("./CustomTestVpnProgressbar"));
+const CustomTestCircularRatting = React.lazy(() => import("./CustomTestCircularRatting"));
 
 interface Blog {
   attributes: BlogAttributes;
 }
-interface BlogAttributes {
-  vpn_name: string;
-  ratting: number;
-  slug: string;
-  offer: string;
-  details: string;
-  img: String;
-  features: { value: string }[];
-  company_link: { name: string; value: string };
-  link1: string;
-  link2: string;
-  top_banner: { value: string }[];
-  category_rating: {
-    privacy: number,
-    features: number,
-    speed: number,
-    userScore: number,
-    valueForMoney: number,
-  };
-}
 interface BannerItem {
   value: string;
 }
-interface Logo {
-  data: LogoData;
-}
-interface LogoData {
-  attributes: LogoAttributes;
-}
-interface LogoAttributes {
-  url: string;
-}
 interface Feature {
-  value: string;
-}
-interface CompanyLink {
-  name: string;
   value: string;
 }
 interface BlogsProps {
@@ -69,18 +44,6 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
   const backgroundColors = ["bg-[#E84803]", "bg-[#00A0B4]", "bg-[#22c55e]", "bg-[#eab308]", "bg-[#ec4899]"];
   const lightBackgroundColors = ["bg-[#FF8A00]", "bg-[#00C2DA]", "bg-[#4ade80]", "bg-[#facc15]", "bg-[#c084fc]"];
   const fontColors = ["text-[#FFF]", "text-[#020617]", "text-[#374151]", "text-[#111827]", "text-[#fef9c3]"];
-
-  // this is for circular progress color
-  const circularProgressColor = ["primary", "secondary", "success", "warning", "danger"]
-
-  const getColorByRating = (rating: number) => {
-    if (rating >= 9.7 && rating <= 10) return circularProgressColor[0];   // Red
-    if (rating >= 9.0 && rating < 9.7) return circularProgressColor[1];    // Orange
-    if (rating >= 8.0 && rating < 9.0) return circularProgressColor[2];    // Yellow
-    if (rating >= 6.0 && rating < 8.0) return circularProgressColor[3];    // Green
-    if (rating >= 0 && rating < 6.0) return circularProgressColor[4];      // Blue
-  };
-
 
   return (
     <section className="flex flex-col gap-4 laptop:my-[18px] py-[4px]">
@@ -118,7 +81,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   <div className="flex justify-between laptop:justify-center border-b tablet:border-none border-gray-400 tablet:w-full ">
                     <div className="w-[80%] flex flex-col">
                       <div className="relative aspect-[2/1] laptop:w-full w-[80%]">
-                        <Image src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} fill alt="express" />
+                        <Image loading="lazy" src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} fill alt="express" />
                       </div >
                       <div className="laptop:hidden flex justify-start pl-4 pb-3">
                         <RatingStars value={blog.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
@@ -146,7 +109,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   {/* vpn details */}
                   <div className="hidden laptop:flex flex-col justify-center mb-3 tablet:w-1/2 laptop:w-full">
                     <p className="text-[14px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
-                    <p className={`mt-2 text-[16px] font-semibold text-blue-600 font-kaiseiTokumin ${idx == 0 ? null : 'hidden'}`}>{blog.attributes.offer}</p>
+                    <p className={`mt-2 text-[16px] font-semibold text-blue-600 font-kaiseiTokumin`}>{blog.attributes.offer}</p>
                   </div>
                 </Link>
 
@@ -171,12 +134,14 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   </ul>
 
                   <div className="hidden tablet:flex gap-5 text-gray-400 text-[24px] py-2 ml-6">
-                    <FaWindows />
-                    <SiMacos />
-                    <IoLogoAndroid />
-                    <AiOutlineApple />
-                    <FaLinux />
-                    <MdRouter />
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <FaWindows />
+                      <SiMacos />
+                      <IoLogoAndroid />
+                      <AiOutlineApple />
+                      <FaLinux />
+                      <MdRouter />
+                    </Suspense>
                   </div>
                 </Link>
 
@@ -239,7 +204,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                 <div className="flex flex-col laptop:items-center laptop:w-[18%] laptop:pt-0 pt-3 laptop:pb-[28px] justify-between">
 
                   {/* ratting */}
-                  <Link href={`${blog.attributes.link2}`} target="_blank"  className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
+                  <Link href={`${blog.attributes.link2}`} target="_blank" className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
                     <CustomTestCircularRatting
                       size="lg"
                       value={blog.attributes.ratting}
@@ -256,7 +221,7 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                     />
                   </Link>
 
-                  <Link href={`${blog.attributes.link2}`} target="_blank"  className="laptop:flex hidden justify-center">
+                  <Link href={`${blog.attributes.link2}`} target="_blank" className="laptop:flex hidden justify-center">
                     <RatingStars value={blog.attributes.ratting} textSize="[20px]" emptyTextSize="[22px]" />
                   </Link>
 
@@ -266,8 +231,6 @@ const TestVpnCard: React.FC<BlogsProps> = ({ blogs }) => {
                   </div>
 
                 </div>
-
-
 
               </div >
 

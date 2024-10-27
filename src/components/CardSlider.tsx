@@ -1,7 +1,9 @@
 'use client'
+import dynamic from 'next/dynamic';
 import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,11 +12,8 @@ import 'swiper/css/navigation';
 
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
-import Link from 'next/link';
-import Image from 'next/image';
-import RatingStars from './CustomStar';
-import SwiperCard from './SwiperCard';
+const SwiperCard = dynamic(() => import('./SwiperCard'), { ssr: false });
+
 
 interface ReviewProps {
   reviews: {

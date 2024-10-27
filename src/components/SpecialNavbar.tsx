@@ -131,12 +131,12 @@ const SpecialNavbar = () => {
                 <NavbarContent className="hidden laptop:flex gap-3 w-full">
                     {specialnav.map((item: NavItem, idx: number) =>
                         item.subnav && item.subnav.length > 0 ? (
-                            <Dropdown key={idx}>
+                            <Dropdown key={idx} shouldBlockScroll={false}>
                                 <NavbarItem>
                                     <DropdownTrigger>
                                         <Button
                                             disableRipple
-                                            className="p-0 bg-transparent data-[hover=true]:bg-transparent font-kantumruyPro"
+                                            className="p-0 bg-transparent data-[hover=true]:bg-transparent font-kantumruyPro "
                                             endContent={icons.chevron}
                                             radius="sm"
                                             variant="light"
