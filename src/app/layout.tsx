@@ -261,6 +261,7 @@ export default function RootLayout({
 
         {/* Microsost Clarity */}
         <Script
+        id="my-script-1"
         strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
@@ -275,6 +276,7 @@ export default function RootLayout({
 
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
+        id="my-script-3"
         strategy="lazyOnload"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-V3J9MTSWW4"
@@ -283,6 +285,7 @@ export default function RootLayout({
 
 
         <Script
+        id="my-script-2"
         strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `

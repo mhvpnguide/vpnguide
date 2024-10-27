@@ -122,6 +122,7 @@ const vpnData: VPNData =
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
@@ -157,6 +158,7 @@ const vpnData: VPNData =
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "@ $1.59/Month Only!" }
@@ -193,6 +195,7 @@ const vpnData: VPNData =
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -225,6 +228,7 @@ const vpnData: VPNData =
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1001&token4=button",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -257,6 +261,7 @@ const vpnData: VPNData =
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -289,6 +294,7 @@ const vpnData: VPNData =
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
