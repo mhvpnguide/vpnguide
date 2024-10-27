@@ -45,19 +45,27 @@ const content1: ContentArray = [
     heading: "Will using a VPN affect my internet speed?",
     content: `
             <p>Using a VPN may impact your internet speed, but some services, such as 
-            <a href="https://vpns.guide/reviews/cyberghost">Cyber Ghost</a>, 
-            <a href="https://vpns.guide/reviews/expressvpn">Express Vpn</a>,
-            <a href="https://vpns.guide/reviews/nordvpn">Nord Vpn</a>,
-            <a href="https://vpns.guide/reviews/privateinternetaccess">PIA</a>,
+            <a href="https://track.vpns.guide/base2.php?cloid=1002&link=faq">Cyber Ghost</a>, 
+            <a href="https://track.vpns.guide/base2.php?cloid=1001&link=faq">Express Vpn</a>,
+            <a href="https://track.vpns.guide/base2.php?cloid=1004&link=faq">PIA</a>,
             are designed to minimize this effect and provide optimal performance.</p>
             `,
   },
   {
     heading: "What is the difference between free and paid VPNs?",
     content: `
-            <p>The main difference between free and paid VPNs lies in features, security, and overall performance. Free VPNs typically have limitations like slower speeds, fewer server locations, data usage caps, and limited support. They may also display ads or collect user data to generate revenue, which can compromise privacy. Paid VPNs, on the other hand, offer faster speeds, more server options, stronger encryption, and 24/7 customer support.</p>
-            <p>Paid services prioritize user privacy and security, ensuring no data logging or ads. Additionally, paid VPNs allow unrestricted access to streaming services, torrenting, and bypassing geo-restrictions.</p>
-            <p>If you're looking for the best value for money, CyberGhost is an excellent choice. It offers competitive pricing, robust security features, and access to thousands of servers worldwide. Check out the best CyberGhost VPN deals for affordable, high-quality protection.</p>
+            <p>The main difference between free and paid VPNs lies in features, security, and overall performance. 
+            Free VPNs typically have limitations like slower speeds, fewer server locations, data usage caps, and limited support. 
+            They may also display ads or collect user data to generate revenue, which can compromise privacy. 
+            Paid VPNs, on the other hand, offer faster speeds, more server options, stronger encryption, and 24/7 customer support.</p>
+            <p>Paid services prioritize user privacy and security, ensuring no data logging or ads. 
+            Additionally, paid VPNs allow unrestricted access to streaming services, torrenting, and bypassing geo-restrictions.</p>
+            <p>If you're looking for the best value for money, 
+            <a href="https://track.vpns.guide/base2.php?cloid=1007&link=faq">Total Vpn</a> 
+            is an excellent choice. It offers competitive pricing, robust security features, and access to thousands of servers worldwide. 
+            Check out the 
+            <a href="https://track.vpns.guide/base2.php?cloid=1007&link=faq">Total Vpn</a>
+            deals for affordable, high-quality protection.</p>
             `,
   },
 ];

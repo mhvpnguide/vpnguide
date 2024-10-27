@@ -15,130 +15,130 @@ const RatingStars = dynamic(() => import('./CustomStar'), { ssr: false });
 const compareData = [
     {
         usersReview: {
-            vpnName: "Express",
-            logo: "expressvpn.png",
-            icon: "square_logo_express_vpn.png",
-            ratting: 4.9,
-            noRating: 21,
+            vpnName: "CyberGhost",
+            logo: "cyberghost.png",
+            icon: "square_logo_cyberghost.png",
+            ratting: 10,
+            noRating: 5321,
         },
         BestFor: {
-            title: "Gaming, Streaming 1"
+            title: "Overall Best"
         },
         speed: {
-            title: "Very Fast (10022Mbps)",
-            point: 3
+            title: "Very Fast (99Mbps)",
+            point: 5
         },
         torrenting: {
-            title: "Very Fast (100Mbps)",
-            point: 2
+            title: "Excellent",
+            point: 5
         },
         streaming: {
-            title: "Very Fast (100Mbps)",
-            point: 1
+            title: "Excellent",
+            point: 5
         },
         gaming: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         easeOfUse: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         killSwitch: {
-            value: false
+            value: true
         },
         wifiProtections: {
-            value: false
+            value: true
         },
         noLogs: {
-            value: false
+            value: true
         },
         noIp: {
-            value: false
+            value: true
         },
         encryption: {
             value: "Military Grade Encryption"
         },
         customerSupport: {
-            value: "Outstanding 24x7 Support"
+            value: "Outstanding 24x7 Live Support"
         },
         discount: {
-            value: "83% Discount + 3 Months Free"
+            value: "83% Discount + 4 Months Free"
         },
         moneyBack: {
             value: "45 Days"
         },
         valueForMoney: {
-            title: "great",
-            point: 4
+            title: "Best Deal",
+            point: 5
         },
-        link: {
-            vlaue: "https://vpns.guide"
+        link:{
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1002&token4=compare"
         }
     },
     {
         usersReview: {
-            vpnName: "Cyber Ghost",
-            logo: "cyberghost.png",
-            icon: "square_logo_cyberghost.png",
-            ratting: 4.8,
-            noRating: 14,
+            vpnName: "Total Vpn",
+            logo: "totalvpn.png",
+            icon: "square_logo_total_vpn.png",
+            ratting: 9.5,
+            noRating: 3914,
         },
         BestFor: {
-            title: "Gaming, Streaming 2"
+            title: "Gaming, Streaming"
         },
         speed: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Very Fast (97Mbps)",
+            point: 5
         },
         torrenting: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         streaming: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         gaming: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         easeOfUse: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         killSwitch: {
             value: true
         },
         wifiProtections: {
-            value: false
+            value: true
 
         },
         noLogs: {
-            value: false
+            value: true
 
         },
         noIp: {
-            value: false
+            value: true
         },
         encryption: {
-            value: "Military Grade Encryption"
+            value: "AES-256 Encryption"
         },
         customerSupport: {
-            value: "Outstanding 24x7 Support"
+            value: "Great 24x7 Support"
         },
         discount: {
-            value: "83% Discount + 3 Months Free"
+            value: "80% Off + Free Antivirus"
         },
         moneyBack: {
-            value: "45 Days"
+            value: "30 Days"
         },
         valueForMoney: {
-            title: "Awsome",
+            title: "Moderate",
             point: 4
         },
-        link: {
-            vlaue: "https://vpns.guide/best-vpn"
+        link:{
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1007&token4=compare"
         }
     },
     {
@@ -147,37 +147,37 @@ const compareData = [
             logo: "privateinternetaccess.png",
             icon: "square_logo_private_internet_access.png",
 
-            ratting: 4.6,
-            noRating: 11,
+            ratting: 9.5,
+            noRating: 4791,
         },
         BestFor: {
-            title: "Gaming, Streaming 3"
+            title: "Torrenting, Privacy"
         },
         speed: {
-            title: "Very Fast (100Mbps)",
+            title: "Fast (88Mbps)",
             point: 4
         },
         torrenting: {
-            title: "Very Fast (100Mbps)",
-            point: 4
+            title: "Excellent",
+            point: 5
         },
         streaming: {
-            title: "Very Fast (100Mbps)",
-            point: 3
+            title: "Very Good",
+            point: 4
         },
         gaming: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         easeOfUse: {
-            title: "Very Fast (100Mbps)",
+            title: "Very Good",
             point: 4
         },
         killSwitch: {
             value: true
         },
         wifiProtections: {
-            value: false
+            value: true
 
         },
         noLogs: {
@@ -185,7 +185,7 @@ const compareData = [
 
         },
         noIp: {
-            value: false
+            value: true
         },
         encryption: {
             value: "Military Grade Encryption"
@@ -194,17 +194,17 @@ const compareData = [
             value: "Outstanding 24x7 Support"
         },
         discount: {
-            value: "83% Discount + 3 Months Free"
+            value: "83% Discount + 4 Months Free"
         },
         moneyBack: {
-            value: "45 Days"
+            value: "30 Days"
         },
         valueForMoney: {
-            title: "Outstanding",
+            title: "Great",
             point: 4
         },
-        link: {
-            vlaue: "https://vpns.guide/best-vpn-for-india"
+        link:{
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1004&token4=compare"
         }
     },
 ]
@@ -669,10 +669,10 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[2].moneyBack.value}</div>
                 </div>
 
-                {/* Ease of use */}
+                {/* Value for Money */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Ease of Use</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Value for Money</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -960,10 +960,10 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[vpn].moneyBack.value}</div>
                 </div>
 
-                {/* Ease of use */}
+                {/* Value for Money */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Ease of Use</span>
+                        <span className='ml-3 font-semibold'>Value for Money</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
