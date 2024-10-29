@@ -118,7 +118,7 @@ const vpnData: VPNData =
         {
             "attributes": {
                 "vpn_name": "Cyber Ghost",
-                "ratting": 7,
+                "ratting": 9.8,
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
                 "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
@@ -136,9 +136,9 @@ const vpnData: VPNData =
                     "name": "cyberghost.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text"
                 },
-                "link1": "https://track.vpns.guide/base2.php?cloid=1002&token4=button",
-                "link2": "https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
-                "link3": "https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
@@ -157,7 +157,7 @@ const vpnData: VPNData =
                 "vpn_name": "Total Vpn",
                 "ratting": 9.5,
                 "slug": "totalvpn",
-                "offer": "Free Antivirus Protection & Free Ad Blocker",
+                "offer": "Free Antivirus & Free Ad Blocker",
                 "details": "Total Vpn: Optimized specially for Streaming, Torrenting & Gaming. Fast Speed with Military Grade Security. Suberb!",
                 "img": "totalvpn.png",
                 "features": [
@@ -172,9 +172,9 @@ const vpnData: VPNData =
                     "name": "totalvpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text"
                 },
-                "link1": "https://track.vpns.guide/base2.php?cloid=1007&token4=button",
-                "link2": "https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
-                "link3": "https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "@ $1.59/Month Only!" }
@@ -209,9 +209,9 @@ const vpnData: VPNData =
                     "name": "privateinternetaccess.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text"
                 },
-                "link1": "https://track.vpns.guide/base2.php?cloid=1004&token4=button",
-                "link2": "https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
-                "link3": "https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -228,7 +228,7 @@ const vpnData: VPNData =
                 "vpn_name": "Express",
                 "ratting": 8.9,
                 "slug": "expressvpn",
-                "offer": "Sign up today & get 3 extra months for free.",
+                "offer": "",
                 "details": "Express VPN: Well-rounded secure and private VPN for anonymous browsing & downloads with No-Logs policy to keep you safe online.",
                 "img": "expressvpn.png",
                 "features": [
@@ -242,9 +242,9 @@ const vpnData: VPNData =
                     "name": "expressvpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=text"
                 },
-                "link1": "https://track.vpns.guide/base2.php?cloid=1001&token4=button",
-                "link2": "https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
-                "link3": "https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1001&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1001&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -275,9 +275,9 @@ const vpnData: VPNData =
                     "name": "surfshark.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
                 },
-                "link1": "https://track.vpns.guide/base2.php?cloid=1005&token4=button",
-                "link2": "https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
-                "link3": "https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -308,9 +308,9 @@ const vpnData: VPNData =
                     "name": "purevpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
                 },
-                "link1": "https://track.vpns.guide/base2.php?cloid=1006&token4=button",
-                "link2": "https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
-                "link3": "https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -330,7 +330,7 @@ const vpnData: VPNData =
 
         {
             "img": "totalvpn.png",
-            "rating": 9.2,
+            "rating": 9.5,
             "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
             "author": "Raimundas Kastravickas",
             "company_link": {
@@ -340,7 +340,7 @@ const vpnData: VPNData =
         },
         {
             "img": "cyberghost.png",
-            "rating": 9.2,
+            "rating": 9.8,
             "review": "Excellent features and responsive customer service make this VPN my favorite on the market. It is easy to use, very comprehensive, and quite affordable both financially and in terms of usability. To top it off, when you renew your subscription, they offer a significant discount. - Cyber Ghost",
             "author": "Charles Ward",
             "company_link": {
@@ -360,7 +360,7 @@ const vpnData: VPNData =
         },
         {
             "img": "expressvpn.png",
-            "rating": 9.2,
+            "rating": 8.9,
             "review": "I've been using ExpressVPN for years and I love it. It's so easy to use and it works great. There is no lag or noticeable delay and it's easy to switch locations whenever you want. You can also install it on five devices, which means that I can have it on my computer, phone, and tablet and still share it with my mom. I highly recommend this VPN. - Express Vpn",
             "author": "Monica Murray Derr",
             "company_link": {
@@ -370,7 +370,7 @@ const vpnData: VPNData =
         },
         {
             "img": "surfshark.png",
-            "rating": 9.2,
+            "rating": 8.6,
             "review": "Every bit as good as the overpriced better known VPN's, & there is barely any decrease in speed when watching movies, if any at all. There are plenty of Country locations to choose from, allowing me to watch Netflix etc. in any zone I choose. U.S. Netflix, for example, is so much better than what Australia has to offer. - SurfShark",
             "author": "Rick",
             "company_link": {
@@ -380,7 +380,7 @@ const vpnData: VPNData =
         },
         {
             "img": "purevpn.png",
-            "rating": 9.2,
+            "rating": 8.5,
             "review": "Been a loyal customer of PureVPN for what must be over 10 years now. Whenever (rarely) anything doesn’t work, support from excellent reps like Bilal always set things right. What an improvement over past VPN experiences! - Pure Vpn",
             "author": "Vivino Nutzer",
             "company_link": {
@@ -390,7 +390,7 @@ const vpnData: VPNData =
         },
         {
             "img": "totalvpn.png",
-            "rating": 9.2,
+            "rating": 10.0,
             "review": "At first I did not like it cause of a download problem but a technical support helped me out so I did get it downloaded and now I think it is a great privacy investment, I would like to thank the support technician who helped me out and made it so easy to install, Thank you. - Total Vpn",
             "author": "Carm Sacco",
             "company_link": {
@@ -400,7 +400,7 @@ const vpnData: VPNData =
         },
         {
             "img": "cyberghost.png",
-            "rating": 9.2,
+            "rating": 9.5,
             "review": "I use CyberGhost VPN since few times, it's the cheapest that I found, and today I'm quite satisfied by the service. The user xp is good on the app and on PC, cheap and efficient I think it's a good choice. - Cyber Ghost",
             "author": "Tanguy Le Crom",
             "company_link": {
@@ -410,7 +410,7 @@ const vpnData: VPNData =
         },
         {
             "img": "privateinternetaccess.png",
-            "rating": 9.2,
+            "rating": 9.0,
             "review": "Easy to use, in general very good, all the sites I need are working. Sadly a very specific streaming keeps kicking me out and sometimes google send me to some weird captchas but, well, it is what it is... - PIA",
             "author": "Tiago Andriotti",
             "company_link": {
@@ -420,7 +420,7 @@ const vpnData: VPNData =
         },
         {
             "img": "expressvpn.png",
-            "rating": 9.2,
+            "rating": 8.0,
             "review": "Ever since I became a subscriber I had no need to worry about cybersecurity. ExpressVpn offers the most reliable internet protection in the market. The monthly renewal is also fast and easy. - Express Vpn",
             "author": "MKS",
             "company_link": {
@@ -430,7 +430,7 @@ const vpnData: VPNData =
         },
         {
             "img": "surfshark.png",
-            "rating": 9.2,
+            "rating": 7.0,
             "review": "I've been using this VPN for a few days now, and my experience has been nothing but positive! The server speeds are great with very low ping, customer service is awesome, and it was super easy to setup on my router with WireGuard. - SurfShark",
             "author": "Brian",
             "company_link": {
@@ -440,7 +440,7 @@ const vpnData: VPNData =
         },
         {
             "img": "purevpn.png",
-            "rating": 9.2,
+            "rating": 6.0,
             "review": "Smart and patient user support. I needed help with setting up vpn on my tp link router and Asim helped me patiently. Their support knows how to set up routers and are very patient. I am definitely renewing their service. - Pure Vpn",
             "author": "Ankush Gaur",
             "company_link": {
