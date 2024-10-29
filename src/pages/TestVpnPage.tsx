@@ -500,7 +500,7 @@ const TestVpnPage = () => {
                     <ul className=" mb-[20px] text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
-                                <li className="tick-list-green-item mb-[14px] font-kantumruyPro" >  {parse(itm)} </li>
+                                <li className="tick-list-green-item mb-[14px] font-kantumruyPro" key={idx}>  {parse(itm)} </li>
                             ))
                         }
                         {/* {

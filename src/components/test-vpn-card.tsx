@@ -247,5 +247,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
     </section>
   );
 });
+// Set the display name for better debugging
+TestVpnCard.displayName = "TestVpnCard";
 
 export default TestVpnCard;

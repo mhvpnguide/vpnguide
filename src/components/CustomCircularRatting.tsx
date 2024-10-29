@@ -20,4 +20,7 @@ const CustomCircularProgress: React.FC<CustomCircularProgressProps> = memo(({ va
   );
 });
 
+// Set the display name for better debugging
+CustomCircularProgress.displayName = "CustomCircularProgress";
+
 export default CustomCircularProgress;
