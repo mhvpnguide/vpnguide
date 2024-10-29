@@ -5,28 +5,44 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import TestVpnCard from "@/components/test-vpn-card";
+import Popup from "@/components/Popup";
+import Comparison from "@/components/Comparison";
+import TooltipComp from "@/components/TooltipComp";
+import ScrollToTopButton from "@/components/ScrollToTop";
+import { SlCalender } from "react-icons/sl";
+import { FaCrown, FaIdCard, FaUserLarge } from "react-icons/fa6";
+import { GiReceiveMoney } from "react-icons/gi";
+import { IoSpeedometer } from "react-icons/io5";
+import { FaUnlockAlt } from "react-icons/fa";
+import RatingStars from "@/components/CustomStar";
+import CustomCircularProgress from "@/components/CustomCircularRatting";
+import CardSlider from "@/components/CardSlider";
+import FAQ from "@/components/FAQ";
+import { RxCrossCircled } from "react-icons/rx";
+import { MdOutlineCheckCircle } from "react-icons/md";
+import parse from 'html-react-parser';
 
 // Dynamically import the icons
-const FaCrown = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaCrown })));
-const FaIdCard = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaIdCard })));
-const FaUserLarge = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaUserLarge })));
-const SlCalender = React.lazy(() => import("react-icons/sl").then(module => ({ default: module.SlCalender })));
-const IoSpeedometer = React.lazy(() => import("react-icons/io5").then(module => ({ default: module.IoSpeedometer })));
-const MdOutlineCheckCircle = React.lazy(() => import("react-icons/md").then(module => ({ default: module.MdOutlineCheckCircle })));
-const FaUnlockAlt = React.lazy(() => import("react-icons/fa").then(module => ({ default: module.FaUnlockAlt })));
-const GiReceiveMoney = React.lazy(() => import("react-icons/gi").then(module => ({ default: module.GiReceiveMoney })));
-const RxCrossCircled = React.lazy(() => import("react-icons/rx").then(module => ({ default: module.RxCrossCircled })));
+// const FaCrown = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaCrown })));
+// const FaIdCard = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaIdCard })));
+// const FaUserLarge = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaUserLarge })));
+// const SlCalender = React.lazy(() => import("react-icons/sl").then(module => ({ default: module.SlCalender })));
+// const IoSpeedometer = React.lazy(() => import("react-icons/io5").then(module => ({ default: module.IoSpeedometer })));
+// const MdOutlineCheckCircle = React.lazy(() => import("react-icons/md").then(module => ({ default: module.MdOutlineCheckCircle })));
+// const FaUnlockAlt = React.lazy(() => import("react-icons/fa").then(module => ({ default: module.FaUnlockAlt })));
+// const GiReceiveMoney = React.lazy(() => import("react-icons/gi").then(module => ({ default: module.GiReceiveMoney })));
+// const RxCrossCircled = React.lazy(() => import("react-icons/rx").then(module => ({ default: module.RxCrossCircled })));
 
 // Dynamically import the components
 // Dynamically import the components without server-side rendering
-const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: false });
-const CustomCircularProgress = dynamic(() => import("@/components/CustomCircularRatting"), { ssr: false });
-const RatingStars = dynamic(() => import("@/components/CustomStar"), { ssr: false });
-const CardSlider = dynamic(() => import("@/components/CardSlider"), { ssr: false });
-const Comparison = dynamic(() => import("@/components/Comparison"), { ssr: false });
-const ScrollToTopButton = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
-const Popup = dynamic(() => import("@/components/Popup"), { ssr: false });
-const TooltipComp = dynamic(() => import("@/components/TooltipComp"), { ssr: false });
+// const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: false });
+// const CustomCircularProgress = dynamic(() => import("@/components/CustomCircularRatting"), { ssr: false });
+// const RatingStars = dynamic(() => import("@/components/CustomStar"), { ssr: false });
+// const CardSlider = dynamic(() => import("@/components/CardSlider"), { ssr: false });
+// const Comparison = dynamic(() => import("@/components/Comparison"), { ssr: false });
+// const ScrollToTopButton = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
+// const Popup = dynamic(() => import("@/components/Popup"), { ssr: false });
+// const TooltipComp = dynamic(() => import("@/components/TooltipComp"), { ssr: false });
 
 
 
@@ -120,9 +136,9 @@ const vpnData: VPNData =
                     "name": "cyberghost.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
+                "link1": "https://track.vpns.guide/base2.php?cloid=1002&token4=button",
+                "link2": "https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
+                "link3": "https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
                 "top_banner": [
                     { "value": "Best VPN of 2024" },
                     { "value": "Free for 45 Days" }
@@ -156,9 +172,9 @@ const vpnData: VPNData =
                     "name": "totalvpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
+                "link1": "https://track.vpns.guide/base2.php?cloid=1007&token4=button",
+                "link2": "https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
+                "link3": "https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "@ $1.59/Month Only!" }
@@ -193,9 +209,9 @@ const vpnData: VPNData =
                     "name": "privateinternetaccess.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
+                "link1": "https://track.vpns.guide/base2.php?cloid=1004&token4=button",
+                "link2": "https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
+                "link3": "https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -226,9 +242,9 @@ const vpnData: VPNData =
                     "name": "expressvpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1001&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
+                "link1": "https://track.vpns.guide/base2.php?cloid=1001&token4=button",
+                "link2": "https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
+                "link3": "https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -259,9 +275,9 @@ const vpnData: VPNData =
                     "name": "surfshark.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link1": "https://track.vpns.guide/base2.php?cloid=1005&token4=button",
+                "link2": "https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link3": "https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -292,9 +308,9 @@ const vpnData: VPNData =
                     "name": "purevpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link1": "https://track.vpns.guide/base2.php?cloid=1006&token4=button",
+                "link2": "https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link3": "https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -306,12 +322,12 @@ const vpnData: VPNData =
                 },
             }
         },
-        
+
 
 
     ],
     reviews: [
-        
+
         {
             "img": "totalvpn.png",
             "rating": 9.2,
@@ -432,28 +448,41 @@ const vpnData: VPNData =
                 "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=review"
             },
         },
-    
+
     ]
 }
 
 
 
 const TestVpnPage = () => {
-    const [currentDate, setCurrentDate] = useState<string>("");
-    const [currentmontY, setCurrentmontY] = useState<string>("");
+    const today = new Date(); // Get the current date upfront
+    const day = today.getDate();
+    const month = today.toLocaleString(undefined, { month: "long" });
+    const year = today.getFullYear();
 
-    useEffect(() => {
-        const today = new Date();
+    const [currentDate, setCurrentDate] = useState<string>(`${day}-${month}-${year}`);
+    const [currentmontY, setCurrentmontY] = useState<string>(`${month} ${year}`);
 
-        const day = today.getDate();
-        const month = today.toLocaleString(undefined, { month: "long" });
-        const year = today.getFullYear();
 
-        const formattedDate = `${day}-${month}-${year}`;
-        const formattedMonth = `${month} ${year}`;
-        setCurrentDate(formattedDate);
-        setCurrentmontY(formattedMonth);
-    }, []);
+
+
+    // const [currentDate, setCurrentDate] = useState<string>("");
+    // const [currentmontY, setCurrentmontY] = useState<string>("");
+
+    // useEffect(() => {
+    //     const today = new Date();
+
+    //     const day = today.getDate();
+    //     const month = today.toLocaleString(undefined, { month: "long" });
+    //     const year = today.getFullYear();
+
+    //     const formattedDate = `${day}-${month}-${year}`;
+    //     const formattedMonth = `${month} ${year}`;        
+    //     setCurrentDate(formattedDate);
+    //     setCurrentmontY(`${month} ${year}`);
+    // }, []);
+
+
 
     return (
         <section className="bg-[#F9F6EE]">
@@ -465,35 +494,47 @@ const TestVpnPage = () => {
                 <div className="content w-full tablet:w-[55%] max-h-fit ">
                     <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-4 font-kantumruyPro">{vpnData.title}</h1>
                     <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[14px] font-kantumruyPro">
-                        {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.
+                        {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie -
+                        secure internet access is just a few clicks away.
                     </h2>
                     <ul className=" mb-[20px] text-sm laptop:text-base">
                         {
+                            vpnData.list?.map((itm: any, idx: number) => (
+                                <li className="tick-list-green-item mb-[14px] font-kantumruyPro" >  {parse(itm)} </li>
+                            ))
+                        }
+                        {/* {
                             vpnData.list?.map((itm: any, idx: number) => (
                                 <li className="tick-list-green-item mb-[14px] font-kantumruyPro" key={idx} dangerouslySetInnerHTML={{
                                     __html: itm,
                                 }}></li>
                             ))
-                        }
+                        } */}
                     </ul>
+
                     {/* featured section */}
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="flex gap-3 ml-2 mt-[10px]">
                             <div className="h-[30px] relative w-[105px]">
-                                <Image loading="lazy" src={`/Assests/test-vpn/New-York-Times.png`} alt="New York Times" className="filter grayscale object-contain w-full" fill />
+                                <Image src={`/Assests/test-vpn/New-York-Times.png`} alt="New York Times"
+                                    className="filter grayscale object-contain w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[40px]">
-                                <Image loading="lazy" src={`/Assests/test-vpn/BBC.png`} alt="BBC" className="filter grayscale  w-full" fill />
+                                <Image src={`/Assests/test-vpn/BBC.png`} alt="BBC"
+                                    className="filter grayscale  w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
-                                <Image loading="lazy" src={`/Assests/test-vpn/cnet.png`} alt="Cnet" className="filter grayscale w-full" fill />
+                                <Image src={`/Assests/test-vpn/cnet.png`} alt="Cnet"
+                                    className="filter grayscale w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[40px]">
-                                <Image loading="lazy" src={`/Assests/test-vpn/CNN.png`} alt="CNN" className="filter grayscale w-full" fill />
+                                <Image src={`/Assests/test-vpn/CNN.png`} alt="CNN"
+                                    className="filter grayscale w-full" fill />
                             </div>
                             <div className="h-[30px] relative w-[30px]">
-                                <Image loading="lazy" src={`/Assests/test-vpn/Fox-News.png`} alt="Fox News" className="filter grayscale " fill />
+                                <Image src={`/Assests/test-vpn/Fox-News.png`} alt="Fox News"
+                                    className="filter grayscale " fill />
                             </div>
                         </div>
                     </div>
@@ -502,20 +543,18 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden laptop:w-[45%] w-[full] tablet:flex items-center justify-center">
                     <div className=" relative laptop:w-full w-[70%] aspect-video">
-                        <Image loading="lazy" src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain" alt="vpn image" />
+                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain"
+                            alt="vpn image" />
                     </div>
                 </div>
             </div>
 
             {/* update date section */}
             <div className="w-full bg-[#fcfcfc] shadow-sm">
-                <div
-                    className="flex justify-between laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto items-center py-[4px] laptop:py-[6px] text-xl laptop:text-xl">
+                <div className="flex justify-between laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto items-center py-[4px] laptop:py-[6px] text-xl laptop:text-xl">
                     <span className="items-start text-[10px] laptop:text-[16px] flex  tablet:gap-2">
                         <span className="text-[14px] font-kantumruyPro">
-                            <Suspense fallback={<div>Loading icons...</div>}>
-                                <SlCalender className="inline mr-1 text-[16px] " />Updated on:
-                            </Suspense>
+                            <SlCalender className="inline mr-1 text-[16px] " />Updated on:
                         </span>
                         <span className="text-[13px] pl-1">
                             {currentDate}
@@ -525,7 +564,6 @@ const TestVpnPage = () => {
                         <TooltipComp />
                     </div>
                 </div>
-
             </div>
 
             {/* reviews section */}
@@ -534,20 +572,21 @@ const TestVpnPage = () => {
                 <TestVpnCard blogs={vpnData.data} />
             </div>
 
+
             {/* comparison section */}
             <Comparison />
 
-            {/* honest vpn review */}
-            <div
-                className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
 
+            {/* honest vpn review */}
+            <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
                 <div className="flex laptop:flex-row flex-col laptop:gap-[60px]  laptop:px-10 px-[10px]">
                     {/* heading for mobile view */}
                     <h1 className="text-center laptop:hidden font-bold text-[23px] font-inknutAntiqua">Honest VPN Reviews Based
-                        On Real Testing</h1>
+                        On Real Testing
+                    </h1>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video h-full">
-                            <Image loading="lazy" src="/Assests/test-vpn/Review.png" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/Review.png" fill alt="logo" />
                         </div>
                     </div>
                     <div className="flex flex-col laptop:w-[60%] justify-evenly">
@@ -561,31 +600,37 @@ const TestVpnPage = () => {
                         <p className="text-sm laptop:pt-0 pt-2">Our Testing Process Focuses On:</p>
                     </div>
                 </div>
-
-                <div
-                    className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap laptop:my-2 my-5">
+                <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap laptop:my-2 my-5">
                     <div
                         className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <Suspense fallback={<div>Loading components...</div>}><FaUnlockAlt className="inline text-[22px] laptop:text-[36px]" /></Suspense>Privacy & security
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <FaUnlockAlt className="inline text-[22px] laptop:text-[36px]" />
+                        </Suspense>Privacy & security
                     </div>
-                    <div
-                        className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
                         <Suspense fallback={<div>Loading components...</div>}><IoSpeedometer className="inline text-[22px] laptop:text-[36px]" /></Suspense>Speed & Performance
                     </div>
-                    <div
-                        className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <Suspense fallback={<div>Loading components...</div>}><GiReceiveMoney className="inline text-[22px] laptop:text-[36px]" /></Suspense>Value for Money
+                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        <Suspense fallback={<div>Loading components...</div>}>
+                            <GiReceiveMoney className="inline text-[22px] laptop:text-[36px]" />
+                        </Suspense>Value for Money
                     </div>
                     <div
                         className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <Suspense fallback={<div>Loading components...</div>}><FaUserLarge className="inline text-[20px] laptop:text-[36px]" /></Suspense>User Review & Experience
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <FaUserLarge className="inline text-[20px] laptop:text-[36px]" />
+                        </Suspense>User Review & Experience
                     </div>
                     <div
                         className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
-                        <Suspense fallback={<div>Loading components...</div>}><FaIdCard className="inline text-[22px] laptop:text-[36px]" /></Suspense>Ease of Use
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <FaIdCard className="inline text-[22px] laptop:text-[36px]" />
+                        </Suspense>Ease of Use
                     </div>
                 </div>
-
                 <div className="flex laptop:flex-row flex-col laptop:gap-[60px] laptop:px-10 px-[10px] gap-4">
                     <div className="flex flex-col laptop:w-[60%] justify-evenly">
                         <h1 className="font-bold text-[23px] laptop:text-start text-center font-inknutAntiqua">
@@ -600,7 +645,7 @@ const TestVpnPage = () => {
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video w-full">
 
-                            <Image loading="lazy" src="/Assests/test-vpn/About.png" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/About.png" fill alt="logo" />
                         </div>
                     </div>
                     <p className="text-sm laptop:hidden">
@@ -624,21 +669,23 @@ const TestVpnPage = () => {
                             .filter((vpn) => vpnData.bestPlan.includes(vpn.attributes.slug))
                             .sort((a, b) => vpnData.bestPlan.indexOf(a.attributes.slug) - vpnData.bestPlan.indexOf(b.attributes.slug))
                             .map((itm: any, idx: number) => (
-                                <Link
-                                    key={idx}
-                                    target="_blank"
-                                    href={itm.attributes.link3}
-                                    className={`group relative gap-4 tablet:w-1/3 w-full border-2 bg-white rounded-md border-white p-5 items-center flex-col flex hover:border-yellow-600 shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"}`}
-                                >
-                                    {idx == 1 && <div className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
-                                        <Suspense fallback={<div>Loading components...</div>}><FaCrown className="text-xl" /></Suspense>
+                                <Link key={idx} target="_blank" href={itm.attributes.link3} className={`group relative gap-4 tablet:w-1/3 w-full
+            border-2 bg-white rounded-md border-white p-5 items-center flex-col flex hover:border-yellow-600
+            shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"
+                                    }`}>
+                                    {idx == 1 && <div
+                                        className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
+                                        <Suspense fallback={<div>Loading components...
+                                        </div>}>
+                                            <FaCrown className="text-xl" />
+                                        </Suspense>
                                         <span className="font-semibold text-xs">BEST</span>
                                     </div>}
 
                                     <div className="flex flex-row justify-between tablet:flex-col w-full items-center">
                                         {/* image */}
                                         <div className="relative w-2/4 aspect-[2/1] laptop:w-3/4">
-                                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${itm.attributes.img}`} layout="fill"
+                                            <Image src={`/Assests/test-vpn/vpn/${itm.attributes.img}`} layout="fill"
                                                 className="object-contain" alt="vpn image" />
                                         </div>
 
@@ -684,6 +731,8 @@ const TestVpnPage = () => {
                 </div>
             </div>
 
+
+
             {/* card slider */}
             <div className="bg-blue-800 flex flex-col py-[30px] gap-2">
                 <h1 className="text-center text-white font-bold text-[28px]">User Reviews</h1>
@@ -693,29 +742,39 @@ const TestVpnPage = () => {
                 </div>
             </div>
 
+
             {/* faqs */}
             <div className="py-[56px]">
                 <FAQ />
             </div>
 
+
+
+
             {/* two button */}
             <div className="flex flex-col bg-white py-[50px] px-2 laptop:px-0">
-                <h1
-                    className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">
+                <h1 className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">
                     Are you ready to secure yourself with worldclass VPN</h1>
                 <div className="flex flex-col laptop:flex-row justify-center laptop:gap-12 gap-5">
-                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank" className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
-                        <Suspense fallback={<div>Loading components...</div>}><MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" /></Suspense>
-                        <span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device NOW</span>
+                    <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank"
+                        className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" />
+                        </Suspense>
+                        <span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device
+                            NOW</span>
                     </Link>
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=No" target="_blank"
                         className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
-                        <Suspense fallback={<div>Loading components...</div>}><RxCrossCircled className="text-red-500 text-[30px] inline" /></Suspense>
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <RxCrossCircled className="text-red-500 text-[30px] inline" />
+                        </Suspense>
                         <span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">No, I need some more time</span>
                     </Link>
                 </div>
             </div>
-
         </section>
     );
 };

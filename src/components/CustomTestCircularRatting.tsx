@@ -6,6 +6,8 @@ interface CustomCircularProgressProps extends CircularProgressProps {
 }
 
 const CustomTestCircularRatting: React.FC<CustomCircularProgressProps> = ({ value, valueLabel, ...props }) => {
+  console.log("CustomCard rendered");
+
   
   return (
     <div className="relative inline-flex items-center justify-center testCusCir">

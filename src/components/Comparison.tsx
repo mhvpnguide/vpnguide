@@ -3,14 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import React, { Suspense, useState } from 'react'
+import RatingStars from './CustomStar';
+import { MdOutlineCheckCircle } from 'react-icons/md';
+import { RxCrossCircled } from 'react-icons/rx';
 
 // Lazy load icons
-const RxCrossCircled = React.lazy(() => import('react-icons/rx').then(mod => ({ default: mod.RxCrossCircled })));
-const MdOutlineCheckCircle = React.lazy(() => import('react-icons/md').then(mod => ({ default: mod.MdOutlineCheckCircle })));
+// const RxCrossCircled = React.lazy(() => import('react-icons/rx').then(mod => ({ default: mod.RxCrossCircled })));
+// const MdOutlineCheckCircle = React.lazy(() => import('react-icons/md').then(mod => ({ default: mod.MdOutlineCheckCircle })));
 
 
 // Dynamically import the RatingStars component
-const RatingStars = dynamic(() => import('./CustomStar'), { ssr: false });
+// const RatingStars = dynamic(() => import('./CustomStar'), { ssr: false });
 
 const compareData = [
     {

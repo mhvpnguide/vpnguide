@@ -1,9 +1,12 @@
 import React, { Suspense } from "react";
+import { AiOutlineStar } from "react-icons/ai";
+import { FaStarHalfAlt } from "react-icons/fa";
+import { FaStar } from "react-icons/fa6";
 
 // Lazy load the icons
-const AiOutlineStar = React.lazy(() => import("react-icons/ai").then(mod => ({ default: mod.AiOutlineStar })));
-const FaStarHalfAlt = React.lazy(() => import("react-icons/fa").then(mod => ({ default: mod.FaStarHalfAlt })));
-const FaStar = React.lazy(() => import("react-icons/fa6").then(mod => ({ default: mod.FaStar })));
+// const AiOutlineStar = React.lazy(() => import("react-icons/ai").then(mod => ({ default: mod.AiOutlineStar })));
+// const FaStarHalfAlt = React.lazy(() => import("react-icons/fa").then(mod => ({ default: mod.FaStarHalfAlt })));
+// const FaStar = React.lazy(() => import("react-icons/fa6").then(mod => ({ default: mod.FaStar })));
 
 interface RatingStarsProps {
   value: number; // Rating value between 0 and 5 (e.g., 4.5)
@@ -23,12 +26,12 @@ const RatingStars = ({ value, textSize = '2xl', emptyTextSize = '[27px]' }: Rati
       <span key={index}>
         {
           value > ((index+1)*2) ?
-            (<Suspense fallback={<div>Loading components...</div>}><FaStar className={`text-[#FFC200] text-${textSize}`} /></Suspense>)
+            (<FaStar className={`text-[#FFC200] text-${textSize}`} />)
             :
             (value/2) > number ?
-              (<Suspense fallback={<div>Loading components...</div>}><FaStarHalfAlt className={`text-[#FFC200] text-${textSize}`} /></Suspense>)
+              (<FaStarHalfAlt className={`text-[#FFC200] text-${textSize}`} />)
               :
-              (<Suspense fallback={<div>Loading components...</div>}><AiOutlineStar className={`text-[#FFC200] text-${emptyTextSize}`} /></Suspense>)
+              (<AiOutlineStar className={`text-[#FFC200] text-${emptyTextSize}`} />)
         }
       </span>
     );
