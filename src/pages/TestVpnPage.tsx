@@ -552,15 +552,15 @@ const TestVpnPage = () => {
             {/* update date section */}
             <div className="w-full bg-[#fcfcfc] shadow-sm">
                 <div className="flex justify-between laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto items-center py-[4px] laptop:py-[6px] text-xl laptop:text-xl">
-                    <span className="items-start text-[10px] laptop:text-[16px] flex  tablet:gap-2">
+                    <span className="text-[10px] laptop:text-[16px] flex gap-1 items-center tablet:gap-1">
                         <span className="text-[14px] font-kantumruyPro">
                             <SlCalender className="inline mr-1 text-[16px] " />Updated on:
                         </span>
-                        <span className="text-[13px] pl-1">
+                        <span className="text-[13px]">
                             {currentDate}
                         </span>
                     </span>
-                    <div className="flex justify-end">
+                    <div className="flex">
                         <TooltipComp />
                     </div>
                 </div>

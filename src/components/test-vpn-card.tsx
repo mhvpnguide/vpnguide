@@ -107,7 +107,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
               {/* List item */}
               <Link href={`${blog.attributes.link2}`} target="_blank"
                 className="laptop:w-[35%]  flex flex-col laptop:justify-between">
-                <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 mt-2 ${idx == 0 ? null : 'hidden'}`}>
+                <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 mt-2 font-kaiseiTokumin`}>
                   {blog.attributes.offer}</p>
                 {/* for mobile view */}
                 <ul className="laptop:hidden space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
