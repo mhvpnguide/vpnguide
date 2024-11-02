@@ -93,7 +93,7 @@ export default function Popup({ date, time }: { date: string, time: string }) {
                   <div className="flex w-full">
                     <div className="w-1/2 hidden laptop:block">
                       <div className="relative h-[85%] w-[80%]">
-                        <Image src="/Assests/Guides/Guides_2.png" fill alt="vpn image" />
+                        <Image src="/Assests/test-vpn/vpn/ExpressVpnPopup.jpg" fill alt="vpn image" />
                       </div>
                     </div>
                     <div className="laptop:w-1/2 w-full px-[45px] flex flex-col gap-10">
