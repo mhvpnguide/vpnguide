@@ -95,9 +95,9 @@ const Footer = () => {
             vpns.guide is made by{" "}<Link href="https://nbtservices.framer.website/" className="italic hover:text-blue-700">Next Big Thing{" "}</Link>
           </p>
         </div>
-        <h7 className="text-center">
+        <h6 className="text-center">
           © 2016-2024. Vpn Guide. All rights reserved
-        </h7>
+        </h6>
       </footer>
     </>
   );
