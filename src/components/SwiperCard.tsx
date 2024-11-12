@@ -18,28 +18,28 @@ interface ReviewProps {
 
 const SwiperCard: React.FC<ReviewProps> = ({ review }) => {
   return (
-    <div className='p-2 laptop:w-[307px] w-[250px]  flex flex-col h-full'>
+    <div className='flex h-full w-[250px] flex-col p-2 laptop:w-[307px]'>
 
       {/* top part */}
-      <div className='flex items-center flex-col pb-2'>
+      <div className='flex flex-col items-center pb-2'>
 
-        <div className='relative  w-full aspect-[2/1]'>
+        <div className='relative aspect-[2/1] w-full'>
           <Image loading="lazy" src={`/Assests/test-vpn/vpn/${review.img}`} fill alt="vpn image" />
         </div>
-        <RatingStars value={review.rating} />
+        <RatingStars value={review.rating} textSize="[25px]" emptyTextSize="[28px]" />
       </div>
 
       {/* middle part */}
-      <div className='text-[12px] py-5 text-start bg-slate-100 px-2 rounded-b-xl flex-grow'>
+      <div className='flex-grow rounded-b-xl bg-slate-100 px-2 py-5 text-start text-[12px]'>
         <p>
           {review.review}
         </p>
-        <p className='font-bold pt-5'>~ {review.author}</p>
+        <p className='pt-5 font-bold'>~ {review.author}</p>
       </div>
 
       {/* bottom part */}
-      <div className='flex flex-col mx-[4%] mt-auto '>
-        <Link target='_blank' href={review.company_link.value} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto text-[21px]">Buy Now</Link>
+      <div className='mx-[4%] mt-auto flex flex-col'>
+        <Link target='_blank' href={review.company_link.value} className="mt-auto rounded-lg bg-[#fd5522] px-3 py-1 text-[21px] font-bold text-white hover:bg-[#04aa63]">Buy Now</Link>
       </div>
     </div>
   )

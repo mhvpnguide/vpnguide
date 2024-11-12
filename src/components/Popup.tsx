@@ -11,7 +11,7 @@ export default function Popup({ date, time }: { date: string, time: string }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [timeLeft, setTimeLeft] = useState<{ hours: number; minutes: number; seconds: number }>({ hours: 0, minutes: 0, seconds: 0 });
 
-  
+
   useEffect(() => {
     const calculateEndDate = () => {
       const [day, month, year] = date.split('-').map(Number);
@@ -85,28 +85,32 @@ export default function Popup({ date, time }: { date: string, time: string }) {
         <ModalContent className="customModal">
           {(onClose) => (
             <>
-              <ModalHeader className="bg-red-700 text-center text-white flex items-center justify-center gap-2 "><IoAlarmOutline className="inline text-[35px]" />Hurry, Limited Time Offer</ModalHeader>
+              <ModalHeader className="flex items-center justify-center gap-2 bg-red-700 text-center text-white"><IoAlarmOutline className="inline text-[35px]" />Hurry, Limited Time Offer</ModalHeader>
 
               <ModalBody>
                 <div className="flex flex-col pb-5">
-                  <div className="text-center text-orange-700 text-xl">Deals End in: <span className="font-bold">{timeLeft.hours}</span> Hours <span className="font-bold">{timeLeft.minutes}</span> Minutes <span className="font-bold">{timeLeft.seconds}</span> Seconds</div>
+                  <div className="text-center text-sm text-orange-700 tablet:text-xl">Deals End in: <span className="font-bold">{timeLeft.hours}</span> Hours <span className="font-bold">{timeLeft.minutes}</span> Minutes <span className="font-bold">{timeLeft.seconds}</span> Seconds</div>
                   <div className="flex w-full">
-                    <div className="w-1/2 hidden laptop:block">
+                    <div className="hidden w-1/2 laptop:block">
                       <div className="relative h-[85%] w-[80%]">
                         <Image src="/Assests/test-vpn/vpn/ExpressVpnPopup.jpg" fill alt="vpn image" />
                       </div>
                     </div>
-                    <div className="laptop:w-1/2 w-full px-[45px] flex flex-col gap-10">
-                      <div>
-                        <span className="block font-bold laptopl:text-[70px] laptop:text-[60px] leading-[20px] laptop:leading-[85px]">Get</span>
-                        <span className="block font-bold laptopl:text-[70px] laptop:text-[60px] leading-[20px] laptop:leading-[85px]">3 Months</span>
-                        <span className="block font-bold laptopl:text-[70px] laptop:text-[60px] leading-[20px] laptop:leading-[85px]">FREE Today!</span>
+                    <div className="flex w-full flex-col gap-5 tablet:px-[45px] laptop:w-1/2">
+                      <div className="hidden tablet:block">
+                        <span className="block font-bold leading-[20px] laptop:text-[60px] laptop:leading-[85px] laptopl:text-[70px]">Get</span>
+                        <span className="block font-bold leading-[20px] laptop:text-[60px] laptop:leading-[85px] laptopl:text-[70px]">3 Months</span>
+                        <span className="block font-bold leading-[20px] laptop:text-[60px] laptop:leading-[85px] laptopl:text-[70px]">FREE Today!</span>
                       </div>
-                      <div className="font-semibold text-gray-500 text-[20px]">
+                      <div className="block pt-2 text-center font-bold leading-[20px] tablet:hidden laptop:text-[60px] laptop:leading-[85px] laptopl:text-[70px]">Get 3 Months FREE Today!</div>
+                      <div className="text-[20px] font-semibold text-gray-500">
                         Get 3 months of our most popular VPN for free.
                       </div>
                       <div>
-                        <Link href="https://www.google.com" className="bg-blue-600 text-white hover:bg-blue-800 px-4 py-2 rounded-md" target="_blank">Get the deal {">"}</Link>
+                        <Link href="https://www.google.com" className="rounded-md bg-orange-600 px-4 py-2 text-2xl font-bold text-white hover:bg-orange-700" target="_blank">Get Discount</Link>
+                      </div>
+                      <div className="text-[20px] font-semibold text-gray-500">
+                        Get 3 months of our most popular VPN for free.
                       </div>
                     </div>
                   </div>

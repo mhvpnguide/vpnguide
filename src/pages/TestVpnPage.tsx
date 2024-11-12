@@ -489,15 +489,15 @@ const TestVpnPage = () => {
             <ScrollToTopButton />
 
             {/* top section */}
-            <div className="flex laptop:flex-row flex-col laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto laptop:py-2 pt-[17px] laptop:pt-10 laptop:pb-[28px] bg-[#F9F6EE]">
+            <div className="mx-auto flex flex-col bg-[#F9F6EE] px-[10px] pt-[17px] laptop:flex-row laptop:py-2 laptop:pb-[28px] laptop:pt-10 laptopl:max-w-[1060px] laptopl:px-0">
                 {/* left */}
-                <div className="content w-full tablet:w-[55%] max-h-fit ">
-                    <h1 className="text-lg text-[21px] laptop:text-[35px] font-bold mb-4 font-kantumruyPro">{vpnData.title}</h1>
-                    <h2 className="mb-[25px] laptop:mb-[30px] text-blue-950 text-xs laptop:text-[14px] font-kantumruyPro">
+                <div className="content max-h-fit w-full tablet:w-[55%]">
+                    <h1 className="mb-4 font-kantumruyPro text-[21px] text-lg font-bold laptop:text-[35px]">{vpnData.title}</h1>
+                    <h2 className="mb-[25px] font-kantumruyPro text-xs text-blue-950 laptop:mb-[30px] laptop:text-[14px]">
                         {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie -
                         secure internet access is just a few clicks away.
                     </h2>
-                    <ul className=" mb-[20px] text-sm laptop:text-base">
+                    <ul className="mb-[20px] text-sm laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
                                 <li className="tick-list-green-item mb-[14px] font-kantumruyPro" key={idx}>  {parse(itm)} </li>
@@ -515,34 +515,34 @@ const TestVpnPage = () => {
                     {/* featured section */}
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
-                        <div className="flex gap-3 ml-2 mt-[10px]">
-                            <div className="h-[30px] relative w-[105px]">
+                        <div className="ml-2 mt-[10px] flex gap-3">
+                            <div className="relative h-[30px] w-[105px]">
                                 <Image src={`/Assests/test-vpn/New-York-Times.png`} alt="New York Times"
-                                    className="filter grayscale object-contain w-full" fill />
+                                    className="w-full object-contain grayscale filter" fill />
                             </div>
-                            <div className="h-[30px] relative w-[40px]">
+                            <div className="relative h-[30px] w-[40px]">
                                 <Image src={`/Assests/test-vpn/BBC.png`} alt="BBC"
-                                    className="filter grayscale  w-full" fill />
+                                    className="w-full grayscale filter" fill />
                             </div>
-                            <div className="h-[30px] relative w-[30px]">
+                            <div className="relative h-[30px] w-[30px]">
                                 <Image src={`/Assests/test-vpn/cnet.png`} alt="Cnet"
-                                    className="filter grayscale w-full" fill />
+                                    className="w-full grayscale filter" fill />
                             </div>
-                            <div className="h-[30px] relative w-[40px]">
+                            <div className="relative h-[30px] w-[40px]">
                                 <Image src={`/Assests/test-vpn/CNN.png`} alt="CNN"
-                                    className="filter grayscale w-full" fill />
+                                    className="w-full grayscale filter" fill />
                             </div>
-                            <div className="h-[30px] relative w-[30px]">
+                            <div className="relative h-[30px] w-[30px]">
                                 <Image src={`/Assests/test-vpn/Fox-News.png`} alt="Fox News"
-                                    className="filter grayscale " fill />
+                                    className="grayscale filter" fill />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* right */}
-                <div className="hidden laptop:w-[45%] w-[full] tablet:flex items-center justify-center">
-                    <div className=" relative laptop:w-full w-[70%] aspect-video">
+                <div className="hidden w-[full] items-center justify-center tablet:flex laptop:w-[45%]">
+                    <div className="relative aspect-video w-[70%] laptop:w-full">
                         <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain"
                             alt="vpn image" />
                     </div>
@@ -551,10 +551,10 @@ const TestVpnPage = () => {
 
             {/* update date section */}
             <div className="w-full bg-[#fcfcfc] shadow-sm">
-                <div className="flex justify-between laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto items-center py-[4px] laptop:py-[6px] text-xl laptop:text-xl">
-                    <span className="text-[10px] laptop:text-[16px] flex gap-1 items-center tablet:gap-1">
-                        <span className="text-[14px] font-kantumruyPro">
-                            <SlCalender className="inline mr-1 text-[16px] " />Updated on:
+                <div className="mx-auto flex items-center justify-between px-[10px] py-[4px] text-xl laptop:py-[6px] laptop:text-xl laptopl:max-w-[1060px] laptopl:px-0">
+                    <span className="flex items-center gap-1 text-[10px] tablet:gap-1 laptop:text-[16px]">
+                        <span className="font-kantumruyPro text-[14px]">
+                            <SlCalender className="mr-1 inline text-[16px]" />Updated on:
                         </span>
                         <span className="text-[13px]">
                             {currentDate}
@@ -567,7 +567,7 @@ const TestVpnPage = () => {
             </div>
 
             {/* reviews section */}
-            <div className="laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto bg-[#F9F6EE]">
+            <div className="mx-auto bg-[#F9F6EE] px-[10px] laptopl:max-w-[1060px] laptopl:px-0">
                 <Popup date="27-10-2024" time="20:30" />
                 <TestVpnCard blogs={vpnData.data} />
             </div>
@@ -578,10 +578,10 @@ const TestVpnPage = () => {
 
 
             {/* honest vpn review */}
-            <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl laptop:rounded-none py-2 laptop:py-0 shadow-md">
-                <div className="flex laptop:flex-row flex-col laptop:gap-[60px]  laptop:px-10 px-[10px]">
+            <div className="mx-auto rounded-xl bg-white px-[10px] py-2 shadow-md laptop:rounded-none laptop:py-0 laptopl:max-w-[1060px] laptopl:px-0">
+                <div className="flex flex-col px-[10px] laptop:flex-row laptop:gap-[60px] laptop:px-10">
                     {/* heading for mobile view */}
-                    <h1 className="text-center laptop:hidden font-bold text-[23px] font-inknutAntiqua">Honest VPN Reviews Based
+                    <h1 className="text-center font-inknutAntiqua text-[23px] font-bold laptop:hidden">Honest VPN Reviews Based
                         On Real Testing
                     </h1>
                     <div className="laptop:w-[40%]">
@@ -589,54 +589,54 @@ const TestVpnPage = () => {
                             <Image src="/Assests/test-vpn/Review.png" fill alt="logo" />
                         </div>
                     </div>
-                    <div className="flex flex-col laptop:w-[60%] justify-evenly">
-                        <h1 className="hidden laptop:block font-bold text-[23px] font-inknutAntiqua ">
+                    <div className="flex flex-col justify-evenly laptop:w-[60%]">
+                        <h1 className="hidden font-inknutAntiqua text-[23px] font-bold laptop:block">
                             Honest VPN Reviews Based On Real Testing
                         </h1>
                         <p className="text-[15px]">
                             All VPNs have been reviewed personally by our experts, using our transparent testing process and
                             rating system to bring you the most reliable and up-to-date recommendations.
                         </p>
-                        <p className="text-sm laptop:pt-0 pt-2">Our Testing Process Focuses On:</p>
+                        <p className="pt-2 text-sm laptop:pt-0">Our Testing Process Focuses On:</p>
                     </div>
                 </div>
-                <div className="gap-2 laptop:gap-20 px-[10px] laptop:px-[10%] laptop:bg-[#1C499E] py-2 flex justify-between laptop:justify-evenly flex-wrap laptop:flex-nowrap laptop:my-2 my-5">
+                <div className="my-5 flex flex-wrap justify-between gap-2 px-[10px] py-2 laptop:my-2 laptop:flex-nowrap laptop:justify-evenly laptop:gap-20 laptop:bg-[#1C499E] laptop:px-[10%]">
                     <div
-                        className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
                         <Suspense fallback={<div>Loading components...
                         </div>}>
                             <FaUnlockAlt className="inline text-[22px] laptop:text-[36px]" />
                         </Suspense>Privacy & security
                     </div>
-                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                    <div className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
                         <Suspense fallback={<div>Loading components...</div>}><IoSpeedometer className="inline text-[22px] laptop:text-[36px]" /></Suspense>Speed & Performance
                     </div>
-                    <div className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                    <div className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
                         <Suspense fallback={<div>Loading components...</div>}>
                             <GiReceiveMoney className="inline text-[22px] laptop:text-[36px]" />
                         </Suspense>Value for Money
                     </div>
                     <div
-                        className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
                         <Suspense fallback={<div>Loading components...
                         </div>}>
                             <FaUserLarge className="inline text-[20px] laptop:text-[36px]" />
                         </Suspense>User Review & Experience
                     </div>
                     <div
-                        className="w-[48%] laptop:h-fit min-h-[52px] flex items-center gap-2 text-[12px] laptop:text-[13px] text-white bg-[#1C499E] laptop:bg-transparent p-2 rounded-full">
+                        className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
                         <Suspense fallback={<div>Loading components...
                         </div>}>
                             <FaIdCard className="inline text-[22px] laptop:text-[36px]" />
                         </Suspense>Ease of Use
                     </div>
                 </div>
-                <div className="flex laptop:flex-row flex-col laptop:gap-[60px] laptop:px-10 px-[10px] gap-4">
-                    <div className="flex flex-col laptop:w-[60%] justify-evenly">
-                        <h1 className="font-bold text-[23px] laptop:text-start text-center font-inknutAntiqua">
+                <div className="flex flex-col gap-4 px-[10px] laptop:flex-row laptop:gap-[60px] laptop:px-10">
+                    <div className="flex flex-col justify-evenly laptop:w-[60%]">
+                        <h1 className="text-center font-inknutAntiqua text-[23px] font-bold laptop:text-start">
                             We Stand for Internet Privacy, Security & Freedom
                         </h1>
-                        <p className="text-sm hidden laptop:block">
+                        <p className="hidden text-sm laptop:block">
                             We are a team of independent experts with many years of experience in online privacy. We purchase
                             and test every VPN ourselves and provide you with honest, unbiased reviews. Our goal is to help you
                             find the best VPN to keep your online experience secure and private.
@@ -657,13 +657,13 @@ const TestVpnPage = () => {
             </div>
 
             {/* Best Plan */}
-            <div className="bg-gray-50 p-5 laptopl:max-w-[1060px] px-[10px] laptopl:px-0 my-10 rounded-[25px] shadow-md mx-auto">
-                <div className="flex flex-col items-center gap-2 mb-10">
+            <div className="mx-auto my-10 rounded-[25px] bg-gray-50 p-5 px-[10px] shadow-md laptopl:max-w-[1060px] laptopl:px-0">
+                <div className="mb-10 flex flex-col items-center gap-2">
                     <h1 className="text-[30px] font-bold">Best VPN Plan</h1>
                     <p>Choose the best VPN with Great Discount</p>
                 </div>
 
-                <div className="flex flex-col tablet:flex-row gap-7">
+                <div className="flex flex-col gap-7 tablet:flex-row">
                     {
                         vpnData.data
                             .filter((vpn) => vpnData.bestPlan.includes(vpn.attributes.slug))
@@ -674,23 +674,23 @@ const TestVpnPage = () => {
             shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"
                                     }`}>
                                     {idx == 1 && <div
-                                        className="absolute top-[-25px] left-[50%] transform -translate-x-1/2 bg-white text-blue-600 border border-blue-600 rounded-full px-4 py-1 flex items-center justify-center flex-col shadow-lg">
+                                        className="absolute left-[50%] top-[-25px] flex -translate-x-1/2 transform flex-col items-center justify-center rounded-full border border-blue-600 bg-white px-4 py-1 text-blue-600 shadow-lg">
                                         <Suspense fallback={<div>Loading components...
                                         </div>}>
                                             <FaCrown className="text-xl" />
                                         </Suspense>
-                                        <span className="font-semibold text-xs">BEST</span>
+                                        <span className="text-xs font-semibold">BEST</span>
                                     </div>}
 
-                                    <div className="flex flex-row justify-between tablet:flex-col w-full items-center">
+                                    <div className="flex w-full flex-row items-center justify-between tablet:flex-col">
                                         {/* image */}
-                                        <div className="relative w-2/4 aspect-[2/1] laptop:w-3/4">
+                                        <div className="relative aspect-[2/1] w-2/4 laptop:w-3/4">
                                             <Image src={`/Assests/test-vpn/vpn/${itm.attributes.img}`} layout="fill"
                                                 className="object-contain" alt="vpn image" />
                                         </div>
 
                                         {/* ratting */}
-                                        <div className="flex flex-col items-center ml-3 gap-2 w-2/4 tablet:w-full justify-center">
+                                        <div className="ml-3 flex w-2/4 flex-col items-center justify-center gap-2 tablet:w-full">
                                             <CustomCircularProgress size="lg" value={itm.attributes.ratting} color={itm.attributes.ratting >= 9.7
                                                 ?
                                                 "warning" :
@@ -720,9 +720,9 @@ const TestVpnPage = () => {
                                     </div>
 
                                     {/* details */}
-                                    <p className="laptop:px-5 text-center text-sm font-bold text-blue-600">{itm.attributes.offer}</p>
+                                    <p className="text-center text-sm font-bold text-blue-600 laptop:px-5">{itm.attributes.offer}</p>
                                     <button
-                                        className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold px-3 py-1 rounded-lg mt-auto laptop:text-[20px]">Try
+                                        className="mt-auto rounded-lg bg-[#fd5522] px-3 py-1 font-bold text-white hover:bg-[#04aa63] laptop:text-[20px]">Try
                                         for Free</button>
                                 </Link>
                             ))
@@ -734,10 +734,10 @@ const TestVpnPage = () => {
 
 
             {/* card slider */}
-            <div className="bg-blue-800 flex flex-col py-[30px] gap-2">
-                <h1 className="text-center text-white font-bold text-[28px]">User Reviews</h1>
-                <h2 className="text-center text-slate-300 text-[15px]">(These reviews are not verified)</h2>
-                <div className="h-fit mx-12 mt-[32px]">
+            <div className="flex flex-col gap-2 bg-blue-800 py-[30px]">
+                <h1 className="text-center text-[28px] font-bold text-white">User Reviews</h1>
+                <h2 className="text-center text-[15px] text-slate-300">(These reviews are not verified)</h2>
+                <div className="mx-12 mt-[32px] h-fit">
                     <CardSlider reviews={vpnData.reviews} />
                 </div>
             </div>
@@ -752,26 +752,26 @@ const TestVpnPage = () => {
 
 
             {/* two button */}
-            <div className="flex flex-col bg-white py-[50px] px-2 laptop:px-0">
-                <h1 className="font-kantumruyPro text-center laptop:text-[30px] text-[23px] text-[#545454] pb-[25px] font-semibold">
+            <div className="flex flex-col bg-white px-2 py-[50px] laptop:px-0">
+                <h1 className="pb-[25px] text-center font-kantumruyPro text-[23px] font-semibold text-[#545454] laptop:text-[30px]">
                     Are you ready to secure yourself with worldclass VPN</h1>
-                <div className="flex flex-col laptop:flex-row justify-center laptop:gap-12 gap-5">
+                <div className="flex flex-col justify-center gap-5 laptop:flex-row laptop:gap-12">
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank"
-                        className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#04aa6291] border-[#04AA63] h-[60px]">
+                        className="flex h-[60px] cursor-pointer items-center gap-9 border-2 border-[#04AA63] px-10 hover:bg-[#04aa6291] laptop:w-[450px]">
                         <Suspense fallback={<div>Loading components...
                         </div>}>
-                            <MdOutlineCheckCircle className="text-[#04AA63] text-[30px] inline" />
+                            <MdOutlineCheckCircle className="inline text-[30px] text-[#04AA63]" />
                         </Suspense>
-                        <span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">Yes, I will Secure My Device
+                        <span className="font-kantumruyPro text-[17px] font-semibold text-[#545454]">Yes, I will Secure My Device
                             NOW</span>
                     </Link>
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=No" target="_blank"
-                        className="laptop:w-[450px] flex items-center gap-9 px-10 border-2 cursor-pointer hover:bg-[#fd5522a5] border-[#FD5522] h-[60px]">
+                        className="flex h-[60px] cursor-pointer items-center gap-9 border-2 border-[#FD5522] px-10 hover:bg-[#fd5522a5] laptop:w-[450px]">
                         <Suspense fallback={<div>Loading components...
                         </div>}>
-                            <RxCrossCircled className="text-red-500 text-[30px] inline" />
+                            <RxCrossCircled className="inline text-[30px] text-red-500" />
                         </Suspense>
-                        <span className="font-kantumruyPro text-[17px] text-[#545454] font-semibold ">No, I need some more time</span>
+                        <span className="font-kantumruyPro text-[17px] font-semibold text-[#545454]">No, I need some more time</span>
                     </Link>
                 </div>
             </div>

@@ -43,7 +43,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
   const fontColors = ["text-[#FFF]", "text-[#020617]", "text-[#374151]", "text-[#111827]", "text-[#fef9c3]"];
 
   return (
-    <section className="flex flex-col gap-4 laptop:my-[18px] py-[4px]">
+    <section className="flex flex-col gap-4 py-[4px] laptop:my-[18px]">
 
       {/* Map over blogs */}
       {blogs.map((blog: Blog, idx: number) => (
@@ -54,7 +54,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
 
             {/* Top Banner */}
             <div className={`${backgroundColors[idx % backgroundColors.length]} ${fontColors[idx % fontColors.length]} w-fit rounded-tl-[4px] flex items-center text-xs laptop:text-sm rounded-br-md`}>
-              <div className="flex justify-center items-center px-3 py-1">{idx + 1}</div>
+              <div className="flex items-center justify-center px-3 py-1">{idx + 1}</div>
               {blog.attributes.top_banner.map((subitm: BannerItem, subidx: number) => (
                 <React.Fragment key={subidx}>
                   <div className={`${lightBackgroundColors[idx % lightBackgroundColors.length]} w-fit px-3 font-semibold py-1 h-full ${subidx === 0 ? "rounded-tl-md" : ""} ${blog.attributes.top_banner.length === subidx + 1 ? "rounded-br-md" : ""}`}>{subitm.value}</div>
@@ -63,23 +63,23 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
               ))}
             </div>
 
-            <div className="flex laptop:flex-row flex-col justify-between laptop:px-3 px-1">
+            <div className="flex flex-col justify-between px-1 laptop:flex-row laptop:px-3">
 
               {/* vpn image */}
               <Link href={`${blog.attributes.link2}`} target="_blank"
-                className="flex flex-col tablet:border-b laptop:border-none border-gray-400 laptop:w-[25%] laptop:justify-between">
+                className="flex flex-col border-gray-400 tablet:border-b laptop:w-[25%] laptop:justify-between laptop:border-none">
 
                 <div
-                  className="flex justify-between laptop:justify-center border-b tablet:border-none border-gray-400 tablet:w-full ">
-                  <div className="w-[80%] flex flex-col">
-                    <div className="relative aspect-[2/1] laptop:w-full w-[80%]">
+                  className="flex justify-between border-b border-gray-400 tablet:w-full tablet:border-none laptop:justify-center">
+                  <div className="flex w-[80%] flex-col">
+                    <div className="relative aspect-[2/1] w-[80%] laptop:w-full">
                       <Image src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} fill alt="express" sizes="(max-width: 1024px) 80vw, 100vw" />
                     </div>
-                    <div className="laptop:hidden flex justify-start pl-4 pb-3">
+                    <div className="flex justify-start pb-3 pl-4 laptop:hidden">
                       <RatingStars value={blog.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
                     </div>
                   </div>
-                  <div className=" laptop:hidden w-[30%] flex justify-center items-center flex-col">
+                  <div className="flex w-[30%] flex-col items-center justify-center laptop:hidden">
                     <Suspense fallback={<div>Loading content</div>}>
                       <CustomCircularProgress size="lg" value={blog.attributes.ratting} color={blog.attributes.ratting >= 9.7 ?
                         "warning" :
@@ -97,38 +97,38 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                 </div>
 
                 {/* vpn details */}
-                <div className="hidden laptop:flex flex-col justify-center mb-3 tablet:w-1/2 laptop:w-full">
-                  <p className="text-[14px] pb-1 font-kantumruyPro">{blog.attributes.details}</p>
-                  <p className={`mt-2 text-[16px] font-semibold text-blue-600 font-kaiseiTokumin`}>{blog.attributes.offer}</p>
+                <div className="mb-3 hidden flex-col justify-center tablet:w-1/2 laptop:flex laptop:w-full">
+                  <p className="pb-1 font-kantumruyPro text-[14px]">{blog.attributes.details}</p>
+                  <p className={`mt-2 font-kaiseiTokumin text-[16px] font-semibold text-blue-600`}>{blog.attributes.offer}</p>
                 </div>
               </Link>
 
 
               {/* List item */}
               <Link href={`${blog.attributes.link2}`} target="_blank"
-                className="laptop:w-[35%]  flex flex-col laptop:justify-between">
-                <p className={`laptop:hidden text-sm font-semibold text-blue-600 ml-6 pb-5 mt-2 font-kaiseiTokumin`}>
+                className="flex flex-col laptop:w-[35%] laptop:justify-between">
+                <p className={`ml-6 mt-2 pb-3 font-kaiseiTokumin text-sm font-semibold text-blue-600 laptop:hidden`}>
                   {blog.attributes.offer}</p>
                 {/* for mobile view */}
-                <ul className="laptop:hidden space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
+                <ul className="mt-2 space-y-2 pl-3 tablet:mb-4 laptop:mt-0 laptop:hidden laptop:pl-0">
                   {
                     blog.attributes.features.slice(0, 4).map((subitm: Feature, subidx: number) => (
-                      <li className="tick-list-green-item text-[14px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}
+                      <li className="tick-list-green-item font-kantumruyPro text-[14px] laptop:text-[16px]" key={subidx}>{subitm.value}
                       </li>
                     ))
                   }
                 </ul>
                 {/* for laptop view */}
-                <ul className="hidden laptop:block space-y-2 tablet:mb-4 pl-3 laptop:pl-0 mt-2 laptop:mt-0">
+                <ul className="mt-2 hidden space-y-2 pl-3 tablet:mb-4 laptop:mt-0 laptop:block laptop:pl-0">
                   {
                     blog.attributes.features.map((subitm: Feature, subidx: number) => (
-                      <li className="tick-list-green-item text-[14px] laptop:text-[16px] font-kantumruyPro" key={subidx}>{subitm.value}
+                      <li className="tick-list-green-item font-kantumruyPro text-[14px] laptop:text-[16px]" key={subidx}>{subitm.value}
                       </li>
                     ))
                   }
                 </ul>
 
-                <div className="hidden tablet:flex gap-5 text-gray-400 text-[24px] py-2 ml-6">
+                <div className="ml-6 hidden gap-5 py-2 text-[24px] text-gray-400 tablet:flex">
                   <Suspense fallback={<div>Loading...
                   </div>}>
                     <FaWindows />
@@ -144,11 +144,11 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
 
               {/* progress bar */}
               <Link href={`${blog.attributes.link2}`} target="_blank"
-                className="hidden laptop:flex laptop:w-[15%]  flex-col pt-[12px] pb-[38px] justify-between">
+                className="hidden flex-col justify-between pb-[38px] pt-[12px] laptop:flex laptop:w-[15%]">
                 <div className="flex gap-2">
                   <CiLock className="text-[26px]" />
                   <div className="w-full">
-                    <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1">
+                    <div className="flex justify-between pb-1 font-kantumruyPro text-[12px] text-gray-700">
                       <span>Privacy</span><span>{blog.attributes.category_rating.privacy}</span>
                     </div>
                     <CustomTestVpnProgressbar value={blog.attributes.category_rating.privacy} size="sm" />
@@ -157,7 +157,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                 <div className="flex gap-2">
                   <PiShieldWarningThin className="text-[25px]" />
                   <div className="w-full">
-                    <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1">
+                    <div className="flex justify-between pb-1 font-kantumruyPro text-[12px] text-gray-700">
                       <span>Features</span><span>{blog.attributes.category_rating.features}</span>
                     </div>
                     <CustomTestVpnProgressbar value={blog.attributes.category_rating.features} size="sm" />
@@ -166,7 +166,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                 <div className={`flex gap-2 ${idx <= 2 ? null : "hidden"}`}>
                   <PiSpeedometerThin className="text-[26px]" />
                   <div className="w-full">
-                    <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1">
+                    <div className="flex justify-between pb-1 font-kantumruyPro text-[12px] text-gray-700">
                       <span>Speed</span><span>{blog.attributes.category_rating.speed}</span>
                     </div>
                     <CustomTestVpnProgressbar value={blog.attributes.category_rating.speed} size="sm" />
@@ -175,7 +175,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                 <div className="flex gap-2">
                   <CiUser className="text-[26px]" />
                   <div className="w-full">
-                    <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1"><span>User
+                    <div className="flex justify-between pb-1 font-kantumruyPro text-[12px] text-gray-700"><span>User
                       Score</span><span>{blog.attributes.category_rating.userScore}</span></div>
                     <CustomTestVpnProgressbar value={blog.attributes.category_rating.userScore} size="sm" />
                   </div>
@@ -183,7 +183,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                 <div className="flex gap-2">
                   <CiDollar className="text-[26px]" />
                   <div className="w-full">
-                    <div className="font-kantumruyPro text-[12px] text-gray-700 flex justify-between pb-1"><span>Value for
+                    <div className="flex justify-between pb-1 font-kantumruyPro text-[12px] text-gray-700"><span>Value for
                       Money</span><span>{blog.attributes.category_rating.valueForMoney}</span></div>
                     <CustomTestVpnProgressbar value={blog.attributes.category_rating.valueForMoney} size="sm" />
                   </div>
@@ -191,11 +191,11 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
               </Link>
 
               {/* bottom */}
-              <div className="flex flex-col laptop:items-center laptop:w-[18%] laptop:pt-0 pt-3 laptop:pb-[28px] justify-between">
+              <div className="flex flex-col justify-between pt-3 laptop:w-[18%] laptop:items-center laptop:pb-[28px] laptop:pt-0">
 
                 {/* ratting */}
                 <Link href={`${blog.attributes.link2}`} target="_blank"
-                  className="flex-col items-center gap-2 w-1/2 hidden laptop:flex">
+                  className="hidden w-1/2 flex-col items-center gap-2 laptop:flex">
                   <CustomTestCircularRatting size="lg" value={blog.attributes.ratting} color={blog.attributes.ratting >= 9.7 ? "warning"
                     :
                     blog.attributes.ratting >= 9.0 ? "danger" :
@@ -209,16 +209,16 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                   />
                 </Link>
 
-                <Link href={`${blog.attributes.link2}`} target="_blank" className="laptop:flex hidden justify-center">
+                <Link href={`${blog.attributes.link2}`} target="_blank" className="hidden justify-center laptop:flex">
                   <RatingStars value={blog.attributes.ratting} textSize="[20px]" emptyTextSize="[22px]" />
                 </Link>
 
-                <div className=" flex justify-center items-center flex-col gap-2 laptop:px-2">
+                <div className="flex flex-col items-center justify-center gap-2 laptop:px-2">
                   <Link href={`${blog.attributes.link1}`} target="_blank"
-                    className="bg-[#fd5522] laptopl:text-[20px] laptop:text-[15px] text-white font-bold px-3 py-1 rounded-lg text-center hover:bg-[#04aa63] w-full border border-black shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+                    className="w-full rounded-lg border border-black bg-[#fd5522] px-3 py-1 text-center font-bold text-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#04aa63] laptop:text-[15px] laptopl:text-[20px]">
                     Visit Site {">"}</Link>
                   <Link href={`${blog.attributes.company_link.value}`} target="_blank"
-                    className="hidden laptop:block underline text-gray-500 text-[12px] font-kantumruyPro">
+                    className="hidden font-kantumruyPro text-[12px] text-gray-500 underline laptop:block">
                     {blog.attributes.company_link.name}</Link>
                 </div>
 
@@ -228,16 +228,16 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
 
 
             {/* Accordian */}
-            <div className="py-2 laptop:hidden  px-1">
+            <div className="px-1 py-2 laptop:hidden">
               <AccordianComponent blog={blog.attributes.category_rating} idx={idx} />
             </div>
           </div>
 
           {/* Expert Advice Section */}
           {idx === 0 && (
-            <div className="flex justify-center px-[15px] gap-2 laptop:px-0 text-sm text-center items-center">
-              <BsFillLightbulbFill className="inline text-green-600 text-[25px] laptop:text-[16px]" />
-              <p className="text-start font-kantumruyPro font-medium text-[16px]">
+            <div className="flex items-center justify-center gap-2 px-[15px] pt-4 text-center text-sm laptop:px-0">
+              <BsFillLightbulbFill className="inline text-[25px] text-green-600 laptop:text-[16px]" />
+              <p className="text-start font-kantumruyPro text-[16px] font-medium">
                 Expert Advice: Protecting your information online is more important than ever. Using a VPN is not only a good idea, it&apos;s essential
               </p>
             </div>
