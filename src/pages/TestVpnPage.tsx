@@ -491,7 +491,7 @@ const TestVpnPage = () => {
             {/* top section */}
             <div className="mx-auto flex flex-col bg-[#F9F6EE] px-[10px] pt-[17px] laptop:flex-row laptop:py-2 laptop:pb-[28px] laptop:pt-10 laptopl:max-w-[1060px] laptopl:px-0">
                 {/* left */}
-                <div className="content max-h-fit w-full tablet:w-[55%]">
+                <div className="content mx-0 max-h-fit w-full pb-4 tablet:mx-auto tablet:w-[55%] laptop:mx-0">
                     <h1 className="mb-4 font-kantumruyPro text-[21px] text-lg font-bold laptop:text-[35px]">{vpnData.title}</h1>
                     <h2 className="mb-[25px] font-kantumruyPro text-xs text-blue-950 laptop:mb-[30px] laptop:text-[14px]">
                         {currentmontY} - Excellent security features, widespread server networks, and reliable refund policie -
