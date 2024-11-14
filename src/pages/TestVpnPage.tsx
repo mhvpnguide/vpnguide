@@ -122,7 +122,7 @@ const vpnData: VPNData =
                 "slug": "cyberghost",
                 "offer": "Offer: 83% discount + 4 Months Free",
                 "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
-                "img": "cyberghost.png",
+                "img": "cyberghost.svg",
                 "features": [
                     { "value": "Try it Free for 45 days" },
                     { "value": "Secure, Hides your Online activity" },
@@ -159,7 +159,7 @@ const vpnData: VPNData =
                 "slug": "totalvpn",
                 "offer": "Free Antivirus & Free Ad Blocker",
                 "details": "Total Vpn: Optimized specially for Streaming, Torrenting & Gaming. Fast Speed with Military Grade Security. Suberb!",
-                "img": "totalvpn.png",
+                "img": "totalvpn.svg",
                 "features": [
                     { "value": "Try it free for 30 Days" },
                     { "value": "Ultra-fast speed with Zero lag" },
@@ -196,7 +196,7 @@ const vpnData: VPNData =
                 "slug": "privateinternetaccess",
                 "offer": "One Account Unlimited Devices",
                 "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support.",
-                "img": "privateinternetaccess.png",
+                "img": "privateinternetaccess.svg",
                 "features": [
                     { "value": "Suberb for Private Internet Browsing" },
                     { "value": "Connects upto 10 devices simultaneously" },
@@ -230,7 +230,7 @@ const vpnData: VPNData =
                 "slug": "expressvpn",
                 "offer": "",
                 "details": "Express VPN: Well-rounded secure and private VPN for anonymous browsing & downloads with No-Logs policy to keep you safe online.",
-                "img": "expressvpn.png",
+                "img": "expressvpn.svg",
                 "features": [
                     { "value": "Super for anonymous & secure downloads" },
                     { "value": "Enhanced security with no IP/DNS leaks" },
@@ -263,7 +263,7 @@ const vpnData: VPNData =
                 "slug": "surfshark",
                 "offer": "",
                 "details": "SurfShark: User-friendly VPN for beginners. Strong security & privacy features.",
-                "img": "surfshark.png",
+                "img": "surfshark.svg",
                 "features": [
                     { "value": "Excellent customer support" },
                     { "value": "Good downloading speed" },
@@ -296,7 +296,7 @@ const vpnData: VPNData =
                 "slug": "purevpn",
                 "offer": "",
                 "details": "Pure Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
-                "img": "purevpn.png",
+                "img": "purevpn.svg",
                 "features": [
                     { "value": "30 Days Free with Money-Back Guarantee" },
                     { "value": "Secure, Hides your online activity" },
