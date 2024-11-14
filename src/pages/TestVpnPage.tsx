@@ -586,7 +586,7 @@ const TestVpnPage = () => {
                     </h1>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video h-full">
-                            <Image src="/Assests/test-vpn/Review.png" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/Review.svg" fill alt="logo" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-evenly laptop:w-[60%]">
@@ -645,7 +645,7 @@ const TestVpnPage = () => {
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video w-full">
 
-                            <Image src="/Assests/test-vpn/About.png" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/About.svg" fill alt="logo" />
                         </div>
                     </div>
                     <p className="text-sm laptop:hidden">
