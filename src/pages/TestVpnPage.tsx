@@ -515,9 +515,9 @@ const TestVpnPage = () => {
                     {/* featured section */}
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
-                        <div className="ml-3 mt-[10px] flex gap-4">
+                        <div className="ml-3 mt-[10px] mb-1 flex gap-4">
                             <div className="relative h-[60px] w-[60px]">
-                                <Image src={`/Assests/test-vpn/NewYorkTimes.png`} alt="New York Times"
+                                <Image src={`/Assests/test-vpn/FoxNews.png`} alt="Fox News"
                                     className="w-full" fill />
                             </div>
                             <div className="relative h-[60px] w-[60px]">
@@ -533,7 +533,7 @@ const TestVpnPage = () => {
                                     className="w-full" fill />
                             </div>
                             <div className="relative h-[60px] w-[60px]">
-                                <Image src={`/Assests/test-vpn/FoxNews.png`} alt="Fox News"
+                                <Image src={`/Assests/test-vpn/NewYorkTimes.png`} alt="New York Times"
                                     className="w-full" fill />
                             </div>
                         </div>
