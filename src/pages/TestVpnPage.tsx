@@ -516,25 +516,25 @@ const TestVpnPage = () => {
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="ml-2 mt-[10px] flex gap-3">
-                            <div className="relative h-[30px] w-[105px]">
+                            <div className="relative h-[300px] w-[300px]">
                                 <Image src={`/Assests/test-vpn/NewYorkTimes.png`} alt="New York Times"
-                                    className="w-full object-contain grayscale filter" fill />
+                                    className="w-full" fill />
                             </div>
-                            <div className="relative h-[30px] w-[40px]">
+                            <div className="relative h-[300px] w-[300px]">
                                 <Image src={`/Assests/test-vpn/Bbc.png`} alt="BBC"
-                                    className="w-full grayscale filter" fill />
+                                    className="w-full" fill />
                             </div>
-                            <div className="relative h-[30px] w-[30px]">
+                            <div className="relative h-[300px] w-[300px]">
                                 <Image src={`/Assests/test-vpn/CNet.png`} alt="Cnet"
-                                    className="w-full grayscale filter" fill />
+                                    className="w-full" fill />
                             </div>
-                            <div className="relative h-[30px] w-[40px]">
+                            <div className="relative h-[300px] w-[300px]">
                                 <Image src={`/Assests/test-vpn/Cnn.png`} alt="CNN"
-                                    className="w-full grayscale filter" fill />
+                                    className="w-full" fill />
                             </div>
-                            <div className="relative h-[30px] w-[30px]">
+                            <div className="relative h-[300px] w-[300px]">
                                 <Image src={`/Assests/test-vpn/FoxNews.png`} alt="Fox News"
-                                    className="grayscale filter" fill />
+                                    className="w-full" fill />
                             </div>
                         </div>
                     </div>
