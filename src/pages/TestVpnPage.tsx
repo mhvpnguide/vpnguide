@@ -517,23 +517,23 @@ const TestVpnPage = () => {
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="ml-3 mt-[10px] mb-1 flex gap-4">
                             <div className="relative h-[40px] w-[40px]">
-                                <Image src={`/Assests/test-vpn/FoxNews.png`} alt="Fox News"
+                                <Image src={`/Assests/test-vpn/FoxNews.svg`} alt="Fox News"
+                                    className="w-full" fill />
+                            </div>
+                            <div className="relative h-[40px] w-[50px]">
+                                <Image src={`/Assests/test-vpn/Bbc.svg`} alt="BBC"
                                     className="w-full" fill />
                             </div>
                             <div className="relative h-[40px] w-[40px]">
-                                <Image src={`/Assests/test-vpn/Bbc.png`} alt="BBC"
-                                    className="w-full" fill />
-                            </div>
-                            <div className="relative h-[40px] w-[40px]">
-                                <Image src={`/Assests/test-vpn/CNet.png`} alt="Cnet"
+                                <Image src={`/Assests/test-vpn/cnet.svg`} alt="Cnet"
                                     className="w-full" fill />
                             </div>
                             <div className="relative h-[40px] w-[40px]">
                                 <Image src={`/Assests/test-vpn/Cnn.png`} alt="CNN"
                                     className="w-full" fill />
                             </div>
-                            <div className="relative h-[40px] w-[40px]">
-                                <Image src={`/Assests/test-vpn/NewYorkTimes.png`} alt="New York Times"
+                            <div className="relative h-[20px] w-[100px]">
+                                <Image src={`/Assests/test-vpn/NYT.svg`} alt="New York Times"
                                     className="w-full" fill />
                             </div>
                         </div>
