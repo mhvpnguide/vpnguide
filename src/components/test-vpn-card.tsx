@@ -73,7 +73,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
                   className="flex justify-between border-b border-gray-400 tablet:w-full tablet:border-none laptop:justify-center">
                   <div className="flex w-[80%] flex-col">
                     <div className="relative aspect-[2/1] w-[80%] laptop:w-full">
-                      <img src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} alt="express" width ="60" height = "60" loading= "lazy" sizes="(max-width: 1024px) 80vw, 100vw" />
+                      <img src={`/Assests/test-vpn/vpn/${blog.attributes.img}`} alt="express" width ="200" height = "100" loading= "lazy" sizes="(max-width: 1024px) 80vw, 100vw" />
                     </div>
                     <div className="flex justify-start pb-3 pl-4 laptop:hidden">
                       <RatingStars value={blog.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
