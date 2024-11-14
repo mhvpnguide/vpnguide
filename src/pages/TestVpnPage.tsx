@@ -108,11 +108,11 @@ const vpnData: VPNData =
     // These VPN Services have been featured on:
     featuredImage:
         [
-            { link: "New-York-Times.png" },
-            { link: "Fox-News.png" },
-            { link: "BBC.png" },
-            { link: "CNN.png" },
-            { link: "cnet.png" }
+            { link: "NewYorkTimes.png" },
+            { link: "FoxNews.png" },
+            { link: "Bbc.png" },
+            { link: "Cnn.png" },
+            { link: "CNet.png" }
         ],
     data: [
         {
@@ -517,23 +517,23 @@ const TestVpnPage = () => {
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="ml-2 mt-[10px] flex gap-3">
                             <div className="relative h-[30px] w-[105px]">
-                                <Image src={`/Assests/test-vpn/New-York-Times.png`} alt="New York Times"
+                                <Image src={`/Assests/test-vpn/NewYorkTimes.png`} alt="New York Times"
                                     className="w-full object-contain grayscale filter" fill />
                             </div>
                             <div className="relative h-[30px] w-[40px]">
-                                <Image src={`/Assests/test-vpn/BBC.png`} alt="BBC"
+                                <Image src={`/Assests/test-vpn/Bbc.png`} alt="BBC"
                                     className="w-full grayscale filter" fill />
                             </div>
                             <div className="relative h-[30px] w-[30px]">
-                                <Image src={`/Assests/test-vpn/cnet.png`} alt="Cnet"
+                                <Image src={`/Assests/test-vpn/CNet.png`} alt="Cnet"
                                     className="w-full grayscale filter" fill />
                             </div>
                             <div className="relative h-[30px] w-[40px]">
-                                <Image src={`/Assests/test-vpn/CNN.png`} alt="CNN"
+                                <Image src={`/Assests/test-vpn/Cnn.png`} alt="CNN"
                                     className="w-full grayscale filter" fill />
                             </div>
                             <div className="relative h-[30px] w-[30px]">
-                                <Image src={`/Assests/test-vpn/Fox-News.png`} alt="Fox News"
+                                <Image src={`/Assests/test-vpn/FoxNews.png`} alt="Fox News"
                                     className="grayscale filter" fill />
                             </div>
                         </div>
