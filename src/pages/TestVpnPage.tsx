@@ -515,25 +515,25 @@ const TestVpnPage = () => {
                     {/* featured section */}
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
-                        <div className="ml-3 mt-[10px] mb-1 flex items-center gap-4">
+                        <div className="ml-3 mt-[10px] mb-1 flex items-center gap-5">
+                            <div className="relative h-[30px] w-[150px]">
+                                <Image src={`/Assests/test-vpn/NYT.svg`} alt="New York Times"
+                                    className="w-full" fill />
+                            </div>
                             <div className="relative h-[30px] w-[30px]">
-                                <Image src={`/Assests/test-vpn/FoxNews.svg`} alt="Fox News"
+                                <Image src={`/Assests/test-vpn/cnet.svg`} alt="CNET"
                                     className="w-full" fill />
                             </div>
                             <div className="relative h-[30px] w-[58px]">
                                 <Image src={`/Assests/test-vpn/BBC.svg`} alt="BBC"
                                     className="w-full" fill />
                             </div>
-                            <div className="relative h-[30px] w-[30px]">
-                                <Image src={`/Assests/test-vpn/cnet.svg`} alt="Cnet"
-                                    className="w-full" fill />
-                            </div>
                             <div className="relative h-[30px] w-[40px]">
                                 <Image src={`/Assests/test-vpn/CNN.svg`} alt="CNN"
                                     className="w-full" fill />
                             </div>
-                            <div className="relative h-[30px] w-[150px]">
-                                <Image src={`/Assests/test-vpn/NYT.svg`} alt="New York Times"
+                            <div className="relative h-[30px] w-[30px]">
+                                <Image src={`/Assests/test-vpn/FoxNews.svg`} alt="Fox News"
                                     className="w-full" fill />
                             </div>
                         </div>
