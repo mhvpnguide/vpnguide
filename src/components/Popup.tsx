@@ -70,7 +70,7 @@ export default function Popup({ date, time }: { date: string, time: string }) {
         onOpen();
         Cookies.set("popupShown", "true", { expires: 1 / 144 }); // Set the cookie to expire in 10 minutes
       }
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 20000); // 2000 milliseconds = 2 seconds
 
     observeCompareElement();
 
@@ -110,7 +110,7 @@ export default function Popup({ date, time }: { date: string, time: string }) {
                         <Link href="https://www.google.com" className="rounded-md bg-orange-600 px-4 py-2 text-2xl font-bold text-white hover:bg-orange-700" target="_blank">Get Discount</Link>
                       </div>
                       <div className="text-[20px] font-semibold text-gray-500">
-                        Get 3 months of our most popular VPN for free.
+                        Black Friday Special: Get 6 extra months of our #1 VPN for free..
                       </div>
                     </div>
                   </div>
