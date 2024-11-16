@@ -188,6 +188,41 @@ const vpnData: VPNData =
                 },
             }
         },
+        {
+            "attributes": {
+                "vpn_name": "Private Internet Access",
+                "ratting": 9.2,
+                "slug": "privateinternetaccess",
+                "offer": "One Account Unlimited Devices",
+                "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support.",
+                "img": "privateinternetaccess.svg",
+                "features": [
+                    { "value": "Suberb for Private Internet Browsing" },
+                    { "value": "Connects upto 10 devices simultaneously" },
+                    { "value": "Try it free for 30 days" },
+                    { "value": "100% Open-Source, No-Logs VPN" },
+                    { "value": "Servers in 91 countries" },
+                    { "value": "Powerful built-in Ad & Malware blocker" }
+                ],
+                "company_link": {
+                    "name": "privateinternetaccess.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text"
+                },
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo",
+                "top_banner": [
+                ],
+                "category_rating": {
+                    "privacy": 9.2,
+                    "features": 9.3,
+                    "speed": 9.5,
+                    "userScore": 9.2,
+                    "valueForMoney": 9.6,
+                },
+            }
+        },
+
 
     ],
     reviews: [
