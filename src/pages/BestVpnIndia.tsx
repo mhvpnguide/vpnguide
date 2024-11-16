@@ -33,7 +33,6 @@ const vpnData: VPNData =
         "cyberghost",
         "privateinternetaccess",
         "expressvpn",
-        "surfshark",
         "purevpn"
     ],
     bestPlan: [
