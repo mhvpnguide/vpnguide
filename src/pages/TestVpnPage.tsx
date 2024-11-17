@@ -573,7 +573,7 @@ const TestVpnPage = () => {
                         </p>
                     </div>
                     <div className="laptop:w-[40%]">
-                        <div className="relative w-full" style={{ aspectRatio: '2 / 1' }}>
+                        <div className="relative h-[150px] w-[300px]">
                             <Image src="/Assests/test-vpn/About.webp" fill alt="image" />
                         </div>
                     </div>
