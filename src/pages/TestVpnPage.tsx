@@ -92,7 +92,7 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPN for Windows 2024",
+    title: "The Best VPN for Windows 2025",
     list: [
         "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming",
         "<b>Change your IP address location</b> & use the internet privately & securely",
@@ -343,7 +343,7 @@ const TestVpnPage = () => {
                     {/* featured section */}
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
-                        <div className="ml-3 mt-[10px] mb-1 flex items-center gap-5">
+                        <div className="mb-1 ml-3 mt-[10px] flex items-center gap-5">
                             <div className="relative h-[30px] w-[150px]">
                                 <Image src={`/Assests/test-vpn/NYT.svg`} alt="New York Times"
                                     className="w-full" fill />
