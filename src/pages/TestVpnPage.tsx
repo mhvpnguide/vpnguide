@@ -222,6 +222,108 @@ const vpnData: VPNData =
                 },
             }
         },
+  {
+            "attributes": {
+                "vpn_name": "Express",
+                "ratting": 8.9,
+                "slug": "expressvpn",
+                "offer": "",
+                "details": "Express VPN: Well-rounded secure and private VPN for anonymous browsing & downloads with No-Logs policy to keep you safe online.",
+                "img": "expressvpn.svg",
+                "features": [
+                    { "value": "Super for anonymous & secure downloads" },
+                    { "value": "Enhanced security with no IP/DNS leaks" },
+                    { "value": "Chrome & FIrefox extensions" },
+                    { "value": "3000 servers in 100+ countries" },
+                    { "value": "VPN kill-switch for safety" }
+                ],
+                "company_link": {
+                    "name": "expressvpn.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=text"
+                },
+                "link1":"https://track.vpns.guide/base2.php?cloid=1001&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1001&token4=bo",
+                "top_banner": [
+                ],
+                "category_rating": {
+                    "privacy": 9.0,
+                    "features": 8.8,
+                    "speed": 5.9,
+                    "userScore": 8.9,
+                    "valueForMoney": 9.0,
+                },
+            }
+        },
+
+
+
+        {
+            "attributes": {
+                "vpn_name": "SurfShark",
+                "ratting": 8.6,
+                "slug": "surfshark",
+                "offer": "",
+                "details": "SurfShark: User-friendly VPN for beginners. Strong security & privacy features.",
+                "img": "surfshark.svg",
+                "features": [
+                    { "value": "Excellent customer support" },
+                    { "value": "Good downloading speed" },
+                    { "value": "Chrome & Firefox extension" },
+                    { "value": "Monitor & prevents data leaks" },
+                    { "value": "Free trial for 30 Days" }
+                ],
+                "company_link": {
+                    "name": "surfshark.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
+                },
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo",
+                "top_banner": [
+                ],
+                "category_rating": {
+                    "privacy": 8.7,
+                    "features": 8.4,
+                    "speed": 8.0,
+                    "userScore": 8.5,
+                    "valueForMoney": 8.7,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Pure Vpn",
+                "ratting": 8.5,
+                "slug": "purevpn",
+                "offer": "",
+                "details": "Pure Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
+                "img": "purevpn.svg",
+                "features": [
+                    { "value": "30 Days Free with Money-Back Guarantee" },
+                    { "value": "Secure, Hides your online activity" },
+                    { "value": "Ultra-fast speed for all devices" },
+                    { "value": "Chrome & Firefox extension" },
+                    { "value": "Strict no-logs policy to keep you safe" }
+                ],
+                "company_link": {
+                    "name": "purevpn.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
+                },
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo",
+                "top_banner": [
+                ],
+                "category_rating": {
+                    "privacy": 8.5,
+                    "features": 8.6,
+                    "speed": 8.0,
+                    "userScore": 8.6,
+                    "valueForMoney": 8.4,
+                },
+            }
+        },
 
 
     ],
@@ -371,7 +473,7 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden w-[full] items-center justify-center tablet:flex laptop:w-[45%]">
                     <div className="relative aspect-video w-[70%] laptop:w-full">
-                        <Image src="/Assests/test-vpn/Hero-Section.png" layout="fill" className="object-contain"
+                        <Image src="/Assests/test-vpn/Hero-Section.avif" layout="fill" className="object-contain"
                             alt="vpn image" />
                     </div>
                 </div>
