@@ -473,7 +473,7 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden w-[full] items-center justify-center tablet:flex laptop:w-[45%]">
                     <div className="relative aspect-video w-[70%] laptop:w-full">
-                        <Image src="/Assests/test-vpn/Hero-Section.webp" layout="fill" className="object-contain" priority 
+                        <Image src="/Assests/test-vpn/Hero-Section.webp" layout="fill" className="object-contain" priority unoptimized 
                             alt="vpn image" />
                     </div>
                 </div>
@@ -515,7 +515,7 @@ const TestVpnPage = () => {
                         On Real Testing
                     </h1>
                     <div className="laptop:w-[40%]">
-                        <div className="relative aspect-video h-full">
+                        <div className="relative aspect-video h-[90%]">
                             <Image src="/Assests/test-vpn/Review.webp" fill alt="logo" />
                         </div>
                     </div>
@@ -573,7 +573,7 @@ const TestVpnPage = () => {
                         </p>
                     </div>
                     <div className="laptop:w-[40%]">
-                        <div className="relative aspect-video w-full">
+                        <div className="relative w-[60%] aspect-video">
 
                             <Image src="/Assests/test-vpn/About.webp" fill alt="logo" />
                         </div>
