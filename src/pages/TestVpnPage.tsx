@@ -92,7 +92,7 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPN for Windows 2025",
+    title: "The Best VPN for Windows 2024",
     list: [
         "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming",
         "<b>Change your IP address location</b> & use the internet privately & securely",
