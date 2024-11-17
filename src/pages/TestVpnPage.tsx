@@ -473,7 +473,7 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden w-[full] items-center justify-center tablet:flex laptop:w-[45%]">
                     <div className="relative aspect-video w-[70%] laptop:w-full">
-                        <Image src="/Assests/test-vpn/Hero-Section.avif" layout="fill" className="object-contain"
+                        <Image src="/Assests/test-vpn/Hero-Section.webp" layout="fill" className="object-contain"
                             alt="vpn image" />
                     </div>
                 </div>
@@ -498,7 +498,7 @@ const TestVpnPage = () => {
 
             {/* reviews section */}
             <div className="mx-auto bg-[#F9F6EE] px-[10px] laptopl:max-w-[1060px] laptopl:px-0">
-                <Popup date="27-10-2024" time="20:30" />
+               
                 <TestVpnCard blogs={vpnData.data} />
             </div>
 
@@ -575,7 +575,7 @@ const TestVpnPage = () => {
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video w-full">
 
-                            <Image src="/Assests/test-vpn/About.webp" fill alt="logo" />
+                            <Image src="/Assests/test-vpn/About.svg" fill alt="logo" />
                         </div>
                     </div>
                     <p className="text-sm laptop:hidden">
