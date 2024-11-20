@@ -32,7 +32,7 @@ interface VPNData {
     }[],
     data: {
         attributes: BlogAttributes;
-    }[],
+    }[];
 }
 export interface BlogAttributes {
     vpn_name: string;
