@@ -76,10 +76,7 @@ const vpnData: VPNData =
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
 
-    bestPlan: [
-        "totalvpn",
-        "cyberghost",
-        "privateinternetaccess",
+
     ],
     // These VPN Services have been featured on:
     featuredImage:
@@ -303,19 +300,6 @@ const vpnData: VPNData =
 
 
     ],
-    reviews: [
-
-        {
-            "img": "surfshark.png",
-            "rating": 8.6,
-            "review": "Every bit as good as the overpriced better known VPN's, & there is barely any decrease in speed when watching movies, if any at all. There are plenty of Country locations to choose from, allowing me to watch Netflix etc. in any zone I choose. U.S. Netflix, for example, is so much better than what Australia has to offer. - SurfShark",
-            "author": "Rick",
-            "company_link": {
-                "name": "surfshark.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review"
-            },
-        },
-    ]
 }
 
 
@@ -414,12 +398,6 @@ const TestVpnPage = () => {
                 </div>
             </div>
 
-            {/* reviews section */}
-            <div className="mx-auto bg-[#F9F6EE] px-[10px] laptopl:max-w-[1060px] laptopl:px-0">
-               
-                <TestVpnCard blogs={vpnData.data} />
-            </div>
-
 
             {/* comparison section */}
             <Comparison />
@@ -504,92 +482,9 @@ const TestVpnPage = () => {
             </div>
 
             {/* Best Plan */}
-            <div className="mx-auto my-10 rounded-[25px] bg-gray-50 p-5 px-[10px] shadow-md laptopl:max-w-[1060px] laptopl:px-0">
-                <div className="mb-10 flex flex-col items-center gap-2">
-                    <h1 className="text-[30px] font-bold">Best VPN Plan</h1>
-                    <p>Choose the best VPN with Great Discount</p>
-                </div>
-
-                <div className="flex flex-col gap-7 tablet:flex-row">
-                    {
-                        vpnData.data
-                            .filter((vpn) => vpnData.bestPlan.includes(vpn.attributes.slug))
-                            .sort((a, b) => vpnData.bestPlan.indexOf(a.attributes.slug) - vpnData.bestPlan.indexOf(b.attributes.slug))
-                            .map((itm: any, idx: number) => (
-                                <Link key={idx} target="_blank" href={itm.attributes.link3} className={`group relative gap-4 tablet:w-1/3 w-full
-            border-2 bg-white rounded-md border-white p-5 items-center flex-col flex hover:border-yellow-600
-            shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"
-                                    }`}>
-                                    {idx == 1 && <div
-                                        className="absolute left-[50%] top-[-25px] flex -translate-x-1/2 transform flex-col items-center justify-center rounded-full border border-blue-600 bg-white px-4 py-1 text-blue-600 shadow-lg">
-                                        <Suspense fallback={<div>Loading components...
-                                        </div>}>
-                                            <FaCrown className="text-xl" />
-                                        </Suspense>
-                                        <span className="text-xs font-semibold">BEST</span>
-                                    </div>}
-
-                                    <div className="flex w-full flex-row items-center justify-between tablet:flex-col">
-                                        {/* image */}
-                                        <div className="relative aspect-[2/1] w-2/4 laptop:w-3/4">
-                                            <Image src={`/Assests/test-vpn/vpn/${itm.attributes.img}`} layout="fill"
-                                                className="object-contain" alt="vpn image" />
-                                        </div>
-
-                                        {/* ratting */}
-                                        <div className="ml-3 flex w-2/4 flex-col items-center justify-center gap-2 tablet:w-full">
-                                            <CustomCircularProgress size="lg" value={itm.attributes.ratting} color={itm.attributes.ratting >= 9.7
-                                                ?
-                                                "warning" :
-                                                itm.attributes.ratting >= 9.0 ? "danger" :
-                                                    itm.attributes.ratting >= 8.0 ? "primary" :
-                                                        itm.attributes.ratting >= 6.0 ? "success" :
-                                                            "secondary"
-                                            }
-                                                showValueLabel={true}
-                                                valueLabel={`${itm.attributes.ratting}`} // Pass the value without the percentage sign
-                                                className="customRating"
-                                            />
-                                            <p className={`text-xs laptop:text-sm font-bold ${itm.attributes.ratting >= 9.5 ?
-                                                "text-[#c4841d]" :
-                                                "text-[#004493]"}`}>
-                                                {
-                                                    itm.attributes.ratting >= 9.7 ? "OUTSTANDING!" :
-                                                        itm.attributes.ratting >= 9.0 ? "SUPERB!" :
-                                                            itm.attributes.ratting >= 8.0 ? "GREAT!" :
-                                                                itm.attributes.ratting >= 6.0 ? "GOOD!" :
-                                                                    "BLANK!"
-                                                }
-
-                                            </p>
-                                            <RatingStars value={itm.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
-                                        </div>
-                                    </div>
-
-                                    {/* details */}
-                                    <p className="text-center text-sm font-bold text-blue-600 laptop:px-5">{itm.attributes.offer}</p>
-                                    <button
-                                        className="mt-auto rounded-lg bg-[#fd5522] px-3 py-1 font-bold text-white hover:bg-[#04aa63] laptop:text-[20px]">Try
-                                        for Free</button>
-                                </Link>
-                            ))
-                    }
-
-                </div>
-            </div>
-
-
-
+            
             {/* card slider */}
-            <div className="flex flex-col gap-2 bg-blue-800 py-[30px]">
-                <h1 className="text-center text-[28px] font-bold text-white">User Reviews</h1>
-                <h2 className="text-center text-[15px] text-slate-300">(These reviews are not verified)</h2>
-                <div className="mx-12 mt-[32px] h-fit">
-                    <CardSlider reviews={vpnData.reviews} />
-                </div>
-            </div>
-
-
+            
             {/* faqs */}
             <div className="py-[56px]">
                 <FAQ />
