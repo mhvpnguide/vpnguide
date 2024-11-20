@@ -23,6 +23,7 @@ import { MdOutlineCheckCircle } from "react-icons/md";
 import parse from 'html-react-parser';
 
 
+
 interface VPNData {
     title?: string;
     updatedOn?: string;
@@ -69,20 +70,28 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPN for Mohit in 2024",
+    title: "The Best VPN for Mohit 2024",
     list: [
         "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming",
         "<b>Change your IP address location</b> & use the internet privately & securely",
         "<b>Connect multiple devices</span> with a single VPN account simultaneously",
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
-    
+    updatedOn: '25-October-2024',
     bestPlan: [
         "totalvpn",
         "cyberghost",
         "privateinternetaccess",
     ],
-    
+    // These VPN Services have been featured on:
+    featuredImage:
+        [
+            { link: "NewYorkTimes.png" },
+            { link: "FoxNews.png" },
+            { link: "Bbc.png" },
+            { link: "Cnn.png" },
+            { link: "CNet.png" }
+        ],
     data: [
         {
             "attributes": {
@@ -296,7 +305,61 @@ const vpnData: VPNData =
 
 
     ],
-    
+    reviews: [
+
+        {
+            "img": "totalvpn.png",
+            "rating": 9.5,
+            "review": "I don't regret buying the cheapest and best ones, it's very comfortable, the price and quality ratio is amazing. - Total Vpn",
+            "author": "Raimundas Kastravickas",
+            "company_link": {
+                "name": "totalvpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=review"
+            },
+        },
+        {
+            "img": "cyberghost.png",
+            "rating": 9.8,
+            "review": "Excellent features and responsive customer service make this VPN my favorite on the market. It is easy to use, very comprehensive, and quite affordable both financially and in terms of usability. To top it off, when you renew your subscription, they offer a significant discount. - Cyber Ghost",
+            "author": "Charles Ward",
+            "company_link": {
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=review"
+            },
+        },
+        {
+            "img": "privateinternetaccess.png",
+            "rating": 9.2,
+            "review": "I especially appreciate that this VPN runs on Linux as well as Windows because I use both systems. It was easy to install and gives me yet another layer of protection against being spied upon. - PIA",
+            "author": "Warwick Gummerson",
+            "company_link": {
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=review"
+            },
+        },
+        {
+            "img": "expressvpn.png",
+            "rating": 8.9,
+            "review": "I've been using ExpressVPN for years and I love it. It's so easy to use and it works great. There is no lag or noticeable delay and it's easy to switch locations whenever you want. You can also install it on five devices, which means that I can have it on my computer, phone, and tablet and still share it with my mom. I highly recommend this VPN. - Express Vpn",
+            "author": "Monica Murray Derr",
+            "company_link": {
+                "name": "expressvpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=review"
+            },
+        },
+        {
+            "img": "surfshark.png",
+            "rating": 8.6,
+            "review": "Every bit as good as the overpriced better known VPN's, & there is barely any decrease in speed when watching movies, if any at all. There are plenty of Country locations to choose from, allowing me to watch Netflix etc. in any zone I choose. U.S. Netflix, for example, is so much better than what Australia has to offer. - SurfShark",
+            "author": "Rick",
+            "company_link": {
+                "name": "surfshark.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review"
+            },
+        },
+    ]
+}
+
 
 
 const TestVpnPage = () => {
@@ -307,6 +370,25 @@ const TestVpnPage = () => {
 
     const [currentDate, setCurrentDate] = useState<string>(`${day}-${month}-${year}`);
     const [currentmontY, setCurrentmontY] = useState<string>(`${month} ${year}`);
+
+
+
+
+    // const [currentDate, setCurrentDate] = useState<string>("");
+    // const [currentmontY, setCurrentmontY] = useState<string>("");
+
+    // useEffect(() => {
+    //     const today = new Date();
+
+    //     const day = today.getDate();
+    //     const month = today.toLocaleString(undefined, { month: "long" });
+    //     const year = today.getFullYear();
+
+    //     const formattedDate = `${day}-${month}-${year}`;
+    //     const formattedMonth = `${month} ${year}`;        
+    //     setCurrentDate(formattedDate);
+    //     setCurrentmontY(`${month} ${year}`);
+    // }, []);
 
 
 
