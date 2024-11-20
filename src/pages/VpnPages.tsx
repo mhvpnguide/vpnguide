@@ -76,8 +76,6 @@ const vpnData: VPNData =
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
 
-
-    ],
     // These VPN Services have been featured on:
     featuredImage:
         [
