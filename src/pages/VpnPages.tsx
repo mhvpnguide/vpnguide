@@ -79,7 +79,7 @@ const vpnData: VPNData =
         "totalvpn",
         "cyberghost",
         "privateinternetaccess",
-    ]
+    ],
 
     // These VPN Services have been featured on:
     featuredImage:
