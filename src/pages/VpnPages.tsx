@@ -22,6 +22,28 @@ import { RxCrossCircled } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
 import parse from 'html-react-parser';
 
+// Dynamically import the icons
+// const FaCrown = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaCrown })));
+// const FaIdCard = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaIdCard })));
+// const FaUserLarge = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaUserLarge })));
+// const SlCalender = React.lazy(() => import("react-icons/sl").then(module => ({ default: module.SlCalender })));
+// const IoSpeedometer = React.lazy(() => import("react-icons/io5").then(module => ({ default: module.IoSpeedometer })));
+// const MdOutlineCheckCircle = React.lazy(() => import("react-icons/md").then(module => ({ default: module.MdOutlineCheckCircle })));
+// const FaUnlockAlt = React.lazy(() => import("react-icons/fa").then(module => ({ default: module.FaUnlockAlt })));
+// const GiReceiveMoney = React.lazy(() => import("react-icons/gi").then(module => ({ default: module.GiReceiveMoney })));
+// const RxCrossCircled = React.lazy(() => import("react-icons/rx").then(module => ({ default: module.RxCrossCircled })));
+
+// Dynamically import the components
+// Dynamically import the components without server-side rendering
+// const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: false });
+// const CustomCircularProgress = dynamic(() => import("@/components/CustomCircularRatting"), { ssr: false });
+// const RatingStars = dynamic(() => import("@/components/CustomStar"), { ssr: false });
+// const CardSlider = dynamic(() => import("@/components/CardSlider"), { ssr: false });
+// const Comparison = dynamic(() => import("@/components/Comparison"), { ssr: false });
+// const ScrollToTopButton = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
+// const Popup = dynamic(() => import("@/components/Popup"), { ssr: false });
+// const TooltipComp = dynamic(() => import("@/components/TooltipComp"), { ssr: false });
+
 
 
 interface VPNData {
@@ -70,20 +92,28 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPN for Mohit 2024",
+    title: "The Best VPN for Windows 2024",
     list: [
         "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming",
         "<b>Change your IP address location</b> & use the internet privately & securely",
         "<b>Connect multiple devices</span> with a single VPN account simultaneously",
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
-    updatedOn: '25-October-2024',
+
     bestPlan: [
         "totalvpn",
         "cyberghost",
         "privateinternetaccess",
     ],
-    
+    // These VPN Services have been featured on:
+    featuredImage:
+        [
+            { link: "NewYorkTimes.png" },
+            { link: "FoxNews.png" },
+            { link: "Bbc.png" },
+            { link: "Cnn.png" },
+            { link: "CNet.png" }
+        ],
     data: [
         {
             "attributes": {
@@ -297,8 +327,22 @@ const vpnData: VPNData =
 
 
     ],
+    reviews: [
 
+        {
+            "img": "surfshark.png",
+            "rating": 8.6,
+            "review": "Every bit as good as the overpriced better known VPN's, & there is barely any decrease in speed when watching movies, if any at all. There are plenty of Country locations to choose from, allowing me to watch Netflix etc. in any zone I choose. U.S. Netflix, for example, is so much better than what Australia has to offer. - SurfShark",
+            "author": "Rick",
+            "company_link": {
+                "name": "surfshark.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review"
+            },
+        },
+    ]
 }
+
+
 
 const TestVpnPage = () => {
     const today = new Date(); // Get the current date upfront
