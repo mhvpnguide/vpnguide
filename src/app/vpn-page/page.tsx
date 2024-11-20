@@ -1,4 +1,4 @@
-import TestVpnPage from "@/pages/VpnPages";
+import VpnPages from "@/pages/VpnPages";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
