@@ -75,6 +75,11 @@ const vpnData: VPNData =
         "<b>Connect multiple devices</span> with a single VPN account simultaneously",
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
+        bestPlan: [
+        "totalvpn",
+        "cyberghost",
+        "privateinternetaccess",
+    ]
 
     // These VPN Services have been featured on:
     featuredImage:
