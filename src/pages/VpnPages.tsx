@@ -1,11 +1,9 @@
 "use client"
 import React from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import TestVpnCard from "@/components/test-vpn-card";
-import Popup from "@/components/Popup";
 import Comparison from "@/components/Comparison";
 import TooltipComp from "@/components/TooltipComp";
 import ScrollToTopButton from "@/components/ScrollToTop";
@@ -21,28 +19,6 @@ import FAQ from "@/components/FAQ";
 import { RxCrossCircled } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
 import parse from 'html-react-parser';
-
-// Dynamically import the icons
-// const FaCrown = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaCrown })));
-// const FaIdCard = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaIdCard })));
-// const FaUserLarge = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaUserLarge })));
-// const SlCalender = React.lazy(() => import("react-icons/sl").then(module => ({ default: module.SlCalender })));
-// const IoSpeedometer = React.lazy(() => import("react-icons/io5").then(module => ({ default: module.IoSpeedometer })));
-// const MdOutlineCheckCircle = React.lazy(() => import("react-icons/md").then(module => ({ default: module.MdOutlineCheckCircle })));
-// const FaUnlockAlt = React.lazy(() => import("react-icons/fa").then(module => ({ default: module.FaUnlockAlt })));
-// const GiReceiveMoney = React.lazy(() => import("react-icons/gi").then(module => ({ default: module.GiReceiveMoney })));
-// const RxCrossCircled = React.lazy(() => import("react-icons/rx").then(module => ({ default: module.RxCrossCircled })));
-
-// Dynamically import the components
-// Dynamically import the components without server-side rendering
-// const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: false });
-// const CustomCircularProgress = dynamic(() => import("@/components/CustomCircularRatting"), { ssr: false });
-// const RatingStars = dynamic(() => import("@/components/CustomStar"), { ssr: false });
-// const CardSlider = dynamic(() => import("@/components/CardSlider"), { ssr: false });
-// const Comparison = dynamic(() => import("@/components/Comparison"), { ssr: false });
-// const ScrollToTopButton = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
-// const Popup = dynamic(() => import("@/components/Popup"), { ssr: false });
-// const TooltipComp = dynamic(() => import("@/components/TooltipComp"), { ssr: false });
 
 
 
@@ -92,7 +68,7 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPN for Windows 2024",
+    title: "The Best VPN for Mohit in 2024",
     list: [
         "<b>Ultra-Fast servers</b> for uninterrupted browsing and streaming",
         "<b>Change your IP address location</b> & use the internet privately & securely",
