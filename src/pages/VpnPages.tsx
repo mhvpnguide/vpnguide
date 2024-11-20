@@ -298,7 +298,7 @@ const vpnData: VPNData =
 
     ],
 
-
+}
 
 const TestVpnPage = () => {
     const today = new Date(); // Get the current date upfront
