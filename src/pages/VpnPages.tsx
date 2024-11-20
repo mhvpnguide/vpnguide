@@ -27,21 +27,12 @@ interface VPNData {
     updatedOn?: string;
     list?: string[];
     slug?: string[];
-    bestPlan: string[];
     featuredImage: {
         link: String
     }[],
     data: {
         attributes: BlogAttributes;
     }[],
-    reviews: {
-        img: String,
-        rating: number,
-        review: String,
-        author: String,
-        company_link: { name: string; value: string };
-
-    }[];
 }
 export interface BlogAttributes {
     vpn_name: string;
@@ -75,11 +66,7 @@ const vpnData: VPNData =
         "<b>Connect multiple devices</span> with a single VPN account simultaneously",
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
-        bestPlan: [
-        "totalvpn",
-        "cyberghost",
-        "privateinternetaccess",
-    ],
+  
 
     // These VPN Services have been featured on:
     featuredImage:
