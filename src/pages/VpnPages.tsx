@@ -492,7 +492,7 @@ const TestVpnPage = () => {
                     </div>
                     <div className="laptop:w-[40%]">
                         <div className="relative aspect-video h-[90%]">
-                            <Image src="/Assests/test-vpn/About.webp" fill alt="image" />
+                            <Image src="/Assests/test-vpn/About.svg" fill alt="image" />
                         </div>
                     </div>
                     <p className="text-sm laptop:hidden">
