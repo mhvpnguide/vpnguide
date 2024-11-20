@@ -32,6 +32,13 @@ interface VPNData {
     }[],
     data: {
         attributes: BlogAttributes;
+    }[],
+        reviews: {
+        img: String,
+        rating: number,
+        review: String,
+        author: String,
+        company_link: { name: string; value: string };
     }[];
 }
 export interface BlogAttributes {
