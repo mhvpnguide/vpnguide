@@ -27,7 +27,6 @@ interface VPNData {
     updatedOn?: string;
     list?: string[];
     slug?: string[];
-    bestPlan: string[];
     featuredImage: {
         link: String
     }[],
