@@ -390,7 +390,7 @@ const TestVpnPage = () => {
 
 
             {/* comparison section */}
-            <Comparison />
+
 
 
             {/* honest vpn review */}
