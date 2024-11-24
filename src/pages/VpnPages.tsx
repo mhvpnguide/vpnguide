@@ -27,9 +27,6 @@ interface VPNData {
     updatedOn?: string;
     list?: string[];
     slug?: string[];
-    featuredImage: {
-        link: String
-    }[],
     data: {
         attributes: BlogAttributes;
     }[],
@@ -76,7 +73,7 @@ const vpnData: VPNData =
     ],
   
 
-    // These VPN Services have been featured on:
+    {/* // These VPN Services have been featured on:
     featuredImage:
         [
             { link: "NewYorkTimes.png" },
@@ -84,7 +81,7 @@ const vpnData: VPNData =
             { link: "Bbc.png" },
             { link: "Cnn.png" },
             { link: "CNet.png" }
-        ],
+        ], */}
     data: [
         {
             "attributes": {
@@ -354,7 +351,7 @@ const TestVpnPage = () => {
                         } */}
                     </ul>
 
-                    {/* featured section */}
+                    {/* featured section
                     <div className="hidden tablet:block">
                         <span className="font-kantumruyPro">These VPN Services have been featured on:</span>
                         <div className="mb-1 ml-3 mt-[10px] flex items-center gap-5">
@@ -377,9 +374,9 @@ const TestVpnPage = () => {
                             <div className="relative h-[30px] w-[30px]">
                                 <Image src={`/Assests/test-vpn/FoxNews.svg`} alt="Fox News"
                                     className="w-full" fill />
-                            </div>
-                        </div>
-                    </div>
+                            </div> 
+                        </div> 
+                    </div> */}
                 </div>
 
                 {/* right */}
