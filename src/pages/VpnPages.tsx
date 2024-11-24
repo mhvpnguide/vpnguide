@@ -83,6 +83,7 @@ const vpnData: VPNData =
             { link: "Bbc.png" },
             { link: "Cnn.png" },
             { link: "CNet.png" }
+         ],   
 
 
     data: [
