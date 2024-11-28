@@ -286,7 +286,13 @@ export default function RootLayout({
 
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
 
-
+        <NextUIProvider>
+          <NavbarComp />
+          {children}
+          <Footer />
+        </NextUIProvider>
+      </body>
+      
 
     </html>
   );
