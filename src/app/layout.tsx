@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "../components/Navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
 
@@ -281,45 +280,13 @@ export default function RootLayout({
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-V3J9MTSWW4"
         />
-        {/* <!-- Google Tag Manager --> */}
 
-
-        <Script
-        id="my-script-2"
-        strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-TV8QXFD7');
-          `,
-          }}
-        />
 
       </head>
 
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
 
-        {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TV8QXFD7"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
 
-        <NextUIProvider>
-          <NavbarComp />
-          {children}
-          <Footer />
-        </NextUIProvider>
-      </body>
-      <GoogleTagManager gtmId="GTM-TV8QXFD7" />
 
     </html>
   );
