@@ -22,39 +22,12 @@ import { RxCrossCircled } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
 import parse from 'html-react-parser';
 
-// Dynamically import the icons
-// const FaCrown = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaCrown })));
-// const FaIdCard = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaIdCard })));
-// const FaUserLarge = React.lazy(() => import("react-icons/fa6").then(module => ({ default: module.FaUserLarge })));
-// const SlCalender = React.lazy(() => import("react-icons/sl").then(module => ({ default: module.SlCalender })));
-// const IoSpeedometer = React.lazy(() => import("react-icons/io5").then(module => ({ default: module.IoSpeedometer })));
-// const MdOutlineCheckCircle = React.lazy(() => import("react-icons/md").then(module => ({ default: module.MdOutlineCheckCircle })));
-// const FaUnlockAlt = React.lazy(() => import("react-icons/fa").then(module => ({ default: module.FaUnlockAlt })));
-// const GiReceiveMoney = React.lazy(() => import("react-icons/gi").then(module => ({ default: module.GiReceiveMoney })));
-// const RxCrossCircled = React.lazy(() => import("react-icons/rx").then(module => ({ default: module.RxCrossCircled })));
-
-// Dynamically import the components
-// Dynamically import the components without server-side rendering
-// const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: false });
-// const CustomCircularProgress = dynamic(() => import("@/components/CustomCircularRatting"), { ssr: false });
-// const RatingStars = dynamic(() => import("@/components/CustomStar"), { ssr: false });
-// const CardSlider = dynamic(() => import("@/components/CardSlider"), { ssr: false });
-// const Comparison = dynamic(() => import("@/components/Comparison"), { ssr: false });
-// const ScrollToTopButton = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
-// const Popup = dynamic(() => import("@/components/Popup"), { ssr: false });
-// const TooltipComp = dynamic(() => import("@/components/TooltipComp"), { ssr: false });
-
-
 
 interface VPNData {
     title?: string;
-    updatedOn?: string;
     list?: string[];
     slug?: string[];
     bestPlan: string[];
-    featuredImage: {
-        link: String
-    }[],
     data: {
         attributes: BlogAttributes;
     }[],
@@ -99,21 +72,11 @@ const vpnData: VPNData =
         "<b>Connect multiple devices</span> with a single VPN account simultaneously",
         "<b>Free trails</b> & <b>Limited Time Discounts</b> for all VPNs"
     ],
-    updatedOn: '25-October-2024',
     bestPlan: [
         "totalvpn",
         "cyberghost",
         "privateinternetaccess",
     ],
-    // These VPN Services have been featured on:
-    featuredImage:
-        [
-            { link: "NewYorkTimes.png" },
-            { link: "FoxNews.png" },
-            { link: "Bbc.png" },
-            { link: "Cnn.png" },
-            { link: "CNet.png" }
-        ],
     data: [
         {
             "attributes": {
@@ -393,27 +356,6 @@ const TestVpnPage = () => {
     const [currentDate, setCurrentDate] = useState<string>(`${day}-${month}-${year}`);
     const [currentmontY, setCurrentmontY] = useState<string>(`${month} ${year}`);
 
-
-
-
-    // const [currentDate, setCurrentDate] = useState<string>("");
-    // const [currentmontY, setCurrentmontY] = useState<string>("");
-
-    // useEffect(() => {
-    //     const today = new Date();
-
-    //     const day = today.getDate();
-    //     const month = today.toLocaleString(undefined, { month: "long" });
-    //     const year = today.getFullYear();
-
-    //     const formattedDate = `${day}-${month}-${year}`;
-    //     const formattedMonth = `${month} ${year}`;        
-    //     setCurrentDate(formattedDate);
-    //     setCurrentmontY(`${month} ${year}`);
-    // }, []);
-
-
-
     return (
         <section className="bg-[#F9F6EE]">
             <ScrollToTopButton />
@@ -433,13 +375,6 @@ const TestVpnPage = () => {
                                 <li className="tick-list-green-item mb-[14px] font-kantumruyPro" key={idx}>  {parse(itm)} </li>
                             ))
                         }
-                        {/* {
-                            vpnData.list?.map((itm: any, idx: number) => (
-                                <li className="tick-list-green-item mb-[14px] font-kantumruyPro" key={idx} dangerouslySetInnerHTML={{
-                                    __html: itm,
-                                }}></li>
-                            ))
-                        } */}
                     </ul>
 
                     {/* featured section */}
@@ -448,7 +383,7 @@ const TestVpnPage = () => {
                         <div className="mb-1 ml-3 mt-[10px] flex items-center gap-5">
                             <div className="relative h-[30px] w-[150px]">
                                 <Image src={`/Assests/test-vpn/NYT.svg`} alt="New York Times"
-                                    className="w-full" fill />
+                                    className="w-full" fill/>
                             </div>
                             <div className="relative h-[30px] w-[30px]">
                                 <Image src={`/Assests/test-vpn/cnet.svg`} alt="CNET"
