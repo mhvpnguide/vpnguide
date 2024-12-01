@@ -11,6 +11,15 @@ const nextConfig = {
                 hostname: "*",
             }
         ]
+    },
+    redirects:async()=>{
+        return[
+            {
+                source:"/admin",
+                destination:"https://shark-app-4dsd9.ondigitalocean.app/admin",
+                permanent:true
+            }
+        ]
     }
 };
 

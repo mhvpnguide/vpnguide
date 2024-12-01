@@ -4,8 +4,8 @@ import "./globals.css";
 import Footer from "../components/Footer";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "../components/Navbar";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
 
