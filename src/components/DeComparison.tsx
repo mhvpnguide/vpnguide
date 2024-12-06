@@ -81,7 +81,7 @@ const compareData = [
     },
     {
         usersReview: {
-            vpnName: "Total Vpn",
+            vpnName: "Total VPN",
             logo: "totalvpn.png",
             icon: "square_logo_total_vpn.png",
             ratting: 9.5,
@@ -720,11 +720,11 @@ const Comparison = () => {
 
                 <div className="flex">
                     <div className="flex items-center flex-1  py-2"></div>
-                    <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-l-2 border-r-2 border-white border-l-[#EEF1F9]">
+                    <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-l-1 border-r-1 border-white border-l-[#EEF1F9]">
                         <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
-                    <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-r-2 border-white">
-                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[15px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
+                    <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-r-1 border-white">
+                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[21px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9]">
                         <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[22px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
