@@ -231,7 +231,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="CyberGhost" />
                         </div >
                         <RatingStars value={compareData[0].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -240,7 +240,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="Total VPN" />
                         </div >
                         <RatingStars value={compareData[1].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -249,7 +249,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-r-0 border-t-0 flex-col pb-2 sticky top-0">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="Private Internet Access" />
                         </div >
                         <RatingStars value={compareData[2].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -721,13 +721,13 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex items-center flex-1  py-2"></div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-l-2 border-r-2 border-white border-l-[#EEF1F9]">
-                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
+                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-r-2 border-white">
-                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
+                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[15px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9]">
-                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
+                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[22px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                 </div>
             </div>
@@ -739,17 +739,17 @@ const Comparison = () => {
                 <div className="flex sticky top-0 bg-white">
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 0 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(0) }}>
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" className='rounded-full' />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="CyberGhost" className='rounded-full' />
                         </div>
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 1 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(1) }}>
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" className='rounded-full' />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="Total VPN" className='rounded-full' />
                         </div>
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 2 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(2) }}>
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="express" className='rounded-full' />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="Private Internet Access" className='rounded-full' />
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2">
-                        <span className='text-center'>{compareData[vpn].usersReview.vpnName} VPN</span>
+                        <span className='text-center'>{compareData[vpn].usersReview.vpnName}</span>
                         <RatingStars value={compareData[vpn].usersReview.ratting} textSize="sm" emptyTextSize="17px" />
                     </div>
                 </div>
