@@ -25,26 +25,26 @@ const compareData = [
             noRating: 5321,
         },
         BestFor: {
-            title: "Overall Best"
+            title: "Gesamtbeste"
         },
         speed: {
-            title: "Very Fast (99Mbps)",
+            title: "Sehr Schnell  (99Mbps)",
             point: 5
         },
         torrenting: {
-            title: "Excellent",
+            title: "Ausgezeichnet",
             point: 5
         },
         streaming: {
-            title: "Excellent",
+            title: "Ausgezeichnet",
             point: 5
         },
         gaming: {
-            title: "Very Good",
+            title: "Sehr gut",
             point: 4
         },
         easeOfUse: {
-            title: "Excellent",
+            title: "Ausgezeichnet",
             point: 5
         },
         killSwitch: {
@@ -63,16 +63,16 @@ const compareData = [
             value: "Militärgrad-Verschlüsselung"
         },
         customerSupport: {
-            value: "Outstanding 24x7 Live Support"
+            value: "Hervorragender 24x7 Live-Support"
         },
         discount: {
-            value: "83% Discount + 4 Months Free"
+            value: "83% Rabatt + 4 Monate gratis"
         },
         moneyBack: {
             value: "45 Tage"
         },
         valueForMoney: {
-            title: "Best Deal",
+            title: "Bester Deal",
             point: 5
         },
         link:{
@@ -91,23 +91,23 @@ const compareData = [
             title: "Gaming, Streaming"
         },
         speed: {
-            title: "Very Fast (97Mbps)",
+            title: "Sehr Schnell  (97Mbps)",
             point: 5
         },
         torrenting: {
-            title: "Very Good",
+            title: "Sehr gut",
             point: 4
         },
         streaming: {
-            title: "Excellent",
+            title: "Ausgezeichnet",
             point: 5
         },
         gaming: {
-            title: "Excellent",
+            title: "Ausgezeichnet",
             point: 5
         },
         easeOfUse: {
-            title: "Very Good",
+            title: "Sehr gut",
             point: 4
         },
         killSwitch: {
@@ -125,19 +125,19 @@ const compareData = [
             value: true
         },
         encryption: {
-            value: "Verschlüsselung - AES-256 Verschlüsselung"
+            value: "AES-256 Verschlüsselung"
         },
         customerSupport: {
-            value: "Great 24x7 Support"
+            value: "24x7 Support"
         },
         discount: {
-            value: "80% Off + Free Antivirus"
+            value: "80% Rabatt + Kostenloses Antivirus"
         },
         moneyBack: {
             value: "30 Tage"
         },
         valueForMoney: {
-            title: "Moderate",
+            title: "Mäßig",
             point: 4
         },
         link:{
@@ -157,23 +157,23 @@ const compareData = [
             title: "Torrenting, Privacy"
         },
         speed: {
-            title: "Fast (88Mbps)",
+            title: "Schnell  (88Mbps)",
             point: 4
         },
         torrenting: {
-            title: "Excellent",
+            title: "Ausgezeichnet",
             point: 5
         },
         streaming: {
-            title: "Very Good",
+            title: "Sehr gut",
             point: 4
         },
         gaming: {
-            title: "Very Good",
+            title: "Sehr gut",
             point: 4
         },
         easeOfUse: {
-            title: "Very Good",
+            title: "Sehr gut",
             point: 4
         },
         killSwitch: {
@@ -197,13 +197,13 @@ const compareData = [
             value: "Outstanding 24x7 Support"
         },
         discount: {
-            value: "83% Discount + 4 Months Free"
+            value: "83% Rabatt + 4 Monate gratis"
         },
         moneyBack: {
             value: "30 Tage"
         },
         valueForMoney: {
-            title: "Great",
+            title: "Gut",
             point: 4
         },
         link:{
@@ -261,7 +261,7 @@ const Comparison = () => {
                 {/* BEST FOR */}
                 <div className="flex">
                     <div className="min-h-[66px] flex items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua' >Best for</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua' >Am besten für</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[0].BestFor.title}</div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[1].BestFor.title}</div>
@@ -721,13 +721,13 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex items-center flex-1  py-2"></div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-l-2 border-r-2 border-white border-l-[#EEF1F9]">
-                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-r-2 border-white">
-                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9]">
-                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">website besuchen</Link>
                     </div>
                 </div>
             </div>
@@ -986,7 +986,7 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex justify-center items-center flex-1  py-2 bg-[#EEF1F9] border-r-2 border-white"></div>
                     <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-l-2 border-white">
-                        <Link target='_blank' href={compareData[vpn].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] text-white font-bold mx-2 px-3 py-1 rounded-full mt-auto w-full text-center text-[20px]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[vpn].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] text-white font-bold mx-2 px-3 py-1 rounded-full mt-auto w-full text-center text-[20px]">website besuchen</Link>
                     </div>
                 </div>
             </div>
