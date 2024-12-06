@@ -87,11 +87,11 @@ const SpecialNavbar = () => {
         },
         {
             mainHeading: "COMPARE",
-            link: 'test-vpn/#compare'
+            link: '/#compare'
         },
         {
             mainHeading: "FAQ",
-            link: 'test-vpn/#faq'
+            link: '/#faq'
         },
     ]
 
