@@ -85,14 +85,7 @@ const SpecialNavbar = () => {
                 },
             ],
         },
-        {
-            mainHeading: "COMPARE",
-            link: '/#compare'
-        },
-        {
-            mainHeading: "FAQ",
-            link: '/#faq'
-        },
+        
     ]
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);

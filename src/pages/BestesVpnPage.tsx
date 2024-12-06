@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import TestVpnCard from "@/components/test-vpn-card";
 import Popup from "@/components/Popup";
-import Comparison from "@/components/Comparison";
+import deComparison from "@/components/deComparison";
 import TooltipComp from "@/components/TooltipComp";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { SlCalender } from "react-icons/sl";
@@ -439,7 +439,7 @@ const TestVpnPage = () => {
 
 
             {/* comparison section */}
-            <Comparison />
+            <deComparison />
 
 
             {/* honest vpn review */}
