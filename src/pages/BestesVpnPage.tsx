@@ -408,7 +408,7 @@ const TestVpnPage = () => {
                 {/* right */}
                 <div className="hidden w-[full] items-center justify-center tablet:flex laptop:w-[45%]">
                     <div className="relative aspect-video w-[70%] laptop:w-full">
-                        <Image src="/Assests/test-vpn/Hero-Section-germany.png" layout="fill" className="object-contain" priority unoptimized 
+                        <Image src="/Assests/test-vpn/Hero-Section-germany.avif" layout="fill" className="object-contain" priority unoptimized 
                             alt="vpn image" />
                     </div>
                 </div>
