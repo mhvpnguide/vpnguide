@@ -63,7 +63,7 @@ const compareData = [
             value: "Militärgrad-Verschlüsselung"
         },
         customerSupport: {
-            value: "Hervorragender 24x7 Live-Support"
+            value: "24x7 Live-Support"
         },
         discount: {
             value: "83% Rabatt + 4 Monate gratis"
@@ -128,7 +128,7 @@ const compareData = [
             value: "AES-256 Verschlüsselung"
         },
         customerSupport: {
-            value: "24x7 Support"
+            value: "24x7 Live-Support"
         },
         discount: {
             value: "80% Rabatt + Kostenloses Antivirus"
@@ -194,7 +194,7 @@ const compareData = [
             value: "Militärgrad-Verschlüsselung"
         },
         customerSupport: {
-            value: "Outstanding 24x7 Support"
+            value: "24x7 Live-Support"
         },
         discount: {
             value: "83% Rabatt + 4 Monate gratis"
