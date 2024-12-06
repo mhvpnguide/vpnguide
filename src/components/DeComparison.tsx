@@ -60,7 +60,7 @@ const compareData = [
             value: true
         },
         encryption: {
-            value: "Military Grade Encryption"
+            value: "Militärgrad-Verschlüsselung"
         },
         customerSupport: {
             value: "Outstanding 24x7 Live Support"
@@ -69,7 +69,7 @@ const compareData = [
             value: "83% Discount + 4 Months Free"
         },
         moneyBack: {
-            value: "45 Days"
+            value: "45 Tage"
         },
         valueForMoney: {
             title: "Best Deal",
@@ -125,7 +125,7 @@ const compareData = [
             value: true
         },
         encryption: {
-            value: "AES-256 Encryption"
+            value: "Verschlüsselung - AES-256 Verschlüsselung"
         },
         customerSupport: {
             value: "Great 24x7 Support"
@@ -134,7 +134,7 @@ const compareData = [
             value: "80% Off + Free Antivirus"
         },
         moneyBack: {
-            value: "30 Days"
+            value: "30 Tage"
         },
         valueForMoney: {
             title: "Moderate",
@@ -191,7 +191,7 @@ const compareData = [
             value: true
         },
         encryption: {
-            value: "Military Grade Encryption"
+            value: "Militärgrad-Verschlüsselung"
         },
         customerSupport: {
             value: "Outstanding 24x7 Support"
@@ -200,7 +200,7 @@ const compareData = [
             value: "83% Discount + 4 Months Free"
         },
         moneyBack: {
-            value: "30 Days"
+            value: "30 Tage"
         },
         valueForMoney: {
             title: "Great",
@@ -218,7 +218,7 @@ const Comparison = () => {
     return (
         <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl py-2 laptop:py-0 flex flex-col my-10 shadow-md" id='compare'>
             <span className="text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
-                Compare Top 3 VPN
+                Vergleichen Sie die Top 3 VPN
             </span>
 
             {/* compare table for desktop */}
@@ -227,7 +227,7 @@ const Comparison = () => {
                 <div className="flex sticky top-0 bg-white">
                     {/* <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 font-inknutAntiqua">Users Review</div> */}
                     <div className="flex items-center flex-1 border-2 border-t-0 border-l-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua' >Users Review</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua' >Nutzerbewertung</span>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
@@ -235,7 +235,7 @@ const Comparison = () => {
                         </div >
                         <RatingStars value={compareData[0].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
-                            {compareData[0].usersReview.noRating} Reviews
+                            {compareData[0].usersReview.noRating} Bewertungen
                         </span>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
@@ -244,7 +244,7 @@ const Comparison = () => {
                         </div >
                         <RatingStars value={compareData[1].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
-                            {compareData[1].usersReview.noRating} Reviews
+                            {compareData[1].usersReview.noRating} Bewertungen
                         </span>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-r-0 border-t-0 flex-col pb-2 sticky top-0">
@@ -253,7 +253,7 @@ const Comparison = () => {
                         </div >
                         <RatingStars value={compareData[2].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
-                            {compareData[2].usersReview.noRating} Reviews
+                            {compareData[2].usersReview.noRating} Bewertungen
                         </span>
                     </div>
                 </div>
@@ -268,12 +268,12 @@ const Comparison = () => {
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-t-0 border-l-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[2].BestFor.title}</div>
                 </div>
 
-                <div className="bg-[#EEF1F9] pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Performance</div>
+                <div className="bg-[#EEF1F9] pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Leistung</div>
 
                 {/* SPEED */}
                 <div className="flex">
                     <div className="min-h-[66px] flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Speed</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Geschwindigkeit</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -365,7 +365,7 @@ const Comparison = () => {
                 {/* Streaming */}
                 <div className="flex">
                     <div className="min-h-[66px] flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Streaming</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Video wird geladen</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -457,7 +457,7 @@ const Comparison = () => {
                 {/* Ease of Use */}
                 <div className="flex">
                     <div className="min-h-[66px] flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Ease of Use</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Einfache Benutzung</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -500,7 +500,7 @@ const Comparison = () => {
                     </div>
                 </div>
 
-                <div className="bg-[#EEF1F9]  pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Security</div>
+                <div className="bg-[#EEF1F9]  pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Sicherheit</div>
 
                 {/* KILL SWITCH */}
                 <div className="flex">
@@ -541,7 +541,7 @@ const Comparison = () => {
                 {/* WIFI PROTECTION */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Wi-Fi Protection</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>WLAN-Schutz</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -571,7 +571,7 @@ const Comparison = () => {
                 {/* No - Logs Policy */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>No - Logs Policy</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>No-Logs-Richtlinie</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -602,7 +602,7 @@ const Comparison = () => {
                 {/* No IP */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>No IP / DNS Leaks</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>IP geheim bleibt</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -633,19 +633,19 @@ const Comparison = () => {
                 {/* ENCRYPTION */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Encryption</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Verschlüsselung</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[0].encryption?.value}</div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[1].encryption?.value}</div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[2].encryption?.value}</div>
                 </div>
 
-                <div className="bg-[#EEF1F9]  pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Valure for Money</div>
+                <div className="bg-[#EEF1F9]  pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Preis-Leistungs-Verhältnis</div>
 
                 {/* CUSTOMER SUPPORT */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">
-                        <span className='ml-6 font-semibold'>Customer Support</span>
+                        <span className='ml-6 font-semibold'>Support</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[0].customerSupport.value}</div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[1].customerSupport.value}</div>
@@ -655,7 +655,7 @@ const Comparison = () => {
                 {/* Discount */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Discount</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Rabatt</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua text-blue-600">{compareData[0].discount.value}</div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua text-blue-600">{compareData[1].discount.value}</div>
@@ -665,7 +665,7 @@ const Comparison = () => {
                 {/* Money Back */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Money Back Guarantee</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Rückerstattung</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[0].moneyBack.value}</div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[1].moneyBack.value}</div>
@@ -675,7 +675,7 @@ const Comparison = () => {
                 {/* Value for Money */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Value for Money</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Preis-Leistungs-Verhältnis</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -764,12 +764,12 @@ const Comparison = () => {
                     <div className="flex justify-center items-center flex-1 border-2 border-t-0  border-r-0 border-[#EEF1F9] py-2">{compareData[vpn].BestFor.title}</div>
                 </div>
 
-                <div className="bg-[#EEF1F9]">Performance</div>
+                <div className="bg-[#EEF1F9]">Leistung</div>
 
                 {/* SPEED */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Speed</span>
+                        <span className='ml-3 font-semibold'>Geschwindigkeit</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2  border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
@@ -809,7 +809,7 @@ const Comparison = () => {
                 {/* Streaming */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Streaming</span>
+                        <span className='ml-3 font-semibold'>Video wird geladen</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
@@ -849,7 +849,7 @@ const Comparison = () => {
                 {/* Ease of Use */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Ease of Use</span>
+                        <span className='ml-3 font-semibold'>Einfache Benutzung</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
@@ -867,7 +867,7 @@ const Comparison = () => {
                 </div>
 
 
-                <div className="bg-[#EEF1F9] ">Security</div>
+                <div className="bg-[#EEF1F9] ">Sicherheit</div>
 
                 {/* KILL SWITCH */}
                 <div className="flex">
@@ -887,7 +887,7 @@ const Comparison = () => {
                 {/* WIFI PROTECTION */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-3 font-semibold'>Wi-Fi Protection</span>
+                        <span className='ml-3 font-semibold'>WLAN-Schutz</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -902,7 +902,7 @@ const Comparison = () => {
                 {/* No - Logs Policy */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-3 font-semibold'>No - Logs Policy</span>
+                        <span className='ml-3 font-semibold'>No-Logs-Richtlinie</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -917,7 +917,7 @@ const Comparison = () => {
                 {/* No IP */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-3 font-semibold'>No IP / DNS Leaks</span>
+                        <span className='ml-3 font-semibold'>IP geheim bleibt</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-5">
                         {
@@ -932,17 +932,17 @@ const Comparison = () => {
                 {/* ENCRYPTION */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Encryption</span>
+                        <span className='ml-3 font-semibold'>Verschlüsselung</span>
                     </div>
                     <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[vpn].encryption?.value}</div>
                 </div>
 
-                <div className="bg-[#EEF1F9] ">Valure for Money</div>
+                <div className="bg-[#EEF1F9] ">Preis-Leistungs-Verhältnis</div>
 
                 {/* CUSTOMER SUPPORT */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Customer Support</span>
+                        <span className='ml-3 font-semibold'>Support</span>
                     </div>
                     <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[vpn].customerSupport.value}</div>
                 </div>
@@ -950,7 +950,7 @@ const Comparison = () => {
                 {/* Discount */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Discount</span>
+                        <span className='ml-3 font-semibold'>Rabatt</span>
                     </div>
                     <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 text-blue-600">{compareData[vpn].discount.value}</div>
                 </div>
@@ -958,7 +958,7 @@ const Comparison = () => {
                 {/* Money Back */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Money Back Guarantee</span>
+                        <span className='ml-3 font-semibold'>Rückerstattung</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[vpn].moneyBack.value}</div>
                 </div>
@@ -966,7 +966,7 @@ const Comparison = () => {
                 {/* Value for Money */}
                 <div className="flex">
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-3 font-semibold'>Value for Money</span>
+                        <span className='ml-3 font-semibold'>Preis-Leistungs-Verhältnis</span>
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
