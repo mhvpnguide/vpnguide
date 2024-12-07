@@ -1,4 +1,4 @@
-import SpecialNavbar from "@/components/DeSpecialNavbar"
+import DeSpecialNavbar from "@/components/DeSpecialNavbar"
 import Script from "next/script"
 
 export default function testVpnLayoutreviewLayout({
