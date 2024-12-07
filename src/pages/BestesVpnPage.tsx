@@ -17,7 +17,7 @@ import { FaUnlockAlt } from "react-icons/fa";
 import RatingStars from "@/components/CustomStar";
 import CustomCircularProgress from "@/components/CustomCircularRatting";
 import CardSlider from "@/components/CardSlider";
-import FAQ from "@/components/FAQ";
+import DeFAQ from "@/components/DeFAQ";
 import { RxCrossCircled } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
 import parse from 'html-react-parser';
@@ -609,7 +609,7 @@ const TestVpnPage = () => {
 
             {/* faqs */}
             <div className="py-[56px]">
-                <FAQ />
+                <DeFAQ />
             </div>
 
 
