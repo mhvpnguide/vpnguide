@@ -128,7 +128,7 @@ const compareData = [
             value: "AES-256 Verschlüsselung"
         },
         customerSupport: {
-            value: "24x7 Live-Support"
+            value: "24x7 Support"
         },
         discount: {
             value: "80% Rabatt + Kostenloses Antivirus"
@@ -813,7 +813,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].streaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].streaming.point <= index ?
@@ -833,7 +833,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].gaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].gaming.point <= index ?
@@ -853,7 +853,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].easeOfUse.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].easeOfUse.point <= index ?
