@@ -70,16 +70,16 @@ const vpnData: VPNData =
                 "vpn_name": "Cyber Ghost",
                 "ratting": 9.8,
                 "slug": "cyberghost",
-                "offer": "Offer: 83% discount + 4 Months Free",
-                "details": "CyberGhost: Lighting Fast, Highly Secure and Trusted. Enjoy Best in class VPN with global coverage and 24/7 customer support. Outstanding!",
+                "offer": "83% Rabatt + 4 Monate kostenlos",
+                "details": "CyberGhost: Blitzschnell, hochsicher und vertrauenswürdig. Genießen Sie erstklassiges VPN mit globaler Abdeckung und 24/7 Kundenservice. Hervorragend!",
                 "img": "cyberghost.svg",
                 "features": [
-                    { "value": "Try it Free for 45 days" },
-                    { "value": "Secure, Hides your Online activity" },
-                    { "value": "Ultra-fast speed for all devices" },
-                    { "value": "Strict no-logs policy to keep you safe" },
-                    { "value": "VPN kill-switch for safety" },
-                    { "value": "11690+ servers in 105 countries" }
+                    { "value": "Teste es 45 Tage kostenlos" },
+                    { "value": "Sicher, versteckt deine Online-Aktivitäten" },
+                    { "value": "Ultra-schnelle Geschwindigkeit für alle Geräte" },
+                    { "value": "Strikte No-Logs-Policy für deine Sicherheit" },
+                    { "value": "VPN-Kill-Switch für Sicherheit" },
+                    { "value": "11690+ Server in 105 Ländern" }                    
                 ],
 
                 "company_link": {
@@ -90,8 +90,8 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo",
                 "top_banner": [
-                    { "value": "Best VPN of 2024" },
-                    { "value": "Free for 45 Days" }
+                    { "value": "Redaktions-VPN 2024" },
+                    { "value": "45 Tage kostenlos" }
                 ],
                 "category_rating": {
                     "privacy": 9.9,
@@ -107,16 +107,17 @@ const vpnData: VPNData =
                 "vpn_name": "Total Vpn",
                 "ratting": 9.5,
                 "slug": "totalvpn",
-                "offer": "Free Antivirus & Free Ad Blocker",
-                "details": "Total Vpn: Optimized specially for Streaming, Torrenting & Gaming. Fast Speed with Military Grade Security. Suberb!",
+                "offer": "Kostenloses Antivirus & Ad-Blocker",
+                "details": "Total VPN: Speziell optimiert für Streaming, Torrenting & Gaming. Schnelle Geschwindigkeit mit Militärischer Verschlüsselung. Großartig!",
                 "img": "totalvpn.svg",
                 "features": [
-                    { "value": "Try it free for 30 Days" },
-                    { "value": "Ultra-fast speed with Zero lag" },
-                    { "value": "Enhanced protection for Public Wi-Fi" },
-                    { "value": "Strict no-logs and no IP/DNS leaks" },
-                    { "value": "Chrome & Firefox extension" },
-                    { "value": "Easy to use app for all devices" }
+                    { "value": "Teste es 30 Tage kostenlos" },
+                    { "value": "Ultra-schnelle Geschwindigkeit ohne Verzögerung" },
+                    { "value": "Erweiterter Schutz für öffentliches Wi-Fi" },
+                    { "value": "Strikte No-Logs-Policy & keine IP/DNS-Lecks" },
+                    { "value": "Chrome- & Firefox-Erweiterung" },
+                    { "value": "Einfache App für alle Geräte" }
+                    
                 ],
                 "company_link": {
                     "name": "totalvpn.com",
@@ -126,8 +127,8 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo",
                 "top_banner": [
-                    { "value": "Cheapest VPN" },
-                    { "value": "@ $1.59/Month Only!" }
+                    { "value": "Billigstes VPN" },
+                    { "value": "1,59 €/Monat nur!" }
                 ],
                 "category_rating": {
                     "privacy": 9.6,
@@ -143,16 +144,16 @@ const vpnData: VPNData =
                 "vpn_name": "Private Internet Access",
                 "ratting": 9.2,
                 "slug": "privateinternetaccess",
-                "offer": "One Account Unlimited Devices",
-                "details": "PIA: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support.",
+                "offer": "Ein Konto, unbegrenzt Geräte",
+                "details": "PIA: Schnelle Geschwindigkeit, starke Verschlüsselung und No-Logs-Policy für privates Surfen mit 24/7 Live-Kundensupport.",
                 "img": "privateinternetaccess.svg",
                 "features": [
-                    { "value": "Suberb for Private Internet Browsing" },
-                    { "value": "Connects upto 10 devices simultaneously" },
-                    { "value": "Try it free for 30 days" },
+                    { "value": "Hervorragend für privates Internet-Surfen" },
+                    { "value": "Verbindet bis zu 10 Geräte gleichzeitig" },
+                    { "value": "Teste es 30 Tage kostenlos" },
                     { "value": "100% Open-Source, No-Logs VPN" },
-                    { "value": "Servers in 91 countries" },
-                    { "value": "Powerful built-in Ad & Malware blocker" }
+                    { "value": "Server in 91 Ländern" },
+                    { "value": "Integrierter Werbe- & Malware-Blocker" }                    
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
@@ -214,14 +215,14 @@ const vpnData: VPNData =
                 "ratting": 8.6,
                 "slug": "surfshark",
                 "offer": "",
-                "details": "SurfShark: User-friendly VPN for beginners. Strong security & privacy features.",
+                "details": "SurfShark: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
                 "img": "surfshark.svg",
                 "features": [
-                    { "value": "Excellent customer support" },
-                    { "value": "Good downloading speed" },
-                    { "value": "Chrome & Firefox extension" },
-                    { "value": "Monitor & prevents data leaks" },
-                    { "value": "Free trial for 30 Days" }
+                    { "value": "Ausgezeichneter Kundensupport" },
+                    { "value": "Gute Download-Geschwindigkeit" },
+                    { "value": "Chrome- & Firefox-Erweiterung" },
+                    { "value": "Überwacht und verhindert Datenlecks" },
+                    { "value": "Kostenlose Testversion für 30 Tage" }                    
                 ],
                 "company_link": {
                     "name": "surfshark.com",
@@ -247,14 +248,14 @@ const vpnData: VPNData =
                 "ratting": 8.5,
                 "slug": "purevpn",
                 "offer": "",
-                "details": "Pure Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
+                "details": "Pure VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
                 "img": "purevpn.svg",
                 "features": [
-                    { "value": "30 Days Free with Money-Back Guarantee" },
-                    { "value": "Secure, Hides your online activity" },
-                    { "value": "Ultra-fast speed for all devices" },
-                    { "value": "Chrome & Firefox extension" },
-                    { "value": "Strict no-logs policy to keep you safe" }
+                    { "value": "30 Tage kostenlos mit Geld-zurück-Garantie" },
+                    { "value": "Sicher, versteckt deine Online-Aktivitäten" },
+                    { "value": "Schnelle Geschwindigkeit für alle Geräte" },
+                    { "value": "Chrome- & Firefox-Erweiterung" },
+                    { "value": "Strikte No-Logs-Policy für deine Sicherheit" }                    
                 ],
                 "company_link": {
                     "name": "purevpn.com",
@@ -287,7 +288,7 @@ const TestVpnPage = () => {
     const month = today.toLocaleString(undefined, { month: "long" });
     const year = today.getFullYear();
 
-    const [currentDate, setCurrentDate] = useState<string>(`${day} ${month},${year}`);
+    const [currentDate, setCurrentDate] = useState<string>(`${day} ${month}, ${year}`);
     const [currentmontY, setCurrentmontY] = useState<string>(`${month} ${year}`);
 
     return (
