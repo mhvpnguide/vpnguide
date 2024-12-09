@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
-import TestVpnCard from "@/components/vpn-card-de";
+import TestVpnCard from "@/components/De-vpn-card";
 import Popup from "@/components/Popup";
 import DeComparison from "@/components/DeComparison";
 import TooltipComp from "@/components/TooltipComp";
@@ -175,26 +175,26 @@ const vpnData: VPNData =
         },
   {
             "attributes": {
-                "vpn_name": "Express",
+                "vpn_name": "SurfShark",
                 "ratting": 8.9,
-                "slug": "expressvpn",
+                "slug": "surfshark",
                 "offer": "",
-                "details": "Express VPN: Well-rounded secure and private VPN for anonymous browsing & downloads with No-Logs policy to keep you safe online.",
-                "img": "expressvpn.svg",
+                "details": "SurfShark: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
+                "img": "surfshark.svg",
                 "features": [
-                    { "value": "Super for anonymous & secure downloads" },
-                    { "value": "Enhanced security with no IP/DNS leaks" },
-                    { "value": "Chrome & FIrefox extensions" },
-                    { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" }
+                    { "value": "Ausgezeichneter Kundensupport" },
+                    { "value": "Gute Download-Geschwindigkeit" },
+                    { "value": "Chrome- & Firefox-Erweiterung" },
+                    { "value": "Überwacht und verhindert Datenlecks" },
+                    { "value": "Kostenlose Testversion für 30 Tage" }                    
                 ],
                 "company_link": {
-                    "name": "expressvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1001&token4=text"
+                    "name": "surfshark.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1001&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1001&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1001&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -211,12 +211,12 @@ const vpnData: VPNData =
 
         {
             "attributes": {
-                "vpn_name": "SurfShark",
+                "vpn_name": "Private VPN",
                 "ratting": 8.6,
-                "slug": "surfshark",
+                "slug": "privatevpn",
                 "offer": "",
-                "details": "SurfShark: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
-                "img": "surfshark.svg",
+                "details": "Private VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
+                "img": "privatevpn.svg",
                 "features": [
                     { "value": "Ausgezeichneter Kundensupport" },
                     { "value": "Gute Download-Geschwindigkeit" },
@@ -250,6 +250,39 @@ const vpnData: VPNData =
                 "offer": "",
                 "details": "Pure VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
                 "img": "purevpn.svg",
+                "features": [
+                    { "value": "30 Tage kostenlos mit Geld-zurück-Garantie" },
+                    { "value": "Sicher, versteckt deine Online-Aktivitäten" },
+                    { "value": "Schnelle Geschwindigkeit für alle Geräte" },
+                    { "value": "Chrome- & Firefox-Erweiterung" },
+                    { "value": "Strikte No-Logs-Policy für deine Sicherheit" }                    
+                ],
+                "company_link": {
+                    "name": "purevpn.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
+                },
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo",
+                "top_banner": [
+                ],
+                "category_rating": {
+                    "privacy": 8.5,
+                    "features": 8.6,
+                    "speed": 8.0,
+                    "userScore": 8.6,
+                    "valueForMoney": 8.4,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Proton VPN",
+                "ratting": 8.2,
+                "slug": "protonvpn",
+                "offer": "",
+                "details": "Proton VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
+                "img": "protonvpn.svg",
                 "features": [
                     { "value": "30 Tage kostenlos mit Geld-zurück-Garantie" },
                     { "value": "Sicher, versteckt deine Online-Aktivitäten" },
