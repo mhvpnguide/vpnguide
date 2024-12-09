@@ -64,11 +64,6 @@ const vpnData: VPNData =
         "<b>Kostenlose Testversionen</b> & <b>zeitlich begrenzte Rabatte</b> für alle VPNs"
 
     ],
-    bestPlan: [
-        "totalvpn",
-        "cyberghost",
-        "privateinternetaccess",
-    ],
     data: [
         {
             "attributes": {
