@@ -4,10 +4,11 @@ import "./globals.css";
 import Footer from "../components/Footer";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "../components/Navbar";
-// import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";sjj
 // import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const kantumruyPro = Kantumruy_Pro({
   subsets: ["latin"],
@@ -301,14 +302,14 @@ export default function RootLayout({
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
 
          {/* <!-- Google Tag Manager (noscript) --> */}
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TV8QXFD7"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript> */}
+        </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
         <NextUIProvider>
@@ -317,7 +318,7 @@ export default function RootLayout({
           <Footer />
         </NextUIProvider>
       </body>
-      {/* <GoogleTagManager gtmId="GTM-TV8QXFD7" /> */}
+      <GoogleTagManager gtmId="GTM-TV8QXFD7" />
 
     </html>
   );
