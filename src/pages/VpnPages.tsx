@@ -33,14 +33,7 @@ interface VPNData {
     data: {
         attributes: BlogAttributes;
     }[],
-    reviews: {
-        img: String,
-        rating: number,
-        review: String,
-        author: String,
-        company_link: { name: string; value: string };
-
-    }[];
+    
 }
 export interface BlogAttributes {
     vpn_name: string;
@@ -299,18 +292,7 @@ const vpnData: VPNData =
 
 
     ],
-        reviews: [
-        {
-            "img": "surfshark.png",
-            "rating": 8.6,
-            "review": "Every bit as good as the overpriced better known VPN's, & there is barely any decrease in speed when watching movies, if any at all. There are plenty of Country locations to choose from, allowing me to watch Netflix etc. in any zone I choose. U.S. Netflix, for example, is so much better than what Australia has to offer. - SurfShark",
-            "author": "Rick",
-            "company_link": {
-                "name": "surfshark.com",
-                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review"
-            },
-        },
-    ]
+        
 }
 
 
@@ -502,13 +484,7 @@ const TestVpnPage = () => {
             {/* Best Plan */}
             
             {/* card slider */}
-             <div className="flex flex-col gap-2 bg-blue-800 py-[30px]">
-                <h1 className="text-center text-[28px] font-bold text-white">User Reviews</h1>
-                <h2 className="text-center text-[15px] text-slate-300">(These reviews are not verified)</h2>
-                <div className="mx-12 mt-[32px] h-fit">
-                    <CardSlider reviews={vpnData.reviews} />
-                </div>
-            </div>
+             
 
             
             {/* faqs */}

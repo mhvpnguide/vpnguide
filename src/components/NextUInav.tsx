@@ -48,7 +48,7 @@ interface NavbarProps {
 const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
 
   const direc = ["best-vpn", "famous-vpn", "best-vpn-for-india"];
-  const exclude = ["test-vpn", "vpn-page"];
+  const exclude = ["test-vpn", "vpn-page", "de"];
   const specialnav: NavItem[] = [
     {
       mainHeading: "BEST VPN",
@@ -76,23 +76,23 @@ const NextUiNavbar: React.FC<NavbarProps> = ({ navdata }) => {
       subnav: [
         {
           name: "Best VPN for Android",
-          link: "/review",
+          link: "/reviews",
         },
         {
           name: "Best VPN for Iphone",
-          link: "/review",
+          link: "/reviews",
         },
         {
           name: "Best VPN for Windows",
-          link: "/review",
+          link: "/reviews",
         },
         {
           name: "Best VPN for Mac",
-          link: "/review",
+          link: "/reviews",
         },
         {
           name: "Best VPN for Linux",
-          link: "/review",
+          link: "/reviews",
         },
       ],
     },

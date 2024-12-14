@@ -44,7 +44,7 @@ interface NavItem {
 const SpecialNavbar = () => {
     const specialnav: NavItem[] = [
         {
-            mainHeading: "BEST VPN",
+            mainHeading: "BEST VPN in Germany",
             subnav: [
                 {
                     name: "Best VPN of 2024",
