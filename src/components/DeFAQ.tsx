@@ -24,7 +24,6 @@ const content1: ContentArray = [
             </ul>
             <p>Unser Ziel ist es, klare und ehrliche Empfehlungen zu geben, damit Sie die beste Entscheidung treffen können.</p>
           `,
-          `
   },
   {
     heading: "Was ist ein VPN und wie funktioniert es?",
