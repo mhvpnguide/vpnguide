@@ -71,6 +71,7 @@ const content1: ContentArray = [
 <li>Mehrere VPN-Protokolle zur Auswahl</li>
 <li>Höhere Bandbreite für schnellere und effizientere Verbindungen</li>
 <li>Professioneller Kunden- und IT-Support, häufig rund um die Uhr</li>
+</ul>
 
   <p>Wenn Sie das beste Preis-Leistungs-Verhältnis suchen, ist 
     <a href="https://track.vpns.guide/base2.php?cloid=1002&link=faq">Total VPN</a>, eine ausgezeichnete Wahl. Es bietet wettbewerbsfähige Preise, robuste Sicherheitsfunktionen und Zugriff auf tausende Server weltweit. Schauen Sie sich die Total VPN-Angebote an für erschwinglichen, hochwertigen Schutz.</p>
