@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import TestVpnCard from "@/components/De-vpn-card";
-import Popup from "@/components/Popup";
+//import Popup from "@/components/Popup";
 import DeComparison from "@/components/DeComparison";
-import TooltipComp from "@/components/TooltipComp";
+import TooltipComp from "@/components/DeTooltipComp";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { SlCalender } from "react-icons/sl";
 import { FaCrown, FaIdCard, FaUserLarge } from "react-icons/fa6";
@@ -16,7 +16,7 @@ import { IoSpeedometer } from "react-icons/io5";
 import { FaUnlockAlt } from "react-icons/fa";
 import RatingStars from "@/components/CustomStar";
 import CustomCircularProgress from "@/components/CustomCircularRatting";
-import CardSlider from "@/components/CardSlider";
+//import CardSlider from "@/components/CardSlider";
 import DeFAQ from "@/components/DeFAQ";
 import { RxCrossCircled } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
@@ -215,17 +215,17 @@ const vpnData: VPNData =
                 "ratting": 8.6,
                 "slug": "privatevpn",
                 "offer": "",
-                "details": "Private VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
+                "details": "Private VPN: legt großen Wert auf die Sicherheit der Benutzer mit 128- und 256-Bit-Verschlüsselung.",
                 "img": "privatevpn.svg",
                 "features": [
-                    { "value": "Ausgezeichneter Kundensupport" },
-                    { "value": "Gute Download-Geschwindigkeit" },
-                    { "value": "Chrome- & Firefox-Erweiterung" },
-                    { "value": "Überwacht und verhindert Datenlecks" },
-                    { "value": "Kostenlose Testversion für 30 Tage" }                    
+                    { "value": "Effektives Stealth-VPN-Protokoll" },
+                    { "value": "Sichert öffentliche WLAN & Hotspot" },
+                    { "value": "30 Tage Geld-zurück-Garantie" },
+                    { "value": "Schnell & einfach zu verbinden" },
+                    { "value": "Server in 62 Ländern verfügbar" }                    
                 ],
                 "company_link": {
-                    "name": "surfshark.com",
+                    "name": "privatevpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1008&token4=text"
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1008&token4=button",
@@ -248,7 +248,7 @@ const vpnData: VPNData =
                 "ratting": 8.5,
                 "slug": "purevpn",
                 "offer": "",
-                "details": "Pure VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
+                "details": "Pure VPN: Gute Geschwindigkeiten & robuste Sicherheitsstufen. 24/7 Support per Live-Chat.",
                 "img": "purevpn.svg",
                 "features": [
                     { "value": "30 Tage kostenlos mit Geld-zurück-Garantie" },
@@ -284,14 +284,14 @@ const vpnData: VPNData =
                 "details": "Proton VPN: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
                 "img": "protonvpn.svg",
                 "features": [
-                    { "value": "30 Tage kostenlos mit Geld-zurück-Garantie" },
-                    { "value": "Sicher, versteckt deine Online-Aktivitäten" },
-                    { "value": "Schnelle Geschwindigkeit für alle Geräte" },
+                    { "value": "Unbegrenzte Geschwindigkeit" },
+                    { "value": "Benutzerfreundliche Apps" },
+                    { "value": "Strikte Keine-Logs-Politik" },
                     { "value": "Chrome- & Firefox-Erweiterung" },
-                    { "value": "Strikte No-Logs-Policy für deine Sicherheit" }                    
+                    { "value": "30 Tage Geld-zurück-Garantie" }                    
                 ],
                 "company_link": {
-                    "name": "purevpn.com",
+                    "name": "protonvpn.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1009&token4=text"
                 },
                 "link1":"https://track.vpns.guide/base2.php?cloid=1009&token4=button",

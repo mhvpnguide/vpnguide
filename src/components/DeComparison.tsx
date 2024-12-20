@@ -217,7 +217,7 @@ const Comparison = () => {
 
     return (
         <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl py-2 laptop:py-0 flex flex-col my-10 shadow-md" id='compare'>
-            <span className="text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
+            <span className="text-[22px] laptop:text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
                 Vergleichen Sie die Top 3 VPN
             </span>
 

@@ -1,7 +1,7 @@
 import { BlogAttributes } from "@/pages/TestVpnPage";
 import React, { Suspense } from "react";
 import { BsFillLightbulbFill } from "react-icons/bs";
-import AccordianComponent from "./AccordianComponent";
+import AccordianComponent from "./DeAccordianComponent";
 import Link from "next/link";
 import RatingStars from "./CustomStar";
 import CustomCircularProgress from "./CustomCircularRatting";
@@ -213,7 +213,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
 
                 <div className="flex flex-col items-center justify-center gap-2 laptop:px-2">
                   <Link href={`${blog.attributes.link1}`} target="_blank"
-                    className="w-full rounded-lg border border-black bg-[#fd5522] px-3 py-1 text-center font-bold text-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#04aa63] laptop:text-[16px] laptopl:text-[20px]">
+                    className="w-full rounded-lg border border-black bg-[#fd5522] px-3 py-1 text-center font-bold text-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#04aa63] text-[20px] laptop:text-[16px] laptopl:text-[20px]">
                     Zur Website {">"}</Link>
                   <Link href={`${blog.attributes.company_link.value}`} target="_blank"
                     className="hidden font-kantumruyPro text-[12px] text-gray-500 underline laptop:block">
