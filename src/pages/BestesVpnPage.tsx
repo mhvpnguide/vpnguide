@@ -56,7 +56,7 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "The Best VPN for Germany 2024",
+    title: "Die besten VPN-Anbieter im 2025",
     list: [
         "<b>Ultra-schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
         "<b>Ändern Sie Ihren IP-Standort</b> & nutzen Sie das Internet privat und sicher",  
@@ -90,7 +90,7 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo",
                 "top_banner": [
-                    { "value": "Redaktions-VPN 2024" },
+                    { "value": "Redaktions-VPN" },
                     { "value": "45 Tage kostenlos" }
                 ],
                 "category_rating": {
@@ -226,11 +226,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "surfshark.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1008&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1008&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1008&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1008&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -292,11 +292,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "purevpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1009&token4=text"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1009&token4=button",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1009&token4=tile",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1009&token4=bo",
                 "top_banner": [
                 ],
                 "category_rating": {
