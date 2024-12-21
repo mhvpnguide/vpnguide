@@ -268,7 +268,7 @@ const vpnData: VPNData =
                 ],
                 "category_rating": {
                     "privacy": 8.5,
-                    "features": 8.6,
+                    "features": 8.4,
                     "speed": 8.0,
                     "userScore": 8.6,
                     "valueForMoney": 8.4,
