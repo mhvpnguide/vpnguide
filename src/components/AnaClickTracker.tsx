@@ -19,15 +19,23 @@ const GlobalClickTracker = () => {
 
       // Map cloid to VPN names
       const vpnNames: Record<string, string> = {
-        '1006': 'purevpn',
-        '1003': 'cyberghost',
+       // '1006': 'Pure',
+       // '1003': 'Nord',
+       // '1001': 'Express',
+       // '1002': 'Cyberghost',
+       // '1004': 'PIA',
+       // '1005': 'Surfshark',
+       // '1007': 'Total',
+       // '1008': 'Private',
+       // '1009': 'Proton',
         // Add more mappings as needed
       };
 
-      // Check if cloid is valid and exists in vpnNames mapping
+      // If cloid is not in the vpnNames mapping, use token5 + " CTA"
+      let eventName = '';
       if (!cloid || !(cloid in vpnNames)) {
-        // If cloid is invalid or not in vpnNames, set to "CTA"
-        const eventName = 'CTA';
+        // Use token5 and append "CTA" (e.g., "DE CTA")
+        eventName = `${token5 ? token5 : 'Unknown'} CTA`;
         sendEvent(eventName, link, token5);
         return;
       }
@@ -37,8 +45,8 @@ const GlobalClickTracker = () => {
       // Skip tracking if token4 is 'tile'
       if (token4 === 'tile') return;
 
-      // Create the event name
-      const eventName = `${token5 ? token5 : 'Unknown'} ${vpnName} ${token4}`;
+      // Create the event name using token5 and vpnName
+      eventName = `${token5 ? token5 : 'Unknown'} ${vpnName} ${token4}`;
 
       // Check if gtag is loaded before sending the event
       sendEvent(eventName, link, token5);

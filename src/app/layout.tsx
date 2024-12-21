@@ -299,7 +299,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </NextUIProvider>
-        <GlobalClickTracker />
+         <GlobalClickTracker />
         <ScrollTracker /> {/* Add ScrollTracker to handle client-side logic */}
         <DarkModeTracker />
       </body>
