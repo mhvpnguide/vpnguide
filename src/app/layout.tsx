@@ -68,19 +68,11 @@ export default function RootLayout({
         <meta property="og:image" content="/logo.png" />
         <meta property="og:url" content="https://vpns.guide/" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="VPN Recommendations and Advice" />
-        <meta name="twitter:description" content="Our VPN experts spent hours testing and reviewing VPN services to protect your privacy." />
-        <meta name="twitter:image" content="/logo.png" />
 
-        {/* Google Analytics */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-V3J9MTSWW4`}
-          strategy="afterInteractive"
-        />
+        {/* Lazy Load Google Analytics */}
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -95,7 +87,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Microsoft Clarity */}
+        {/* Lazy Load Microsoft Clarity */}
         <Script
           id="microsoft-clarity"
           strategy="lazyOnload"
@@ -103,9 +95,9 @@ export default function RootLayout({
             __html: `
               (function(c,l,a,r,i,t,y) {
                 c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments); };
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/np9je9n7qi";
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
                 y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-              })(window, document, "clarity", "script");
+              })(window, document, "clarity", "script", "np9je9n7qi");
             `,
           }}
         />
