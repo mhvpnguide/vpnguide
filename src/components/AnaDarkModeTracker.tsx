@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-const AnaDarkModeTracker = () => {
+const DarkModeTracker = () => {
   useEffect(() => {
     // Function to check if gtag is available
     const checkGtagAvailability = () => {
@@ -30,4 +30,4 @@ const AnaDarkModeTracker = () => {
   return null;
 };
 
-export default AnaDarkModeTracker;
+export default DarkModeTracker;
