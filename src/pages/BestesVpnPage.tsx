@@ -84,11 +84,11 @@ const vpnData: VPNData =
 
                 "company_link": {
                     "name": "cyberghost.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo&token5=DE",
                 "top_banner": [
                     { "value": "Redaktions-VPN" },
                     { "value": "45 Tage kostenlos" }
@@ -121,11 +121,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button&token5=DE&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=DE",
                 "top_banner": [
                     { "value": "Billigstes VPN" },
                     { "value": "1,59 €/Monat nur!" }
@@ -157,11 +157,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button&token5=DE&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo&token5=DE",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -190,11 +190,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "surfshark.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo&token5=DE",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -226,11 +226,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "privatevpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1008&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1008&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1008&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1008&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1008&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1008&token4=button&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1008&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1008&token4=bo&token5=DE",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -259,11 +259,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "purevpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo&token5=DE",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -292,11 +292,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "protonvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1009&token4=text"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1009&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1009&token4=button",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1009&token4=tile",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1009&token4=bo",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1009&token4=button&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1009&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1009&token4=bo&token5=DE",
                 "top_banner": [
                 ],
                 "category_rating": {

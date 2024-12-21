@@ -76,7 +76,7 @@ const compareData = [
             point: 5
         },
         link:{
-            vlaue:"https://track.vpns.guide/base2.php?cloid=1002&token4=compare"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1002&token4=compare&token5=DE"
         }
     },
     {
@@ -141,7 +141,7 @@ const compareData = [
             point: 4
         },
         link:{
-            vlaue:"https://track.vpns.guide/base2.php?cloid=1007&token4=compare"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1007&token4=compare&token5=DE"
         }
     },
     {
@@ -207,7 +207,7 @@ const compareData = [
             point: 4
         },
         link:{
-            vlaue:"https://track.vpns.guide/base2.php?cloid=1004&token4=compare"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1004&token4=compare&token5=DE"
         }
     },
 ]

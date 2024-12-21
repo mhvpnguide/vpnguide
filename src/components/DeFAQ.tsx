@@ -40,7 +40,7 @@ const content1: ContentArray = [
 
 <p></p>Wenn Sie sich mit einem VPN verbinden, werden alle Ihre Daten durch einen sicheren, verschlüsselten Tunnel geleitet. Dies schützt sensible Informationen wie Passwörter, Bankdaten und persönliche Daten, selbst in öffentlichen WLAN-Netzwerken.</p>
 
-<p></p>Für die besten Ergebnisse empfehlen wir vertrauenswürdige VPNs wie  <a href="https://track.vpns.guide/base2.php?cloid=1002&link=faq">CyberGhost</a> und  <a href="https://track.vpns.guide/base2.php?cloid=1007&link=faq">Total VPN</a>. <span style="font-weight: 500;">Sie bieten starke Sicherheitsfunktionen, schnelle Verbindungen und zuverlässigen Datenschutz für all Ihre Online-Aktivitäten.</span></p>
+<p></p>Für die besten Ergebnisse empfehlen wir vertrauenswürdige VPNs wie  <a href="https://track.vpns.guide/base2.php?cloid=1002&token4=faq&token5=DE">CyberGhost</a> und  <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN</a>. <span style="font-weight: 500;">Sie bieten starke Sicherheitsfunktionen, schnelle Verbindungen und zuverlässigen Datenschutz für all Ihre Online-Aktivitäten.</span></p>
           `,
   },
   {
@@ -74,7 +74,7 @@ const content1: ContentArray = [
 </ul>
 
   <p>Wenn Sie das beste Preis-Leistungs-Verhältnis suchen, ist 
-    <a href="https://track.vpns.guide/base2.php?cloid=1007&link=faq">Total VPN</a>, eine ausgezeichnete Wahl. Es bietet wettbewerbsfähige Preise, robuste Sicherheitsfunktionen und Zugriff auf tausende Server weltweit. Schauen Sie sich die <a href="https://track.vpns.guide/base2.php?cloid=1002&link=faq">Total VPN-Angebote</a> an für erschwinglichen, hochwertigen Schutz.</p>
+    <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN</a>, eine ausgezeichnete Wahl. Es bietet wettbewerbsfähige Preise, robuste Sicherheitsfunktionen und Zugriff auf tausende Server weltweit. Schauen Sie sich die <a href="https://track.vpns.guide/base2.php?cloid=1002&token4=faq&token5=DE">Total VPN-Angebote</a> an für erschwinglichen, hochwertigen Schutz.</p>
             `,
   },
   ];

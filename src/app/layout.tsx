@@ -11,6 +11,7 @@ import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google
 //import { GoogleTagManager } from "@next/third-parties/google";
 import ScrollTracker from '../components/AnaScrollTracker';
 import DarkModeTracker from '../components/AnaDarkModeTracker';
+import GlobalClickTracker from "../components/AnaClickTracker";
 
 const kantumruyPro = Kantumruy_Pro({
   subsets: ["latin"],
@@ -298,6 +299,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </NextUIProvider>
+        <GlobalClickTracker />
         <ScrollTracker /> {/* Add ScrollTracker to handle client-side logic */}
         <DarkModeTracker />
       </body>
