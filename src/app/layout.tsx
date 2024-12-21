@@ -9,6 +9,7 @@ import NavbarComp from "../components/Navbar";
 import Script from "next/script";
 import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
 //import { GoogleTagManager } from "@next/third-parties/google";
+import ScrollTracker from '../components/ScrollTracker';
 
 const kantumruyPro = Kantumruy_Pro({
   subsets: ["latin"],
@@ -27,7 +28,7 @@ const inknutAntiqua = Inknut_Antiqua({
 });
 
 export const metadata: Metadata = {
-  // title: "VPN Guide",
+   //title: "VPN Guide",
   title: {
     template: "%s | VPNs Guide",
     default: "VPNs Guide",
@@ -296,6 +297,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </NextUIProvider>
+        <ScrollTracker /> {/* Add ScrollTracker to handle client-side logic */}
       </body>
     </html>
   );
