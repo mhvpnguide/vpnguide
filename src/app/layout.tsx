@@ -274,16 +274,19 @@ export default function RootLayout({
             `,
           }}
         />
-<Script id="google-analytics" strategy="lazyOnload">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-2S5WJYCWQZ');
-  `}
-</Script>
-
+{/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2S5WJYCWQZ"
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2S5WJYCWQZ');
+          `}
+        </Script>
       </head>
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
 
