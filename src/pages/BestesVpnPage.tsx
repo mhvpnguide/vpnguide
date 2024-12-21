@@ -300,7 +300,7 @@ const vpnData: VPNData =
                 "top_banner": [
                 ],
                 "category_rating": {
-                    "privacy": 8.5,
+                    "privacy": 8.4,
                     "features": 8.6,
                     "speed": 8.0,
                     "userScore": 8.6,
