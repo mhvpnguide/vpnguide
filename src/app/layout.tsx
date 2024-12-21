@@ -275,7 +275,7 @@ export default function RootLayout({
           }}
         />
 
-        <!-- Google tag (gtag.js) -->
+        {/* analytics */}
 <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-2S5WJYCWQZ"
         strategy="lazyOnload"
