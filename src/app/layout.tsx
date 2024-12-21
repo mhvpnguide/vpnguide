@@ -9,7 +9,6 @@ import NavbarComp from "../components/Navbar";
 import Script from "next/script";
 import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
 //import { GoogleTagManager } from "@next/third-parties/google";
-import { GoogleAnalytics } from "@vercel/analytics/react";
 
 
 const kantumruyPro = Kantumruy_Pro({
