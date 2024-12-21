@@ -287,8 +287,8 @@ export default function RootLayout({
           gtag('js', new Date());
 
   gtag('config', 'G-2S5WJYCWQZ');
+       }
 </script>
-/>
       </head>
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
 
