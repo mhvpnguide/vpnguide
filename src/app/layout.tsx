@@ -9,7 +9,8 @@ import NavbarComp from "../components/Navbar";
 import Script from "next/script";
 import { Kaisei_Tokumin, Kantumruy_Pro, Inknut_Antiqua } from '@next/font/google'
 //import { GoogleTagManager } from "@next/third-parties/google";
-import ScrollTracker from '../components/ScrollTracker';
+import ScrollTracker from '../components/AnaScrollTracker';
+import DarkModeTracker from '../components/AnaDarkModeTracker';
 
 const kantumruyPro = Kantumruy_Pro({
   subsets: ["latin"],
@@ -298,6 +299,7 @@ export default function RootLayout({
           <Footer />
         </NextUIProvider>
         <ScrollTracker /> {/* Add ScrollTracker to handle client-side logic */}
+        <DarkModeTracker />
       </body>
     </html>
   );

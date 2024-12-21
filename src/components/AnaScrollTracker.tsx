@@ -13,33 +13,29 @@ const ScrollTracker = () => {
 
       // Only trigger an event if the scroll percentage crosses a new threshold
       if (scrollPercentage >= 25 && scrollPercentage < 50 && lastScrollDepth < 25) {
-        window.gtag('event', 'scroll_depth', {
+        window.gtag('event', 'scroll 25', {  // Change event name to 'scroll 25'
           event_category: 'scroll',
-          event_label: '25%',
           value: scrollPercentage,
         });
         lastScrollDepth = 25;
       } else if (scrollPercentage >= 50 && scrollPercentage < 75 && lastScrollDepth < 50) {
-        window.gtag('event', 'scroll_depth', {
+        window.gtag('event', 'scroll 50', {  // Change event name to 'scroll 50'
           event_category: 'scroll',
-          event_label: '50%',
           value: scrollPercentage,
         });
         lastScrollDepth = 50;
-      } else if (scrollPercentage >= 75 && scrollPercentage < 100 && lastScrollDepth < 75) {
-        window.gtag('event', 'scroll_depth', {
+      } else if (scrollPercentage >= 75 && scrollPercentage < 90 && lastScrollDepth < 75) {
+        window.gtag('event', 'scroll 75', {  // Change event name to 'scroll 75'
           event_category: 'scroll',
-          event_label: '75%',
           value: scrollPercentage,
         });
         lastScrollDepth = 75;
-      } else if (scrollPercentage >= 100 && lastScrollDepth < 100) {
-        window.gtag('event', 'scroll_depth', {
+      } else if (scrollPercentage >= 90 && lastScrollDepth < 90) {
+        window.gtag('event', 'scroll 90', {  // Change event name to 'scroll 90'
           event_category: 'scroll',
-          event_label: '100%',
           value: scrollPercentage,
         });
-        lastScrollDepth = 100;
+        lastScrollDepth = 90;
       }
     };
 
