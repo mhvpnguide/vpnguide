@@ -56,7 +56,7 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "DeGunstigesVpnPage",
+    title: "DeGunstigesVpn",
     list: [
         "<b>Ultra-schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
         "<b>Ändern Sie Ihren IP-Standort</b> & nutzen Sie das Internet privat und sicher",  
