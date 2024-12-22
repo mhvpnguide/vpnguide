@@ -1,5 +1,5 @@
 // BestVpnPage.tsx
-import BestesVpnPage from "@/pages/DeBestesVpnPage";
+import BestesVpnPage from "@/pages/DeGunstigesVpnPage";
 import { Metadata } from "next";
 import Head from "next/head";
 
