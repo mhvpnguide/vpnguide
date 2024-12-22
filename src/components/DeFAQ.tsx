@@ -74,7 +74,7 @@ const content1: ContentArray = [
 </ul>
 
   <p>Wenn Sie das beste Preis-Leistungs-Verhältnis suchen, ist 
-    <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN</a>, eine ausgezeichnete Wahl. Es bietet wettbewerbsfähige Preise, robuste Sicherheitsfunktionen und Zugriff auf tausende Server weltweit. Schauen Sie sich die <a href="https://track.vpns.guide/base2.php?cloid=1002&token4=faq&token5=DE">Total VPN-Angebote</a> an für erschwinglichen, hochwertigen Schutz.</p>
+    <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN</a>, eine ausgezeichnete Wahl. Es bietet wettbewerbsfähige Preise, robuste Sicherheitsfunktionen und Zugriff auf tausende Server weltweit. Schauen Sie sich die <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN-Angebote</a> an für erschwinglichen, hochwertigen Schutz.</p>
             `,
   },
   ];
