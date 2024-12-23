@@ -13,6 +13,7 @@ import ScrollTracker from '../components/AnaScrollTracker';
 import DarkModeTracker from '../components/AnaDarkModeTracker';
 import GlobalClickTracker from "../components/AnaClickTracker";
 import dynamic from 'next/dynamic';
+import {RouteChangeListener} from "../components/Optinmonster"
 
 const kantumruyPro = Kantumruy_Pro({
   subsets: ["latin"],
@@ -278,24 +279,6 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* OptinMonster Script */}
-      <Script
-        id="optinmonster-script"
-        strategy="lazyOnload" // Lazy load the script after page content has loaded
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(d,u,ac){
-            var s=d.createElement('script');
-            s.type='text/javascript';
-            s.src='https://a.omappapi.com/app/js/api.min.js';
-            s.async=true;
-            s.dataset.user=u;
-            s.dataset.account=ac;
-            d.getElementsByTagName('head')[0].appendChild(s);
-          })(document, 352620, 372811);
-        `,
-        }}  
-        />
 {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2S5WJYCWQZ"
@@ -309,6 +292,12 @@ export default function RootLayout({
             gtag('config', 'G-2S5WJYCWQZ');
           `}
         </Script>
+        {/* OptinMonster */}
+        <Script 
+        type="text/javascript" 
+        src="/js/OptinMonster.js" 
+        strategy="afterInteractive" 
+        />
       </head>
       <body className={`${kantumruyPro.variable} ${kaiseiTokumin.variable} ${inknutAntiqua.variable}`}>
 
@@ -321,6 +310,7 @@ export default function RootLayout({
          <GlobalClickTracker />
         <ScrollTracker /> {/* Add ScrollTracker to handle client-side logic */}
         <DarkModeTracker />
+        <RouteChangeListener/> {/*optinmonster*/}
       </body>
     </html>
   );
