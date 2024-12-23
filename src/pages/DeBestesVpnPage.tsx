@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
@@ -10,12 +9,6 @@ import DeComparison from "@/components/DeComparison";
 import TooltipComp from "@/components/DeTooltipComp";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { SlCalender } from "react-icons/sl";
-import { FaCrown, FaIdCard, FaUserLarge } from "react-icons/fa6";
-import { GiReceiveMoney } from "react-icons/gi";
-import { IoSpeedometer } from "react-icons/io5";
-import { FaUnlockAlt } from "react-icons/fa";
-import RatingStars from "@/components/CustomStar";
-import CustomCircularProgress from "@/components/CustomCircularRatting";
 //import CardSlider from "@/components/CardSlider";
 import DeFAQ from "@/components/DeFAQ";
 import { RxCrossCircled } from "react-icons/rx";
@@ -56,9 +49,9 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "Die besten VPN-Anbieter 2025",
+    title: "Vergleiche Die Besten VPN-Anbieter 2025",
     list: [
-        "<b>Ultra-schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
+        "<b>Ultra-Schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
         "<b>Ändere deinen IP-Standort</b> & nutze das Internet privat und sicher",  
         "<b>Verbinde mehrere Geräte</b> gleichzeitig mit einem einzigen VPN-Konto",  
         "<b>Kostenlose Testversionen</b> & <b>zeitlich begrenzte Rabatte</b> für alle VPNs"

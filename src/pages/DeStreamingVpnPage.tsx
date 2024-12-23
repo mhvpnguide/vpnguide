@@ -56,11 +56,11 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "Die besten VPN-Anbieter im 2025",
+    title: "Die besten VPN-Anbieter 2025",
     list: [
         "<b>Ultra-schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
-        "<b>Ändern Sie Ihren IP-Standort</b> & nutzen Sie das Internet privat und sicher",  
-        "<b>Verbinden Sie mehrere Geräte</b> gleichzeitig mit einem einzigen VPN-Konto",  
+        "<b>Ändere deinen IP-Standort</b> & nutze das Internet privat und sicher",  
+        "<b>Verbinde mehrere Geräte</b> gleichzeitig mit einem einzigen VPN-Konto",  
         "<b>Kostenlose Testversionen</b> & <b>zeitlich begrenzte Rabatte</b> für alle VPNs"
 
     ],
@@ -71,12 +71,12 @@ const vpnData: VPNData =
                 "ratting": 9.8,
                 "slug": "cyberghost",
                 "offer": "83% Rabatt + 4 Monate kostenlos",
-                "details": "CyberGhost: Blitzschnell, hochsicher und vertrauenswürdig. Genießen Sie erstklassiges VPN mit globaler Abdeckung und 24/7 Kundenservice. Hervorragend!",
+                "details": "CyberGhost: Blitzschnell, hochsicher und vertrauenswürdig. Genieße ein Premium-VPN mit globaler Abdeckung und 24/7 Kundenservice. Unser Testsieger!",
                 "img": "cyberghost.svg",
                 "features": [
-                    { "value": "Teste es 45 Tage kostenlos" },
-                    { "value": "Sicher, versteckt deine Online-Aktivitäten" },
-                    { "value": "Ultra-schnelle Geschwindigkeit für alle Geräte" },
+                    { "value": "45 Tage kostenlos testen" },
+                    { "value": "Sicher, schützt deine Online-Aktivitäten" },
+                    { "value": "Ultra schnelle Geschwindigkeit für alle Geräte" },
                     { "value": "Strikte No-Logs-Policy für deine Sicherheit" },
                     { "value": "VPN-Kill-Switch für Sicherheit" },
                     { "value": "11690+ Server in 105 Ländern" }                    
@@ -90,7 +90,7 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile&token5=DE",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo&token5=DE",
                 "top_banner": [
-                    { "value": "Redaktions-VPN" },
+                    { "value": "Unser Top-VPN" },
                     { "value": "45 Tage kostenlos" }
                 ],
                 "category_rating": {
@@ -108,15 +108,15 @@ const vpnData: VPNData =
                 "ratting": 9.5,
                 "slug": "totalvpn",
                 "offer": "Kostenloses Antivirus & Ad-Blocker",
-                "details": "Total VPN: Speziell optimiert für Streaming, Torrenting & Gaming. Schnelle Geschwindigkeit mit Militärischer Verschlüsselung. Großartig!",
+                "details": "Total VPN: Optimiert für Streaming, Torrenting & Gaming. Schnelle Geschwindigkeit mit Militärstandard-Verschlüsselung",
                 "img": "totalvpn.svg",
                 "features": [
                     { "value": "Teste es 30 Tage kostenlos" },
                     { "value": "Ultra-schnelle Geschwindigkeit ohne Verzögerung" },
-                    { "value": "Erweiterter Schutz für öffentliches Wi-Fi" },
+                    { "value": "Verstärkter Schutz für öffentliches WLAN" },
                     { "value": "Strikte No-Logs-Policy & keine IP/DNS-Lecks" },
                     { "value": "Chrome- & Firefox-Erweiterung" },
-                    { "value": "Einfache App für alle Geräte" }
+                    { "value": "Benutzerfreundliche App für alle Geräte" }
                     
                 ],
                 "company_link": {
@@ -127,7 +127,7 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=DE",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=DE",
                 "top_banner": [
-                    { "value": "Billigstes VPN" },
+                    { "value": "Günstigstes VPN" },
                     { "value": "1,59 €/Monat nur!" }
                 ],
                 "category_rating": {
@@ -145,15 +145,15 @@ const vpnData: VPNData =
                 "ratting": 9.2,
                 "slug": "privateinternetaccess",
                 "offer": "Ein Konto, unbegrenzt Geräte",
-                "details": "PIA: Schnelle Geschwindigkeit, starke Verschlüsselung und No-Logs-Policy für privates Surfen mit 24/7 Live-Kundensupport.",
+                "details": "PIA: Schnelle Geschwindigkeit, starke Verschlüsselung und ohne Datenspeicherung für anonymes Surfen mit 24/7 Live-Support.",
                 "img": "privateinternetaccess.svg",
                 "features": [
                     { "value": "Hervorragend für privates Internet-Surfen" },
-                    { "value": "Verbindet bis zu 10 Geräte gleichzeitig" },
+                    { "value": "Nutze bis zu 10 Geräte gleichzeitig" },
                     { "value": "Teste es 30 Tage kostenlos" },
                     { "value": "100% Open-Source, No-Logs VPN" },
                     { "value": "Server in 91 Ländern" },
-                    { "value": "Integrierter Werbe- & Malware-Blocker" }                    
+                    { "value": "Eingebauter Schutz vor Werbung & Schadsoftware" }                    
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
@@ -179,7 +179,7 @@ const vpnData: VPNData =
                 "ratting": 8.9,
                 "slug": "surfshark",
                 "offer": "",
-                "details": "SurfShark: Benutzerfreundliches VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
+                "details": "SurfShark: Perfektes Einsteiger-VPN für Anfänger. Starke Sicherheits- und Datenschutzfunktionen.",
                 "img": "surfshark.svg",
                 "features": [
                     { "value": "Ausgezeichneter Kundensupport" },
@@ -251,11 +251,11 @@ const vpnData: VPNData =
                 "details": "Pure VPN: Gute Geschwindigkeiten & robuste Sicherheitsstufen. 24/7 Support per Live-Chat.",
                 "img": "purevpn.svg",
                 "features": [
-                    { "value": "30 Tage kostenlos mit Geld-zurück-Garantie" },
-                    { "value": "Sicher, versteckt deine Online-Aktivitäten" },
+                    { "value": "30 Tage Geld-zurück-Garantie" },
+                    { "value": "Schützt deine Online-Aktivität" },
                     { "value": "Schnelle Geschwindigkeit für alle Geräte" },
                     { "value": "Chrome- & Firefox-Erweiterung" },
-                    { "value": "Strikte No-Logs-Policy für deine Sicherheit" }                    
+                    { "value": "Keine Datenspeicherung für deine Sicherheit" }                    
                 ],
                 "company_link": {
                     "name": "purevpn.com",
@@ -286,7 +286,7 @@ const vpnData: VPNData =
                 "features": [
                     { "value": "Unbegrenzte Geschwindigkeit" },
                     { "value": "Benutzerfreundliche Apps" },
-                    { "value": "Strikte Keine-Logs-Politik" },
+                    { "value": "Keine Datenspeicherung" },
                     { "value": "Chrome- & Firefox-Erweiterung" },
                     { "value": "30 Tage Geld-zurück-Garantie" }                    
                 ],
@@ -334,7 +334,7 @@ const TestVpnPage = () => {
                 <div className="content mx-0 max-h-fit w-full pb-4 tablet:mx-auto tablet:w-[55%] laptop:mx-0">
                     <h1 className="mb-4 font-kantumruyPro text-[25px] font-bold laptop:text-[35px]">{vpnData.title}</h1>
                     <h2 className="mb-[25px] font-kantumruyPro text-[14px] text-blue-950 laptop:mb-[30px] laptop:text-[14px]">
-                        {currentmontY} – Top Sicherheitsfunktionen, private, umfassende Servernetzwerke und zuverlässige Rückerstattungen - sicherer Internetzugang in nur wenigen Klicks.
+                        {currentmontY} – Top Sicherheitsfunktionen, private, umfassende Servernetzwerke und zuverlässige Rückerstattungen - sicheres Surfen mit wenigen Klicks.
                     </h2>
                     <ul className="mb-[20px] text-[16px] laptop:text-base">
                         {
@@ -427,7 +427,7 @@ const TestVpnPage = () => {
             {/* two button */}
             <div className="flex flex-col bg-white px-2 py-[50px] laptop:px-0">
                 <h1 className="pb-[25px] text-center font-kantumruyPro text-[23px] font-semibold text-[#545454] laptop:text-[30px]">
-                Sind Sie bereit, sich mit einem erstklassigen VPN zu schützen?</h1>
+                Bist du bereit, dich mit einem erstklassigen VPN zu schützen?</h1>
                 <div className="flex flex-col justify-center gap-5 laptop:flex-row laptop:gap-12">
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank"
                         className="flex h-[60px] cursor-pointer items-center gap-9 border-2 border-[#04AA63] px-10 hover:bg-[#04aa6291] laptop:w-[450px]">
