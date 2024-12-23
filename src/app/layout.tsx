@@ -48,6 +48,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+                {/* Preconnect to external services for performance optimization */}
+                <link href="https://a.optmstr.com" rel="preconnect" crossorigin="anonymous" />
         {/* <!-- Standard favicon --> */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* <!-- Recommended favicon size for general browser display --> */}
