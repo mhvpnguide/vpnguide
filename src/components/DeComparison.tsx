@@ -218,7 +218,7 @@ const Comparison = () => {
     return (
         <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl py-2 laptop:py-0 flex flex-col my-10 shadow-md" id='compare'>
             <span className="text-[22px] laptop:text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
-                Vergleichen Sie die Top 3 VPN
+            Vergleiche die Top 3 VPNs
             </span>
 
             {/* compare table for desktop */}
@@ -365,7 +365,7 @@ const Comparison = () => {
                 {/* Streaming */}
                 <div className="flex">
                     <div className="min-h-[66px] flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>Video wird geladen</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>Video-Streaming-Geschwindigkeit</span>
                     </div>
                     <div className="min-h-[66px] flex justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
@@ -602,7 +602,7 @@ const Comparison = () => {
                 {/* No IP */}
                 <div className="flex">
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
-                        <span className='ml-6 font-semibold font-inknutAntiqua'>IP geheim bleibt</span>
+                        <span className='ml-6 font-semibold font-inknutAntiqua'>IP-Verschleierung</span>
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-5">
                         {

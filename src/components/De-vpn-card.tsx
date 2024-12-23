@@ -236,7 +236,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
             <div className="flex items-center justify-center gap-2 px-[15px] pt-4 text-center text-sm laptop:px-0">
               <BsFillLightbulbFill className="inline text-[25px] text-green-600 laptop:text-[16px]" />
               <p className="text-start font-kantumruyPro text-[16px] font-medium">
-              <b>Profi-Tipp:</b> Der Schutz Deiner Daten im Internet ist wichtiger denn je. Ein VPN ist nicht nur eine gute Idee, sondern unerlässlich.
+              <b>Profi-Tipp:</b> Der Schutz deiner Daten im Internet ist wichtiger denn je. Ein VPN ist nicht nur eine gute Idee, sondern unerlässlich.
               </p>
             </div>
           )}
