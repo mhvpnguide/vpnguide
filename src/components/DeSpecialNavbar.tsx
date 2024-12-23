@@ -44,44 +44,44 @@ interface NavItem {
 const SpecialNavbar = () => {
     const specialnav: NavItem[] = [
         {
-            mainHeading: "BEST VPN in Germany",
+            mainHeading: "VPN für Deutschland",
             subnav: [
                 {
-                    name: "Best VPN of 2024",
-                    link: "/best-vpn",
+                    name: "Vergleiche VPN",
+                    link: "/de/bestes-vpn",
                 },
                 {
-                    name: "Best VPN in India",
-                    link: "/best-vpn-for-india",
+                    name: "Beste VPN 2025",
+                    link: "/de/bestes-vpn",
                 },
                 {
-                    name: "Best free VPN",
-                    link: "/best-free-vpn",
+                    name: "Sicherste VPN",
+                    link: "/de/sicherstes-vpn",
+                },
+                {
+                    name: "Günstige VPN",
+                    link: "/de/gunstiges-vpn",
                 },
             ],
         },
         {
-            mainHeading: "DEVICE",
+            mainHeading: "Gerät",
             subnav: [
                 {
-                    name: "Best VPN for Android",
-                    link: "/review",
+                    name: "Android",
+                    link: "/de/beste-vpn-android",
                 },
                 {
-                    name: "Best VPN for Iphone",
-                    link: "/review",
+                    name: "Iphone",
+                    link: "/de/beste-vpn-iphone",
                 },
                 {
-                    name: "Best VPN for Windows",
-                    link: "/review",
+                    name: "Windows",
+                    link: "/de/beste-vpn-windows",
                 },
                 {
-                    name: "Best VPN for Mac",
-                    link: "/review",
-                },
-                {
-                    name: "Best VPN for Linux",
-                    link: "/review",
+                    name: "MacBook",
+                    link: "/de/beste-vpn-mac",
                 },
             ],
         },

@@ -37,7 +37,7 @@ export default function testVpnLayoutreviewLayout({
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
-                        setTimeout("checkdirect(42,4)",2000);
+                        setTimeout("checkdirect(42,5)",2000);
                          `,
                 }}
             />

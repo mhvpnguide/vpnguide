@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
@@ -9,6 +10,12 @@ import DeComparison from "@/components/DeComparison";
 import TooltipComp from "@/components/DeTooltipComp";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { SlCalender } from "react-icons/sl";
+import { FaCrown, FaIdCard, FaUserLarge } from "react-icons/fa6";
+import { GiReceiveMoney } from "react-icons/gi";
+import { IoSpeedometer } from "react-icons/io5";
+import { FaUnlockAlt } from "react-icons/fa";
+import RatingStars from "@/components/CustomStar";
+import CustomCircularProgress from "@/components/CustomCircularRatting";
 //import CardSlider from "@/components/CardSlider";
 import DeFAQ from "@/components/DeFAQ";
 import { RxCrossCircled } from "react-icons/rx";
@@ -49,9 +56,9 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "Vergleiche Die Besten VPN-Anbieter",
+    title: "Die besten VPN-Anbieter für Windows",
     list: [
-        "<b>Ultra-Schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
+        "<b>Ultra-schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
         "<b>Ändere deinen IP-Standort</b> & nutze das Internet privat und sicher",  
         "<b>Verbinde mehrere Geräte</b> gleichzeitig mit einem einzigen VPN-Konto",  
         "<b>Kostenlose Testversionen</b> & <b>zeitlich begrenzte Rabatte</b> für alle VPNs"
@@ -67,12 +74,12 @@ const vpnData: VPNData =
                 "details": "CyberGhost: Blitzschnell, hochsicher und vertrauenswürdig. Genieße ein Premium-VPN mit globaler Abdeckung und 24/7 Kundenservice. Unser Testsieger!",
                 "img": "cyberghost.svg",
                 "features": [
+                    { "value": "Benutzerfreundliche App für Windows" },
                     { "value": "45 Tage kostenlos testen" },
                     { "value": "Sicher, schützt deine Online-Aktivitäten" },
                     { "value": "Ultra schnelle Geschwindigkeit für alle Geräte" },
                     { "value": "Strikte No-Logs-Policy für deine Sicherheit" },
-                    { "value": "VPN-Kill-Switch für Sicherheit" },
-                    { "value": "11690+ Server in 105 Ländern" }                    
+                    { "value": "VPN-Kill-Switch für Sicherheit" }                
                 ],
 
                 "company_link": {
@@ -325,7 +332,7 @@ const TestVpnPage = () => {
             <div className="mx-auto flex flex-col bg-[#F9F6EE] px-[10px] pt-[17px] laptop:flex-row laptop:py-2 laptop:pb-[28px] laptop:pt-10 laptopl:max-w-[1060px] laptopl:px-0">
                 {/* left */}
                 <div className="content mx-0 max-h-fit w-full pb-4 tablet:mx-auto tablet:w-[55%] laptop:mx-0">
-                    <h1 className="mb-4 font-kantumruyPro text-[25px] font-bold laptop:text-[33px]">{vpnData.title}</h1>
+                    <h1 className="mb-4 font-kantumruyPro text-[25px] font-bold laptop:text-[35px]">{vpnData.title}</h1>
                     <h2 className="mb-[25px] font-kantumruyPro text-[14px] text-blue-950 laptop:mb-[30px] laptop:text-[14px]">
                         {currentmontY} – Top Sicherheitsfunktionen, private, umfassende Servernetzwerke und zuverlässige Rückerstattungen - sicheres Surfen mit wenigen Klicks.
                     </h2>

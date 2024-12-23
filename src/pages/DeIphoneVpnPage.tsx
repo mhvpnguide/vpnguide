@@ -56,9 +56,9 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "Die besten VPN-Anbieter 2025",
+    title: "Die besten VPN-Anbieter für Iphone",
     list: [
-        "<b>Ultra-schnelle Server</b> für unterbrechungsfreies Surfen und Streaming",  
+        "<b>Ultra-Schnelle Server</b> und zuverlässigste für Iphone",  
         "<b>Ändere deinen IP-Standort</b> & nutze das Internet privat und sicher",  
         "<b>Verbinde mehrere Geräte</b> gleichzeitig mit einem einzigen VPN-Konto",  
         "<b>Kostenlose Testversionen</b> & <b>zeitlich begrenzte Rabatte</b> für alle VPNs"
@@ -74,12 +74,12 @@ const vpnData: VPNData =
                 "details": "CyberGhost: Blitzschnell, hochsicher und vertrauenswürdig. Genieße ein Premium-VPN mit globaler Abdeckung und 24/7 Kundenservice. Unser Testsieger!",
                 "img": "cyberghost.svg",
                 "features": [
+                    { "value": "Benutzerfreundliche App für Android" },
                     { "value": "45 Tage kostenlos testen" },
                     { "value": "Sicher, schützt deine Online-Aktivitäten" },
                     { "value": "Ultra schnelle Geschwindigkeit für alle Geräte" },
                     { "value": "Strikte No-Logs-Policy für deine Sicherheit" },
-                    { "value": "VPN-Kill-Switch für Sicherheit" },
-                    { "value": "11690+ Server in 105 Ländern" }                    
+                    { "value": "VPN-Kill-Switch für Sicherheit" }               
                 ],
 
                 "company_link": {
