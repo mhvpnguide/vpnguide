@@ -295,7 +295,7 @@ export default function RootLayout({
         {/* OptinMonster */}
         <Script 
         type="text/javascript" 
-        src="/js/OptinMonster.js" 
+        src="https://a.omappapi.com/app/js/api.min.js" 
         strategy="afterInteractive" 
         />
       </head>
