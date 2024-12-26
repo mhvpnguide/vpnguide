@@ -81,7 +81,7 @@ const compareData = [
     },
     {
         usersReview: {
-            vpnName: "Total Vpn",
+            vpnName: "Total VPN",
             logo: "totalvpn.png",
             icon: "square_logo_total_vpn.png",
             ratting: 9.5,
@@ -217,8 +217,8 @@ const Comparison = () => {
 
     return (
         <div className="bg-white laptopl:max-w-[1060px] px-[10px] laptopl:px-0 mx-auto rounded-xl py-2 laptop:py-0 flex flex-col my-10 shadow-md" id='compare'>
-            <span className="text-[40px] font-semibold text-center py-3 bg-[#EEF1F9]">
-                Compare Top 3 VPN
+            <span className="text-[22px] laptop:text-[40px]  font-semibold text-center py-3 bg-[#EEF1F9]">
+                Compare Top 3 VPNs
             </span>
 
             {/* compare table for desktop */}
@@ -231,7 +231,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.logo}`} fill alt="CyberGhost" />
                         </div >
                         <RatingStars value={compareData[0].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -240,7 +240,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="Total VPN" />
                         </div >
                         <RatingStars value={compareData[1].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -249,7 +249,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-r-0 border-t-0 flex-col pb-2 sticky top-0">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="express" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.logo}`} fill alt="Private Internet Access" />
                         </div >
                         <RatingStars value={compareData[2].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -640,7 +640,7 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[2].encryption?.value}</div>
                 </div>
 
-                <div className="bg-[#EEF1F9]  pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Valure for Money</div>
+                <div className="bg-[#EEF1F9]  pl-2 font-bold font-inknutAntiqua text-lg min-h-[37px] flex items-center">Value for Money</div>
 
                 {/* CUSTOMER SUPPORT */}
                 <div className="flex">
@@ -667,9 +667,9 @@ const Comparison = () => {
                     <div className="flex min-h-[66px] items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-6 font-semibold font-inknutAntiqua'>Money Back Guarantee</span>
                     </div>
-                    <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[0].moneyBack.value}</div>
-                    <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[1].moneyBack.value}</div>
-                    <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua font-semibold">{compareData[2].moneyBack.value}</div>
+                    <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[0].moneyBack.value}</div>
+                    <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[1].moneyBack.value}</div>
+                    <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9] py-2 font-inknutAntiqua">{compareData[2].moneyBack.value}</div>
                 </div>
 
                 {/* Value for Money */}
@@ -679,7 +679,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
-                            <span className="text-[12px] text-center">{compareData[0].valueForMoney.title}</span>
+                            <span className="text-[14px] text-center  font-semibold">{compareData[0].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[0].valueForMoney.point <= index ?
@@ -692,7 +692,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
-                            <span className="text-[12px] text-center">{compareData[1].valueForMoney.title}</span>
+                        <span className="text-[14px] text-center  font-semibold">{compareData[1].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[1].valueForMoney.point <= index ?
@@ -705,7 +705,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex min-h-[66px] justify-center items-center flex-1 border-2 border-l-0 border-b-0 border-r-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col gap-1">
-                            <span className="text-[12px] text-center">{compareData[2].valueForMoney.title}</span>
+                        <span className="text-[14px] text-center  font-semibold">{compareData[2].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[2].valueForMoney.point <= index ?
@@ -721,13 +721,13 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex items-center flex-1  py-2"></div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-l-2 border-r-2 border-white border-l-[#EEF1F9]">
-                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit CyberGhost</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-r-2 border-white">
-                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit TotalVPN</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9]">
-                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">Visit PrivateVPN</Link>
                     </div>
                 </div>
             </div>
@@ -739,17 +739,17 @@ const Comparison = () => {
                 <div className="flex sticky top-0 bg-white">
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 0 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(0) }}>
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="express" className='rounded-full' />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="CyberGhost" className='rounded-full' />
                         </div>
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 1 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(1) }}>
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="express" className='rounded-full' />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="TotalVPN" className='rounded-full' />
                         </div>
                         <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 2 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(2) }}>
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="express" className='rounded-full' />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="Private Internet Access" className='rounded-full' />
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2">
-                        <span className='text-center'>{compareData[vpn].usersReview.vpnName} VPN</span>
+                        <span className='text-center'>{compareData[vpn].usersReview.vpnName}</span>
                         <RatingStars value={compareData[vpn].usersReview.ratting} textSize="sm" emptyTextSize="17px" />
                     </div>
                 </div>
@@ -813,7 +813,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].streaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].streaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].streaming.point <= index ?
@@ -833,7 +833,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].gaming.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].gaming.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].gaming.point <= index ?
@@ -853,7 +853,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[10px] text-center">{compareData[vpn].easeOfUse.title}</span>
+                            <span className="text-[12px] text-center">{compareData[vpn].easeOfUse.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].easeOfUse.point <= index ?
@@ -937,7 +937,7 @@ const Comparison = () => {
                     <div className="flex text-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[vpn].encryption?.value}</div>
                 </div>
 
-                <div className="bg-[#EEF1F9] ">Valure for Money</div>
+                <div className="bg-[#EEF1F9] ">Value for Money</div>
 
                 {/* CUSTOMER SUPPORT */}
                 <div className="flex">
@@ -960,7 +960,7 @@ const Comparison = () => {
                     <div className="flex items-center flex-1 border-2 border-l-0 border-b-0 border-[#EEF1F9] py-2">
                         <span className='ml-3 font-semibold'>Money Back Guarantee</span>
                     </div>
-                    <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2 font-semibold">{compareData[vpn].moneyBack.value}</div>
+                    <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9] py-2">{compareData[vpn].moneyBack.value}</div>
                 </div>
 
                 {/* Value for Money */}
@@ -970,7 +970,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex justify-center items-center flex-1 border-2 border-r-0 border-b-0 border-[#EEF1F9]  py-2">
                         <div className="flex flex-col">
-                            <span className="text-[12px] text-center">{compareData[vpn].valueForMoney.title}</span>
+                        <span className="text-[14px] text-center  font-semibold">{compareData[vpn].valueForMoney.title}</span>
                             <div className="flex flex-row gap-2">
                                 {[...Array(5)].map((_, index) => (
                                     compareData[vpn].valueForMoney.point <= index ?
@@ -986,7 +986,7 @@ const Comparison = () => {
                 <div className="flex">
                     <div className="flex justify-center items-center flex-1  py-2 bg-[#EEF1F9] border-r-2 border-white"></div>
                     <div className="flex items-center flex-1 py-2 bg-[#EEF1F9] border-l-2 border-white">
-                        <Link target='_blank' href={compareData[vpn].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] text-white font-bold mx-2 px-3 py-1 rounded-full mt-auto w-full text-center text-[20px]">Visit Site</Link>
+                        <Link target='_blank' href={compareData[vpn].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)] text-white font-bold mx-2 px-3 py-1 rounded-full mt-auto w-full text-center text-[20px]">Visit Website</Link>
                     </div>
                 </div>
             </div>

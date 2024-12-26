@@ -107,13 +107,13 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
               {/* List item */}
               <Link href={`${blog.attributes.link2}`} target="_blank"
                 className="flex flex-col laptop:w-[35%] laptop:justify-between">
-                <p className={`ml-6 mt-2 pb-3 font-kaiseiTokumin text-sm font-semibold text-blue-600 laptop:hidden`}>
+                <p className={`ml-6 mt-2 pb-3 font-kaiseiTokumin text-[18px]] font-semibold text-blue-600 laptop:hidden`}>
                   {blog.attributes.offer}</p>
                 {/* for mobile view */}
                 <ul className="mt-2 space-y-2 pl-3 tablet:mb-4 laptop:mt-0 laptop:hidden laptop:pl-0">
                   {
                     blog.attributes.features.slice(0, 4).map((subitm: Feature, subidx: number) => (
-                      <li className="tick-list-green-item font-kantumruyPro text-[14px] laptop:text-[16px]" key={subidx}>{subitm.value}
+                      <li className="tick-list-green-item font-kantumruyPro text-[16px] laptop:text-[16px]" key={subidx}>{subitm.value}
                       </li>
                     ))
                   }
@@ -215,7 +215,7 @@ const TestVpnCard: React.FC<BlogsProps> = React.memo(({ blogs }) => {
 
                 <div className="flex flex-col items-center justify-center gap-2 laptop:px-2">
                   <Link href={`${blog.attributes.link1}`} target="_blank"
-                    className="w-full rounded-lg border border-black bg-[#fd5522] px-3 py-1 text-center font-bold text-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#04aa63] laptop:text-[15px] laptopl:text-[20px]">
+                    className="w-full rounded-lg border border-black bg-[#fd5522] px-3 py-1 text-center font-bold text-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#04aa63] text-[20px] laptop:text-[16px] laptopl:text-[20px]">
                     Visit Site {">"}</Link>
                   <Link href={`${blog.attributes.company_link.value}`} target="_blank"
                     className="hidden font-kantumruyPro text-[12px] text-gray-500 underline laptop:block">
