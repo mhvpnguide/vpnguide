@@ -47,41 +47,49 @@ const SpecialNavbar = () => {
             mainHeading: "VPN for India",
             subnav: [
                 {
-                    name: "Vergleiche VPN",
-                    link: "/de/bestes-vpn",
+                    name: "Compare VPN",
+                    link: "/in/compare-vpn",
                 },
                 {
-                    name: "Beste VPN 2025",
-                    link: "/de/bestes-vpn",
+                    name: "Best VPN 2025",
+                    link: "/in/best-vpn",
                 },
                 {
-                    name: "Sicherste VPN",
-                    link: "/de/sicherstes-vpn",
+                    name: "Cheapest VPN",
+                    link: "/in/cheapest-vpn",
                 },
                 {
-                    name: "Günstige VPN",
-                    link: "/de/gunstiges-vpn",
+                    name: "VPN for Torrenting",
+                    link: "/in/vpn-for-torrenting",
+                },
+                {
+                    name: "VPN for Streaming",
+                    link: "/in/vpn-for-streaming",
+                },
+                {
+                    name: "VPN for Gaming",
+                    link: "/in/vpn-for-gaming",
                 },
             ],
         },
         {
-            mainHeading: "Gerät",
+            mainHeading: "Devices",
             subnav: [
                 {
                     name: "Android",
-                    link: "/de/beste-vpn-android",
+                    link: "/in/best-vpn-android",
                 },
                 {
                     name: "Iphone",
-                    link: "/de/beste-vpn-iphone",
+                    link: "/in/best-vpn-iphone",
                 },
                 {
                     name: "Windows",
-                    link: "/de/beste-vpn-windows",
+                    link: "/in/best-vpn-windows",
                 },
                 {
                     name: "MacBook",
-                    link: "/de/beste-vpn-mac",
+                    link: "/in/best-vpn-mac",
                 },
             ],
         },

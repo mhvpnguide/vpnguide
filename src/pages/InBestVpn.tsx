@@ -56,7 +56,7 @@ export interface BlogAttributes {
 
 const vpnData: VPNData =
 {
-    title: "Best VPNs for India 2025",
+    title: "The Best VPNs for India 2025",
     list: [
         "<b>Ultra-Fast Servers</b> for uninterrupted Browsing, Streaming & Gaming",  
         "<b>Change your IP address location</b> & use the internet privately & securely",  
@@ -84,11 +84,11 @@ const vpnData: VPNData =
 
                 "company_link": {
                     "name": "cyberghost.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1002&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo&token5=IN",
                 "top_banner": [
                     { "value": "Editor's Choice" },
                     { "value": "Try it Free for 45 Days" }
@@ -121,11 +121,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button&token5=DE&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=IN",
                 "top_banner": [
                     { "value": "Cheapest VPN" },
                     { "value": "From Rs. 175/- Only" }
@@ -157,11 +157,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "privateinternetaccess.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button&token5=DE&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo&token5=IN",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -190,11 +190,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "surfshark.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1005&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo&token5=IN",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -258,11 +258,11 @@ const vpnData: VPNData =
                     ],
                     "company_link": {
                     "name": "privatevpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1008&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1008&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1008&token4=button&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1008&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1008&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1008&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1008&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1008&token4=bo&token5=IN",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -291,11 +291,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "purevpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1006&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo&token5=IN",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -324,11 +324,11 @@ const vpnData: VPNData =
                 ],
                 "company_link": {
                     "name": "protonvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1009&token4=text&token5=DE"
+                    "value": "https://track.vpns.guide/base2.php?cloid=1009&token4=text&token5=IN"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1009&token4=button&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1009&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1009&token4=bo&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1009&token4=button&token5=IN",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1009&token4=tile&token5=IN",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1009&token4=bo&token5=IN",
                 "top_banner": [
                 ],
                 "category_rating": {
@@ -458,7 +458,7 @@ const TestVpnPage = () => {
             {/* two button */}
             <div className="flex flex-col bg-white px-2 py-[50px] laptop:px-0">
                 <h1 className="pb-[25px] text-center font-kantumruyPro text-[23px] font-semibold text-[#545454] laptop:text-[30px]">
-                Bist du bereit, dich mit einem erstklassigen VPN zu schützen?</h1>
+                Are you ready to secure yourself with worldclass VPN</h1>
                 <div className="flex flex-col justify-center gap-5 laptop:flex-row laptop:gap-12">
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank"
                         className="flex h-[60px] cursor-pointer items-center gap-9 border-2 border-[#04AA63] px-10 hover:bg-[#04aa6291] laptop:w-[450px]">
@@ -466,7 +466,7 @@ const TestVpnPage = () => {
                         </div>}>
                             <MdOutlineCheckCircle className="inline text-[30px] text-[#04AA63]" />
                         </Suspense>
-                        <span className="font-kantumruyPro text-[17px] font-semibold text-[#545454]">Ja, ich sichere mein Gerät JETZT</span>
+                        <span className="font-kantumruyPro text-[17px] font-semibold text-[#545454]">Yes, I will Secure My Device NOW</span>
                     </Link>
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=No" target="_blank"
                         className="flex h-[60px] cursor-pointer items-center gap-9 border-2 border-[#FD5522] px-10 hover:bg-[#fd5522a5] laptop:w-[450px]">
@@ -474,7 +474,7 @@ const TestVpnPage = () => {
                         </div>}>
                             <RxCrossCircled className="inline text-[30px] text-red-500" />
                         </Suspense>
-                        <span className="font-kantumruyPro text-[17px] font-semibold text-[#545454]">Nein, ich brauche mehr Zeit</span>
+                        <span className="font-kantumruyPro text-[17px] font-semibold text-[#545454]">No, I need some more time</span>
                     </Link>
                 </div>
             </div>

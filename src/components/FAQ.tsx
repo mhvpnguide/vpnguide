@@ -54,7 +54,7 @@ const content1: ContentArray = [
           `,
   },
   {
-    heading: "Is a free VPN safe in Germany?",
+    heading: "Is a free VPN safe?",
     content: `
             <p><span style="font-weight: 500;">Free VPNs may sound tempting, but they often have weaknesses in terms of security, performance, and reliability.</span> Many free VPN providers use outdated protocols or offer too few servers, putting your data at risk. Some even log your activities or sell your data to third parties, compromising your privacy.</p>
 
