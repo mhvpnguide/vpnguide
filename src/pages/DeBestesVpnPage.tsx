@@ -60,8 +60,45 @@ const vpnData: VPNData =
     data: [
         {
             "attributes": {
-                "vpn_name": "Cyber Ghost",
+                "vpn_name": "Total Vpn",
                 "ratting": 9.8,
+                "slug": "totalvpn",
+                "offer": "Kostenloses Antivirus & Ad-Blocker",
+                "details": "Total VPN: Optimiert für Streaming, Torrenting & Gaming. Schnelle Geschwindigkeit mit Militärstandard-Verschlüsselung",
+                "img": "totalvpn.svg",
+                "features": [
+                    { "value": "Teste es 30 Tage kostenlos" },
+                    { "value": "Ultra-schnelle Geschwindigkeit ohne Verzögerung" },
+                    { "value": "Verstärkter Schutz für öffentliches WLAN" },
+                    { "value": "Strikte No-Logs-Policy & keine IP/DNS-Lecks" },
+                    { "value": "Chrome- & Firefox-Erweiterung" },
+                    { "value": "Benutzerfreundliche App für alle Geräte" }
+                    
+                ],
+                "company_link": {
+                    "name": "totalvpn.com",
+                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text&token5=DE"
+                },
+                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button&token5=DE",
+                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=DE",
+                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=DE",
+                "top_banner": [
+                    { "value": "Unser Top-VPN" },
+                    { "value": "1,59 €/Monat nur!" }
+                ],
+                "category_rating": {
+                    "privacy": 9.9,
+                    "features": 9.7,
+                    "speed": 9.9,
+                    "userScore": 9.9,
+                    "valueForMoney": 9.9,
+                },
+            }
+        },
+        {
+            "attributes": {
+                "vpn_name": "Cyber Ghost",
+                "ratting": 9.5,
                 "slug": "cyberghost",
                 "offer": "83% Rabatt + 4 Monate kostenlos",
                 "details": "CyberGhost: Blitzschnell, hochsicher und vertrauenswürdig. Genieße ein Premium-VPN mit globaler Abdeckung und 24/7 Kundenservice. Unser Testsieger!",
@@ -83,45 +120,8 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1002&token4=tile&token5=DE",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1002&token4=bo&token5=DE",
                 "top_banner": [
-                    { "value": "Unser Top-VPN" },
-                    { "value": "45 Tage kostenlos" }
-                ],
-                "category_rating": {
-                    "privacy": 9.9,
-                    "features": 9.7,
-                    "speed": 9.9,
-                    "userScore": 9.9,
-                    "valueForMoney": 9.9,
-                },
-            }
-        },
-        {
-            "attributes": {
-                "vpn_name": "Total Vpn",
-                "ratting": 9.5,
-                "slug": "totalvpn",
-                "offer": "Kostenloses Antivirus & Ad-Blocker",
-                "details": "Total VPN: Optimiert für Streaming, Torrenting & Gaming. Schnelle Geschwindigkeit mit Militärstandard-Verschlüsselung",
-                "img": "totalvpn.svg",
-                "features": [
-                    { "value": "Teste es 30 Tage kostenlos" },
-                    { "value": "Ultra-schnelle Geschwindigkeit ohne Verzögerung" },
-                    { "value": "Verstärkter Schutz für öffentliches WLAN" },
-                    { "value": "Strikte No-Logs-Policy & keine IP/DNS-Lecks" },
-                    { "value": "Chrome- & Firefox-Erweiterung" },
-                    { "value": "Benutzerfreundliche App für alle Geräte" }
-                    
-                ],
-                "company_link": {
-                    "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text&token5=DE"
-                },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button&token5=DE&token5=DE",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=DE",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=DE",
-                "top_banner": [
                     { "value": "Günstigstes VPN" },
-                    { "value": "1,59 €/Monat nur!" }
+                    { "value": "45 Tage kostenlos" }
                 ],
                 "category_rating": {
                     "privacy": 9.6,
@@ -152,7 +152,7 @@ const vpnData: VPNData =
                     "name": "privateinternetaccess.com",
                     "value": "https://track.vpns.guide/base2.php?cloid=1004&token4=text&token5=DE"
                 },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button&token5=DE&token5=DE",
+                "link1":"https://track.vpns.guide/base2.php?cloid=1004&token4=button&token5=DE",
                 "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile&token5=DE",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo&token5=DE",
                 "top_banner": [
