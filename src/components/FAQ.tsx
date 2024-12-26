@@ -40,7 +40,7 @@ const content1: ContentArray = [
 
 <p>When you connect to a VPN, all your data is routed through a secure, encrypted tunnel. This protects private information such as passwords, banking data, and personal details, even in public Wi-Fi networks.</p>
 
-<p>For the best results, we recommend trusted VPNs like <a href="https://track.vpns.guide/base2.php?cloid=1002&token4=faq&token5=DE">CyberGhost</a> and <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN</a>. <span style="font-weight: 500;">They offer strong security features, fast connections, and reliable privacy for all your online activities.</span></p>
+<p>For the best results, we recommend trusted VPNs like <a href="https://track.vpns.guide/base2.php?cloid=1002&token4=faq&token5=IN">CyberGhost</a> and <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=IN">Total VPN</a>. <span style="font-weight: 500;">They offer strong security features, fast connections, and reliable privacy for all your online activities.</span></p>
           `,
   },
   {
@@ -72,7 +72,7 @@ const content1: ContentArray = [
 <li>Professional customer and IT support, often available 24/7</li>
 </ul>
 
-  <p>If you're looking for the best value for money, <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN</a> is an excellent choice. It offers fair prices, robust security features, and access to thousands of servers worldwide. Check out the <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN deals</a> for affordable, high-quality protection.</p>
+  <p>If you're looking for the best value for money, <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=IN">Total VPN</a> is an excellent choice. It offers fair prices, robust security features, and access to thousands of servers worldwide. Check out the <a href="https://track.vpns.guide/base2.php?cloid=1007&token4=faq&token5=DE">Total VPN deals</a> for affordable, high-quality protection.</p>
           `,
   },
 ];
