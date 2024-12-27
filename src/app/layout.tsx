@@ -48,6 +48,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+         {/* Preconnect to OptinMonster */}
+         <link rel="preconnect" href="https://a.omappapi.com" />
+        <link rel="preconnect" href="https://optinmonster.com" />
+        <link rel="dns-prefetch" href="https://a.omappapi.com" />
+        <link rel="dns-prefetch" href="https://optinmonster.com" />
         {/* <!-- Standard favicon --> */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* <!-- Recommended favicon size for general browser display --> */}
