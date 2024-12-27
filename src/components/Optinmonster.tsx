@@ -8,8 +8,8 @@ export function RouteChangeListener() {
   const [changes, setChanges] = useState(0);
 
   useEffect(() => {
-    if (window.om352620_372811) {
-        window.om352620_372811.reset();
+    if (window.om372811352620) {
+        window.om372811352620.reset();
     }
     setChanges((prev) => prev + 1);
   }, [pathname]);

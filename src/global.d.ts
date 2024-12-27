@@ -2,7 +2,7 @@
 declare global {
     interface Window {
       gtag: Function;
-      om352620_372811: any;
+      om372811352620: any;
     }
   }
   
