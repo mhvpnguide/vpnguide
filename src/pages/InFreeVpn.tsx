@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
-import TestVpnCard from "@/components/test-vpn-card";
+import TestVpnCard from "@/components/test-vpn-card-free";
 //import Popup from "@/components/Popup";
 import Comparison from "@/components/Comparison";
 import TooltipComp from "@/components/TooltipComp";
