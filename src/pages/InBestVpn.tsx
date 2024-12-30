@@ -61,7 +61,7 @@ const vpnData: VPNData =
         "<b>Ultra-Fast Servers</b> for uninterrupted Browsing, Streaming & Gaming",  
         "<b>Change your IP address location</b> & use the internet privately & securely",  
         "<b>Connect Multiple Devices</b> with a single VPN account simultaneously",  
-        "<b>Free Tials</b> & <b>Limited Time Discounts</b> for all VPNs"
+        "<b>Free Trials</b> & <b>Limited Time Discounts</b> for all VPNs"
 
     ],
     data: [
@@ -198,11 +198,11 @@ const vpnData: VPNData =
                 "top_banner": [
                 ],
                 "category_rating": {
-                    "privacy": 9.0,
-                    "features": 8.8,
-                    "speed": 5.9,
+                    "privacy": 9.1,
+                    "features": 8.6,
+                    "speed": 9.1,
                     "userScore": 8.9,
-                    "valueForMoney": 9.0,
+                    "valueForMoney": 8.9,
                 },
             }
         },
@@ -230,11 +230,11 @@ const vpnData: VPNData =
                 "top_banner": [
                 ],
                 "category_rating": {
-                    "privacy": 9.0,
+                    "privacy": 9.1,
                     "features": 8.8,
-                    "speed": 5.9,
+                    "speed": 8.9,
                     "userScore": 8.9,
-                    "valueForMoney": 9.0,
+                    "valueForMoney": 9.1,
                 },
             }
         },

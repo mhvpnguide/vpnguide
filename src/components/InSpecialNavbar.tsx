@@ -77,19 +77,19 @@ const SpecialNavbar = () => {
             subnav: [
                 {
                     name: "Android",
-                    link: "/in/best-vpn-android",
+                    link: "/in/best-vpn-for-android",
                 },
                 {
                     name: "Iphone",
-                    link: "/in/best-vpn-iphone",
+                    link: "/in/best-vpn-for-iphone",
                 },
                 {
                     name: "Windows",
-                    link: "/in/best-vpn-windows",
+                    link: "/in/best-vpn-for-windows",
                 },
                 {
                     name: "MacBook",
-                    link: "/in/best-vpn-mac",
+                    link: "/in/best-vpn-for-mac",
                 },
             ],
         },

@@ -61,7 +61,7 @@ const vpnData: VPNData =
         "<b>Save upto 90%</b> on best VPNs monthly & yearly plans",  
         "<b>Ultra-Fast Servers</b> for uninterrupted Browsing, Streaming & Gaming",  
         "<b>Connect Multiple Devices</b> with a single VPN account simultaneously",  
-        "<b>Free Tials</b> & <b>Limited Time Discounts</b> for all VPNs"
+        "<b>Free Trials</b> & <b>Limited Time Discounts</b> for all VPNs"
 
     ],
     data: [
