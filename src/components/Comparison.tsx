@@ -737,18 +737,18 @@ const Comparison = () => {
 
                 {/* LOGO */}
                 <div className="flex sticky top-0 bg-white">
-                    <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0">
-                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 0 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(0) }}>
+                    <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 ">
+                        <div className={`relative aspect-square w-1/3 m-2 border-3 ${vpn == 0 ? "bg-red-100 border-red-400 shadow-3xl" : "bg-gray-100 border-gray-100 shadow-lg shadow-gray-400"}`} onClick={() => { setVpn(0) }}>
                             <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[0].usersReview.icon}`} fill alt="CyberGhost" className='rounded-full' />
                         </div>
-                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 1 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(1) }}>
+                        <div className={`relative aspect-square w-1/3 m-2 border-3 ${vpn == 1 ? "bg-red-100 border-red-400 shadow-3xl" : "bg-gray-100 border-gray-100 shadow-lg shadow-gray-400"}`} onClick={() => { setVpn(1) }}>
                             <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.icon}`} fill alt="TotalVPN" className='rounded-full' />
                         </div>
-                        <div className={`relative aspect-square w-1/3 m-2 rounded-full border-3 ${vpn == 2 ? "border-red-300" : "border-white"}`} onClick={() => { setVpn(2) }}>
+                        <div className={`relative aspect-square w-1/3 m-2 border-3 ${vpn == 2 ? "bg-red-100 border-red-400 shadow-3xl" : "bg-gray-100 border-gray-100 shadow-lg shadow-gray-400"}`} onClick={() => { setVpn(2) }}>
                             <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[2].usersReview.icon}`} fill alt="Private Internet Access" className='rounded-full' />
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2">
+                    <div className="flex-1 flex justify-center items-center border-2 border-r-0 border-t-0 flex-col pb-2 ">
                         <span className='text-center'>{compareData[vpn].usersReview.vpnName}</span>
                         <RatingStars value={compareData[vpn].usersReview.ratting} textSize="sm" emptyTextSize="17px" />
                     </div>
