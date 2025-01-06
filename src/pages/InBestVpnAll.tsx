@@ -175,6 +175,7 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile&token5=IN",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo&token5=IN",
                 "top_banner": [
+                    { "value": "Monthly Plan Available" },
                 ],
                 "category_rating": {
                     "privacy": 9.2,
@@ -209,6 +210,7 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1005&token4=tile&token5=IN",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo&token5=IN",
                 "top_banner": [
+                    { "value": "Monthly Plan Available" },
                 ],
                 "category_rating": {
                     "privacy": 9.1,

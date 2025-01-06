@@ -139,6 +139,7 @@ const vpnData: VPNData =
                 "link3":"https://track.vpns.guide/base2.php?cloid=1005&token4=bo&token5=IN",
                 "top_banner": [
                     { "value": "Fastest VPN" },
+                    { "value": "Monthly Plan Available" },
                             ],
                 "category_rating": {
                     "privacy": 9.6,
@@ -218,15 +219,12 @@ const vpnData: VPNData =
             },
         }
     },
-
-
-
     {
         "attributes": {
             "vpn_name": "Private VPN",
             "ratting": 8.6,
             "slug": "privatevpn",
-                "offer": "",
+                "offer": "Monthly Plan Available",
                 "details": "Private VPN: Prioritizes user security with 128- and 256-bit encryption with No data retention",
                 "img": "privatevpn.svg",
                 "features": [
@@ -277,6 +275,7 @@ const vpnData: VPNData =
             "link2":"https://track.vpns.guide/base2.php?cloid=1006&token4=tile&token5=IN",
             "link3":"https://track.vpns.guide/base2.php?cloid=1006&token4=bo&token5=IN",
             "top_banner": [
+                { "value": "Monthly Plan Available" },
             ],
             "category_rating": {
                 "privacy": 8.5,
