@@ -2,6 +2,7 @@
 import BestesVpnPage from "@/pages/InBestVpn";
 import { Metadata } from "next";
 import Head from "next/head";
+import OptinMonster from "./OptinMonster";
 
 export const metadata: Metadata = {
   title: "Compare the Best VPN Providers for India 2025",  // Custom title for this page
@@ -13,6 +14,7 @@ const BestVpn = () => {
   return (
     <>
       <BestesVpnPage />
+      <OptinMonster/>
     </>
   );
 };

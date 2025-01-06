@@ -143,7 +143,7 @@ const vpnData: VPNData =
                 "vpn_name": "Cyberghost",
                 "ratting": 9.2,
                 "slug": "cyberghost",
-                "offer": "One Account Unlimited Devices",
+                "offer": "83% Off + 4 Months Free!",
                 "details": "Cyberghost: Fast speed, Strong encryption and no-logs policy for private browsing with 24/7 live Customer Support.",
                 "img": "cyberghost.svg",
                 "features": [
@@ -172,43 +172,9 @@ const vpnData: VPNData =
                 },
             }
         },
-  {
-            "attributes": {
-               "vpn_name": "Total Vpn",
-                "ratting": 8.9,
-                "slug": "totalvpn",
-                "offer": "Free Antivirus & Free Ad Blocker",
-                "details": "Total Vpn: User-friendly VPN for beginners. Strong security & privacy features.",
-                "img": "totalvpn.svg",
-                "features": [
-                    { "value": "Try it for 30 Days Free" },
-                    { "value": "Secure, Hides your online activity" },
-                    { "value": "Ultra-fast speed for all devices" },
-                    { "value": "Chrome & Firefox extension" },
-                    { "value": "Strict no-logs policy to keep you safe" }                    
-                ],
-                "company_link": {
-                    "name": "totalvpn.com",
-                    "value": "https://track.vpns.guide/base2.php?cloid=1007&token4=text&token5=IN"
-                },
-                "link1":"https://track.vpns.guide/base2.php?cloid=1007&token4=button&token5=IN",
-                "link2":"https://track.vpns.guide/base2.php?cloid=1007&token4=tile&token5=IN",
-                "link3":"https://track.vpns.guide/base2.php?cloid=1007&token4=bo&token5=IN",
-                "top_banner": [
-                    { "value": "From Rs. 175/- Only" },
-                ],
-                "category_rating": {
-                    "privacy": 9.0,
-                    "features": 8.8,
-                    "speed": 8.9,
-                    "userScore": 8.9,
-                    "valueForMoney": 9.0,
-                },
-            }
-        },
         {"attributes": {
                 "vpn_name": "Private Internet Access",
-                "ratting": 9.2,
+                "ratting": 8.9,
                 "slug": "privateinternetaccess",
                 "offer": "One Account Unlimited Devices",
                 "details": "PIA:  Well-rounded secure and private VPN for anonymous browsing & downloads with No-Logs policy to keep you safe online.",
@@ -218,7 +184,8 @@ const vpnData: VPNData =
                     { "value": "Enhanced security with no IP/DNS leaks" },
                     { "value": "Chrome & FIrefox extensions" },
                     { "value": "3000 servers in 100+ countries" },
-                    { "value": "VPN kill-switch for safety" }
+                    { "value": "VPN kill-switch for safety" },
+                    { "value": "Try it Free for 30 Days" }
                 ],
                 "company_link": {
                     "name": "privateinternetacess.com",
@@ -228,13 +195,15 @@ const vpnData: VPNData =
                 "link2":"https://track.vpns.guide/base2.php?cloid=1004&token4=tile&token5=IN",
                 "link3":"https://track.vpns.guide/base2.php?cloid=1004&token4=bo&token5=IN",
                 "top_banner": [
+                    { "value": "Cheapest VPN" },
+                    { "value": "From Only Rs.153/- " },
                 ],
                 "category_rating": {
-                   "privacy": 9.1,
-                    "features": 8.6,
-                    "speed": 9.1,
+                    "privacy": 9.0,
+                    "features": 8.8,
+                    "speed": 8.9,
                     "userScore": 8.9,
-                    "valueForMoney": 8.9,
+                    "valueForMoney": 9.0,
                 },
             }
         },

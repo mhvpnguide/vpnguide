@@ -16,7 +16,7 @@ import { IoSpeedometer } from "react-icons/io5";
 import { FaUnlockAlt } from "react-icons/fa";
 import RatingStars from "@/components/CustomStar";
 import CustomCircularProgress from "@/components/CustomCircularRatting";
-//import CardSlider from "@/components/CardSlider";
+import CardSlider from "@/components/CardSlider";
 import FAQ from "@/components/FAQ";
 import { RxCrossCircled } from "react-icons/rx";
 import { MdOutlineCheckCircle } from "react-icons/md";
@@ -27,8 +27,17 @@ interface VPNData {
     title?: string;
     list?: string[];
     slug?: string[];
+    bestPlan: string[];
     data: {
         attributes: BlogAttributes;
+    }[],
+    reviews: {
+        img: String,
+        rating: number,
+        review: String,
+        author: String,
+        company_link: { name: string; value: string };
+
     }[];
 }
 export interface BlogAttributes {
@@ -53,7 +62,6 @@ export interface BlogAttributes {
     };
 }
 
-
 const vpnData: VPNData =
 {
     title: "The Best VPNs for India 2025",
@@ -64,6 +72,10 @@ const vpnData: VPNData =
         "<b>Free Trials</b> & <b>Limited Time Discounts</b> for all VPNs"
 
     ],
+    bestPlan: [
+        "purevpn",
+        "cyberghost",
+        "privateinternetaccess",],
     data: [
         {
             "attributes": {
@@ -310,7 +322,79 @@ const vpnData: VPNData =
             }
         },
 
+    ],
+    reviews: [
 
+        {
+            "img": "cyberghost.png",
+            "rating": 10,
+            "review": "I’ve been using CyberGhost on my Computer for a few months, and it’s amazing. The app is super easy to use and works perfectly with macOS. I can connect with just one click, and it unlocks all my favorite shows on Netflix US. It’s fast, secure, and I love the 45-day money-back guarantee.",
+            "author": "Ankit P. (MacBook Pro User)",
+            "company_link": {
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=review&token5=IN"
+            },
+        },
+        {
+            "img": "cyberghost.png",
+            "rating": 9.5,
+            "review": "CyberGhost is perfect for my PC. I travel a lot, and public Wi-Fi always worried me. With CyberGhost, I feel safe using my phone on any network. Plus, the app looks great and doesn’t slow down my internet.",
+            "author": "Emily Sank (Windows User)",
+            "company_link": {
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=review&token5=IN"
+            },
+        },
+        {
+            "img": "surfshark.png",
+            "rating": 8.9,
+            "review": "I love using Surfshark on my Windows 11. The app is lightweight, and I can connect in seconds. It keeps my data safe, especially when I’m on public Wi-Fi. #SurfsharkVPN",
+            "author": "Jack R. (Windows User)",
+            "company_link": {
+                "name": "surfshark.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review&token5=IN"
+            },
+        },
+        {
+            "img": "purevpn.png",
+            "rating": 9.9,
+            "review": "I tried many VPNs, but PureVPN is the fastest, I used on my iPhone and Mac. It keeps my connection secure, and I can access sites and apps that are blocked in my region. It’s a bit pricey, but it’s worth every penny.",
+            "author": "Monica Roy (iPhone and Mac User)",
+            "company_link": {
+                "name": "pure.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=review&token5=IN"
+            },
+        },
+        {
+            "img": "surfshark.png",
+            "rating": 8.0,
+            "review": "Positive: The Surfshark app is lightweight and connects quickly on my iPhone. Perfect for casual use. Negative: Some streaming platforms don’t work with their servers, which can be disappointing.",
+            "author": "Jack R. (iPhone User)",
+            "company_link": {
+                "name": "surfshark.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1005&token4=review&token5=IN"
+            },
+        },
+        {
+            "img": "cyberghost.png",
+            "rating": 8.6,
+            "review": "I use CyberGhost on both my MacBook Air and iPhone. It’s great for protecting my privacy and streaming my favorite shows. But Sometimes the server I want is overcrowded, and I have to switch to another, which can be frustrating when I’m in a hurry.",
+            "author": "Rahul Mahato (MacBook and iPhone User)",
+            "company_link": {
+                "name": "cyberghost.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1002&token4=review&token5=IN"
+            },
+        },
+        {
+            "img": "purevpn.png",
+            "rating": 9.6,
+            "review": "I've been using Pure VPN  on both my MacBook Pro and iPhone for years and I love it. It's so easy to use and it works great. There is no lag or noticeable delay and it's easy to switch locations whenever you want. You can also install it on five devices, which means that I can have it on my computer, phone, and tablet and still share it with my mom. I highly recommend this VPN. - Express Vpn",
+            "author": "Liam J. (MacBook Pro and iPhone User)",
+            "company_link": {
+                "name": "purevpn.com",
+                "value": "https://track.vpns.guide/base2.php?cloid=1006&token4=review&token5=IN"
+            },
+        },
     ]
 }
 
@@ -335,7 +419,7 @@ const TestVpnPage = () => {
                 <div className="content mx-0 max-h-fit w-full pb-4 tablet:mx-auto tablet:w-[55%] laptop:mx-0">
                     <h1 className="mb-4 font-kantumruyPro text-[25px] font-bold laptop:text-[35px]">{vpnData.title}</h1>
                     <h2 className="mb-[25px] font-kantumruyPro text-[14px] text-blue-950 laptop:mb-[30px] laptop:text-[16px]">
-                        {currentmontY} – Excellent security features, widespread server networks, and reliable refund policie - secure internet access is just a few clicks away.                    </h2>
+                        {currentmontY} – Discover the best VPNs designed to protect your privacy, unlock global content, and enhance your MacBook experience.</h2>
                     <ul className="mb-[20px] text-[16px] laptop:text-base">
                         {
                             vpnData.list?.map((itm: any, idx: number) => (
@@ -404,16 +488,174 @@ const TestVpnPage = () => {
                 <TestVpnCard blogs={vpnData.data} />
             </div>
 
-
+         
             {/* comparison section */}
-            <Comparison />
+            
 
 
             {/* honest vpn review */}
-            
+            <div className="mx-auto rounded-xl bg-white px-[10px] py-2 shadow-md laptop:rounded-none laptop:py-0 laptopl:max-w-[1060px] laptopl:px-0">
+                <div className="flex flex-col px-[10px] laptop:flex-row laptop:gap-[60px] laptop:px-10">
+                    {/* heading for mobile view */}
+                    <h1 className="text-center font-inknutAntiqua text-[23px] font-bold laptop:hidden">Honest VPN Reviews Based
+                        On Real Testing
+                    </h1>
+                    <div className="laptop:w-[40%]">
+                        <div className="relative aspect-video h-[90%]">
+                            <Image src="/Assests/test-vpn/Review.webp" fill alt="image" />
+                        </div>
+                    </div>
+                    <div className="flex flex-col justify-evenly laptop:w-[60%]">
+                        <h1 className="hidden font-inknutAntiqua text-[23px] font-bold laptop:block">
+                            Honest VPN Reviews Based On Real Testing
+                        </h1>
+                        <p className="text-[15px]">
+                            All VPNs have been reviewed personally by our experts, using our transparent testing process and
+                            rating system to bring you the most reliable and up-to-date recommendations.
+                        </p>
+                        <p className="pt-2 text-sm laptop:pt-0">Our Testing Process Focuses On:</p>
+                    </div>
+                </div>
+                <div className="my-5 flex flex-wrap justify-between gap-2 px-[10px] py-2 laptop:my-2 laptop:flex-nowrap laptop:justify-evenly laptop:gap-20 laptop:bg-[#1C499E] laptop:px-[10%]">
+                    <div
+                        className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <FaUnlockAlt className="inline text-[22px] laptop:text-[36px]" />
+                        </Suspense>Privacy & security
+                    </div>
+                    <div className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
+                        <Suspense fallback={<div>Loading components...</div>}><IoSpeedometer className="inline text-[22px] laptop:text-[36px]" /></Suspense>Speed & Performance
+                    </div>
+                    <div className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
+                        <Suspense fallback={<div>Loading components...</div>}>
+                            <GiReceiveMoney className="inline text-[22px] laptop:text-[36px]" />
+                        </Suspense>Value for Money
+                    </div>
+                    <div
+                        className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <FaUserLarge className="inline text-[20px] laptop:text-[36px]" />
+                        </Suspense>User Review & Experience
+                    </div>
+                    <div
+                        className="flex min-h-[52px] w-[48%] items-center gap-2 rounded-full bg-[#1C499E] p-2 text-[12px] text-white laptop:h-fit laptop:bg-transparent laptop:text-[13px]">
+                        <Suspense fallback={<div>Loading components...
+                        </div>}>
+                            <FaIdCard className="inline text-[22px] laptop:text-[36px]" />
+                        </Suspense>Ease of Use
+                    </div>
+                </div>
+                <div className="flex flex-col gap-4 px-[10px] laptop:flex-row laptop:gap-[60px] laptop:px-10">
+                    <div className="flex flex-col justify-evenly laptop:w-[60%]">
+                        <h1 className="text-center font-inknutAntiqua text-[23px] font-bold laptop:text-start">
+                            We Stand for Internet Privacy, Security & Freedom
+                        </h1>
+                        <p className="hidden text-sm laptop:block">
+                            We are a team of independent experts with many years of experience in online privacy. We purchase
+                            and test every VPN ourselves and provide you with honest, unbiased reviews. Our goal is to help you
+                            find the best VPN to keep your online experience secure and private.
+                        </p>
+                    </div>
+                    <div className="laptop:w-[40%]">
+                        <div className="relative aspect-video h-[90%]">
+                            <Image src="/Assests/test-vpn/About.webp" fill alt="image" />
+                        </div>
+                    </div>
+                    <p className="text-sm laptop:hidden">
+                        We are a team of independent experts with many years of experience in online privacy. We purchase and
+                        test every VPN ourselves and provide you with honest, unbiased reviews. Our goal is to help you find the
+                        best VPN to keep your online experience secure and private.
+                    </p>
+                </div>
+            </div>
+
             {/* Best Plan */}
+            <div className="mx-auto my-10 rounded-[25px] bg-gray-50 p-5 px-[10px] shadow-md laptopl:max-w-[1060px] laptopl:px-0">
+                <div className="mb-10 flex flex-col items-center gap-2">
+                    <h1 className="text-[30px] font-bold">Best VPN Plan</h1>
+                    <p>Choose the best VPN with Great Discount</p>
+                </div>
+
+                <div className="flex flex-col gap-7 tablet:flex-row">
+                    {
+                        vpnData.data
+                            .filter((vpn) => vpnData.bestPlan.includes(vpn.attributes.slug))
+                            .sort((a, b) => vpnData.bestPlan.indexOf(a.attributes.slug) - vpnData.bestPlan.indexOf(b.attributes.slug))
+                            .map((itm: any, idx: number) => (
+                                <Link key={idx} target="_blank" href={itm.attributes.link3} className={`group relative gap-4 tablet:w-1/3 w-full
+            border-2 bg-white rounded-md border-white p-5 items-center flex-col flex hover:border-yellow-600
+            shadow-[0px_0px_10px_-5px_#1a202c] laptop:px-10 ${idx == 1 ? "border-yellow-600" : "laptop:scale-90 scale-95"
+                                    }`}>
+                                    {idx == 1 && <div
+                                        className="absolute left-[50%] top-[-25px] flex -translate-x-1/2 transform flex-col items-center justify-center rounded-full border border-blue-600 bg-white px-4 py-1 text-blue-600 shadow-lg">
+                                        <Suspense fallback={<div>Loading components...
+                                        </div>}>
+                                            <FaCrown className="text-xl" />
+                                        </Suspense>
+                                        <span className="text-xs font-semibold">BEST</span>
+                                    </div>}
+
+                                    <div className="flex w-full flex-row items-center justify-between tablet:flex-col">
+                                        {/* image */}
+                                        <div className="relative aspect-[2/1] w-2/4 laptop:w-3/4">
+                                            <Image src={`/Assests/test-vpn/vpn/${itm.attributes.img}`} layout="fill"
+                                                className="object-contain" alt="vpn image" />
+                                        </div>
+
+                                        {/* ratting */}
+                                        <div className="ml-3 flex w-2/4 flex-col items-center justify-center gap-2 tablet:w-full">
+                                            <CustomCircularProgress size="lg" value={itm.attributes.ratting} color={itm.attributes.ratting >= 9.7
+                                                ?
+                                                "warning" :
+                                                itm.attributes.ratting >= 9.0 ? "danger" :
+                                                    itm.attributes.ratting >= 8.0 ? "primary" :
+                                                        itm.attributes.ratting >= 6.0 ? "success" :
+                                                            "secondary"
+                                            }
+                                                showValueLabel={true}
+                                                valueLabel={`${itm.attributes.ratting}`} // Pass the value without the percentage sign
+                                                className="customRating"
+                                            />
+                                            <p className={`text-xs laptop:text-sm font-bold ${itm.attributes.ratting >= 9.5 ?
+                                                "text-[#c4841d]" :
+                                                "text-[#004493]"}`}>
+                                                {
+                                                    itm.attributes.ratting >= 9.7 ? "OUTSTANDING!" :
+                                                        itm.attributes.ratting >= 9.0 ? "SUPERB!" :
+                                                            itm.attributes.ratting >= 8.0 ? "GREAT!" :
+                                                                itm.attributes.ratting >= 6.0 ? "GOOD!" :
+                                                                    "BLANK!"
+                                                }
+
+                                            </p>
+                                            <RatingStars value={itm.attributes.ratting} textSize="[25px]" emptyTextSize="[28px]" />
+                                        </div>
+                                    </div>
+
+                                    {/* details */}
+                                    <p className="text-center text-sm font-bold text-blue-600 laptop:px-5">{itm.attributes.offer}</p>
+                                    <button
+                                        className="mt-auto rounded-lg bg-[#fd5522] px-3 py-1 font-bold text-white hover:bg-[#04aa63] laptop:text-[20px]">Try
+                                        for Free</button>
+                                </Link>
+                            ))
+                    }
+
+                </div>
+            </div>
+            
+            
             
             {/* card slider */}
+            <div className="flex flex-col gap-2 bg-blue-800 py-[30px]">
+                <h1 className="text-center text-[28px] font-bold text-white">User Reviews</h1>
+                <h2 className="text-center text-[15px] text-slate-300">(These reviews are not verified)</h2>
+                <div className="mx-12 mt-[32px] h-fit">
+                    <CardSlider reviews={vpnData.reviews} />
+                </div>
+            </div>
             
 
             {/* faqs */}
@@ -427,7 +669,7 @@ const TestVpnPage = () => {
             {/* two button */}
             <div className="flex flex-col bg-white px-2 py-[50px] laptop:px-0">
                 <h1 className="pb-[25px] text-center font-kantumruyPro text-[23px] font-semibold text-[#545454] laptop:text-[30px]">
-                Are you ready to secure yourself with worldclass VPN</h1>
+                Ready to Protect your Devices? Start with CyberGhost – The #1 choice for users</h1>
                 <div className="flex flex-col justify-center gap-5 laptop:flex-row laptop:gap-12">
                     <Link href="https://track.vpns.guide/base2.php?cloid=1002&token4=Yes" target="_blank"
                         className="flex h-[60px] cursor-pointer items-center gap-9 border-2 border-[#04AA63] px-10 hover:bg-[#04aa6291] laptop:w-[450px]">

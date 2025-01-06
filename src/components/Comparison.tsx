@@ -81,8 +81,8 @@ const compareData = [
     },
     {
         usersReview: {
-            vpnName: "Total VPN",
-            logo: "totalvpn.png",
+            vpnName: "Express VPN",
+            logo: "expressvpn.png",
             icon: "square_logo_total_vpn.png",
             ratting: 9.5,
             noRating: 3914,
@@ -141,7 +141,7 @@ const compareData = [
             point: 4
         },
         link:{
-            vlaue:"https://track.vpns.guide/base2.php?cloid=1007&token4=compare&token5=IN"
+            vlaue:"https://track.vpns.guide/base2.php?cloid=1001&token4=compare&token5=IN"
         }
     },
     {
@@ -240,7 +240,7 @@ const Comparison = () => {
                     </div>
                     <div className="flex-1 flex justify-center items-center border-2 border-l-0 border-t-0 flex-col pb-2">
                         <div className="relative aspect-[2/1] w-[50%]">
-                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="Total VPN" />
+                            <Image loading="lazy" src={`/Assests/test-vpn/vpn/${compareData[1].usersReview.logo}`} fill alt="Express VPN" />
                         </div >
                         <RatingStars value={compareData[1].usersReview.ratting} textSize="[18px]" emptyTextSize="[19px]" />
                         <span className="text-[12px] ">
@@ -724,7 +724,7 @@ const Comparison = () => {
                         <Link target='_blank' href={compareData[0].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit CyberGhost</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9] border-r-2 border-white">
-                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit TotalVPN</Link>
+                        <Link target='_blank' href={compareData[1].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">Visit ExpressVPN</Link>
                     </div>
                     <div className="flex items-center flex-1 py-4 bg-[#EEF1F9]">
                         <Link target='_blank' href={compareData[2].link.vlaue} className="bg-[#fd5522] hover:bg-[#04aa63] text-white font-bold mx-8 px-3 py-1 rounded-lg mt-auto w-full text-center text-[25px] shadow-[0px_1.365px_1.365px_0px_rgba(0,0,0,0.25)]">Visit PrivateVPN</Link>
